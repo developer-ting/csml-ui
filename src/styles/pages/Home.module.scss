@@ -1,0 +1,6 @@
+@import "../helpers/helpers.scss";
+
+.index_page {
+  min-height: 100vh;
+  @extend %f_r_aj_center;
+}
