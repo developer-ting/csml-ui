@@ -53,26 +53,84 @@
 .paraTxt {
 	font-size: 20px;
 	color: var(--color_black);
-	font-weight: 300;
+	font-weight: 400;
 	line-height: calc(34 / 20);
 	font-family: var(--font_primary);
 	@media only screen and (max-width: 992px) {
-		font-size: 16px;
+		font-size: 18px;
 	}
 }
 
-.headTxt {
+.text_24{
+  @extend .text_l;
+  color: var(--color_black);
+	font-family: var(--font_primary);
+	line-height: calc(30 / 24);
+}
+
+.text_35{
+  @extend .text_l;
+  color: var(--color_black);
+	font-family: var(--font_primary);
+	line-height: calc(44 / 35);
+  font-weight: 700;
+}
+
+.head_txt_40 {
 	@extend .text_xl;
 	color: var(--color_black);
 	font-family: var(--font_primary);
 	line-height: calc(51 / 40);
+  font-weight: 700;
 	@media only screen and (max-width: 992px) {
-		font-size: 30px;
+		font-size: 32px;
 	}
 	@media only screen and (max-width: 767px) {
-		font-size: 36px;
+		font-size: 34px;
 	}
 }
+
+.heading_text_45 {
+	@extend .text_xxl;
+	color: var(--color_black);
+	font-family: var(--font_primary);
+	line-height: calc(57 / 45);
+  font-weight: 500;
+	@media only screen and (max-width: 992px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 767px) {
+		font-size: 34px;
+	}
+}
+
+.heading_text_55 {
+	@extend .text_xxxl;
+	color: var(--color_black);
+	font-family: var(--font_primary);
+	line-height: calc(68 / 55);
+  font-weight: 700;
+	@media only screen and (max-width: 992px) {
+		font-size: 34px;
+	}
+	@media only screen and (max-width: 767px) {
+		font-size: 40px;
+	}
+}
+.heading_text_70 {
+	@extend .text_xxxxl;
+	color: var(--color_black);
+	font-family: var(--font_primary);
+	line-height: calc(89 / 70);
+  font-weight: 700;
+	@media only screen and (max-width: 992px) {
+		font-size: 45px;
+	}
+	@media only screen and (max-width: 767px) {
+		font-size: 40px;
+	}
+}
+
 
 // //each loop for creating font weights ->
 // //.text_100, .text_200 .....
