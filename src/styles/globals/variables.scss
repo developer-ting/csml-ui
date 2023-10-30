@@ -25,17 +25,17 @@ $browser-prefixes: false !default;
     --container_width: 970px;
   }
 
-  @media (min-width: 1200px) {
-		--container_width: 1170px;
-	}
+    // @media (min-width: 1200px) {
+    // 	--container_width: 1170px;
+    // }
+  
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      --container_width: 1170px;
+    }
 
-  // @media (min-width: 1200px) and (max-width: 1400px) {
-  //   --container_width: 1170px;
-  // }
-
-  // @media (min-width: 1401px) {
-  //   --container_width: 1360px;
-  // }
+    @media (min-width: 1401px) {
+      --container_width: 1270px;
+    }
 
   --container_left_space: calc((100% - var(--container_width)) / 2);
 }
