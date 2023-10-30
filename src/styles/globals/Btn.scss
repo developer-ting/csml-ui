@@ -1,0 +1,80 @@
+.btn_project_default {
+	font-size: 16px;
+	font-weight: 400;
+	background-image: none;
+	border: 1px solid var(--color_primary);
+	padding: 12px 50px;
+	box-shadow: none;
+	text-shadow: none;
+	background-color: transparent;
+	color: var(--color_black);
+	outline: none !important;
+	text-decoration: none;
+	transition: ease-out 0.3s;
+	cursor: pointer;
+	@media only screen and (max-width: 992px) {
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+  &:hover{
+    border-bottom: 8px solid var(--color_primary);
+  }
+	
+}
+.btn_two {
+	font-size: 18px;
+	font-weight: 400;
+	background-image: none;
+	border-radius: 50px;
+	border: 1px solid #8F8F8F;
+	padding: 10px 35px;
+	box-shadow: none;
+	text-shadow: none;
+	background-color: transparent;
+	color: var(--color_black);
+	outline: none !important;
+	text-decoration: none;
+	transition: ease-out 0.3s;
+	cursor: pointer;
+}
+
+.btn_arrow{
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 11px;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  background-color: var(--color_primary);
+  text-decoration: none;
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .arrow_one{
+    transform: translateX(0px);
+    transition: ease-out 0.3s;
+  }
+  .arrow_two{
+    position: absolute;
+    transform: translateX(-30px);
+    transition: ease-out 0.3s;
+    bottom: 0;
+  }
+  &:hover{
+    .arrow_one{
+      transform: translateX(30px);
+      margin-top: -26px;
+      transition: ease-out 0.3s;
+    }
+    .arrow_two{
+      transform: translateX(0px);
+      transition: ease-out 0.3s;
+      bottom: 12px;
+    }
+  }
+}

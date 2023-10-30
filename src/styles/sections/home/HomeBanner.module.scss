@@ -1,0 +1,26 @@
+@import "../../helpers/helpers.scss";
+.home_banner_wrap{
+  height: 100vh;
+  .banner_img{
+    img{
+      height: 100vh; 
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .banner_content{
+    padding-left: var(--container_left_space);
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+  }
+  .circle_right{
+    padding-right: var(--container_left_space);
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    cursor: pointer;
+  }
+}

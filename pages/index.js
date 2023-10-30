@@ -4,13 +4,14 @@
 import Head from "next/head";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
-
+import HomeBanner from "@/sections/home/HomeBanner";
 // SECTIONS //
 
 // PLUGINS //
 
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
+
 
 /** Home Page */
 export default function Home() {
@@ -23,10 +24,10 @@ export default function Home() {
 			</Head>
 
 			<Header />
-			<main className={`${styles.index_page} bg_secondary`}>
-				<h2>This is ting base next.js template</h2>
+			<main className={`${styles.index_page}`}>
+				<HomeBanner />
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

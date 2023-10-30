@@ -6,6 +6,9 @@
 
 // PLUGINS //
 
+// IMAGES //
+import arrow from "../public/img/arrow.svg";
+
 // STYLES //
 import styles from "../src/styles/components/Styleguide.module.scss";
 
@@ -47,6 +50,22 @@ const StyleGuide = () => {
 						);
 					})}
 				</div>
+			</section>
+			<br />
+			<br />
+			<section>
+					<a className="btn_project_default">
+						Read more
+					</a>
+					<a className="btn_two">
+						Read more
+					</a>
+					<br />
+			<br />
+					<a className="btn_arrow">
+						<span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
+						<span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
+					</a>
 			</section>
 		</div>
 	);
