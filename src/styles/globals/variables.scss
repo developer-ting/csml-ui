@@ -3,12 +3,14 @@ $browser-prefixes: false !default;
 
 :root {
   //fonts
-  --font_primary: "Paytone One", sans-serif;
-  --font_secondary: "Paytone One", sans-serif;
+  --font_primary: "Plus Jakarta Sans";
+  //--font_secondary: "Paytone One", sans-serif;
 
   //colors
-  --color_primary: #ffff00;
-  --color_secondary: #000000;
+  --color_primary: #FF0000;
+  --color_secondary: #F8ED11;
+  --color_1E1E1E: #1E1E1E;
+	--color_black: #000;
   --color_white: #fff;
 
   //extras
@@ -23,13 +25,17 @@ $browser-prefixes: false !default;
     --container_width: 970px;
   }
 
-  @media (min-width: 1200px) and (max-width: 1400px) {
-    --container_width: 1170px;
-  }
+  @media (min-width: 1200px) {
+		--container_width: 1170px;
+	}
 
-  @media (min-width: 1401px) {
-    --container_width: 1360px;
-  }
+  // @media (min-width: 1200px) and (max-width: 1400px) {
+  //   --container_width: 1170px;
+  // }
+
+  // @media (min-width: 1401px) {
+  //   --container_width: 1360px;
+  // }
 
   --container_left_space: calc((100% - var(--container_width)) / 2);
 }

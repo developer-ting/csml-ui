@@ -3,15 +3,76 @@
 // .text_sm {}
 
 //for default body copy font
+.text_xxs {
+  font-size: 14px;
+}
+.text_xs {
+  font-size: 16px;
+}
+.text_sm {
+  font-size: 18px;
+}
 .text_reg {
+  font-size: 20px;
+}
+.text_md {
+  font-size: 24px;
+}
+.text_l {
+  font-size: 35px;
+}
+.text_xl {
+  font-size: 40px;
+}
+.text_xxl {
+  font-size: 45px;
+}
+.text_xxxl {
+  font-size: 55px;
+}
+.text_xxxxl {
+  font-size: 70px;
+}
+.text_xxxxxI {
+  font-size: 150px;
+  line-height: calc(189 / 150);
+  font-family: var(--font_primary);
 }
 
-// .text_md {}
-// .text_lg {}
-// .text_xl {}
-// .text_xxl {}
-// .text_xxxl {}
-// .text_xxxxl {}
+.font_heading {
+	font-family: var(--font_primary);
+}
+
+.color_white {
+	color: #fff !important;
+}
+.color_black {
+	color: #0e0e0e !important;
+}
+
+.paraTxt {
+	font-size: 20px;
+	color: var(--color_black);
+	font-weight: 300;
+	line-height: calc(34 / 20);
+	font-family: var(--font_primary);
+	@media only screen and (max-width: 992px) {
+		font-size: 16px;
+	}
+}
+
+.headTxt {
+	@extend .text_xl;
+	color: var(--color_black);
+	font-family: var(--font_primary);
+	line-height: calc(51 / 40);
+	@media only screen and (max-width: 992px) {
+		font-size: 30px;
+	}
+	@media only screen and (max-width: 767px) {
+		font-size: 36px;
+	}
+}
 
 // //each loop for creating font weights ->
 // //.text_100, .text_200 .....
