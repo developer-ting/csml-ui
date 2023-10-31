@@ -32,7 +32,7 @@ export default function ValuedDistributors() {
 		infinite: true,
 		slidesToShow: 4,
     slidesToScroll: 3,
-		autoplay: false,
+		autoplay: true,
 		pauseOnHover: false,
 		speed: 1000,
 		responsive: [

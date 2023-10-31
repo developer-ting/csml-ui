@@ -28,7 +28,7 @@ export default function PartnerSuperior() {
 		infinite: true,
 		slidesToShow: 1,
     slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		pauseOnHover: false,
 		speed: 2000,
 		

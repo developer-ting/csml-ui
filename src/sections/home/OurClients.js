@@ -34,8 +34,8 @@ export default function OurClients() {
 	return (
     <section className={`${styles.our_clients_wrap} ptb_100`}>
       <div className="container">
-        <div className={`${styles.section_title} pb_40`}>
-          <h2 className="heading_text_40 color_white pb_20">Our Clients</h2>
+        <div className={`${styles.section_title}`}>
+          <h2 className="heading_text_40 color_white pb_30">Our Clients</h2>
         </div>
         <div className={`${styles.clients_logo_flex} f_j`}>
           <div className={`${styles.clients_logo_box}`}>
