@@ -1,0 +1,38 @@
+@import "../../helpers/helpers.scss";
+
+.our_clients_wrap {
+  .section_title{
+    text-align: center;
+    p{
+      opacity: 0.8;
+      width: 71%;
+      margin: 0 auto;
+    }
+  }
+  .clients_logo_flex{
+    border-top: 1px solid #B8B8B8;
+    border-bottom: 1px solid #B8B8B8;
+    padding: 20px 20px;
+    border-radius: 12px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+    .clients_logo_box{
+      width: 225px;
+      height: 125px;
+      background-color: var(--color_white);
+      padding: 10px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      opacity: 0.5;
+      transition: all 1s ease;
+      &:hover{
+        opacity: 1;
+        transition: all 1s ease;
+      }
+    }
+  }
+}

@@ -9,6 +9,8 @@ import Crafting from "@/sections/home/Crafting";
 import ProductCatalogue from "@/sections/home/ProductCatalogue";
 import ValuedDistributors from "@/sections/home/ValuedDistributors";
 import PartnerSuperior from "@/sections/home/PartnerSuperior";
+import ExperienceIndustry from "@/sections/home/ExperienceIndustry";
+import OurClients from "@/sections/home/OurClients";
 
 // SECTIONS //
 
@@ -16,6 +18,8 @@ import PartnerSuperior from "@/sections/home/PartnerSuperior";
 
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
+
+
 
 /** Home Page */
 export default function Home() {
@@ -34,6 +38,11 @@ export default function Home() {
 				<ProductCatalogue />
 				<ValuedDistributors />
 				<PartnerSuperior />
+				<ExperienceIndustry />
+
+				<section className={`${styles.bg_black}`}>
+					<OurClients />
+				</section>
 			</main>
 			{/* <Footer /> */}
 		</div>
