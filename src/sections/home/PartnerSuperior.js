@@ -16,6 +16,7 @@ import styles from "../../styles/sections/home/PartnerSuperior.module.scss";
 // IMAGES //
 import partner_img from "../../../public/img/home/partner_img.jpg";
 import partner_img_two from "../../../public/img/home/partner_img_two.jpg";
+import yellow_img from "../../../public/img/home/yellow_img.jpg";
 import arrow from "../../../public/img/arrow.svg";
 
 
@@ -25,20 +26,12 @@ export default function PartnerSuperior() {
 		dots: true,
 		arrows: false,
 		infinite: true,
-		slidesToShow: 4,
-    slidesToScroll: 3,
+		slidesToShow: 1,
+    slidesToScroll: 1,
 		autoplay: false,
 		pauseOnHover: false,
-		speed: 1000,
-		responsive: [
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 2,
-          slidesToScroll: 2,
-				},
-			},
-		],
+		speed: 2000,
+		
 	};
 
 	return (
@@ -83,6 +76,72 @@ export default function PartnerSuperior() {
               </div>
             </div>
           </div>
+        </div>
+        <div className={`${styles.yellow_main} pt_100`}>
+          <Slider {...settings}> 
+            <div className={`${styles.yellow_item}`}>
+              <div className={`${styles.yellow_box} f_j`}>
+                <div className="dot_two dots_p"></div>
+                <div className="dot_three dots_p"></div>
+                <div className={`${styles.yellow_content}`}>
+                  <h3 className="text_35 pb_20">Elevate your home with custom entertainment solutions</h3>
+                  <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  <div className={`${styles.yellow_btn} pt_30`}>
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <button className="btn_project_default">
+                        Learn More
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div className={`${styles.yellow_img}`}>
+                  <img className="" src={yellow_img.src} alt="img" />
+                </div>
+              </div>
+            </div>
+            
+            <div className={`${styles.yellow_item}`}>
+              <div className={`${styles.yellow_box} f_j`}>
+                <div className="dot_two dots_p"></div>
+                <div className="dot_three dots_p"></div>
+                <div className={`${styles.yellow_content}`}>
+                  <h3 className="text_35 pb_20">Elevate your home with custom entertainment solutions</h3>
+                  <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  <div className={`${styles.yellow_btn} pt_30`}>
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <button className="btn_project_default">
+                        Learn More
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div className={`${styles.yellow_img}`}>
+                  <img className="" src={yellow_img.src} alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className={`${styles.yellow_item}`}>
+              <div className={`${styles.yellow_box} f_j`}>
+                <div className="dot_two dots_p"></div>
+                <div className="dot_three dots_p"></div>
+                <div className={`${styles.yellow_content}`}>
+                  <h3 className="text_35 pb_20">Elevate your home with custom entertainment solutions</h3>
+                  <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  <div className={`${styles.yellow_btn} pt_30`}>
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <button className="btn_project_default">
+                        Learn More
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div className={`${styles.yellow_img}`}>
+                  <img className="" src={yellow_img.src} alt="img" />
+                </div>
+              </div>
+            </div>
+          </Slider>
+          
         </div>
       </div>
 

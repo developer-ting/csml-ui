@@ -23,7 +23,7 @@
     &::before{
       content: " ";
       position: absolute;
-      bottom: -10px;
+      bottom: -9px;
       left: -1px;
       background-color: #000;
       -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
@@ -35,7 +35,7 @@
     &::after{
       content: " ";
       position: absolute;
-      bottom: -10px;
+      bottom: -9px;
       right: -1px;
       background-color: #000;
       clip-path: polygon(100% 0, 0% 100%, 100% 100%);

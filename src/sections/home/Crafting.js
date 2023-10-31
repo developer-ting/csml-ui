@@ -42,11 +42,14 @@ export default function Crafting() {
             <h2 className="heading_text_45 color_white pb_60">
               world-class entertainment <br />hubs for over 50 years
             </h2>
-            <a href="#" target="_blank" rel="noreferrer">
-              <button className="btn_project_default color_white">
-                About Us 
-              </button>
-            </a>
+            <div className={`${styles.btn_height}`}>
+              <a href="#" target="_blank" rel="noreferrer">
+                <button className="btn_project_default color_white">
+                  About Us 
+                </button>
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
