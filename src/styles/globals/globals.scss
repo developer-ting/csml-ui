@@ -59,6 +59,13 @@ picture {
   padding: 10vmin 0;
 }
 
+.text_upper{
+	text-transform: uppercase;
+}
+.border_12{
+	border-radius: 12px;
+}
+
 //classes for fonts
 .font_primary {
   font-family: var(--font_primary);
@@ -340,4 +347,25 @@ picture {
 	@media only screen and (max-width: 767px) {
 		padding-bottom: 60px;
 	}
+}
+
+//dots css start here
+.dots_p{
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: rgba(122, 122, 122, 0.64);
+    z-index: 1;
+}
+.dot_one{
+	top: 15px;
+	right: 15px;
+}
+.dot_two{
+	bottom: 15px;
+	left: 15px;
+}
+.dot_three{
+	bottom: 15px;
+	right: 15px;
 }
