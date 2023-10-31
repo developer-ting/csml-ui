@@ -63,7 +63,7 @@
 }
 
 .text_24{
-  @extend .text_l;
+  @extend .text_md;
   color: var(--color_black);
 	font-family: var(--font_primary);
 	line-height: calc(30 / 24);

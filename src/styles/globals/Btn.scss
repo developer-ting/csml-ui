@@ -80,6 +80,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   .arrow_one{
     transform: translateX(0px);
     transition: ease-out 0.3s;

@@ -43,10 +43,10 @@ export default function Crafting() {
               world-class entertainment <br />hubs for over 50 years
             </h2>
             <a href="#" target="_blank" rel="noreferrer">
-								<button className="btn_project_default color_white">
-                  About Us 
-								</button>
-							</a>
+              <button className="btn_project_default color_white">
+                About Us 
+              </button>
+            </a>
           </div>
         </div>
       </div>
