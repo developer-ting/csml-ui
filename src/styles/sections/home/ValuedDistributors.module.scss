@@ -1,0 +1,24 @@
+@import "../../helpers/helpers.scss";
+
+.valued_distributors_wrap {
+  .section_title{
+    text-align: center;
+  }
+  .valued_distributors_border{
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    padding: 40px 20px;
+    border-radius: 12px;
+    position: relative;
+    .valued_logo{
+      .valued_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

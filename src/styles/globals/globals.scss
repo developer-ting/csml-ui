@@ -352,8 +352,8 @@ picture {
 //dots css start here
 .dots_p{
 	position: absolute;
-	width: 6px;
-	height: 6px;
+	width: 5px;
+	height: 5px;
 	background-color: rgba(122, 122, 122, 0.64);
     z-index: 1;
 }
@@ -368,4 +368,40 @@ picture {
 .dot_three{
 	bottom: 15px;
 	right: 15px;
+}
+
+// slick dots css start here
+.slick-dots {
+	bottom: -70px !important;
+	li {
+    width: 8px !important;
+    height: 8px !important;
+    margin: 0 5px !important;
+		button {
+			width: 8px !important;
+			height: 8px !important;
+			&::before{
+					content: ' ' !important;
+					width: 8px !important;
+					height: 8px !important;
+					background-color: #000 !important;
+			}
+		}
+		&.slick-active{
+			width: 16px !important;
+			height: 16px !important;
+			margin: 0 5px !important;
+			button {
+				width: 16px !important;
+				height: 16px !important;
+				&::before{
+						content: ' ' !important;
+						width: 16px !important;
+						height: 16px !important;
+						background-color: #000 !important;
+						opacity: 1 !important;
+				}
+			}
+		}
+	}
 }

@@ -7,6 +7,7 @@ import Header from "../src/components/Header";
 import HomeBanner from "@/sections/home/HomeBanner";
 import Crafting from "@/sections/home/Crafting";
 import ProductCatalogue from "@/sections/home/ProductCatalogue";
+import ValuedDistributors from "@/sections/home/ValuedDistributors";
 
 // SECTIONS //
 
@@ -14,6 +15,7 @@ import ProductCatalogue from "@/sections/home/ProductCatalogue";
 
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
+
 
 /** Home Page */
 export default function Home() {
@@ -30,6 +32,7 @@ export default function Home() {
 				<HomeBanner />
 				<Crafting />
 				<ProductCatalogue />
+				<ValuedDistributors />
 			</main>
 			{/* <Footer /> */}
 		</div>
