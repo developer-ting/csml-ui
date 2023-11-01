@@ -35,11 +35,11 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			{/* <Header /> */}
+			<Header />
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
 				<Crafting />
-				{/* <ProductCatalogue /> */}
+				<ProductCatalogue />
 				<ValuedDistributors />
 				<PartnerSuperior />
 				<ExperienceIndustry />
@@ -50,7 +50,7 @@ export default function Home() {
 					<EnthralledCustomers />
 				</section>
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }

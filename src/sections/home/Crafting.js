@@ -6,17 +6,17 @@
 
 // PLUGINS //
 
-// import LightGallery from "lightgallery/react";
-// import lgThumbnail from "lightgallery/plugins/thumbnail";
-// import lgZoom from "lightgallery/plugins/zoom";
-// import lgVideo from "lightgallery/plugins/video";
+import LightGallery from "lightgallery/react";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+import lgVideo from "lightgallery/plugins/video";
 
 // STYLES //
  import styles from "../../styles/sections/home/Crafting.module.scss";
-// import "lightgallery/css/lightgallery.css";
-// import "lightgallery/css/lg-zoom.css";
-// import "lightgallery/css/lg-thumbnail.css";
-// import "lightgallery/css/lg-video.css";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-video.css";
 
 // IMAGES //
 import cricle_img from "../../../public/img/home/cricle_img.png";
@@ -85,7 +85,7 @@ export default function Crafting() {
               </div>
             </div>
             <div className={`${styles.intertainment_right}`}>
-              <div className={`${styles.video_box}`}>
+              {/* <div className={`${styles.video_box}`}>
                 <img className="border_12 img" src={video_img.src} />
                 <div className={`${styles.video_play}`}>
                   <img
@@ -97,9 +97,9 @@ export default function Crafting() {
                     <p className="text_reg">Play Video</p>
                   </div>
                 </div>
-              </div>
-              {/* <LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgVideo]}>
-                <a href="#">
+              </div> */}
+              <LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgVideo]}>
+                <a href="https://youtu.be/75yhYazRwRs?feature=shared">
                   <div className={`${styles.video_box}`}>
                     <img className="border_12 img" src={video_img.src} />
                     <div className={`${styles.video_play}`}>
@@ -114,7 +114,7 @@ export default function Crafting() {
                     </div>
                   </div>
                 </a>
-							</LightGallery> */}
+							</LightGallery>
             </div>
           </div>
         </div>
