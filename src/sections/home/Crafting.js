@@ -43,7 +43,7 @@ export default function Crafting() {
               world-class entertainment <br />hubs for over 50 years
             </h2>
             <div className={`${styles.btn_height}`}>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="#" rel="noreferrer">
                 <button className="btn_project_default color_white">
                   About Us 
                 </button>

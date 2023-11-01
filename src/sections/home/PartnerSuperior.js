@@ -31,6 +31,7 @@ export default function PartnerSuperior() {
 		autoplay: true,
 		pauseOnHover: false,
 		speed: 2000,
+    autoplaySpeed: 5000,
 		
 	};
 
@@ -48,7 +49,7 @@ export default function PartnerSuperior() {
               <div className={`${styles.desc_box}`}>
                 <div className={`${styles.desc_title} f_j`}>
                   <h3 className="text_24 color_white text_500 pb_20">Consultancy Services</h3>
-                  <a href="#" target="_blank" rel="noreferrer">
+                  <a href="#" rel="noreferrer">
                     <button className="btn_arrow">
                       <span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
                       <span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
@@ -65,7 +66,7 @@ export default function PartnerSuperior() {
               <div className={`${styles.desc_box}`}>
                 <div className={`${styles.desc_title} f_j`}>
                   <h3 className="text_24 color_white text_500 pb_20">Management Contract - <br className="hidden-xs" />Operational Excellence</h3>
-                  <a href="#" target="_blank" rel="noreferrer">
+                  <a href="#" rel="noreferrer">
                     <button className="btn_arrow">
                       <span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
                       <span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
@@ -87,7 +88,7 @@ export default function PartnerSuperior() {
                   <h3 className="text_35 pb_20">Elevate your home with custom entertainment solutions</h3>
                   <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   <div className={`${styles.yellow_btn} pt_30`}>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_project_default">
                         Learn More
                       </button>
@@ -108,7 +109,7 @@ export default function PartnerSuperior() {
                   <h3 className="text_35 pb_20">Elevate your home with custom entertainment solutions</h3>
                   <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   <div className={`${styles.yellow_btn} pt_30`}>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_project_default">
                         Learn More
                       </button>
@@ -128,7 +129,7 @@ export default function PartnerSuperior() {
                   <h3 className="text_35 pb_20">Elevate your home with custom entertainment solutions</h3>
                   <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   <div className={`${styles.yellow_btn} pt_30`}>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_project_default">
                         Learn More
                       </button>

@@ -12,6 +12,7 @@ import PartnerSuperior from "@/sections/home/PartnerSuperior";
 import ExperienceIndustry from "@/sections/home/ExperienceIndustry";
 import OurClients from "@/sections/home/OurClients";
 import Showcase from "@/sections/home/Showcase";
+import EnthralledCustomers from "@/sections/home/EnthralledCustomers";
 
 // SECTIONS //
 
@@ -19,6 +20,7 @@ import Showcase from "@/sections/home/Showcase";
 
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
+
 
 
 
@@ -45,9 +47,10 @@ export default function Home() {
 				<section className={`${styles.bg_black}`}>
 					<OurClients />
 					<Showcase />
+					<EnthralledCustomers />
 				</section>
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }

@@ -70,7 +70,7 @@ export default function Showcase() {
         <div className={`${styles.section_title} pb_30 f_j`}>
           <h2 className="heading_text_55 color_white">A showcase of success </h2>
           <div className={`${styles.btn_height}`}>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="#" rel="noreferrer">
               <button className="btn_project_default color_white">
                 View All 
               </button>
@@ -90,7 +90,7 @@ export default function Showcase() {
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_400 pb_20">The Game Palacia (Mumbai)</h3>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_arrow">
                         <span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
                         <span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
@@ -111,7 +111,7 @@ export default function Showcase() {
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_400 pb_20">Shott (Surat)</h3>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_arrow">
                         <span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
                         <span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
@@ -132,7 +132,7 @@ export default function Showcase() {
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_400 pb_20">Go Bowl (Bengaluru)</h3>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_arrow">
                         <span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
                         <span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
@@ -153,7 +153,7 @@ export default function Showcase() {
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_400 pb_20">Go Bowl (Bengaluru)</h3>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_arrow">
                         <span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
                         <span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
@@ -174,7 +174,7 @@ export default function Showcase() {
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_400 pb_20">Go Bowl (Bengaluru)</h3>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#" rel="noreferrer">
                       <button className="btn_arrow">
                         <span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
                         <span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>

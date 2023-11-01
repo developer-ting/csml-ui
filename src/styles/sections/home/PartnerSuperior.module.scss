@@ -10,6 +10,9 @@
       opacity: 0.8;
       width: 71%;
       margin: 0 auto;
+      @media (max-width: 1401px) {
+        width: 80%;
+      }
     }
   }
   .partner_superior_flex{
@@ -28,6 +31,9 @@
           border-radius: 8px;
           backdrop-filter: blur(18px);
           margin-top: -25px;
+          @media (max-width: 1401px) {
+            padding: 40px 25px;
+          }
           .desc_title{
             h3{
               display: -webkit-box;   
