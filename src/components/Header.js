@@ -54,12 +54,12 @@ const Header = () => {
 						</div>
 						<div className={`${styles.header_list} ${styles.header_list_mobile}`}>
 							<div className={styles.menu_title}>
-								<div href="#" className={styles.title}>
-									<a className="btn_two color_white">
-										Read more
+								<div className={styles.title}>
+									<a href="#" className="btn_two color_white">
+										Contact us
 									</a>
 								</div>
-								<div href="#" className={styles.humberg}>
+								<div className={styles.humberg}>
 									<p>
 										<span></span>
 										<span></span>
