@@ -54,7 +54,7 @@ const Header = () => {
 						</div>
 						<div className={`${styles.header_list} ${styles.header_list_mobile}`}>
 							<div className={styles.menu_title}>
-								<div className={styles.title}>
+								<div className={styles.title}> 
 									<a href="#" className="btn_two color_white">
 										Contact us
 									</a>

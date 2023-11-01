@@ -34,7 +34,7 @@ export default function ExperienceIndustry() {
             <div className="dot_two dots_p"></div>
             <div className="dot_three dots_p"></div>
             <h3 className="paraTxt text_700 pb_20">Partnered with the best</h3>
-            <p className="paraTxt">As leaders of Indoor Amusement Centers (IAC) development, we provide comprehensive, end-to-end solutions.</p>
+            <p className="paraTxt">We have a vast premium arcade machine inventory from trusted global manufacturers. </p>
           </div>
 
           <div className={`${styles.partner_superior_box}`}>
@@ -42,7 +42,7 @@ export default function ExperienceIndustry() {
             <div className="dot_two dots_p"></div>
             <div className="dot_three dots_p"></div>
             <h3 className="paraTxt text_700 pb_20">Investment excellence partner </h3>
-            <p className="paraTxt">As leaders of Indoor Amusement Centers (IAC) development, we provide comprehensive, end-to-end solutions.</p>
+            <p className="paraTxt">We offer market insights, and custom business models to ensure you make informed investments.</p>
           </div>
 
           <div className={`${styles.partner_superior_box}`}>
@@ -50,7 +50,7 @@ export default function ExperienceIndustry() {
             <div className="dot_two dots_p"></div>
             <div className="dot_three dots_p"></div>
             <h3 className="paraTxt text_700 pb_20">Launch success partner</h3>
-            <p className="paraTxt">As leaders of Indoor Amusement Centers (IAC) development, we provide comprehensive, end-to-end solutions.</p>
+            <p className="paraTxt">We offer re-launch support through a proficient team that handles setup, maintenance, and post-sales support.</p>
           </div>
           
         </div>
