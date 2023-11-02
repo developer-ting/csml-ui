@@ -15,6 +15,10 @@ import ContactForm from "@/components/Form";
 // STYLES //
 import styles from "../src/styles/pages/Contact.module.scss";
 
+//	IMAGES	//
+import Mail from "../public/img/contact/mail_icon.svg";
+import Phone from "../public/img/contact/phone_icon.svg";
+
 /** Contact Page */
 export default function Contact() {
 	const [isSubmited, setIsSubmited] = useState(false);
@@ -71,9 +75,20 @@ export default function Contact() {
 									Whether you have questions, need information, or want to explore how we
 									can enhance your space, we're here to assist you.
 								</p>
-								<div className={`${styles.contact_details_flex}`}>
-									<div className={`${styles.contact_div}`}></div>
-									<div className={`${styles.contact_div}`}></div>
+								<div className={`${styles.contact_details_flex} color_white text_sm`}>
+									<div className={`${styles.contact_div} pb_30`}>
+										<img className="img" src={Mail.src} />
+										<a href="mailto:sales@csmlindia.com" rel="noreferrer">
+											sales@csmlindia.com
+										</a>
+									</div>
+									<div className={`${styles.contact_div}`}>
+										<img className="img" src={Phone.src} />
+										<div className={`${styles.phone_div}`}>
+											<a href="tel:+912249739659">+91 (22) 49739659</a> /{" "}
+											<a href="tel:+912228302166">+91 (22) 28302166</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div className={`${styles.contact_main_form}`}>
