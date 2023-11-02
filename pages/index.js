@@ -38,16 +38,16 @@ export default function Home() {
 			<Header />
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
-				<Crafting />
+				{/* <Crafting />
 				<ProductCatalogue />
 				<ValuedDistributors />
 				<PartnerSuperior />
-				<ExperienceIndustry />
+				<ExperienceIndustry /> */}
 
 				<section className={`${styles.bg_black}`}>
-					<OurClients />
+					{/* <OurClients />
 					<Showcase />
-					<EnthralledCustomers />
+					<EnthralledCustomers /> */}
 				</section>
 			</main>
 			<Footer />
