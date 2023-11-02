@@ -93,6 +93,9 @@ export default function Contact() {
 							</div>
 							<div className={`${styles.contact_main_form}`}>
 								<div className={`${styles.contact_form}`}>
+									<div className="dot_one dots_p"></div>
+									<div className="dot_two dots_p"></div>
+									<div className="dot_three dots_p"></div>
 									<form
 										className={`${styles.form_main}`}
 										onSubmit={handleSubmit(onSubmit)}

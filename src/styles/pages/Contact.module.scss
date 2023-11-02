@@ -48,6 +48,9 @@
           @media (max-width: 991px) {
             padding: 30px 20px;
           }
+          :global(.dots_p){
+            background-color: var(--color_primary);
+          }
           .form_main{
             .form_field{
               input, select, textarea{
