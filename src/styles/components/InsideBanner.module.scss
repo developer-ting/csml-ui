@@ -1,0 +1,19 @@
+@import "../helpers/helpers.scss";
+.home_banner_wrap{
+  height: 100vh;
+  .banner_img{
+    img{
+      height: 100vh; 
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .banner_content{
+    // padding-left: var(--container_left_space);
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

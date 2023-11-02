@@ -1,0 +1,51 @@
+@import "../helpers/helpers.scss";
+
+.ContactPage {
+  :global(.bg_black){
+    background-color: var(--color_black);
+    background-image: url(../../../public/img/home/dots_bg.png);
+    background-size: cover;
+  }
+  .contact_sec{
+    .contact_flex{
+      display: flex;
+      justify-content: space-between;
+      .contact_details{
+        width: 41%;
+      }
+      .contact_main_form{
+        position: relative;
+        width: 51%;
+        padding: 10px;
+        border-radius: 12px;
+        border-top: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        .contact_form{
+          background-color: #fff;
+          padding: 70px 50px;
+          border-radius: 12px;
+          position: relative;
+          .form_main{
+            .form_field{
+              input, select, textarea{
+                font-family: 'Plus Jakarta Sans';
+                font-size: 16px;
+                width: 100%;
+                border: 0;
+                margin-bottom: 40px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid rgba($color: #707070, $alpha: 0.8);
+                &:focus-visible{
+                  outline: 0;
+                }
+                &::placeholder{
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

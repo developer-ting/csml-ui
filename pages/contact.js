@@ -1,18 +1,57 @@
 // MODULES //
+import { useForm } from "react-hook-form";
+import { useEffect, useRef, useState } from "react";
 
 // COMPONENTS //
 import Head from "next/head";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
+import InsideBanner from "@/components/InsideBanner";
 import ContactForm from "@/components/Form";
 // SECTIONS //
 
 // PLUGINS //
 
 // STYLES //
+import styles from "../src/styles/pages/Contact.module.scss";
 
 /** Contact Page */
 export default function Contact() {
+	const [isSubmited, setIsSubmited] = useState(false);
+
+	const {
+		register,
+		handleSubmit,
+		reset,
+		formState: { errors },
+	} = useForm();
+
+	const onSubmit = (data) => {
+		const Headers = {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				Authorization: `Bearer ${process.env.NEXT_PUBLIC_AUTH_TOKEN}`,
+			},
+			body: JSON.stringify({
+				data: data,
+			}),
+		};
+
+		async function sendData() {
+			await fetch(
+				`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/contact-forms`,
+				Headers
+			)
+				.then((data) => data.json())
+				.then((data) => {
+					console.log("success"), reset(), setIsSubmited(true);
+				})
+				.catch((err) => console.log(err));
+		}
+
+		sendData();
+	};
 	return (
 		<div>
 			<Head>
@@ -22,9 +61,133 @@ export default function Contact() {
 			</Head>
 
 			<Header />
-			<main className="contactPage">
-				<h2>This is contact page</h2>
-				<ContactForm />
+			<main className={`${styles.ContactPage}`}>
+				<InsideBanner />
+				<section className={`${styles.contact_sec} bg_black`}>
+					<div className="container">
+						<div className={`${styles.contact_flex} ptb_80`}>
+							<div className={`${styles.contact_details} pt_80`}>
+								<p className="paraTxt color_white pb_40">
+									Whether you have questions, need information, or want to explore how we
+									can enhance your space, we're here to assist you.
+								</p>
+								<div className={`${styles.contact_details_flex}`}>
+									<div className={`${styles.contact_div}`}></div>
+									<div className={`${styles.contact_div}`}></div>
+								</div>
+							</div>
+							<div className={`${styles.contact_main_form}`}>
+								<div className={`${styles.contact_form}`}>
+									<form
+										className={`${styles.form_main}`}
+										onSubmit={handleSubmit(onSubmit)}
+									>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="text"
+												name="Name"
+												placeholder="Name"
+												{...register("Name", {
+													required: true,
+													maxLength: 79,
+												})}
+											/>
+											{errors.Name && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="text"
+												name="Cname"
+												placeholder="Company"
+												{...register("Cname", {
+													required: true,
+													maxLength: 79,
+												})}
+											/>
+											{errors.Cname && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="email"
+												name="Email"
+												placeholder="Email"
+												{...register("Email", {
+													required: true,
+													pattern: /^\S+@\S+$/i,
+												})}
+											/>
+											{errors.Email && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="tel"
+												name="phoneNumber"
+												placeholder="Phone Number"
+												{...register("phoneNumber", {
+													required: true,
+													pattern: /^[0-9]{10}$/i,
+												})}
+											/>
+											{errors.phoneNumber && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<select {...register("Reason", { required: true })}>
+												<option value="">Select Inquiry Type</option>
+												<option value="Customer Care">Customer Care</option>
+												<option value="Domestic Market Inquiry">
+													Domestic Market Inquiry
+												</option>
+												<option value="Exports Inquiry">Exports Inquiry</option>
+												<option value="Vendor Registration">Vendor Registration</option>
+											</select>
+											{errors.Reason && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<textarea
+												className=""
+												type="text"
+												name="Help"
+												rows={3}
+												placeholder="Additional Comments"
+												{...register("Help", {
+													required: true,
+													maxLength: 79,
+												})}
+											/>
+											{errors.Help && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.btn_box}`}>
+											<a href="#" rel="noreferrer">
+												<button className="btn_project_default">Submit</button>
+											</a>
+										</div>
+										{isSubmited && (
+											<p className={`${styles.thank_you} para_sm`}>Thank you</p>
+										)}
+									</form>
+									{/* <img className="" src={cricle_arrow.src} /> */}
+								</div>
+							</div>
+						</div>
+					</div>
+					{/* <ContactForm /> */}
+				</section>
 			</main>
 			<Footer />
 		</div>
