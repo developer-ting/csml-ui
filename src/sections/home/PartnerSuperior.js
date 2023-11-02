@@ -78,6 +78,7 @@ export default function PartnerSuperior() {
             </div>
           </div>
         </div>
+
         <div className={`${styles.yellow_main} pt_100`}>
           <Slider {...settings}> 
             <div className={`${styles.yellow_item}`}>
@@ -144,6 +145,7 @@ export default function PartnerSuperior() {
           </Slider>
           
         </div>
+		
       </div>
 
     </section>
