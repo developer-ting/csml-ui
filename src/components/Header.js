@@ -12,11 +12,21 @@ import styles from "../styles/components/Header.module.scss";
 // IMAGES //
 import csml_logo from "../../public/img/csml_logo.svg";
 import close from "../../public/img/close.svg";
+import menu_down_aarow from "../../public/img/menu_down_aarow.svg";
 
 /** Header Component */
 const Header = () => {
 	const [sidebarActive, setSidebarActive] = useState(false);
 	const [scroll, setScroll] = useState(false);
+	const [toggleState, settoggleState] = useState(0);
+
+	const toggleTab = (index) => {
+		if (toggleState == index) {
+			return settoggleState(null);
+		}
+		settoggleState(index);
+	};
+
 	useEffect(() => {
 		let hamburger = document.getElementById("hamburger");
 		window.addEventListener("scroll", () => {
@@ -75,7 +85,7 @@ const Header = () => {
 							</div>
 						</div>
 
-						{/* <div
+						<div
               className={`${styles.menu_right_open} ${
                 sidebarActive ? styles.active : ""
               }`}
@@ -91,32 +101,96 @@ const Header = () => {
 										alt="close"
 									/>
 								</div>
-                <ul>
+                <ul className={`${styles.list_ul}`}>
                   <li onClick={() => setSidebarActive(!sidebarActive)}>
                     <Link href="">
                       <a className="heading_text_40 m_r">About Us</a>
                     </Link>
                   </li>
-                  <li onClick={() => setSidebarActive(!sidebarActive)}>
-                    <Link href="">
-                      <a className="heading_text_40 m_r">Product portfolio</a>
-                    </Link>
+                  <li className={`${styles.sub_menu_box} ${toggleState === 1 && styles.drop_down_active}`}
+											onMouseEnter={() => toggleTab(1)}
+											onMouseLeave={() => toggleTab(1)}
+									>
+                    <div className={`${styles.sub_menu_flex} d_f`}>
+											<a className="heading_text_40 m_r">Product portfolio</a>
+											<img
+												src={menu_down_aarow.src}
+												className={`${styles.menu_down_aarow}`}
+												alt="down"
+											/>
+										</div>
+										<div className={`${styles.sub_menu_list}`}>
+											<p onClick={() => setSidebarActive(!sidebarActive)}>
+												<Link href="">
+													<a className="text_reg text_400">Consultancy Services</a>
+												</Link>
+											</p>
+											<p onClick={() => setSidebarActive(!sidebarActive)}>
+												<Link href="">
+													<a className="text_reg text_400">Management Contract </a>
+												</Link>
+											</p>
+										</div>
                   </li>
                   <li onClick={() => setSidebarActive(!sidebarActive)}>
                     <Link href="">
                       <a className="heading_text_40 m_r">New Releases</a>
                     </Link>
                   </li>
-                  <li onClick={() => setSidebarActive(!sidebarActive)}>
-                    <Link href="">
-                      <a className="heading_text_40 m_r">Services</a>
-                    </Link>
+                  
+
+									<li className={`${styles.sub_menu_box} ${toggleState === 2 && styles.drop_down_active}`}
+											onMouseEnter={() => toggleTab(2)}
+											onMouseLeave={() => toggleTab(2)}
+									>
+                    <div className={`${styles.sub_menu_flex} d_f`}>
+											<a className="heading_text_40 m_r">Services</a>
+											<img
+												src={menu_down_aarow.src}
+												className={`${styles.menu_down_aarow}`}
+												alt="down"
+											/>
+										</div>
+										<div className={`${styles.sub_menu_list}`}>
+											<p onClick={() => setSidebarActive(!sidebarActive)}>
+												<Link href="">
+													<a className="text_reg text_400">Consultancy Services</a>
+												</Link>
+											</p>
+											<p onClick={() => setSidebarActive(!sidebarActive)}>
+												<Link href="">
+													<a className="text_reg text_400">Management Contract </a>
+												</Link>
+											</p>
+										</div>
                   </li>
 
                 </ul>
-              </div>
-            </div> */}
+								<div className={`${styles.bottom_list}`}>
+									<ul>
+										<li onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="">
+												<a className="text_reg text_400">Careers</a>
+											</Link>
+										</li>
 
+										<li onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="">
+												<a className="text_reg text_400">Projects</a>
+											</Link>
+										</li>
+
+										<li onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="">
+												<a className="text_reg text_400">Contact</a>
+											</Link>
+										</li>
+
+									</ul>
+								</div>
+              </div>
+            </div>
+						
 					</div>
 				</div>
 			</header>

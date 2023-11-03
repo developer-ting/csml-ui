@@ -128,7 +128,7 @@
 		transition: all 0.5s;
 		border-radius: 40px;
 		box-shadow: 0px 3px 8px rgb(0, 0, 0, 0.1);
-		padding: 100px 60px 30px 60px;
+		padding: 100px 60px 40px 60px;
 		@media screen and (max-width: 767px) {
 			width: 100%;
 			height: 100%;
@@ -143,7 +143,7 @@
 				top: -40px;
 				cursor: pointer;
 			}
-			ul {
+			.list_ul {
 				list-style-type: none;
 				padding-left: 0px;
 				li {
@@ -153,8 +153,10 @@
 					}
 					a {
 						color: #000000;
+						transition: all 0.5s;
 						&:hover {
-							font-family: var(--m_s_b);
+							color: var(--color_primary);
+							transition: all 0.5s;
 						}
 						// img {
 						//   opacity: 0.8;
@@ -166,26 +168,56 @@
 						// }
 					}
 				}
-				.social_list {
-					display: flex;
-					span {
-						padding-right: 15px;
+				.sub_menu_box{
+
+					.sub_menu_flex{
+						justify-content: space-between;
+						cursor: pointer;
+						img{
+							transition: all 0.5s;
+						}
 					}
-					a {
-						position: relative;
-						&:hover {
-							font-family: normal;
-							.icon_social {
-								opacity: 0;
-							}
-							.icon_social_hover {
-								opacity: 1;
+
+					.sub_menu_list{
+						display: none;
+						transition: all 0.5s;
+						padding: 0px 15px;
+						p{
+							padding-top: 20px;
+						}
+					}
+					&.drop_down_active{
+						.sub_menu_flex{
+							.menu_down_aarow{
+								transform: rotate(180deg);
+								transition: all 0.5s;
 							}
 						}
-						.icon_social_hover {
-							opacity: 0;
-							top: 0px;
-							position: absolute;
+						.sub_menu_list{
+							display: block;
+							transition: all 0.5s;
+						}
+					}
+				}
+				
+			}
+			.bottom_list{
+				margin-top: 60px;
+				padding-top: 25px;
+				border-top: 1px solid #979797;
+				ul{
+					list-style-type: none;
+					padding-left: 0px;
+					display: flex;
+					li{
+						padding-right: 40px;
+						a{
+							color: #000000;
+							transition: all 0.5s;
+							&:hover {
+								color: var(--color_primary);
+								transition: all 0.5s;
+							}
 						}
 					}
 				}
