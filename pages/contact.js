@@ -16,6 +16,7 @@ import ContactForm from "@/components/Form";
 import styles from "../src/styles/pages/Contact.module.scss";
 
 //	IMAGES	//
+import contact_banner from "../public/img/contact/contact_banner.jpg";
 import Mail from "../public/img/contact/mail_icon.svg";
 import Phone from "../public/img/contact/phone_icon.svg";
 
@@ -66,14 +67,19 @@ export default function Contact() {
 
 			<Header />
 			<main className={`${styles.ContactPage}`}>
-				<InsideBanner />
+			<InsideBanner
+				bannerTitle="Experience Unforgettable <br className='hidden-xs'>
+				Adventures with Us"
+				bannerImg={contact_banner.src}
+				mobileImg={contact_banner.src}
+			/>
 				<section className={`${styles.contact_sec} bg_black`}>
 					<div className="container">
 						<div className={`${styles.contact_flex} ptb_80`}>
 							<div className={`${styles.contact_details} pt_80`}>
 								<p className="paraTxt color_white pb_40">
 									Whether you have questions, need information, or want to explore how we
-									can enhance your space, we're here to assist you.
+									can enhance your space, <span className="color_white">we're here to assist you.</span>
 								</p>
 								<div className={`${styles.contact_details_flex} color_white text_sm`}>
 									<div className={`${styles.contact_div} pb_30`}>
@@ -120,7 +126,7 @@ export default function Contact() {
 												className=""
 												type="text"
 												name="Cname"
-												placeholder="Company"
+												placeholder="Company Name"
 												{...register("Cname", {
 													required: true,
 													maxLength: 79,
@@ -179,7 +185,6 @@ export default function Contact() {
 												className=""
 												type="text"
 												name="Help"
-												rows={3}
 												placeholder="Additional Comments"
 												{...register("Help", {
 													required: true,
