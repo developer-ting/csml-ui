@@ -1,7 +1,7 @@
 // MODULES //
 import React, { useEffect, useState } from "react";
 // COMPONENTS //
-
+import Link from "next/link";
 // SECTIONS //
 
 // PLUGINS //
@@ -11,9 +11,11 @@ import styles from "../styles/components/Header.module.scss";
 
 // IMAGES //
 import csml_logo from "../../public/img/csml_logo.svg";
+import close from "../../public/img/close.svg";
 
 /** Header Component */
 const Header = () => {
+	const [sidebarActive, setSidebarActive] = useState(false);
 	const [scroll, setScroll] = useState(false);
 	useEffect(() => {
 		let hamburger = document.getElementById("hamburger");
@@ -59,7 +61,12 @@ const Header = () => {
 										Contact us
 									</a>
 								</div>
-								<div className={styles.humberg}>
+								<div
+									onClick={() => setSidebarActive(!sidebarActive)}
+									className={`${styles.humberg} ${
+										sidebarActive ? styles.close_icon : ""
+									}`}
+								>
 									<p>
 										<span></span>
 										<span></span>
@@ -67,6 +74,49 @@ const Header = () => {
 								</div>
 							</div>
 						</div>
+
+						{/* <div
+              className={`${styles.menu_right_open} ${
+                sidebarActive ? styles.active : ""
+              }`}
+            >
+              <div className={`${styles.menu_list}`}>
+								<div 
+								onClick={() => setSidebarActive(!sidebarActive)}
+								className={`${styles.close_box}`}
+								>
+									<img
+										src={close.src}
+										className={`${styles.close_arrow}`}
+										alt="close"
+									/>
+								</div>
+                <ul>
+                  <li onClick={() => setSidebarActive(!sidebarActive)}>
+                    <Link href="">
+                      <a className="heading_text_40 m_r">About Us</a>
+                    </Link>
+                  </li>
+                  <li onClick={() => setSidebarActive(!sidebarActive)}>
+                    <Link href="">
+                      <a className="heading_text_40 m_r">Product portfolio</a>
+                    </Link>
+                  </li>
+                  <li onClick={() => setSidebarActive(!sidebarActive)}>
+                    <Link href="">
+                      <a className="heading_text_40 m_r">New Releases</a>
+                    </Link>
+                  </li>
+                  <li onClick={() => setSidebarActive(!sidebarActive)}>
+                    <Link href="">
+                      <a className="heading_text_40 m_r">Services</a>
+                    </Link>
+                  </li>
+
+                </ul>
+              </div>
+            </div> */}
+
 					</div>
 				</div>
 			</header>
