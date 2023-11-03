@@ -122,12 +122,12 @@ const Header = () => {
 										<div className={`${styles.sub_menu_list}`}>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
 												<Link href="">
-													<a className="text_reg text_400">Consultancy Services</a>
+													<a className="text_reg text_500">Consultancy Services</a>
 												</Link>
 											</p>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
 												<Link href="">
-													<a className="text_reg text_400">Management Contract </a>
+													<a className="text_reg text_500">Management Contract </a>
 												</Link>
 											</p>
 										</div>
@@ -154,12 +154,12 @@ const Header = () => {
 										<div className={`${styles.sub_menu_list}`}>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
 												<Link href="">
-													<a className="text_reg text_400">Consultancy Services</a>
+													<a className="text_reg text_500">Consultancy Services</a>
 												</Link>
 											</p>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
 												<Link href="">
-													<a className="text_reg text_400">Management Contract </a>
+													<a className="text_reg text_500">Management Contract </a>
 												</Link>
 											</p>
 										</div>
@@ -170,19 +170,19 @@ const Header = () => {
 									<ul>
 										<li onClick={() => setSidebarActive(!sidebarActive)}>
 											<Link href="">
-												<a className="text_reg text_400">Careers</a>
+												<a className="text_reg text_500">Careers</a>
 											</Link>
 										</li>
 
 										<li onClick={() => setSidebarActive(!sidebarActive)}>
 											<Link href="">
-												<a className="text_reg text_400">Projects</a>
+												<a className="text_reg text_500">Projects</a>
 											</Link>
 										</li>
 
 										<li onClick={() => setSidebarActive(!sidebarActive)}>
 											<Link href="">
-												<a className="text_reg text_400">Contact</a>
+												<a className="text_reg text_500">Contact</a>
 											</Link>
 										</li>
 
