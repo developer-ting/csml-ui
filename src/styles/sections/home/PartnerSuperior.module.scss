@@ -15,15 +15,19 @@
       }
     }
   }
+
   .partner_superior_flex{
     padding: 0px 40px;
     .partner_superior_box{
       width: 48%;
-      border-top: 1px solid #777777;
-      border-bottom: 1px solid #777777;
+      border: 1px solid #777777;
+      // border-top: 1px solid #777777;
+      // border-bottom: 1px solid #777777;
       padding: 10px 10px;
       border-radius: 12px;
       position: relative;
+      transition: all .3s;
+
       .partner_superior_content{
         .desc_box{
           background-color: rgba(30, 30, 30, 0.50);
@@ -55,6 +59,7 @@
       }
     }
   }
+  
   .yellow_main{
     margin: 0px -10px;
     :global(.slick-slide){
