@@ -15,8 +15,7 @@
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
     .partner_superior_box{
-      border-top: 1px solid #B8B8B8;
-      border-bottom: 1px solid #B8B8B8;
+      border: 1px solid #B8B8B8;
       padding: 40px 20px;
       border-radius: 12px;
       position: relative;
@@ -63,17 +62,17 @@
   .btn_box{
     text-align: center;
     height: 80px;
-    :global(.btn_project_default){
-      &:hover {
-        &::before{
-          background-color: var(--color_white);
+    // :global(.btn_project_default){
+    //   &:hover {
+    //     &::before{
+    //       background-color: var(--color_white);
           
-        }
-        &::after{
-          background-color: var(--color_white);
+    //     }
+    //     &::after{
+    //       background-color: var(--color_white);
           
-        }
-      }
-    }
+    //     }
+    //   }
+    // }
   }
 }

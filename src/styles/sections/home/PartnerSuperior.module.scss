@@ -14,51 +14,19 @@
         width: 80%;
       }
     }
-  } 
+  }
+
   .partner_superior_flex{
     padding: 0px 40px;
     .partner_superior_box{
       width: 48%;
-      border-top: 1px solid #777777;
-      border-bottom: 1px solid #777777;
-      // border: 1px solid #777777;
+      border: 1px solid #777777;
+      // border-top: 1px solid #777777;
+      // border-bottom: 1px solid #777777;
       padding: 10px 10px;
       // border-radius: 8px;
       position: relative;
-
-      &::before{
-        content: "";
-        position: absolute;
-        top: 0%;
-        left: 0;
-        width: 1px;
-        height: 10%;
-        background-color: #777777;
-        transition: 0.3s all;
-      }
-
-      &::after{
-        content: "";
-        position: absolute;
-        bottom: 0%;
-        left: 0;
-        width: 1px;
-        height: 10%;
-        background-color: #777777;
-        transition: 0.3s all;
-      }
-
-      &:hover{
-        transition: 0.3s all;
-        &::before{
-          height: 50%;
-          transition: 0.3s all;
-        }
-        &::after{
-          height: 50%;
-          transition: 0.3s all;
-        }
-      }
+      transition: all .3s;
 
       .partner_superior_content{
         transition: 0.3s all;
@@ -93,6 +61,7 @@
       }
     }
   }
+  
   .yellow_main{
     margin: 0px -10px;
     :global(.slick-slide){
@@ -111,22 +80,11 @@
           font-size: 18px;
         }
         .yellow_btn{
-          min-height: 80px;
+          min-height: 85px;
         }
-        :global(.btn_project_default){
-          &:hover {
-            border-bottom: 8px solid var(--color_primary);
-            transform: translateY(-5px);;
-            &::before{
-              background-color: var(--color_secondary);
-              
-            }
-            &::after{
-              background-color: var(--color_secondary);
-              right: -2px;
-            }
-          }
-        }
+        // :global(.btn_project_default){
+          
+        // }
       }
       .yellow_img{
         width: 48%;

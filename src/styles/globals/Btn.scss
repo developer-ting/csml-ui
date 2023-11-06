@@ -45,7 +45,32 @@
       transition: ease-out 0.3s;
     }
   }
-	
+	&.yellow_btn{
+    &:hover {
+      border-bottom: 8px solid var(--color_primary);
+      transform: translateY(-5px);;
+      &::before{
+        background-color: var(--color_secondary);
+        
+      }
+      &::after{
+        background-color: var(--color_secondary);
+        right: -2px;
+      }
+    }
+  }
+  &.white_btn{
+    &:hover {
+      &::before{
+        background-color: var(--color_white);
+        
+      }
+      &::after{
+        background-color: var(--color_white);
+        
+      }
+    }
+  }
 }
 .btn_two {
 	font-size: 18px;
