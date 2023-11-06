@@ -73,22 +73,11 @@
           font-size: 18px;
         }
         .yellow_btn{
-          min-height: 80px;
+          min-height: 85px;
         }
-        :global(.btn_project_default){
-          &:hover {
-            border-bottom: 8px solid var(--color_primary);
-            transform: translateY(-5px);;
-            &::before{
-              background-color: var(--color_secondary);
-              
-            }
-            &::after{
-              background-color: var(--color_secondary);
-              right: -2px;
-            }
-          }
-        }
+        // :global(.btn_project_default){
+          
+        // }
       }
       .yellow_img{
         width: 48%;

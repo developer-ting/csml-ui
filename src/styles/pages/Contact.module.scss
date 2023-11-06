@@ -83,18 +83,18 @@
                 color: var(--color_primary);
               }
             }
-            :global(.btn_project_default){
-              &:hover {
-                &::before{
-                  background-color: var(--color_white);
+            // :global(.btn_project_default){
+            //   &:hover {
+            //     &::before{
+            //       background-color: var(--color_white);
                   
-                }
-                &::after{
-                  background-color: var(--color_white);
+            //     }
+            //     &::after{
+            //       background-color: var(--color_white);
                   
-                }
-              }
-            }
+            //     }
+            //   }
+            // }
           }
         }
       }

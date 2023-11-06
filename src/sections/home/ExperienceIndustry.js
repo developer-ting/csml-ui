@@ -56,7 +56,7 @@ export default function ExperienceIndustry() {
         </div>
         <div className={`${styles.btn_box} pt_40`}>
           <a href="#" rel="noreferrer">
-            <button className="btn_project_default">
+            <button className="btn_project_default white_btn">
               Learn More
             </button>
           </a>

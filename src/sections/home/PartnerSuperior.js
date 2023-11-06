@@ -89,7 +89,7 @@ export default function PartnerSuperior() {
                   <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   <div className={`${styles.yellow_btn} pt_30`}>
                     <a href="#" rel="noreferrer">
-                      <button className="btn_project_default">
+                      <button className="btn_project_default yellow_btn">
                         Learn More
                       </button>
                     </a>
@@ -110,7 +110,7 @@ export default function PartnerSuperior() {
                   <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   <div className={`${styles.yellow_btn} pt_30`}>
                     <a href="#" rel="noreferrer">
-                      <button className="btn_project_default">
+                      <button className="btn_project_default yellow_btn">
                         Learn More
                       </button>
                     </a>
@@ -130,7 +130,7 @@ export default function PartnerSuperior() {
                   <p className="paraTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   <div className={`${styles.yellow_btn} pt_30`}>
                     <a href="#" rel="noreferrer">
-                      <button className="btn_project_default">
+                      <button className="btn_project_default yellow_btn">
                         Learn More
                       </button>
                     </a>

@@ -197,7 +197,7 @@ export default function Contact() {
 										</div>
 										<div className={`${styles.btn_box}`}>
 											<a href="#" rel="noreferrer">
-												<button className="btn_project_default">Submit</button>
+												<button className="btn_project_default white_btn">Submit</button>
 											</a>
 										</div>
 										{isSubmited && (

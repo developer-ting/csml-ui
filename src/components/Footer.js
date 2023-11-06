@@ -132,8 +132,8 @@ const Footer = () => {
 								<p className="text_xs color_white">Copyright © 2023 CSML. All Rights Reserved</p>
 							</div>
 							<div className={`${styles.footerBtmItem}`}>
-								<Link href="">
-									<img src={ting_logo.src} alt="" />
+								<Link href="https://www.ting.in/">
+									<a className="text_reg text_500" target="_blank" rel="noreferrer"><img src={ting_logo.src} alt="" /></a>
 								</Link>
 							</div>
 						</div>
