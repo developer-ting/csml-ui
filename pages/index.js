@@ -15,15 +15,11 @@ import Showcase from "@/sections/home/Showcase";
 import EnthralledCustomers from "@/sections/home/EnthralledCustomers";
 
 // SECTIONS //
-
+import ParallaxSlider from "@/sections/home/ParallaxSlider";
 // PLUGINS //
 
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
-
-
-
-
 
 /** Home Page */
 export default function Home() {
@@ -39,6 +35,7 @@ export default function Home() {
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
 				<Crafting />
+				<ParallaxSlider />
 				<ProductCatalogue />
 				<ValuedDistributors />
 				<PartnerSuperior />

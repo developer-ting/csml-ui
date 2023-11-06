@@ -7,75 +7,75 @@
 @import "Btn.scss";
 
 body {
-  margin: 0;
-  @extend .text_reg;
-  font-family: var(--font_primary);
-  color: var(--color_black);
+	margin: 0;
+	@extend .text_reg;
+	font-family: var(--font_primary);
+	color: var(--color_black);
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: var(--color_brown);
+	text-decoration: none;
+	color: var(--color_brown);
 }
 
 .container-fluid {
-  width: 100%;
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+	width: 100%;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .container {
-  @extend .container-fluid;
-  margin: 0 auto;
-  width: var(--container_width);
+	@extend .container-fluid;
+	margin: 0 auto;
+	width: var(--container_width);
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .text_center {
-  text-align: center;
+	text-align: center;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-  height: auto;
+	max-width: 100%;
+	display: block;
+	height: auto;
 }
 
 picture {
-  display: block !important;
+	display: block !important;
 }
 
 .section_spacing {
-  padding: 10vmin 0;
+	padding: 10vmin 0;
 }
 
-.text_upper{
+.text_upper {
 	text-transform: uppercase;
 }
-.border_12{
+.border_12 {
 	border-radius: 12px;
 }
-.border_8{
+.border_8 {
 	border-radius: 8px;
 }
 
 //classes for fonts
 .font_primary {
-  font-family: var(--font_primary);
-  font-weight: normal;
+	font-family: var(--font_primary);
+	font-weight: normal;
 }
 .font_secondary {
-  font-family: var(--font_secondary);
+	font-family: var(--font_secondary);
 }
 
 .width_100 {
@@ -113,7 +113,6 @@ picture {
 		display: block !important;
 	}
 }
-
 
 .d_f {
 	display: flex;
@@ -353,22 +352,22 @@ picture {
 }
 
 //dots css start here
-.dots_p{
+.dots_p {
 	position: absolute;
 	width: 5px;
 	height: 5px;
 	background-color: rgba(122, 122, 122, 0.64);
-    z-index: 1;
+	z-index: 1;
 }
-.dot_one{
+.dot_one {
 	top: 15px;
 	right: 15px;
 }
-.dot_two{
+.dot_two {
 	bottom: 15px;
 	left: 15px;
 }
-.dot_three{
+.dot_three {
 	bottom: 15px;
 	right: 15px;
 }
@@ -377,33 +376,48 @@ picture {
 .slick-dots {
 	bottom: -70px !important;
 	li {
-    width: 8px !important;
-    height: 8px !important;
-    margin: 0 5px !important;
+		width: 8px !important;
+		height: 8px !important;
+		margin: 0 5px !important;
 		button {
 			width: 8px !important;
 			height: 8px !important;
-			&::before{
-					content: ' ' !important;
-					width: 8px !important;
-					height: 8px !important;
-					background-color: #000 !important;
+			&::before {
+				content: " " !important;
+				width: 8px !important;
+				height: 8px !important;
+				background-color: #000 !important;
 			}
 		}
-		&.slick-active{
+		&.slick-active {
 			width: 16px !important;
 			height: 16px !important;
 			margin: 0 5px !important;
 			button {
 				width: 16px !important;
 				height: 16px !important;
-				&::before{
-						content: ' ' !important;
-						width: 16px !important;
-						height: 16px !important;
-						background-color: #000 !important;
-						opacity: 1 !important;
+				&::before {
+					content: " " !important;
+					width: 16px !important;
+					height: 16px !important;
+					background-color: #000 !important;
+					opacity: 1 !important;
 				}
+			}
+		}
+	}
+}
+
+// prlx slide
+.slideMain {
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+	#slides {
+		.box {
+			padding: 0px 30px;
+			img {
+				max-width: unset;
 			}
 		}
 	}
