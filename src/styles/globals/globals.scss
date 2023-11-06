@@ -443,3 +443,20 @@ picture {
 		}
 	}
 }
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	background: #1E1E1E;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #FF0000;
+	border-radius: 50px;
+}
