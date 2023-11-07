@@ -13,11 +13,13 @@
     .showcase_box{
       .showcase_content{
         .img_box{
-          border-top: 1px solid #777777;
-          border-bottom: 1px solid #777777;
+          border: 1px solid #777777;
+          // border-top: 1px solid #777777;
+          // border-bottom: 1px solid #777777;
           padding: 10px 10px;
           border-radius: 12px;
           position: relative;
+          transition: all .3s;
           :global(.dots_p){
             background-color: var(--color_primary);
           }

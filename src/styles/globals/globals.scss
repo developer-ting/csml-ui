@@ -104,6 +104,41 @@ picture {
 	}
 }
 
+.border_animation_half{
+	position: relative;
+
+	&::before, &::after{
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -1px;
+		width: 1px;
+		height: 80%;
+		background-color: #000;
+		transition: all .3s;
+		z-index: 1;
+	}
+
+	&::after{
+		right: -1px;
+		left: auto;
+	}
+
+	// &:hover{
+	// 	&::before, &::after{
+	// 		height: 0;
+	// 		transition: all .3s;
+	// 	}
+	// }
+
+	&.white_border_animation_half{
+		&::before, &::after{
+			background-color: #fff;
+		}
+	}
+}
+
 //classes for fonts
 .font_primary {
   font-family: var(--font_primary);

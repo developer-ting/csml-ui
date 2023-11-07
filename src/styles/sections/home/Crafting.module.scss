@@ -8,11 +8,15 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-
+    @media only screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
     .left_content {
       width: 48%;
       position: relative;
-
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
       p {
         opacity: 0.8;
       }
@@ -21,8 +25,14 @@
     .right_content {
       width: 47%;
       position: relative;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
       .btn_height{
         min-height: 80px;
+        @media (max-width: 767px) {
+          min-height: 60px;
+        }
       }
     }
 
@@ -32,6 +42,12 @@
       left: 53%;
       top: -50px;
       transform: translateX(-50%);
+      @media (max-width: 1380px) {
+        left: 50%;
+      }
+      @media (max-width: 767px) {
+        top: 0px;
+      }
     }
   }
   .intertainment_border{
@@ -41,7 +57,9 @@
     .intertainment_flex {
       justify-content: space-between;
       position: relative;
-  
+      @media only screen and (max-width: 767px) {
+        flex-wrap: wrap;
+      }
       .intertainment_left {
         width: 36%;
         background-color: #100e0e;
@@ -50,6 +68,15 @@
         position: relative;
         @media (max-width: 1401px) {
           padding: 20px 30px;
+        }
+        @media only screen and (max-width: 1199px) {
+          padding: 20px 20px;
+        }
+        @media only screen and (max-width: 991px) {
+          width: 44%;
+        }
+        @media only screen and (max-width: 767px) {
+          width: 100%;
         }
         .content_box{
           border-bottom: 1px solid rgba(187, 187, 187, 0.18);
@@ -82,8 +109,27 @@
   
       .intertainment_right {
         width: 63%;
+        @media only screen and (max-width: 991px) {
+          width: 55%;
+        }
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+          margin-top: 20px;
+        }
         .video_box{
           position: relative;
+          .video_img{
+            @media (max-width: 1199px) {
+              height: 66vh;
+              object-fit: cover;
+              object-position: center;
+              width: 100%;
+            }
+            @media (max-width: 991px) {
+              height: 40vh;
+            }
+            
+          }
           .video_play {
             position: absolute;
             left: 30px;

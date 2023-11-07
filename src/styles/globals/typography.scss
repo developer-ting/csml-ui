@@ -44,6 +44,15 @@
 	@media (max-width: 1401px) {
 		font-size: 120px;
 	}
+	@media only screen and (max-width: 1199px) {
+		font-size: 90px;
+	}
+	@media only screen and (max-width: 991px) {
+		font-size: 80px;
+	}
+	@media only screen and (max-width: 767px) {
+		font-size: 65px;
+	}
 }
 
 .font_heading {
@@ -63,7 +72,7 @@
 	font-weight: 400;
 	line-height: calc(34 / 20);
 	font-family: var(--font_primary);
-	@media only screen and (max-width: 992px) {
+	@media only screen and (max-width: 991px) {
 		font-size: 18px;
 	}
 }
@@ -89,11 +98,12 @@
 	font-family: var(--font_primary);
 	line-height: calc(51 / 40);
   font-weight: 700;
-	@media only screen and (max-width: 992px) {
+	
+	@media only screen and (max-width: 991px) {
 		font-size: 32px;
 	}
 	@media only screen and (max-width: 767px) {
-		font-size: 34px;
+		font-size: 30px;
 	}
 }
 
@@ -103,11 +113,14 @@
 	font-family: var(--font_primary);
 	line-height: calc(57 / 45);
   font-weight: 500;
-	@media only screen and (max-width: 992px) {
-		font-size: 32px;
+	@media (max-width: 1380px) {
+		font-size: 40px;
 	}
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 1199px) {
 		font-size: 34px;
+	}
+	@media only screen and (max-width: 991px) {
+		font-size: 32px;
 	}
 }
 
@@ -117,11 +130,11 @@
 	font-family: var(--font_primary);
 	line-height: calc(68 / 55);
   font-weight: 700;
-	@media only screen and (max-width: 992px) {
-		font-size: 34px;
-	}
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 1199px) {
 		font-size: 40px;
+	}
+	@media only screen and (max-width: 991px) {
+		font-size: 34px;
 	}
 }
 .heading_text_70 {
@@ -130,10 +143,10 @@
 	font-family: var(--font_primary);
 	line-height: calc(68 / 70);
   font-weight: 700;
-	@media only screen and (max-width: 992px) {
-		font-size: 45px;
+	@media only screen and (max-width: 1199px) {
+		font-size: 55px;
 	}
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 991px) {
 		font-size: 40px;
 	}
 }

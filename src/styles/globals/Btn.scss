@@ -14,8 +14,7 @@
 	transition: ease-out 0.3s;
 	cursor: pointer;
 	@media only screen and (max-width: 992px) {
-		padding: 10px 20px;
-		font-size: 14px;
+		padding: 10px 40px;
 	}
   &:hover {
     border-bottom: 8px solid var(--color_primary);

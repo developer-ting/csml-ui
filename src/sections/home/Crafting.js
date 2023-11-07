@@ -112,7 +112,7 @@ export default function Crafting() {
 							<LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgVideo]}>
 								<a href="https://youtu.be/75yhYazRwRs?feature=shared">
 									<div className={`${styles.video_box}`}>
-										<img className="border_12 img" src={video_img.src} />
+										<img className={`${styles.video_img} border_12 img`}src={video_img.src} />
 										<div className={`${styles.video_play}`}>
 											<img
 												src={play_icon.src}
