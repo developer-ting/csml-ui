@@ -35,10 +35,17 @@ export default function ValuedDistributors() {
 		speed: 1000,
 		responsive: [
 			{
+				breakpoint: 1199,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				},
+			},
+			{
 				breakpoint: 767,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
+					slidesToShow: 1,
+					slidesToScroll: 1,
 				},
 			},
 		],

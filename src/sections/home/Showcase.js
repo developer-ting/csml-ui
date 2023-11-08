@@ -33,12 +33,20 @@ export default function Showcase() {
 		pauseOnHover: false,
 		speed: 1000,
 		responsive: [
+      {
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+          slidesToScroll: 1,
+				},
+			},
 			{
 				breakpoint: 767,
 				settings: {
-					slidesToShow: 2,
-          slidesToScroll: 2,
+					slidesToShow: 1,
+          slidesToScroll: 1,
 				},
+
 			},
 		],
     afterChange: (i) => {

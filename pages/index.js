@@ -39,7 +39,7 @@ export default function Home() {
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
 				<Crafting />
-				{/* <ProductCatalogue />
+				<ProductCatalogue />
 				<ValuedDistributors />
 				<PartnerSuperior />
 				<ExperienceIndustry />
@@ -48,7 +48,7 @@ export default function Home() {
 					<OurClients />
 					<Showcase />
 					<EnthralledCustomers />
-				</section> */}
+				</section>
 			</main>
 			<Footer />
 		</div>

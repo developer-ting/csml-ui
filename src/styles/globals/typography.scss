@@ -82,6 +82,9 @@
   color: var(--color_black);
 	font-family: var(--font_primary);
 	line-height: calc(30 / 24);
+	@media only screen and (max-width: 991px) {
+		font-size: 20px;
+	}
 }
 
 .text_35{
@@ -90,6 +93,12 @@
 	font-family: var(--font_primary);
 	line-height: calc(44 / 35);
   font-weight: 700;
+	@media only screen and (max-width: 1199px) {
+		font-size: 30px;
+	}
+	@media only screen and (max-width: 767px) {
+		font-size: 26px;
+	}
 }
 
 .heading_text_40 {
@@ -99,6 +108,10 @@
 	line-height: calc(51 / 40);
   font-weight: 700;
 	
+	@media only screen and (max-width: 1199px) {
+		font-size: 34px;
+	}
+
 	@media only screen and (max-width: 991px) {
 		font-size: 32px;
 	}

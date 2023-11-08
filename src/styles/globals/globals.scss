@@ -398,7 +398,7 @@ picture {
 .ptb_100 {
 	padding: 100px 0;
 
-	@media screen and (min-width: 992px) and (max-width: 1200px) {
+	@media only screen and (max-width: 1199px) {
 		padding: 60px 0;
 	}
 	@media only screen and (max-width: 767px) {
@@ -450,29 +450,55 @@ picture {
     width: 8px !important;
     height: 8px !important;
     margin: 0 5px !important;
+		@media only screen and (max-width: 767px) {
+			width: 6px !important;
+    	height: 6px !important;
+			margin: 0 4px !important;
+		}
 		button {
 			width: 8px !important;
 			height: 8px !important;
+			@media only screen and (max-width: 767px) {
+				width: 6px !important;
+				height: 6px !important;
+			}
 			&::before{
 					content: ' ' !important;
 					width: 8px !important;
 					height: 8px !important;
 					background-color: #000 !important;
+					@media only screen and (max-width: 767px) {
+						width: 6px !important;
+						height: 6px !important;
+					}
 			}
 		}
 		&.slick-active{
 			width: 16px !important;
 			height: 16px !important;
 			margin: 0 5px !important;
+			@media only screen and (max-width: 767px) {
+				width: 12px !important;
+				height: 12px !important;
+				margin: 0 4px !important;
+			}
 			button {
 				width: 16px !important;
 				height: 16px !important;
+				@media only screen and (max-width: 767px) {
+					width: 12px !important;
+					height: 12px !important;
+				}
 				&::before{
 						content: ' ' !important;
 						width: 16px !important;
 						height: 16px !important;
 						background-color: #000 !important;
 						opacity: 1 !important;
+						@media only screen and (max-width: 767px) {
+							width: 12px !important;
+							height: 12px !important;
+						}
 				}
 			}
 		}

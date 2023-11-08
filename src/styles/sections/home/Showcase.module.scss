@@ -2,13 +2,26 @@
 
 .showcase_wrap {
   .section_title{
-    text-align: center;
     align-items: center;
+    @media only screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+    h2{
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 15px;
+      }
+    }
   }
   .showcase_main{
     margin: 0px -15px;
+    @media only screen and (max-width: 1199px) {
+      margin: 0px -10px;
+    }
     :global(.slick-slide){
       padding: 0px 15px;
+      @media only screen and (max-width: 1199px) {
+        padding: 0px 10px;
+      }
     }
     .showcase_box{
       .showcase_content{
