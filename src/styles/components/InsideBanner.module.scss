@@ -21,10 +21,11 @@
   .banner_content{
     // padding-left: var(--container_left_space);
     position: absolute;
-    bottom: 0px;
+    bottom: 40px;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    width: 100%;
   }
 }

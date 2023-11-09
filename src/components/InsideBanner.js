@@ -31,7 +31,7 @@ const InsideBanner = ({bannerImg, bannerTitle, mobileImg }) => {
 				)}
 			</div>
 			<div className={`${styles.banner_content}`}>
-				<h1 className="text_xxl color_white pb_60">
+				<h1 className="text_xxl color_white">
 					{/* Experience Unforgettable <br />
 					Adventures with Us{" "} */}
 					{parse(bannerTitle)}
