@@ -5,6 +5,10 @@ import Head from "next/head";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
+import CountPioneering from "@/sections/about/CountPioneering";
+import OurVision from "@/sections/about/OurVision";
+import Luminaries from "@/sections/about/Luminaries";
+import ExcellenceEntertainment from "@/sections/about/ExcellenceEntertainment";
 
 // SECTIONS //
 
@@ -15,6 +19,8 @@ import styles from "../src/styles/pages/About.module.scss";
 
 //	IMAGES	//
 import about_banner from "../public/img/about/about_banner.jpg";
+
+
 
 
 /** Home Page */
@@ -35,6 +41,11 @@ export default function About() {
 				bannerImg={about_banner.src}
 				mobileImg={about_banner.src}
 			/>
+			<CountPioneering />
+			<OurVision />
+			{/* <ExcellenceEntertainment />
+			<Luminaries /> */}
+			
 			</main>
 			<Footer />
 		</div>

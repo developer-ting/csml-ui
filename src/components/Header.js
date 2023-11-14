@@ -103,7 +103,7 @@ const Header = () => {
 								</div>
                 <ul className={`${styles.list_ul}`}>
                   <li onClick={() => setSidebarActive(!sidebarActive)}>
-                    <Link href="">
+                    <Link href="/about">
                       <a className="heading_text_40 m_r">About Us</a>
                     </Link>
                   </li>
