@@ -7,6 +7,7 @@ import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import CountPioneering from "@/sections/about/CountPioneering";
 import OurVision from "@/sections/about/OurVision";
+import AboutFeedback from "@/sections/about/AboutFeedback";
 import Luminaries from "@/sections/about/Luminaries";
 import ExcellenceEntertainment from "@/sections/about/ExcellenceEntertainment";
 
@@ -19,6 +20,7 @@ import styles from "../src/styles/pages/About.module.scss";
 
 //	IMAGES	//
 import about_banner from "../public/img/about/about_banner.jpg";
+
 
 
 
@@ -43,8 +45,9 @@ export default function About() {
 			/>
 			<CountPioneering />
 			<OurVision />
-			{/* <ExcellenceEntertainment />
-			<Luminaries /> */}
+			<AboutFeedback />
+			<ExcellenceEntertainment />
+			{/* <Luminaries /> */}
 			
 			</main>
 			<Footer />
