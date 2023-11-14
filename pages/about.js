@@ -47,7 +47,7 @@ export default function About() {
 			<OurVision />
 			<AboutFeedback />
 			<ExcellenceEntertainment />
-			{/* <Luminaries /> */}
+			<Luminaries />
 			
 			</main>
 			<Footer />
