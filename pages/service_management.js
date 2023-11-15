@@ -44,13 +44,13 @@ export default function ServiceManagement() {
 									Elevate FEC Success with Our Expert Management Contract
 								</div>
 								<div className={`${styles.info_para}`}>
-									<p className="text_sm text_400">
+									<p className="paraTxt_18 text_400">
 										Experience operational excellence with our tailored Management
 										Contract for Family Entertainment Centers (FECs. Our expert team
 										handles day-to-day operations, from technical management to enhancing
 										customer experiences, ensuring a thriving center.
 									</p>
-									<p className="text_sm text_400">
+									<p className="paraTxt_18 text_400">
 										Focus on your strategic objectives while we manage operational
 										intricacies. Our team embodies expertise, efficiency, and unwavering
 										customer-centricity to boost profitability and uphold your FEC's
@@ -63,7 +63,10 @@ export default function ServiceManagement() {
 							</div>
 						</div>
 					</div>
-					<ContactTab />
+					<ContactTab
+						TabTitle="Partner with us for a stress-free, flourishing FEC. <br/>
+                        Your success is our commitment."
+					/>
 				</section>
 			</main>
 			<Footer />
