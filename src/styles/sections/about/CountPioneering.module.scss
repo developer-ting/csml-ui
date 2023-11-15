@@ -1,0 +1,84 @@
+@import "../../helpers/helpers.scss";
+
+.count_pioneering_wrap {
+  background-color: var(--color_black);
+  background-image: url(../../../../public/img/home/dots_bg.png);
+  background-size: cover;
+  
+  .intertainment_border{
+    border: 1px solid #777777;
+    padding: 10px 10px;
+    border-radius: 12px;
+    .intertainment_flex {
+      position: relative;
+      
+      .intertainment_left {
+        background-color: #100e0e;
+        border-radius: 12px;
+        padding: 50px 0px;
+        position: relative;
+        justify-content: space-between;
+       
+        @media only screen and (max-width: 991px) {
+          width: 44%;
+        }
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+        }
+        
+        .content_box{
+          width: 35%;
+          padding-left: 60px;
+          border-right: 1px solid rgba(187, 187, 187, 0.18);
+          
+          &:nth-child(1){
+            padding-left: 0px;
+          }
+          &:last-child{
+            width: 30%;
+            border-right: none;
+          }
+          .content_flex{
+            justify-content: space-between;
+            align-items: center;
+            h2{
+              color: var(--color_secondary);
+            }
+            p{
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+  
+    }
+  }
+
+  .pioneering_main{
+    position: relative;
+    .component_one{
+      position: absolute;
+      left: 0px;
+      top: 60px;
+    }
+    .component_two{
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+    .pioneering_content{
+      padding: 100px 50px 100px;
+      h2{
+        text-align: center;
+      }
+      p{
+        color: #707070;
+        span{
+          color: var(--color_white);
+        }
+      }
+    }
+  }
+  
+  
+}

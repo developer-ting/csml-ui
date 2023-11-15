@@ -33,12 +33,20 @@ export default function Showcase() {
 		pauseOnHover: false,
 		speed: 1000,
 		responsive: [
+      {
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+          slidesToScroll: 1,
+				},
+			},
 			{
 				breakpoint: 767,
 				settings: {
-					slidesToShow: 2,
-          slidesToScroll: 2,
+					slidesToShow: 1,
+          slidesToScroll: 1,
 				},
+
 			},
 		],
     afterChange: (i) => {
@@ -81,7 +89,7 @@ export default function Showcase() {
           <Slider {...settings}>
             <div className={`${styles.showcase_box}`}>
               <div className={`${styles.showcase_content}`}>
-                <div className={`${styles.img_box}`}>
+                <div className={`${styles.img_box} border_animation`}>
                   <div className="dot_one dots_p"></div>
                   <div className="dot_two dots_p"></div>
                   <div className="dot_three dots_p"></div>
@@ -102,7 +110,7 @@ export default function Showcase() {
             </div>
             <div className={`${styles.showcase_box}`}>
               <div className={`${styles.showcase_content}`}>
-                <div className={`${styles.img_box}`}>
+                <div className={`${styles.img_box} border_animation`}>
                   <div className="dot_one dots_p"></div>
                   <div className="dot_two dots_p"></div>
                   <div className="dot_three dots_p"></div>
@@ -123,7 +131,7 @@ export default function Showcase() {
             </div>
             <div className={`${styles.showcase_box}`}>
               <div className={`${styles.showcase_content}`}>
-                <div className={`${styles.img_box}`}>
+                <div className={`${styles.img_box} border_animation`}>
                   <div className="dot_one dots_p"></div>
                   <div className="dot_two dots_p"></div>
                   <div className="dot_three dots_p"></div>
@@ -144,7 +152,7 @@ export default function Showcase() {
             </div>
             <div className={`${styles.showcase_box}`}>
               <div className={`${styles.showcase_content}`}>
-                <div className={`${styles.img_box}`}>
+                <div className={`${styles.img_box} border_animation`}>
                   <div className="dot_one dots_p"></div>
                   <div className="dot_two dots_p"></div>
                   <div className="dot_three dots_p"></div>
@@ -165,7 +173,7 @@ export default function Showcase() {
             </div>
             <div className={`${styles.showcase_box}`}>
               <div className={`${styles.showcase_content}`}>
-                <div className={`${styles.img_box}`}>
+                <div className={`${styles.img_box} border_animation`}>
                   <div className="dot_one dots_p"></div>
                   <div className="dot_two dots_p"></div>
                   <div className="dot_three dots_p"></div>

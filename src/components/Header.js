@@ -103,13 +103,12 @@ const Header = () => {
 								</div>
                 <ul className={`${styles.list_ul}`}>
                   <li onClick={() => setSidebarActive(!sidebarActive)}>
-                    <Link href="">
+                    <Link href="/about">
                       <a className="heading_text_40 m_r">About Us</a>
                     </Link>
                   </li>
                   <li className={`${styles.sub_menu_box} ${toggleState === 1 && styles.drop_down_active}`}
-											onMouseEnter={() => toggleTab(1)}
-											onMouseLeave={() => toggleTab(1)}
+											onClick={() => toggleTab(1)}
 									>
                     <div className={`${styles.sub_menu_flex} d_f`}>
 											<a className="heading_text_40 m_r">Product portfolio</a>
@@ -140,8 +139,7 @@ const Header = () => {
                   
 
 									<li className={`${styles.sub_menu_box} ${toggleState === 2 && styles.drop_down_active}`}
-											onMouseEnter={() => toggleTab(2)}
-											onMouseLeave={() => toggleTab(2)}
+											onClick={() => toggleTab(2)}
 									>
                     <div className={`${styles.sub_menu_flex} d_f`}>
 											<a className="heading_text_40 m_r">Services</a>

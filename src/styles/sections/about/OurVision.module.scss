@@ -1,0 +1,22 @@
+@import "../../helpers/helpers.scss";
+
+.our_vision_wrap {
+  background-color: var(--color_white);
+  .our_vision_flex{
+    align-items: center;
+    justify-content: center;
+    .our_vision_box{
+      width: 50%;
+      .our_vision_content{
+        width: 66%;
+        margin: 0 auto;
+        text-align: center;
+        @media only screen and (max-width: 1380px) {
+          width: 80%;
+        }
+      }
+    }
+  }
+  
+  
+}

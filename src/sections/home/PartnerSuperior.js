@@ -53,7 +53,7 @@ export default function PartnerSuperior() {
 							<img className="border_8" src={partner_img.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 color_white text_500 pb_20">
+									<h3 className="text_24 color_white text_500 ">
 										Consultancy Services
 									</h3>
 									<a href="#" rel="noreferrer">
@@ -80,8 +80,8 @@ export default function PartnerSuperior() {
 							<img className="border_8" src={partner_img_two.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 color_white text_500 pb_20">
-										Management Contract - <br className="hidden-xs" />
+									<h3 className="text_24 color_white text_500">
+										Management Contract - 
 										Operational Excellence
 									</h3>
 									<a href="#" rel="noreferrer">
