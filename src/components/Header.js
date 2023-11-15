@@ -11,6 +11,7 @@ import styles from "../styles/components/Header.module.scss";
 
 // IMAGES //
 import csml_logo from "../../public/img/csml_logo.svg";
+import mobile_logo from "../../public/img/mobile_logo.png";
 import close from "../../public/img/close.svg";
 import menu_down_aarow from "../../public/img/menu_down_aarow.svg";
 
@@ -58,7 +59,7 @@ const Header = () => {
 									alt="csml_logo"
 								/>
 								<img
-									src={csml_logo.src}
+									src={mobile_logo.src}
 									className={`${styles.scrolled_logo}`}
 									alt="scrolled_logo"
 								/>
