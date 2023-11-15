@@ -12,9 +12,8 @@ import styles from "../../styles/sections/career/CareerSuccess.module.scss";
 
 // IMAGES //
 import success_img from "../../../public/img/career/success_img.jpg";
-import tyna from "../../../public/img/about/tyna.jpg";
-import sanjeev from "../../../public/img/about/sanjeev.jpg";
-import linkdin from "../../../public/img/linkdin.svg";
+import imfactful_img from "../../../public/img/career/imfactful_img.jpg";
+import growth from "../../../public/img/career/growth.jpg";
 
 /** Home Hero Section */
 export default function CareerSuccess() {
@@ -35,7 +34,7 @@ export default function CareerSuccess() {
 						<div className={`${styles.luminaries_content}`}>
 							<img className="border_8" src={success_img.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
-								<div className={`${styles.desc_title} f_j`}>
+								<div className={`${styles.desc_title}`}>
 									<h3 className="text_24 text_700">
                     Innovative Environment
 									</h3>
@@ -51,9 +50,9 @@ export default function CareerSuccess() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={success_img.src} alt="img" />
+							<img className="border_8" src={imfactful_img.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
-								<div className={`${styles.desc_title} f_j`}>
+								<div className={`${styles.desc_title}`}>
 									<h3 className="text_24 text_700">
                     Impactful Work
 									</h3>
@@ -69,9 +68,9 @@ export default function CareerSuccess() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={success_img.src} alt="img" />
+							<img className="border_8" src={growth.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
-								<div className={`${styles.desc_title} f_j`}>
+								<div className={`${styles.desc_title}`}>
 									<h3 className="text_24 text_700">
                     Continuous Growth
 									</h3>

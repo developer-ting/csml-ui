@@ -7,6 +7,7 @@ import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import JoinPioneering from "@/sections/career/JoinPioneering";
 import CareerSuccess from "@/sections/career/CareerSuccess";
+import LifeCsml from "@/sections/career/LifeCsml";
 
 // SECTIONS //
 
@@ -18,8 +19,6 @@ import styles from "../src/styles/pages/Career.module.scss";
 //	IMAGES	//
 import career_banner from "../public/img/career/career_banner.jpg";
 import Career_bnner_mobile from "../public/img/career/Career_bnner_mobile.jpg";
-
-
 
 
 
@@ -42,6 +41,7 @@ export default function Career() {
 			/>
       <JoinPioneering />
 			<CareerSuccess />
+      <LifeCsml />
 			
 			</main>
 			<Footer />

@@ -24,7 +24,7 @@ import arrow from "../../../public/img/arrow.svg";
 /** Home Hero Section */
 export default function Showcase() {
   var settings = {
-		dots: true,
+		dots: false,
 		arrows: false,
 		infinite: true,
 		slidesToShow: 3,
