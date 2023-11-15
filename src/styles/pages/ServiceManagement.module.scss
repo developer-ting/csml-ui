@@ -1,0 +1,44 @@
+@import "../helpers/helpers.scss";
+
+.ServicesManagementPage {
+  background-color: var(--color_black);
+  background-image: url(../../../public/img/dots_strip.png);
+  background-size: contain;
+  background-repeat: repeat;
+  .service_sec1{
+    .service_flex{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 30px;
+      }
+      .info_bx{
+        width: 50%;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        :global(.heading_text_55){
+            color: var(--color_white);
+        }
+        .info_para{
+            color: var(--color_white);
+            line-height: 1.8;
+        }
+      }
+      .img_bx{
+        width: 42%;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        img{
+        border-radius: 7px;
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
