@@ -14,12 +14,12 @@
   }
 
   .showcase_main{
-    margin: 0px -15px;
+    margin: 0px -10px;
     @media only screen and (max-width: 1199px) {
       margin: 0px -10px;
     }
     :global(.slick-slide){
-      padding: 0px 15px;
+      padding: 0px 10px;
       @media only screen and (max-width: 1199px) {
         padding: 0px 10px;
       }
