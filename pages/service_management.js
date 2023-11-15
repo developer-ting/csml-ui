@@ -36,7 +36,7 @@ export default function ServiceManagement() {
 					bannerImg={management_banner.src}
 					mobileImg={management_banner.src}
 				/>
-				<section className={`${styles.service_sec1} bg_black`}>
+				<section className={`${styles.service_sec1}`}>
 					<div className="container">
 						<div className={`${styles.service_flex} pt_80`}>
 							<div className={`${styles.info_bx}`}>

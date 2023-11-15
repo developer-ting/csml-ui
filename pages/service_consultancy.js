@@ -40,7 +40,7 @@ export default function Services() {
 					bannerImg={services_banner.src}
 					mobileImg={services_banner.src}
 				/>
-				<section className={`${styles.service_sec1} bg_black`}>
+				<section className={`${styles.service_sec1}`}>
 					<div className="container">
 						<div className={`${styles.service_flex} ptb_80`}>
 							<div className={`${styles.info_bx}`}>
