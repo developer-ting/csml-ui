@@ -99,8 +99,7 @@
             width: 50%;
             padding: 10px;
     border-radius: 12px;
-    border-top: 1px solid #777777;
-    border-bottom: 1px solid #777777;
+    border: 1px solid #777;
     @media (max-width: 767px) {
       width: 100%;
     }
@@ -118,5 +117,11 @@
             }
         }
     }
+  }
+  :global(.border_animation::after){
+    background-color: #fff;
+  }
+  :global(.border_animation::before){
+    background-color: #fff;
   }
 }
