@@ -68,9 +68,12 @@ const Header = () => {
 						<div className={`${styles.header_list} ${styles.header_list_mobile}`}>
 							<div className={styles.menu_title}>
 								<div className={styles.title}> 
-									<a href="#" className="btn_two color_white">
-										Contact us
-									</a>
+									<Link href="/contact">
+										<a href="/contact" className="btn_two color_white">
+											Contact us
+										</a>
+									</Link>
+									
 								</div>
 								<div
 									onClick={() => setSidebarActive(!sidebarActive)}
@@ -152,12 +155,12 @@ const Header = () => {
 										</div>
 										<div className={`${styles.sub_menu_list}`}>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
-												<Link href="">
+												<Link href="/service-consultancy">
 													<a className="text_reg text_500">Consultancy Services</a>
 												</Link>
 											</p>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
-												<Link href="">
+												<Link href="/service-management">
 													<a className="text_reg text_500">Management Contract </a>
 												</Link>
 											</p>
@@ -168,7 +171,7 @@ const Header = () => {
 								<div className={`${styles.bottom_list}`}>
 									<ul>
 										<li onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="">
+											<Link href="/career">
 												<a className="text_reg text_500">Careers</a>
 											</Link>
 										</li>
@@ -180,7 +183,7 @@ const Header = () => {
 										</li>
 
 										<li onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="">
+											<Link href="/contact">
 												<a className="text_reg text_500">Contact</a>
 											</Link>
 										</li>

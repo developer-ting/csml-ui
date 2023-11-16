@@ -33,40 +33,40 @@
       flex-direction: column;
       display: flex;
       justify-content: space-between;
-      transition: all 1s ease;
+      transition: all 0.5s ease;
       @media only screen and (max-width: 767px) {
         min-height: 300px;
       }
       .height_box{
         height: 100%;
         width: 100%;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
       }
       p{
         opacity: 0.7;
         font-size: 16px;
         line-height: 24px;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
       }
       h3{
         // padding-bottom: 150px;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
         line-height: 25px;
       }
       &:hover{
         background-color: var(--color_secondary);
-        transition: all 1s ease;
+        transition: all 0.5s ease;
         
         h3{
           transform: translateY(60px);
-          transition: all 1s ease;
+          transition: all 0.5s ease;
           @media only screen and (max-width: 767px) {
             transform: translateY(40px);
           }
         }
         p{
           transform: translateY(-70px);
-          transition: all 1s ease;
+          transition: all 0.5s ease;
           @media only screen and (max-width: 767px) {
             transform: translateY(-40px);
           }

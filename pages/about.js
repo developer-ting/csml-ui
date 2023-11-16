@@ -20,9 +20,7 @@ import styles from "../src/styles/pages/About.module.scss";
 
 //	IMAGES	//
 import about_banner from "../public/img/about/about_banner.jpg";
-
-
-
+import about_banner_mobile from "../public/img/about/about_banner_mobile.jpg";
 
 
 /** Home Page */
@@ -41,7 +39,7 @@ export default function About() {
 				bannerTitle="Over 2 decades of unlocking
         <br className='hidden-xs'> entertainment in every space"
 				bannerImg={about_banner.src}
-				mobileImg={about_banner.src}
+				mobileImg={about_banner_mobile.src}
 			/>
 			<CountPioneering />
 			<OurVision />
