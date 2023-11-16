@@ -1,0 +1,106 @@
+@import "../../helpers/helpers.scss";
+
+.csml_experience_wrap {
+  .csml_experience_title{
+    text-align: center;
+  }
+  .enthralled_box{
+    background-color: var(--color_white);
+    padding: 60px 60px;
+    border-radius: 30px;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    @media only screen and (max-width: 1199px) {
+      align-items: flex-start;
+    }
+    @media only screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      padding: 30px 15px;
+    }
+    .enthralled_quate_top{
+      position: absolute;
+      left: 50px;
+      top: -40px;
+      @media only screen and (max-width: 1199px) {
+        width: 90px;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 60px;
+        top: -20px;
+        left: 15px;
+      }
+    }
+    .enthralled_quate_bottom{
+      position: absolute;
+      right: 70px;
+      bottom: -30px;
+      @media only screen and (max-width: 1199px) {
+        width: 90px;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 60px;
+        bottom: -20px;
+        right: 25px;
+      }
+    }
+    .enthralled_content{
+      width: 58%;
+      padding-left: 20px;
+      @media only screen and (max-width: 1199px) {
+        padding-left: 0px;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+      p{
+        font-size: 18px;
+      }
+      .profile_flex{
+        align-items: center;
+        @media only screen and (max-width: 1199px) {
+          padding-top: 40px;
+        }
+        .profile_img{
+          width: 17%;
+          @media only screen and (max-width: 1199px) {
+            width: 25%;
+          }
+          @media only screen and (max-width: 991px) {
+            width: 32%;
+          }
+          img{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .profile_content{
+          width: 80%;
+          @media only screen and (max-width: 1199px) {
+            width: 75%;
+          }
+          @media only screen and (max-width: 991px) {
+            width: 68%;
+          }
+          
+          h4{
+            color: var(--color_primary);
+          }
+        }
+      }
+    }
+    .enthralled_img{
+      width: 36%;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+      img{
+        border-radius: 16px;
+      }
+    }
+  }
+}

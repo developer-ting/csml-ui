@@ -19,6 +19,9 @@ import styles from "../src/styles/pages/Career.module.scss";
 //	IMAGES	//
 import career_banner from "../public/img/career/career_banner.jpg";
 import Career_bnner_mobile from "../public/img/career/Career_bnner_mobile.jpg";
+import OurGuidingValues from "@/sections/career/OurGuidingValues";
+import CsmlExperience from "@/sections/career/CsmlExperience";
+import HowToApply from "@/sections/career/HowToApply";
 
 
 
@@ -42,6 +45,9 @@ export default function Career() {
       <JoinPioneering />
 			<CareerSuccess />
       <LifeCsml />
+			<OurGuidingValues />
+			{/* <CsmlExperience />
+			<HowToApply /> */}
 			
 			</main>
 			<Footer />

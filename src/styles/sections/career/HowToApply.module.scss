@@ -1,0 +1,46 @@
+@import "../../helpers/helpers.scss";
+
+.how_apply_wrap {
+  background-color: var(--color_white);
+  .csml_experience_title{
+    text-align: center;
+  }
+  .service_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .info_bx{
+      width: 50%;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      h2{
+        opacity: 0.8;
+      }
+      .btn_box{
+        height: 80px;
+      }
+    }
+    .img_bx{
+      width: 39%;
+      border: 1px solid #777777;
+      border-radius: 12px;
+      padding: 5px 5px;
+      position: relative;
+      transition: all .3s;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      img{
+      border-radius: 7px;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
