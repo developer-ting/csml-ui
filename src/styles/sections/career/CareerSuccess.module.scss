@@ -40,8 +40,8 @@
           transition: 0.3s all;
           border-radius: 8px;
           overflow: hidden;
-          @media only screen and (max-width: 991px) {
-            padding: 25px 15px;
+          @media only screen and (max-width: 1199px) {
+            padding: 30px 15px;
           }
           .desc_title{
             h3{
