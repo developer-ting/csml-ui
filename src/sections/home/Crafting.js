@@ -61,7 +61,7 @@ export default function Crafting() {
 				</div>
 				<div className="container box_left_space">
 					<div className={`${styles.crafting_flex} d_f`}>
-						<div className={`${styles.left_content}`}>
+						<div className={`${styles.left_content} toLeft`} data-scroll>
 							<h2 className="text_xxxxxI color_white pb_40 crafting_heading">
 								Crafting
 							</h2>
@@ -72,7 +72,7 @@ export default function Crafting() {
 								SAARC.{" "}
 							</p>
 						</div>
-						<div className={`${styles.right_content}`}>
+						<div className={`${styles.right_content} toRight`} data-scroll>
 							<h2 className="heading_text_45 color_white pb_60">
 								world-class entertainment <br />
 								hubs for over 50 years
@@ -90,7 +90,7 @@ export default function Crafting() {
 			</section>
 
 			<div className="container pt_100">
-				<div className={`${styles.intertainment_border} border_animation`}>
+				<div className={`${styles.intertainment_border} border_animation toTop`} data-scroll>
 					<div className={`${styles.intertainment_flex} d_f`}>
 						<div className={`${styles.intertainment_left}`}>
 							<div className="dot_one dots_p"></div>

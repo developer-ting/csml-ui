@@ -37,10 +37,10 @@ export default function EnthralledCustomers() {
 	return (
     <section className={`${styles.enthralled_customers_wrap} pb_100`}>
       <div className="container">
-        <div className={`${styles.section_title}`}>
+        <div className={`${styles.section_title} toTop`} data-scroll>
           <h2 className="heading_text_55 color_white pb_20">Enthralled customers</h2>
         </div>
-        <div className={`${styles.enthralled_main}`}>
+        <div className={`${styles.enthralled_main} toTop`} data-scroll>
           <Slider {...settings}> 
             <div className={`${styles.enthralled_item}`}>
               <div className={`${styles.enthralled_box} f_j`}>

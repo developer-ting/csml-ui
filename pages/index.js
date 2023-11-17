@@ -1,5 +1,6 @@
 // MODULES //
-
+import ScrollOut from "scroll-out";
+import { useState, useEffect, useRef } from "react";
 // COMPONENTS //
 import Head from "next/head";
 import Footer from "../src/components/Footer";
@@ -27,6 +28,11 @@ import styles from "../src/styles/pages/Home.module.scss";
 
 /** Home Page */
 export default function Home() {
+	useEffect(() => {
+    ScrollOut({
+      once: true
+    });
+  }, []);
 	return (
 		<div>
 			<Head>

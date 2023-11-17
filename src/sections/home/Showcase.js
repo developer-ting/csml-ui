@@ -75,7 +75,7 @@ export default function Showcase() {
 	return (
     <section className={`${styles.showcase_wrap} pb_100`}>
       <div className="container">
-        <div className={`${styles.section_title} pb_30 f_j`}>
+        <div className={`${styles.section_title} pb_30 f_j toTop`} data-scroll>
           <h2 className="heading_text_55 color_white">A showcase of success </h2>
           <div className={`${styles.btn_height}`}>
             <a href="#" rel="noreferrer">
@@ -87,7 +87,7 @@ export default function Showcase() {
             </a>
           </div>
         </div>
-        <div className={`${styles.showcase_main}`}>
+        <div className={`${styles.showcase_main} toTop`} data-scroll>
           <Slider {...settings}>
             <div className={`${styles.showcase_box}`}>
               <div className={`${styles.showcase_content}`}>

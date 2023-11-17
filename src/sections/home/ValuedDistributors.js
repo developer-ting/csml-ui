@@ -64,12 +64,12 @@ export default function ValuedDistributors() {
 	return (
 		<section className={`${styles.valued_distributors_wrap} pb_100`}>
 			<div className="container">
-				<div className={`${styles.section_title}`}>
+				<div className={`${styles.section_title} toTop`} data-scroll>
 					<h2 className="heading_text_40 pb_20">Our valued distributors </h2>
 				</div>
 				<div
-					className={`${styles.valued_distributors_border} border_animation white_border_animation`}
-				>
+					className={`${styles.valued_distributors_border} border_animation white_border_animation toTop`}
+					data-scroll>
 					<div className="dot_one dots_p"></div>
 					<div className="dot_two dots_p"></div>
 					<div className="dot_three dots_p"></div>

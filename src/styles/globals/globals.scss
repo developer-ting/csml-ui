@@ -522,3 +522,69 @@ picture {
 	background: #FF0000;
 	border-radius: 50px;
 }
+
+
+// scroll out css
+.toTop {
+  &[data-scroll] {
+    transition: all 0.7s ease-out;
+  }
+
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.toBottom {
+  &[data-scroll] {
+    transition: all 0.7s ease-out;
+  }
+
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.toLeft {
+  &[data-scroll] {
+    transition: all 0.7s ease-out;
+  }
+
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+
+.toRight {
+  &[data-scroll] {
+    transition: all 0.7s ease-out;
+  }
+
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}

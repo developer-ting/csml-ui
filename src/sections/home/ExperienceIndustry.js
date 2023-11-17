@@ -16,12 +16,12 @@ export default function ExperienceIndustry() {
 	return (
 		<section className={`${styles.experience_industry_wrap} ptb_100`}>
 			<div className="container">
-				<div className={`${styles.section_title} pb_40`}>
+				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 pb_20">
 						Experience the industry's first and best
 					</h2>
 				</div>
-				<div className={`${styles.partner_superior_flex} f_j`}>
+				<div className={`${styles.partner_superior_flex} f_j toTop`} data-scroll>
 					<div
 						className={`${styles.partner_superior_box} border_animation white_border_animation`}
 					>
@@ -75,7 +75,7 @@ export default function ExperienceIndustry() {
 						</p>
 					</div>
 				</div>
-				<div className={`${styles.btn_box} pt_40`}>
+				<div className={`${styles.btn_box} pt_40 toTop`} data-scroll>
 					<a href="#" rel="noreferrer">
 						<span className="span_btn white_btn">
 							<button className="btn_project_default">Learn More</button>

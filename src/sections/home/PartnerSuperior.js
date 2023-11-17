@@ -35,7 +35,7 @@ export default function PartnerSuperior() {
 	return (
 		<section className={`${styles.partner_superior_wrap} ptb_100`}>
 			<div className="container">
-				<div className={`${styles.section_title} pb_40`}>
+				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 color_white pb_20">
 						Your partner in superior <br className="hidden-xs" />
 						amusement experience{" "}
@@ -48,7 +48,7 @@ export default function PartnerSuperior() {
 				</div>
 
 				<div className={`${styles.partner_superior_flex} f_j`}>
-					<div className={`${styles.partner_superior_box} border_animation`}>
+					<div className={`${styles.partner_superior_box} border_animation toTop`} data-scroll>
 						<div className={`${styles.partner_superior_content}`}>
 							<img className="border_8" src={partner_img.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
@@ -75,7 +75,7 @@ export default function PartnerSuperior() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.partner_superior_box} border_animation`}>
+					<div className={`${styles.partner_superior_box} border_animation toTop`} data-scroll>
 						<div className={`${styles.partner_superior_content}`}>
 							<img className="border_8" src={partner_img_two.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
@@ -105,7 +105,7 @@ export default function PartnerSuperior() {
 					</div>
 				</div>
 
-				<div className={`${styles.yellow_main} pt_100`}>
+				<div className={`${styles.yellow_main} pt_100 toTop`} data-scroll>
 					<Slider {...settings}>
 						<div className={`${styles.yellow_item}`}>
 							<div className={`${styles.yellow_box} f_j`}>

@@ -19,6 +19,7 @@
 		"react-slick": "^0.29.0",
 		"react-tabs": "^6.0.2",
 		"sass": "^1.54.9",
+		"scroll-out": "^2.2.12",
 		"slick-carousel": "^1.8.1"
 	},
 	"devDependencies": {
