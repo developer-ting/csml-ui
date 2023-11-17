@@ -15,6 +15,7 @@ import ExperienceIndustry from "@/sections/home/ExperienceIndustry";
 import OurClients from "@/sections/home/OurClients";
 import Showcase from "@/sections/home/Showcase";
 import EnthralledCustomers from "@/sections/home/EnthralledCustomers";
+import Loader from "@/components/Loader";
 
 // SECTIONS //
 
@@ -22,8 +23,6 @@ import EnthralledCustomers from "@/sections/home/EnthralledCustomers";
 
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
-
-
 
 
 
@@ -43,6 +42,7 @@ export default function Home() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
 				<Crafting />

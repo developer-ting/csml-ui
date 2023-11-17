@@ -8,6 +8,7 @@ import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import ContactTab from "@/components/ContactTab";
+import Loader from "@/components/Loader";
 // SECTIONS //
 
 // PLUGINS //
@@ -40,6 +41,7 @@ export default function ServiceConsultancy() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.ServicesConsultancyPage}`}>
 				<InsideBanner
 					bannerTitle="Services Aligned with your FEC Success"

@@ -594,3 +594,52 @@ picture {
     transform: translateX(100px);
   }
 }
+
+// loader css start here
+.loader_overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  padding: 5px 15px;
+  transition: 2s ease;
+	background-color: var(--color_black);
+  background-image: url(../../../public/img/dots_bg.png);
+  background-size: cover;
+  .container {
+    height: 100%;
+  }
+  img {
+    max-width: 207px;
+    width: 207px;
+    position: absolute;
+    top: calc(50%);
+    left: calc(50% - 103px);
+    transition: 2s ease;
+		@media screen and (max-width: 767px) {
+      max-width: 160px;
+    	width: 160px;
+			top: calc(50% - 80px);
+    	left: calc(50% - 80px);
+    }
+  }
+  &.start {
+    height: 106px;
+    // @media screen and (max-width: 991px) {
+    //   height: 68px;
+    // }
+    img {
+      top: 9px;
+      left: 15px;
+      // @media screen and (max-width: 767px) {
+      //   top: 50px;
+      // }
+      @media screen and (max-width: 767px) {
+        top: 16px;
+        left: 0px;
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ import OurVision from "@/sections/about/OurVision";
 import AboutFeedback from "@/sections/about/AboutFeedback";
 import Luminaries from "@/sections/about/Luminaries";
 import ExcellenceEntertainment from "@/sections/about/ExcellenceEntertainment";
+import Loader from "@/components/Loader";
 
 // SECTIONS //
 
@@ -41,6 +42,7 @@ export default function About() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.about_page}`}>
       <InsideBanner
 				bannerTitle="Over 2 decades of unlocking

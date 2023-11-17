@@ -20,7 +20,9 @@ export default function HomeBanner() {
     <section className={styles.home_banner_wrap}>
       <div className={`${styles.banner_img}`}>
         <img className="width_100" src={home_banner.src} />
-        
+        {/* <video autoPlay muted loop className={styles.video_box}>         
+          <source src="./img/home/movie.mp4" type="video/mp4"/>       
+        </video> */}
       </div>
       <div className={`${styles.banner_content}`}>
         <h1 className="heading_text_70 color_white pb_40">The architects of amusement </h1>

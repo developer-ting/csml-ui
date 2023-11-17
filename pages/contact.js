@@ -9,6 +9,8 @@ import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import ContactForm from "@/components/Form";
+import Loader from "@/components/Loader";
+
 // SECTIONS //
 
 // PLUGINS //
@@ -72,6 +74,7 @@ export default function Contact() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.ContactPage}`}>
 			<InsideBanner
 				bannerTitle="Experience Unforgettable <br className='hidden-xs'>

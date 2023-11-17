@@ -10,6 +10,7 @@ import InsideBanner from "@/components/InsideBanner";
 import JoinPioneering from "@/sections/career/JoinPioneering";
 import CareerSuccess from "@/sections/career/CareerSuccess";
 import LifeCsml from "@/sections/career/LifeCsml";
+import Loader from "@/components/Loader";
 
 // SECTIONS //
 
@@ -43,6 +44,7 @@ export default function Career() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.career_page}`}>
       <InsideBanner
 				bannerTitle="Start Your Adventure with CSML"

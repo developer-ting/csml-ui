@@ -8,6 +8,7 @@ import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import ContactTab from "@/components/ContactTab";
+import Loader from "@/components/Loader";
 // SECTIONS //
 
 // PLUGINS //
@@ -35,6 +36,7 @@ export default function ServiceManagement() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.ServicesManagementPage}`}>
 				<InsideBanner
 					bannerTitle="CSML’s Commitment to Efficiency, <br/>

@@ -57,7 +57,7 @@ export default function Crafting() {
 	return (
 		<section className={`${styles.crafting_wrap} ptb_100 crafting_wrap`}>
 			<section className={`${styles.crafting_section} crafting_section`}>
-				<div className={`${styles.cricle_box} cricle_box`}>
+				<div className={`${styles.cricle_box} cricle_box hidden-xs`}>
 					<img className="" src={cricle_img.src} />
 				</div>
 				<div className="container box_left_space">
