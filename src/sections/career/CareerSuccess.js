@@ -20,13 +20,13 @@ export default function CareerSuccess() {
 	return (
 		<section className={`${styles.luminaries_wrap} ptb_100`}>
 			<div className="container">
-				<div className={`${styles.section_title} pb_40`}>
+				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 pb_20">
             Set Sail for Career Success with Us
 					</h2>
 				</div>
 
-				<div className={`${styles.luminaries_flex}`}>
+				<div className={`${styles.luminaries_flex} toTop`} data-scroll>
 					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>

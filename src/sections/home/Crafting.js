@@ -29,6 +29,7 @@ import play_icon from "../../../public/img/play_icon.svg";
 
 /** Home Hero Section */
 export default function Crafting() {
+	
 	useEffect(() => {
 		setTimeout(() => {
 			gsap.registerPlugin(ScrollTrigger);
@@ -90,9 +91,9 @@ export default function Crafting() {
 			</section>
 
 			<div className="container pt_100">
-				<div className={`${styles.intertainment_border} border_animation toTop`} data-scroll>
+				<div className={`${styles.intertainment_border} border_animation`}>
 					<div className={`${styles.intertainment_flex} d_f`}>
-						<div className={`${styles.intertainment_left}`}>
+						<div className={`${styles.intertainment_left} toTop`} data-scroll>
 							<div className="dot_one dots_p"></div>
 							<div className="dot_two dots_p"></div>
 							<div className="dot_three dots_p"></div>
@@ -128,7 +129,7 @@ export default function Crafting() {
 								</div>
 							</div>
 						</div>
-						<div className={`${styles.intertainment_right}`}>
+						<div className={`${styles.intertainment_right} toLeft`} data-scroll>
 							{/* <div className={`${styles.video_box}`}>
                 <img className="border_12 img" src={video_img.src} />
                 <div className={`${styles.video_play}`}>

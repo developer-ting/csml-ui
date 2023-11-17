@@ -69,10 +69,10 @@ export default function OurGuidingValues() {
 		<section className={`${styles.our_guiding_values_wrap} ptb_100`}>
 			
       <div className={`${styles.our_guiding_values_main}`}>
-        <div className={`${styles.life_csml_content}`}>
+        <div className={`${styles.life_csml_content} toTop`} data-scroll>
           <h2 className="heading_text_55 color_white pb_40">Our Guiding Values</h2>
         </div>
-        <div className={`${styles.partner_superior_flex}`}>
+        <div className={`${styles.partner_superior_flex} toTop`} data-scroll>
           <Slider {...settings}>
             <div className={`${styles.partner_superior_box} border_animation`}>
               <div className={`${styles.partner_superior_content}`}>

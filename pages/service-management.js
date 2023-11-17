@@ -1,5 +1,6 @@
 // MODULES //
 import { useEffect, useRef, useState } from "react";
+import ScrollOut from "scroll-out";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -20,6 +21,11 @@ import Sec1_img from "../public/img/services_management/mangement_img.jpg";
 
 /** Services Page */
 export default function ServiceManagement() {
+	useEffect(() => {
+    ScrollOut({
+      once: true
+    });
+  }, []);
 	return (
 		<div>
 			<Head>
@@ -40,10 +46,10 @@ export default function ServiceManagement() {
 					<div className="container">
 						<div className={`${styles.service_flex} pt_80`}>
 							<div className={`${styles.info_bx}`}>
-								<div className={`${styles.info_head} heading_text_55 pb_30`}>
+								<div className={`${styles.info_head} heading_text_55 pb_30 toTop`} data-scroll>
 									Elevate FEC Success with Our Expert Management Contract
 								</div>
-								<div className={`${styles.info_para}`}>
+								<div className={`${styles.info_para} toTop`} data-scroll>
 									<p className="paraTxt_18 text_400">
 										Experience operational excellence with our tailored Management
 										Contract for Family Entertainment Centers (FECs. Our expert team
@@ -58,7 +64,7 @@ export default function ServiceManagement() {
 									</p>
 								</div>
 							</div>
-							<div className={`${styles.img_bx}`}>
+							<div className={`${styles.img_bx} toTop`} data-scroll>
 								<img className="img" src={Sec1_img.src} />
 							</div>
 						</div>

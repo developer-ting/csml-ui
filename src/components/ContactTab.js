@@ -1,4 +1,6 @@
 // MODULES //
+import { useEffect, useRef, useState } from "react";
+import ScrollOut from "scroll-out";
 
 // COMPONENTS //
 
@@ -16,11 +18,16 @@ import cricle_arrow from "../../public/img/cricle_arrow.svg";
 
 /** Home Hero Section */
 const ContactTab = ({ TabTitle }) => {
+	useEffect(() => {
+    ScrollOut({
+      once: true
+    });
+  }, []);
 	// const parse = require("html-react-parser");
 	return (
 		<section className={`${styles.contact_tab} ptb_80`}>
 			<div className="container">
-				<div className={`${styles.contact_main_bx}  border_animation`}>
+				<div className={`${styles.contact_main_bx}  border_animation toTop`} data-scroll>
 					<div className={`${styles.contactinside}`}>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>

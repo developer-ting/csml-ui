@@ -24,11 +24,11 @@ export default function CsmlExperience() {
 		<section className={`${styles.csml_experience_wrap} pb_100`}>
 			
       <div className="container">
-        <div className={`${styles.csml_experience_title}`}>
+        <div className={`${styles.csml_experience_title} toTop`} data-scroll>
           <h2 className="heading_text_55 color_white pb_40">The CSML Experience</h2>
         </div>
         <div className={`${styles.enthralled_item}`}>
-          <div className={`${styles.enthralled_box} f_j`}>
+          <div className={`${styles.enthralled_box} f_j toTop`} data-scroll>
             <div className={`${styles.enthralled_quate_top}`}>
               <img className="" src={quate.src} alt="img" />
             </div>

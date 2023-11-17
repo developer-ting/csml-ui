@@ -1,4 +1,6 @@
 // MODULES //
+import ScrollOut from "scroll-out";
+import { useState, useEffect, useRef } from "react";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -27,6 +29,11 @@ import HowToApply from "@/sections/career/HowToApply";
 
 /** Home Page */
 export default function Career() {
+	useEffect(() => {
+    ScrollOut({
+      once: true
+    });
+  }, []);
 	return (
 		<div>
 			<Head>

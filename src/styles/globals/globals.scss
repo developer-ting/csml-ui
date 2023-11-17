@@ -450,6 +450,7 @@ picture {
     width: 8px !important;
     height: 8px !important;
     margin: 0 5px !important;
+		transition: all 0.3s;
 		@media only screen and (max-width: 767px) {
 			width: 6px !important;
     	height: 6px !important;
@@ -458,6 +459,7 @@ picture {
 		button {
 			width: 8px !important;
 			height: 8px !important;
+			transition: all 0.3s;
 			@media only screen and (max-width: 767px) {
 				width: 6px !important;
 				height: 6px !important;
@@ -468,6 +470,7 @@ picture {
 					height: 8px !important;
 					background-color: #000 !important;
 					opacity: 0.5 !important;
+					transition: all 0.3s;
 					@media only screen and (max-width: 767px) {
 						width: 6px !important;
 						height: 6px !important;
@@ -478,6 +481,7 @@ picture {
 			width: 16px !important;
 			height: 16px !important;
 			margin: 0 5px !important;
+			transition: all 0.3s;
 			@media only screen and (max-width: 767px) {
 				width: 12px !important;
 				height: 12px !important;
@@ -486,6 +490,7 @@ picture {
 			button {
 				width: 16px !important;
 				height: 16px !important;
+				transition: all 0.3s;
 				@media only screen and (max-width: 767px) {
 					width: 12px !important;
 					height: 12px !important;
@@ -496,6 +501,7 @@ picture {
 						height: 16px !important;
 						background-color: #000 !important;
 						opacity: 1 !important;
+						transition: all 0.3s;
 						@media only screen and (max-width: 767px) {
 							width: 12px !important;
 							height: 12px !important;

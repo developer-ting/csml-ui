@@ -1,6 +1,7 @@
 // MODULES //
 import ScrollOut from "scroll-out";
 import { useState, useEffect, useRef } from "react";
+
 // COMPONENTS //
 import Head from "next/head";
 import Footer from "../src/components/Footer";

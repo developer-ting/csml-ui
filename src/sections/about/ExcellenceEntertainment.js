@@ -23,14 +23,14 @@ export default function ExcellenceEntertainment() {
 	return (
 		<section className={`${styles.excellence_entertainment_wrap} ptb_100`}>
 			<div className="container">
-				<div className={`${styles.section_title} pb_40`}>
+				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 color_white pb_20">
 					Excellence in entertainment, <br className="hidden-xs" />across sectors
 					</h2>
 				</div>
 
 				<div className={`${styles.excellence_entertainment_flex} border_animation`}>
-					<div className={`${styles.excellence_entertainment_box} f_j`}>
+					<div className={`${styles.excellence_entertainment_box} f_j toTop`} data-scroll>
 						<div className={`${styles.excellence_entertainment_content} `}>
 							<img className="border_8" src={family.src} alt="img" />
 						</div>
@@ -50,7 +50,7 @@ export default function ExcellenceEntertainment() {
 							</p>
 						</div>
 					</div>
-					<div className={`${styles.excellence_entertainment_box} f_j`}>
+					<div className={`${styles.excellence_entertainment_box} f_j toTop`} data-scroll>
 						<div className={`${styles.excellence_entertainment_content} `}>
 							<img className="border_8" src={hotel_img.src} alt="img" />
 						</div>
@@ -70,7 +70,7 @@ export default function ExcellenceEntertainment() {
 							</p>
 						</div>
 					</div>
-					<div className={`${styles.excellence_entertainment_box} f_j`}>
+					<div className={`${styles.excellence_entertainment_box} f_j toTop`} data-scroll>
 						<div className={`${styles.excellence_entertainment_content} `}>
 							<img className="border_8" src={restaurants_img.src} alt="img" />
 						</div>
@@ -90,7 +90,7 @@ export default function ExcellenceEntertainment() {
 							</p>
 						</div>
 					</div>
-					<div className={`${styles.excellence_entertainment_box} f_j`}>
+					<div className={`${styles.excellence_entertainment_box} f_j toTop`} data-scroll>
 						<div className={`${styles.excellence_entertainment_content} `}>
 							<img className="border_8" src={club_houses.src} alt="img" />
 						</div>
@@ -110,7 +110,7 @@ export default function ExcellenceEntertainment() {
 							</p>
 						</div>
 					</div>
-					<div className={`${styles.excellence_entertainment_box} f_j`}>
+					<div className={`${styles.excellence_entertainment_box} f_j toTop`} data-scroll>
 						<div className={`${styles.excellence_entertainment_content} `}>
 							<img className="border_8" src={corporates.src} alt="img" />
 						</div>
@@ -130,7 +130,7 @@ export default function ExcellenceEntertainment() {
 							</p>
 						</div>
 					</div>
-					<div className={`${styles.excellence_entertainment_box} f_j`}>
+					<div className={`${styles.excellence_entertainment_box} f_j toTop`} data-scroll>
 						<div className={`${styles.excellence_entertainment_content} `}>
 							<img className="border_8" src={private_homes.src} alt="img" />
 						</div>

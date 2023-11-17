@@ -1,4 +1,6 @@
 // MODULES //
+import ScrollOut from "scroll-out";
+import { useState, useEffect, useRef } from "react";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -25,6 +27,11 @@ import about_banner_mobile from "../public/img/about/about_banner_mobile.jpg";
 
 /** Home Page */
 export default function About() {
+	useEffect(() => {
+    ScrollOut({
+      once: true
+    });
+  }, []);
 	return (
 		<div>
 			<Head>

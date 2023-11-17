@@ -75,11 +75,11 @@ export default function LifeCsml() {
         
         <div className="container">
           <div className={`${styles.life_csml_content}`}>
-            <h2 className="heading_text_55 pb_30">Life at CSML</h2>
-            <p className="paraTxt_18 pb_10">Discover what it's like to be a part of the CSML team. From team-building activities to celebrating milestones, we believe in creating a positive and engaging work environment. </p>
-            <p className="paraTxt_18 pb_10">As leaders in the amusement industry, we are committed to transforming spaces into unforgettable experiences. We are constantly on the lookout for passionate, driven, and talented individuals who share our vision and want to be part of our journey. </p>
+            <h2 className="heading_text_55 pb_30 toTop" data-scroll>Life at CSML</h2>
+            <p className="paraTxt_18 pb_10 toTop" data-scroll>Discover what it's like to be a part of the CSML team. From team-building activities to celebrating milestones, we believe in creating a positive and engaging work environment. </p>
+            <p className="paraTxt_18 pb_10 toTop" data-scroll>As leaders in the amusement industry, we are committed to transforming spaces into unforgettable experiences. We are constantly on the lookout for passionate, driven, and talented individuals who share our vision and want to be part of our journey. </p>
           </div>
-          <div className={`${styles.showcase_main} pt_40`}>
+          <div className={`${styles.showcase_main} pt_40 toTop`} data-scroll>
             <Slider {...settings}>
               <div className={`${styles.showcase_box}`}>
                 <div className={`${styles.showcase_content}`}>

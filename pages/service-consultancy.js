@@ -1,5 +1,6 @@
 // MODULES //
 import { useEffect, useRef, useState } from "react";
+import ScrollOut from "scroll-out";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -25,6 +26,11 @@ import Tabs_img3 from "../public/img/services_consultancy/tab_img3.jpg";
 
 /** Services Page */
 export default function ServiceConsultancy() {
+	useEffect(() => {
+    ScrollOut({
+      once: true
+    });
+  }, []);
 	return (
 		<div>
 			<Head>
@@ -44,10 +50,10 @@ export default function ServiceConsultancy() {
 					<div className="container">
 						<div className={`${styles.service_flex} ptb_80`}>
 							<div className={`${styles.info_bx}`}>
-								<div className={`${styles.info_head} heading_text_55 pb_30`}>
+								<div className={`${styles.info_head} heading_text_55 pb_30 toTop`} data-scroll>
 									Turnkey Consultancy Solution for Entertainment Center Success
 								</div>
-								<div className={`${styles.info_para} paraTxt_18 text_400`}>
+								<div className={`${styles.info_para} paraTxt_18 text_400 toTop`} data-scroll>
 									CSML is the pioneering force behind exceptional Indoor Amusement
 									Centers (IAC). We specialize in turning ordinary spaces into
 									extraordinary amusement centers. Our consultancy services are designed
@@ -57,7 +63,7 @@ export default function ServiceConsultancy() {
 									complexities of managing multiple providers.
 								</div>
 							</div>
-							<div className={`${styles.img_bx}`}>
+							<div className={`${styles.img_bx} toTop`} data-scroll>
 								<img className="img" src={Sec1_img.src} />
 							</div>
 						</div>
@@ -66,7 +72,7 @@ export default function ServiceConsultancy() {
 				</section>
 				<section className={`${styles.service_tabsec} pt_80`}>
 					<div className="container">
-						<div className={`${styles.sec_title} heading_text_55 pb_50`}>
+						<div className={`${styles.sec_title} heading_text_55 pb_50 toTop`} data-scroll>
 							Comprehensive Services for
 							<br /> Your Center Success
 						</div>
@@ -82,7 +88,7 @@ export default function ServiceConsultancy() {
 						</TabList>
 						<div className="container">
 							<TabPanel>
-								<div className={`${styles.tabs_bx} `}>
+								<div className={`${styles.tabs_bx} toTop`} data-scroll>
 									<div
 										className={`${styles.tabs_img}  border_animation white_border_animation`}
 									>

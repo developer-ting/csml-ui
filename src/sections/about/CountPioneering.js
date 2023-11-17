@@ -18,7 +18,7 @@ export default function CountPioneering() {
 	return (
 		<section className={`${styles.count_pioneering_wrap} pt_100`}>
 			<div className="container">
-        <div className={`${styles.intertainment_border} border_animation`}>
+        <div className={`${styles.intertainment_border} border_animation toTop`} data-scroll>
 					<div className={`${styles.intertainment_flex}`}>
 						<div className={`${styles.intertainment_left} d_f`}>
 							<div className="dot_one dots_p"></div>
@@ -72,10 +72,10 @@ export default function CountPioneering() {
         </div>
         <div className="container">
           <div className={`${styles.pioneering_content}`}>
-            <h2 className="heading_text_55 color_white pb_30">Pioneering exciting possibilities</h2>
-            <p className="paraTxt_18 pb_20">We turn visions into reality, and we excel in doing so. <span>Since 2002, our journey has been defined by a deep-rooted passion for the amusement industry, backed by over five decades of combined expertise.</span></p>
-            <p className="paraTxt_18 pb_20">As pioneers in Indoor Amusement Centers (IAC), we offer end-to-end solutions. From initial planning and layout design to game selection, equipment logistics, and precise installation - we’ve got it all covered. Plus, our expert training and unwavering post-sales support keep the fun rolling.</p>
-            <p className="paraTxt_18 pb_20">Our track record speaks volumes - we've installed 900+ Brunswick Bowling Lanes, deployed 17,000+ Arcade & Amusement Games, collaborated with 200+ Amusement Centers and served 125+ customers across the continent. From corporate venues to exclusive clubhouses, luxury hotels, resorts, and private villas, we've left our mark across India and the SAARC Region.</p>
+            <h2 className="heading_text_55 color_white pb_30 toTop" data-scroll>Pioneering exciting possibilities</h2>
+            <p className="paraTxt_18 pb_20 toTop" data-scroll>We turn visions into reality, and we excel in doing so. <span>Since 2002, our journey has been defined by a deep-rooted passion for the amusement industry, backed by over five decades of combined expertise.</span></p>
+            <p className="paraTxt_18 pb_20 toTop" data-scroll>As pioneers in Indoor Amusement Centers (IAC), we offer end-to-end solutions. From initial planning and layout design to game selection, equipment logistics, and precise installation - we’ve got it all covered. Plus, our expert training and unwavering post-sales support keep the fun rolling.</p>
+            <p className="paraTxt_18 pb_20 toTop" data-scroll>Our track record speaks volumes - we've installed 900+ Brunswick Bowling Lanes, deployed 17,000+ Arcade & Amusement Games, collaborated with 200+ Amusement Centers and served 125+ customers across the continent. From corporate venues to exclusive clubhouses, luxury hotels, resorts, and private villas, we've left our mark across India and the SAARC Region.</p>
           </div>
         </div>
       </div>

@@ -20,14 +20,14 @@ export default function Luminaries() {
 	return (
 		<section className={`${styles.luminaries_wrap} ptb_100`}>
 			<div className="container">
-				<div className={`${styles.section_title} pb_40`}>
+				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 pb_20">
             Luminaries leading the way
 					</h2>
 				</div>
 
 				<div className={`${styles.luminaries_flex}`}>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div className={`${styles.luminaries_box} border_animation white_border_animation toTop`} data-scroll>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -50,7 +50,7 @@ export default function Luminaries() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div className={`${styles.luminaries_box} border_animation white_border_animation toTop`} data-scroll>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -73,7 +73,7 @@ export default function Luminaries() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div className={`${styles.luminaries_box} border_animation white_border_animation toTop`} data-scroll>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -96,7 +96,7 @@ export default function Luminaries() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div className={`${styles.luminaries_box} border_animation white_border_animation toTop`} data-scroll>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -119,7 +119,7 @@ export default function Luminaries() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div className={`${styles.luminaries_box} border_animation white_border_animation toTop`} data-scroll>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -142,7 +142,7 @@ export default function Luminaries() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div className={`${styles.luminaries_box} border_animation white_border_animation toTop`} data-scroll>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
