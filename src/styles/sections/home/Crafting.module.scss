@@ -1,11 +1,11 @@
 @import "../../helpers/helpers.scss";
 
 .crafting_wrap {
-  // background-color: var(--color_black);
-  // background-image: url(../../../../public/img/home/dots_bg.png);
-  // background-size: cover;
+  background-color: var(--color_black);
+  background-image: url(../../../../public/img/home/dots_bg.png);
+  background-size: cover;
   .crafting_flex {
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     position: relative;
     @media only screen and (max-width: 767px) {
@@ -25,6 +25,7 @@
     .right_content {
       width: 47%;
       position: relative;
+      top: 26px;
       @media only screen and (max-width: 767px) {
         width: 100%;
       }
@@ -36,20 +37,9 @@
       }
     }
 
-    .cricle_box {
-      position: absolute;
-      position: absolute;
-      left: 53%;
-      top: -50px;
-      transform: translateX(-50%);
-      @media (max-width: 1380px) {
-        left: 50%;
-      }
-      @media (max-width: 767px) {
-        top: 0px;
-      }
-    }
+    
   }
+
   .intertainment_border{
     border: 1px solid #777777;
     padding: 10px 10px;
