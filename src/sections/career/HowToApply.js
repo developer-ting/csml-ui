@@ -38,7 +38,9 @@ export default function HowToApply() {
             </p>
             <div className={`${styles.btn_box} pt_30 `}>
               <a href="#" rel="noreferrer">
-                <button className="btn_project_default white_btn">Explore Opportunities</button>
+                <span className="span_btn white_btn">
+                  <button className="btn_project_default">Explore Opportunities</button>
+                </span>
               </a>
             </div>
           </div>

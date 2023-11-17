@@ -1,25 +1,34 @@
-.btn_project_default {
-	font-size: 16px;
-	font-weight: 400;
-  font-family: var(--font_primary);
-	background-image: none;
-	border: 1px solid var(--color_primary);
-	padding: 12px 50px;
-	box-shadow: none;
-	text-shadow: none;
-	background-color: transparent;
-	color: var(--color_black);
-	outline: none !important;
-	text-decoration: none;
-	transition: ease-out 0.3s;
-	cursor: pointer;
-	@media only screen and (max-width: 992px) {
-		padding: 10px 40px;
-	}
+
+
+.span_btn{
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s;
+  .btn_project_default {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_primary);
+    background-image: none;
+    border: 1px solid var(--color_primary);
+    padding: 12px 50px;
+    box-shadow: none;
+    text-shadow: none;
+    background-color: transparent;
+    color: var(--color_black);
+    outline: none !important;
+    text-decoration: none;
+        transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    @media only screen and (max-width: 992px) {
+      padding: 10px 40px;
+    }
+    
+  }
   &:hover {
     border-bottom: 8px solid var(--color_primary);
     transform: translateY(-5px);
-    transition: ease-out 0.3s;
+        transition: all 0.3s;
     &::before{
       content: " ";
       position: absolute;
@@ -30,7 +39,7 @@
       clip-path: polygon(0 0, 0% 100%, 100% 100%);
       width: 8px;
       height: 10px;
-      transition: ease-out 0.3s;
+          transition: all 0.3s;
     }
     &::after{
       content: " ";
@@ -41,36 +50,41 @@
       clip-path: polygon(100% 0, 0% 100%, 100% 100%);
       width: 8px;
       height: 10px;
-      transition: ease-out 0.3s;
+          transition: all 0.3s;
     }
+    
+    
   }
-	&.yellow_btn{
-    &:hover {
-      border-bottom: 8px solid var(--color_primary);
-      transform: translateY(-5px);;
-      &::before{
-        background-color: var(--color_secondary);
-        
-      }
-      &::after{
-        background-color: var(--color_secondary);
-        right: -2px;
-      }
-    }
-  }
-  &.white_btn{
-    &:hover {
-      &::before{
-        background-color: var(--color_white);
-        
-      }
-      &::after{
-        background-color: var(--color_white);
-        
+
+  &.yellow_btn{
+      &:hover {
+        border-bottom: 8px solid var(--color_primary);
+        transform: translateY(-5px);;
+        &::before{
+          background-color: var(--color_secondary);
+          
+        }
+        &::after{
+          background-color: var(--color_secondary);
+          right: -2px;
+        }
       }
     }
-  }
+    &.white_btn{
+      &:hover {
+        &::before{
+          background-color: var(--color_white);
+          
+        }
+        &::after{
+          background-color: var(--color_white);
+          
+        }
+      }
+    }
+  
 }
+
 .btn_two {
 	font-size: 18px;
 	font-weight: 400;

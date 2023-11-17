@@ -29,7 +29,10 @@ const ContactTab = ({ TabTitle }) => {
 							<div className={`${styles.text_bx} text_24`}>{parse(TabTitle)}</div>
 							<div className={`${styles.btn_bx}`}>
 								<a href="#" rel="noreferrer">
-									<button className="btn_project_default yellow_btn">Contact Us</button>
+								<span className="span_btn yellow_btn">
+								<button className="btn_project_default ">Contact Us</button>
+								</span>
+									
 								</a>
 							</div>
 						</div>

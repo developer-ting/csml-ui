@@ -79,9 +79,11 @@ export default function Showcase() {
           <h2 className="heading_text_55 color_white">A showcase of success </h2>
           <div className={`${styles.btn_height}`}>
             <a href="#" rel="noreferrer">
-              <button className="btn_project_default color_white">
-                View All 
-              </button>
+              <span className="span_btn">
+                <button className="btn_project_default color_white">
+                  View All 
+                </button>
+              </span>
             </a>
           </div>
         </div>

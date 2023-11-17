@@ -1,9 +1,28 @@
 @import "../../helpers/helpers.scss";
 
 .crafting_wrap {
-  background-color: var(--color_black);
-  background-image: url(../../../../public/img/home/dots_bg.png);
-  background-size: cover;
+  // background-color: var(--color_black);
+  // background-image: url(../../../../public/img/home/dots_bg.png);
+  // background-size: cover;
+
+    .crafting_section{
+        position: relative;
+        .cricle_box {
+            position: absolute;
+            position: absolute;
+            left: -100px;
+            top: -50px;
+            transform-origin: center;
+            z-index: 1;
+            // @media (max-width: 1380px) {
+            //   left: 50%;
+            // }
+            @media (max-width: 767px) {
+              top: 0px;
+            }
+          }
+    }
+
   .crafting_flex {
     align-items: flex-end;
     justify-content: space-between;

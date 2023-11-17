@@ -122,9 +122,11 @@ export default function PartnerSuperior() {
 									</p>
 									<div className={`${styles.yellow_btn} pt_30`}>
 										<a href="#" rel="noreferrer">
-											<button className="btn_project_default yellow_btn">
-												Learn More
-											</button>
+											<span className="span_btn yellow_btn">
+												<button className="btn_project_default">
+													Learn More
+												</button>
+											</span>
 										</a>
 									</div>
 								</div>
@@ -149,9 +151,11 @@ export default function PartnerSuperior() {
 									</p>
 									<div className={`${styles.yellow_btn} pt_30`}>
 										<a href="#" rel="noreferrer">
-											<button className="btn_project_default yellow_btn">
-												Learn More
-											</button>
+											<span className="span_btn yellow_btn">
+												<button className="btn_project_default">
+													Learn More
+												</button>
+											</span>
 										</a>
 									</div>
 								</div>
@@ -175,9 +179,11 @@ export default function PartnerSuperior() {
 									</p>
 									<div className={`${styles.yellow_btn} pt_30`}>
 										<a href="#" rel="noreferrer">
-											<button className="btn_project_default yellow_btn">
-												Learn More
-											</button>
+											<span className="span_btn yellow_btn">
+												<button className="btn_project_default">
+													Learn More
+												</button>
+											</span>
 										</a>
 									</div>
 								</div>
