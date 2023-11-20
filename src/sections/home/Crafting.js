@@ -63,7 +63,7 @@ export default function Crafting() {
 		}, 500);
 	}, []);
 	return (
-		<section className={`${styles.crafting_wrap} ptb_100 crafting_wrap`} name="about_us">
+		<section className={`${styles.crafting_wrap} ptb_100 crafting_wrap`} name="crafting_section">
 			
 			<section className={`${styles.crafting_section} crafting_section`}>
 				<div className={`${styles.cricle_box} cricle_box hidden-xs`}>

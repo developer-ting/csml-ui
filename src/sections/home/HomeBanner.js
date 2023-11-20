@@ -50,13 +50,12 @@ export default function HomeBanner() {
         
         <ScrollSection
           
-          activeClass="active"
-          to="about_us"
+          
+          to="crafting_section"
           spy={true}
           smooth={true}
           offset={-50}
           duration={500}
-          className={`${styles.menu_link} `}
         >
           <img className="" src={cricle_arrow.src} />
         </ScrollSection>
