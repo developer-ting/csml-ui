@@ -29,10 +29,12 @@ export default function HomeBanner() {
 
   useEffect(() => {
     let anim = document.querySelector(".home_banner_top");
-    setTimeout(function () {
-      anim.classList.add("home_banner_scroll");
-    }, 600);
+    anim.classList.add("home_banner_scroll");
+    // setTimeout(function () {
+      
+    // }, 600);
   }, []);
+
   
 	return (
     <section className={`${styles.home_banner_wrap}`}>
