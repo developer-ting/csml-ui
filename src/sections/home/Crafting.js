@@ -29,14 +29,6 @@ import play_icon from "../../../public/img/play_icon.svg";
 
 /** Home Hero Section */
 export default function Crafting() {
-	const sectionBRef = useRef(null);
-
-  useEffect(() => {
-    // Use useEffect to scroll into view when ComponentB mounts
-    if (sectionBRef.current) {
-      sectionBRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, []);
 	
 	useEffect(() => {
 		setTimeout(() => {
