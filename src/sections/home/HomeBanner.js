@@ -31,7 +31,7 @@ export default function HomeBanner() {
     let anim = document.querySelector(".home_banner_top");
     setTimeout(function () {
       anim.classList.add("home_banner_scroll");
-    }, 200);
+    }, 600);
   }, []);
   
 	return (
