@@ -53,7 +53,7 @@ export default function ParallaxSlider() {
 
 		// Initialize parallax slider
 		const initParallaxSlider = () => {
-			gsap.set("#slides", { width: n * 450, rotation: 5 }); // Rotate the entire slider by 5 degrees
+			gsap.set("#slides", { width: n * 450, rotation: 3 }); // Rotate the entire slider by 5 degrees
 
 			for (let i = 0; i < n; i++) {
 				let box = document.createElement("div");
