@@ -21,7 +21,7 @@ export default function Luminaries() {
 		<section className={`${styles.luminaries_wrap} ptb_100`}>
 			<div className="container">
 				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
-					<h2 className="heading_text_55 pb_20">
+					<h2 className="heading_text_55">
             Luminaries leading the way
 					</h2>
 				</div>

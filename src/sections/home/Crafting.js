@@ -29,6 +29,14 @@ import play_icon from "../../../public/img/play_icon.svg";
 
 /** Home Hero Section */
 export default function Crafting() {
+	const sectionBRef = useRef(null);
+
+  useEffect(() => {
+    // Use useEffect to scroll into view when ComponentB mounts
+    if (sectionBRef.current) {
+      sectionBRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 	
 	useEffect(() => {
 		setTimeout(() => {
@@ -55,7 +63,8 @@ export default function Crafting() {
 		}, 500);
 	}, []);
 	return (
-		<section className={`${styles.crafting_wrap} ptb_100 crafting_wrap`}>
+		<section className={`${styles.crafting_wrap} ptb_100 crafting_wrap`} name="about_us">
+			
 			<section className={`${styles.crafting_section} crafting_section`}>
 				<div className={`${styles.cricle_box} cricle_box hidden-xs`}>
 					<img className="" src={cricle_img.src} />
@@ -129,7 +138,7 @@ export default function Crafting() {
 								</div>
 							</div>
 						</div>
-						<div className={`${styles.intertainment_right} toLeft`} data-scroll>
+						<div className={`${styles.intertainment_right} toLeftOne`} data-scroll>
 							{/* <div className={`${styles.video_box}`}>
                 <img className="border_12 img" src={video_img.src} />
                 <div className={`${styles.video_play}`}>

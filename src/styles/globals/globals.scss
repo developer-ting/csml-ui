@@ -565,7 +565,7 @@ picture {
 
 .toLeft {
   &[data-scroll] {
-    transition: all 0.7s ease-out;
+    transition: all 1s ease-out;
   }
 
   &[data-scroll="in"] {
@@ -576,6 +576,22 @@ picture {
   &[data-scroll="out"] {
     opacity: 0;
     transform: translateX(-100px);
+  }
+}
+
+.toLeftOne {
+  &[data-scroll] {
+    transition: all 1s ease-out;
+  }
+
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-250px);
   }
 }
 
@@ -626,7 +642,7 @@ picture {
     }
   }
   &.start {
-    height: 106px;
+    height: 70px;
     // @media screen and (max-width: 991px) {
     //   height: 68px;
     // }
@@ -642,4 +658,9 @@ picture {
       }
     }
   }
+}
+
+.home_banner_scroll{
+	transform: translateY(0vh) !important;
+  transition: 2s ease !important;
 }

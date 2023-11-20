@@ -18,6 +18,8 @@
     }
     .our_vision_box{
       width: 50%;
+      height: 100%;
+      position: relative;
       @media only screen and (max-width: 767px) {
         width: 100%;
       }
@@ -36,6 +38,9 @@
           padding: 40px 15px; 
           width: 100%;
         }
+      }
+      :global(.dots_p){
+        background-color: var(--color_primary);
       }
     }
   }

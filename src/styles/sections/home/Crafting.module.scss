@@ -1,10 +1,14 @@
 @import "../../helpers/helpers.scss";
 
 .crafting_wrap {
+  position: relative;
+  overflow: hidden;
   // background-color: var(--color_black);
   // background-image: url(../../../../public/img/home/dots_bg.png);
   // background-size: cover;
-  overflow: hidden;
+
+
+  
     .crafting_section{
         position: relative;
         .cricle_box {
@@ -72,11 +76,13 @@
       }
       .intertainment_left {
         width: 36%;
-        background-color: #100e0e;
+        background-color: rgba(30, 30, 30, 0.45);
+        backdrop-filter: blur(15px);
         border-radius: 12px;
         padding: 20px 50px;
         position: relative;
         z-index: 1;
+        
         @media (max-width: 1401px) {
           padding: 20px 30px;
         }
@@ -110,6 +116,7 @@
             }
             p{
               width: 50%;
+              opacity: 0.8;
               @media (max-width: 1401px) {
                 width: 55%;
               }

@@ -45,6 +45,9 @@ export default function OurVision() {
 					<img className="" src={our_vision.src} alt="our vision" />
 				</div>
 				<div className={`${styles.our_vision_box}`}>
+					<div className="dot_one dots_p"></div>
+					<div className="dot_two dots_p"></div>
+					<div className="dot_three dots_p"></div>
 					<div className={`${styles.our_vision_content}`}>
 						<h2 className="heading_text_55 pb_30">Our vision</h2>
 						<p className="paraTxt_18 pb_20">
@@ -60,6 +63,9 @@ export default function OurVision() {
 					<img className="" src={our_mission.src} alt="our mission" />
 				</div>
 				<div className={`${styles.our_vision_box}`}>
+					<div className="dot_one dots_p"></div>
+					<div className="dot_two dots_p"></div>
+					<div className="dot_three dots_p"></div>
 					<div className={`${styles.our_vision_content}`}>
 						<h2 className="heading_text_55 pb_30">Our mission</h2>
 						<p className="paraTxt_18 pb_20">

@@ -13,7 +13,8 @@
       position: relative;
       
       .intertainment_left {
-        background-color: #100e0e;
+        background-color: rgba(30, 30, 30, 0.45);
+        backdrop-filter: blur(15px);
         border-radius: 12px;
         padding: 50px 0px;
         position: relative;

@@ -88,7 +88,7 @@ export default function Contact() {
 							<div className={`${styles.contact_details} pt_80`}>
 								<p className="paraTxt color_white pb_40 toTop" data-scroll>
 									Whether you have questions, need information, or want to explore how we
-									can enhance your space, <span className="color_white">we're here to assist you.</span>
+									can enhance your space, <span className="text_600">we're here to assist you.</span>
 								</p>
 								<div className={`${styles.contact_details_flex} color_white text_sm toTop`} data-scroll>
 									<div className={`${styles.contact_div} pb_30`}>
@@ -106,7 +106,7 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.contact_main_form} toTop`} data-scroll>
+							<div className={`${styles.contact_main_form} border_animation toTop`} data-scroll>
 								<div className={`${styles.contact_form}`}>
 									<div className="dot_one dots_p"></div>
 									<div className="dot_two dots_p"></div>
