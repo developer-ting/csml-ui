@@ -47,9 +47,8 @@ export default function HomeBanner() {
         <p className="paraTxt color_white">Turning entertainment dreams into reality with premium amusement solutions</p>
       </div>
       <div className={`${styles.circle_right}`} >
-      <img className="" src={cricle_arrow.src} />
         
-        {/* <ScrollSection
+        <ScrollSection
           
           
           to="crafting_section"
@@ -59,7 +58,7 @@ export default function HomeBanner() {
           duration={500}
         >
           <img className="" src={cricle_arrow.src} />
-        </ScrollSection> */}
+        </ScrollSection>
        
       </div>
     </section>
