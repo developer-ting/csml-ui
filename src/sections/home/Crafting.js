@@ -34,11 +34,11 @@ export default function Crafting() {
 		setTimeout(() => {
 			gsap.registerPlugin(ScrollTrigger);
 			const cricle_box = document.querySelector(".cricle_box").offsetLeft;
-			const crafting_heading =
-				document.querySelector(".crafting_heading").offsetWidth;
-			const totalBoxW = cricle_box + crafting_heading + 150;
-			console.log(cricle_box);
-			console.log(crafting_heading);
+			const crafting_heading = document.querySelector(".crafting_heading").offsetWidth;
+			const container_left_space = document.querySelector(".box_left_space").offsetLeft;
+			const totalBoxW = container_left_space + cricle_box + crafting_heading + 80;
+			console.log(totalBoxW);
+			// console.log(crafting_heading);
 			const winW = window.innerWidth;
 			const bannerPin = gsap.timeline({
 				scrollTrigger: {

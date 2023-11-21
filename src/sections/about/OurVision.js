@@ -14,7 +14,7 @@ import styles from "../../styles/sections/about/OurVision.module.scss";
 // IMAGES //
 import our_vision from "../../../public/img/about/our_vision.jpg";
 import our_mission from "../../../public/img/about/our_mission.jpg";
-
+ 
 /** Home Hero Section */
 export default function OurVision() {
 	useEffect(() => {
@@ -37,7 +37,7 @@ export default function OurVision() {
 				gsap.timeline().to(".our_vision_flex", { x: -(card_width * 1) }, 0)
 			);
 		}, 500);
-	}, []);
+	}, []); 
 	return (
 		<section className={`${styles.our_vision_wrap} our_vision_wrap`}>
 			<div className={`${styles.our_vision_flex} d_f our_vision_flex`}>
