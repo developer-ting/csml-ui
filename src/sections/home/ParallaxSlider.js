@@ -4,7 +4,8 @@ import Draggable from "gsap/dist/Draggable";
 import { useState } from "react";
 import showcase from "../../../public/img/home/home_banner.jpg";
 gsap.registerPlugin(Draggable);
-
+// STYLES //
+import styles from "../../styles/sections/home/ProductCatalogue.module.scss";
 export default function ParallaxSlider() {
 	const imageUrls = [
 		showcase.src,
@@ -12,9 +13,8 @@ export default function ParallaxSlider() {
 		showcase.src,
 		showcase.src,
 		showcase.src,
-		// Add more image URLs as needed
 	];
-	const n = 5;
+	const n = imageUrls.length;
 	let parallax = [];
 	let clamp = gsap.utils.clamp(0, 1);
 	let currentX = 0;
@@ -48,7 +48,6 @@ export default function ParallaxSlider() {
 					sliderRef.current.scrollLeft = scrollLeft;
 				}
 			}
-			console.log("scroll");
 		};
 
 		// Initialize parallax slider
@@ -62,7 +61,7 @@ export default function ParallaxSlider() {
 
 				gsap.set(box, {
 					width: 400,
-					height: 600,
+					height: 475,
 					overflow: "hidden",
 					position: "absolute",
 					top: 50,
@@ -99,7 +98,7 @@ export default function ParallaxSlider() {
 				snap: snap,
 			});
 			// Scroll the slider when it's wider than the viewport
-			scrollSlider();
+			// scrollSlider();
 		};
 
 		// Initialize the parallax slider and set up event listeners
@@ -112,7 +111,7 @@ export default function ParallaxSlider() {
 				width: 1,
 			});
 			updateParallax();
-			scrollSlider();
+			// scrollSlider();
 		};
 
 		// Event listeners
@@ -125,8 +124,13 @@ export default function ParallaxSlider() {
 	}, []);
 
 	return (
-		<div className="slideMain" ref={sliderRef}>
-			<div id="slides" />
-		</div>
+		<>
+			<div className={`${styles.section_title}`}>
+				<h2 className="heading_text_55 pb_40">Our product catalogue</h2>
+			</div>
+			<div className="slideMain" ref={sliderRef}>
+				<div id="slides" />
+			</div>
+		</>
 	);
 }
