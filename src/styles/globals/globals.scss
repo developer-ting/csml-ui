@@ -745,6 +745,10 @@ picture {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	opacity: 1;
+	&.cursor_pointer_able {
+		opacity: 0;
+	}
 	p {
 		color: #fff;
 		font-size: 20px;

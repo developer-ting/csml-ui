@@ -88,10 +88,12 @@ export default function ProductCatalogue() {
 
 		customEventElements.forEach((customElement) => {
 			const handleMouseEnter = () => {
+				cursorElement.classList.add("custom-tt");
 				cursorElement.classList.add(customElement.getAttribute("data-event-class"));
 			};
 
 			const handleMouseOut = () => {
+				cursorElement.classList.remove("custom-tt");
 				cursorElement.classList.remove(
 					customElement.getAttribute("data-event-class")
 				);
