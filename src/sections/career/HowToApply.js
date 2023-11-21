@@ -33,7 +33,7 @@ export default function HowToApply() {
               We are constantly on the lookout for passionate, driven, and talented individuals who share our vision and want to be part of our journey.
               If you're ready to take the next step in your career and become part of the CSML family, <span className="text_600">please send your resume and a cover letter to <a href="mailto:hr@csmlindia.com">hr@csmlindia.com</a></span>
             </p>
-            <p className={`${styles.info_para} paraTxt_18 text_400 pb_10`}>
+            <p className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`} data-scroll>
             In your cover letter, state your reasons for joining and how you can contribute. Alternatively, explore our job openings below.
             </p>
             <div className={`${styles.btn_box} pt_30 toTop`} data-scroll>

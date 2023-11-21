@@ -46,7 +46,7 @@ export default function OurVision() {
 				</div>
 				<div className={`${styles.our_vision_box}`}>
 					<div className="dot_one dots_p"></div>
-					<div className="dot_two dots_p"></div>
+					<div className="dot_two vision_dot dots_p"></div>
 					<div className="dot_three dots_p"></div>
 					<div className={`${styles.our_vision_content}`}>
 						<h2 className="heading_text_55 pb_30">Our vision</h2>
@@ -64,7 +64,7 @@ export default function OurVision() {
 				</div>
 				<div className={`${styles.our_vision_box}`}>
 					<div className="dot_one dots_p"></div>
-					<div className="dot_two dots_p"></div>
+					<div className="dot_two vision_dot dots_p"></div>
 					<div className="dot_three dots_p"></div>
 					<div className={`${styles.our_vision_content}`}>
 						<h2 className="heading_text_55 pb_30">Our mission</h2>
