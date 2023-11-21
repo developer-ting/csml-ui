@@ -65,7 +65,7 @@ export default function ProductCatalogue() {
 		);
 		const cursorElement = document.createElement("div");
 		cursorElement.classList.add("cursor_pointer");
-		document.body.appendChild(cursorElement);
+		productCatalogueWrap.appendChild(cursorElement);
 
 		document.body.classList.add("custom-cursor-active");
 		cursorElement.innerHTML = "<p><span>Drag</span> or Click</p>";
@@ -99,8 +99,8 @@ export default function ProductCatalogue() {
 				);
 			};
 
-			customElement.addEventListener("mouseenter", handleMouseEnter);
-			customElement.addEventListener("mouseout", handleMouseOut);
+			// customElement.addEventListener("mouseenter", handleMouseEnter);
+			// customElement.addEventListener("mouseout", handleMouseOut);
 
 			return () => {
 				customElement.removeEventListener("mouseenter", handleMouseEnter);
