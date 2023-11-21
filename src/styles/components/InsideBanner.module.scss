@@ -28,5 +28,8 @@
     transform: translateX(-50%);
     z-index: 1;
     width: 100%;
+    @media (max-width: 767px) {
+      padding: 0 15px;
+    }
   }
 }

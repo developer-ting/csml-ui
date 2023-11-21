@@ -42,7 +42,7 @@ export default function About() {
 			</Head>
 
 			<Header />
-			<Loader />
+			{/* <Loader /> */}
 			<main className={`${styles.about_page}`}>
       <InsideBanner
 				bannerTitle="Over 2 decades of unlocking

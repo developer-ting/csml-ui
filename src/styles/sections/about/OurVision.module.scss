@@ -26,13 +26,16 @@
       }
 
       img{
-        // width: 100%;
-        width: 50%;
         position: absolute;
         top: 0;
         left: 0;
         height: 100vh;
         object-fit: cover;
+        width: 50%;
+        @media only screen and (max-width: 767px) {
+          height: 40vh;
+          width: 100%;
+        }
       }
       .our_vision_content{
         margin: 0 auto;
