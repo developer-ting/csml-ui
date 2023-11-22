@@ -1,4 +1,6 @@
 // MODULES //
+import ScrollOut from "scroll-out";
+import { useState, useEffect, useRef } from "react";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -14,6 +16,7 @@ import ExperienceIndustry from "@/sections/home/ExperienceIndustry";
 import OurClients from "@/sections/home/OurClients";
 import Showcase from "@/sections/home/Showcase";
 import EnthralledCustomers from "@/sections/home/EnthralledCustomers";
+import Loader from "@/components/Loader";
 
 // SECTIONS //
 import ParallaxSlider from "@/sections/home/ParallaxSlider";
@@ -25,6 +28,11 @@ import styles from "../src/styles/pages/Home.module.scss";
 
 /** Home Page */
 export default function Home() {
+	useEffect(() => {
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>
@@ -34,6 +42,7 @@ export default function Home() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
 				<Crafting />

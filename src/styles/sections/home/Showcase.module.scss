@@ -2,22 +2,37 @@
 
 .showcase_wrap {
   .section_title{
-    text-align: center;
     align-items: center;
+    @media only screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+    h2{
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 15px;
+      }
+    }
   }
   .showcase_main{
     margin: 0px -15px;
+    @media only screen and (max-width: 1199px) {
+      margin: 0px -10px;
+    }
     :global(.slick-slide){
       padding: 0px 15px;
+      @media only screen and (max-width: 1199px) {
+        padding: 0px 10px;
+      }
     }
     .showcase_box{
       .showcase_content{
         .img_box{
-          border-top: 1px solid #777777;
-          border-bottom: 1px solid #777777;
+          border: 1px solid #777777;
+          // border-top: 1px solid #777777;
+          // border-bottom: 1px solid #777777;
           padding: 10px 10px;
           border-radius: 12px;
           position: relative;
+          transition: all .3s;
           :global(.dots_p){
             background-color: var(--color_primary);
           }

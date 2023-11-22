@@ -25,6 +25,9 @@
         }
         p{
           opacity: 0.8;
+          span{
+            opacity:1;
+          }
         }
         .contact_details_flex{
           .contact_div{
@@ -41,8 +44,7 @@
         width: 51%;
         padding: 10px;
         border-radius: 12px;
-        border-top: 1px solid #777777;
-        border-bottom: 1px solid #777777;
+        border: 1px solid #777777;
         @media (max-width: 991px) {
           width: 100%;
         }
@@ -83,18 +85,18 @@
                 color: var(--color_primary);
               }
             }
-            :global(.btn_project_default){
-              &:hover {
-                &::before{
-                  background-color: var(--color_white);
+            // :global(.btn_project_default){
+            //   &:hover {
+            //     &::before{
+            //       background-color: var(--color_white);
                   
-                }
-                &::after{
-                  background-color: var(--color_white);
+            //     }
+            //     &::after{
+            //       background-color: var(--color_white);
                   
-                }
-              }
-            }
+            //     }
+            //   }
+            // }
           }
         }
       }

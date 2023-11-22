@@ -10,14 +10,24 @@
     }
   }
   .clients_logo_flex{
-    border-top: 1px solid #B8B8B8;
-    border-bottom: 1px solid #B8B8B8;
+    border: 1px solid #B8B8B8;
     padding: 20px 20px;
     border-radius: 12px;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-gap: 20px;
+    @media only screen and (max-width: 1199px) {
+      grid-template-columns: repeat(4,1fr);
+    }
+    @media only screen and (max-width: 991px) {
+      grid-template-columns: repeat(3,1fr);
+    }
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: repeat(2,1fr);
+      padding: 20px 10px;
+      grid-gap: 10px;
+    }
     .clients_logo_box{
       width: 100%;
       height: 125px;
@@ -29,6 +39,9 @@
       border-radius: 8px;
       opacity: 0.5;
       transition: all 1s ease;
+      @media only screen and (max-width: 767px) {
+        height: 100px;
+      }
       &:hover{
         opacity: 1;
         transition: all 1s ease;

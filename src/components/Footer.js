@@ -40,7 +40,7 @@ const Footer = () => {
 											<Link href="">Home</Link>
 										</li>
 										<li>
-											<Link href="">About CSML</Link>
+											<Link href="/about">About CSML</Link>
 										</li>
 										<li>
 											<Link href="">Brunswick Bowling</Link>
@@ -129,11 +129,11 @@ const Footer = () => {
 					<div className="container">
 						<div className={`${styles.footerBtmFlex} f_w_j a_center`}>
 							<div className={`${styles.footerBtmItem}`}>
-								<p className="text_xs color_white">Copyright © 2023 CSML. All Rights Reserved</p>
+								<p className="text_xs">Copyright © 2023 CSML. All Rights Reserved</p>
 							</div>
 							<div className={`${styles.footerBtmItem}`}>
-								<Link href="">
-									<img src={ting_logo.src} alt="" />
+								<Link href="https://www.ting.in/">
+									<a className="text_reg text_500" target="_blank" rel="noreferrer"><img src={ting_logo.src} alt="" /></a>
 								</Link>
 							</div>
 						</div>

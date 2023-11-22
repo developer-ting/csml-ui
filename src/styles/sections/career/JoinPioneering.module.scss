@@ -1,0 +1,28 @@
+@import "../../helpers/helpers.scss";
+
+.join_pioneering_wrap {
+  
+  .pioneering_main{
+    position: relative;
+    
+    .pioneering_content{
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      @media only screen and (max-width: 1380px) {
+        width: 76%;
+      }
+      @media only screen and (max-width: 991px) {
+        width: 100%;
+      }
+      h2{
+        text-align: center;
+      }
+      p{
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  
+}

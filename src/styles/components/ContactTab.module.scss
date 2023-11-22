@@ -1,0 +1,43 @@
+@import "../helpers/helpers.scss";
+
+.contact_tab{
+    .contact_main_bx{
+      border: 1px solid #777777;
+      padding: 10px 10px;
+      border-radius: 12px;
+        // border-top: 1px solid #777777;
+        // border-bottom: 1px solid #777777;
+        .contactinside{
+            position: relative;
+            border-radius: 15px;
+            padding: 60px 80px;
+            background-color: #F8ED11;
+            @media (max-width: 1199px) {
+             padding: 40px 30px;
+            }
+            @media (max-width: 991px) {
+              padding: 30px 40px;
+            }
+            @media (max-width: 767px) {
+              padding: 30px;
+            }
+            .inside_flex{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media (max-width:991px) {
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 20px;
+                }
+                .text_bx{
+                    font-weight: 700;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    :global(.dots_p){
+      background-color: var(--color_primary);
+    }
+}

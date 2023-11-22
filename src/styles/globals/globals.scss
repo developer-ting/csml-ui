@@ -69,6 +69,81 @@ picture {
 	border-radius: 8px;
 }
 
+.border_animation {
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -1px;
+		width: 1px;
+		height: 80%;
+		background-color: #000;
+		transition: all 0.3s;
+		z-index: 1;
+	}
+
+	&::after {
+		right: -1px;
+		left: auto;
+	}
+
+	&:hover {
+		&::before,
+		&::after {
+			height: 0;
+			transition: all 0.3s;
+		}
+	}
+
+	&.white_border_animation {
+		&::before,
+		&::after {
+			background-color: #fff;
+		}
+	}
+}
+
+.border_animation_half {
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -1px;
+		width: 1px;
+		height: 80%;
+		background-color: #000;
+		transition: all 0.3s;
+		z-index: 1;
+	}
+
+	&::after {
+		right: -1px;
+		left: auto;
+	}
+
+	// &:hover{
+	// 	&::before, &::after{
+	// 		height: 0;
+	// 		transition: all .3s;
+	// 	}
+	// }
+
+	&.white_border_animation_half {
+		&::before,
+		&::after {
+			background-color: #fff;
+		}
+	}
+}
+
 //classes for fonts
 .font_primary {
 	font-family: var(--font_primary);
@@ -327,7 +402,7 @@ picture {
 .ptb_100 {
 	padding: 100px 0;
 
-	@media screen and (min-width: 992px) and (max-width: 1200px) {
+	@media only screen and (max-width: 1199px) {
 		padding: 60px 0;
 	}
 	@media only screen and (max-width: 767px) {
@@ -366,6 +441,13 @@ picture {
 .dot_two {
 	bottom: 15px;
 	left: 15px;
+
+	&.vision_dot {
+		left: 50.5%;
+		@media only screen and (max-width: 767px) {
+			left: 15px;
+		}
+	}
 }
 .dot_three {
 	bottom: 15px;
@@ -379,33 +461,218 @@ picture {
 		width: 8px !important;
 		height: 8px !important;
 		margin: 0 5px !important;
+		transition: all 0.3s;
+		@media only screen and (max-width: 767px) {
+			width: 6px !important;
+			height: 6px !important;
+			margin: 0 4px !important;
+		}
 		button {
 			width: 8px !important;
 			height: 8px !important;
+			transition: all 0.3s;
+			@media only screen and (max-width: 767px) {
+				width: 6px !important;
+				height: 6px !important;
+			}
 			&::before {
 				content: " " !important;
 				width: 8px !important;
 				height: 8px !important;
 				background-color: #000 !important;
+				opacity: 0.5 !important;
+				transition: all 0.3s;
+				@media only screen and (max-width: 767px) {
+					width: 6px !important;
+					height: 6px !important;
+				}
 			}
 		}
 		&.slick-active {
 			width: 16px !important;
 			height: 16px !important;
 			margin: 0 5px !important;
+			transition: all 0.3s;
+			@media only screen and (max-width: 767px) {
+				width: 12px !important;
+				height: 12px !important;
+				margin: 0 4px !important;
+			}
 			button {
 				width: 16px !important;
 				height: 16px !important;
+				transition: all 0.3s;
+				@media only screen and (max-width: 767px) {
+					width: 12px !important;
+					height: 12px !important;
+				}
 				&::before {
 					content: " " !important;
 					width: 16px !important;
 					height: 16px !important;
 					background-color: #000 !important;
 					opacity: 1 !important;
+					transition: all 0.3s;
+					@media only screen and (max-width: 767px) {
+						width: 12px !important;
+						height: 12px !important;
+					}
 				}
 			}
 		}
 	}
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	background: #1e1e1e;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ff0000;
+	border-radius: 50px;
+}
+
+// scroll out css
+.toTop {
+	&[data-scroll] {
+		transition: all 0.7s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+}
+
+.toBottom {
+	&[data-scroll] {
+		transition: all 0.7s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
+.toLeft {
+	&[data-scroll] {
+		transition: all 1s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+}
+
+.toLeftOne {
+	&[data-scroll] {
+		transition: all 1s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+}
+
+.toRight {
+	&[data-scroll] {
+		transition: all 0.7s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+}
+
+// loader css start here
+.loader_overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	padding: 5px 15px;
+	transition: 2s ease;
+	background-color: var(--color_black);
+	background-image: url(../../../public/img/dots_bg.png);
+	background-size: cover;
+	.container {
+		height: 100%;
+	}
+	img {
+		max-width: 207px;
+		width: 207px;
+		position: absolute;
+		top: calc(50%);
+		left: calc(50% - 103px);
+		transition: 2s ease;
+		@media screen and (max-width: 767px) {
+			max-width: 160px;
+			width: 160px;
+			top: calc(50% - 80px);
+			left: calc(50% - 80px);
+		}
+	}
+	&.start {
+		height: 70px;
+		// @media screen and (max-width: 991px) {
+		//   height: 68px;
+		// }
+		img {
+			top: 9px;
+			left: 15px;
+			// @media screen and (max-width: 767px) {
+			//   top: 50px;
+			// }
+			@media screen and (max-width: 767px) {
+				top: 16px;
+				left: 0px;
+			}
+		}
+	}
+}
+
+.home_banner_scroll {
+	transform: translateY(0vh) !important;
+	transition: 2s ease !important;
 }
 
 // prlx slide
@@ -485,6 +752,13 @@ picture {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	opacity: 1;
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
+	&.cursor_pointer_able {
+		opacity: 0;
+	}
 	p {
 		color: #fff;
 		font-size: 20px;

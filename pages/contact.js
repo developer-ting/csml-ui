@@ -1,6 +1,7 @@
 // MODULES //
 import { useForm } from "react-hook-form";
 import { useEffect, useRef, useState } from "react";
+import ScrollOut from "scroll-out";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -8,6 +9,8 @@ import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import ContactForm from "@/components/Form";
+import Loader from "@/components/Loader";
+
 // SECTIONS //
 
 // PLUGINS //
@@ -57,6 +60,11 @@ export default function Contact() {
 
 		sendData();
 	};
+	useEffect(() => {
+    ScrollOut({
+      once: true
+    });
+  }, []);
 	return (
 		<div>
 			<Head>
@@ -66,6 +74,7 @@ export default function Contact() {
 			</Head>
 
 			<Header />
+			<Loader />
 			<main className={`${styles.ContactPage}`}>
 			<InsideBanner
 				bannerTitle="Experience Unforgettable <br className='hidden-xs'>
@@ -77,11 +86,11 @@ export default function Contact() {
 					<div className="container">
 						<div className={`${styles.contact_flex} ptb_80`}>
 							<div className={`${styles.contact_details} pt_80`}>
-								<p className="paraTxt color_white pb_40">
+								<p className="paraTxt color_white pb_40 toTop" data-scroll>
 									Whether you have questions, need information, or want to explore how we
-									can enhance your space, <span className="color_white">we're here to assist you.</span>
+									can enhance your space, <span className="text_600">we're here to assist you.</span>
 								</p>
-								<div className={`${styles.contact_details_flex} color_white text_sm`}>
+								<div className={`${styles.contact_details_flex} color_white text_sm toTop`} data-scroll>
 									<div className={`${styles.contact_div} pb_30`}>
 										<img className="img" src={Mail.src} />
 										<a href="mailto:sales@csmlindia.com" rel="noreferrer">
@@ -97,7 +106,7 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.contact_main_form}`}>
+							<div className={`${styles.contact_main_form} border_animation toTop`} data-scroll>
 								<div className={`${styles.contact_form}`}>
 									<div className="dot_one dots_p"></div>
 									<div className="dot_two dots_p"></div>
@@ -197,7 +206,10 @@ export default function Contact() {
 										</div>
 										<div className={`${styles.btn_box}`}>
 											<a href="#" rel="noreferrer">
-												<button className="btn_project_default">Submit</button>
+											<span className="span_btn white_btn">
+											<button className="btn_project_default">Submit</button>
+											</span>
+												
 											</a>
 										</div>
 										{isSubmited && (

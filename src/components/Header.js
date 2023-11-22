@@ -11,6 +11,7 @@ import styles from "../styles/components/Header.module.scss";
 
 // IMAGES //
 import csml_logo from "../../public/img/csml_logo.svg";
+import mobile_logo from "../../public/img/mobile_logo.png";
 import close from "../../public/img/close.svg";
 import menu_down_aarow from "../../public/img/menu_down_aarow.svg";
 
@@ -58,7 +59,7 @@ const Header = () => {
 									alt="csml_logo"
 								/>
 								<img
-									src={csml_logo.src}
+									src={mobile_logo.src}
 									className={`${styles.scrolled_logo}`}
 									alt="scrolled_logo"
 								/>
@@ -67,9 +68,12 @@ const Header = () => {
 						<div className={`${styles.header_list} ${styles.header_list_mobile}`}>
 							<div className={styles.menu_title}>
 								<div className={styles.title}> 
-									<a href="#" className="btn_two color_white">
-										Contact us
-									</a>
+									<Link href="/contact">
+										<a href="/contact" className="btn_two color_white">
+											Contact us
+										</a>
+									</Link>
+									
 								</div>
 								<div
 									onClick={() => setSidebarActive(!sidebarActive)}
@@ -103,13 +107,12 @@ const Header = () => {
 								</div>
                 <ul className={`${styles.list_ul}`}>
                   <li onClick={() => setSidebarActive(!sidebarActive)}>
-                    <Link href="">
+                    <Link href="/about">
                       <a className="heading_text_40 m_r">About Us</a>
                     </Link>
                   </li>
                   <li className={`${styles.sub_menu_box} ${toggleState === 1 && styles.drop_down_active}`}
-											onMouseEnter={() => toggleTab(1)}
-											onMouseLeave={() => toggleTab(1)}
+											onClick={() => toggleTab(1)}
 									>
                     <div className={`${styles.sub_menu_flex} d_f`}>
 											<a className="heading_text_40 m_r">Product portfolio</a>
@@ -140,8 +143,7 @@ const Header = () => {
                   
 
 									<li className={`${styles.sub_menu_box} ${toggleState === 2 && styles.drop_down_active}`}
-											onMouseEnter={() => toggleTab(2)}
-											onMouseLeave={() => toggleTab(2)}
+											onClick={() => toggleTab(2)}
 									>
                     <div className={`${styles.sub_menu_flex} d_f`}>
 											<a className="heading_text_40 m_r">Services</a>
@@ -153,12 +155,12 @@ const Header = () => {
 										</div>
 										<div className={`${styles.sub_menu_list}`}>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
-												<Link href="">
+												<Link href="/service-consultancy">
 													<a className="text_reg text_500">Consultancy Services</a>
 												</Link>
 											</p>
 											<p onClick={() => setSidebarActive(!sidebarActive)}>
-												<Link href="">
+												<Link href="/service-management">
 													<a className="text_reg text_500">Management Contract </a>
 												</Link>
 											</p>
@@ -169,7 +171,7 @@ const Header = () => {
 								<div className={`${styles.bottom_list}`}>
 									<ul>
 										<li onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="">
+											<Link href="/career">
 												<a className="text_reg text_500">Careers</a>
 											</Link>
 										</li>
@@ -181,7 +183,7 @@ const Header = () => {
 										</li>
 
 										<li onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="">
+											<Link href="/contact">
 												<a className="text_reg text_500">Contact</a>
 											</Link>
 										</li>

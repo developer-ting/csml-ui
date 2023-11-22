@@ -74,6 +74,9 @@
         @media only screen and (max-width: 767px) {
           padding-top: 30px;
         }
+        p{
+          color: #F1EFE9;
+        }
         .input_group{
           position: relative;
           .input_field{
@@ -115,9 +118,18 @@
               justify-content: center;
               cursor: pointer;
               margin-right: 15px;
-              // &:hover{
-              //   background-color: var(--color_secondary);
-              // }
+              transition: ease-out 0.3s;
+              &:hover{
+                background-color: var(--color_secondary);
+                transition: ease-out 0.3s;
+                img{
+                  filter: invert(1);
+                  transition: ease-out 0.3s;
+                }
+              }
+              img{
+                transition: ease-out 0.3s;
+              }
             }
           }
         }
@@ -128,14 +140,15 @@
     margin-top: 30px;
 		.footerBtmFlex {
       padding: 20px 0px;
-      border-top: 1px solid #d4d4d4;
+      border-top: 1px solid #707070;
       @media only screen and (max-width: 767px) {
         justify-content: center;
       }
       .footerBtmItem{
         p{
+          color: #F1EFE9;
           @media only screen and (max-width: 767px) {
-            padding-bottom: 15px;
+            padding-bottom: 25px;
           }
         }
       }

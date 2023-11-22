@@ -1,9 +1,14 @@
 @import "../helpers/helpers.scss";
 
 .index_page {
-  .bg_black{
-    background-color: var(--color_black);
-    background-image: url(../../../public/img/home/dots_bg.png);
-    background-size: cover;
-  }
+  background-color: var(--color_black);
+  background-image: url(../../../public/img/dots_strip.png);
+  background-size: contain;
+  background-repeat: repeat;
+  // .bg_black{
+  //   background-color: var(--color_black);
+  //   background-image: url(../../../public/img/dots_strip.png);
+  //   background-size: contain;
+  //   background-repeat: repeat;
+  // }
 }

@@ -1,0 +1,39 @@
+@import "../../helpers/helpers.scss";
+
+.about_feedback_wrap {
+  // background-color: var(--color_black);
+  // background-image: url(../../../../public/img/about/dots_bg.png);
+  // background-size: cover;
+  .feedback_img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section_title{
+    position: relative;
+    padding: 100px 40px 0px;
+    @media only screen and (max-width: 991px) {
+      padding: 60px 40px 0px;
+      @media only screen and (max-width: 767px) {
+        padding: 100px 0px 0px;
+      }
+    }
+    h2{
+      text-align: left;
+      color: var(--color_secondary);
+    }
+    p{
+      width: 44%;
+      margin-left: auto;
+      @media only screen and (max-width: 991px) {
+        width: 60%;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
