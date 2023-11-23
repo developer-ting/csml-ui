@@ -91,7 +91,7 @@
 	background-image: none;
 	border-radius: 50px;
 	border: 1px solid #8F8F8F;
-	padding: 10px 35px;
+  padding: 9px 33px;
 	box-shadow: none;
 	text-shadow: none;
 	background-color: transparent;
@@ -101,6 +101,11 @@
 	transition: ease-out 0.3s;
 	cursor: pointer;
   font-family: var(--font_primary);
+  &:hover{
+    background-color: var(--color_primary);
+    border: 1px solid var(--color_primary);
+    //color: var(--color_white);
+  }
 }
 
 .btn_arrow{
