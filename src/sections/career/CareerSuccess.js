@@ -22,12 +22,14 @@ export default function CareerSuccess() {
 			<div className="container">
 				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 pb_20">
-            Set Sail for Career Success with Us
+						Set Sail for Career Success with Us
 					</h2>
 				</div>
 
 				<div className={`${styles.luminaries_flex} toTop`} data-scroll>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div
+						className={`${styles.luminaries_box} border_animation white_border_animation`}
+					>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -35,17 +37,18 @@ export default function CareerSuccess() {
 							<img className="border_8" src={success_img.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title}`}>
-									<h3 className="text_24 text_700">
-                    Innovative Environment
-									</h3>
+									<h3 className="text_24 text_700">Innovative Environment</h3>
 								</div>
 								<p className="paraTxt">
-                CSML is a playground for creativity. We encourage out-of-the-box thinking and provide a platform for your ideas to come to life.
+									CSML is a playground for creativity. We encourage out-of-the-box
+									thinking and provide a platform for your ideas to come to life.
 								</p>
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div
+						className={`${styles.luminaries_box} border_animation white_border_animation`}
+					>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -53,17 +56,18 @@ export default function CareerSuccess() {
 							<img className="border_8" src={imfactful_img.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title}`}>
-									<h3 className="text_24 text_700">
-                    Impactful Work
-									</h3>
+									<h3 className="text_24 text_700">Impactful Work</h3>
 								</div>
 								<p className="paraTxt">
-                CSML is a playground for creativity. We encourage out-of-the-box thinking and provide a platform for your ideas to come to life.
+									CSML is a playground for creativity. We encourage out-of-the-box
+									thinking and provide a platform for your ideas to come to life.
 								</p>
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+					<div
+						className={`${styles.luminaries_box} border_animation white_border_animation`}
+					>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
@@ -71,12 +75,11 @@ export default function CareerSuccess() {
 							<img className="border_8" src={growth.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title}`}>
-									<h3 className="text_24 text_700">
-                    Continuous Growth
-									</h3>
+									<h3 className="text_24 text_700">Continuous Growth</h3>
 								</div>
 								<p className="paraTxt">
-                CSML is a playground for creativity. We encourage out-of-the-box thinking and provide a platform for your ideas to come to life.
+									CSML is a playground for creativity. We encourage out-of-the-box
+									thinking and provide a platform for your ideas to come to life.
 								</p>
 							</div>
 						</div>
