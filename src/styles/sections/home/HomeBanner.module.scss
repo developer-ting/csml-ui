@@ -59,10 +59,16 @@
     right: 0px;
     bottom: 50px;
     cursor: pointer;
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
     @media only screen and (max-width: 991px) {
       bottom: 15px;
       right: 15px;
       width: 45px;
      }
   }
+  @keyframes bounce {
+    50% {
+        transform: translateY(-10px);
+      }
+    }
 }

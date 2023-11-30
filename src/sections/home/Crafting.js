@@ -1,6 +1,7 @@
 // MODULES //
 import React from "react";
 import { useEffect, useState, useRef } from "react";
+import CountUp from "react-countup";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "../../../node_modules/gsap/ScrollTrigger";
 
@@ -80,7 +81,7 @@ export default function Crafting() {
 								hubs for over 50 years
 							</h2>
 							<div className={`${styles.btn_height}`}>
-								<a href="#" rel="noreferrer">
+								<a href="/about" rel="noreferrer">
 									<span className="span_btn">
 										<button className="btn_project_default color_white">About Us</button>
 									</span>
@@ -103,7 +104,7 @@ export default function Crafting() {
 									Entertainment Centres
 								</h3>
 								<div className={`${styles.content_flex} d_f`}>
-									<h2 className="heading_text_55 text_800">200+</h2>
+									<h2 className="heading_text_55 text_800"><CountUp end={200} enableScrollSpy />+</h2>
 									<p className="text_xxs color_white">
 										From concept to creationn we build premier amusement experiences
 									</p>
@@ -114,7 +115,7 @@ export default function Crafting() {
 									Premium Bowling Centres{" "}
 								</h3>
 								<div className={`${styles.content_flex} d_f`}>
-									<h2 className="heading_text_55 text_800">900+</h2>
+									<h2 className="heading_text_55 text_800"> <CountUp end={900} enableScrollSpy />+</h2>
 									<p className="text_xxs color_white">
 										Served across India and the SAARC region
 									</p>
@@ -125,7 +126,7 @@ export default function Crafting() {
 									Happy Customers
 								</h3>
 								<div className={`${styles.content_flex} d_f`}>
-									<h2 className="heading_text_55 text_800">125+</h2>
+									<h2 className="heading_text_55 text_800"><CountUp end={125} enableScrollSpy />+</h2>
 									<p className="text_xxs color_white">Across the continent</p>
 								</div>
 							</div>

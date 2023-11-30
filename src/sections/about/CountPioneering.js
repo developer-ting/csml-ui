@@ -1,5 +1,5 @@
 // MODULES //
-
+import CountUp from "react-countup";
 // COMPONENTS //
 
 // SECTIONS //
@@ -27,7 +27,7 @@ export default function CountPioneering() {
 							<div className={`${styles.content_box}`}>
 								
 								<div className={`${styles.content_flex}`}>
-									<h2 className="heading_text_55 text_800"> 900+</h2>
+									<h2 className="heading_text_55 text_800"> <CountUp end={900} enableScrollSpy />+</h2>
                   <h3 className="color_white text_sm text_700 text_upper pb_10">
                    Brunswick Bowling Lanes
 								  </h3>
@@ -39,7 +39,7 @@ export default function CountPioneering() {
 							<div className={`${styles.content_box}`}>
 								
 								<div className={`${styles.content_flex}`}>
-									<h2 className="heading_text_55 text_800"> 17,000+</h2>
+									<h2 className="heading_text_55 text_800"> <CountUp end={17000} enableScrollSpy />+</h2>
                   <h3 className="color_white text_sm text_700 text_upper pb_10">
                     Arcade & Amusement Games
                   </h3>
@@ -51,7 +51,7 @@ export default function CountPioneering() {
 							<div className={`${styles.content_box}`}>
 								
 								<div className={`${styles.content_flex}`}>
-									<h2 className="heading_text_55 text_800">125+</h2>
+									<h2 className="heading_text_55 text_800"><CountUp end={125} enableScrollSpy />+</h2>
                   <h3 className="color_white text_sm text_700 text_upper pb_10">
                     Amusement Centers
                   </h3>
