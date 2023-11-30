@@ -1,7 +1,7 @@
 // MODULES //
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 // COMPONENTS //
-
+import Cursor from "@/components/Cursor";
 // SECTIONS //
 
 // PLUGINS //
@@ -18,8 +18,10 @@ import styles from "../../styles/sections/home/ProductCatalogue.module.scss";
 // IMAGES //
 import showcase from "../../../public/img/home/home_banner.jpg";
 import arrow from "../../../public/img/arrow.svg";
+
 /** Home Hero Section */
 export default function ProductCatalogue() {
+	const [showCursor, setShowCursor] = useState(false);
 	const dragSliderInfo = [
 		{
 			title: "Brunswick Bowling",
@@ -60,62 +62,7 @@ export default function ProductCatalogue() {
 	const sliderRef = useRef(null);
 	useEffect(() => {
 		// use for cursor animation start
-		const productCatalogueWrap = document.querySelector(
-			".product_catalogue_wrap"
-		);
-		const cursorElement = document.createElement("div");
-		cursorElement.classList.add("cursor_pointer");
-		productCatalogueWrap.appendChild(cursorElement);
 
-		document.body.classList.add("custom-cursor-active");
-		cursorElement.innerHTML = "<p><span>Drag</span> or Click</p>";
-		if (!productCatalogueWrap) {
-			return; // Exit early if the section is not found
-		}
-
-		const handleMouseMove = (e) => {
-			cursorElement.setAttribute(
-				"style",
-				`top: ${e.pageY}px; left: ${e.pageX}px;`
-			);
-		};
-
-		productCatalogueWrap.addEventListener("mousemove", handleMouseMove);
-
-		const customEventElements = productCatalogueWrap.querySelectorAll(
-			'[data-cursor-event="hover"]'
-		);
-
-		customEventElements.forEach((customElement) => {
-			const handleMouseEnter = () => {
-				cursorElement.classList.add("custom-tt");
-				cursorElement.classList.add(customElement.getAttribute("data-event-class"));
-			};
-
-			const handleMouseOut = () => {
-				cursorElement.classList.remove("custom-tt");
-				cursorElement.classList.remove(
-					customElement.getAttribute("data-event-class")
-				);
-			};
-
-			// customElement.addEventListener("mouseenter", handleMouseEnter);
-			// customElement.addEventListener("mouseout", handleMouseOut);
-
-			return () => {
-				customElement.removeEventListener("mouseenter", handleMouseEnter);
-				customElement.removeEventListener("mouseout", handleMouseOut);
-			};
-		});
-
-		const handleClick = () => {
-			cursorElement.classList.add("custom-cursor-click");
-			setTimeout(() => {
-				cursorElement.classList.remove("custom-cursor-click");
-			}, 500);
-		};
-
-		productCatalogueWrap.addEventListener("click", handleClick);
 		// use for cursor animation end
 
 		let x,
@@ -260,14 +207,13 @@ export default function ProductCatalogue() {
 		return () => {
 			// Clean up event listeners on unmount
 			window.removeEventListener("resize", handleResize);
-
-			document.removeEventListener("mousemove", handleMouseMove);
-			document.removeEventListener("click", handleClick);
 		};
 	}, []);
 	return (
 		<section
 			className={`${styles.product_catalogue_wrap} product_catalogue_wrap ptb_100`}
+			onMouseEnter={() => setShowCursor(true)}
+			onMouseLeave={() => setShowCursor(false)}
 		>
 			<div className="container">
 				<div className={`${styles.section_title}`}>
@@ -277,6 +223,7 @@ export default function ProductCatalogue() {
 			<div className="slideMain" ref={sliderRef}>
 				<div id="slides" />
 			</div>
+			<Cursor showCursor={showCursor} />
 		</section>
 	);
 }

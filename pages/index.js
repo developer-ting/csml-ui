@@ -48,8 +48,8 @@ export default function Home() {
 				<Crafting />
 				{/* <ParallaxSlider2 /> */}
 				{/* <ParallaxSlider /> */}
-				{/* <ProductCatalogue /> */}
-				<ProductCatalogue2 />
+				<ProductCatalogue />
+				{/* <ProductCatalogue2 /> */}
 				<ValuedDistributors />
 				<PartnerSuperior />
 				<ExperienceIndustry />
