@@ -26,15 +26,13 @@ import OurGuidingValues from "@/sections/career/OurGuidingValues";
 import CsmlExperience from "@/sections/career/CsmlExperience";
 import HowToApply from "@/sections/career/HowToApply";
 
-
-
 /** Home Page */
 export default function Career() {
 	useEffect(() => {
-    ScrollOut({
-      once: true
-    });
-  }, []);
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>
@@ -46,18 +44,17 @@ export default function Career() {
 			<Header />
 			<Loader />
 			<main className={`${styles.career_page}`}>
-      <InsideBanner
-				bannerTitle="Start Your Adventure with CSML"
-				bannerImg={career_banner.src}
-				mobileImg={Career_bnner_mobile.src}
-			/>
-      <JoinPioneering />
-			<CareerSuccess />
-      <LifeCsml />
-			<OurGuidingValues />
-			<CsmlExperience />
-			<HowToApply />
-			
+				<InsideBanner
+					bannerTitle="Start Your Adventure with CSML"
+					bannerImg={career_banner.src}
+					mobileImg={Career_bnner_mobile.src}
+				/>
+				<JoinPioneering />
+				<CareerSuccess />
+				<LifeCsml />
+				<OurGuidingValues />
+				<CsmlExperience />
+				<HowToApply />
 			</main>
 			<Footer />
 		</div>
