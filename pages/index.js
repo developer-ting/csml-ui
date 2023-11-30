@@ -9,6 +9,7 @@ import Header from "../src/components/Header";
 import HomeBanner from "@/sections/home/HomeBanner";
 import Crafting from "@/sections/home/Crafting";
 import ProductCatalogue from "@/sections/home/ProductCatalogue";
+import ProductCatalogue2 from "@/sections/home/ProductCatalogue2";
 import ValuedDistributors from "@/sections/home/ValuedDistributors";
 import PartnerSuperior from "@/sections/home/PartnerSuperior";
 import ExperienceIndustry from "@/sections/home/ExperienceIndustry";
@@ -18,21 +19,20 @@ import EnthralledCustomers from "@/sections/home/EnthralledCustomers";
 import Loader from "@/components/Loader";
 
 // SECTIONS //
-
+import ParallaxSlider from "@/sections/home/ParallaxSlider";
+import ParallaxSlider2 from "@/sections/home/ParallaxSlider2";
 // PLUGINS //
 
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
 
-
-
 /** Home Page */
 export default function Home() {
 	useEffect(() => {
-    ScrollOut({
-      once: true
-    });
-  }, []);
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>
@@ -46,7 +46,10 @@ export default function Home() {
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
 				<Crafting />
+				{/* <ParallaxSlider2 /> */}
+				{/* <ParallaxSlider /> */}
 				<ProductCatalogue />
+				{/* <ProductCatalogue2 /> */}
 				<ValuedDistributors />
 				<PartnerSuperior />
 				<ExperienceIndustry />
