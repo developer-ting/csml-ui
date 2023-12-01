@@ -11,6 +11,9 @@ import Loader from "@/components/Loader";
 // SECTIONS //
 
 // PLUGINS //
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // STYLES //
 import styles from "../../src/styles/pages/product/GoKarting.module.scss";
@@ -24,14 +27,49 @@ import sadikartImg1 from "../../public/img/product/go-karting/sadikart-img1.jpg"
 import sadikartImg2 from "../../public/img/product/go-karting/sadikart-img2.jpg";
 import timingSoftwareImg1 from "../../public/img/product/go-karting/timing-software-img1.jpg";
 import timingSoftwareImg2 from "../../public/img/product/go-karting/timing-software-img2.jpg";
+import essentialComponents from "../../public/img/product/go-karting/essential-components.jpg";
+import userFriendly from "../../public/img/product/go-karting/user-friendly.jpg";
+import safetyBarriersImg1 from "../../public/img/product/go-karting/safety-barriers-img1.jpg";
+import safetyBarriersImg2 from "../../public/img/product/go-karting/safety-barriers-img2.jpg";
+import safetyBarriersImg3 from "../../public/img/product/go-karting/safety-barriers-img3.jpg";
 
 /** Services Page */
 export default function GoKarting() {
+	var settings = {
+		dots: false,
+		arrows: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		pauseOnHover: false,
+		speed: 1000,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+				},
+			},
+		],
+		afterChange: (i) => {
+			fillProgress(i + 1);
+		},
+	};
+
+	const [progressWidth, setProgressWidth] = useState(0);
 	useEffect(() => {
+		fillProgress(1);
 		ScrollOut({
 			once: true,
 		});
 	}, []);
+	const fillProgress = (currInd) => {
+		setProgressWidth((currInd / 3) * 100);
+	};
 	return (
 		<div>
 			<Head>
@@ -53,7 +91,7 @@ export default function GoKarting() {
 					className={`${styles.banner_bottom_text_sec} dot_animation_box ptb_100`}
 				>
 					<div className="container">
-						<p className="text_24 color_white_opacity l_h_6">
+						<p className="text_24 color_white_opacity l_h_6 toTop" data-scroll>
 							Revitalize your entertainment center with versatile go-karting experience
 							suitable for pure enjoyment at its finest.
 						</p>
@@ -62,11 +100,11 @@ export default function GoKarting() {
 
 				<section className={`${styles.entertainmentCenter} ptb_100`}>
 					<div className="container">
-						<div className={`${styles.entertainmentCenterContent} pb_40`}>
-							<h2 className="heading_text_55 pb_20">
+						<div className={`${styles.entertainmentCenterContent} pb_40 `}>
+							<h2 className="heading_text_55 pb_20 toTop" data-scroll>
 								Rev Up Your Entertainment Center with Go-Karting
 							</h2>
-							<p className="paraTxt_18 color_black_opacity l_h_6">
+							<p className="paraTxt_18 color_black_opacity l_h_6 toTop" data-scroll>
 								Rev up your excitement with go-karting—an exhilarating, all-encompassing
 								experience that captivates enthusiasts of every age and skill level!
 								Strategic investments in meticulously designed tracks, high-quality
@@ -77,7 +115,8 @@ export default function GoKarting() {
 						</div>
 
 						<div
-							className={`${styles.entertainmentCenterImgBox} border_animation white_border_animation`}
+							className={`${styles.entertainmentCenterImgBox} commonBorderAnimation whiteCommonBorderAnimation toTop`}
+							data-scroll
 						>
 							<div className={`${styles.entertainmentCenterImgBoxStyle}`}>
 								<img src={entertainmentCenterImg1.src} alt="Entertainment Center Img" />
@@ -104,12 +143,15 @@ export default function GoKarting() {
 					className={`${styles.sadikartTimingSoftware} dot_animation_box ptb_100`}
 				>
 					<div className="container">
-						<h2 className="heading_text_55 color_white pb_50 text_center">
+						<h2
+							className="heading_text_55 color_white pb_50 text_center toTop"
+							data-scroll
+						>
 							SODIKART
 						</h2>
 						<div className={`${styles.partner_superior_flex} f_j`}>
 							<div
-								className={`${styles.partner_superior_box} border_animation toTop`}
+								className={`${styles.partner_superior_box} commonBorderAnimation toTop`}
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
@@ -126,7 +168,7 @@ export default function GoKarting() {
 								</div>
 							</div>
 							<div
-								className={`${styles.partner_superior_box} border_animation toTop`}
+								className={`${styles.partner_superior_box} commonBorderAnimation toTop`}
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
@@ -147,11 +189,17 @@ export default function GoKarting() {
 							</div>
 						</div>
 
-						<h2 className="heading_text_55 color_white pt_100 pb_50 text_center">
+						<h2
+							className="heading_text_55 color_white pt_100 pb_50 text_center toTop"
+							data-scroll
+						>
 							Timing Software
 						</h2>
 						<div className={`${styles.luminaries_flex} toTop`}>
-							<div className={`${styles.luminaries_box} border_animation`}>
+							<div
+								className={`${styles.luminaries_box} commonBorderAnimation toTop`}
+								data-scroll
+							>
 								<div className="dot_one dots_p"></div>
 								<div className="dot_two dots_p"></div>
 								<div className="dot_three dots_p"></div>
@@ -169,7 +217,10 @@ export default function GoKarting() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.luminaries_box} border_animation`}>
+							<div
+								className={`${styles.luminaries_box} commonBorderAnimation toTop`}
+								data-scroll
+							>
 								<div className="dot_one dots_p"></div>
 								<div className="dot_two dots_p"></div>
 								<div className="dot_three dots_p"></div>
@@ -186,6 +237,144 @@ export default function GoKarting() {
 										</p>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section className={`${styles.hardwareSection} pt_100 pb_60`}>
+					<div className="container">
+						<h2 className="heading_text_55 pb_50 toTop" data-scroll>
+							Timing Hardware
+						</h2>
+						<div className={`${styles.hardwareSectionBox} f_w_j a_center pb_40`}>
+							<div
+								className={`${styles.hardwareSectionStyle} commonBorderAnimation whiteCommonBorderAnimation toTop`}
+								data-scroll
+							>
+								<img
+									src={essentialComponents.src}
+									className="border_8 width_100"
+									alt="Essential Components"
+								/>
+							</div>
+							<div className={`${styles.hardwareSectionStyle}`}>
+								<h4 className="text_24 text_700 pb_20 toTop" data-scroll>
+									Essential Components
+								</h4>
+								<p className="paraTxt_18 color_black_opacity l_h_6 toTop" data-scroll>
+									Timing hardware includes transponders, safety lights and loops,
+									seamlessly integrating with lap timing systems for precise individual
+									and group performance evaluations.
+								</p>
+							</div>
+						</div>
+						<div className={`${styles.hardwareSectionBox} f_w_j a_center pb_40`}>
+							<div
+								className={`${styles.hardwareSectionStyle} commonBorderAnimation whiteCommonBorderAnimation toTop`}
+								data-scroll
+							>
+								<img
+									src={userFriendly.src}
+									className="border_8 width_100"
+									alt="User Friendly"
+								/>
+							</div>
+							<div className={`${styles.hardwareSectionStyle}`}>
+								<h4 className="text_24 text_700 pb_20 toTop" data-scroll>
+									User-Friendly
+								</h4>
+								<p className="paraTxt_18 color_black_opacity l_h_6 toTop" data-scroll>
+									Facilitates convenient printing of lap timing and scoring data,
+									ensuring accuracy and efficiency in recording and analyzing race
+									performance.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					className={`${styles.our_guiding_values_wrap} dot_animation_box ptb_100`}
+				>
+					<div className={`${styles.our_guiding_values_main}`}>
+						<div className={`${styles.life_csml_content} toTop`} data-scroll>
+							<h2 className="heading_text_55 color_white pb_40">Safety Barriers</h2>
+						</div>
+						<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
+							<Slider {...settings}>
+								<div className={`${styles.partner_superior_box} commonBorderAnimation`}>
+									<div className={`${styles.partner_superior_content}`}>
+										<img
+											className="border_8 width_100"
+											src={safetyBarriersImg1.src}
+											alt="img"
+										/>
+										<div className={`${styles.desc_box}`}>
+											<div className={`${styles.desc_title} pb_20 f_j`}>
+												<h3 className="text_24 color_white text_500 ">
+													FIA Approved Guardians
+												</h3>
+											</div>
+											<p className="paraTxt_18 color_white_opacity">
+												CSML introduces FIA approved Go Kart Safety Barriers, crafted with
+												precision to redefine safety standards in go-karting.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className={`${styles.partner_superior_box} commonBorderAnimation`}>
+									<div className={`${styles.partner_superior_content}`}>
+										<img
+											className="border_8 width_100"
+											src={safetyBarriersImg2.src}
+											alt="img"
+										/>
+										<div className={`${styles.desc_box}`}>
+											<div className={`${styles.desc_title} pb_20 f_j`}>
+												<h3 className="text_24 color_white text_500">
+													Versatile Protection
+												</h3>
+											</div>
+											<p className="paraTxt_18 color_white_opacity">
+												These barriers absorb impact forces, offer adaptable configurations,
+												enhance visibility, ensure quick installation and redefine
+												durability with robust materials.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className={`${styles.partner_superior_box} commonBorderAnimation`}>
+									<div className={`${styles.partner_superior_content}`}>
+										<img
+											className="border_8 width_100"
+											src={safetyBarriersImg3.src}
+											alt="img"
+										/>
+										<div className={`${styles.desc_box}`}>
+											<div className={`${styles.desc_title} pb_20 f_j`}>
+												<h3 className="text_24 color_white text_500">
+													Customization for Safety
+												</h3>
+											</div>
+											<p className="paraTxt_18 color_white_opacity">
+												Blend aesthetics and safety with customizable options, providing a
+												safer and more enjoyable go-karting experience where every twist and
+												turn is backed by security.
+											</p>
+										</div>
+									</div>
+								</div>
+							</Slider>
+						</div>
+					</div>
+					<div className="container">
+						<div className={`${styles.progress_div} pb_100 toTop`} data-scroll>
+							<div className={`${styles.progress_bar}`}>
+								<div
+									style={{ width: `${progressWidth}%` }}
+									className={`${styles.color_div}`}
+								></div>
 							</div>
 						</div>
 					</div>
