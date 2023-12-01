@@ -1,42 +1,41 @@
 @import "../helpers/helpers.scss";
 
 .main_footer {
-  background-color: var(--color_black);
-  background-image: url(../../../public/img/home/dots_bg.png);
-  background-size: cover;
-  
-  .bg_footer{
-    backdrop-filter: blur(18px);
-    background-image: linear-gradient(#0c0c0c, #464646);
-    padding: 80px 0px 0px;
-  }
+	background-color: var(--color_black);
+	background-image: url(../../../public/img/home/dots_bg.png);
+	background-size: cover;
+
+	.bg_footer {
+		backdrop-filter: blur(18px);
+		background-image: linear-gradient(#0c0c0c, #464646);
+		padding: 80px 0px 0px;
+	}
 	.footerMenuMain {
-    
 		.footerMenuFlex {
 			@extend %d_flex;
 			@extend %flex_wrap;
 			justify-content: space-between;
-      .footerMenuItem_left{
-        width: 20%;
-        @media only screen and (max-width: 991px) {
-          width: 30%;
-        }
-        @media only screen and (max-width: 767px) {
-          width: 100%;
-        }
-      }
+			.footerMenuItem_left {
+				width: 20%;
+				@media only screen and (max-width: 991px) {
+					width: 30%;
+				}
+				@media only screen and (max-width: 767px) {
+					width: 100%;
+				}
+			}
 			.footerMenuItem_center {
-        width: 32%;
-        @media only screen and (max-width: 1199px) {
-          width: 38%;
-        }
-        @media only screen and (max-width: 991px) {
-          width: 60%;
-        }
-        @media only screen and (max-width: 767px) {
-          width: 100%;
-          padding-top: 30px;
-        }
+				width: 32%;
+				@media only screen and (max-width: 1199px) {
+					width: 38%;
+				}
+				@media only screen and (max-width: 991px) {
+					width: 60%;
+				}
+				@media only screen and (max-width: 767px) {
+					width: 100%;
+					padding-top: 30px;
+				}
 				.footerMenuInnerFlex {
 					@extend %d_flex;
 					@extend %flex_wrap;
@@ -52,106 +51,106 @@
 							padding-left: 0;
 						}
 						li {
-							margin-bottom: 15px;
-              color: var(--color_white);
-              font-size: 18px;
-              @media only screen and (max-width: 1199px) {
-                font-size: 16px;
-              }
+							margin-bottom: 10px;
+							color: var(--color_white);
+							font-size: 18px;
+							@media only screen and (max-width: 1199px) {
+								font-size: 16px;
+							}
 						}
 					}
 				}
 			}
-      .footerMenuItem_right{
-        width: 35%;
-        @media only screen and (max-width: 1199px) {
-          width: 30%;
-        }
-        @media only screen and (max-width: 991px) {
-          width: 100%;
-          padding-top: 50px;
-        }
-        @media only screen and (max-width: 767px) {
-          padding-top: 30px;
-        }
-        p{
-          color: #F1EFE9;
-        }
-        .input_group{
-          position: relative;
-          .input_field{
-            background-color: transparent;
-            border: 1px solid #707070;
-            padding: 15px 80px 15px 25px;
-            width: 100%;
-            border-radius: 30px;
-            font-size: 14px;
-            color: #fff;
-          }
-          .btn_arrow{
-            position: absolute;
-            right: 40px;
-            top: 10px;
-            @media only screen and (max-width: 1199px) {
-              right: 15px;
-            }
-          }
-        }
-        .social_media{
-          @media only screen and (max-width: 991px) {
-            padding-top: 30px;
-          }
-          h5{
-            opacity: 0.7;
-          }
-          ul{
-            padding-left: 0px;
-            list-style-type: none;
-            display: flex;
-            li{
-              width: 36px;
-              height: 36px;
-              border-radius: 50%;
-              background-color: var(--color_primary);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              margin-right: 15px;
-              transition: ease-out 0.3s;
-              &:hover{
-                background-color: var(--color_secondary);
-                transition: ease-out 0.3s;
-                img{
-                  filter: invert(1);
-                  transition: ease-out 0.3s;
-                }
-              }
-              img{
-                transition: ease-out 0.3s;
-              }
-            }
-          }
-        }
-      }
+			.footerMenuItem_right {
+				width: 35%;
+				@media only screen and (max-width: 1199px) {
+					width: 30%;
+				}
+				@media only screen and (max-width: 991px) {
+					width: 100%;
+					padding-top: 50px;
+				}
+				@media only screen and (max-width: 767px) {
+					padding-top: 30px;
+				}
+				p {
+					color: #f1efe9;
+				}
+				.input_group {
+					position: relative;
+					.input_field {
+						background-color: transparent;
+						border: 1px solid #707070;
+						padding: 15px 80px 15px 25px;
+						width: 100%;
+						border-radius: 30px;
+						font-size: 14px;
+						color: #fff;
+					}
+					.btn_arrow {
+						position: absolute;
+						right: 40px;
+						top: 10px;
+						@media only screen and (max-width: 1199px) {
+							right: 15px;
+						}
+					}
+				}
+				.social_media {
+					@media only screen and (max-width: 991px) {
+						padding-top: 30px;
+					}
+					h5 {
+						opacity: 0.7;
+					}
+					ul {
+						padding-left: 0px;
+						list-style-type: none;
+						display: flex;
+						li {
+							width: 36px;
+							height: 36px;
+							border-radius: 50%;
+							background-color: var(--color_primary);
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							cursor: pointer;
+							margin-right: 15px;
+							transition: ease-out 0.3s;
+							&:hover {
+								background-color: var(--color_secondary);
+								transition: ease-out 0.3s;
+								img {
+									filter: invert(1);
+									transition: ease-out 0.3s;
+								}
+							}
+							img {
+								transition: ease-out 0.3s;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	.footerBtm {
-    margin-top: 30px;
+		margin-top: 30px;
 		.footerBtmFlex {
-      padding: 20px 0px;
-      border-top: 1px solid #707070;
-      @media only screen and (max-width: 767px) {
-        justify-content: center;
-      }
-      .footerBtmItem{
-        p{
-          color: #F1EFE9;
-          @media only screen and (max-width: 767px) {
-            padding-bottom: 25px;
-          }
-        }
-      }
+			padding: 20px 0px;
+			border-top: 1px solid #707070;
+			@media only screen and (max-width: 767px) {
+				justify-content: center;
+			}
+			.footerBtmItem {
+				p {
+					color: #f1efe9;
+					@media only screen and (max-width: 767px) {
+						padding-bottom: 25px;
+					}
+				}
+			}
 		}
 	}
 }
