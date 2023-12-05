@@ -33,7 +33,7 @@ import safetyBarriersImg1 from "../../public/img/product/go-karting/safety-barri
 import safetyBarriersImg2 from "../../public/img/product/go-karting/safety-barriers-img2.jpg";
 import safetyBarriersImg3 from "../../public/img/product/go-karting/safety-barriers-img3.jpg";
 
-/** Services Page */
+/** Go Karting Page */
 export default function GoKarting() {
 	var settings = {
 		dots: false,
@@ -79,7 +79,7 @@ export default function GoKarting() {
 			</Head>
 
 			<Header />
-			{/* <Loader /> */}
+			{/* Loader */}
 			<main className={`${styles.GoKartingPage}`}>
 				<InsideBanner
 					bannerTitle="Get Racing with Go-Karting"
@@ -295,7 +295,7 @@ export default function GoKarting() {
 				</section>
 
 				<section
-					className={`${styles.our_guiding_values_wrap} dot_animation_box ptb_100`}
+					className={`${styles.safety_barriers_section} dot_animation_box ptb_100`}
 				>
 					<div className={`${styles.our_guiding_values_main}`}>
 						<div className={`${styles.life_csml_content} toTop`} data-scroll>
