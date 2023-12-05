@@ -23,7 +23,7 @@ export default function ExperienceIndustry() {
 				</div>
 				<div className={`${styles.partner_superior_flex} f_j toTop`} data-scroll>
 					<div
-						className={`${styles.partner_superior_box} border_animation white_border_animation`}
+						className={`${styles.partner_superior_box} border_8 border_animation white_border_animation`}
 					>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
@@ -31,45 +31,45 @@ export default function ExperienceIndustry() {
 						<h3 className="paraTxt text_700 pb_20">
 							Pioneers of amusement solutions{" "}
 						</h3>
-						<p className="paraTxt">
+						<p className="paraTxt opacity_two">
 							As leaders of Indoor Amusement Centers (IAC) development, we provide
 							comprehensive, end-to-end solutions.
 						</p>
 					</div>
 					<div
-						className={`${styles.partner_superior_box} border_animation white_border_animation`}
+						className={`${styles.partner_superior_box} border_8 border_animation white_border_animation`}
 					>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<h3 className="paraTxt text_700 pb_20">Partnered with the best</h3>
-						<p className="paraTxt">
+						<p className="paraTxt opacity_two">
 							We have a vast premium arcade machine inventory from trusted global
 							manufacturers.{" "}
 						</p>
 					</div>
 
 					<div
-						className={`${styles.partner_superior_box} border_animation white_border_animation`}
+						className={`${styles.partner_superior_box} border_8 border_animation white_border_animation`}
 					>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<h3 className="paraTxt text_700 pb_20">Investment excellence partner </h3>
-						<p className="paraTxt">
+						<p className="paraTxt opacity_two">
 							We offer market insights, and custom business models to ensure you make
 							informed investments.
 						</p>
 					</div>
 
 					<div
-						className={`${styles.partner_superior_box} border_animation white_border_animation`}
+						className={`${styles.partner_superior_box} border_8 border_animation white_border_animation`}
 					>
 						<div className="dot_one dots_p"></div>
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<h3 className="paraTxt text_700 pb_20">Launch success partner</h3>
-						<p className="paraTxt">
+						<p className="paraTxt opacity_two">
 							We offer re-launch support through a proficient team that handles setup,
 							maintenance, and post-sales support.
 						</p>

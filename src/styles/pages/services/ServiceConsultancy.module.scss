@@ -1,4 +1,4 @@
-@import "../helpers/helpers.scss";
+@import "../../helpers/helpers.scss";
 
 .ServicesConsultancyPage {
   
@@ -22,7 +22,6 @@
         .info_para{
             color: var(--color_white);
             line-height: 1.8;
-            opacity: 0.8;
         }
       }
       .img_bx{
@@ -31,7 +30,7 @@
           width: 100%;
         }
         img{
-        border-radius: 7px;
+        
           @media (max-width: 991px) {
             width: 100%;
           }
@@ -115,7 +114,6 @@
             }
             .info_desc{
               line-height: 24px;
-              opacity: 0.8;
             }
         }
     }

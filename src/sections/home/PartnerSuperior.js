@@ -40,7 +40,7 @@ export default function PartnerSuperior() {
 						Your partner in superior <br className="hidden-xs" />
 						amusement experience{" "}
 					</h2>
-					<p className="paraTxt color_white">
+					<p className="paraTxt color_white opacity_one">
 						Discover how CSML can help you achieve entertainment centre success, from
 						concept to operation. Our expertise streamlines planning, design,
 						logistics, staffing, pricing and support.
@@ -67,7 +67,7 @@ export default function PartnerSuperior() {
 										</button>
 									</a>
 								</div>
-								<p className="paraTxt color_white">
+								<p className="paraTxt color_white opacity_one">
 									Tailored consultancy services for Indoor Amusement Centers (IAC),
 									simplifying operations, ensuring seamless coordination from start to
 									finish.
@@ -95,7 +95,7 @@ export default function PartnerSuperior() {
 										</button>
 									</a>
 								</div>
-								<p className="paraTxt color_white">
+								<p className="paraTxt color_white opacity_one">
 									Operational excellence is offered via FEC management contract. Our
 									expert team manages day-to-day operations, allowing clients to focus on
 									strategic goals.
@@ -115,7 +115,7 @@ export default function PartnerSuperior() {
 									<h3 className="text_35 pb_20">
 										Elevate your home with custom entertainment solutions
 									</h3>
-									<p className="paraTxt">
+									<p className="paraTxt opacity_one">
 										Lorem Ipsum is simply dummy text of the printing and typesetting
 										industry. Lorem Ipsum has been the industry's standard dummy text ever
 										since the 1500s
@@ -131,7 +131,7 @@ export default function PartnerSuperior() {
 									</div>
 								</div>
 								<div className={`${styles.yellow_img}`}>
-									<img className="" src={yellow_img.src} alt="img" />
+									<img className="border_20" src={yellow_img.src} alt="img" />
 								</div>
 							</div>
 						</div>
@@ -144,7 +144,7 @@ export default function PartnerSuperior() {
 									<h3 className="text_35 pb_20">
 										Elevate your home with custom entertainment solutions
 									</h3>
-									<p className="paraTxt">
+									<p className="paraTxt opacity_one">
 										Lorem Ipsum is simply dummy text of the printing and typesetting
 										industry. Lorem Ipsum has been the industry's standard dummy text ever
 										since the 1500s
@@ -160,7 +160,7 @@ export default function PartnerSuperior() {
 									</div>
 								</div>
 								<div className={`${styles.yellow_img}`}>
-									<img className="" src={yellow_img.src} alt="img" />
+									<img className="border_20" src={yellow_img.src} alt="img" />
 								</div>
 							</div>
 						</div>
@@ -172,7 +172,7 @@ export default function PartnerSuperior() {
 									<h3 className="text_35 pb_20">
 										Elevate your home with custom entertainment solutions
 									</h3>
-									<p className="paraTxt">
+									<p className="paraTxt opacity_one">
 										Lorem Ipsum is simply dummy text of the printing and typesetting
 										industry. Lorem Ipsum has been the industry's standard dummy text ever
 										since the 1500s
@@ -188,7 +188,7 @@ export default function PartnerSuperior() {
 									</div>
 								</div>
 								<div className={`${styles.yellow_img}`}>
-									<img className="" src={yellow_img.src} alt="img" />
+									<img className="border_20" src={yellow_img.src} alt="img" />
 								</div>
 							</div>
 						</div>

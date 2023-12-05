@@ -62,12 +62,7 @@ picture {
 .text_upper {
 	text-transform: uppercase;
 }
-.border_12 {
-	border-radius: 12px;
-}
-.border_8 {
-	border-radius: 8px;
-}
+
 
 .dot_animation_box{
 	position: relative;
@@ -104,8 +99,8 @@ picture {
 .commonBorderAnimation {
 	position: relative;
 	border: 1px solid #777;
-    border-radius: 12px;
-    padding: 5px;
+	border-radius: 12px;
+	padding: 5px;
 
 	&::before,
 	&::after {
@@ -881,4 +876,25 @@ picture {
 }
 .custom-cursor-click {
 	animation: custom-cursor-click 0.5s forwards;
+}
+
+
+.border_20 {
+	border-radius: 20px;
+}
+.border_12 {
+	border-radius: 12px;
+}
+.border_8 {
+	border-radius: 8px;
+}
+.b_r_15 {
+	border-radius: 15px;
+}
+
+.opacity_one{
+	opacity: 0.8;
+}
+.opacity_two{
+	opacity: 0.7;
 }

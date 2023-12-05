@@ -44,7 +44,7 @@ export default function Luminaries() {
 										</Link>
 									</span>
 								</div>
-								<p className="paraTxt font_secondary">
+								<p className="paraTxt font_secondary opacity_two">
 									CEO
 								</p>
 							</div>
@@ -67,7 +67,7 @@ export default function Luminaries() {
 										</Link>
 									</span>
 								</div>
-								<p className="paraTxt font_secondary">
+								<p className="paraTxt font_secondary opacity_two">
 									Chief Business Development Officer
 								</p>
 							</div>
@@ -90,7 +90,7 @@ export default function Luminaries() {
 										</Link>
 									</span>
 								</div>
-								<p className="paraTxt font_secondary">
+								<p className="paraTxt font_secondary opacity_two">
 									Chief Technology Officer
 								</p>
 							</div>
@@ -113,7 +113,7 @@ export default function Luminaries() {
 										</Link>
 									</span>
 								</div>
-								<p className="paraTxt font_secondary">
+								<p className="paraTxt font_secondary opacity_two">
 									CEO
 								</p>
 							</div>
@@ -136,7 +136,7 @@ export default function Luminaries() {
 										</Link>
 									</span>
 								</div>
-								<p className="paraTxt font_secondary">
+								<p className="paraTxt font_secondary opacity_two">
 									Chief Business Development Officer
 								</p>
 							</div>
@@ -159,7 +159,7 @@ export default function Luminaries() {
 										</Link>
 									</span>
 								</div>
-								<p className="paraTxt font_secondary">
+								<p className="paraTxt font_secondary opacity_two">
 									Chief Technology Officer
 								</p>
 							</div>

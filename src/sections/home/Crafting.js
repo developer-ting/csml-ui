@@ -68,7 +68,7 @@ export default function Crafting() {
 							<h2 className="text_xxxxxI color_white pb_40 crafting_heading">
 								Crafting
 							</h2>
-							<p className="paraTxt color_white">
+							<p className="paraTxt color_white opacity_one">
 								Since our establishment in 2002, we have cultivated an extensive
 								portfolio of entertainment solutions. Additionally, we've been the
 								exclusive distributor for Brunswick Bowling Products USA in India &
@@ -94,8 +94,8 @@ export default function Crafting() {
 
 			<div className="container pt_100">
 				<div className={`${styles.intertainment_border} border_animation`}>
-					<div className={`${styles.intertainment_flex} d_f`}>
-						<div className={`${styles.intertainment_left} toTop`} data-scroll>
+					<div className={`${styles.intertainment_flex} border_12 d_f`}>
+						<div className={`${styles.intertainment_left} border_12 toTop`} data-scroll>
 							<div className="dot_one dots_p"></div>
 							<div className="dot_two dots_p"></div>
 							<div className="dot_three dots_p"></div>
@@ -105,7 +105,7 @@ export default function Crafting() {
 								</h3>
 								<div className={`${styles.content_flex} d_f`}>
 									<h2 className="heading_text_55 text_800"><CountUp end={200} enableScrollSpy />+</h2>
-									<p className="text_xxs color_white">
+									<p className="text_xxs color_white opacity_one">
 										From concept to creationn we build premier amusement experiences
 									</p>
 								</div>
@@ -116,7 +116,7 @@ export default function Crafting() {
 								</h3>
 								<div className={`${styles.content_flex} d_f`}>
 									<h2 className="heading_text_55 text_800"> <CountUp end={900} enableScrollSpy />+</h2>
-									<p className="text_xxs color_white">
+									<p className="text_xxs color_white opacity_one">
 										Served across India and the SAARC region
 									</p>
 								</div>
@@ -127,7 +127,7 @@ export default function Crafting() {
 								</h3>
 								<div className={`${styles.content_flex} d_f`}>
 									<h2 className="heading_text_55 text_800"><CountUp end={125} enableScrollSpy />+</h2>
-									<p className="text_xxs color_white">Across the continent</p>
+									<p className="text_xxs color_white opacity_one">Across the continent</p>
 								</div>
 							</div>
 						</div>

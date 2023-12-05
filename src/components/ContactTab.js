@@ -33,7 +33,7 @@ const ContactTab = ({ TabTitle }) => {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.inside_flex}`}>
-							<div className={`${styles.text_bx} text_24`}>{parse(TabTitle)}</div>
+							<div className={`${styles.text_bx} text_24 opacity_one`}>{parse(TabTitle)}</div>
 							<div className={`${styles.btn_bx}`}>
 								<a href="#" rel="noreferrer">
 								<span className="span_btn yellow_btn">

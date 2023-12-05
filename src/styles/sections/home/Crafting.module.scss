@@ -40,9 +40,7 @@
       @media only screen and (max-width: 767px) {
         width: 100%;
       }
-      p {
-        opacity: 0.8;
-      }
+      
     }
 
     .right_content {
@@ -78,7 +76,7 @@
         width: 36%;
         background-color: rgba(30, 30, 30, 0.45);
         backdrop-filter: blur(15px);
-        border-radius: 12px;
+        
         padding: 20px 50px;
         position: relative;
         z-index: 1;
@@ -116,7 +114,6 @@
             }
             p{
               width: 50%;
-              opacity: 0.8;
               @media (max-width: 1401px) {
                 width: 55%;
               }

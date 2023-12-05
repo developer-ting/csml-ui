@@ -20,7 +20,7 @@ export default function CountPioneering() {
 			<div className="container">
         <div className={`${styles.intertainment_border} border_animation toTop`} data-scroll>
 					<div className={`${styles.intertainment_flex}`}>
-						<div className={`${styles.intertainment_left} d_f`}>
+						<div className={`${styles.intertainment_left} border_12 d_f`}>
 							<div className="dot_one dots_p"></div>
 							<div className="dot_two dots_p"></div>
 							<div className="dot_three dots_p"></div>
@@ -31,7 +31,7 @@ export default function CountPioneering() {
                   <h3 className="color_white text_sm text_700 text_upper pb_10">
                    Brunswick Bowling Lanes
 								  </h3>
-									<p className="text_xxs color_white">
+									<p className="text_xxs color_white opacity_one">
                     Installed
 									</p>
 								</div>
@@ -43,7 +43,7 @@ export default function CountPioneering() {
                   <h3 className="color_white text_sm text_700 text_upper pb_10">
                     Arcade & Amusement Games
                   </h3>
-									<p className="text_xxs color_white">
+									<p className="text_xxs color_white opacity_one">
                     Deployed
 									</p>
 								</div>
@@ -55,7 +55,7 @@ export default function CountPioneering() {
                   <h3 className="color_white text_sm text_700 text_upper pb_10">
                     Amusement Centers
                   </h3>
-									<p className="text_xxs color_white">Collaborations</p>
+									<p className="text_xxs color_white opacity_one">Collaborations</p>
 								</div>
 							</div>
 						</div>

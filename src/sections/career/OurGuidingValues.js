@@ -84,7 +84,7 @@ export default function OurGuidingValues() {
                     </h3>
                     
                   </div>
-                  <p className="paraTxt color_white">
+                  <p className="paraTxt color_white opacity_one">
                   Foster grand ambitions and explore boundless horizons, aiming for exceptional achievements and continuous self-improvement.
                   </p>
                 </div>
@@ -99,7 +99,7 @@ export default function OurGuidingValues() {
                       Compete to Win
                     </h3>
                   </div>
-                  <p className="paraTxt color_white">
+                  <p className="paraTxt color_white opacity_one">
                     Pursue excellence relentlessly, constantly pushing your limits and seeking innovative ways to triumph in all endeavours.
                   </p>
                 </div>
@@ -114,7 +114,7 @@ export default function OurGuidingValues() {
                       Make Every Experience Fun
                     </h3>
                   </div>
-                  <p className="paraTxt color_white">
+                  <p className="paraTxt color_white opacity_one">
                     Inject enthusiasm and excitement into every task, ensuring that joy and passion are integral to your journey.
                   </p>
                 </div>

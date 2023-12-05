@@ -45,7 +45,7 @@ export default function HowToApply() {
             </div>
           </div>
           <div className={`${styles.img_bx} border_animation white_border_animation toTop`} data-scroll>
-            <img className="img" src={how_to_apply.src} />
+            <img className="img border_8" src={how_to_apply.src} />
           </div>
         </div>
       </div>

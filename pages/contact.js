@@ -85,8 +85,8 @@ export default function Contact() {
 				<section className={`${styles.contact_sec} dot_animation_box`}>
 					<div className="container">
 						<div className={`${styles.contact_flex} ptb_80`}>
-							<div className={`${styles.contact_details} pt_80`}>
-								<p className="paraTxt color_white pb_40 toTop" data-scroll>
+							<div className={`${styles.contact_details} pt_80 toTop`} data-scroll>
+								<p className="paraTxt color_white pb_40  opacity_one">
 									Whether you have questions, need information, or want to explore how we
 									can enhance your space, <span className="text_600">we're here to assist you.</span>
 								</p>

@@ -97,7 +97,7 @@ const Footer = () => {
 									</div>
 								</form>
 								<div className={`${styles.social_media} pt_60`}>
-									<h5 className="text_xs text_400 color_white pb_20">Follow Us on</h5>
+									<h5 className="text_xs text_400 color_white pb_20 opacity_two">Follow Us on</h5>
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
 										<li>
 											<Link href="">

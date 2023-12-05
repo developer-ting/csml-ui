@@ -48,7 +48,7 @@ export default function EnthralledCustomers() {
                   <img className="" src={quate.src} alt="img" />
                 </div>
                 <div className={`${styles.enthralled_quate_bottom}`}>
-                  <img className="" src={quate.src} alt="img" />
+                  <img className="border_20" src={quate.src} alt="img" />
                 </div>
                 <div className={`${styles.enthralled_content}`}>
                   <p className="paraTxt">Working with CSML has been an ultimate pleasure. The team has an eye for detail & worldwide trends are well understood. Their years of experience in Indoor Amusement Center (IAC)s business yields brilliant suggestions that would ultimately make the ROI faster. CSML is one stop solution for all gaming requirements & amazing after sales services.</p>
@@ -89,7 +89,7 @@ export default function EnthralledCustomers() {
                   </div>
                 </div>
                 <div className={`${styles.enthralled_img}`}>
-                  <img className="" src={enrolled_img.src} alt="img" />
+                  <img className="border_20" src={enrolled_img.src} alt="img" />
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function EnthralledCustomers() {
                   </div>
                 </div>
                 <div className={`${styles.enthralled_img}`}>
-                  <img className="" src={enrolled_img.src} alt="img" />
+                  <img className="border_20" src={enrolled_img.src} alt="img" />
                 </div>
               </div>
             </div>

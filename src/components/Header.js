@@ -156,12 +156,12 @@ const Header = () => {
 									</div>
 									<div className={`${styles.sub_menu_list}`}>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="/service-consultancy">
+											<Link href="/services/service-consultancy">
 												<a className="text_reg text_500">Consultancy Services</a>
 											</Link>
 										</p>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="/service-management">
+											<Link href="/services/service-management">
 												<a className="text_reg text_500">Management Contract </a>
 											</Link>
 										</p>
