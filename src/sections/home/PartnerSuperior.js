@@ -48,7 +48,7 @@ export default function PartnerSuperior() {
 				</div>
 
 				<div className={`${styles.partner_superior_flex} f_j`}>
-					<div className={`${styles.partner_superior_box} border_animation toTop`} data-scroll>
+					<div className={`${styles.partner_superior_box} commonBorderAnimation toTop`} data-scroll>
 						<div className={`${styles.partner_superior_content}`}>
 							<img className="border_8" src={partner_img.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
@@ -75,7 +75,7 @@ export default function PartnerSuperior() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.partner_superior_box} border_animation toTop`} data-scroll>
+					<div className={`${styles.partner_superior_box} commonBorderAnimation toTop`} data-scroll>
 						<div className={`${styles.partner_superior_content}`}>
 							<img className="border_8" src={partner_img_two.src} alt="img" />
 							<div className={`${styles.desc_box}`}>

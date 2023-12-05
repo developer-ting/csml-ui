@@ -93,7 +93,7 @@ export default function Crafting() {
 			</section>
 
 			<div className="container pt_100">
-				<div className={`${styles.intertainment_border} border_animation`}>
+				<div className={`${styles.intertainment_border} commonBorderAnimation`}>
 					<div className={`${styles.intertainment_flex} border_12 d_f`}>
 						<div className={`${styles.intertainment_left} border_12 toTop`} data-scroll>
 							<div className="dot_one dots_p"></div>
