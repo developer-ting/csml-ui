@@ -48,14 +48,14 @@ export default function ServiceConsultancy() {
 					bannerImg={services_banner.src}
 					mobileImg={services_banner.src}
 				/>
-				<section className={`${styles.service_sec1}`}>
+				<section className={`${styles.service_sec1} dot_animation_box`}>
 					<div className="container">
 						<div className={`${styles.service_flex} ptb_80`}>
 							<div className={`${styles.info_bx}`}>
-								<div className={`${styles.info_head} heading_text_55 pb_30 toTop`} data-scroll>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 toTop`} data-scroll>
 									Turnkey Consultancy Solution for Entertainment Center Success
-								</div>
-								<div className={`${styles.info_para} paraTxt_18 text_400 toTop`} data-scroll>
+								</h2>
+								<p className={`${styles.info_para} paraTxt_18 text_400 toTop`} data-scroll>
 									CSML is the pioneering force behind exceptional Indoor Amusement
 									Centers (IAC). We specialize in turning ordinary spaces into
 									extraordinary amusement centers. Our consultancy services are designed
@@ -63,7 +63,7 @@ export default function ServiceConsultancy() {
 									to execution.As industry pioneers in Indoor Amusement Centers (IAC), we
 									offer meticulously tailored end-to-end solutions to streamline the
 									complexities of managing multiple providers.
-								</div>
+								</p>
 							</div>
 							<div className={`${styles.img_bx} toTop`} data-scroll>
 								<img className="img" src={Sec1_img.src} />
@@ -74,10 +74,10 @@ export default function ServiceConsultancy() {
 				</section>
 				<section className={`${styles.service_tabsec} pt_80`}>
 					<div className="container">
-						<div className={`${styles.sec_title} heading_text_55 pb_50 toTop`} data-scroll>
+						<h2 className={`${styles.sec_title} heading_text_55 pb_50 toTop`} data-scroll>
 							Comprehensive Services for
 							<br /> Your Center Success
-						</div>
+						</h2>
 					</div>
 					<Tabs>
 						<TabList>

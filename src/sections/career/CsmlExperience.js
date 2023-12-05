@@ -21,7 +21,7 @@ import quate from "../../../public/img/career/quate.svg";
 export default function CsmlExperience() {
   
 	return (
-		<section className={`${styles.csml_experience_wrap} pb_100`}>
+		<section className={`${styles.csml_experience_wrap} dot_animation_box pb_100`}>
 			
       <div className="container">
         <div className={`${styles.csml_experience_title} toTop`} data-scroll>

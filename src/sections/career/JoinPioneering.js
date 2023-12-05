@@ -14,7 +14,7 @@ import styles from "../../styles/sections/career/JoinPioneering.module.scss";
 /** Home Hero Section */
 export default function JoinPioneering() {
 	return (
-		<section className={`${styles.join_pioneering_wrap} ptb_100`}>
+		<section className={`${styles.join_pioneering_wrap} dot_animation_box ptb_100`}>
 			
       <div className={`${styles.pioneering_main}`}>
         

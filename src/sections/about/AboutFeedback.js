@@ -16,7 +16,7 @@ import styles from "../../styles/sections/about/AboutFeedback.module.scss";
 /** Home Hero Section */
 export default function AboutFeedback() {
 	return (
-		<section className={`${styles.about_feedback_wrap} pt_100`}>
+		<section className={`${styles.about_feedback_wrap} dot_animation_box pt_100`}>
 			<div className="container">
       <img className={`${styles.feedback_img} toTop`} src={feedback_img.src} alt="img"  data-scroll />
 				<div className={`${styles.section_title} pb_40`}>

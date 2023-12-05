@@ -66,7 +66,7 @@ export default function OurGuidingValues() {
 		setProgressWidth((currInd / 3) * 100);
 	};
 	return (
-		<section className={`${styles.our_guiding_values_wrap} ptb_100`}>
+		<section className={`${styles.our_guiding_values_wrap} dot_animation_box ptb_100`}>
 			
       <div className={`${styles.our_guiding_values_main}`}>
         <div className={`${styles.life_csml_content} toTop`} data-scroll>

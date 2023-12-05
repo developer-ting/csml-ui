@@ -16,7 +16,7 @@ import styles from "../../styles/sections/about/CountPioneering.module.scss";
 /** Home Hero Section */
 export default function CountPioneering() {
 	return (
-		<section className={`${styles.count_pioneering_wrap} pt_100`}>
+		<section className={`${styles.count_pioneering_wrap} dot_animation_box pt_100`}>
 			<div className="container">
         <div className={`${styles.intertainment_border} border_animation toTop`} data-scroll>
 					<div className={`${styles.intertainment_flex}`}>

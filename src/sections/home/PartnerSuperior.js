@@ -33,7 +33,7 @@ export default function PartnerSuperior() {
 	};
 
 	return (
-		<section className={`${styles.partner_superior_wrap} ptb_100`}>
+		<section className={`${styles.partner_superior_wrap} dot_animation_box ptb_100`}>
 			<div className="container">
 				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 color_white pb_20">

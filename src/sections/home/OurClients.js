@@ -29,7 +29,7 @@ import go_bowl from "../../../public/img/home/go_bowl.png";
 /** Home Hero Section */
 export default function OurClients() {
 	return (
-		<section className={`${styles.our_clients_wrap} ptb_100`}>
+		<section className={`${styles.our_clients_wrap} dot_animation_box ptb_100`}>
 			<div className="container">
 				<div className={`${styles.section_title} toTop`} data-scroll>
 					<h2 className="heading_text_40 color_white pb_30">Our Clients</h2>

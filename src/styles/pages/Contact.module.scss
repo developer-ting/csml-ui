@@ -1,11 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .ContactPage {
-  :global(.bg_black){
-    background-color: var(--color_black);
-    background-image: url(../../../public/img/home/dots_bg.png);
-    background-size: cover;
-  }
+  
   .contact_sec{
     .contact_flex{
       display: flex;

@@ -44,13 +44,13 @@ export default function ServiceManagement() {
 					bannerImg={management_banner.src}
 					mobileImg={management_banner.src}
 				/>
-				<section className={`${styles.service_sec1}`}>
+				<section className={`${styles.service_sec1} dot_animation_box`}>
 					<div className="container">
 						<div className={`${styles.service_flex} pt_80`}>
 							<div className={`${styles.info_bx}`}>
-								<div className={`${styles.info_head} heading_text_55 pb_30 toTop`} data-scroll>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 toTop`} data-scroll>
 									Elevate FEC Success with Our Expert Management Contract
-								</div>
+								</h2>
 								<div className={`${styles.info_para} toTop`} data-scroll>
 									<p className="paraTxt_18 text_400">
 										Experience operational excellence with our tailored Management

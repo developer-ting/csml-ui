@@ -1,10 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .ServicesConsultancyPage {
-  background-color: var(--color_black);
-  background-image: url(../../../public/img/dots_strip.png);
-  background-size: contain;
-  background-repeat: repeat;
+  
   .service_sec1{
     .service_flex{
       display: flex;

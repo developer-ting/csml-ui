@@ -79,7 +79,7 @@ export default function GoKarting() {
 			</Head>
 
 			<Header />
-			{/* Loader */}
+			<Loader />
 			<main className={`${styles.GoKartingPage}`}>
 				<InsideBanner
 					bannerTitle="Get Racing with Go-Karting"

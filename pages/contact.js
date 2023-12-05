@@ -82,7 +82,7 @@ export default function Contact() {
 				bannerImg={contact_banner.src}
 				mobileImg={contact_banner.src}
 			/>
-				<section className={`${styles.contact_sec} bg_black`}>
+				<section className={`${styles.contact_sec} dot_animation_box`}>
 					<div className="container">
 						<div className={`${styles.contact_flex} ptb_80`}>
 							<div className={`${styles.contact_details} pt_80`}>

@@ -73,7 +73,7 @@ export default function Showcase() {
 	};
 
 	return (
-    <section className={`${styles.showcase_wrap} pb_100`}>
+    <section className={`${styles.showcase_wrap} dot_animation_box pb_100`}>
       <div className="container">
         <div className={`${styles.section_title} pb_30 f_j toTop`} data-scroll>
           <h2 className="heading_text_55 color_white">A showcase of success </h2>

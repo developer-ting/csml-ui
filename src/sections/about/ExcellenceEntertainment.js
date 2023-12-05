@@ -21,7 +21,7 @@ import styles from "../../styles/sections/about/ExcellenceEntertainment.module.s
 /** Home Hero Section */
 export default function ExcellenceEntertainment() {
 	return (
-		<section className={`${styles.excellence_entertainment_wrap} ptb_100`}>
+		<section className={`${styles.excellence_entertainment_wrap} dot_animation_box ptb_100`}>
 			<div className="container">
 				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 					<h2 className="heading_text_55 color_white pb_20">

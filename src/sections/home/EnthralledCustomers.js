@@ -35,7 +35,7 @@ export default function EnthralledCustomers() {
 	};
 
 	return (
-    <section className={`${styles.enthralled_customers_wrap} pb_100`}>
+    <section className={`${styles.enthralled_customers_wrap} dot_animation_box pb_100`}>
       <div className="container">
         <div className={`${styles.section_title} toTop`} data-scroll>
           <h2 className="heading_text_55 color_white pb_20">Enthralled customers</h2>
