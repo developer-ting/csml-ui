@@ -34,14 +34,12 @@
 			.header_list {
 				.menu_title {
 					.title {
-						
-            a{
-              color: var(--color_black) !important; 
-            }
+						a {
+							color: var(--color_black) !important;
+						}
 					}
 				}
 			}
-			
 		}
 	}
 	.header_box {
@@ -77,8 +75,8 @@
 				margin: 0 15px;
 				padding: 30px 0px;
 				position: relative;
-        display: flex;
-        align-items: center;
+				display: flex;
+				align-items: center;
 				@media (max-width: 767px) {
 					margin: 0 0px;
 				}
@@ -91,30 +89,29 @@
 						display: none;
 					}
 				}
-        .humberg{
-          width: 46px;
-          height: 46px;
-          border-radius: 50%;
-          background-color: var(--color_primary);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          margin-left: 15px;
-          span{
-            height: 2px;
-            width: 25px;
-            display: block;
-            margin-bottom: 5px;
-            background-color: var(--color_white);
-            transition: all .5s;
-            &:last-child{
-              margin-bottom: 0px;
-            }
-          }
-        }
+				.humberg {
+					width: 46px;
+					height: 46px;
+					border-radius: 50%;
+					background-color: var(--color_primary);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					margin-left: 15px;
+					span {
+						height: 2px;
+						width: 25px;
+						display: block;
+						margin-bottom: 5px;
+						background-color: var(--color_white);
+						transition: all 0.2s;
+						&:last-child {
+							margin-bottom: 0px;
+						}
+					}
+				}
 			}
-			
 		}
 	}
 
@@ -125,7 +122,7 @@
 		top: 15px;
 		background-color: var(--color_white);
 		transform: translateX(100%);
-		transition: all 0.5s;
+		transition: all 0.2s;
 		border-radius: 40px;
 		box-shadow: 0px 3px 8px rgb(0, 0, 0, 0.1);
 		padding: 100px 60px 40px 60px;
@@ -142,8 +139,8 @@
 
 		.menu_list {
 			position: relative;
-			
-			.close_box{
+
+			.close_box {
 				position: absolute;
 				right: 0px;
 				top: -40px;
@@ -165,13 +162,13 @@
 					}
 					a {
 						color: #000000;
-						transition: all 0.5s;
+						transition: all 0.2s;
 						@media screen and (max-width: 767px) {
 							font-size: 26px;
 						}
 						&:hover {
 							color: var(--color_primary);
-							transition: all 0.5s;
+							transition: all 0.2s;
 						}
 						// img {
 						//   opacity: 0.8;
@@ -183,72 +180,70 @@
 						// }
 					}
 				}
-				.sub_menu_box{
-
-					.sub_menu_flex{
+				.sub_menu_box {
+					.sub_menu_flex {
 						justify-content: space-between;
 						cursor: pointer;
-						img{
-							transition: all 0.5s;
+						img {
+							transition: all 0.2s;
 						}
 					}
 
-					.sub_menu_list{
+					.sub_menu_list {
 						display: none;
-						transition: all 0.5s;
+						transition: all 0.2s;
 						padding: 0px 15px;
-						p{
+						p {
 							padding-top: 20px;
 							@media screen and (max-width: 767px) {
 								padding-top: 15px;
 							}
-							a{
+							a {
 								@media screen and (max-width: 767px) {
 									font-size: 18px;
 								}
 							}
 						}
 					}
-					&.drop_down_active{
-						.sub_menu_flex{
-							.menu_down_aarow{
+					&.drop_down_active {
+						.sub_menu_flex {
+							.menu_down_aarow {
 								transform: rotate(180deg);
-								transition: all 0.5s;
+								transition: all 0.2s;
 							}
 						}
-						.sub_menu_list{
+						.sub_menu_list {
 							display: block;
-							transition: all 0.5s;
+							transition: all 0.2s;
 						}
 					}
 				}
-				
 			}
-			.bottom_list{
+			.bottom_list {
 				margin-top: 60px;
 				padding-top: 25px;
 				border-top: 1px solid #979797;
 				@media screen and (max-width: 767px) {
 					margin-top: 30px;
 				}
-				ul{
+				ul {
 					list-style-type: none;
 					padding-left: 0px;
 					display: flex;
-					li{
+					li {
 						padding-right: 40px;
 						@media screen and (max-width: 767px) {
 							padding-right: 20px;
 						}
-						a{
+						a {
 							color: #000000;
-							transition: all 0.5s;
+							transition: all 0.2s;
 							@media screen and (max-width: 767px) {
 								font-size: 18px;
 							}
 							&:hover {
 								color: var(--color_primary);
-								transition: all 0.5s;
+								transition: all 0.2s;
 							}
 						}
 					}
@@ -259,5 +254,4 @@
 			transform: translateX(0) !important;
 		}
 	}
-  
 }
