@@ -80,6 +80,7 @@ export default function ProductCatalogue() {
 				const centerIndex = Math.round(progress * (n - 1));
 				const isActive = i === centerIndex;
 				const element = animation.targets()[0].parentNode; // Use targets() instead of vars.targets
+
 				element.classList.toggle("active", isActive);
 			});
 		};
@@ -129,27 +130,6 @@ export default function ProductCatalogue() {
 					attr: { src: `${dragSliderInfo[i].imgUrl}` },
 					// attr: { src: `${imageUrls[i]}` },
 				});
-				// gsap.set(link, {
-				// 	position: "absolute",
-				// 	textAlign: "center",
-				// 	width: 105,
-				// 	height: 70,
-				// 	paddingTop: "7px",
-				// 	top: 0,
-				// 	left: 0,
-				// 	rotation: 90,
-				// 	fontSize: "45px",
-				// 	color: "#000",
-				// 	background: "#fff",
-				// 	mixBlendMode: "lighten",
-				// 	textDecoration: "none",
-				// 	innerHTML: '<span style="font-size:20px">IMG </span>' + (i + 1),
-				// 	attr: {
-				// 		class: "imgLink",
-				// 		href: "https://picsum.photos/id/" + (i + 10) + "/700/600/",
-				// 		target: "_blank",
-				// 	},
-				// });
 				parallax[i] = gsap.to(img, { x: 300, ease: "none", paused: true });
 
 				box.appendChild(img);
@@ -179,6 +159,7 @@ export default function ProductCatalogue() {
 					pin: false,
 					pinSpacing: true,
 					scrub: true,
+					onUpdate: updateParallax,
 					// markers: false,
 				},
 			});
