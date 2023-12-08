@@ -17,6 +17,8 @@ import OurClients from "@/sections/home/OurClients";
 import Showcase from "@/sections/home/Showcase";
 import EnthralledCustomers from "@/sections/home/EnthralledCustomers";
 import Loader from "@/components/Loader";
+// UTILS //
+import { ServerHeaders } from "@/utils/RequestHeaders";
 
 // SECTIONS //
 import ParallaxSlider from "@/sections/home/ParallaxSlider";
@@ -27,12 +29,13 @@ import ParallaxSlider2 from "@/sections/home/ParallaxSlider2";
 import styles from "../src/styles/pages/Home.module.scss";
 
 /** Home Page */
-export default function Home() {
+export default function Home({ PartenrsSliderData }) {
 	useEffect(() => {
 		ScrollOut({
 			once: true,
 		});
 	}, []);
+	// console.log(PartenrsSliderData);
 	return (
 		<div>
 			<Head>
@@ -51,7 +54,7 @@ export default function Home() {
 				<ProductCatalogue />
 				{/* <ProductCatalogue2 /> */}
 				<ValuedDistributors />
-				<PartnerSuperior />
+				<PartnerSuperior data={PartenrsSliderData.data} />
 				<ExperienceIndustry />
 
 				<section className={`${styles.bg_black}`}>
@@ -63,4 +66,13 @@ export default function Home() {
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	const PartenrsSlideRes = await fetch(
+		`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/partners-sliders?populate=*`,
+		ServerHeaders
+	);
+	const PartenrsSliderData = await PartenrsSlideRes.json();
+	return { props: { PartenrsSliderData } };
 }
