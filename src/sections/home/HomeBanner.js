@@ -49,7 +49,6 @@ export default function HomeBanner({ data }) {
 		speed: 2000,
 		autoplaySpeed: 7000,
 	};
-
 	return (
 		<section className={`${styles.home_banner_wrap}`}>
 			<div
@@ -58,6 +57,9 @@ export default function HomeBanner({ data }) {
 				{useSlider ? (
 					<Slider {...settings}>
 						{data.map((item) => {
+							{
+								console.log(item.attributes.BannerTitle);
+							}
 							return (
 								<div className={`${styles.home_banner_item}`} key={item.BannerPara}>
 									<div className={`${styles.banner_img}`}>
@@ -65,15 +67,12 @@ export default function HomeBanner({ data }) {
 											<source media="(max-width:465px)" srcSet={home_banner.src} />
 											<img className="width_100" src={home_banner.src} />
 										</picture>
-										{/* <video autoPlay muted loop className={styles.video_box}>         
-                  <source src="./img/home/movie.mp4" type="video/mp4"/>       
-                </video> */}
 									</div>
 									<div className={`${styles.banner_content}`}>
 										<h1 className="heading_text_70 color_white pb_40">
-											{item.BannerTitle}
+											{item.attributes.BannerTitle}
 										</h1>
-										<p className="paraTxt color_white">{item.BannerPara}</p>
+										<p className="paraTxt color_white">{item.attributes.BannerPara}</p>
 									</div>
 								</div>
 							);
