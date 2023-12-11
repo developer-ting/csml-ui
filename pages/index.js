@@ -74,24 +74,28 @@ export default function Home({
 }
 
 export async function getStaticProps() {
+	// partners sliders
 	const PartenrsSlideRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/partners-sliders?populate=*`,
 		ServerHeaders
 	);
 	const PartenrsSliderData = await PartenrsSlideRes.json();
 
+	// home client logos
 	const ClientLogosRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/home-client-logos?populate=*`,
 		ServerHeaders
 	);
 	const ClientLogosData = await ClientLogosRes.json();
 
+	// home showcase success sliders
 	const ShowcaseSliderRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/home-showcase-success-sliders?populate=*`,
 		ServerHeaders
 	);
 	const ShowcaseSliderData = await ShowcaseSliderRes.json();
 
+	// home enthralled sliders
 	const EnthralledSliderRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/home-enthralled-sliders?populate=*`,
 		ServerHeaders
