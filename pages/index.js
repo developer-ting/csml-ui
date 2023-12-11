@@ -35,6 +35,7 @@ export default function Home({
 	ShowcaseSliderData,
 	EnthralledSliderData,
 	craftingStatsData,
+	BannerData,
 }) {
 	useEffect(() => {
 		ScrollOut({
@@ -53,7 +54,7 @@ export default function Home({
 			<Header />
 			<Loader />
 			<main className={`${styles.index_page}`}>
-				<HomeBanner />
+				<HomeBanner data={BannerData.data} />
 				<Crafting craftingData={craftingStatsData.data} />
 				{/* <ParallaxSlider2 /> */}
 				{/* <ParallaxSlider /> */}
@@ -109,6 +110,13 @@ export async function getStaticProps() {
 	);
 	const craftingStatsData = await craftingStatsRes.json();
 
+	// home banner  data
+	const BannerRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-banners?populate=*`,
+		ServerHeaders
+	);
+	const BannerData = await BannerRes.json();
+
 	return {
 		props: {
 			PartenrsSliderData,
@@ -116,6 +124,7 @@ export async function getStaticProps() {
 			ShowcaseSliderData,
 			EnthralledSliderData,
 			craftingStatsData,
+			BannerData,
 		},
 		revalidate: 10,
 	};
