@@ -29,16 +29,16 @@ import video_img from "../../../public/img/home/video_img.jpg";
 import play_icon from "../../../public/img/play_icon.svg";
 
 /** Home Hero Section */
-export default function Crafting() {
-	
+export default function Crafting({ craftingData }) {
 	useEffect(() => {
 		setTimeout(() => {
 			gsap.registerPlugin(ScrollTrigger);
 			const cricle_box = document.querySelector(".cricle_box").offsetLeft;
-			const crafting_heading = document.querySelector(".crafting_heading").offsetWidth;
-			const container_left_space = document.querySelector(".box_left_space").offsetLeft;
+			const crafting_heading =
+				document.querySelector(".crafting_heading").offsetWidth;
+			const container_left_space =
+				document.querySelector(".box_left_space").offsetLeft;
 			const totalBoxW = container_left_space + cricle_box + crafting_heading + 80;
-			console.log(totalBoxW);
 			// console.log(crafting_heading);
 			const winW = window.innerWidth;
 			const bannerPin = gsap.timeline({
@@ -55,9 +55,13 @@ export default function Crafting() {
 			bannerPin.to(".cricle_box", { left: totalBoxW, rotate: 360 }, 0);
 		}, 500);
 	}, []);
+	const statsData = craftingData.attributes.StatsSection;
+	console.log(craftingData);
 	return (
-		<section className={`${styles.crafting_wrap} ptb_100 crafting_wrap dot_animation_box`} name="crafting_section">
-			
+		<section
+			className={`${styles.crafting_wrap} ptb_100 crafting_wrap dot_animation_box`}
+			name="crafting_section"
+		>
 			<section className={`${styles.crafting_section} crafting_section`}>
 				<div className={`${styles.cricle_box} cricle_box hidden-xs`}>
 					<img className="" src={cricle_img.src} />
@@ -95,41 +99,28 @@ export default function Crafting() {
 			<div className="container pt_100">
 				<div className={`${styles.intertainment_border} commonBorderAnimation`}>
 					<div className={`${styles.intertainment_flex} border_12 d_f`}>
-						<div className={`${styles.intertainment_left} border_12 toTop`} data-scroll>
+						<div
+							className={`${styles.intertainment_left} border_12 toTop`}
+							data-scroll
+						>
 							<div className="dot_one dots_p"></div>
 							<div className="dot_two dots_p"></div>
 							<div className="dot_three dots_p"></div>
-							<div className={`${styles.content_box}`}>
-								<h3 className="color_white text_sm text_700 text_upper pb_10">
-									Entertainment Centres
-								</h3>
-								<div className={`${styles.content_flex} d_f`}>
-									<h2 className="heading_text_55 text_800"><CountUp end={200} enableScrollSpy />+</h2>
-									<p className="text_xxs color_white opacity_one">
-										From concept to creationn we build premier amusement experiences
-									</p>
-								</div>
-							</div>
-							<div className={`${styles.content_box}`}>
-								<h3 className="color_white text_sm text_700 text_upper pb_10">
-									Premium Bowling Centres{" "}
-								</h3>
-								<div className={`${styles.content_flex} d_f`}>
-									<h2 className="heading_text_55 text_800"> <CountUp end={900} enableScrollSpy />+</h2>
-									<p className="text_xxs color_white opacity_one">
-										Served across India and the SAARC region
-									</p>
-								</div>
-							</div>
-							<div className={`${styles.content_box}`}>
-								<h3 className="color_white text_sm text_700 text_upper pb_10">
-									Happy Customers
-								</h3>
-								<div className={`${styles.content_flex} d_f`}>
-									<h2 className="heading_text_55 text_800"><CountUp end={125} enableScrollSpy />+</h2>
-									<p className="text_xxs color_white opacity_one">Across the continent</p>
-								</div>
-							</div>
+							{statsData.map((item) => {
+								return (
+									<div className={`${styles.content_box}`} key={item.StatsCount}>
+										<h3 className="color_white text_sm text_700 text_upper pb_10">
+											{item.StatsTitle}
+										</h3>
+										<div className={`${styles.content_flex} d_f`}>
+											<h2 className="heading_text_55 text_800">
+												<CountUp end={item.StatsCount} enableScrollSpy />+
+											</h2>
+											<p className="text_xxs color_white opacity_one">{item.StatsDesc}</p>
+										</div>
+									</div>
+								);
+							})}
 						</div>
 						<div className={`${styles.intertainment_right} toLeftOne`} data-scroll>
 							{/* <div className={`${styles.video_box}`}>
@@ -146,11 +137,11 @@ export default function Crafting() {
                 </div>
               </div> */}
 							<LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgVideo]}>
-								<a href="https://youtu.be/75yhYazRwRs?feature=shared">
+								<a href={craftingData.attributes.link}>
 									<div className={`${styles.video_box}`}>
 										<img
 											className={`${styles.video_img} border_12 img`}
-											src={video_img.src}
+											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${craftingData.attributes.thumbnail.data.attributes.url}`}
 										/>
 										<div className={`${styles.video_play}`}>
 											<img

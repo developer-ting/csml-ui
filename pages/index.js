@@ -29,7 +29,7 @@ import ParallaxSlider2 from "@/sections/home/ParallaxSlider2";
 import styles from "../src/styles/pages/Home.module.scss";
 
 /** Home Page */
-export default function Home({ PartenrsSliderData }) {
+export default function Home({ PartenrsSliderData, craftingStatsData }) {
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -48,7 +48,7 @@ export default function Home({ PartenrsSliderData }) {
 			<Loader />
 			<main className={`${styles.index_page}`}>
 				<HomeBanner />
-				<Crafting />
+				<Crafting craftingData={craftingStatsData.data} />
 				{/* <ParallaxSlider2 /> */}
 				{/* <ParallaxSlider /> */}
 				<ProductCatalogue />
@@ -70,9 +70,15 @@ export default function Home({ PartenrsSliderData }) {
 
 export async function getStaticProps() {
 	const PartenrsSlideRes = await fetch(
-		`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/partners-sliders?populate=*`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/partners-sliders?populate=*`,
 		ServerHeaders
 	);
 	const PartenrsSliderData = await PartenrsSlideRes.json();
-	return { props: { PartenrsSliderData } };
+
+	const craftingStatsRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-stats-section?populate=*`,
+		ServerHeaders
+	);
+	const craftingStatsData = await craftingStatsRes.json();
+	return { props: { PartenrsSliderData, craftingStatsData } };
 }
