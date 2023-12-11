@@ -29,7 +29,13 @@ import ParallaxSlider2 from "@/sections/home/ParallaxSlider2";
 import styles from "../src/styles/pages/Home.module.scss";
 
 /** Home Page */
-export default function Home({ PartenrsSliderData, craftingStatsData }) {
+export default function Home({
+	PartenrsSliderData,
+	ClientLogosData,
+	ShowcaseSliderData,
+	EnthralledSliderData,
+	craftingStatsData,
+}) {
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -58,9 +64,9 @@ export default function Home({ PartenrsSliderData, craftingStatsData }) {
 				<ExperienceIndustry />
 
 				<section className={`${styles.bg_black}`}>
-					<OurClients />
-					<Showcase />
-					<EnthralledCustomers />
+					<OurClients clientsData={ClientLogosData.data} />
+					<Showcase showcaseData={ShowcaseSliderData.data} />
+					<EnthralledCustomers enthralledData={EnthralledSliderData.data} />
 				</section>
 			</main>
 			<Footer />
@@ -69,16 +75,48 @@ export default function Home({ PartenrsSliderData, craftingStatsData }) {
 }
 
 export async function getStaticProps() {
+	// partners sliders
 	const PartenrsSlideRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/partners-sliders?populate=*`,
 		ServerHeaders
 	);
 	const PartenrsSliderData = await PartenrsSlideRes.json();
 
+	// home client logos
+	const ClientLogosRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-client-logos?populate=*`,
+		ServerHeaders
+	);
+	const ClientLogosData = await ClientLogosRes.json();
+
+	// home showcase success sliders
+	const ShowcaseSliderRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-showcase-success-sliders?populate=*`,
+		ServerHeaders
+	);
+	const ShowcaseSliderData = await ShowcaseSliderRes.json();
+
+	// home enthralled sliders
+	const EnthralledSliderRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-enthralled-sliders?populate=*`,
+		ServerHeaders
+	);
+	const EnthralledSliderData = await EnthralledSliderRes.json();
+	// home crafting stats data
 	const craftingStatsRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/home-stats-section?populate=*`,
 		ServerHeaders
 	);
 	const craftingStatsData = await craftingStatsRes.json();
-	return { props: { PartenrsSliderData, craftingStatsData } };
+
+	return {
+		props: {
+			PartenrsSliderData,
+			ClientLogosData,
+			ShowcaseSliderData,
+			EnthralledSliderData,
+			craftingStatsData,
+		},
+		revalidate: 10,
+	};
 }

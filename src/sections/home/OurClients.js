@@ -27,18 +27,32 @@ import westin from "../../../public/img/home/westin.png";
 import go_bowl from "../../../public/img/home/go_bowl.png";
 
 /** Home Hero Section */
-export default function OurClients() {
+export default function OurClients({ clientsData }) {
+	// console.log(clientsData);
 	return (
 		<section className={`${styles.our_clients_wrap} dot_animation_box ptb_100`}>
 			<div className="container">
 				<div className={`${styles.section_title} toTop`} data-scroll>
 					<h2 className="heading_text_40 color_white pb_30">Our Clients</h2>
 				</div>
-				<div className={`${styles.clients_logo_flex} border_animation f_j toTop`} data-scroll>
-					<div className={`${styles.clients_logo_box}`}>
-						<img className="" src={jw_marriott.src} alt="logo" />
-					</div>
-					<div className={`${styles.clients_logo_box}`}>
+				<div
+					className={`${styles.clients_logo_flex} border_animation f_j toTop`}
+					data-scroll
+				>
+					{clientsData.map((item) => {
+						return (
+							<div
+								className={`${styles.clients_logo_box}`}
+								key={item.attributes.ClientLogos.data.attributes.url}
+							>
+								<img
+									src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ClientLogos.data.attributes.url}`}
+									alt="logo"
+								/>
+							</div>
+						);
+					})}
+					{/* <div className={`${styles.clients_logo_box}`}>
 						<img className="" src={club_mahindra.src} alt="logo" />
 					</div>
 					<div className={`${styles.clients_logo_box}`}>
@@ -79,7 +93,7 @@ export default function OurClients() {
 					</div>
 					<div className={`${styles.clients_logo_box}`}>
 						<img className="" src={go_bowl.src} alt="logo" />
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>

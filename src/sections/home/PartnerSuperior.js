@@ -31,7 +31,6 @@ export default function PartnerSuperior({ data }) {
 		speed: 2000,
 		autoplaySpeed: 5000,
 	};
-	console.log(data);
 	return (
 		<section
 			className={`${styles.partner_superior_wrap} dot_animation_box ptb_100`}
