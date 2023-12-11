@@ -33,6 +33,7 @@ export default function Home({
 	PartenrsSliderData,
 	ClientLogosData,
 	ShowcaseSliderData,
+	EnthralledSliderData,
 }) {
 	useEffect(() => {
 		ScrollOut({
@@ -64,7 +65,7 @@ export default function Home({
 				<section className={`${styles.bg_black}`}>
 					<OurClients clientsData={ClientLogosData.data} />
 					<Showcase showcaseData={ShowcaseSliderData.data} />
-					<EnthralledCustomers />
+					<EnthralledCustomers enthralledData={EnthralledSliderData.data} />
 				</section>
 			</main>
 			<Footer />
@@ -91,8 +92,19 @@ export async function getStaticProps() {
 	);
 	const ShowcaseSliderData = await ShowcaseSliderRes.json();
 
+	const EnthralledSliderRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-enthralled-sliders?populate=*`,
+		ServerHeaders
+	);
+	const EnthralledSliderData = await EnthralledSliderRes.json();
+
 	return {
-		props: { PartenrsSliderData, ClientLogosData, ShowcaseSliderData },
+		props: {
+			PartenrsSliderData,
+			ClientLogosData,
+			ShowcaseSliderData,
+			EnthralledSliderData,
+		},
 		revalidate: 10,
 	};
 }

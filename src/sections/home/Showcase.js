@@ -23,14 +23,14 @@ import arrow from "../../../public/img/arrow.svg";
 
 /** Home Hero Section */
 export default function Showcase({ showcaseData }) {
-	console.log(showcaseData);
+	// console.log(showcaseData);
 	var settings = {
 		dots: false,
 		arrows: false,
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		pauseOnHover: false,
 		speed: 1000,
 		responsive: [
