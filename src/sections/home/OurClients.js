@@ -28,7 +28,7 @@ import go_bowl from "../../../public/img/home/go_bowl.png";
 
 /** Home Hero Section */
 export default function OurClients({ clientsData }) {
-	console.log(clientsData);
+	// console.log(clientsData);
 	return (
 		<section className={`${styles.our_clients_wrap} dot_animation_box ptb_100`}>
 			<div className="container">
@@ -41,7 +41,10 @@ export default function OurClients({ clientsData }) {
 				>
 					{clientsData.map((item) => {
 						return (
-							<div className={`${styles.clients_logo_box}`}>
+							<div
+								className={`${styles.clients_logo_box}`}
+								key={item.attributes.ClientLogos.data.attributes.url}
+							>
 								<img
 									src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ClientLogos.data.attributes.url}`}
 									alt="logo"

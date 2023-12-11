@@ -29,7 +29,11 @@ import ParallaxSlider2 from "@/sections/home/ParallaxSlider2";
 import styles from "../src/styles/pages/Home.module.scss";
 
 /** Home Page */
-export default function Home({ PartenrsSliderData, ClientLogosData }) {
+export default function Home({
+	PartenrsSliderData,
+	ClientLogosData,
+	ShowcaseSliderData,
+}) {
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -59,7 +63,7 @@ export default function Home({ PartenrsSliderData, ClientLogosData }) {
 
 				<section className={`${styles.bg_black}`}>
 					<OurClients clientsData={ClientLogosData.data} />
-					<Showcase />
+					<Showcase showcaseData={ShowcaseSliderData.data} />
 					<EnthralledCustomers />
 				</section>
 			</main>
@@ -81,5 +85,14 @@ export async function getStaticProps() {
 	);
 	const ClientLogosData = await ClientLogosRes.json();
 
-	return { props: { PartenrsSliderData, ClientLogosData }, revalidate: 10 };
+	const ShowcaseSliderRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-showcase-success-sliders?populate=*`,
+		ServerHeaders
+	);
+	const ShowcaseSliderData = await ShowcaseSliderRes.json();
+
+	return {
+		props: { PartenrsSliderData, ClientLogosData, ShowcaseSliderData },
+		revalidate: 10,
+	};
 }
