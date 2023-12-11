@@ -81,5 +81,5 @@ export async function getStaticProps() {
 	);
 	const ClientLogosData = await ClientLogosRes.json();
 
-	return { props: { PartenrsSliderData, ClientLogosData } };
+	return { props: { PartenrsSliderData, ClientLogosData }, revalidate: 10 };
 }
