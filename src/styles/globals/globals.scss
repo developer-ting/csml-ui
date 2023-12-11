@@ -591,6 +591,23 @@ picture {
 	}
 }
 
+.slider_white_dots{
+	li {
+		button {
+			&::before{
+					background-color: #fff !important;
+			}
+		}
+		&.slick-active{
+			button {
+				&::before{
+						background-color: #fff !important;
+				}
+			}
+		}
+	}
+}
+
 ::-webkit-scrollbar {
 	width: 5px;
 	height: 5px;
