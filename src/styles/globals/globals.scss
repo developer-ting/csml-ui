@@ -63,37 +63,36 @@ picture {
 	text-transform: uppercase;
 }
 
-
-.dot_animation_box{
+.dot_animation_box {
 	position: relative;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-    overflow: hidden;
-    
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--color_black);
-        background-image: radial-gradient(#28282A 4%, #000000 4%);
-        background-position: 0 0;
-        background-size: 55px 55px;
-        border-radius: 0;
-        // animation: gradientAnimation 8s linear infinite;
-    }
-    
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0 0;
-        }
-        100% {
-            background-position: 0 100%;
-        }
-    }
+	height: 100%;
+	width: 100%;
+	border-radius: 0;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color_black);
+		background-image: radial-gradient(#28282a 4%, #000000 4%);
+		background-position: 0 0;
+		background-size: 55px 55px;
+		border-radius: 0;
+		// animation: gradientAnimation 8s linear infinite;
+	}
+
+	@keyframes gradientAnimation {
+		0% {
+			background-position: 0 0;
+		}
+		100% {
+			background-position: 0 100%;
+		}
+	}
 }
 
 .commonBorderAnimation {
@@ -591,17 +590,17 @@ picture {
 	}
 }
 
-.slider_white_dots{
+.slider_white_dots {
 	li {
 		button {
-			&::before{
-					background-color: #fff !important;
+			&::before {
+				background-color: #fff !important;
 			}
 		}
-		&.slick-active{
+		&.slick-active {
 			button {
-				&::before{
-						background-color: #fff !important;
+				&::before {
+					background-color: #fff !important;
 				}
 			}
 		}
@@ -741,7 +740,7 @@ picture {
 		// @media screen and (max-width: 991px) {
 		//   height: 68px;
 		// }
-		img { 
+		img {
 			top: 4px;
 			left: 15px;
 			// @media screen and (max-width: 767px) {
@@ -895,7 +894,6 @@ picture {
 	animation: custom-cursor-click 0.5s forwards;
 }
 
-
 .border_20 {
 	border-radius: 20px;
 }
@@ -909,9 +907,9 @@ picture {
 	border-radius: 15px;
 }
 
-.opacity_one{
+.opacity_one {
 	opacity: 0.8;
 }
-.opacity_two{
+.opacity_two {
 	opacity: 0.7;
 }
