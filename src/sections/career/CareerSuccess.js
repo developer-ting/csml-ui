@@ -11,9 +11,9 @@ import Link from "next/link";
 import styles from "../../styles/sections/career/CareerSuccess.module.scss";
 
 // IMAGES //
-import success_img from "../../../public/img/career/success_img.jpg";
 import imfactful_img from "../../../public/img/career/imfactful_img.jpg";
 import growth from "../../../public/img/career/growth.jpg";
+import CardHoverYellow from "@/components/CardHoverYellow";
 
 /** Home Hero Section */
 export default function CareerSuccess() {
@@ -27,26 +27,11 @@ export default function CareerSuccess() {
 				</div>
 
 				<div className={`${styles.luminaries_flex} toTop`} data-scroll>
-					<div
-						className={`${styles.luminaries_box} border_animation white_border_animation`}
-					>
-						<div className="dot_one dots_p"></div>
-						<div className="dot_two dots_p"></div>
-						<div className="dot_three dots_p"></div>
-						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={success_img.src} alt="img" />
-							<div className={`${styles.desc_box}`}>
-								<div className={`${styles.desc_title}`}>
-									<h3 className="text_24 text_700">Innovative Environment</h3>
-								</div>
-								<p className="paraTxt">
-									CSML is a playground for creativity. We encourage out-of-the-box
-									thinking and provide a platform for your ideas to come to life.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div
+					
+					<CardHoverYellow />
+					<CardHoverYellow />
+					<CardHoverYellow />
+					{/* <div
 						className={`${styles.luminaries_box} border_animation white_border_animation`}
 					>
 						<div className="dot_one dots_p"></div>
@@ -65,6 +50,7 @@ export default function CareerSuccess() {
 							</div>
 						</div>
 					</div>
+
 					<div
 						className={`${styles.luminaries_box} border_animation white_border_animation`}
 					>
@@ -83,7 +69,7 @@ export default function CareerSuccess() {
 								</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>
