@@ -11,10 +11,10 @@ import parse from "html-react-parser";
 import styles from "../styles/components/CardHoverYellow.module.scss";
 
 // IMAGES //
-import success_img from "../../public/img/career/success_img.jpg";
+
 
 /** Home Hero Section */
-const CardHoverYellow = () => {
+const CardHoverYellow = ({ boxImg, title, desc}) => {
 	
 	return (
 		<div
@@ -24,14 +24,13 @@ const CardHoverYellow = () => {
         <div className="dot_two dots_p"></div>
         <div className="dot_three dots_p"></div>
         <div className={`${styles.luminaries_content}`}>
-          <img className="border_8" src={success_img.src} alt="img" />
+          <img className="border_8" src={boxImg} alt="img" />
           <div className={`${styles.desc_box}`}>
             <div className={`${styles.desc_title}`}>
-              <h3 className="text_24 text_700">Innovative Environment</h3>
+              <h3 className="text_24 text_700">{title}</h3>
             </div>
             <p className="paraTxt">
-              CSML is a playground for creativity. We encourage out-of-the-box
-              thinking and provide a platform for your ideas to come to life.
+              {desc}
             </p>
           </div>
         </div>
