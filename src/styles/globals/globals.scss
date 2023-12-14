@@ -97,6 +97,9 @@ picture {
 	.width80{
 		width: 80%;
 		margin: 0 auto;
+		@media only screen and (max-width: 1199px) {
+			width: 100%;
+		}
 	}
 }
 
@@ -214,6 +217,120 @@ picture {
 			background-color: #fff;
 		}
 	}
+}
+
+.coming_from_cms{
+	&.page_space{
+		padding: 150px 0 80px;
+	}
+	a {
+		color: var(--color_white);
+		text-decoration: none;
+	}
+	i {
+		font-style: italic;
+	}
+	h1{
+		font-size: 35px;
+		color: var(--color_white);
+		font-family: var(--font_primary);
+		line-height: calc(44 / 35);
+		font-weight: 700;
+		width: 85%;
+		// margin: 0 0 20px;
+		@media only screen and (max-width: 1199px) {
+			font-size: 30px;
+			width: 100%;
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: 26px;
+			width: 100%;
+		}
+	}
+
+	p{
+		font-size: 18px;
+		color: var(--color_white);
+		font-weight: 400;
+		line-height: calc(34 / 18);
+		font-family: var(--font_primary);
+		// margin: 0 0 20px;
+		opacity: 0.8;
+		@media only screen and (max-width: 991px) {
+			font-size: 16px;
+		}
+	}
+
+	h3{
+		font-size: 22px;
+		color: var(--color_white);
+		font-family: var(--font_primary);
+		line-height: 1.2;
+		font-weight: 600;
+		// margin: 0 0 20px;
+	}
+
+	img{
+		border-radius: 10px;
+	}
+
+	h6{
+		font-size: 16px;
+		color: #8F8F8F;
+		font-family: var(--font_primary);
+		line-height: 1.2;
+		font-weight: 500;
+		border-right: 1px solid #8F8F8F;
+		padding-right: 10px;
+		margin: 0 10px 0 0;
+		@media only screen and (max-width: 767px) {
+			margin: 0 10px 10px 0;
+		}
+	}		
+
+	.blog_info{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		.share_sec{
+			display: flex;
+			align-items: center;
+			h6{
+				border-right: none;
+				margin: 0 10px 0 0;
+			}
+			.share_icon{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				a{
+					width: 24px;
+					height: 24px;
+					border-radius: 50%;
+					background-color: var(--color_primary);
+					cursor: pointer;
+					margin-right: 15px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: ease-out 0.3s;
+					&:hover {
+						background-color: var(--color_secondary);
+						transition: ease-out 0.3s;
+						img {
+							filter: invert(1);
+							transition: ease-out 0.3s;
+						}
+					}
+					img {
+						transition: ease-out 0.3s;
+						border-radius: 0;
+					}
+				}
+			}
+		}
+	}
+	
 }
 
 //classes for fonts

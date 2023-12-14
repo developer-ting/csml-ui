@@ -16,7 +16,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // STYLES //
-import styles from "../src/styles/pages/Blog.module.scss";
+import styles from "../src/styles/pages/Blogs.module.scss";
 
 //	IMAGES	//
 import DesktopBanner from "../public/img/blog/blog-banner.jpg";
@@ -25,7 +25,7 @@ import BlogImg from "../public/img/blog/blog-img.jpg";
 import arrow from "../public/img/arrow.svg";
 
 /** Blog Page */
-export default function GoKarting() {
+export default function Blog() {
 	useEffect(() => {
 		ScrollOut({
 			once: true,
