@@ -8,6 +8,8 @@ import Footer from "../../src/components/Footer";
 import Header from "../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
+import ImagePara from "@/components/ImagePara";
+import data from "../../pages/data-file-1";
 // SECTIONS //
 
 // PLUGINS //
@@ -27,8 +29,6 @@ import sadikartImg1 from "../../public/img/product/go-karting/sadikart-img1.jpg"
 import sadikartImg2 from "../../public/img/product/go-karting/sadikart-img2.jpg";
 import timingSoftwareImg1 from "../../public/img/product/go-karting/timing-software-img1.jpg";
 import timingSoftwareImg2 from "../../public/img/product/go-karting/timing-software-img2.jpg";
-import essentialComponents from "../../public/img/product/go-karting/essential-components.jpg";
-import userFriendly from "../../public/img/product/go-karting/user-friendly.jpg";
 import safetyBarriersImg1 from "../../public/img/product/go-karting/safety-barriers-img1.jpg";
 import safetyBarriersImg2 from "../../public/img/product/go-karting/safety-barriers-img2.jpg";
 import safetyBarriersImg3 from "../../public/img/product/go-karting/safety-barriers-img3.jpg";
@@ -70,6 +70,7 @@ export default function GoKarting() {
 	const fillProgress = (currInd) => {
 		setProgressWidth((currInd / 3) * 100);
 	};
+
 	return (
 		<div>
 			<Head>
@@ -247,50 +248,14 @@ export default function GoKarting() {
 						<h2 className="heading_text_55 pb_50 toTop" data-scroll>
 							Timing Hardware
 						</h2>
-						<div className={`${styles.hardwareSectionBox} f_w_j a_center pb_40`}>
-							<div
-								className={`${styles.hardwareSectionStyle} commonBorderAnimation whiteCommonBorderAnimation toTop`}
-								data-scroll
-							>
-								<img
-									src={essentialComponents.src}
-									className="border_8 width_100"
-									alt="Essential Components"
-								/>
-							</div>
-							<div className={`${styles.hardwareSectionStyle}`}>
-								<h4 className="text_24 text_700 pb_20 toTop" data-scroll>
-									Essential Components
-								</h4>
-								<p className="paraTxt_18 color_black_opacity l_h_6 toTop" data-scroll>
-									Timing hardware includes transponders, safety lights and loops,
-									seamlessly integrating with lap timing systems for precise individual
-									and group performance evaluations.
-								</p>
-							</div>
-						</div>
-						<div className={`${styles.hardwareSectionBox} f_w_j a_center pb_40`}>
-							<div
-								className={`${styles.hardwareSectionStyle} commonBorderAnimation whiteCommonBorderAnimation toTop`}
-								data-scroll
-							>
-								<img
-									src={userFriendly.src}
-									className="border_8 width_100"
-									alt="User Friendly"
-								/>
-							</div>
-							<div className={`${styles.hardwareSectionStyle}`}>
-								<h4 className="text_24 text_700 pb_20 toTop" data-scroll>
-									User-Friendly
-								</h4>
-								<p className="paraTxt_18 color_black_opacity l_h_6 toTop" data-scroll>
-									Facilitates convenient printing of lap timing and scoring data,
-									ensuring accuracy and efficiency in recording and analyzing race
-									performance.
-								</p>
-							</div>
-						</div>
+						{data.map((item, index) => (
+							<ImagePara
+								key={index}
+								title={item.title}
+								desc={item.desc}
+								boxImg={item.image.src}
+							/>
+						))}
 					</div>
 				</section>
 
