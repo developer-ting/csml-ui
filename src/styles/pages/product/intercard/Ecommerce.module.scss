@@ -47,4 +47,19 @@
 			}
 		}
 	}
+
+  .how_it_works{
+    .section_title{
+      text-align: center;
+    }
+    .how_it_works_flex{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      // grid-template-columns: repeat(3,1fr);
+      // grid-gap: 20px;
+      
+    }
+  }
 }

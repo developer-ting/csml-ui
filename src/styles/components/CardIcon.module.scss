@@ -1,0 +1,20 @@
+@import "../helpers/helpers.scss";
+.card_box{
+  width: 31%;
+  background-color: rgba(48, 48, 48, 0.5);
+  padding: 50px 40px 30px;
+  border-radius: 8px;
+  backdrop-filter: blur(18px);
+  text-align: center;
+  margin: 10px;
+  @media screen and (max-width: 991px) {
+    width: 47%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .card_box_icon{
+    margin: 0 auto;
+  }
+}

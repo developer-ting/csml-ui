@@ -18,11 +18,21 @@ import icashier_mobile from "../public/img/product/intercard/icashier/icashier_m
 import iredemption from "../public/img/product/intercard/icashier/iredemption.jpg";
 import online_waiver from "../public/img/product/intercard/icashier/online_waiver.jpg";
 
-//Ecommerce page E-Commerce Technology yellow card images import
+//Ecommerce page E-Commerce Technology section yellow card images import
 import remote_accessibility from "../public/img/product/intercard/ecommerce/remote_accessibility.jpg";
 import customized_brand from "../public/img/product/intercard/ecommerce/customized_brand.jpg";
 import staff_free from "../public/img/product/intercard/ecommerce/staff_free.jpg";
 import maximize_float from "../public/img/product/intercard/ecommerce/maximize_float.jpg";
+
+//Ecommerce page how it works section images import
+import register from "../public/img/product/intercard/ecommerce/register.svg";
+import shop from "../public/img/product/intercard/ecommerce/shop.svg";
+import discounts from "../public/img/product/intercard/ecommerce/discounts.svg";
+import check_out_pay from "../public/img/product/intercard/ecommerce/check_out_pay.svg";
+import redeem_play from "../public/img/product/intercard/ecommerce/redeem_play.svg";
+
+//Ecommerce page Bonus feature section images import
+import bonus_feature from "../public/img/product/intercard/ecommerce/bonus_feature.jpg";
 
 // goKarting page data
 const data = [
@@ -112,7 +122,7 @@ const icashierData = [
 	},
 ];
 
-//ecommerce page Yellow Card Data
+//ecommerce page Yellow Card section Data
 const ecommerceYellowCardData = [
 	{
 		image: remote_accessibility,
@@ -152,5 +162,49 @@ const ecommerceYellowCardData = [
 	},
 ];
 
+//ecommerce page How It Works section Data
+const ecommerceHowItWorksData = [
+	{
+		image: register,
+		title: "Register" ,
+		desc:
+			"Guests can quickly register or shop as a guest on your site.",
+	},
+	{
+		image: shop,
+		title: "Shop",
+		desc:
+			"Customers make their selections for game cards, packages, or other items.",
+	},
+	{
+		image: discounts,
+		title: "Discounts",
+		desc:
+			"Apply any current discount options, promos, or specials.",
+	},
+	{
+		image: check_out_pay,
+		title: "Check Out & Pay",
+		desc:
+			"Guests can then print the QR code or save it on their phone.",
+	},
+	{
+		image: redeem_play,
+		title: "Redeem & Play",
+		desc:
+			"QR codes are scanned and redeemed at the center, where guest’s get their play card",
+	},
+];
+
+//ecommerce page Bonus feature section Data
+const ecommerceBonusFeatureData = [
+	{
+		image: bonus_feature,
+		title: "Bonus Feature: Recharge On the Go" ,
+		desc:
+			"Receive low play card balance alerts on your phone, allowing guests to recharge straight from their device for uninterrupted play. Embrace the future of gaming convenience with Intercard E-Commerce.",
+	},
+];
+
 export default data;
-export { iedgeData, careeerYellowCardData, icashierData, ecommerceYellowCardData};
+export { iedgeData, careeerYellowCardData, icashierData, ecommerceYellowCardData, ecommerceHowItWorksData, ecommerceBonusFeatureData};
