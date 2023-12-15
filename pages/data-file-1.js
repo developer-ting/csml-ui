@@ -34,6 +34,17 @@ import redeem_play from "../public/img/product/intercard/ecommerce/redeem_play.s
 //Ecommerce page Bonus feature section images import
 import bonus_feature from "../public/img/product/intercard/ecommerce/bonus_feature.jpg";
 
+//Shindigger page Plan smarter section images import
+import revolutionize from "../public/img/product/intercard/shindigger/revolutionize.jpg";
+import unveil from "../public/img/product/intercard/shindigger/unveil.jpg";
+
+//Shindigger page Craft Your Shindig in 5 Simple Steps section images import
+import choose_a_location from "../public/img/product/intercard/shindigger/choose_a_location.svg";
+import choose_a_day from "../public/img/product/intercard/shindigger/choose_a_day.svg";
+import guest_count from "../public/img/product/intercard/shindigger/guest_count.svg";
+import pick_party from "../public/img/product/intercard/shindigger/pick_party.svg";
+import select_a_time from "../public/img/product/intercard/shindigger/select_a_time.svg";
+
 // goKarting page data
 const data = [
 	{
@@ -206,5 +217,54 @@ const ecommerceBonusFeatureData = [
 	},
 ];
 
+// Shindigger page plan smarter data
+const shindiggerPlanSmarter = [
+	{
+		image: revolutionize,
+		title: "Revolutionize Your Celebrations with Shindigger",
+		desc:
+			"Shindigger goes beyond being a mere reservation system; it's your ultimate celebration facilitator. Whether it's a birthday bash, corporate event, or any gathering, Shindigger simplifies the entire process, allowing you to focus on enjoying the festivities.",
+	},
+	{
+		image: unveil,
+		title: "Unveil the Shindigger™ Experience",
+		desc:
+			"Delve into the boundless possibilities offered by Shindigger. Download our comprehensive brochure to explore how this user-friendly platform, crafted by industry experts at Intercard, can elevate and transform your party planning experience.",
+	},
+];
+// //Shindigger page Craft Your Shindig in 5 Simple Steps section  data
+const shindiggerCraftSteps = [
+	{
+		image: choose_a_location,
+		title: "Choose A Location",
+		desc:
+			"Select from a variety of vibrant venues that match your party style.",
+	},
+	{
+		image: choose_a_day,
+		title: "Choose A Day",
+		desc:
+			"Set the perfect date for your shindig, ensuring everyone can partake in the celebration.",
+	},
+	{
+		image: guest_count,
+		title: "Guest Count",
+		desc:
+			"Tailor your party experience by specifying the number of attendees.",
+	},
+	{
+		image: pick_party,
+		title: "Pick A Party Package",
+		desc:
+			"Customize your celebration with a range of party packages designed for every occasion.",
+	},
+	{
+		image: select_a_time,
+		title: "Select A Time",
+		desc:
+			"Choose the party hour that suits you and your guests.",
+	},
+];
+
 export default data;
-export { iedgeData, careeerYellowCardData, icashierData, ecommerceYellowCardData, ecommerceHowItWorksData, ecommerceBonusFeatureData};
+export { iedgeData, careeerYellowCardData, icashierData, ecommerceYellowCardData, ecommerceHowItWorksData, ecommerceBonusFeatureData, shindiggerPlanSmarter, shindiggerCraftSteps};

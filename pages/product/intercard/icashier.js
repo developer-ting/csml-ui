@@ -24,8 +24,6 @@ import icashier_banner from "../../../public/img/product/intercard/icashier/icas
 
 /** Icashier Page */
 export default function Icashier() {
-	
-
 	return (
 		<div>
 			<Head>

@@ -1,0 +1,105 @@
+.shindigger_main{
+  position: relative;
+  .intercard{
+    .title_txt{
+      text-align: center;
+    }
+  }
+
+  .how_it_works{
+    .section_title{
+      text-align: center;
+    }
+    .how_it_works_flex{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      // grid-template-columns: repeat(3,1fr);
+      // grid-gap: 20px;
+      
+    }
+  }
+
+  .brochure_box{
+    width: 85%;
+    margin: 0 auto;
+    @media (max-width: 1380px) {
+      width: 90%;
+    }
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+    .contactinside{
+      position: relative;
+      border-radius: 15px;
+      padding: 40px 80px;
+      background-color: #F8ED11;
+      @media (max-width: 1199px) {
+       padding: 40px 30px;
+      }
+      @media (max-width: 991px) {
+        padding: 30px 40px;
+      }
+      @media (max-width: 767px) {
+        padding: 30px;
+      }
+      .inside_flex{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @media (max-width:991px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+          }
+          .btn_bx{
+            height: 35px;
+          }
+          
+      }
+    }
+  }
+
+  .contact_main_bx_bottom{
+    border: 1px solid #777777;
+    padding: 10px 10px;
+    border-radius: 12px;
+      // border-top: 1px solid #777777;
+      // border-bottom: 1px solid #777777;
+      .contactinside{
+          position: relative;
+          border-radius: 15px;
+          padding: 60px 80px;
+          background-color: #F8ED11;
+          @media (max-width: 1199px) {
+           padding: 40px 30px;
+          }
+          @media (max-width: 991px) {
+            padding: 30px 40px;
+          }
+          @media (max-width: 767px) {
+            padding: 30px;
+          }
+          .inside_flex{
+              
+              .text_bx{
+                  text-align: center;
+                  a{
+                    color: var(--color_primary);
+                    font-weight: 600;
+                  }
+              }
+              .hidden_991{
+                @media (max-width: 991px) {
+                  display: none;
+                }
+              }
+          }
+      }
+  }
+  :global(.dots_p){
+    background-color: var(--color_primary);
+  }
+  
+}

@@ -27,8 +27,6 @@ import styles from "../../../src/styles/pages/product/intercard/Ecommerce.module
 //	IMAGES	//
 import ecommerce_banner from "../../../public/img/product/intercard/ecommerce/ecommerce_banner.jpg";
 
-
-
 export default function Ecommerce() {
 	var settings = {
 		dots: false,
