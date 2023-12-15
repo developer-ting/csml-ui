@@ -12,6 +12,18 @@ import success_img from "../public/img/career/success_img.jpg";
 import imfactful_img from "../public/img/career/imfactful_img.jpg";
 import growth from "../public/img/career/growth.jpg";
 
+//icashier page images import
+import icashier_station from "../public/img/product/intercard/icashier/icashier_station.jpg";
+import icashier_mobile from "../public/img/product/intercard/icashier/icashier_mobile.jpg";
+import iredemption from "../public/img/product/intercard/icashier/iredemption.jpg";
+import online_waiver from "../public/img/product/intercard/icashier/online_waiver.jpg";
+
+//Ecommerce page E-Commerce Technology yellow card images import
+import remote_accessibility from "../public/img/product/intercard/ecommerce/remote_accessibility.jpg";
+import customized_brand from "../public/img/product/intercard/ecommerce/customized_brand.jpg";
+import staff_free from "../public/img/product/intercard/ecommerce/staff_free.jpg";
+import maximize_float from "../public/img/product/intercard/ecommerce/maximize_float.jpg";
+
 // goKarting page data
 const data = [
 	{
@@ -72,5 +84,73 @@ const careeerYellowCardData = [
 	},
 ];
 
+//icashier page Data
+const icashierData = [
+	{
+		image: icashier_station,
+		title: "iCashier Station" ,
+		desc:
+			"Streamline operations effortlessly with our comprehensive system. From managing quick-service food to overseeing customer engagement, we register vital details like name, address, email, and birth date, accompanied by personalized customer photos. Our system efficiently handles game maintenance, producing out-of-service reports, consolidating redemption points, and implementing a preventative maintenance program with a service log. The added touch of customizable graphics ensures a unique and engaging experience tailored to your specific needs.",
+	},
+	{
+		image: icashier_mobile,
+		title: "iCashier Mobile",
+		desc:
+			"The service effortlessly extends its capabilities throughout the facility, allowing users to check balances, register customers, and execute redemption services. With features like selling and recharging cards, utilizing a credit card reader, bar code scanner, and webcam, it delivers a comprehensive solution for various transaction requirements.",
+	},
+	{
+		image: iredemption,
+		title: "iRedemption",
+		desc:
+			"Experience the efficiency of real-time inventory management with our digital packing list, ensuring accuracy and instant updates. Simplify transactions, eliminate paper tickets, and streamline B-to-B replenishment. Receive timely notifications for merchandise reorders, and effortlessly match redemption transactions to sales in the same period. Track redemption history by location for comprehensive insights into your inventory dynamics.",
+	},
+	{
+		image: online_waiver,
+		title: "Online Waiver",
+		desc:
+			"Optimize your guest experience with our Online Waiver. Guests can conveniently sign releases from any device before arriving, reducing queues at your center. Stored securely in the cloud, operators can access waivers remotely and set retention periods. This efficient, user-friendly tool enhances operational ease, saving time and money while providing quick access to signed documents within seconds.",
+	},
+];
+
+//ecommerce page Yellow Card Data
+const ecommerceYellowCardData = [
+	{
+		image: remote_accessibility,
+		title: "Remote Accessibility" ,
+		desc:
+			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+	},
+	{
+		image: customized_brand,
+		title: "Customized Brand Integration",
+		desc:
+			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+	},
+	{
+		image: staff_free,
+		title: "Staff-Free Purchases",
+		desc:
+			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+	},
+	{
+		image: maximize_float,
+		title: "Maximize 'Float'",
+		desc:
+			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+	},
+	{
+		image: maximize_float,
+		title: "Revenue Growth",
+		desc:
+			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+	},
+	{
+		image: maximize_float,
+		title: "Capture Customer Data",
+		desc:
+			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+	},
+];
+
 export default data;
-export { iedgeData, careeerYellowCardData };
+export { iedgeData, careeerYellowCardData, icashierData, ecommerceYellowCardData};

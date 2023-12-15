@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // COMPONENTS //
 import {careeerYellowCardData} from "../../../pages/data-file-1"
-
+import CardHoverYellow from "@/components/CardHoverYellow";
 // SECTIONS //
 
 // PLUGINS //
@@ -13,9 +13,7 @@ import styles from "../../styles/sections/career/CareerSuccess.module.scss";
 
 // IMAGES //
 
-import CardHoverYellow from "@/components/CardHoverYellow";
-
-console.log(careeerYellowCardData);
+//console.log(careeerYellowCardData);
 /** Home Hero Section */
 export default function CareerSuccess() {
 	
