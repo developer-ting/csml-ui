@@ -15,7 +15,6 @@ import CardHoverYellow from "@/components/CardHoverYellow";
 import CardIcon from "@/components/CardIcon";
 
 // SECTIONS //
-
 // PLUGINS //
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -112,7 +111,6 @@ export default function Ecommerce() {
                   boxImg={item.image.src}
                 />
               ))} */}
-              
           </div>
           <div className={`${styles.ecommerce_slider_main} toTop`} data-scroll>
             <div className={`${styles.partner_superior_flex}`}>
@@ -125,7 +123,6 @@ export default function Ecommerce() {
                     boxImg={item.image.src}
                   />
                 ))}
-              
               </Slider>
             </div>
           </div>
@@ -159,7 +156,6 @@ export default function Ecommerce() {
                     boxIcon={item.image.src}
                   />
                 ))}
-              
             </div>
           </div>
         </section>

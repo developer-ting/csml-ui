@@ -79,9 +79,7 @@ export default function Shindigger() {
                 </div>
               </div>
             </div>
-              
           </div>
-          
         </section>
 
         <section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
@@ -117,11 +115,8 @@ export default function Shindigger() {
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
-
-        
 			</main>
 			<Footer />
 		</div>
