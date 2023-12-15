@@ -41,10 +41,7 @@ export default function Icashier() {
 					mobileImg={icashier_banner.src}
 				/>
         <BlackStripOverview 
-          desc="iCASHIER offers a comprehensive suite of solutions designed to streamline and enhance various aspects of business operations.
-          "
-        />
-
+          desc="iCASHIER offers a comprehensive suite of solutions designed to streamline and enhance various aspects of business operations."/>
         <section className={`${styles.intercard} ptb_100`}>
           <div className="container">
             <div className={`${styles.title_txt} `}>

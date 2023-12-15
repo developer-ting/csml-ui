@@ -73,7 +73,6 @@ export default function Shindigger() {
                     <span className="span_btn yellow_btn">
                     <button className="btn_project_default ">Download Brochure</button>
                     </span>
-                      
                     </a>
                   </div>
                 </div>

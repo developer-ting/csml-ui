@@ -63,7 +63,6 @@ export default function Iedge() {
               ))}
           </div>
         </section>
-
 			</main>
 			<Footer />
 		</div>
