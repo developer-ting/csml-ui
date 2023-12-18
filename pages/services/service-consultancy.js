@@ -28,10 +28,10 @@ import Tabs_img3 from "../../public/img/services_consultancy/tab_img3.jpg";
 /** Services Page */
 export default function ServiceConsultancy() {
 	useEffect(() => {
-    ScrollOut({
-      once: true
-    });
-  }, []);
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>
@@ -52,7 +52,7 @@ export default function ServiceConsultancy() {
 					<div className="container">
 						<div className={`${styles.service_flex} ptb_80`}>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h2 className={`${styles.info_head} heading_text_55 pb_30 `} >
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 `}>
 									Turnkey Consultancy Solution for Entertainment Center Success
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
@@ -74,7 +74,10 @@ export default function ServiceConsultancy() {
 				</section>
 				<section className={`${styles.service_tabsec} pt_80`}>
 					<div className="container">
-						<h2 className={`${styles.sec_title} heading_text_55 pb_50 toTop`} data-scroll>
+						<h2
+							className={`${styles.sec_title} heading_text_55 pb_50 toTop`}
+							data-scroll
+						>
 							Comprehensive Services for
 							<br /> Your Center Success
 						</h2>
@@ -100,7 +103,9 @@ export default function ServiceConsultancy() {
 										<p className={`${styles.info_title} font_secondary`}>
 											Planning and Layout Design
 										</p>
-										<p className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}>
+										<p
+											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+										>
 											Our expertise in optimizing available space transforms it into a
 											bespoke arcade amusement hub. We provide specialized layout plans
 											designed to suit your location, complete with electrical layout
@@ -120,7 +125,9 @@ export default function ServiceConsultancy() {
 										<p className={`${styles.info_title} font_secondary`}>
 											Exclusive Distribution
 										</p>
-										<p className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}>
+										<p
+											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+										>
 											What sets us apart is our exclusive distribution of industry-leading
 											brands. Our substantial buying power and involvement in multiple
 											projects enable us to offer competitive prices without compromising
@@ -141,7 +148,79 @@ export default function ServiceConsultancy() {
 										<p className={`${styles.info_title} font_secondary`}>
 											Tailored Amusement Equipment Selection
 										</p>
-										<p className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}>
+										<p
+											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+										>
+											At CSML, we specialize in curating a diverse mix of entertainment
+											equipment tailored to high-thrill and family-friendly experiences. We
+											prioritize creating unforgettable experiences by analyzing your
+											audience's demographics, age groups, and budget considerations. Our
+											goal is to maximize revenue while appealing to your guests' specific
+											interests.
+										</p>
+									</div>
+								</div>
+							</TabPanel>
+							{/* ________repaet tabpanel_________ */}
+							<TabPanel>
+								<div className={`${styles.tabs_bx} toTop`} data-scroll>
+									<div
+										className={`${styles.tabs_img}  border_animation white_border_animation`}
+									>
+										<img className="img border_8" src={Tabs_img1.src} />
+									</div>
+									<div className={`${styles.tabs_info}`}>
+										<p className={`${styles.info_title} font_secondary`}>
+											Planning and Layout Design
+										</p>
+										<p
+											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+										>
+											Our expertise in optimizing available space transforms it into a
+											bespoke arcade amusement hub. We provide specialized layout plans
+											designed to suit your location, complete with electrical layout
+											plans, operating manuals, and ongoing support.
+										</p>
+									</div>
+								</div>
+							</TabPanel>
+							<TabPanel>
+								<div className={`${styles.tabs_bx} `}>
+									<div
+										className={`${styles.tabs_img}  border_animation white_border_animation`}
+									>
+										<img className="img border_8" src={Tabs_img2.src} />
+									</div>
+									<div className={`${styles.tabs_info}`}>
+										<p className={`${styles.info_title} font_secondary`}>
+											Exclusive Distribution
+										</p>
+										<p
+											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+										>
+											What sets us apart is our exclusive distribution of industry-leading
+											brands. Our substantial buying power and involvement in multiple
+											projects enable us to offer competitive prices without compromising
+											on quality. This ensures that you receive top-notch amusement
+											equipment that aligns with your budgetary requirements.
+										</p>
+									</div>
+								</div>
+							</TabPanel>
+							<TabPanel>
+								<div className={`${styles.tabs_bx} `}>
+									<div
+										className={`${styles.tabs_img}  border_animation white_border_animation`}
+									>
+										<img className="img border_8" src={Tabs_img3.src} />
+									</div>
+									<div className={`${styles.tabs_info}`}>
+										<p className={`${styles.info_title} font_secondary`}>
+											Tailored Amusement Equipment Selection
+										</p>
+										<p
+											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+										>
 											At CSML, we specialize in curating a diverse mix of entertainment
 											equipment tailored to high-thrill and family-friendly experiences. We
 											prioritize creating unforgettable experiences by analyzing your
