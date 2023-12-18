@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // COMPONENTS //
-import { careeerYellowCardData } from "../../data/data-file-1";
+import { careeerYellowCardData } from "@/data/data-file-1";
 import CardHoverYellow from "@/components/CardHoverYellow";
 // SECTIONS //
 

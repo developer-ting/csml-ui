@@ -9,7 +9,7 @@ import Header from "../../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
-import { iedgeData } from "../../../src/data/data-file-1";
+import { iedgeData } from "@/data/data-file-1";
 import BlackStripOverview from "@/components/BlackStripOverview";
 
 // SECTIONS //

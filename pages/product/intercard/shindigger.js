@@ -13,7 +13,7 @@ import BlackStripOverview from "@/components/BlackStripOverview";
 import {
 	shindiggerPlanSmarter,
 	shindiggerCraftSteps,
-} from "../../../src/data/data-file-1";
+} from "@/data/data-file-1";
 import CardIcon from "@/components/CardIcon";
 
 // SECTIONS //

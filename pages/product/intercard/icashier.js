@@ -9,7 +9,7 @@ import Header from "../../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
-import { icashierData } from "../../../src/data/data-file-1";
+import { icashierData } from "@/data/data-file-1";
 import BlackStripOverview from "@/components/BlackStripOverview";
 
 // SECTIONS //

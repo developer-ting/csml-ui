@@ -14,7 +14,7 @@ import {
 	ecommerceYellowCardData,
 	ecommerceHowItWorksData,
 	ecommerceBonusFeatureData,
-} from "../../../src/data/data-file-1";
+} from "@/data/data-file-1";
 import CardHoverYellow from "@/components/CardHoverYellow";
 import CardIcon from "@/components/CardIcon";
 
