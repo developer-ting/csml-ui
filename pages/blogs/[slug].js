@@ -32,7 +32,7 @@ import instagram from "../../public/img/instagram.svg";
 
 /** Blog Page */
 export default function BlogInside({ BlogData, RelatedBlogData }) {
-	console.log(RelatedBlogData);
+	console.log(BlogData);
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -194,7 +194,7 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 						</p>
 					</div> */}
 					<div className="container">
-						<h1>{BlogData.BlogHeading}</h1>
+						<h1>{BlogData.BlogHeading && BlogData.BlogHeading}</h1>
 						<br />
 						<div className="blog_info">
 							<h6>{BlogData.BlogDate}</h6>
