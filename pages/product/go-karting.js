@@ -249,7 +249,7 @@ export default function GoKarting() {
 						<h2 className="heading_text_55 pb_50 toTop" data-scroll>
 							Timing Hardware
 						</h2>
-						{data.map((item, index) => (
+						{Data.map((item, index) => (
 							<ImagePara
 								key={index}
 								title={item.title}
