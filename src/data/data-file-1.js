@@ -1,49 +1,49 @@
 // goKarting page images import
-import essentialComponents from "../public/img/product/go-karting/essential-components.jpg";
-import userFriendly from "../public/img/product/go-karting/user-friendly.jpg";
+import essentialComponents from "../../public/img/product/go-karting/essential-components.jpg";
+import userFriendly from "../../public/img/product/go-karting/user-friendly.jpg";
 
 //intercard iedge page images import
-import iwallet from "../public/img/product/intercard/iedge/iwallet.jpg";
-import iservice from "../public/img/product/intercard/iedge/iservice.jpg";
-import inventory from "../public/img/product/intercard/iedge/inventory.jpg";
+import iwallet from "../../public/img/product/intercard/iedge/iwallet.jpg";
+import iservice from "../../public/img/product/intercard/iedge/iservice.jpg";
+import inventory from "../../public/img/product/intercard/iedge/inventory.jpg";
 
 //careeer page Yellow Card images import
-import success_img from "../public/img/career/success_img.jpg";
-import imfactful_img from "../public/img/career/imfactful_img.jpg";
-import growth from "../public/img/career/growth.jpg";
+import success_img from "../../public/img/career/success_img.jpg";
+import imfactful_img from "../../public/img/career/imfactful_img.jpg";
+import growth from "../../public/img/career/growth.jpg";
 
 //icashier page images import
-import icashier_station from "../public/img/product/intercard/icashier/icashier_station.jpg";
-import icashier_mobile from "../public/img/product/intercard/icashier/icashier_mobile.jpg";
-import iredemption from "../public/img/product/intercard/icashier/iredemption.jpg";
-import online_waiver from "../public/img/product/intercard/icashier/online_waiver.jpg";
+import icashier_station from "../../public/img/product/intercard/icashier/icashier_station.jpg";
+import icashier_mobile from "../../public/img/product/intercard/icashier/icashier_mobile.jpg";
+import iredemption from "../../public/img/product/intercard/icashier/iredemption.jpg";
+import online_waiver from "../../public/img/product/intercard/icashier/online_waiver.jpg";
 
 //Ecommerce page E-Commerce Technology section yellow card images import
-import remote_accessibility from "../public/img/product/intercard/ecommerce/remote_accessibility.jpg";
-import customized_brand from "../public/img/product/intercard/ecommerce/customized_brand.jpg";
-import staff_free from "../public/img/product/intercard/ecommerce/staff_free.jpg";
-import maximize_float from "../public/img/product/intercard/ecommerce/maximize_float.jpg";
+import remote_accessibility from "../../public/img/product/intercard/ecommerce/remote_accessibility.jpg";
+import customized_brand from "../../public/img/product/intercard/ecommerce/customized_brand.jpg";
+import staff_free from "../../public/img/product/intercard/ecommerce/staff_free.jpg";
+import maximize_float from "../../public/img/product/intercard/ecommerce/maximize_float.jpg";
 
 //Ecommerce page how it works section images import
-import register from "../public/img/product/intercard/ecommerce/register.svg";
-import shop from "../public/img/product/intercard/ecommerce/shop.svg";
-import discounts from "../public/img/product/intercard/ecommerce/discounts.svg";
-import check_out_pay from "../public/img/product/intercard/ecommerce/check_out_pay.svg";
-import redeem_play from "../public/img/product/intercard/ecommerce/redeem_play.svg";
+import register from "../../public/img/product/intercard/ecommerce/register.svg";
+import shop from "../../public/img/product/intercard/ecommerce/shop.svg";
+import discounts from "../../public/img/product/intercard/ecommerce/discounts.svg";
+import check_out_pay from "../../public/img/product/intercard/ecommerce/check_out_pay.svg";
+import redeem_play from "../../public/img/product/intercard/ecommerce/redeem_play.svg";
 
 //Ecommerce page Bonus feature section images import
-import bonus_feature from "../public/img/product/intercard/ecommerce/bonus_feature.jpg";
+import bonus_feature from "../../public/img/product/intercard/ecommerce/bonus_feature.jpg";
 
 //Shindigger page Plan smarter section images import
-import revolutionize from "../public/img/product/intercard/shindigger/revolutionize.jpg";
-import unveil from "../public/img/product/intercard/shindigger/unveil.jpg";
+import revolutionize from "../../public/img/product/intercard/shindigger/revolutionize.jpg";
+import unveil from "../../public/img/product/intercard/shindigger/unveil.jpg";
 
 //Shindigger page Craft Your Shindig in 5 Simple Steps section images import
-import choose_a_location from "../public/img/product/intercard/shindigger/choose_a_location.svg";
-import choose_a_day from "../public/img/product/intercard/shindigger/choose_a_day.svg";
-import guest_count from "../public/img/product/intercard/shindigger/guest_count.svg";
-import pick_party from "../public/img/product/intercard/shindigger/pick_party.svg";
-import select_a_time from "../public/img/product/intercard/shindigger/select_a_time.svg";
+import choose_a_location from "../../public/img/product/intercard/shindigger/choose_a_location.svg";
+import choose_a_day from "../../public/img/product/intercard/shindigger/choose_a_day.svg";
+import guest_count from "../../public/img/product/intercard/shindigger/guest_count.svg";
+import pick_party from "../../public/img/product/intercard/shindigger/pick_party.svg";
+import select_a_time from "../../public/img/product/intercard/shindigger/select_a_time.svg";
 
 // goKarting page data
 const data = [
