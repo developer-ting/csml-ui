@@ -107,53 +107,8 @@ export default function DebitCardSystem() {
 							</h2>
               <p className="paraTxt_18 pb_20  toTop" data-scroll>Intercard's cashless technology empowers our amusement business partners to potentially boost sales by up to 30%, enhance marketing initiatives, and reduce operating costs. Our bespoke cloud-based systems are adaptable to facilities of any size, ranging from single venues to sprawling networks of up to a hundred locations. What distinguishes Intercard is its in-house development of both hardware and software, further supported by 24/7 live service and global support.</p>
             </div>
-            
-          </div>
-          <div className={`${styles.business_benefits_icon} toTop`} data-scroll>
-            <div className={`${styles.business_benefits_icon}`}>
-gfhgf
-            </div>
-          </div>
-          <div className={`${styles.ecommerce_slider_main} toTop`} data-scroll>
-            <div className={`${styles.partner_superior_flex}`}>
-              <Slider {...settings}>
-                {ecommerceYellowCardData.map((item, index) => (
-                  <CardHoverYellow
-                    key={index}
-                    title={item.title}
-                    desc={item.desc}
-                    boxImg={item.image.src}
-                  />
-                ))}
-              </Slider>
-            </div>
-          </div>
-          
-          <div className="container">
-            <div className={`${styles.progress_div} pb_100`}>
-              <div className={`${styles.progress_bar}`}>
-                <div
-                  style={{ width: `${progressWidth}%` }}
-                  className={`${styles.color_div}`}
-                ></div>
-              </div>
-            </div>
           </div>
         </section>
-
-        <section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
-          <div className="container">
-            <div className={`${styles.section_title} pb_40 toTop`} data-scroll>
-              <h2 className="heading_text_55 color_white ">
-                How It Works
-              </h2>
-            </div>
-            <div className={`${styles.how_it_works_flex} toTop`} data-scroll>
-              
-            </div>
-          </div>
-        </section>
-
 			</main>
 			<Footer />
 		</div>
