@@ -1,4 +1,3 @@
-import React from "react";
 // goKarting page images import
 import essentialComponents from "../public/img/product/go-karting/essential-components.jpg";
 import userFriendly from "../public/img/product/go-karting/user-friendly.jpg";
