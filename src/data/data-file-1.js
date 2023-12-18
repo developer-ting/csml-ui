@@ -260,8 +260,8 @@ const shindiggerCraftSteps = [
 	},
 ];
 
-export default data;
 export {
+	data,
 	iedgeData,
 	careeerYellowCardData,
 	icashierData,
