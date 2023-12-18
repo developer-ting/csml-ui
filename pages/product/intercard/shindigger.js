@@ -27,6 +27,11 @@ import styles from "../../../src/styles/pages/product/intercard/Shindigger.modul
 import shindigger_banner from "../../../public/img/product/intercard/shindigger/shindigger_banner.jpg";
 
 export default function Shindigger() {
+  useEffect(() => {
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>
@@ -64,7 +69,7 @@ export default function Shindigger() {
               />
             ))}
 
-            <div className={`${styles.brochure_box} pt_60`}>
+            <div className={`${styles.brochure_box} pt_60 toTop`} data-scroll>
               <div className={`${styles.contactinside}`}>
                 <div className={`${styles.inside_flex}`}>
                   <div className={`${styles.text_bx} paraTxt`}>Click on Brochure button to know more about Shindigger</div>
@@ -88,7 +93,7 @@ export default function Shindigger() {
                 Craft Your Shindig in 5 Simple Steps
               </h2>
             </div>
-            <div className={`${styles.how_it_works_flex}`}>
+            <div className={`${styles.how_it_works_flex} toTop`} data-scroll>
               {/* <CardIcon /> */}
               {shindiggerCraftSteps.map((item, index) => (
                 <CardIcon
