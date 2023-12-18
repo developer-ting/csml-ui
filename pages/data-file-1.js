@@ -1,3 +1,4 @@
+import React from "react";
 // goKarting page images import
 import essentialComponents from "../public/img/product/go-karting/essential-components.jpg";
 import userFriendly from "../public/img/product/go-karting/user-friendly.jpg";
@@ -61,7 +62,7 @@ const data = [
 	},
 ];
 
-//intercard iedge page data 
+//intercard iedge page data
 const iedgeData = [
 	{
 		image: iwallet,
@@ -80,14 +81,14 @@ const iedgeData = [
 		title: "Inventory App",
 		desc:
 			"Seize control of your redemption inventory with our Inventory App. Compatible with Android and iOS devices, this app empowers your staff to effortlessly manage inventory. Streamline inventory management by scanning UPC codes on merchandise, reducing labor costs, and eliminating errors.",
-	}
+	},
 ];
 
 //careeer page Yellow Card Data
 const careeerYellowCardData = [
 	{
 		image: success_img,
-		title: "Innovative Environment" ,
+		title: "Innovative Environment",
 		desc:
 			"CSML is a playground for creativity. We encourage out-of-the-box thinking and provide a platform for your ideas to come to life.",
 	},
@@ -109,7 +110,7 @@ const careeerYellowCardData = [
 const icashierData = [
 	{
 		image: icashier_station,
-		title: "iCashier Station" ,
+		title: "iCashier Station",
 		desc:
 			"Streamline operations effortlessly with our comprehensive system. From managing quick-service food to overseeing customer engagement, we register vital details like name, address, email, and birth date, accompanied by personalized customer photos. Our system efficiently handles game maintenance, producing out-of-service reports, consolidating redemption points, and implementing a preventative maintenance program with a service log. The added touch of customizable graphics ensures a unique and engaging experience tailored to your specific needs.",
 	},
@@ -137,7 +138,7 @@ const icashierData = [
 const ecommerceYellowCardData = [
 	{
 		image: remote_accessibility,
-		title: "Remote Accessibility" ,
+		title: "Remote Accessibility",
 		desc:
 			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
 	},
@@ -177,9 +178,8 @@ const ecommerceYellowCardData = [
 const ecommerceHowItWorksData = [
 	{
 		image: register,
-		title: "Register" ,
-		desc:
-			"Guests can quickly register or shop as a guest on your site.",
+		title: "Register",
+		desc: "Guests can quickly register or shop as a guest on your site.",
 	},
 	{
 		image: shop,
@@ -190,14 +190,12 @@ const ecommerceHowItWorksData = [
 	{
 		image: discounts,
 		title: "Discounts",
-		desc:
-			"Apply any current discount options, promos, or specials.",
+		desc: "Apply any current discount options, promos, or specials.",
 	},
 	{
 		image: check_out_pay,
 		title: "Check Out & Pay",
-		desc:
-			"Guests can then print the QR code or save it on their phone.",
+		desc: "Guests can then print the QR code or save it on their phone.",
 	},
 	{
 		image: redeem_play,
@@ -211,7 +209,7 @@ const ecommerceHowItWorksData = [
 const ecommerceBonusFeatureData = [
 	{
 		image: bonus_feature,
-		title: "Bonus Feature: Recharge On the Go" ,
+		title: "Bonus Feature: Recharge On the Go",
 		desc:
 			"Receive low play card balance alerts on your phone, allowing guests to recharge straight from their device for uninterrupted play. Embrace the future of gaming convenience with Intercard E-Commerce.",
 	},
@@ -237,8 +235,7 @@ const shindiggerCraftSteps = [
 	{
 		image: choose_a_location,
 		title: "Choose A Location",
-		desc:
-			"Select from a variety of vibrant venues that match your party style.",
+		desc: "Select from a variety of vibrant venues that match your party style.",
 	},
 	{
 		image: choose_a_day,
@@ -249,8 +246,7 @@ const shindiggerCraftSteps = [
 	{
 		image: guest_count,
 		title: "Guest Count",
-		desc:
-			"Tailor your party experience by specifying the number of attendees.",
+		desc: "Tailor your party experience by specifying the number of attendees.",
 	},
 	{
 		image: pick_party,
@@ -261,10 +257,18 @@ const shindiggerCraftSteps = [
 	{
 		image: select_a_time,
 		title: "Select A Time",
-		desc:
-			"Choose the party hour that suits you and your guests.",
+		desc: "Choose the party hour that suits you and your guests.",
 	},
 ];
 
 export default data;
-export { iedgeData, careeerYellowCardData, icashierData, ecommerceYellowCardData, ecommerceHowItWorksData, ecommerceBonusFeatureData, shindiggerPlanSmarter, shindiggerCraftSteps};
+export {
+	iedgeData,
+	careeerYellowCardData,
+	icashierData,
+	ecommerceYellowCardData,
+	ecommerceHowItWorksData,
+	ecommerceBonusFeatureData,
+	shindiggerPlanSmarter,
+	shindiggerCraftSteps,
+};

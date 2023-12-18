@@ -9,6 +9,7 @@ import Header from "../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
+// import data from "../../pages/data-file-1";
 import data from "../../pages/data-file-1";
 // SECTIONS //
 
