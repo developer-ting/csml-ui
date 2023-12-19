@@ -9,7 +9,6 @@ import Header from "../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 // SECTIONS //
-
 // PLUGINS //
 
 // STYLES //
@@ -19,9 +18,25 @@ import styles from "../../src/styles/pages/product/AmusementGames.module.scss";
 import banner from "../../public/img/product/amusement-games/banner.jpg";
 import productImg from "../../public/img/product/amusement-games/product-img.png";
 import arrow from "../../public/img/arrow.svg";
+import closeIcn from "../../public/img/close.svg";
+import popIMg from "../../public/img/product/amusement-games/pop_img.jpg";
+import ytImg from "../../public/img/product/amusement-games/youtubeIcn.svg";
 
 /** Amusement Games Page */
 export default function AmusementGames() {
+	const [showPopup, setShowPopup] = useState(false);
+	/** openPopup function */
+	const openPopup = () => {
+		setShowPopup(true);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "hidden";
+	};
+	/** closePopup function */
+	const closePopup = () => {
+		setShowPopup(false);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "unset";
+	};
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -107,7 +122,7 @@ export default function AmusementGames() {
 														ATV Slam Twin Std
 													</h5>
 													<a href="#" rel="noreferrer">
-														<button className="btn_arrow">
+														<button className="btn_arrow" onClick={openPopup}>
 															<span className={`${styles.arrow_one} arrow_one`}>
 																<img src={arrow.src} />
 															</span>
@@ -250,6 +265,51 @@ export default function AmusementGames() {
 						</div>
 					</div>
 				</section>
+				{showPopup && (
+					<div className={styles.popup_overlay}>
+						<div className={styles.popup_content}>
+							<div className={styles.popup_content_inner}>
+								<div className={styles.popup_header}>
+									<button onClick={closePopup}>
+										<img src={closeIcn.src} alt="" />
+									</button>
+								</div>
+								<div className={styles.popup_body}>
+									<div className={`${styles.popup_flx} row`}>
+										<div className={styles.popup_img_item}>
+											<img src={popIMg.src} alt="" />
+										</div>
+										<div className={styles.popup_content_item}>
+											<h3 className={`${styles.popHead} text_24`}>ATV Slam Twin Std</h3>
+											<p className={`${styles.paraTxt} paraTxt_16`}>
+												ATV Slam offers a thrilling ATV racing experience with realistic
+												motion and exotic environments. Race through 10 different
+												environments, perform stunts and choose from 5 unique characters and
+												vehicles in this adrenaline-pumping game.
+											</p>
+											<p className={`${styles.paraTxt} paraTxt_16`}>
+												The cabinet is an attention-grabbing spectacle, featuring a
+												life-sized, illuminated quadbike with captivating aesthetics, from
+												its enormous lit wheels and chrome engine to its stylish liveries
+												and top-to-bottom lighting. It demands players' attention with its
+												striking visual presence.
+											</p>
+											<p className={`${styles.paraTxt} paraTxt_16`}>
+												<strong>Dimensions</strong>: W:43”x D:83”x H:86
+											</p>
+											<div className={styles.btn_sec}>
+												<a className={`${styles.watch_btn}`} href="" rel="noreferrer">
+													Watch Video
+												</a>
+												<img src={ytImg.src} className={styles.ytImg} alt="" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				)}
 			</main>
 			<Footer />
 		</div>
