@@ -1,0 +1,28 @@
+// @import "../helpers/helpers.scss";
+
+.AmusementGamesPage{
+  .GamesSection{
+    .games_info_sec{
+      .games_filter_sec{
+        width: 21%;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            width: 30%;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+      }
+      .games_product_sec{
+        width: 75%;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            width: 68%;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            margin: 40px 0 0;
+        }
+      }
+    }
+  }
+}
