@@ -32,7 +32,6 @@ import instagram from "../../public/img/instagram.svg";
 
 /** Blog Page */
 export default function BlogInside({ BlogData, RelatedBlogData }) {
-	console.log(BlogData);
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -278,10 +277,10 @@ export async function getStaticPaths() {
 	return {
 		paths: BlogData.data.map((item) => ({
 			params: {
-				slug: item.attributes.BlogSlug,
+				slug: `${item.attributes.BlogSlug}`,
 			},
 		})),
-		fallback: true, // false or "blocking"
+		fallback: "blocking", // false or "blocking"
 	};
 }
 
