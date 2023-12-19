@@ -32,7 +32,7 @@ import instagram from "../../public/img/instagram.svg";
 
 /** Blog Page */
 export default function BlogInside({ BlogData, RelatedBlogData }) {
-	console.log(RelatedBlogData);
+	console.log(BlogData);
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -194,10 +194,10 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 						</p>
 					</div> */}
 					<div className="container">
-						<h1>{BlogData.BlogHeading}</h1>
+						<h1>{BlogData?.BlogHeading}</h1>
 						<br />
 						<div className="blog_info">
-							<h6>{BlogData.BlogDate}</h6>
+							<h6>{BlogData?.BlogDate}</h6>
 							<h6>5 Min Read</h6>
 							<div className="share_sec">
 								<h6>Share</h6>
@@ -216,11 +216,11 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 						</div>
 						<br />
 						<img
-							src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${BlogData.BlogInsideBanner.data.attributes.url}`}
+							src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${BlogData?.BlogInsideBanner.data.attributes.url}`}
 							alt="Blog Inside Img"
 						/>
 						<br />
-						{parse(BlogData.BlogContent)}
+						{parse(BlogData?.BlogContent)}
 					</div>
 				</section>
 
@@ -228,14 +228,14 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 					<div className="container">
 						<h2 className="heading_text_55 text_center">Others Blog & Articles</h2>
 						<div className={`${styles.blog_info_sec} f_w_j pt_50`}>
-							{RelatedBlogData.map((item) => {
+							{RelatedBlogData?.map((item) => {
 								return (
 									<div
 										className={`${styles.blog_info} commonBorderAnimation whiteCommonBorderAnimation mb_80`}
 									>
 										<div className={`${styles.blog_info_style}`}>
 											<img
-												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.BlogThumb.data.attributes.url}`}
+												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.BlogThumb?.data.attributes.url}`}
 												alt="Blog Img"
 												className="b_r_8"
 											/>

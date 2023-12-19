@@ -9,7 +9,8 @@ import Header from "../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
-import data from "../../pages/data-file-1";
+// import data from "../../pages/data-file-1";
+import Data from "@/data/data-file-1";
 // SECTIONS //
 
 // PLUGINS //
@@ -248,7 +249,7 @@ export default function GoKarting() {
 						<h2 className="heading_text_55 pb_50 toTop" data-scroll>
 							Timing Hardware
 						</h2>
-						{data.map((item, index) => (
+						{Data.map((item, index) => (
 							<ImagePara
 								key={index}
 								title={item.title}

@@ -10,7 +10,11 @@ import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
 import BlackStripOverview from "@/components/BlackStripOverview";
-import {ecommerceYellowCardData, ecommerceHowItWorksData, ecommerceBonusFeatureData} from "../../../pages/data-file-1"
+import {
+	ecommerceYellowCardData,
+	ecommerceHowItWorksData,
+	ecommerceBonusFeatureData,
+} from "@/data/data-file-1";
 import CardHoverYellow from "@/components/CardHoverYellow";
 import CardIcon from "@/components/CardIcon";
 
@@ -32,25 +36,23 @@ export default function Ecommerce() {
 		arrows: false,
 		infinite: true,
 		slidesToShow: 2,
-    slidesToScroll: 1,
+		slidesToScroll: 1,
 		autoplay: false,
 		pauseOnHover: false,
 		speed: 1000,
-    variableWidth: true,
+		variableWidth: true,
 		responsive: [
-      
 			{
 				breakpoint: 767,
 				settings: {
 					slidesToShow: 1,
-          slidesToScroll: 1,
-          variableWidth: false,
-          autoplay: true,
+					slidesToScroll: 1,
+					variableWidth: false,
+					autoplay: true,
 				},
-
 			},
 		],
-    afterChange: (i) => {
+		afterChange: (i) => {
 			fillProgress(i + 1);
 		},
 		// prevArrow: (
@@ -65,7 +67,7 @@ export default function Ecommerce() {
 		// ),
 	};
 
-  const [progressWidth, setProgressWidth] = useState(0);
+	const [progressWidth, setProgressWidth] = useState(0);
 	useEffect(() => {
 		fillProgress(1);
 	}, []);
@@ -89,21 +91,21 @@ export default function Ecommerce() {
 					bannerImg={ecommerce_banner.src}
 					mobileImg={ecommerce_banner.src}
 				/>
-        <BlackStripOverview 
-          desc="Intercard E-Commerce Hand: Simplifying Contactless Transactions
+				<BlackStripOverview
+					desc="Intercard E-Commerce Hand: Simplifying Contactless Transactions
           Step into the era of effortless transactions with Intercard's advanced E-Commerce Technology. Enhance your customer experience by providing a user-friendly, remote platform for purchasing game cards, packages, or gift cards from the comfort of their homes or while on the move.
           "
-        />
+				/>
 
-        <section className={`${styles.intercard} ptb_100`}>
-          <div className="container">
-            <div className={`${styles.title_txt} `}>
-              <h2 className="heading_text_55 pb_40 toTop" data-scroll>
-                Advantages of Intercard’s <br className="hidden-xs" />
-                E-Commerce Technology
+				<section className={`${styles.intercard} ptb_100`}>
+					<div className="container">
+						<div className={`${styles.title_txt} `}>
+							<h2 className="heading_text_55 pb_40 toTop" data-scroll>
+								Advantages of Intercard’s <br className="hidden-xs" />
+								E-Commerce Technology
 							</h2>
-            </div>
-            {/* {iedgeData.map((item, index) => (
+						</div>
+						{/* {iedgeData.map((item, index) => (
                 <ImagePara
                   key={index}
                   title={item.title}
@@ -111,67 +113,65 @@ export default function Ecommerce() {
                   boxImg={item.image.src}
                 />
               ))} */}
-          </div>
-          <div className={`${styles.ecommerce_slider_main} toTop`} data-scroll>
-            <div className={`${styles.partner_superior_flex}`}>
-              <Slider {...settings}>
-                {ecommerceYellowCardData.map((item, index) => (
-                  <CardHoverYellow
-                    key={index}
-                    title={item.title}
-                    desc={item.desc}
-                    boxImg={item.image.src}
-                  />
-                ))}
-              </Slider>
-            </div>
-          </div>
-          
-          <div className="container">
-            <div className={`${styles.progress_div} pb_100`}>
-              <div className={`${styles.progress_bar}`}>
-                <div
-                  style={{ width: `${progressWidth}%` }}
-                  className={`${styles.color_div}`}
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
+					</div>
+					<div className={`${styles.ecommerce_slider_main} toTop`} data-scroll>
+						<div className={`${styles.partner_superior_flex}`}>
+							<Slider {...settings}>
+								{ecommerceYellowCardData.map((item, index) => (
+									<CardHoverYellow
+										key={index}
+										title={item.title}
+										desc={item.desc}
+										boxImg={item.image.src}
+									/>
+								))}
+							</Slider>
+						</div>
+					</div>
 
-        <section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
-          <div className="container">
-            <div className={`${styles.section_title} pb_40 toTop`} data-scroll>
-              <h2 className="heading_text_55 color_white ">
-                How It Works
-              </h2>
-            </div>
-            <div className={`${styles.how_it_works_flex}`}>
-              {/* <CardIcon /> */}
-              {ecommerceHowItWorksData.map((item, index) => (
-                  <CardIcon
-                    key={index}
-                    title={item.title}
-                    desc={item.desc}
-                    boxIcon={item.image.src}
-                  />
-                ))}
-            </div>
-          </div>
-        </section>
+					<div className="container">
+						<div className={`${styles.progress_div} pb_100`}>
+							<div className={`${styles.progress_bar}`}>
+								<div
+									style={{ width: `${progressWidth}%` }}
+									className={`${styles.color_div}`}
+								></div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <section className={`${styles.bonus_feature} ptb_100`}>
-          <div className="container">
-            {ecommerceBonusFeatureData.map((item, index) => (
-                <ImagePara
-                  key={index}
-                  title={item.title}
-                  desc={item.desc}
-                  boxImg={item.image.src}
-                />
-              ))}
-          </div>
-        </section>
+				<section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
+					<div className="container">
+						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
+							<h2 className="heading_text_55 color_white ">How It Works</h2>
+						</div>
+						<div className={`${styles.how_it_works_flex}`}>
+							{/* <CardIcon /> */}
+							{ecommerceHowItWorksData.map((item, index) => (
+								<CardIcon
+									key={index}
+									title={item.title}
+									desc={item.desc}
+									boxIcon={item.image.src}
+								/>
+							))}
+						</div>
+					</div>
+				</section>
+
+				<section className={`${styles.bonus_feature} ptb_100`}>
+					<div className="container">
+						{ecommerceBonusFeatureData.map((item, index) => (
+							<ImagePara
+								key={index}
+								title={item.title}
+								desc={item.desc}
+								boxImg={item.image.src}
+							/>
+						))}
+					</div>
+				</section>
 			</main>
 			<Footer />
 		</div>

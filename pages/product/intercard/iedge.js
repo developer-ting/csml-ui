@@ -9,7 +9,7 @@ import Header from "../../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
-import {iedgeData} from "../../../pages/data-file-1";
+import { iedgeData } from "@/data/data-file-1";
 import BlackStripOverview from "@/components/BlackStripOverview";
 
 // SECTIONS //
@@ -41,28 +41,26 @@ export default function Iedge() {
 					bannerImg={iedge_banner.src}
 					mobileImg={iedge_banner.src}
 				/>
-        <BlackStripOverview 
-          desc="Welcome to The Edge, where innovation converges with entertainment. Elevate your arcade or gaming center with Intercard's state-of-the-art Mobile App Collection designed to transform your operations."
-        />
+				<BlackStripOverview desc="Welcome to The Edge, where innovation converges with entertainment. Elevate your arcade or gaming center with Intercard's state-of-the-art Mobile App Collection designed to transform your operations." />
 
-        <section className={`${styles.intercard} ptb_100`}>
-          <div className="container">
-            <div className={`${styles.title_txt} `}>
-              <h2 className="heading_text_55 pb_40 toTop" data-scroll>
-                Unlock New Heights of <br className="hidden-xs" />
-                Efficiency with Intercard
+				<section className={`${styles.intercard} ptb_100`}>
+					<div className="container">
+						<div className={`${styles.title_txt} `}>
+							<h2 className="heading_text_55 pb_40 toTop" data-scroll>
+								Unlock New Heights of <br className="hidden-xs" />
+								Efficiency with Intercard
 							</h2>
-            </div>
-            {iedgeData.map((item, index) => (
-                <ImagePara
-                  key={index}
-                  title={item.title}
-                  desc={item.desc}
-                  boxImg={item.image.src}
-                />
-              ))}
-          </div>
-        </section>
+						</div>
+						{iedgeData.map((item, index) => (
+							<ImagePara
+								key={index}
+								title={item.title}
+								desc={item.desc}
+								boxImg={item.image.src}
+							/>
+						))}
+					</div>
+				</section>
 			</main>
 			<Footer />
 		</div>
