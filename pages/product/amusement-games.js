@@ -8,6 +8,7 @@ import Footer from "../../src/components/Footer";
 import Header from "../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
+import { ServerHeaders } from "@/utils/RequestHeaders";
 // SECTIONS //
 // PLUGINS //
 
@@ -23,11 +24,15 @@ import popIMg from "../../public/img/product/amusement-games/pop_img.jpg";
 import ytImg from "../../public/img/product/amusement-games/youtubeIcn.svg";
 
 /** Amusement Games Page */
-export default function AmusementGames() {
+export default function AmusementGames({ GamesCategoriesData }) {
 	const [showPopup, setShowPopup] = useState(false);
+	const [mainCategoriesIndex, setMainCategoriesIndex] = useState(0);
+	const [subCategoriesIndex, setSubCategoriesIndex] = useState(0);
+	const [gameIndex, setGameIndex] = useState(0);
 	/** openPopup function */
-	const openPopup = () => {
+	const openPopup = (id) => {
 		setShowPopup(true);
+		handleGameIndex(id);
 		const bodyTg = document.querySelector("body");
 		bodyTg.style.overflow = "hidden";
 	};
@@ -37,11 +42,30 @@ export default function AmusementGames() {
 		const bodyTg = document.querySelector("body");
 		bodyTg.style.overflow = "unset";
 	};
+
+	const handleMainCategoriesIndex = (id) => {
+		handleSubCategoriesIndex(0);
+		handleGameIndex(0);
+		setMainCategoriesIndex(id);
+	};
+	const handleSubCategoriesIndex = (id) => {
+		handleGameIndex(0);
+		setSubCategoriesIndex(id);
+	};
+	const handleGameIndex = (id) => {
+		setGameIndex(id);
+	};
+
+	const activeGameCategories =
+		GamesCategoriesData.data[mainCategoriesIndex].attributes.games_sub_categories
+			.data[subCategoriesIndex].attributes;
+
 	useEffect(() => {
 		ScrollOut({
 			once: true,
 		});
 	}, []);
+	console.log(activeGameCategories);
 
 	return (
 		<div>
@@ -68,196 +92,80 @@ export default function AmusementGames() {
 									<div className="product_names">
 										<h5 className="paraTxt_18 text_600 ptb_10">New Release</h5>
 									</div>
-									<div className="product_names">
-										<h5 className="paraTxt_18 text_600 ptb_10">Amusement Games</h5>
-										<h6 className="paraTxt_16 color_black_opacity pb_20 active_product">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-										<h6 className="paraTxt_16 color_black_opacity pb_20">
-											Video Games <span className="product_count">(16)</span>
-										</h6>
-									</div>
+									{GamesCategoriesData.data.map((item, mainCatIndex) => {
+										return (
+											<div className="product_names">
+												<h5
+													className="paraTxt_18 text_600 ptb_10"
+													onClick={() => handleMainCategoriesIndex(mainCatIndex)}
+												>
+													{item.attributes.CategoryNames}
+												</h5>
+												{item.attributes.games_sub_categories.data.map(
+													(subCategoriesItem, subCatIndex) => {
+														return (
+															<h6
+																className={`paraTxt_16 color_black_opacity pb_20 ${
+																	subCategoriesIndex == subCatIndex && "active_product"
+																}`}
+																onClick={() => handleSubCategoriesIndex(subCatIndex)}
+															>
+																{subCategoriesItem.attributes.SubCategoriesName}{" "}
+																<span className="product_count">
+																	({subCategoriesItem.attributes.games.data.length})
+																</span>
+															</h6>
+														);
+													}
+												)}
+											</div>
+										);
+									})}
 								</div>
 							</div>
 							<div className={`${styles.games_product_sec}`}>
 								<div className={`${styles.product_info_style}`}>
-									<h2 className="heading_text_55 color_white pb_20">Video Games</h2>
+									<h2 className="heading_text_55 color_white pb_20">
+										{activeGameCategories.SubCategoriesName}
+									</h2>
 									<h4 className="text_24 text_500 color_white pb_40">
-										Fast & Furious Action with Our Video Games
+										{activeGameCategories.SubCategoriesDescription}
 									</h4>
 									<div className={`${styles.product_info_style}`}>
 										<div className="ImgHeadingArrowStyle">
-											<div className="BlockInsideInfo">
-												<div className="ProductImg">
-													<img
-														src={productImg.src}
-														className="border_12"
-														alt="product img"
-													/>
-													<h6 className="NewRelease">New Release</h6>
-												</div>
-												<div className="text_btn_sec f_r_aj_between">
-													<h5 className="paraTxt_18 text_500 color_white">
-														ATV Slam Twin Std
-													</h5>
-													<a href="#" rel="noreferrer">
-														<button className="btn_arrow" onClick={openPopup}>
-															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={arrow.src} />
-															</span>
-															<span className={`${styles.arrow_two} arrow_two`}>
-																<img src={arrow.src} />
-															</span>
-														</button>
-													</a>
-												</div>
-											</div>
-											<div className="BlockInsideInfo">
-												<div className="ProductImg">
-													<img
-														src={productImg.src}
-														className="border_12"
-														alt="product img"
-													/>
-													<h6 className="NewRelease">New Release</h6>
-												</div>
-												<div className="text_btn_sec f_r_aj_between">
-													<h5 className="paraTxt_18 text_500 color_white">
-														ATV Slam Twin Std
-													</h5>
-													<a href="#" rel="noreferrer">
-														<button className="btn_arrow">
-															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={arrow.src} />
-															</span>
-															<span className={`${styles.arrow_two} arrow_two`}>
-																<img src={arrow.src} />
-															</span>
-														</button>
-													</a>
-												</div>
-											</div>
-											<div className="BlockInsideInfo">
-												<div className="ProductImg">
-													<img
-														src={productImg.src}
-														className="border_12"
-														alt="product img"
-													/>
-													<h6 className="NewRelease">New Release</h6>
-												</div>
-												<div className="text_btn_sec f_r_aj_between">
-													<h5 className="paraTxt_18 text_500 color_white">
-														ATV Slam Twin Std
-													</h5>
-													<a href="#" rel="noreferrer">
-														<button className="btn_arrow">
-															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={arrow.src} />
-															</span>
-															<span className={`${styles.arrow_two} arrow_two`}>
-																<img src={arrow.src} />
-															</span>
-														</button>
-													</a>
-												</div>
-											</div>
-											<div className="BlockInsideInfo">
-												<div className="ProductImg">
-													<img
-														src={productImg.src}
-														className="border_12"
-														alt="product img"
-													/>
-													<h6 className="NewRelease">New Release</h6>
-												</div>
-												<div className="text_btn_sec f_r_aj_between">
-													<h5 className="paraTxt_18 text_500 color_white">
-														ATV Slam Twin Std
-													</h5>
-													<a href="#" rel="noreferrer">
-														<button className="btn_arrow">
-															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={arrow.src} />
-															</span>
-															<span className={`${styles.arrow_two} arrow_two`}>
-																<img src={arrow.src} />
-															</span>
-														</button>
-													</a>
-												</div>
-											</div>
-											<div className="BlockInsideInfo">
-												<div className="ProductImg">
-													<img
-														src={productImg.src}
-														className="border_12"
-														alt="product img"
-													/>
-													<h6 className="NewRelease">New Release</h6>
-												</div>
-												<div className="text_btn_sec f_r_aj_between">
-													<h5 className="paraTxt_18 text_500 color_white">
-														ATV Slam Twin Std
-													</h5>
-													<a href="#" rel="noreferrer">
-														<button className="btn_arrow">
-															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={arrow.src} />
-															</span>
-															<span className={`${styles.arrow_two} arrow_two`}>
-																<img src={arrow.src} />
-															</span>
-														</button>
-													</a>
-												</div>
-											</div>
-											<div className="BlockInsideInfo">
-												<div className="ProductImg">
-													<img
-														src={productImg.src}
-														className="border_12"
-														alt="product img"
-													/>
-													<h6 className="NewRelease">New Release</h6>
-												</div>
-												<div className="text_btn_sec f_r_aj_between">
-													<h5 className="paraTxt_18 text_500 color_white">
-														ATV Slam Twin Std
-													</h5>
-													<a href="#" rel="noreferrer">
-														<button className="btn_arrow">
-															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={arrow.src} />
-															</span>
-															<span className={`${styles.arrow_two} arrow_two`}>
-																<img src={arrow.src} />
-															</span>
-														</button>
-													</a>
-												</div>
-											</div>
+											{activeGameCategories.games.data.map(
+												(gamesProductItem, productItemIndex) => {
+													return (
+														<div className="BlockInsideInfo">
+															<div className="ProductImg">
+																<img
+																	src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${gamesProductItem.attributes.GameImg.data.attributes.url}`}
+																	className="border_12"
+																	alt="product img"
+																/>
+															</div>
+															<div className="text_btn_sec f_r_aj_between">
+																<h5 className="paraTxt_18 text_500 color_white">
+																	{gamesProductItem.attributes.GameName}
+																</h5>
+																<a href="#" rel="noreferrer">
+																	<button
+																		className="btn_arrow"
+																		onClick={() => openPopup(productItemIndex)}
+																	>
+																		<span className={`${styles.arrow_one} arrow_one`}>
+																			<img src={arrow.src} />
+																		</span>
+																		<span className={`${styles.arrow_two} arrow_two`}>
+																			<img src={arrow.src} />
+																		</span>
+																	</button>
+																</a>
+															</div>
+														</div>
+													);
+												}
+											)}
 										</div>
 									</div>
 								</div>
@@ -277,31 +185,40 @@ export default function AmusementGames() {
 								<div className={styles.popup_body}>
 									<div className={`${styles.popup_flx} row`}>
 										<div className={styles.popup_img_item}>
-											<img src={popIMg.src} alt="" />
+											<img
+												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${activeGameCategories.games.data[gameIndex].attributes.GameImg.data.attributes.url}`}
+												alt=""
+											/>
 										</div>
 										<div className={styles.popup_content_item}>
-											<h3 className={`${styles.popHead} text_24`}>ATV Slam Twin Std</h3>
+											<h3 className={`${styles.popHead} text_24`}>
+												{activeGameCategories.games.data[gameIndex].attributes.GameName}
+											</h3>
 											<p className={`${styles.paraTxt} paraTxt_16`}>
-												ATV Slam offers a thrilling ATV racing experience with realistic
-												motion and exotic environments. Race through 10 different
-												environments, perform stunts and choose from 5 unique characters and
-												vehicles in this adrenaline-pumping game.
+												{
+													activeGameCategories.games.data[gameIndex].attributes
+														.GameDescription
+												}
 											</p>
 											<p className={`${styles.paraTxt} paraTxt_16`}>
-												The cabinet is an attention-grabbing spectacle, featuring a
-												life-sized, illuminated quadbike with captivating aesthetics, from
-												its enormous lit wheels and chrome engine to its stylish liveries
-												and top-to-bottom lighting. It demands players' attention with its
-												striking visual presence.
-											</p>
-											<p className={`${styles.paraTxt} paraTxt_16`}>
-												<strong>Dimensions</strong>: W:43”x D:83”x H:86
+												<strong>Dimensions</strong>:{" "}
+												{
+													activeGameCategories.games.data[gameIndex].attributes
+														.GameDimensions
+												}
 											</p>
 											<div className={styles.btn_sec}>
-												<a className={`${styles.watch_btn}`} href="" rel="noreferrer">
+												<a
+													className={`${styles.watch_btn}`}
+													href={
+														activeGameCategories.games.data[gameIndex].attributes
+															.GameYoutubeURL
+													}
+													rel="noreferrer"
+												>
 													Watch Video
+													<img src={ytImg.src} className={styles.ytImg} alt="" />
 												</a>
-												<img src={ytImg.src} className={styles.ytImg} alt="" />
 											</div>
 										</div>
 									</div>
@@ -314,4 +231,20 @@ export default function AmusementGames() {
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	//
+	const GamesCategoriesRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/games-categories?populate[games_sub_categories][populate]=games.GameImg`,
+		ServerHeaders
+	);
+	const GamesCategoriesData = await GamesCategoriesRes.json();
+
+	return {
+		props: {
+			GamesCategoriesData,
+		},
+		revalidate: 10,
+	};
 }
