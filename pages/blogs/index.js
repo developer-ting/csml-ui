@@ -73,31 +73,38 @@ export default function Blog({ BlogData }) {
 										className={`${styles.blog_info} commonBorderAnimation whiteCommonBorderAnimation mb_80`}
 										key={item.attributes.BlogHeading}
 									>
-										<div className={`${styles.blog_info_style}`}>
-											<img
-												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.BlogThumb.data.attributes.url}`}
-												alt="Blog Img"
-												className="b_r_8"
-											/>
-											{/* {console.log(item.attributes.BlogThumb.data.attributes.url)} */}
-										</div>
-										<div className={`${styles.blog_info_style}`}>
-											<h6 className="paraTxt_16 color_black_opacity pt_20 text_500">
-												{item.attributes.BlogDate}
-											</h6>
-											<h4 className="text_24 text_500 pt_10 pb_30">
-												{item.attributes.BlogHeading}
-											</h4>
-											<a href={`/blogs/${item.attributes.BlogSlug}`} rel="noreferrer">
-												<button className="btn_arrow">
-													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={arrow.src} />
-													</span>
-													<span className={`${styles.arrow_two} arrow_two`}>
-														<img src={arrow.src} />
-													</span>
-												</button>
-											</a>
+										<div className={`${styles.blog_yellow_box}`}>
+											<div className={`${styles.blog_info_style}`}>
+												<img
+													src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.BlogThumb.data.attributes.url}`}
+													alt="Blog Img"
+													className="b_r_8"
+												/>
+											</div>
+											<div className={`${styles.blog_info_style}`}>
+												<h6 className="paraTxt_16 color_black_opacity pt_20 text_500">
+													{item.attributes.BlogDate}
+												</h6>
+												<h4 className="text_24 text_500 pt_10 pb_30">
+													{item.attributes.BlogHeading}
+												</h4>
+												<a href={`/blogs/${item.attributes.BlogSlug}`} rel="noreferrer">
+													<button className="btn_arrow">
+														<span className={`${styles.arrow_one} arrow_one`}>
+															<img src={arrow.src} />
+														</span>
+														<span className={`${styles.arrow_two} arrow_two`}>
+															<img src={arrow.src} />
+														</span>
+													</button>
+												</a>
+											</div>
+
+											<div className={`${styles.red_dot} ${styles.dot_top_right}`}></div>
+											<div
+												className={`${styles.red_dot} ${styles.dot_bottom_right}`}
+											></div>
+											<div className={`${styles.red_dot} ${styles.dot_bottom_left}`}></div>
 										</div>
 									</div>
 								);

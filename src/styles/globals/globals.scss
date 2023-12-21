@@ -333,6 +333,71 @@ picture {
 	
 }
 
+.product_filer_sec{
+	background-color: #ffffff;
+    border-radius: 27px;
+    padding: 40px 20px 50px;
+	@media (max-width: 767px) {
+		padding: 20px 20px 30px;
+	}
+
+	.product_names{
+		border-bottom: 1px solid #DCDCDC;
+
+		.active_product{
+			color: #E31D25;
+			font-weight: 600;
+			text-decoration: underline;
+		}
+	}
+}
+
+.ImgHeadingArrowStyle{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 20px;
+
+	@media (min-width: 768px) and (max-width: 1199px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
+
+	.BlockInsideInfo{
+		background-color: #1E1E1E;
+		padding: 8px 8px 25px 8px;
+		border-radius: 12px;
+		.text_btn_sec{
+			padding: 30px 12px 0;
+	
+			h5{
+				padding-right: 15px;
+			}
+		}
+
+		.ProductImg{
+			position: relative;
+
+			img{
+				width: 100%;
+			}
+			.NewRelease{
+				position: absolute;
+				left: 5px;
+				top: 8px;
+				font-size: 10px;
+				color: #fff;
+				font-family: var(--font_primary);
+				padding: 4px 9px;
+				border-radius: 50px;
+				background-color: #FF0001;
+			}
+		}
+	}
+
+}
+
 //classes for fonts
 .font_primary {
 	font-family: var(--font_primary);
@@ -484,10 +549,6 @@ picture {
 	padding-top: 30px;
 }
 
-.pb_20 {
-	padding-bottom: 20px;
-}
-
 .ptb_20 {
 	padding: 20px 0;
 }
@@ -613,6 +674,18 @@ picture {
 	@media only screen and (max-width: 767px) {
 		padding-bottom: 60px;
 	}
+}
+
+.mtb_20 {
+	margin: 20px 0;
+}
+
+.mt_20 {
+	margin-top: 20px;
+}
+
+.mb_20 {
+	margin-bottom: 20px;
 }
 
 .mtb_80 {

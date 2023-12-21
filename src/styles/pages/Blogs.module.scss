@@ -1,6 +1,42 @@
 @import "../helpers/helpers.scss";
 
 .BlogPage {
+    .red_dot{
+        background-color: var(--color_primary);
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        display: none;
+        @media (max-width: 767px) {
+            width: 6px;
+            height: 6px;
+        }
+    
+        &.dot_top_right{
+            top: 20px;
+            right: 25px;
+            @media (max-width: 767px) {
+                top: 15px;
+                right: 15px;
+            }
+        }
+        &.dot_bottom_right{
+            bottom: 20px;
+            right: 25px;
+            @media (max-width: 767px) {
+                bottom: 20px;
+                right: 15px;
+            }
+        }
+        &.dot_bottom_left{
+            bottom: 20px;
+            left: 25px;
+            @media (max-width: 767px) {
+                bottom: 20px;
+                left: 15px;
+            }
+        }
+    }
   .blog_info_sec{
     
     .blog_info{
@@ -26,11 +62,26 @@
         }
         &:nth-child(1){
             width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #F8ED11;
+            padding: 10px 15px;
+            @media (max-width: 767px) {
+                padding: 10px;
+            }
+            .red_dot{
+                display: block;
+            }
+            .blog_yellow_box{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #F8ED11;
+                padding: 25px 20px;
+                border-radius: 8px;
+                @media (max-width: 767px) {
+                    padding: 15px 10px;
+                }
+            }
 
             .blog_info_style{
                 height: auto;
@@ -53,6 +104,8 @@
         }
     }
   }
+
+  
 }
 
 .BlogInsideSection{
@@ -82,3 +135,5 @@
         }
     }
 }
+
+

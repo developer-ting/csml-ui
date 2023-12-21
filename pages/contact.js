@@ -219,7 +219,10 @@ export default function Contact() {
 											</a>
 										</div>
 										{isSubmited && (
-											<p className={`${styles.thank_you} para_sm`}>Thank you</p>
+											<p className={`${styles.thank_you} para_sm mt_20`}>
+												Thank you for your message. Someone from our team will get back
+												shortly!
+											</p>
 										)}
 									</form>
 									{/* <img className="" src={cricle_arrow.src} /> */}
