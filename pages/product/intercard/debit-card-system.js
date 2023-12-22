@@ -10,9 +10,9 @@ import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
 import BlackStripOverview from "@/components/BlackStripOverview";
-import {ecommerceYellowCardData, ecommerceHowItWorksData, ecommerceBonusFeatureData} from "../../../pages/data-file-1"
+import {ecommerceYellowCardData} from "@/data/data-file-1"
 import CardHoverYellow from "@/components/CardHoverYellow";
-import CardIcon from "@/components/CardIcon";
+import CuttingEdge from "@/components/CuttingEdge";
 
 // SECTIONS //
 // PLUGINS //
@@ -20,11 +20,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-video.css";
+
+import LightGallery from "lightgallery/react";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+import lgVideo from "lightgallery/plugins/video";
+
 // STYLES //
 import styles from "../../../src/styles/pages/product/intercard/DebitCardSystem.module.scss";
 
 //	IMAGES	//
 import debit_banner from "../../../public/img/product/intercard/debit-card-system/debit_banner.jpg";
+import live_customer from "../../../public/img/product/intercard/debit-card-system/live_customer.svg";
+import cost_effective from "../../../public/img/product/intercard/debit-card-system/cost_effective.svg";
+import state_security from "../../../public/img/product/intercard/debit-card-system/state_security.svg";
+import durability from "../../../public/img/product/intercard/debit-card-system/durability.svg";
+import reliability from "../../../public/img/product/intercard/debit-card-system/reliability.svg";
+import iWave from "../../../public/img/product/intercard/debit-card-system/iWave.jpg";
+import video_img from "../../../public/img/product/intercard/debit-card-system/video_img.jpg";
+import play from "../../../public/img/product/intercard/debit-card-system/play.svg";
+
 
 export default function DebitCardSystem() {
 	var settings = {
@@ -70,7 +89,7 @@ export default function DebitCardSystem() {
 		fillProgress(1);
 	}, []);
 	const fillProgress = (currInd) => {
-		setProgressWidth((currInd / 6) * 100);
+		setProgressWidth((currInd / 4) * 100);
 	};
   useEffect(() => {
 		ScrollOut({
@@ -88,7 +107,7 @@ export default function DebitCardSystem() {
 
 			<Header />
 			<Loader />
-			<main className={`${styles.ecommerce_main}`}>
+			<main className={`${styles.debit_card_main}`}>
 				<InsideBanner
 					bannerTitle="Intercard x CSML <br />
           Partner With The Experts"
@@ -107,8 +126,175 @@ export default function DebitCardSystem() {
 							</h2>
               <p className="paraTxt_18 pb_20  toTop" data-scroll>Intercard's cashless technology empowers our amusement business partners to potentially boost sales by up to 30%, enhance marketing initiatives, and reduce operating costs. Our bespoke cloud-based systems are adaptable to facilities of any size, ranging from single venues to sprawling networks of up to a hundred locations. What distinguishes Intercard is its in-house development of both hardware and software, further supported by 24/7 live service and global support.</p>
             </div>
+						<div className={`${styles.debit_icon_flex} toTop`} data-scroll>
+							<div className={`${styles.debit_icon_item}`}>
+								<img className={`${styles.debit_icon} pb_30`} src={live_customer.src} alt="img" />
+								<p className="paraTxt text_600 pb_20 l_h_3">Live Customer Service</p>
+      					<p className="paraTxt_18 l_h_3">Always available, 24/7</p>
+							</div>
+							<div className={`${styles.debit_icon_item}`}>
+								<img className={`${styles.debit_icon} pb_30`} src={cost_effective.src} alt="img" />
+								<p className="paraTxt text_600 pb_20 l_h_3">Cost Effective</p>
+      					<p className="paraTxt_18 l_h_3">Boasting the lowest total cost of ownership</p>
+							</div>
+							<div className={`${styles.debit_icon_item}`}>
+								<img className={`${styles.debit_icon} pb_30`} src={state_security.src} alt="img" />
+								<p className="paraTxt text_600 pb_20 l_h_3">State Of The Art Security</p>
+      					<p className="paraTxt_18 l_h_3">Operating with zero-fault tolerance</p>
+							</div>
+							<div className={`${styles.debit_icon_item}`}>
+								<img className={`${styles.debit_icon} pb_30`} src={durability.src} alt="img" />
+								<p className="paraTxt text_600 pb_20 l_h_3">Durability</p>
+      					<p className="paraTxt_18 l_h_3">Offering the longest warranty</p>
+							</div>
+							<div className={`${styles.debit_icon_item}`}>
+								<img className={`${styles.debit_icon} pb_30`} src={reliability.src} alt="img" />
+								<p className="paraTxt text_600 pb_20 l_h_3">Reliability</p>
+      					<p className="paraTxt_18 l_h_3">Constructing all hardware & software in-house</p>
+							</div>
+						</div>
           </div>
         </section>
+				<div className={`${styles.ecommerce_slider_main} pb_100 toTop`} data-scroll>
+					<div className="container">
+						<div className={`${styles.title_txt} pb_20`}>
+              <h2 className="heading_text_55 pb_20 toTop" data-scroll>
+								Readers 
+							</h2>
+            </div>
+					</div>
+					
+					<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
+						<Slider {...settings}>
+							<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+								<div className="dot_one dots_p"></div>
+								<div className="dot_two dots_p"></div>
+								<div className="dot_three dots_p"></div>
+								<div className={`${styles.luminaries_content}`}>
+									<img className="" src={iWave.src} alt="img" />
+									<h3 className="text_24 text_700 pt_30">iReader Eclipse</h3>
+									<div className={`${styles.desc_box}`}>
+										<div className={`${styles.desc_title}`}>
+											<h3 className="text_24 text_700">iReader Eclipse</h3>
+										</div>
+										<p className="paraTxt">
+											Experience innovation with the iReader Eclipse, featuring an oversized color display and programmable LEDs for customization. Enjoy real-time guest photo or avatar displays and run business or promotional advertisements on the screen. The large display enhances the gaming experience, making it a visually engaging addition to your entertainment center.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+								<div className="dot_one dots_p"></div>
+								<div className="dot_two dots_p"></div>
+								<div className="dot_three dots_p"></div>
+								<div className={`${styles.luminaries_content}`}>
+									<img className="" src={iWave.src} alt="img" />
+									<h3 className="text_24 text_700 pt_30">iWave</h3>
+									<div className={`${styles.desc_box}`}>
+										<div className={`${styles.desc_title}`}>
+											<h3 className="text_24 text_700">iWave</h3>
+										</div>
+										<p className="paraTxt">
+											Experience innovation with the iReader Eclipse, featuring an oversized color display and programmable LEDs for customization. Enjoy real-time guest photo or avatar displays and run business or promotional advertisements on the screen. The large display enhances the gaming experience, making it a visually engaging addition to your entertainment center.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+								<div className="dot_one dots_p"></div>
+								<div className="dot_two dots_p"></div>
+								<div className="dot_three dots_p"></div>
+								<div className={`${styles.luminaries_content}`}>
+									<img className="" src={iWave.src} alt="img" />
+									<h3 className="text_24 text_700 pt_30">i3</h3>
+									<div className={`${styles.desc_box}`}>
+										<div className={`${styles.desc_title}`}>
+											<h3 className="text_24 text_700">i3</h3>
+										</div>
+										<p className="paraTxt">
+											Experience innovation with the iReader Eclipse, featuring an oversized color display and programmable LEDs for customization. Enjoy real-time guest photo or avatar displays and run business or promotional advertisements on the screen. The large display enhances the gaming experience, making it a visually engaging addition to your entertainment center.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className={`${styles.luminaries_box} border_animation white_border_animation`}>
+								<div className="dot_one dots_p"></div>
+								<div className="dot_two dots_p"></div>
+								<div className="dot_three dots_p"></div>
+								<div className={`${styles.luminaries_content}`}>
+									<img className="" src={iWave.src} alt="img" />
+									<h3 className="text_24 text_700 pt_30">iReader Eclipse</h3>
+									<div className={`${styles.desc_box}`}>
+										<div className={`${styles.desc_title}`}>
+											<h3 className="text_24 text_700">iReader Eclipse</h3>
+										</div>
+										<p className="paraTxt">
+											Experience innovation with the iReader Eclipse, featuring an oversized color display and programmable LEDs for customization. Enjoy real-time guest photo or avatar displays and run business or promotional advertisements on the screen. The large display enhances the gaming experience, making it a visually engaging addition to your entertainment center.
+										</p>
+									</div>
+								</div>
+							</div>
+						</Slider>
+					</div>
+
+					<div className="container">
+						<div className={`${styles.progress_div} pb_100`}>
+							<div className={`${styles.progress_bar}`}>
+								<div
+									style={{ width: `${progressWidth}%` }}
+									className={`${styles.color_div}`}
+								></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section className={`${styles.future_proof} ptb_100 dot_animation_box`}>
+          <div className="container">
+            <div className={`${styles.section_title} pb_40 toTop`} data-scroll>
+              <h2 className="heading_text_45 color_white text_700">
+								Future-Proof Your Arcade Fun <br className="hidden-xs"/>With CSML and Intercard
+              </h2>
+            </div>
+						<div className={`${styles.intertainment_border} commonBorderAnimation`}>
+							<div className={`${styles.intertainment_right} toTop`} data-scroll>
+								<LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgVideo]}>
+									<a href="https://youtu.be/75yhYazRwRs?feature=shared">
+										<div className={`${styles.video_box}`}>
+											<img
+												className={`${styles.video_img} border_20 img`}
+												src={video_img.src}
+											/>
+											<div className={`${styles.video_play}`}>
+												<img
+													src={play.src}
+													className={`${styles.gallery_plus}`}
+													alt="play"
+												/>
+											</div>
+										</div>
+									</a>
+								</LightGallery>
+							</div>
+						</div>
+
+						<div className={`${styles.brochure_box} pt_100 toTop`} data-scroll>
+              <div className={`${styles.contactinside}`}>
+                <div className={`${styles.inside_flex}`}>
+                  <div className={`${styles.text_bx} paraTxt`}>Click on Brochure button to know more.</div>
+                  <div className={`${styles.btn_bx}`}>
+                    <a href="#" rel="noreferrer">
+                    <span className="span_btn yellow_btn">
+                    <button className="btn_project_default ">Download Brochure</button>
+                    </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+						
+					</div>
+				</section>
+				<CuttingEdge />
 			</main>
 			<Footer />
 		</div>

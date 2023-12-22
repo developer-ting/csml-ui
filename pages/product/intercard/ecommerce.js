@@ -132,7 +132,7 @@ export default function Ecommerce() {
 							</Slider>
 						</div>
 					</div>
-
+				</section>
         <section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
           <div className="container">
             <div className={`${styles.section_title} pb_40 toTop`} data-scroll>
@@ -153,25 +153,6 @@ export default function Ecommerce() {
             </div>
           </div>
         </section>
-
-				<section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
-					<div className="container">
-						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
-							<h2 className="heading_text_55 color_white ">How It Works</h2>
-						</div>
-						<div className={`${styles.how_it_works_flex}`}>
-							{/* <CardIcon /> */}
-							{ecommerceHowItWorksData.map((item, index) => (
-								<CardIcon
-									key={index}
-									title={item.title}
-									desc={item.desc}
-									boxIcon={item.image.src}
-								/>
-							))}
-						</div>
-					</div>
-				</section>
 
 				<section className={`${styles.bonus_feature} ptb_100`}>
 					<div className="container">
