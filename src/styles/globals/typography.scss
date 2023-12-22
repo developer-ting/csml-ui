@@ -60,6 +60,17 @@
 	}
 }
 
+.paraTxt_16 {
+	font-size: 16px;
+	color: var(--color_black);
+	font-weight: 400;
+	line-height: 1.2;
+	font-family: var(--font_primary);
+	@media only screen and (max-width: 991px) {
+		font-size: 14px;
+	}
+}
+
 .paraTxt_18 {
 	font-size: 18px;
 	color: var(--color_black);
@@ -86,7 +97,8 @@
   	@extend .text_md;
   	color: var(--color_black);
 	font-family: var(--font_primary);
-	line-height: calc(30 / 24);
+	// line-height: calc(30 / 24);
+	line-height: 1.3;
 	@media only screen and (max-width: 991px) {
 		font-size: 20px;
 	}
@@ -229,6 +241,9 @@
 
 .b_r_7{
 	border-radius: 7px;
+}
+.b_r_8{
+	border-radius: 8px;
 }
 
 // //each loop for creating font weights ->

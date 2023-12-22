@@ -9,7 +9,7 @@ import Header from "../../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
-import {icashierData} from "../../data-file-1";
+import { icashierData } from "@/data/data-file-1";
 import BlackStripOverview from "@/components/BlackStripOverview";
 
 // SECTIONS //
@@ -45,27 +45,25 @@ export default function Icashier() {
 					bannerImg={icashier_banner.src}
 					mobileImg={icashier_banner.src}
 				/>
-        <BlackStripOverview 
-          desc="iCASHIER offers a comprehensive suite of solutions designed to streamline and enhance various aspects of business operations."/>
-        <section className={`${styles.intercard} ptb_100`}>
-          <div className="container">
-            <div className={`${styles.title_txt} `}>
-              <h2 className="heading_text_55 pb_40 toTop" data-scroll>
-              Effortless Operations, <br className="hidden-xs" />
-              Comprehensive Solutions 
+				<BlackStripOverview desc="iCASHIER offers a comprehensive suite of solutions designed to streamline and enhance various aspects of business operations." />
+				<section className={`${styles.intercard} ptb_100`}>
+					<div className="container">
+						<div className={`${styles.title_txt} `}>
+							<h2 className="heading_text_55 pb_40 toTop" data-scroll>
+								Effortless Operations, <br className="hidden-xs" />
+								Comprehensive Solutions
 							</h2>
-            </div>
-            {icashierData.map((item, index) => (
-                <ImagePara
-                  key={index}
-                  title={item.title}
-                  desc={item.desc}
-                  boxImg={item.image.src}
-                />
-              ))}
-          </div>
-        </section>
-
+						</div>
+						{icashierData.map((item, index) => (
+							<ImagePara
+								key={index}
+								title={item.title}
+								desc={item.desc}
+								boxImg={item.image.src}
+							/>
+						))}
+					</div>
+				</section>
 			</main>
 			<Footer />
 		</div>

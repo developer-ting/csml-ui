@@ -1,52 +1,52 @@
 // goKarting page images import
-import essentialComponents from "../public/img/product/go-karting/essential-components.jpg";
-import userFriendly from "../public/img/product/go-karting/user-friendly.jpg";
+import essentialComponents from "../../public/img/product/go-karting/essential-components.jpg";
+import userFriendly from "../../public/img/product/go-karting/user-friendly.jpg";
 
 //intercard iedge page images import
-import iwallet from "../public/img/product/intercard/iedge/iwallet.jpg";
-import iservice from "../public/img/product/intercard/iedge/iservice.jpg";
-import inventory from "../public/img/product/intercard/iedge/inventory.jpg";
+import iwallet from "../../public/img/product/intercard/iedge/iwallet.jpg";
+import iservice from "../../public/img/product/intercard/iedge/iservice.jpg";
+import inventory from "../../public/img/product/intercard/iedge/inventory.jpg";
 
 //careeer page Yellow Card images import
-import success_img from "../public/img/career/success_img.jpg";
-import imfactful_img from "../public/img/career/imfactful_img.jpg";
-import growth from "../public/img/career/growth.jpg";
+import success_img from "../../public/img/career/success_img.jpg";
+import imfactful_img from "../../public/img/career/imfactful_img.jpg";
+import growth from "../../public/img/career/growth.jpg";
 
 //icashier page images import
-import icashier_station from "../public/img/product/intercard/icashier/icashier_station.jpg";
-import icashier_mobile from "../public/img/product/intercard/icashier/icashier_mobile.jpg";
-import iredemption from "../public/img/product/intercard/icashier/iredemption.jpg";
-import online_waiver from "../public/img/product/intercard/icashier/online_waiver.jpg";
+import icashier_station from "../../public/img/product/intercard/icashier/icashier_station.jpg";
+import icashier_mobile from "../../public/img/product/intercard/icashier/icashier_mobile.jpg";
+import iredemption from "../../public/img/product/intercard/icashier/iredemption.jpg";
+import online_waiver from "../../public/img/product/intercard/icashier/online_waiver.jpg";
 
 //Ecommerce page E-Commerce Technology section yellow card images import
-import remote_accessibility from "../public/img/product/intercard/ecommerce/remote_accessibility.jpg";
-import customized_brand from "../public/img/product/intercard/ecommerce/customized_brand.jpg";
-import staff_free from "../public/img/product/intercard/ecommerce/staff_free.jpg";
-import maximize_float from "../public/img/product/intercard/ecommerce/maximize_float.jpg";
+import remote_accessibility from "../../public/img/product/intercard/ecommerce/remote_accessibility.jpg";
+import customized_brand from "../../public/img/product/intercard/ecommerce/customized_brand.jpg";
+import staff_free from "../../public/img/product/intercard/ecommerce/staff_free.jpg";
+import maximize_float from "../../public/img/product/intercard/ecommerce/maximize_float.jpg";
 
 //Ecommerce page how it works section images import
-import register from "../public/img/product/intercard/ecommerce/register.svg";
-import shop from "../public/img/product/intercard/ecommerce/shop.svg";
-import discounts from "../public/img/product/intercard/ecommerce/discounts.svg";
-import check_out_pay from "../public/img/product/intercard/ecommerce/check_out_pay.svg";
-import redeem_play from "../public/img/product/intercard/ecommerce/redeem_play.svg";
+import register from "../../public/img/product/intercard/ecommerce/register.svg";
+import shop from "../../public/img/product/intercard/ecommerce/shop.svg";
+import discounts from "../../public/img/product/intercard/ecommerce/discounts.svg";
+import check_out_pay from "../../public/img/product/intercard/ecommerce/check_out_pay.svg";
+import redeem_play from "../../public/img/product/intercard/ecommerce/redeem_play.svg";
 
 //Ecommerce page Bonus feature section images import
-import bonus_feature from "../public/img/product/intercard/ecommerce/bonus_feature.jpg";
+import bonus_feature from "../../public/img/product/intercard/ecommerce/bonus_feature.jpg";
 
 //Shindigger page Plan smarter section images import
-import revolutionize from "../public/img/product/intercard/shindigger/revolutionize.jpg";
-import unveil from "../public/img/product/intercard/shindigger/unveil.jpg";
+import revolutionize from "../../public/img/product/intercard/shindigger/revolutionize.jpg";
+import unveil from "../../public/img/product/intercard/shindigger/unveil.jpg";
 
 //Shindigger page Craft Your Shindig in 5 Simple Steps section images import
-import choose_a_location from "../public/img/product/intercard/shindigger/choose_a_location.svg";
-import choose_a_day from "../public/img/product/intercard/shindigger/choose_a_day.svg";
-import guest_count from "../public/img/product/intercard/shindigger/guest_count.svg";
-import pick_party from "../public/img/product/intercard/shindigger/pick_party.svg";
-import select_a_time from "../public/img/product/intercard/shindigger/select_a_time.svg";
+import choose_a_location from "../../public/img/product/intercard/shindigger/choose_a_location.svg";
+import choose_a_day from "../../public/img/product/intercard/shindigger/choose_a_day.svg";
+import guest_count from "../../public/img/product/intercard/shindigger/guest_count.svg";
+import pick_party from "../../public/img/product/intercard/shindigger/pick_party.svg";
+import select_a_time from "../../public/img/product/intercard/shindigger/select_a_time.svg";
 
 // goKarting page data
-const data = [
+const Data = [
 	{
 		image: essentialComponents,
 		title: "Essential Components",
@@ -61,7 +61,7 @@ const data = [
 	},
 ];
 
-//intercard iedge page data 
+//intercard iedge page data
 const iedgeData = [
 	{
 		image: iwallet,
@@ -80,14 +80,14 @@ const iedgeData = [
 		title: "Inventory App",
 		desc:
 			"Seize control of your redemption inventory with our Inventory App. Compatible with Android and iOS devices, this app empowers your staff to effortlessly manage inventory. Streamline inventory management by scanning UPC codes on merchandise, reducing labor costs, and eliminating errors.",
-	}
+	},
 ];
 
 //careeer page Yellow Card Data
 const careeerYellowCardData = [
 	{
 		image: success_img,
-		title: "Innovative Environment" ,
+		title: "Innovative Environment",
 		desc:
 			"CSML is a playground for creativity. We encourage out-of-the-box thinking and provide a platform for your ideas to come to life.",
 	},
@@ -109,7 +109,7 @@ const careeerYellowCardData = [
 const icashierData = [
 	{
 		image: icashier_station,
-		title: "iCashier Station" ,
+		title: "iCashier Station",
 		desc:
 			"Streamline operations effortlessly with our comprehensive system. From managing quick-service food to overseeing customer engagement, we register vital details like name, address, email, and birth date, accompanied by personalized customer photos. Our system efficiently handles game maintenance, producing out-of-service reports, consolidating redemption points, and implementing a preventative maintenance program with a service log. The added touch of customizable graphics ensures a unique and engaging experience tailored to your specific needs.",
 	},
@@ -137,7 +137,7 @@ const icashierData = [
 const ecommerceYellowCardData = [
 	{
 		image: remote_accessibility,
-		title: "Remote Accessibility" ,
+		title: "Remote Accessibility",
 		desc:
 			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
 	},
@@ -177,9 +177,8 @@ const ecommerceYellowCardData = [
 const ecommerceHowItWorksData = [
 	{
 		image: register,
-		title: "Register" ,
-		desc:
-			"Guests can quickly register or shop as a guest on your site.",
+		title: "Register",
+		desc: "Guests can quickly register or shop as a guest on your site.",
 	},
 	{
 		image: shop,
@@ -190,14 +189,12 @@ const ecommerceHowItWorksData = [
 	{
 		image: discounts,
 		title: "Discounts",
-		desc:
-			"Apply any current discount options, promos, or specials.",
+		desc: "Apply any current discount options, promos, or specials.",
 	},
 	{
 		image: check_out_pay,
 		title: "Check Out & Pay",
-		desc:
-			"Guests can then print the QR code or save it on their phone.",
+		desc: "Guests can then print the QR code or save it on their phone.",
 	},
 	{
 		image: redeem_play,
@@ -211,7 +208,7 @@ const ecommerceHowItWorksData = [
 const ecommerceBonusFeatureData = [
 	{
 		image: bonus_feature,
-		title: "Bonus Feature: Recharge On the Go" ,
+		title: "Bonus Feature: Recharge On the Go",
 		desc:
 			"Receive low play card balance alerts on your phone, allowing guests to recharge straight from their device for uninterrupted play. Embrace the future of gaming convenience with Intercard E-Commerce.",
 	},
@@ -237,8 +234,7 @@ const shindiggerCraftSteps = [
 	{
 		image: choose_a_location,
 		title: "Choose A Location",
-		desc:
-			"Select from a variety of vibrant venues that match your party style.",
+		desc: "Select from a variety of vibrant venues that match your party style.",
 	},
 	{
 		image: choose_a_day,
@@ -249,8 +245,7 @@ const shindiggerCraftSteps = [
 	{
 		image: guest_count,
 		title: "Guest Count",
-		desc:
-			"Tailor your party experience by specifying the number of attendees.",
+		desc: "Tailor your party experience by specifying the number of attendees.",
 	},
 	{
 		image: pick_party,
@@ -261,10 +256,18 @@ const shindiggerCraftSteps = [
 	{
 		image: select_a_time,
 		title: "Select A Time",
-		desc:
-			"Choose the party hour that suits you and your guests.",
+		desc: "Choose the party hour that suits you and your guests.",
 	},
 ];
 
-export default data;
-export { iedgeData, careeerYellowCardData, icashierData, ecommerceYellowCardData, ecommerceHowItWorksData, ecommerceBonusFeatureData, shindiggerPlanSmarter, shindiggerCraftSteps};
+export default Data;
+export {
+	iedgeData,
+	careeerYellowCardData,
+	icashierData,
+	ecommerceYellowCardData,
+	ecommerceHowItWorksData,
+	ecommerceBonusFeatureData,
+	shindiggerPlanSmarter,
+	shindiggerCraftSteps,
+};

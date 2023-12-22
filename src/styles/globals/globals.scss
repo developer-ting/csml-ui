@@ -93,6 +93,14 @@ picture {
 			background-position: 0 100%;
 		}
 	}
+
+	.width80{
+		width: 80%;
+		margin: 0 auto;
+		@media only screen and (max-width: 1199px) {
+			width: 100%;
+		}
+	}
 }
 
 .commonBorderAnimation {
@@ -209,6 +217,185 @@ picture {
 			background-color: #fff;
 		}
 	}
+}
+
+.coming_from_cms{
+	&.page_space{
+		padding: 150px 0 80px;
+	}
+	a {
+		color: var(--color_white);
+		text-decoration: none;
+	}
+	i {
+		font-style: italic;
+	}
+	h1{
+		font-size: 35px;
+		color: var(--color_white);
+		font-family: var(--font_primary);
+		line-height: calc(44 / 35);
+		font-weight: 700;
+		width: 85%;
+		// margin: 0 0 20px;
+		@media only screen and (max-width: 1199px) {
+			font-size: 30px;
+			width: 100%;
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: 26px;
+			width: 100%;
+		}
+	}
+
+	p{
+		font-size: 18px;
+		color: var(--color_white);
+		font-weight: 400;
+		line-height: calc(34 / 18);
+		font-family: var(--font_primary);
+		// margin: 0 0 20px;
+		opacity: 0.8;
+		@media only screen and (max-width: 991px) {
+			font-size: 16px;
+		}
+	}
+
+	h3{
+		font-size: 22px;
+		color: var(--color_white);
+		font-family: var(--font_primary);
+		line-height: 1.2;
+		font-weight: 600;
+		// margin: 0 0 20px;
+	}
+
+	img{
+		border-radius: 10px;
+	}
+
+	h6{
+		font-size: 16px;
+		color: #8F8F8F;
+		font-family: var(--font_primary);
+		line-height: 1.2;
+		font-weight: 500;
+		border-right: 1px solid #8F8F8F;
+		padding-right: 10px;
+		margin: 0 10px 0 0;
+		@media only screen and (max-width: 767px) {
+			margin: 0 10px 10px 0;
+		}
+	}		
+
+	.blog_info{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		.share_sec{
+			display: flex;
+			align-items: center;
+			h6{
+				border-right: none;
+				margin: 0 10px 0 0;
+			}
+			.share_icon{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				a{
+					width: 24px;
+					height: 24px;
+					border-radius: 50%;
+					background-color: var(--color_primary);
+					cursor: pointer;
+					margin-right: 15px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: ease-out 0.3s;
+					&:hover {
+						background-color: var(--color_secondary);
+						transition: ease-out 0.3s;
+						img {
+							filter: invert(1);
+							transition: ease-out 0.3s;
+						}
+					}
+					img {
+						transition: ease-out 0.3s;
+						border-radius: 0;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+.product_filer_sec{
+	background-color: #ffffff;
+    border-radius: 27px;
+    padding: 40px 20px 50px;
+	@media (max-width: 767px) {
+		padding: 20px 20px 30px;
+	}
+
+	.product_names{
+		border-bottom: 1px solid #DCDCDC;
+
+		.active_product{
+			color: #E31D25;
+			font-weight: 600;
+			text-decoration: underline;
+		}
+	}
+}
+
+.ImgHeadingArrowStyle{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 20px;
+
+	@media (min-width: 768px) and (max-width: 1199px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
+
+	.BlockInsideInfo{
+		background-color: #1E1E1E;
+		padding: 8px 8px 25px 8px;
+		border-radius: 12px;
+		.text_btn_sec{
+			padding: 30px 12px 0;
+	
+			h5{
+				padding-right: 15px;
+			}
+		}
+
+		.ProductImg{
+			position: relative;
+
+			img{
+				width: 100%;
+			}
+			.NewRelease{
+				position: absolute;
+				left: 5px;
+				top: 8px;
+				font-size: 10px;
+				color: #fff;
+				font-family: var(--font_primary);
+				padding: 4px 9px;
+				border-radius: 50px;
+				background-color: #FF0001;
+			}
+		}
+	}
+
 }
 
 //classes for fonts
@@ -362,10 +549,6 @@ picture {
 	padding-top: 30px;
 }
 
-.pb_20 {
-	padding-bottom: 20px;
-}
-
 .ptb_20 {
 	padding: 20px 0;
 }
@@ -490,6 +673,42 @@ picture {
 
 	@media only screen and (max-width: 767px) {
 		padding-bottom: 60px;
+	}
+}
+
+.mtb_20 {
+	margin: 20px 0;
+}
+
+.mt_20 {
+	margin-top: 20px;
+}
+
+.mb_20 {
+	margin-bottom: 20px;
+}
+
+.mtb_80 {
+	margin: 80px 0;
+
+	@media only screen and (max-width: 767px) {
+		margin: 60px 0;
+	}
+}
+
+.mt_80 {
+	margin-top: 80px;
+
+	@media only screen and (max-width: 767px) {
+		margin-top: 60px;
+	}
+}
+
+.mb_80 {
+	margin-bottom: 80px;
+
+	@media only screen and (max-width: 767px) {
+		margin-bottom: 60px;
 	}
 }
 

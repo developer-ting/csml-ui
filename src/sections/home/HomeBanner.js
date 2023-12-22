@@ -61,7 +61,10 @@ export default function HomeBanner({ data }) {
 								console.log(item.attributes.BannerTitle);
 							}
 							return (
-								<div className={`${styles.home_banner_item}`} key={item.BannerPara}>
+								<div
+									className={`${styles.home_banner_item}`}
+									key={item.attributes.BannerPara}
+								>
 									<div className={`${styles.banner_img}`}>
 										<picture>
 											<source media="(max-width:465px)" srcSet={home_banner.src} />

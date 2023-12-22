@@ -48,12 +48,12 @@ export default function Contact() {
 
 		async function sendData() {
 			await fetch(
-				`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/contact-forms`,
+				`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/contact-page-forms`,
 				Headers
 			)
 				.then((data) => data.json())
 				.then((data) => {
-					console.log("success"), reset(), setIsSubmited(true);
+					reset(), setIsSubmited(true);
 				})
 				.catch((err) => console.log(err));
 		}
@@ -61,10 +61,10 @@ export default function Contact() {
 		sendData();
 	};
 	useEffect(() => {
-    ScrollOut({
-      once: true
-    });
-  }, []);
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>
@@ -76,21 +76,25 @@ export default function Contact() {
 			<Header />
 			<Loader />
 			<main className={`${styles.ContactPage}`}>
-			<InsideBanner
-				bannerTitle="Experience Unforgettable <br className='hidden-xs'>
+				<InsideBanner
+					bannerTitle="Experience Unforgettable <br className='hidden-xs'>
 				Adventures with Us"
-				bannerImg={contact_banner.src}
-				mobileImg={contact_banner.src}
-			/>
+					bannerImg={contact_banner.src}
+					mobileImg={contact_banner.src}
+				/>
 				<section className={`${styles.contact_sec} dot_animation_box`}>
 					<div className="container">
 						<div className={`${styles.contact_flex} ptb_80`}>
 							<div className={`${styles.contact_details} pt_80 toTop`} data-scroll>
 								<p className="paraTxt color_white pb_40  opacity_one">
 									Whether you have questions, need information, or want to explore how we
-									can enhance your space, <span className="text_600">we're here to assist you.</span>
+									can enhance your space,{" "}
+									<span className="text_600">we're here to assist you.</span>
 								</p>
-								<div className={`${styles.contact_details_flex} color_white text_sm toTop`} data-scroll>
+								<div
+									className={`${styles.contact_details_flex} color_white text_sm toTop`}
+									data-scroll
+								>
 									<div className={`${styles.contact_div} pb_30`}>
 										<img className="img" src={Mail.src} />
 										<a href="mailto:sales@csmlindia.com" rel="noreferrer">
@@ -106,7 +110,10 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.contact_main_form} border_animation toTop`} data-scroll>
+							<div
+								className={`${styles.contact_main_form} border_animation toTop`}
+								data-scroll
+							>
 								<div className={`${styles.contact_form}`}>
 									<div className="dot_one dots_p"></div>
 									<div className="dot_two dots_p"></div>
@@ -136,12 +143,12 @@ export default function Contact() {
 												type="text"
 												name="Cname"
 												placeholder="Company Name"
-												{...register("Cname", {
+												{...register("CompanyName", {
 													required: true,
 													maxLength: 79,
 												})}
 											/>
-											{errors.Cname && (
+											{errors.CompanyName && (
 												<p className={`${styles.errors_msg}`}>This field is required</p>
 											)}
 										</div>
@@ -166,17 +173,17 @@ export default function Contact() {
 												type="tel"
 												name="phoneNumber"
 												placeholder="Phone Number"
-												{...register("phoneNumber", {
+												{...register("PhoneNumber", {
 													required: true,
 													pattern: /^[0-9]{10}$/i,
 												})}
 											/>
-											{errors.phoneNumber && (
+											{errors.PhoneNumber && (
 												<p className={`${styles.errors_msg}`}>This field is required</p>
 											)}
 										</div>
 										<div className={`${styles.form_field}`}>
-											<select {...register("Reason", { required: true })}>
+											<select {...register("Inquiry", { required: true })}>
 												<option value="">Select Inquiry Type</option>
 												<option value="Customer Care">Customer Care</option>
 												<option value="Domestic Market Inquiry">
@@ -185,7 +192,7 @@ export default function Contact() {
 												<option value="Exports Inquiry">Exports Inquiry</option>
 												<option value="Vendor Registration">Vendor Registration</option>
 											</select>
-											{errors.Reason && (
+											{errors.Inquiry && (
 												<p className={`${styles.errors_msg}`}>This field is required</p>
 											)}
 										</div>
@@ -195,25 +202,27 @@ export default function Contact() {
 												type="text"
 												name="Help"
 												placeholder="Additional Comments"
-												{...register("Help", {
+												{...register("Comments", {
 													required: true,
 													maxLength: 79,
 												})}
 											/>
-											{errors.Help && (
+											{errors.Comments && (
 												<p className={`${styles.errors_msg}`}>This field is required</p>
 											)}
 										</div>
 										<div className={`${styles.btn_box}`}>
 											<a href="#" rel="noreferrer">
-											<span className="span_btn white_btn">
-											<button className="btn_project_default">Submit</button>
-											</span>
-												
+												<span className="span_btn white_btn">
+													<button className="btn_project_default">Submit</button>
+												</span>
 											</a>
 										</div>
 										{isSubmited && (
-											<p className={`${styles.thank_you} para_sm`}>Thank you</p>
+											<p className={`${styles.thank_you} para_sm mt_20`}>
+												Thank you for your message. Someone from our team will get back
+												shortly!
+											</p>
 										)}
 									</form>
 									{/* <img className="" src={cricle_arrow.src} /> */}

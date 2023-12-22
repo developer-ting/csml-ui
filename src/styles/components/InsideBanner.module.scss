@@ -31,5 +31,13 @@
     @media (max-width: 767px) {
       padding: 0 15px;
     }
+
+    h1{
+      br{
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
   }
 }
