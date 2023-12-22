@@ -1,6 +1,4 @@
 // MODULES //
-import { useEffect, useRef, useState } from "react";
-import ScrollOut from "scroll-out";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -8,42 +6,20 @@ import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
-import TabBtb from "@/components/TabBtb";
+import ProjectCard from "@/components/ProjectCard";
+import { ServerHeaders } from "@/utils/RequestHeaders";
 // SECTIONS //
 
 // PLUGINS //
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // STYLES //
-import "react-tabs/style/react-tabs.css";
 import styles from "../src/styles/pages/project.module.scss";
 
 //	IMAGES	//
 import services_banner from "../public/img/project/banner.jpg";
 
 /** Services Page */
-export default function Project() {
-	useEffect(() => {
-		ScrollOut({
-			once: true,
-		});
-	}, []);
-
-	const TabTitle = [
-		{
-			title: "aaa",
-		},
-		{
-			title: "bbb",
-		},
-		{
-			title: "ccc",
-		},
-		{
-			title: "ddd",
-		},
-	];
-	console.log(TabTitle[0].title);
+export default function Project({ projectsData }) {
 	return (
 		<div>
 			<Head>
@@ -60,20 +36,27 @@ export default function Project() {
 					bannerImg={services_banner.src}
 					mobileImg={services_banner.src}
 				/>
-
-				<section className="ptb_100 dot_animation_box">
-					<div className="container">
-						<div className={`${styles.project_section}`}>
-							<div className={`${styles.tab_section}`}>
-								{TabTitle.map((item, index) => (
-									<TabBtb key={index} title={item.title} white />
-								))}
-							</div>
-						</div>
-					</div>
-				</section>
+				<ProjectCard data={projectsData} />
 			</main>
 			<Footer />
 		</div>
 	);
+}
+
+// data featch in projects //
+
+export async function getStaticProps() {
+	//
+	const GamesCategoriesRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/projects?populate=*`,
+		ServerHeaders
+	);
+	const projectsData = await GamesCategoriesRes.json();
+
+	return {
+		props: {
+			projectsData,
+		},
+		revalidate: 10,
+	};
 }

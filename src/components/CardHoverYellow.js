@@ -12,29 +12,25 @@ import styles from "../styles/components/CardHoverYellow.module.scss";
 
 // IMAGES //
 
-
 /** Home Hero Section */
-const CardHoverYellow = ({ boxImg, title, desc}) => {
-	
+const CardHoverYellow = ({ boxImg, title, desc, full }) => {
 	return (
 		<div
-        className={`${styles.luminaries_box} border_animation white_border_animation`}
-      >
-        <div className="dot_one dots_p"></div>
-        <div className="dot_two dots_p"></div>
-        <div className="dot_three dots_p"></div>
-        <div className={`${styles.luminaries_content}`}>
-          <img className="border_8" src={boxImg} alt="img" />
-          <div className={`${styles.desc_box}`}>
-            <div className={`${styles.desc_title}`}>
-              <h3 className="text_24 text_700">{title}</h3>
-            </div>
-            <p className="paraTxt">
-              {desc}
-            </p>
-          </div>
-        </div>
-      </div>
+			className={`${styles.luminaries_box} border_animation white_border_animation`}
+		>
+			<div className="dot_one dots_p"></div>
+			<div className="dot_two dots_p"></div>
+			<div className="dot_three dots_p"></div>
+			<div className={`${styles.luminaries_content}`}>
+				<img className="border_8" src={boxImg} alt="img" />
+				<div className={`${styles.desc_box} ${full && styles.full_height}`}>
+					<div className={`${styles.desc_title}`}>
+						<h3 className="text_24 text_700">{title}</h3>
+					</div>
+					<p className="paraTxt">{desc}</p>
+				</div>
+			</div>
+		</div>
 	);
 };
 
