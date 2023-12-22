@@ -1,6 +1,7 @@
 // MODULES //
 import { useEffect, useRef, useState } from "react";
 import ScrollOut from "scroll-out";
+import { useForm } from "react-hook-form";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -46,6 +47,7 @@ import play from "../../../public/img/product/intercard/debit-card-system/play.s
 
 
 export default function DebitCardSystem() {
+	const [isSubmited, setIsSubmited] = useState(false);
 	var settings = {
 		dots: false,
 		arrows: false,
@@ -96,6 +98,40 @@ export default function DebitCardSystem() {
 			once: true,
 		});
 	}, []);
+
+	const {
+		register,
+		handleSubmit,
+		reset,
+		formState: { errors },
+	} = useForm();
+
+	const onSubmit = (data) => {
+		const Headers = {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				Authorization: `Bearer ${process.env.NEXT_PUBLIC_AUTH_TOKEN}`,
+			},
+			body: JSON.stringify({
+				data: data,
+			}),
+		};
+
+		async function sendData() {
+			await fetch(
+				`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/contact-page-forms`,
+				Headers
+			)
+				.then((data) => data.json())
+				.then((data) => {
+					reset(), setIsSubmited(true);
+				})
+				.catch((err) => console.log(err));
+		}
+
+		sendData();
+	};
 
 	return (
 		<div>
@@ -295,6 +331,138 @@ export default function DebitCardSystem() {
 					</div>
 				</section>
 				<CuttingEdge />
+
+				<section className={`${styles.request_quate} ptb_100 dot_animation_box`}>
+          <div className="container">
+            <div className={`${styles.section_title} pb_40 toTop`} data-scroll>
+              <h2 className="heading_text_45 color_white pb_20 text_700">
+								Request Your Intercard Quote
+              </h2>
+							<p className="paraTxt_18 pb_20 color_white toTop" data-scroll>Experience the future of secure and efficient transactions with Intercard, <br class="hidden-xs"></br>your trusted partner in payment solutions.</p>
+            </div>
+						<div className={`${styles.luminaries_box} commonBorderAnimation`}>
+							<div className={`${styles.contact_form}`}>
+								<div className="dot_one dots_p"></div>
+								<div className="dot_two dots_p"></div>
+								<div className="dot_three dots_p"></div>
+								<form
+									className={`${styles.form_main}`}
+									onSubmit={handleSubmit(onSubmit)}
+								>
+									<div className={`${styles.form_row}`}>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="text"
+												name="Name"
+												placeholder="Name"
+												{...register("Name", {
+													required: true,
+													maxLength: 79,
+												})}
+											/>
+											{errors.Name && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="text"
+												name="Cname"
+												placeholder="Company Name"
+												{...register("CompanyName", {
+													required: true,
+													maxLength: 79,
+												})}
+											/>
+											{errors.CompanyName && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+									</div>
+									<div className={`${styles.form_row}`}>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="email"
+												name="Email"
+												placeholder="Email"
+												{...register("Email", {
+													required: true,
+													pattern: /^\S+@\S+$/i,
+												})}
+											/>
+											{errors.Email && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<input
+												className=""
+												type="tel"
+												name="phoneNumber"
+												placeholder="Phone Number"
+												{...register("PhoneNumber", {
+													required: true,
+													pattern: /^[0-9]{10}$/i,
+												})}
+											/>
+											{errors.PhoneNumber && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+									</div>
+
+									<div className={`${styles.form_row}`}>
+										<div className={`${styles.form_field}`}>
+											<select {...register("Inquiry", { required: true })}>
+												<option value="">Services Interested In</option>
+												<option value="Customer Care">Customer Care</option>
+												<option value="Domestic Market Inquiry">
+													Domestic Market Inquiry
+												</option>
+												<option value="Exports Inquiry">Exports Inquiry</option>
+												<option value="Vendor Registration">Vendor Registration</option>
+											</select>
+											{errors.Inquiry && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+										<div className={`${styles.form_field}`}>
+											<textarea
+												className=""
+												type="text"
+												name="Help"
+												placeholder="Additional Comments"
+												{...register("Comments", {
+													required: true,
+													maxLength: 79,
+												})}
+											/>
+											{errors.Comments && (
+												<p className={`${styles.errors_msg}`}>This field is required</p>
+											)}
+										</div>
+									</div>
+									<div className={`${styles.btn_box}`}>
+										<a href="#" rel="noreferrer">
+											<span className="span_btn white_btn">
+												<button className="btn_project_default">Submit</button>
+											</span>
+										</a>
+									</div>
+									{isSubmited && (
+										<p className={`${styles.thank_you} para_sm mt_20`}>
+											Thank you for your message. Someone from our team will get back
+											shortly!
+										</p>
+									)}
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			<Footer />
 		</div>

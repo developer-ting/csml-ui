@@ -197,5 +197,77 @@
       }
     }
   }
+  .request_quate{
+    .section_title{
+      text-align: center;
+    }
+    .contact_form{
+      background-color: #fff;
+      padding: 70px 50px;
+      border-radius: 12px;
+      position: relative;
+      @media (max-width: 991px) {
+        padding: 30px 20px;
+      }
+      :global(.dots_p){
+        background-color: var(--color_primary);
+      }
+      .form_main{
+        .form_row{
+          display: flex;
+          justify-content: space-between;
+          @media (max-width: 767px) {
+            flex-wrap: wrap;
+          }
+        }
+        .form_field{
+          width: 48%;
+          margin-bottom: 40px;
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+          input, select, textarea{
+            font-family: 'Plus Jakarta Sans';
+            font-size: 16px;
+            width: 100%;
+            border: 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba($color: #707070, $alpha: 0.8);
+            &:focus-visible{
+              outline: 0;
+            }
+            &::placeholder{
+              color: #000;
+            }
+          }
+          textarea{
+            height: 34px;
+            resize: none;
+          }
+          p{
+            font-size: 14px;
+            color: var(--color_primary);
+          }
+        }
+        .btn_box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        // :global(.btn_project_default){
+        //   &:hover {
+        //     &::before{
+        //       background-color: var(--color_white);
+              
+        //     }
+        //     &::after{
+        //       background-color: var(--color_white);
+              
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
  
 }
