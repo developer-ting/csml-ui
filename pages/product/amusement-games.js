@@ -149,6 +149,9 @@ export default function AmusementGames({ GamesCategoriesData }) {
 																	className="border_12"
 																	alt="product img"
 																/>
+																{gamesProductItem.attributes.IsNew && (
+																	<h6 className="NewRelease">New Releases</h6>
+																)}
 															</div>
 															<div className="text_btn_sec f_r_aj_between">
 																<h5 className="paraTxt_18 text_500 color_white">

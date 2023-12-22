@@ -50,6 +50,9 @@ export default function NewReleases({ GamesData }) {
 					className={`${styles.NewReleasesSection} dot_animation_box ptb_100`}
 				>
 					<div className="container">
+						<h2 className="heading_text_55 color_white pb_40 toTop" data-scroll>
+							New Releases
+						</h2>
 						<div className="ImgHeadingArrowStyle">
 							{GamesData.data.map((item) => {
 								return (
