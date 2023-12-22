@@ -340,7 +340,7 @@ export default function DebitCardSystem() {
               </h2>
 							<p className="paraTxt_18 pb_20 color_white toTop" data-scroll>Experience the future of secure and efficient transactions with Intercard, <br class="hidden-xs"></br>your trusted partner in payment solutions.</p>
             </div>
-						<div className={`${styles.luminaries_box} commonBorderAnimation`}>
+						<div className={`${styles.luminaries_box} commonBorderAnimation toTop`} data-scroll>
 							<div className={`${styles.contact_form}`}>
 								<div className="dot_one dots_p"></div>
 								<div className="dot_two dots_p"></div>
