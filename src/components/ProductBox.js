@@ -109,7 +109,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 									</Slider>
 								</div>
 								<div className={`${styles.li_text} ptb_30`}>
-									{parse(imgData.data.data[0].attributes.productTitle)}
+									{parse(imgData.data.data[0].attributes.popDesc)}
 								</div>
 							</div>
 						</div>
