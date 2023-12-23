@@ -8,7 +8,6 @@ import TabBtb from "@/components/TabBtb";
 // SECTIONS //
 
 // PLUGINS //
-import parse from "html-react-parser";
 
 // STYLES //
 import styles from "../../src/styles/pages/project.module.scss";
@@ -73,6 +72,7 @@ const ProjectCard = (data) => {
 						{alldata.map((item, index) => (
 							<ProductBox
 								red
+								imgData={data}
 								key={index}
 								index={index}
 								title={item.attributes.productTitle}

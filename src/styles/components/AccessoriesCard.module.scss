@@ -1,0 +1,19 @@
+@import "../helpers/helpers.scss";
+
+.accessories_card{
+    padding: 30px;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: #1E1E1E;
+    .img{
+        width: 22%;
+        .accessories_card_img{
+            border-radius: 7px;
+        }
+    }
+    .info{
+        width: 78%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

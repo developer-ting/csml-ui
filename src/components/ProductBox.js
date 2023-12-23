@@ -1,4 +1,5 @@
 // MODULES //
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 // COMPONENTS //
@@ -6,6 +7,10 @@ import { useEffect, useRef, useState } from "react";
 // SECTIONS //
 
 // PLUGINS //
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import parse from "html-react-parser";
 
 // STYLES //
 import arrow from "../../public/img/arrow.svg";
@@ -16,7 +21,9 @@ import styles from "../../src/styles/components/ProductBox.module.scss";
 import services_banner from "../../public/img/project/banner.jpg";
 
 /** tab button*/
-const ProductBox = ({ title, red, ProductImg, index }) => {
+const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
+	console.log(imgData.data.data);
+	const sliderRef = useRef();
 	const [showPopup, setShowPopup] = useState(false);
 
 	/** openPopup function */
@@ -30,6 +37,29 @@ const ProductBox = ({ title, red, ProductImg, index }) => {
 		setShowPopup(false);
 		const bodyTg = document.querySelector("body");
 		bodyTg.style.overflow = "unset";
+	};
+
+	var settings = {
+		dots: false,
+		arrows: true,
+		infinite: true,
+		slidesToShow: 1,
+		autoplay: true,
+		// fade: true,
+		autoplaySpeed: 2000,
+		pauseOnHover: false,
+		speed: 1000,
+
+		// prevArrow: (
+		// 	<button className={`${styles.prevarrow} about_prevarrow`}>
+		// 		<Image src={slider_aarow_prev.src} alt="arrow" width={9} height={15} />
+		// 	</button>
+		// ),
+		// nextArrow: (
+		// 	<button className={`${styles.nextarrow} about_nextarrow`}>
+		// 		<Image src={slider_aarow_next.src} alt="arrow" width={9} height={15} />
+		// 	</button>
+		// ),
 	};
 
 	return (
@@ -65,39 +95,21 @@ const ProductBox = ({ title, red, ProductImg, index }) => {
 								</button>
 							</div>
 							<div className={styles.popup_body}>
-								<div className={`${styles.popup_flx} row`}>
-									<div className={styles.popup_img_item}>
-										<h1>HIHGLIFJPOE;JRG</h1>
-										{/* <img
-											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${activeGameCategories.games.data[gameIndex].attributes.GameImg.data.attributes.url}`}
-											alt=""
-										/> */}
-									</div>
-									<div className={styles.popup_content_item}>
-										<h3 className={`${styles.popHead} text_24`}>
-											{/* {activeGameCategories.games.data[gameIndex].attributes.GameName} */}
-										</h3>
-										<p className={`${styles.paraTxt} paraTxt_16`}>
-											{/* {
-												activeGameCategories.games.data[gameIndex].attributes
-													.GameDescription
-											} */}
-											lkok
-										</p>
-										<p className={`${styles.paraTxt} paraTxt_16`}>
-											<strong>Dimensions</strong>:
-											{/* {
-												activeGameCategories.games.data[gameIndex].attributes.GameDimensions
-											} */}
-											kjfeopjf
-										</p>
-										<div className={styles.btn_sec}>
-											<a className={`${styles.watch_btn}`} href="eijfi" rel="noreferrer">
-												Watch Video
-												{/* <img src={ytImg.src} className={styles.ytImg} alt="" /> */}
-											</a>
-										</div>
-									</div>
+								<div className={`${styles.popup_flx}`}>
+									<Slider {...settings} ref={sliderRef}>
+										{imgData.data.data[0].attributes.ImagePopUrl.data.map((item, ind) => {
+											return (
+												<div className={`${styles.slid_item} color_white`}>
+													<img
+														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.url}`}
+													/>
+												</div>
+											);
+										})}
+									</Slider>
+								</div>
+								<div className={`${styles.li_text} ptb_30`}>
+									{parse(imgData.data.data[0].attributes.productTitle)}
 								</div>
 							</div>
 						</div>

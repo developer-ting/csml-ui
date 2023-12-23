@@ -6,13 +6,15 @@
     justify-content: space-between;
 }
 
+
 .spares{
     .slider_section{
         .for_item{
-            .slide_item{}
+            max-width: 760px;
+            margin: auto;
         }
-        .nav_item{
-            .slide_item{}
+        .for_item_full{
+            max-width: 100%;
         }
     }
 }

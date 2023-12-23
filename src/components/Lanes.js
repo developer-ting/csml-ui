@@ -15,11 +15,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 // STYLES //
 import styles from "../../src/styles/pages/brunswick-bowling.module.scss";
+import ImagePara from "./ImagePara";
 
 // IMAGES //
 
 /** Home Hero Section */
-const SyncSlider = (data) => {
+const Lanes = (data) => {
 	const allData = data.data.data;
 	// console.log(allData);
 	const [nav1, setNav1] = useState();
@@ -65,15 +66,15 @@ const SyncSlider = (data) => {
 		<section className={`${styles.spares} pt_100`}>
 			<div className="container">
 				<h2 className="heading_text_55 pb_50 toTop text_center" data-scroll>
-					Spares and Consumables
+					Lanes
 				</h2>
 				<div className={`${styles.slider_section}`}>
-					<div className={`${styles.for_item} pb_60`}>
+					<div className={`${styles.for_item} ${styles.for_item_full} pb_60`}>
 						<Slider
 							{...settings}
 							asNavFor={nav1}
 							ref={(slider2) => setNav2(slider2)}
-							slidesToShow={3}
+							slidesToShow={4}
 							swipeToSlide={true}
 							focusOnSelect={true}
 							variableWidth={true}
@@ -95,13 +96,14 @@ const SyncSlider = (data) => {
 						asNavFor={nav2}
 						arrows={false}
 						// speed={1200}
-						slidesToShow={3}
+						slidesToShow={1}
 						ref={(slider1) => setNav1(slider1)}
 					>
 						{alldata.map((item, index) => (
 							<div className={`${styles.slide_item}`}>
-								<CardHoverYellow
-									new_style
+								<h2></h2>
+								<ImagePara
+									key={index}
 									title={item.attributes.title}
 									desc={item.attributes.desc}
 									boxImg={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.logoUrl.data.attributes.url}`}
@@ -115,4 +117,4 @@ const SyncSlider = (data) => {
 	);
 };
 
-export default SyncSlider;
+export default Lanes;

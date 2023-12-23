@@ -1,6 +1,7 @@
 @import "../helpers/helpers.scss";
 .tab_button{
     display: flex;
+    justify-content: center;
     p{
         font-size: 25px;
         line-height: 1.3;
@@ -9,6 +10,7 @@
         margin-right: 30px;
         padding: 15px 30px;
         border-radius: 6px;
+        cursor: pointer;
         border: 1px solid #cfcfcf;
         transition: all .1s ease-in-out;
         

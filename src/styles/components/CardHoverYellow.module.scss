@@ -9,6 +9,27 @@
   
   @media only screen and (max-width: 767px) {
   }
+  &.new_box{
+    width: 97%;
+    // margin: 20px;
+    // display: flex;
+    .luminaries_content{
+      min-height: 410px;
+      
+      img{
+        width: auto;
+        margin: auto;
+        padding-top: 75px;
+      }
+        &:hover{
+          .desc_box{
+            height: 100%;
+            transition: 0.3s all;
+          }
+      }
+    }
+    
+  }
   .luminaries_content{
     transition: 0.3s all;
     position: relative;

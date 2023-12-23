@@ -16,8 +16,11 @@ import {
 	pinsetters,
 } from "@/data/data-file-1";
 
+import Lanes from "@/components/Lanes";
 import SyncSlider from "@/components/SyncSlider";
+import Accessories from "@/components/Accessories";
 import CardHoverYellow from "@/components/CardHoverYellow";
+import BlackStripOverview from "@/components/BlackStripOverview";
 // SECTIONS //
 
 // PLUGINS //
@@ -30,9 +33,15 @@ import styles from "../../src/styles/pages/brunswick-bowling.module.scss";
 
 //	IMAGES	//
 import banner from "../../public/img/brunswick-bowling/banner.jpg";
+import Sync from "@/components/Sync";
 
 /** Go Karting Page */
-export default function BrunswickBowling({ laneSliderData }) {
+export default function BrunswickBowling({
+	laneSliderData,
+	sparesSliderData,
+	accessoriesSliderData,
+}) {
+	// console.log(laneSliderData, "asd");
 	return (
 		<div>
 			<Head>
@@ -50,24 +59,22 @@ export default function BrunswickBowling({ laneSliderData }) {
 					bannerImg={banner.src}
 					mobileImg={banner.src}
 				/>
-
-				<section
-					className={`${styles.banner_bottom_text_sec} dot_animation_box ptb_100`}
-				>
-					<div className="container">
-						<p className="text_24 color_white_opacity l_h_6 toTop" data-scroll>
-							CSML is the exclusive distributor of Brunswick Bowling in India and the
+				<BlackStripOverview
+					desc="CSML is the exclusive distributor of Brunswick Bowling in India and the
 							SAARC region. Over the last 25 years, they have jointly set industry
 							standards. Their diverse product range simplifies entertainment center
-							setup with customizable bowling alleys.
-						</p>
-					</div>
-				</section>
+							setup with customizable bowling alleys."
+				/>
 
-				<SyncSlider data={laneSliderData} />
+				<Accessories data={accessoriesSliderData} />
+				<Sync />
+				<Lanes data={laneSliderData} />
 
-				<section className="pt_100 pb_60">
+				<section className="pt_80 pb_60">
 					<div className="container">
+						<h2 className="heading_text_55 pb_50 text_center toTop" data-scroll>
+							Pinsetters
+						</h2>
 						<div className={`${styles.pinsetters}`}>
 							{pinsetters.map((item, index) => (
 								<CardHoverYellow
@@ -94,6 +101,8 @@ export default function BrunswickBowling({ laneSliderData }) {
 						))}
 					</div>
 				</section>
+
+				<SyncSlider data={sparesSliderData} />
 
 				<section className="pt_100 pb_60">
 					<div className="container">
@@ -124,11 +133,23 @@ export async function getStaticProps() {
 		`${process.env.STRAPI_DO_BASE_URL}/api/lanes?populate=*`,
 		ServerHeaders
 	);
+	const sparesConsummables = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/spares-consummables?populate=*`,
+		ServerHeaders
+	);
+	const accessories = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/accessories?populate[0]=LaneAccessorie.ImageUrl&populate[1]=MaskingUnits.ImageUrl`,
+		ServerHeaders
+	);
 	const laneSliderData = await lanes.json();
+	const sparesSliderData = await sparesConsummables.json();
+	const accessoriesSliderData = await accessories.json();
 
 	return {
 		props: {
 			laneSliderData,
+			sparesSliderData,
+			accessoriesSliderData,
 		},
 		revalidate: 10,
 	};

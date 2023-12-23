@@ -13,10 +13,12 @@ import styles from "../styles/components/CardHoverYellow.module.scss";
 // IMAGES //
 
 /** Home Hero Section */
-const CardHoverYellow = ({ boxImg, title, desc, full }) => {
+const CardHoverYellow = ({ boxImg, title, desc, full, new_style }) => {
 	return (
 		<div
-			className={`${styles.luminaries_box} border_animation white_border_animation`}
+			className={`${styles.luminaries_box} ${
+				new_style && styles.new_box
+			} border_animation white_border_animation`}
 		>
 			<div className="dot_one dots_p"></div>
 			<div className="dot_two dots_p"></div>
