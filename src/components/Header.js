@@ -123,19 +123,29 @@ const Header = () => {
 									</div>
 									<div className={`${styles.sub_menu_list}`}>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/product/amusement-games">
+												<a className="text_reg text_500">Amusement Games</a>
+											</Link>
+										</p>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
 											<Link href="/product/go-karting">
 												<a className="text_reg text_500">Go Karting</a>
 											</Link>
 										</p>
-										{/* <p onClick={() => setSidebarActive(!sidebarActive)}>
-												<Link href="">
-													<a className="text_reg text_500">Management Contract </a>
-												</Link>
-											</p> */}
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/product/trampoline">
+												<a className="text_reg text_500">Trampoline</a>
+											</Link>
+										</p>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/product/softplay">
+												<a className="text_reg text_500">Soft Play</a>
+											</Link>
+										</p>
 									</div>
 								</li>
 								<li onClick={() => setSidebarActive(!sidebarActive)}>
-									<Link href="">
+									<Link href="/new-releases">
 										<a className="heading_text_40 m_r">New Releases</a>
 									</Link>
 								</li>
