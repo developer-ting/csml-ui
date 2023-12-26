@@ -89,7 +89,7 @@ const CuttingEdge = () => {
         <Slider {...settings}>
           <div className={`${styles.showcase_box}`}>
             <div className={`${styles.showcase_content}`}>
-              <div className={`${styles.img_box} border_animation white_border_animation`}>
+              <div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
                 <div className="dot_one dots_p"></div>
                 <div className="dot_two dots_p"></div>
                 <div className="dot_three dots_p"></div>
@@ -120,7 +120,7 @@ const CuttingEdge = () => {
           </div>
           <div className={`${styles.showcase_box}`}>
             <div className={`${styles.showcase_content}`}>
-              <div className={`${styles.img_box} border_animation white_border_animation`}>
+              <div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
                 <div className="dot_one dots_p"></div>
                 <div className="dot_two dots_p"></div>
                 <div className="dot_three dots_p"></div>
@@ -151,7 +151,7 @@ const CuttingEdge = () => {
           </div>
           <div className={`${styles.showcase_box}`}>
             <div className={`${styles.showcase_content}`}>
-              <div className={`${styles.img_box} border_animation white_border_animation`}>
+              <div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
                 <div className="dot_one dots_p"></div>
                 <div className="dot_two dots_p"></div>
                 <div className="dot_three dots_p"></div>
@@ -182,7 +182,7 @@ const CuttingEdge = () => {
           </div>
           <div className={`${styles.showcase_box}`}>
             <div className={`${styles.showcase_content}`}>
-              <div className={`${styles.img_box} border_animation white_border_animation`}>
+              <div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
                 <div className="dot_one dots_p"></div>
                 <div className="dot_two dots_p"></div>
                 <div className="dot_three dots_p"></div>
