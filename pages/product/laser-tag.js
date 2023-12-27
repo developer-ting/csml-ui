@@ -402,7 +402,7 @@ export default function LaserTag() {
 						<div className={`${styles.service_flex}`}>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
 								<h2 className={`${styles.info_head} heading_text_55 pb_30`}>
-									Design
+									Design 
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`} data-scroll>
 									Building an exciting arena with eye-catching designs is among the most important factors in the success of any laser tag centre. The arena by itself must be a memorable experience for your guests.
