@@ -9,8 +9,10 @@ import Header from "../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import { ServerHeaders } from "@/utils/RequestHeaders";
+
 // SECTIONS //
 // PLUGINS //
+import parse from "html-react-parser";
 
 // STYLES //
 import styles from "../../src/styles/pages/product/AmusementGames.module.scss";
@@ -94,7 +96,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 									</div>
 									{GamesCategoriesData.data.map((item, mainCatIndex) => {
 										return (
-											<div className="product_names">
+											<div className="product_names" key={item.attributes.CategoryNames}>
 												<h5
 													className="paraTxt_18 text_600 ptb_10"
 													onClick={() => handleMainCategoriesIndex(mainCatIndex)}
@@ -109,6 +111,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 																	subCategoriesIndex == subCatIndex && "active_product"
 																}`}
 																onClick={() => handleSubCategoriesIndex(subCatIndex)}
+																key={subCategoriesItem.attributes.games.data.length}
 															>
 																{subCategoriesItem.attributes.SubCategoriesName}{" "}
 																<span className="product_count">
@@ -136,13 +139,19 @@ export default function AmusementGames({ GamesCategoriesData }) {
 											{activeGameCategories.games.data.map(
 												(gamesProductItem, productItemIndex) => {
 													return (
-														<div className="BlockInsideInfo">
+														<div
+															className="BlockInsideInfo"
+															key={gamesProductItem.attributes.GameName}
+														>
 															<div className="ProductImg">
 																<img
 																	src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${gamesProductItem.attributes.GameImg.data.attributes.url}`}
 																	className="border_12"
 																	alt="product img"
 																/>
+																{gamesProductItem.attributes.IsNew && (
+																	<h6 className="NewRelease">New Releases</h6>
+																)}
 															</div>
 															<div className="text_btn_sec f_r_aj_between">
 																<h5 className="paraTxt_18 text_500 color_white">
@@ -195,10 +204,10 @@ export default function AmusementGames({ GamesCategoriesData }) {
 												{activeGameCategories.games.data[gameIndex].attributes.GameName}
 											</h3>
 											<p className={`${styles.paraTxt} paraTxt_16`}>
-												{
+												{parse(
 													activeGameCategories.games.data[gameIndex].attributes
-														.GameDescription
-												}
+														.GamePopUpDescription
+												)}
 											</p>
 											<p className={`${styles.paraTxt} paraTxt_16`}>
 												<strong>Dimensions</strong>:{" "}
@@ -216,8 +225,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 													}
 													rel="noreferrer"
 												>
-													Watch Video
-													<img src={ytImg.src} className={styles.ytImg} alt="" />
+													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="" />
 												</a>
 											</div>
 										</div>

@@ -7,6 +7,19 @@ import iwallet from "../../public/img/product/intercard/iedge/iwallet.jpg";
 import iservice from "../../public/img/product/intercard/iedge/iservice.jpg";
 import inventory from "../../public/img/product/intercard/iedge/inventory.jpg";
 
+//Trampoline
+import qualityMaterials from "../../public/img/product/trampoline/quality-materials.jpg";
+import diverseTrampoline from "../../public/img/product/trampoline/diverse-trampoline.jpg";
+import innovativeDesigns from "../../public/img/product/trampoline/innovative-designs.jpg";
+import comprehensiveSolutions from "../../public/img/product/trampoline/comprehensive-solutions.jpg";
+import safeFun from "../../public/img/product/trampoline/safe-fun.jpg";
+
+//Softplay
+import excitingAttractions from "../../public/img/product/softplay/exciting-attractions.jpg";
+import diverseRange from "../../public/img/product/softplay/diverse-range.jpg";
+import highQualityProducts from "../../public/img/product/softplay/high-quality-products.jpg";
+import oneStopBudget from "../../public/img/product/softplay/one-stop-budget.jpg";
+
 //careeer page Yellow Card images import
 import success_img from "../../public/img/career/success_img.jpg";
 import imfactful_img from "../../public/img/career/imfactful_img.jpg";
@@ -80,6 +93,68 @@ const iedgeData = [
 		title: "Inventory App",
 		desc:
 			"Seize control of your redemption inventory with our Inventory App. Compatible with Android and iOS devices, this app empowers your staff to effortlessly manage inventory. Streamline inventory management by scanning UPC codes on merchandise, reducing labor costs, and eliminating errors.",
+	},
+];
+
+//Trampoline page data
+const trampolineData = [
+	{
+		image: qualityMaterials,
+		title: "Quality Materials and Safety Standards",
+		desc:
+			"We take pride in our trampoline parks' world-class quality, utilizing premium materials sourced from leading suppliers. Every element, from tailored springs to high-strength PVC paddings, is carefully chosen to meet international safety standards. Our manufacturers adhere to stringent regulations, including ASTM, CPSIA, UL94, NFPA701 in North America, and EN1176-77 part 10, CE in the EU.",
+	},
+	{
+		image: diverseTrampoline,
+		title: "Diverse Trampoline Park Options",
+		desc:
+			"CSML offers a wide array of trampoline park options to cater to various preferences and needs. Whether it's the fitness-focused trampoline park, the adventure-packed indoor playground, or the Cyberpunk-themed facility, we ensure a unique and immersive experience. Our trampoline parks feature diverse sports designs such as Football, Dodgeball, Basketball, Pyramid/Jump tower, Foam Pit, Pillow pit, and more.",
+	},
+	{
+		image: innovativeDesigns,
+		title: "Innovative Designs and Customization",
+		desc:
+			"We go beyond delivering trampoline parks; we create immersive worlds. Our commitment to customization is evident as we tailor prints, colors, and designs to meet client preferences, ensuring a personalized touch to each project.",
+	},
+	{
+		image: comprehensiveSolutions,
+		title: "Comprehensive Solutions",
+		desc:
+			"From initial design to installation and after-sales services, CSML provides end-to-end solutions. Our portfolio includes projects blending games, sports, and adventure, ensuring a seamless process for our clients.",
+	},
+	{
+		image: safeFun,
+		title: "Safe and Fun for All Ages",
+		desc:
+			"Safety is paramount at CSML, and we emphasize it without compromising on fun. Whether it's the Dodgeball Trampoline Park, Basketball Trampoline Park, or the Foam Pit/Pillow Pit Trampoline Park, each space is meticulously designed for maximum enjoyment while strictly adhering to safety standards. <br> Our trampoline parks are more than just places to jump and play; they're dynamic, safe, and customized environments catering to diverse tastes, solidifying our position as a standout choice in the industry",
+	},
+];
+
+//Softplay page data
+const softplayData = [
+	{
+		image: excitingAttractions,
+		title: "Exciting Attractions for Unforgettable Experiences",
+		desc:
+			"CSML's SoftPlay areas are masterpieces set to thrill, featuring captivating colors and attention-grabbing attractions. From interactive projection slides to giant ball pits and rotating octopuses, our parks promise a delightful and memorable experience for children and their friends. Parents can relax as their kids explore junior and toddler areas filled with engaging features.",
+	},
+	{
+		image: diverseRange,
+		title: "Diverse Range of SoftPlay Areas",
+		desc:
+			"Our SoftPlay areas include Motion Soft Play and Sculpture SoftPlay. The Motion Soft Play offers inflatable water slides, flying rings, merry-go-cycles, and more, providing a safe yet thrilling experience. The Sculpture SoftPlay, themed around jungle, deep ocean, and garden, features soft-sculpted foam play centers that bring joy and durability.",
+	},
+	{
+		image: highQualityProducts,
+		title: "High-Quality Products and Excellent Service",
+		desc:
+			"CSML Amusement is dedicated to delivering high-quality products and excellent service. Whether for a Family Entertainment Center, museum, fitness club, or restaurant, we possess the expertise and equipment to create a fun and safe play environment for children. Contact us today to transform your space into a haven of adventure and joy.",
+	},
+	{
+		image: oneStopBudget,
+		title: "One-Stop Budget-Friendly Service",
+		desc:
+			"We offer a comprehensive one-stop, budget-friendly service. From concept to creation, CSML has been providing the perfect space for families to bond in a safe environment, even in limited space and budget, for more than two decades. Trust us to turn your space into a haven of joy and adventure, ensuring unforgettable moments for children of all ages.",
 	},
 ];
 
@@ -263,6 +338,8 @@ const shindiggerCraftSteps = [
 export default Data;
 export {
 	iedgeData,
+	trampolineData,
+	softplayData,
 	careeerYellowCardData,
 	icashierData,
 	ecommerceYellowCardData,

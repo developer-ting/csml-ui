@@ -1,0 +1,28 @@
+@import "../helpers/helpers.scss";
+
+.TextImgBox{
+  .TextBox{
+    @media (min-width: 1200px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    br{
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  .ImgBoxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    } 
+
+    img{
+      width: 100%;
+    }
+  }
+}
