@@ -1,0 +1,274 @@
+.debit_card_main{
+  position: relative;
+  .intercard{
+    .title_txt{
+      text-align: center;
+      p{
+        width: 85%;
+        margin: 0 auto;
+        @media only screen and (max-width: 1380px) {
+          width: 90%;
+          margin: 0 auto;
+        }
+        @media only screen and (max-width: 1199px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .debit_icon_flex{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    @media only screen and (max-width: 1199px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media only screen and (max-width: 991px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .debit_icon_item{
+      text-align: center;
+      background-color: var(--color_white);
+      border-radius: 8px;
+      padding: 30px 20px;
+      box-shadow: 0 -1px 15px -5px #bdbdbd, 0 8px 14px -5px #bdbdbd, 5px 0 6px -5px #bdbdbd;
+      .debit_icon{
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .ecommerce_slider_main{
+    
+    .title_txt{
+      text-align: center;
+    }
+  }
+
+  .partner_superior_flex{
+    margin-left: calc(var(--container_left_space) + 15px);
+    overflow: hidden;
+    
+    @media only screen and (max-width: 767px) {
+      
+    }
+
+    .luminaries_box{
+      border: 1px solid #777777;
+      border-radius: 12px;
+      padding: 5px 5px;
+      position: relative;
+      transition: all .3s;
+      
+      @media only screen and (max-width: 767px) {
+      }
+      .luminaries_content{
+        transition: 0.3s all;
+        position: relative;
+        padding: 60px 30px;
+        h3{
+          text-align: center;
+        }
+        .desc_box{
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          width: 100%;
+          height: 100%;
+          background-color: var(--color_secondary);
+          padding: 30px 25px;
+          transition: 0.3s all;
+          border-radius: 8px;
+          overflow: hidden;
+          display: none;
+          @media only screen and (max-width: 1199px) {
+            padding: 30px 15px;
+          }
+          .desc_title{
+            h3{
+            padding-right: 10px;
+            font-size: 21px;
+            }
+          }
+          p{
+            padding-top: 10px;
+            font-size: 16px;
+            color: var(--color_black);
+          }
+        }
+      }
+      &:hover{
+        
+        .desc_box{
+          display: block;
+          transition: 0.3s all;
+        }
+      }
+      :global(.dots_p){
+        background-color: var(--color_primary);
+      }
+    }
+    
+    :global(.slick-slide){
+      padding: 0px 10px;
+    }
+  }
+  .progress_div {
+		width: var(--container_width);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 35px 0px 0px 10px;
+		width: 100%;
+		//width: calc(100% - 215px);
+		@media (max-width: 767px) {
+			padding: 30px 0px 0px 10px;
+			//width: calc(100% - 65px);
+		}
+		.progress_bar {
+			width: 100%;
+			height: 2px;
+			background-color: rgba(51, 51, 51, 0.25);
+			overflow: hidden;
+
+			.color_div {
+				height: 100%;
+				background-color: var(--color_black);
+				transition: all 0.3s linear;
+			}
+		}
+	}
+
+  .future_proof{
+    .section_title{
+      text-align: center;
+    }
+    .intertainment_border{
+      .video_box{
+        position: relative;
+        .video_play{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .brochure_box{
+      width: 85%;
+      margin: 0 auto;
+      @media (max-width: 1380px) {
+        width: 90%;
+      }
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+      .contactinside{
+        position: relative;
+        border-radius: 15px;
+        padding: 40px 80px;
+        background-color: #F8ED11;
+        @media (max-width: 1199px) {
+         padding: 40px 30px;
+        }
+        @media (max-width: 991px) {
+          padding: 30px 40px;
+        }
+        @media (max-width: 767px) {
+          padding: 30px;
+        }
+        .inside_flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width:991px) {
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 20px;
+            }
+            .btn_bx{
+              height: 35px;
+            }
+            
+        }
+      }
+    }
+  }
+  .request_quate{
+    .section_title{
+      text-align: center;
+    }
+    .contact_form{
+      background-color: #fff;
+      padding: 70px 50px;
+      border-radius: 12px;
+      position: relative;
+      @media (max-width: 991px) {
+        padding: 30px 20px;
+      }
+      :global(.dots_p){
+        background-color: var(--color_primary);
+      }
+      .form_main{
+        .form_row{
+          display: flex;
+          justify-content: space-between;
+          @media (max-width: 767px) {
+            flex-wrap: wrap;
+          }
+        }
+        .form_field{
+          width: 48%;
+          margin-bottom: 40px;
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+          input, select, textarea{
+            font-family: 'Plus Jakarta Sans';
+            font-size: 16px;
+            width: 100%;
+            border: 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba($color: #707070, $alpha: 0.8);
+            &:focus-visible{
+              outline: 0;
+            }
+            &::placeholder{
+              color: #000;
+            }
+          }
+          textarea{
+            height: 34px;
+            resize: none;
+          }
+          p{
+            font-size: 14px;
+            color: var(--color_primary);
+          }
+        }
+        .btn_box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 60px;
+        }
+        // :global(.btn_project_default){
+        //   &:hover {
+        //     &::before{
+        //       background-color: var(--color_white);
+              
+        //     }
+        //     &::after{
+        //       background-color: var(--color_white);
+              
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+ 
+}

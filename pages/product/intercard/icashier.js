@@ -24,6 +24,11 @@ import icashier_banner from "../../../public/img/product/intercard/icashier/icas
 
 /** Icashier Page */
 export default function Icashier() {
+	useEffect(() => {
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>
