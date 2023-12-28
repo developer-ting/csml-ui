@@ -1,0 +1,57 @@
+@import "../helpers/helpers.scss";
+
+.hardwareSectionBox{
+
+    @media only screen and (min-width: 768px) {
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+    }
+    
+    .hardwareSectionStyle{
+        width: 47%;
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        &:first-child{
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .specification{
+      margin-top: 30px;
+      .accordion_content_flex{
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #B5AE1B;
+        ul{
+          padding-left: 20px;
+          li{
+
+          }
+        }
+        .btn_flex{
+          margin-top: 10px;
+          .btn_one{
+            margin-right: 20px;
+            a{
+              img{
+                margin-right: 10px;
+              }
+            }
+          }
+          .btn_two{
+            
+            a{
+             opacity: 0.8;
+             border-bottom: 1px solid #E31D25;
+            }
+          }
+        }
+        
+      }
+      
+    }
+}

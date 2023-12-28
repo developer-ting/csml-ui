@@ -69,7 +69,7 @@ const Accessories = ({ data }) => {
 		setProgressWidth((currInd / 3) * 100);
 	};
 	return (
-		<div className={`${styles.accessories} pb_100`}>
+		<div className={`${styles.accessories} ptb_100`}>
 			<div className="container">
 				<h2 className="heading_text_55 pb_50 color_white toTop" data-scroll>
 					Accessories To Elevate <br />

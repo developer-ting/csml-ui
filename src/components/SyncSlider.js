@@ -62,7 +62,7 @@ const SyncSlider = (data) => {
 	}
 
 	return (
-		<section className={`${styles.spares} pt_100`}>
+		<section className={`${styles.spares} pb_100`}>
 			<div className="container">
 				<h2 className="heading_text_55 pb_50 toTop text_center" data-scroll>
 					Spares and Consumables

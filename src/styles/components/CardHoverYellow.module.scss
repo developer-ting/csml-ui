@@ -5,10 +5,14 @@
   padding: 5px 5px;
   position: relative;
   transition: all .3s;
-  width: 49%;
+  // width: 49%;
   
-  @media only screen and (max-width: 767px) {
-  }
+  // @media only screen and (max-width: 991px) {
+  //   width: 48%;
+  // }
+  // @media only screen and (max-width: 767px) {
+  //   width: 100%;
+  // }
   &.new_box{
     width: 97%;
     // margin: 20px;

@@ -1,0 +1,46 @@
+@import "../helpers/helpers.scss";
+
+.GamesSection {
+  .games_info_main{
+    background-color: rgba(30, 30, 30, 0.45);
+    backdrop-filter: blur(15px);
+    padding: 50px 50px;
+  }
+  .games_info_sec {
+    
+    .games_filter_sec {
+      width: 21%;
+
+      @media (min-width: 768px) and (max-width: 1199px) {
+        width: 30%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    .games_product_sec {
+      width: 75%;
+      @media (min-width: 768px) and (max-width: 1199px) {
+        width: 68%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 40px 0 0;
+      }
+      .product_info_style{
+        justify-content: space-between;
+        .product_info_img{
+          width: 40%;
+        }
+        .product_info_content{
+          width: 55%;
+        }
+      }
+      
+    }
+
+    h6{
+      cursor: pointer;
+    }
+  }
+}

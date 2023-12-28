@@ -21,6 +21,10 @@ import SyncSlider from "@/components/SyncSlider";
 import Accessories from "@/components/Accessories";
 import CardHoverYellow from "@/components/CardHoverYellow";
 import BlackStripOverview from "@/components/BlackStripOverview";
+import Sync from "@/components/Sync";
+import DiverseBowling from "@/components/DiverseBowling";
+import SparkImmersive from "@/components/SparkImmersive";
+import LaneMaintenance from "@/components/LaneMaintenance";
 // SECTIONS //
 
 // PLUGINS //
@@ -33,7 +37,6 @@ import styles from "../../src/styles/pages/brunswick-bowling.module.scss";
 
 //	IMAGES	//
 import banner from "../../public/img/brunswick-bowling/banner.jpg";
-import Sync from "@/components/Sync";
 
 /** Go Karting Page */
 export default function BrunswickBowling({
@@ -66,11 +69,11 @@ export default function BrunswickBowling({
 							setup with customizable bowling alleys."
 				/>
 
-				<Accessories data={accessoriesSliderData} />
+				<DiverseBowling />
 				<Sync />
+				<SparkImmersive />
 				<Lanes data={laneSliderData} />
-
-				<section className="pt_80 pb_60">
+				<section className="pt_60 pb_100">
 					<div className="container">
 						<h2 className="heading_text_55 pb_50 text_center toTop" data-scroll>
 							Pinsetters
@@ -88,7 +91,7 @@ export default function BrunswickBowling({
 						</div>
 					</div>
 				</section>
-
+				<Accessories data={accessoriesSliderData} />
 				<section className="pt_100 pb_60">
 					<div className="container">
 						{centerStageFurniture.map((item, index) => (
@@ -103,6 +106,7 @@ export default function BrunswickBowling({
 				</section>
 
 				<SyncSlider data={sparesSliderData} />
+				<LaneMaintenance />
 
 				<section className="pt_100 pb_60">
 					<div className="container">

@@ -33,12 +33,22 @@ const Lanes = (data) => {
 
 	var settings = {
 		pauseOnHover: false,
+		arrows: false,
 		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					autoplay: true,
+					slidesToShow: 3,
+					// slidesToScroll: 1,
+					variableWidth: true,
+				},
+			},
 			{
 				breakpoint: 767,
 				settings: {
 					autoplay: true,
-					slidesToShow: 3,
+					slidesToShow: 1,
 					// slidesToScroll: 1,
 					variableWidth: true,
 				},
