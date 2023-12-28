@@ -123,7 +123,7 @@ export default function DebitCardSystem({
 
 		async function sendData() {
 			await fetch(
-				`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/contact-page-forms`,
+				`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/intercard-debit-card-forms`,
 				Headers
 			)
 				.then((data) => data.json())

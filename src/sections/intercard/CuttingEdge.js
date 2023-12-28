@@ -20,7 +20,7 @@ import arrow from "../../../public/img/arrow.svg";
 
 /** Home Hero Section */
 const CuttingEdge = ({ cuttingEdgeData }) => {
-	console.log(cuttingEdgeData);
+	// console.log(cuttingEdgeData);
 	var settings = {
 		dots: false,
 		arrows: false,
