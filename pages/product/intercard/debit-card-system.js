@@ -13,7 +13,8 @@ import ImagePara from "@/components/ImagePara";
 import BlackStripOverview from "@/components/BlackStripOverview";
 import { ecommerceYellowCardData } from "@/data/data-file-1";
 import CardHoverYellow from "@/components/CardHoverYellow";
-import CuttingEdge from "@/components/CuttingEdge";
+// import CuttingEdge from "@/components/CuttingEdge";
+import CuttingEdge from "@/sections/intercard/CuttingEdge";
 import { ServerHeaders } from "@/utils/RequestHeaders";
 
 // SECTIONS //
@@ -46,8 +47,11 @@ import iWave from "../../../public/img/product/intercard/debit-card-system/iWave
 import video_img from "../../../public/img/product/intercard/debit-card-system/video_img.jpg";
 import play from "../../../public/img/product/intercard/debit-card-system/play.svg";
 
-export default function DebitCardSystem({ ReadersData, FutureData }) {
-	console.log(FutureData);
+export default function DebitCardSystem({
+	ReadersData,
+	FutureData,
+	CuttingEdgeData,
+}) {
 	const [isSubmited, setIsSubmited] = useState(false);
 	var settings = {
 		dots: false,
@@ -330,7 +334,7 @@ export default function DebitCardSystem({ ReadersData, FutureData }) {
 					</div>
 				</section>
 
-				<CuttingEdge />
+				<CuttingEdge cuttingEdgeData={CuttingEdgeData.data} />
 
 				<section className={`${styles.request_quate} ptb_100 dot_animation_box`}>
 					<div className="container">
@@ -491,10 +495,18 @@ export async function getStaticProps() {
 	);
 	const FutureData = await FutureRes.json();
 
+	// Cutting Edge
+	const CuttingEdgeRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/intercard-cutting-edge-softwares?populate=*`,
+		ServerHeaders
+	);
+	const CuttingEdgeData = await CuttingEdgeRes.json();
+
 	return {
 		props: {
 			ReadersData,
 			FutureData,
+			CuttingEdgeData,
 		},
 		revalidate: 10,
 	};
