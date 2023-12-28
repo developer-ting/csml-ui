@@ -58,6 +58,17 @@ import guest_count from "../../public/img/product/intercard/shindigger/guest_cou
 import pick_party from "../../public/img/product/intercard/shindigger/pick_party.svg";
 import select_a_time from "../../public/img/product/intercard/shindigger/select_a_time.svg";
 
+//brunswick-bowling page Lane Oiling Machine Images Import
+import laneImg1 from "../../public/img/brunswick-bowling/lane_img_1.jpg";
+import laneImg2 from "../../public/img/brunswick-bowling/lane_img_2.jpg";
+
+//brunswick-bowling page Center Stage Furniture Images Import
+import centerImg from "../../public/img/brunswick-bowling/center.jpg";
+
+//brunswick-bowling pagePinsetters Images Import
+import pinsettersimg1 from "../../public/img/brunswick-bowling/pinsetters_img_1.jpg";
+import pinsettersimg2 from "../../public/img/brunswick-bowling/pinsetters_img_2.jpg";
+
 // goKarting page data
 const Data = [
 	{
@@ -335,6 +346,48 @@ const shindiggerCraftSteps = [
 	},
 ];
 
+//brunswick-bowling page Lane Oiling Machine section data
+const laneOilingMachine = [
+	{
+		image: laneImg1,
+		title: "Phoenix® LT4 Lane Machine",
+		desc:
+			"Designed for bowling centers with 16 lanes or fewer, Phoenix® LT4 Lane Machine streamlines the lane maintenance process, efficiently performing cleaning, oiling and buffing in a single pass. Equipped with the latest technology, it ensures easy operation and hassle-free maintenance.",
+	},
+	{
+		image: laneImg2,
+		title: "Max Lane Machine",
+		desc:
+			"As the world's first cloud-enabled lane machine, Max Lane Machine offers advanced technology, including the patented Direct+ Conditioning system and Wi-Fi capabilities for real-time updates. The Brunswick Cloud simplifies equipment management for SYNC scoring customers.",
+	},
+];
+
+//brunswick-bowling page Center Stage Furniture section data
+const centerStageFurniture = [
+	{
+		image: centerImg,
+		title: "Center Stage Furniture",
+		desc:
+			"Our modular bowling furniture presents a comprehensive range designed to enhance your center's aesthetics, convenience, flexibility and durability. It is fully customizable to ensure comfort and meet the demands of high-use settings. Furthermore, it includes a valuable 10-year limited warranty, providing peace of mind for your investment.",
+	},
+];
+
+//brunswick-bowling pagePinsetters section data
+const pinsetters = [
+	{
+		image: pinsettersimg1,
+		title: "GS NXT Pinsetter",
+		desc:
+			"The Brunswick GS NXT redefines pinsetters, optimizing guest experiences, reducing labor demands, and minimizing ownership costs. This cutting-edge free-fall pinsetter adapts to evolving business needs, building on the GS Series advantages for unparalleled peace of mind. Features include easy maintenance, reduced noise, consistent scoring, 29% greater energy efficiency on three-phase power, and Future-Proof-Technology with 360 controllers for real-time control and Sync® integration. Upgrade your bowling center with the efficient and future-ready Brunswick GS NXT.",
+	},
+	{
+		image: pinsettersimg2,
+		title: "Boost String Pin",
+		desc:
+			"The Brunswick GS NXT redefines pinsetters, optimizing guest experiences, reducing labor demands, and minimizing ownership costs. This cutting-edge free-fall pinsetter adapts to evolving business needs, building on the GS Series advantages for unparalleled peace of mind. Features include easy maintenance, reduced noise, consistent scoring, 29% greater energy efficiency on three-phase power, and Future-Proof-Technology with 360 controllers for real-time control and Sync® integration. Upgrade your bowling center with the efficient and future-ready Brunswick GS NXT.",
+	},
+];
+
 export default Data;
 export {
 	iedgeData,
@@ -347,4 +400,7 @@ export {
 	ecommerceBonusFeatureData,
 	shindiggerPlanSmarter,
 	shindiggerCraftSteps,
+	laneOilingMachine,
+	centerStageFurniture,
+	pinsetters,
 };

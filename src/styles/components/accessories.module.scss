@@ -1,0 +1,46 @@
+@import "../helpers/helpers.scss";
+
+.accessories{
+    background-color: var(--color_black);
+    .Lane_accessories{
+        .slider_section{
+            .slid_item{
+                width: 65vw !important;
+            }
+        }
+        
+.progress_div {
+	width: var(--container_width);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    margin-top: 30px;
+    margin-left: -15px;
+	@media (max-width: 767px) {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-top: -50px;
+	}
+	.progress_bar {
+		width: 100%;
+		height: 2px;
+		background-color: rgba($color: #fff, $alpha: 0.2);
+		overflow: hidden;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+		// @media (min-width: 768px) and (max-width: 992px) {
+		// 	width: 47%;
+		// }
+		// @media (min-width: 993px) and (max-width: 1200px) {
+		// 	width: 36%;
+		// }
+		.color_div {
+			height: 100%;
+			background-color: var(--color_white);
+			transition: all 0.3s linear;
+		}
+	}
+}
+    }
+}

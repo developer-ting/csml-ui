@@ -1,0 +1,20 @@
+@import "../helpers/helpers.scss";
+.pinsetters{
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.spares{
+    .slider_section{
+        .for_item{
+            max-width: 760px;
+            margin: auto;
+        }
+        .for_item_full{
+            max-width: 100%;
+        }
+    }
+}
