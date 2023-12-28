@@ -36,6 +36,9 @@
 					.title {
 						a {
 							color: var(--color_black) !important;
+							&:hover{
+								color: var(--color_white) !important;
+							}
 						}
 					}
 				}

@@ -142,6 +142,11 @@ const Header = () => {
 												<a className="text_reg text_500">Soft Play</a>
 											</Link>
 										</p>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/product/intercard/debit-card-system">
+												<a className="text_reg text_500">Intercard</a>
+											</Link>
+										</p>
 									</div>
 								</li>
 								<li onClick={() => setSidebarActive(!sidebarActive)}>
