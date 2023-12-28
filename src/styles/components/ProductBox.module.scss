@@ -80,6 +80,18 @@
 			.popup_flx {
 				
 			}
+			.li_text{
+				ul{
+					display: flex;
+					flex-wrap: wrap;
+    			padding-left: 20px;
+					li{
+						font-size: 16px;
+						margin-bottom: 10px;
+						padding-right: 40px;
+					}
+				}
+			}
 		}
 	}
 }

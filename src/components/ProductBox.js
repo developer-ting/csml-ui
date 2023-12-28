@@ -89,12 +89,13 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 				<div className={styles.popup_overlay}>
 					<div className={styles.popup_content}>
 						<div className={styles.popup_content_inner}>
-							<div className={styles.popup_header}>
+							<div className={`${styles.popup_header}`}>
 								<button onClick={closePopup}>
 									<img src={closeIcn.src} alt="" />
 								</button>
 							</div>
 							<div className={styles.popup_body}>
+								<h4 className="heading_text_55 pb_20">TORQ 03</h4>
 								<div className={`${styles.popup_flx}`}>
 									<Slider {...settings} ref={sliderRef}>
 										{imgData.data.data[0].attributes.ImagePopUrl.data.map((item, ind) => {
@@ -109,6 +110,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 									</Slider>
 								</div>
 								<div className={`${styles.li_text} ptb_30`}>
+									<h4 className="text_md text_500 pb_20">Project Highlights</h4>
 									{parse(imgData.data.data[0].attributes.popDesc)}
 								</div>
 							</div>
