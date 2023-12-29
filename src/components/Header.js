@@ -123,7 +123,7 @@ const Header = () => {
 									</div>
 									<div className={`${styles.sub_menu_list}`}>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="#">
+											<Link href="/product/brunswick-bowling">
 												<a className="text_reg text_500">Brunswick Bowling</a>
 											</Link>
 										</p>
@@ -202,7 +202,7 @@ const Header = () => {
 									</li>
 
 									<li onClick={() => setSidebarActive(!sidebarActive)}>
-										<Link href="">
+										<Link href="/project">
 											<a className="text_reg text_500">Projects</a>
 										</Link>
 									</li>
