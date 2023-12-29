@@ -1,0 +1,16 @@
+@import "../helpers/helpers.scss";
+
+.project_section{
+    .tab_section{
+        display: flex;
+    }
+
+    .tab_info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px 20px; 
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }   
+    }
+}

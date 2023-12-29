@@ -1132,3 +1132,61 @@ picture {
 .opacity_two {
 	opacity: 0.7;
 }
+
+.services_accordion_box {
+  .accordion {
+    border: none;
+    border-top: none;
+		background-color: #F8ED11;
+    border-radius: 12px;
+    padding: 25px 30px;
+  }
+  .accordion__item + .accordion__item {
+    border-top: none;
+  }
+  .accordion__item {
+    border-top: none;
+    border-bottom: none;
+  }
+  .accordion__button {
+    background-color: transparent;
+    position: relative;
+    padding: 0px;
+    
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .accordion__button:before {
+    // display: inline-block;
+    // content: '';
+    // height: 10px;
+    // width: 10px;
+    // margin-right: 12px;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(0deg);
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    background-image: url(../../../public/img/plus.svg);
+    width: 20px;
+    height: 44px;
+    background-size: cover;
+    margin-right: 0px;
+    transform: translateX(-50%);
+    
+  }
+  .accordion__button[aria-expanded="true"]::before,
+  .accordion__button[aria-selected="true"]::before {
+    transform: rotate(0deg);
+    background-image: url(../../../public/img/min.png);
+		width: 9px;
+    height: 4px;
+    top: 50%;
+    right: 0px;
+  }
+  .accordion__panel {
+    padding: 0px 0px 0px;
+  }
+}
