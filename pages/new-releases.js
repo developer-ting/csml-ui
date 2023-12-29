@@ -164,7 +164,7 @@ export default function NewReleases({ GamesData }) {
 }
 
 export async function getStaticProps() {
-	//
+	//New Releases
 	const GamesRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/games?populate=*&filters[IsNew][$eq]=true`,
 		ServerHeaders

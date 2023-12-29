@@ -104,7 +104,7 @@ const Header = () => {
 							<ul className={`${styles.list_ul}`}>
 								<li onClick={() => setSidebarActive(!sidebarActive)}>
 									<Link href="/about">
-										<a className="heading_text_40 m_r">About Us</a>
+										<a className="text_35 m_r">About Us</a>
 									</Link>
 								</li>
 								<li
@@ -114,7 +114,7 @@ const Header = () => {
 									onClick={() => toggleTab(1)}
 								>
 									<div className={`${styles.sub_menu_flex} d_f`}>
-										<a className="heading_text_40 m_r">Product portfolio</a>
+										<a className="text_35 m_r">Product portfolio</a>
 										<img
 											src={menu_down_aarow.src}
 											className={`${styles.menu_down_aarow}`}
@@ -123,13 +123,13 @@ const Header = () => {
 									</div>
 									<div className={`${styles.sub_menu_list}`}>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="/product/amusement-games">
-												<a className="text_reg text_500">Amusement Games</a>
+											<Link href="#">
+												<a className="text_reg text_500">Brunswick Bowling</a>
 											</Link>
 										</p>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="/product/go-karting">
-												<a className="text_reg text_500">Go Karting</a>
+											<Link href="/product/amusement-games">
+												<a className="text_reg text_500">Amusement Games</a>
 											</Link>
 										</p>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
@@ -143,6 +143,16 @@ const Header = () => {
 											</Link>
 										</p>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/product/laser-tag">
+												<a className="text_reg text_500">Laser Tag</a>
+											</Link>
+										</p>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/product/go-karting">
+												<a className="text_reg text_500">Go Karting</a>
+											</Link>
+										</p>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
 											<Link href="/product/intercard/debit-card-system">
 												<a className="text_reg text_500">Intercard</a>
 											</Link>
@@ -151,7 +161,7 @@ const Header = () => {
 								</li>
 								<li onClick={() => setSidebarActive(!sidebarActive)}>
 									<Link href="/new-releases">
-										<a className="heading_text_40 m_r">New Releases</a>
+										<a className="text_35 m_r">New Releases</a>
 									</Link>
 								</li>
 
@@ -162,7 +172,7 @@ const Header = () => {
 									onClick={() => toggleTab(2)}
 								>
 									<div className={`${styles.sub_menu_flex} d_f`}>
-										<a className="heading_text_40 m_r">Services</a>
+										<a className="text_35 m_r">Services</a>
 										<img
 											src={menu_down_aarow.src}
 											className={`${styles.menu_down_aarow}`}
@@ -194,6 +204,12 @@ const Header = () => {
 									<li onClick={() => setSidebarActive(!sidebarActive)}>
 										<Link href="">
 											<a className="text_reg text_500">Projects</a>
+										</Link>
+									</li>
+
+									<li onClick={() => setSidebarActive(!sidebarActive)}>
+										<Link href="/blogs">
+											<a className="text_reg text_500">Blogs</a>
 										</Link>
 									</li>
 

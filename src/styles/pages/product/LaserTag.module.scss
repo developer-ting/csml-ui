@@ -1,3 +1,4 @@
+@import "../../pages/product/PopUp.module.scss";
 .LaserTagMain{
   .ecommerce_slider_main{
     
@@ -16,13 +17,14 @@
   
     .showcase_box {
       .showcase_content {
-        width: 80vh;
-        @media only screen and (max-width: 1199px) {
-          width: 60vh;
-        }
-        @media only screen and (max-width: 991px) {
-          width: 50vh;
-        }
+        width: 560px;
+        // width: 80vh;
+        // @media only screen and (max-width: 1199px) {
+        //   width: 60vh;
+        // }
+        // @media only screen and (max-width: 991px) {
+        //   width: 50vh;
+        // }
         .img_box {
           // border: 1px solid #777777;
           // border-radius: 12px;

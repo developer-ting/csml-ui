@@ -10,6 +10,7 @@ import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import BlackStripOverview from "@/components/BlackStripOverview";
 import TextImgBox from "@/components/TextImgBox";
+import { ServerHeaders } from "@/utils/RequestHeaders";
 
 // SECTIONS //
 
@@ -17,6 +18,7 @@ import TextImgBox from "@/components/TextImgBox";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import parse from "html-react-parser";
 
 // STYLES //
 import styles from "../../src/styles/pages/product/LaserTag.module.scss";
@@ -32,33 +34,33 @@ import elements from "../../public/img/product/laser-tag/elements.jpg";
 import optimizing_img from "../../public/img/product/laser-tag/optimizing_img.jpg";
 import design from "../../public/img/product/laser-tag/design.jpg";
 import arrow from "../../public/img/arrow.svg";
+import closeIcn from "../../public/img/close.svg";
 
 /** Softplay Page */
-export default function LaserTag() {
+export default function LaserTag({ LaserTagData }) {
+	console.log(LaserTagData);
 	var settings = {
 		dots: false,
 		arrows: false,
 		infinite: true,
 		slidesToShow: 2,
-    slidesToScroll: 1,
+		slidesToScroll: 1,
 		autoplay: false,
 		pauseOnHover: false,
 		speed: 1000,
-    variableWidth: true,
+		variableWidth: true,
 		responsive: [
-      
 			{
 				breakpoint: 767,
 				settings: {
 					slidesToShow: 1,
-          slidesToScroll: 1,
-          variableWidth: false,
-          autoplay: true,
+					slidesToScroll: 1,
+					variableWidth: false,
+					autoplay: true,
 				},
-
 			},
 		],
-    afterChange: (i) => {
+		afterChange: (i) => {
 			fillProgress(i + 1);
 		},
 		// prevArrow: (
@@ -73,14 +75,34 @@ export default function LaserTag() {
 		// ),
 	};
 
-  const [progressWidth, setProgressWidth] = useState(0);
+	const [showPopup, setShowPopup] = useState(false);
+	const [gameIndex, setGameIndex] = useState(0);
+	const popUpData = LaserTagData.data[gameIndex].attributes;
+	/** openPopup function */
+	const openPopup = (id) => {
+		setShowPopup(true);
+		handleGameIndex(id);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "hidden";
+	};
+	/** closePopup function */
+	const closePopup = () => {
+		setShowPopup(false);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "unset";
+	};
+	const handleGameIndex = (id) => {
+		setGameIndex(id);
+	};
+
+	const [progressWidth, setProgressWidth] = useState(0);
 	useEffect(() => {
 		fillProgress(1);
 	}, []);
 	const fillProgress = (currInd) => {
 		setProgressWidth((currInd / 4) * 100);
 	};
-  useEffect(() => {
+	useEffect(() => {
 		ScrollOut({
 			once: true,
 		});
@@ -118,133 +140,49 @@ export default function LaserTag() {
 							</h2>
 						</div>
 					</div>
-					
+
 					<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
 						<Slider {...settings}>
-							<div className={`${styles.showcase_box}`}>
-								<div className={`${styles.showcase_content}`}>
-									<div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
-										<div className="dot_one dots_p"></div>
-										<div className="dot_two dots_p"></div>
-										<div className="dot_three dots_p"></div>
-										<img
-											className="border_8"
-											src={futuristic_img.src}
-											alt="img"
-										/>
-									</div>
-									<div className={`${styles.desc_box}`}>
-										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 text_700 pb_20">
-												Futuristic Style Vests 
-											</h3>
-											<a href="" rel="noreferrer">
-												<button className="btn_arrow">
-													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={arrow.src} />
-													</span>
-													<span className={`${styles.arrow_two} arrow_two`}>
-														<img src={arrow.src} />
-													</span>
-												</button>
-											</a>
+							{LaserTagData.data.map((item, productItemIndex) => {
+								return (
+									<div className={`${styles.showcase_box}`}>
+										<div className={`${styles.showcase_content}`}>
+											<div
+												className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}
+											>
+												<div className="dot_one dots_p"></div>
+												<div className="dot_two dots_p"></div>
+												<div className="dot_three dots_p"></div>
+												<img
+													className="border_8"
+													src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.Image.data.attributes.url}`}
+													alt="img"
+												/>
+											</div>
+											<div className={`${styles.desc_box}`}>
+												<div className={`${styles.desc_title} f_j`}>
+													<h3 className="text_24 text_700 pb_20">
+														{item.attributes.Heading}
+													</h3>
+													<a>
+														<button
+															className="btn_arrow"
+															onClick={() => openPopup(productItemIndex)}
+														>
+															<span className={`${styles.arrow_one} arrow_one`}>
+																<img src={arrow.src} />
+															</span>
+															<span className={`${styles.arrow_two} arrow_two`}>
+																<img src={arrow.src} />
+															</span>
+														</button>
+													</a>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div className={`${styles.showcase_box}`}>
-								<div className={`${styles.showcase_content}`}>
-									<div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
-										<div className="dot_one dots_p"></div>
-										<div className="dot_two dots_p"></div>
-										<div className="dot_three dots_p"></div>
-										<img
-											className="border_8"
-											src={premium_phaser.src}
-											alt="img"
-										/>
-									</div>
-									<div className={`${styles.desc_box}`}>
-										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 text_700 pb_20">
-												Premium Phaser
-											</h3>
-											<a href="" rel="noreferrer">
-												<button className="btn_arrow">
-													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={arrow.src} />
-													</span>
-													<span className={`${styles.arrow_two} arrow_two`}>
-														<img src={arrow.src} />
-													</span>
-												</button>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className={`${styles.showcase_box}`}>
-								<div className={`${styles.showcase_content}`}>
-									<div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
-										<div className="dot_one dots_p"></div>
-										<div className="dot_two dots_p"></div>
-										<div className="dot_three dots_p"></div>
-										<img
-											className="border_8"
-											src={system.src}
-											alt="img"
-										/>
-									</div>
-									<div className={`${styles.desc_box}`}>
-										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 text_700 pb_20">
-												Systems 
-											</h3>
-											<a href="" rel="noreferrer">
-												<button className="btn_arrow">
-													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={arrow.src} />
-													</span>
-													<span className={`${styles.arrow_two} arrow_two`}>
-														<img src={arrow.src} />
-													</span>
-												</button>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className={`${styles.showcase_box}`}>
-								<div className={`${styles.showcase_content}`}>
-									<div className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}>
-										<div className="dot_one dots_p"></div>
-										<div className="dot_two dots_p"></div>
-										<div className="dot_three dots_p"></div>
-										<img
-											className="border_8"
-											src={elements.src}
-											alt="img"
-										/>
-									</div>
-									<div className={`${styles.desc_box}`}>
-										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 text_700 pb_20">
-												Elements and Targets
-											</h3>
-											<a href="" rel="noreferrer">
-												<button className="btn_arrow">
-													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={arrow.src} />
-													</span>
-													<span className={`${styles.arrow_two} arrow_two`}>
-														<img src={arrow.src} />
-													</span>
-												</button>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+								);
+							})}
 						</Slider>
 					</div>
 
@@ -260,135 +198,105 @@ export default function LaserTag() {
 					</div>
 				</div>
 
-				<section className={`${styles.optimizing_section} dot_animation_box pb_100`}>
+				<section
+					className={`${styles.optimizing_section} dot_animation_box pb_100`}
+				>
 					<div className={`${styles.full_img} toTop`} data-scroll>
-						<img
-							className="border_8 width_100"
-							src={optimizing_img.src}
-							alt="img"
-						/>
+						<img className="border_8 width_100" src={optimizing_img.src} alt="img" />
 					</div>
 					<div className="container">
 						<div className={`${styles.optimizing_flex} ptb_40 d_f`}>
 							<div className={`${styles.optimizing_title}`}>
-								<h2 className="heading_text_55 color_white text_700 pb_20 toTop" data-scroll>
-									Optimizing Every Space For The Best Experience 
+								<h2
+									className="heading_text_55 color_white text_700 pb_20 toTop"
+									data-scroll
+								>
+									Optimizing Every Space For The Best Experience
 								</h2>
 							</div>
 							<div className={`${styles.optimizing_content} toTop`} data-scroll>
-								<p className="paraTxt_18 pb_20 color_white_opacity toTop" data-scroll>The Cyberblast Phaser system is versatile, accommodating Laser Tag arenas from 1000 to 5000 square feet. For optimal gameplay, it's recommended to have at least 2000-5000 square feet of space. Multi-level Laser Tag, where feasible and compliant with regulations, consistently outperforms single-level setups.</p>
-								<p className="paraTxt_18 pb_20 color_white_opacity toTop" data-scroll>Ideal gameplay typically requires a minimum of 2000 sq. ft and 16 players, with our recommendation falling in the range of 2500-3500 sq. ft and 20-30 players for an enhanced experience.</p>
+								<p className="paraTxt_18 pb_20 color_white_opacity toTop" data-scroll>
+									The Cyberblast Phaser system is versatile, accommodating Laser Tag
+									arenas from 1000 to 5000 square feet. For optimal gameplay, it's
+									recommended to have at least 2000-5000 square feet of space.
+									Multi-level Laser Tag, where feasible and compliant with regulations,
+									consistently outperforms single-level setups.
+								</p>
+								<p className="paraTxt_18 pb_20 color_white_opacity toTop" data-scroll>
+									Ideal gameplay typically requires a minimum of 2000 sq. ft and 16
+									players, with our recommendation falling in the range of 2500-3500 sq.
+									ft and 20-30 players for an enhanced experience.
+								</p>
 							</div>
 						</div>
 
 						<div className={`${styles.optimizing_table} d_f`}>
 							<div className={`${styles.table_box} toTop`} data-scroll>
-								<h6 className="paraTxt color_white text_600 pb_20">Ideal space allocation example:</h6>
+								<h6 className="paraTxt color_white text_600 pb_20">
+									Ideal space allocation example:
+								</h6>
 								<table border="1" cellpadding="10" cellspacing="0">
 									<tbody>
 										<tr>
-											<td>
-												Vesting Room
-											</td>
-											<td>
-												250 SF 
-											</td>
+											<td>Vesting Room</td>
+											<td>250 SF</td>
 										</tr>
 										<tr>
-											<td>
-												Briefing Room 
-											</td>
-											<td>
-												150 SF
-											</td>
+											<td>Briefing Room</td>
+											<td>150 SF</td>
 										</tr>
 										<tr>
-											<td>
-												Per Player
-											</td>
-											<td>
-												7-8 SF
-											</td>
+											<td>Per Player</td>
+											<td>7-8 SF</td>
 										</tr>
 										<tr>
-											<td>
-												Players 
-											</td>
-											<td>
-												20
-											</td>
+											<td>Players</td>
+											<td>20</td>
 										</tr>
 										<tr>
-											<td>
-												Players 
-											</td>
-											<td>
-												3000 SF 
-											</td>
+											<td>Players</td>
+											<td>3000 SF</td>
 										</tr>
 									</tbody>
 								</table>
-								<p className="paraTxt_18 pt_20 color_white_opacity toTop" data-scroll>Every arena throughput varies, and the objective is to maximize the number of players passing through your arena each hour.</p>
+								<p className="paraTxt_18 pt_20 color_white_opacity toTop" data-scroll>
+									Every arena throughput varies, and the objective is to maximize the
+									number of players passing through your arena each hour.
+								</p>
 							</div>
 							<div className={`${styles.table_box} toTop`} data-scroll>
-								<h6 className="paraTxt color_white text_600 pb_20">Laser Tag Game Rotation Stages </h6>
+								<h6 className="paraTxt color_white text_600 pb_20">
+									Laser Tag Game Rotation Stages{" "}
+								</h6>
 								<table border="1" cellpadding="10" cellspacing="0">
 									<tbody>
 										<tr>
-											<td className={`${styles.yellow_td}`}>
-												Stage
-											</td>
-											<td className={`${styles.yellow_td}`}>
-												Duration  
-											</td>
+											<td className={`${styles.yellow_td}`}>Stage</td>
+											<td className={`${styles.yellow_td}`}>Duration</td>
 										</tr>
 										<tr>
-											<td>
-												Briefing
-											</td>
-											<td>
-												2-4 minutes 
-											</td>
+											<td>Briefing</td>
+											<td>2-4 minutes</td>
 										</tr>
 										<tr>
-											<td>
-												Vesting 
-											</td>
-											<td>
-												1-2 minutes 
-											</td>
+											<td>Vesting</td>
+											<td>1-2 minutes</td>
 										</tr>
 										<tr>
-											<td>
-												Game Play 
-											</td>
-											<td>
-												1-2 minutes 
-											</td>
+											<td>Game Play</td>
+											<td>1-2 minutes</td>
 										</tr>
 										<tr>
-											<td>
-												De-Vest  
-											</td>
-											<td>
-												1-2 minutes 
-											</td>
+											<td>De-Vest</td>
+											<td>1-2 minutes</td>
 										</tr>
 										<tr>
-											<td>
-												Score 
-											</td>
-											<td>
-												1-2 minutes 
-											</td>
+											<td>Score</td>
+											<td>1-2 minutes</td>
 										</tr>
 										<tr>
-											<td>
-												Games per hour 
-											</td>
-											<td>
-												3-4 games 
-											</td>
+											<td>Games per hour</td>
+											<td>3-4 games</td>
 										</tr>
 									</tbody>
 								</table>
@@ -398,20 +306,36 @@ export default function LaserTag() {
 				</section>
 				<section className={`${styles.how_apply_wrap} ptb_100`}>
 					<div className="container">
-					
 						<div className={`${styles.service_flex}`}>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h2 className={`${styles.info_head} heading_text_55 pb_30`}>
-									Design 
-								</h2>
-								<p className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`} data-scroll>
-									Building an exciting arena with eye-catching designs is among the most important factors in the success of any laser tag centre. The arena by itself must be a memorable experience for your guests.
+								<h2 className={`${styles.info_head} heading_text_55 pb_30`}>Design</h2>
+								<p
+									className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`}
+									data-scroll
+								>
+									Building an exciting arena with eye-catching designs is among the most
+									important factors in the success of any laser tag centre. The arena by
+									itself must be a memorable experience for your guests.
 								</p>
-								<p className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`} data-scroll>
-								We provide a fun, functional and competitive layout tailored to your available space using our 3d modelling software and extensive experience. We provide an arena package including partition layouts & details, electrical requirements and suggested audio/ special effects. We recommend having the arena themed or painted by a professional.
+								<p
+									className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`}
+									data-scroll
+								>
+									We provide a fun, functional and competitive layout tailored to your
+									available space using our 3d modelling software and extensive
+									experience. We provide an arena package including partition layouts &
+									details, electrical requirements and suggested audio/ special effects.
+									We recommend having the arena themed or painted by a professional.
 								</p>
-								<p className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`} data-scroll>
-								We provide innovative layouts tailored to your floor plan, creating a standout experience for guests. The evolution of Laser Tag preferences towards multi-attraction centers has made complementary offerings like bowling, escape rooms, and game rooms essential for a modern Laser Tag experience.
+								<p
+									className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`}
+									data-scroll
+								>
+									We provide innovative layouts tailored to your floor plan, creating a
+									standout experience for guests. The evolution of Laser Tag preferences
+									towards multi-attraction centers has made complementary offerings like
+									bowling, escape rooms, and game rooms essential for a modern Laser Tag
+									experience.
 								</p>
 							</div>
 							<div className={`${styles.img_bx} toTop`} data-scroll>
@@ -420,8 +344,54 @@ export default function LaserTag() {
 						</div>
 					</div>
 				</section>
+
+				{showPopup && (
+					<div className={styles.popup_overlay}>
+						<div className={styles.popup_content}>
+							<div className={styles.popup_content_inner}>
+								<div className={styles.popup_header}>
+									<button onClick={closePopup}>
+										<img src={closeIcn.src} alt="" />
+									</button>
+								</div>
+								<div className={styles.popup_body}>
+									<div className={`${styles.popup_flx} row`}>
+										<div className={styles.popup_img_item}>
+											<img
+												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${popUpData.PopUpImage.data.attributes.url}`}
+												alt=""
+											/>
+										</div>
+										<div className={styles.popup_content_item}>
+											<h3 className={`${styles.popHead} text_24`}>{popUpData.Heading}</h3>
+											<div className={`${styles.paraTxt} paraTxt_16`}>
+												{parse(popUpData.Description)}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				)}
 			</main>
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	//Features that tag it superior
+	const LaserTagRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/laser-tag-features-tags?populate=*`,
+		ServerHeaders
+	);
+	const LaserTagData = await LaserTagRes.json();
+
+	return {
+		props: {
+			LaserTagData,
+		},
+		revalidate: 10,
+	};
 }
