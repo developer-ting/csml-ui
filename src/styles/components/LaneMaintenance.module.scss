@@ -5,6 +5,12 @@
     background-color: rgba(30, 30, 30, 0.45);
     backdrop-filter: blur(15px);
     padding: 50px 50px;
+    @media (max-width: 1199px) {
+      padding: 30px 30px; 
+    }
+    @media (max-width: 991px) {
+      padding: 30px 15px; 
+    }
   }
   .games_info_sec {
     
@@ -14,8 +20,13 @@
       @media (min-width: 768px) and (max-width: 1199px) {
         width: 30%;
       }
+      @media (max-width: 991px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       @media (max-width: 767px) {
         width: 100%;
+        
       }
     }
     .games_product_sec {
@@ -23,17 +34,33 @@
       @media (min-width: 768px) and (max-width: 1199px) {
         width: 68%;
       }
+      @media (max-width: 991px) {
+        width: 100%;
+      }
       @media (max-width: 767px) {
         width: 100%;
         margin: 40px 0 0;
       }
+      
       .product_info_style{
         justify-content: space-between;
+        align-items: center;
+        @media (max-width: 767px) {
+         flex-wrap: wrap;
+        }
         .product_info_img{
           width: 40%;
+          @media (max-width: 767px) {
+            width: 100%;
+            
+          }
         }
         .product_info_content{
           width: 55%;
+          @media (max-width: 767px) {
+            width: 100%;
+            
+          }
         }
       }
       

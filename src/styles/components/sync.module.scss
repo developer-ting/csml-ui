@@ -12,13 +12,16 @@
   .ecommerce_slider_main{
     margin-left: calc(var(--container_left_space) + 15px);
     overflow: hidden;
+    @media only screen and (max-width: 767px) {
+      margin-left: calc(var(--container_left_space) + 0px);
+    }
   }
 
   .partner_superior_flex{
     margin: 0px -10px;
     
     @media only screen and (max-width: 767px) {
-      
+      margin: 0px 0px;
     }
     .luminaries_box{
       
@@ -39,6 +42,9 @@
         }
         @media only screen and (max-width: 991px) {
           width: 50vh;
+        }
+        @media only screen and (max-width: 767px) {
+          width: 100%;
         }
         img{
           width: 100%;

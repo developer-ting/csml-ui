@@ -26,5 +26,19 @@
         .for_item_full{
             max-width: 100%;
         }
+        .nav_item{
+            :global(.border_animation){
+             
+             @media (max-width: 767px) {
+                width: 46vh;
+            } 
+            }
+            :global(.slick-slide){
+                
+                @media (max-width: 767px) {
+                    padding: 0px 5px;
+                }
+            }
+        }
     }
 }

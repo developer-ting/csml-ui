@@ -24,6 +24,9 @@
         width: auto;
         margin: auto;
         padding-top: 75px;
+        @media only screen and (max-width: 991px) {
+          width: 150px;
+        }
       }
         &:hover{
           .desc_box{
