@@ -74,6 +74,11 @@ export default function Ecommerce() {
 	const fillProgress = (currInd) => {
 		setProgressWidth((currInd / 6) * 100);
 	};
+  useEffect(() => {
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 
 	return (
 		<div>
@@ -91,11 +96,10 @@ export default function Ecommerce() {
 					bannerImg={ecommerce_banner.src}
 					mobileImg={ecommerce_banner.src}
 				/>
-				<BlackStripOverview
-					desc="Intercard E-Commerce Hand: Simplifying Contactless Transactions
-          Step into the era of effortless transactions with Intercard's advanced E-Commerce Technology. Enhance your customer experience by providing a user-friendly, remote platform for purchasing game cards, packages, or gift cards from the comfort of their homes or while on the move.
-          "
-				/>
+        <BlackStripOverview 
+          desc="Intercard E-Commerce Hand: Simplifying Contactless Transactions
+          Step into the era of effortless transactions with Intercard's advanced E-Commerce Technology. Enhance your customer experience by providing a user-friendly, remote platform for purchasing game cards, packages, or gift cards from the comfort of their homes or while on the move."
+        />
 
 				<section className={`${styles.intercard} ptb_100`}>
 					<div className="container">
@@ -128,37 +132,27 @@ export default function Ecommerce() {
 							</Slider>
 						</div>
 					</div>
-
-					<div className="container">
-						<div className={`${styles.progress_div} pb_100`}>
-							<div className={`${styles.progress_bar}`}>
-								<div
-									style={{ width: `${progressWidth}%` }}
-									className={`${styles.color_div}`}
-								></div>
-							</div>
-						</div>
-					</div>
 				</section>
-
-				<section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
-					<div className="container">
-						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
-							<h2 className="heading_text_55 color_white ">How It Works</h2>
-						</div>
-						<div className={`${styles.how_it_works_flex}`}>
-							{/* <CardIcon /> */}
-							{ecommerceHowItWorksData.map((item, index) => (
-								<CardIcon
-									key={index}
-									title={item.title}
-									desc={item.desc}
-									boxIcon={item.image.src}
-								/>
-							))}
-						</div>
-					</div>
-				</section>
+        <section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
+          <div className="container">
+            <div className={`${styles.section_title} pb_40 toTop`} data-scroll>
+              <h2 className="heading_text_55 color_white ">
+                How It Works
+              </h2>
+            </div>
+            <div className={`${styles.how_it_works_flex} toTop`} data-scroll>
+              {/* <CardIcon /> */}
+              {ecommerceHowItWorksData.map((item, index) => (
+                  <CardIcon
+                    key={index}
+                    title={item.title}
+                    desc={item.desc}
+                    boxIcon={item.image.src}
+                  />
+                ))}
+            </div>
+          </div>
+        </section>
 
 				<section className={`${styles.bonus_feature} ptb_100`}>
 					<div className="container">

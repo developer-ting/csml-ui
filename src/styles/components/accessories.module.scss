@@ -6,6 +6,9 @@
         .slider_section{
             .slid_item{
                 width: 65vw !important;
+								@media (max-width: 1199px) {
+									width: 83vw !important;
+								}
             }
         }
         
@@ -19,7 +22,7 @@
 	@media (max-width: 767px) {
 		padding-right: 15px;
 		padding-left: 15px;
-		margin-top: -50px;
+		margin-top: 20px;
 	}
 	.progress_bar {
 		width: 100%;

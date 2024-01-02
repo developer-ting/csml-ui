@@ -1,0 +1,26 @@
+@import "../helpers/helpers.scss";
+
+.contentImgSectionBox{
+
+    @media only screen and (min-width: 768px) {
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
+    }
+    
+    .contentImgStyle{
+        width: 46%; 
+        @media (min-width: 768px) and (max-width: 1199px) {
+            width: 48%; 
+        }
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        &:first-child{
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -24,6 +24,11 @@ import iedge_banner from "../../../public/img/product/intercard/iedge/iedge_bann
 
 /** Iedge Page */
 export default function Iedge() {
+  useEffect(() => {
+		ScrollOut({
+			once: true,
+		});
+	}, []);
 	return (
 		<div>
 			<Head>

@@ -65,7 +65,7 @@ const ProjectCard = (data) => {
 							/>
 						))}
 					</div>
-					<h2 className="heading_text_55 color_white ptb_60">
+					<h2 className="heading_text_45 text_700 color_white ptb_60">
 						FEC Projects That define Fun
 					</h2>
 					<div className={`${styles.tab_info}`}>

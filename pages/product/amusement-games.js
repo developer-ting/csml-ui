@@ -92,7 +92,9 @@ export default function AmusementGames({ GamesCategoriesData }) {
 							<div className={`${styles.games_filter_sec} pt_10`}>
 								<div className="product_filer_sec">
 									<div className="product_names">
-										<h5 className="paraTxt_18 text_600 ptb_10">New Release</h5>
+										<a href="/new-releases" rel="noreferrer">
+											<h5 className="paraTxt_18 text_600 ptb_10">New Release</h5>
+										</a>
 									</div>
 									{GamesCategoriesData.data.map((item, mainCatIndex) => {
 										return (
@@ -203,12 +205,12 @@ export default function AmusementGames({ GamesCategoriesData }) {
 											<h3 className={`${styles.popHead} text_24`}>
 												{activeGameCategories.games.data[gameIndex].attributes.GameName}
 											</h3>
-											<p className={`${styles.paraTxt} paraTxt_16`}>
+											<div className={`${styles.paraTxt} paraTxt_16`}>
 												{parse(
 													activeGameCategories.games.data[gameIndex].attributes
 														.GamePopUpDescription
 												)}
-											</p>
+											</div>
 											<p className={`${styles.paraTxt} paraTxt_16`}>
 												<strong>Dimensions</strong>:{" "}
 												{
@@ -224,6 +226,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 															.GameYoutubeURL
 													}
 													rel="noreferrer"
+													target="_blank"
 												>
 													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="" />
 												</a>

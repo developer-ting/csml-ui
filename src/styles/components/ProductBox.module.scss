@@ -31,11 +31,18 @@
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		overflow-x: hidden;
 		width: 65%;
+		
+		@media only screen and (max-height: 650px) {
+			height: 550px;
+    	overflow-y: scroll;
+		}
 		@media only screen and (max-width: 992px) {
 			width: 90%;
 		}
 		@media only screen and (max-width: 767px) {
 			width: 100%;
+			height: auto;
+			overflow-y: inherit;
 		}
 		.popup_content_inner {
 			padding: 25px;
@@ -79,6 +86,18 @@
 		.popup_body {
 			.popup_flx {
 				
+			}
+			.li_text{
+				ul{
+					display: flex;
+					flex-wrap: wrap;
+    			padding-left: 20px;
+					li{
+						font-size: 16px;
+						margin-bottom: 10px;
+						padding-right: 40px;
+					}
+				}
 			}
 		}
 	}

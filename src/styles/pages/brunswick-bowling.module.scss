@@ -4,6 +4,16 @@
     column-gap: 15px;
     flex-wrap: wrap;
     justify-content: space-between;
+    :global(.border_animation){
+        width: 49%;
+        @media (max-width: 1199px) {
+            width: 48%;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 
@@ -15,6 +25,20 @@
         }
         .for_item_full{
             max-width: 100%;
+        }
+        .nav_item{
+            :global(.border_animation){
+             
+             @media (max-width: 767px) {
+                width: 46vh;
+            } 
+            }
+            :global(.slick-slide){
+                
+                @media (max-width: 767px) {
+                    padding: 0px 5px;
+                }
+            }
         }
     }
 }

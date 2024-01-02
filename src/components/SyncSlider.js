@@ -32,12 +32,29 @@ const SyncSlider = (data) => {
 
 	var settings = {
 		pauseOnHover: false,
+		arrows: false,
 		responsive: [
 			{
 				breakpoint: 767,
 				settings: {
 					autoplay: true,
-					slidesToShow: 3,
+					slidesToShow: 1,
+					// slidesToScroll: 1,
+					variableWidth: true,
+				},
+			},
+		],
+	};
+	var settings1 = {
+		pauseOnHover: false,
+		arrows: false,
+		slidesToShow: 3,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					autoplay: true,
+					slidesToShow: 1,
 					// slidesToScroll: 1,
 					variableWidth: true,
 				},
@@ -62,7 +79,7 @@ const SyncSlider = (data) => {
 	}
 
 	return (
-		<section className={`${styles.spares} pt_100`}>
+		<section className={`${styles.spares} pb_100`}>
 			<div className="container">
 				<h2 className="heading_text_55 pb_50 toTop text_center" data-scroll>
 					Spares and Consumables
@@ -92,10 +109,9 @@ const SyncSlider = (data) => {
 					</div>
 					<Slider
 						className={`${styles.nav_item} toTop`}
+						{...settings1}
 						asNavFor={nav2}
 						arrows={false}
-						// speed={1200}
-						slidesToShow={3}
 						ref={(slider1) => setNav1(slider1)}
 					>
 						{alldata.map((item, index) => (
