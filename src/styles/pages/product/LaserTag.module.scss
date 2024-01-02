@@ -12,19 +12,22 @@
     overflow: hidden;
     
     @media only screen and (max-width: 767px) {
-      
+      margin-left: calc(var(--container_left_space) + 0px);
     }
   
     .showcase_box {
       .showcase_content {
         width: 560px;
         // width: 80vh;
-        // @media only screen and (max-width: 1199px) {
-        //   width: 60vh;
-        // }
-        // @media only screen and (max-width: 991px) {
-        //   width: 50vh;
-        // }
+        @media only screen and (max-width: 1199px) {
+          width: 450px;
+        }
+        @media only screen and (max-width: 991px) {
+          width: 340px;
+        }
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+        }
         .img_box {
           // border: 1px solid #777777;
           // border-radius: 12px;
@@ -64,7 +67,7 @@
     width: 100%;
     //width: calc(100% - 215px);
     @media (max-width: 767px) {
-      padding: 10px 0px 0px 10px;
+      padding: 10px 0px 0px 0px;
       //width: calc(100% - 65px);
     }
     .progress_bar {

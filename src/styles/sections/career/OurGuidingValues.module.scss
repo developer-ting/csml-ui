@@ -18,7 +18,7 @@
         margin: 0px -10px;
       }
       .partner_superior_box{
-        width: 75vh !important;
+        width: 25vw !important;
         border: 1px solid #777777;
         border-radius: 12px;
         // border-top: 1px solid #777777;
@@ -28,16 +28,16 @@
         position: relative;
         transition: all .3s;
         @media only screen and (max-width: 1380px) {
-          width: 70vh !important;
+          width: 30vw !important;
         }
         @media only screen and (max-width: 1300px) {
-          width: 72vh !important;
+          width: 32vw !important;
         }
         @media only screen and (max-width: 1199px) {
-          width: 60vh !important;
+          width: 44vw !important;
         }
         @media only screen and (max-width: 991px) {
-          width: 55vh !important;
+          width: 44vw !important;
         }
         @media only screen and (max-width: 767px) {
           width: 100% !important;
