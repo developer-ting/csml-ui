@@ -25,6 +25,10 @@ const ProjectCard = (data) => {
 		new Set(data.data.data.map((item) => item.attributes.title))
 	);
 
+	const uniqueValuesArrayDesc = Array.from(
+		new Set(data.data.data.map((item) => item.attributes.titleDesc))
+	);
+
 	const [selectedTabValue, setSelectTabValue] = useState(uniqueValuesArray[0]);
 
 	useEffect(() => {
@@ -33,19 +37,22 @@ const ProjectCard = (data) => {
 		});
 	}, []);
 
+	console.log(uniqueValuesArrayDesc);
 	const [alldata, setallData] = useState(
 		data.data.data.filter(
-			(item) => item.attributes.title == data.data.data[0].attributes.title
+			(item) => item.attributes.title === data.data.data[0].attributes.title
 		)
 	);
 
-	// console.log(uniqueValuesArray);
+	// console.log(alldata.data.attributes);
 
 	/** getSlectVal */
-	function getSlectVal(selectedValue) {
+	function getSlectVal(selectedValue, isTitleDesc) {
 		setSelectTabValue(selectedValue);
-		const filteredData = data.data.data.filter(
-			(item) => item.attributes.title == selectedValue
+		const filteredData = data.data.data.filter((item) =>
+			isTitleDesc
+				? item.attributes.titleDesc === selectedValue
+				: item.attributes.title === selectedValue
 		);
 		setallData(filteredData);
 	}
@@ -65,14 +72,16 @@ const ProjectCard = (data) => {
 							/>
 						))}
 					</div>
+					{/* {alldata.map((item, index) => ( */}
 					<h2 className="heading_text_45 text_700 color_white ptb_60">
-						FEC Projects That define Fun
+						{alldata[0].attributes.titleDesc}
 					</h2>
+					{/* ))} */}
 					<div className={`${styles.tab_info}`}>
 						{alldata.map((item, index) => (
 							<ProductBox
 								red
-								imgData={data}
+								imgData={alldata[index]}
 								key={index}
 								index={index}
 								title={item.attributes.productTitle}
