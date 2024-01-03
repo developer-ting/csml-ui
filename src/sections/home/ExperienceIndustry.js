@@ -76,7 +76,7 @@ export default function ExperienceIndustry() {
 					</div>
 				</div>
 				<div className={`${styles.btn_box} pt_40 toTop`} data-scroll>
-					<a href="#" rel="noreferrer">
+					<a href="/about" rel="noreferrer">
 						<span className="span_btn white_btn">
 							<button className="btn_project_default">Learn More</button>
 						</span>

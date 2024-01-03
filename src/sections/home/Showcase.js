@@ -78,7 +78,7 @@ export default function Showcase({ showcaseData }) {
 				<div className={`${styles.section_title} pb_30 f_j toTop`} data-scroll>
 					<h2 className="heading_text_55 color_white">A showcase of success </h2>
 					<div className={`${styles.btn_height}`}>
-						<a href="#" rel="noreferrer">
+						<a href="/project" rel="noreferrer">
 							<span className="span_btn">
 								<button className="btn_project_default color_white">View All</button>
 							</span>

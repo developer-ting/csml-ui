@@ -17,6 +17,14 @@ gsap.registerPlugin(ScrollTrigger);
 import styles from "../../styles/sections/home/ProductCatalogue.module.scss";
 // IMAGES //
 import showcase from "../../../public/img/home/home_banner.jpg";
+import brunswick_bowling from "../../../public/img/home/brunswick_bowling.jpg";
+import arcade_games from "../../../public/img/home/arcade_games.jpg";
+import trampoline from "../../../public/img/home/trampoline.jpg";
+import soft_play from "../../../public/img/home/soft_play.jpg";
+import laser_tag from "../../../public/img/home/laser_tag.jpg";
+import go_karting from "../../../public/img/home/go_karting.jpg";
+import debit_card_system_intercard from "../../../public/img/home/debit_card_system_intercard.jpg";
+import spare_consumables from "../../../public/img/home/spare_consumables.jpg";
 import arrow from "../../../public/img/arrow.svg";
 
 /** Home Hero Section */
@@ -25,28 +33,43 @@ export default function ProductCatalogue() {
 	const dragSliderInfo = [
 		{
 			title: "Brunswick Bowling",
-			imgUrl: showcase.src,
-			link: "https://www.instagram.com/csmlindia/?hl=en",
+			imgUrl: brunswick_bowling.src,
+			link: "/product/brunswick-bowling",
 		},
 		{
 			title: "Arcade Games",
-			imgUrl: showcase.src,
-			link: "https://www.instagram.com/csmlindia/?hl=en",
+			imgUrl: arcade_games.src,
+			link: "/product/amusement-games",
 		},
 		{
 			title: "Trampoline",
-			imgUrl: showcase.src,
-			link: "https://www.instagram.com/csmlindia/?hl=en",
+			imgUrl: trampoline.src,
+			link: "/product/trampoline",
 		},
 		{
 			title: "Soft Play",
-			imgUrl: showcase.src,
-			link: "https://www.instagram.com/csmlindia/?hl=en",
+			imgUrl: soft_play.src,
+			link: "/product/softplay",
 		},
 		{
 			title: "Laser Tag",
-			imgUrl: showcase.src,
-			link: "https://www.instagram.com/csmlindia/?hl=en",
+			imgUrl: laser_tag.src,
+			link: "/product/laser-tag",
+		},
+		{
+			title: "Go Karting",
+			imgUrl: go_karting.src,
+			link: "/product/go-karting",
+		},
+		{
+			title: "Debit Card System",
+			imgUrl: debit_card_system_intercard.src,
+			link: "/product/intercard/debit-card-system",
+		},
+		{
+			title: "Spare Consumables",
+			imgUrl: spare_consumables.src,
+			link: "#",
 		},
 	];
 	const n = dragSliderInfo.length;

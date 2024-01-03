@@ -129,7 +129,7 @@ const Footer = () => {
 					<div className="container">
 						<div className={`${styles.footerBtmFlex} f_w_j a_center`}>
 							<div className={`${styles.footerBtmItem}`}>
-								<p className="text_xs">Copyright © 2023 CSML. All Rights Reserved</p>
+								<p className="text_xs">Copyright © 2024 CSML. All Rights Reserved</p>
 							</div>
 							<div className={`${styles.footerBtmItem}`}>
 								<Link href="https://www.ting.in/">
