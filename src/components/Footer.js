@@ -1,4 +1,5 @@
 // MODULES //
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 // COMPONENTS //
 
@@ -17,9 +18,18 @@ import facebook from "../../public/img/facebook.svg"
 import twitter from "../../public/img/twitter.svg"
 import instagram from "../../public/img/instagram.svg"
 import youtube from "../../public/img/youtube.svg"
+import white_down_arrow from "../../public/img/white_down_arrow.svg";
 
 /** Footer Component */
 const Footer = () => {
+	const [toggleState, settoggleState] = useState(0);
+
+	const toggleTab = (index) => {
+		if (toggleState == index) {
+			return settoggleState(null);
+		}
+		settoggleState(index);
+	};
 	return (
 		<footer className={`${styles.main_footer}`}>
 			<div className={`${styles.bg_footer}`}>
@@ -28,8 +38,8 @@ const Footer = () => {
 						<div className={`${styles.footerMenuFlex}`}>
 							<div className={`${styles.footerMenuItem_left}`}>
 								<div className={`${styles.footerLogo}`}>
-									<Link href="">
-										<img src={csml_logo.src} alt="logo" />
+									<Link href="/">
+										<a><img src={csml_logo.src} alt="logo" /></a>
 									</Link>
 								</div>
 							</div>
@@ -37,56 +47,111 @@ const Footer = () => {
 								<div className={`${styles.footerMenuInnerFlex}`}>
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
 										<li>
-											<Link href="">Home</Link>
+											<Link href="/about">About Us</Link>
+										</li>
+										<li
+											className={`${styles.sub_menu_box} ${
+												toggleState === 1 && styles.drop_down_active
+											}`}
+											onClick={() => toggleTab(1)}
+										>
+											<div className={`${styles.sub_menu_flex} d_f`}>
+												<a className="">Product portfolio</a>
+												<img
+													src={white_down_arrow.src}
+													className={`${styles.white_down_arrow}`}
+													alt="down"
+												/>
+											</div>
+											<div className={`${styles.sub_menu_list}`}>
+												<p>
+													<Link href="/product/brunswick-bowling">
+														<a className="">Brunswick Bowling</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/product/amusement-games">
+														<a className="">Amusement Games</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/product/trampoline">
+														<a className="">Trampoline</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/product/softplay">
+														<a className="">Soft Play</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/product/laser-tag">
+														<a className="">Laser Tag</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/product/go-karting">
+														<a className="">Go Karting</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/product/intercard/debit-card-system">
+														<a className="">Intercard</a>
+													</Link>
+												</p>
+											</div>
 										</li>
 										<li>
-											<Link href="/about">About CSML</Link>
+											<Link href="/new-releases">New Releases</Link>
 										</li>
-										<li>
-											<Link href="">Brunswick Bowling</Link>
-										</li>
-										<li>
-											<Link href="">Amusement Games</Link>
-										</li>
-										<li>
-											<Link href="">Sodikart</Link>
-										</li>
-										<li>
-											<Link href="">Intercard</Link>
-										</li>
-										<li>
-											<Link href="">Build A Center</Link>
+										<li
+											className={`${styles.sub_menu_box} ${
+												toggleState === 2 && styles.drop_down_active
+											}`}
+											onClick={() => toggleTab(2)}
+										>
+											<div className={`${styles.sub_menu_flex} d_f`}>
+												<a className="">Services</a>
+												<img
+													src={white_down_arrow.src}
+													className={`${styles.white_down_arrow}`}
+													alt="down"
+												/>
+											</div>
+											<div className={`${styles.sub_menu_list}`}>
+												<p>
+													<Link href="/services/service-consultancy">
+														<a className="">Consultancy Services</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/services/service-management">
+														<a className="">Management Contract </a>
+													</Link>
+												</p>
+											</div>
 										</li>
 									</ul>
 
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
 										<li>
-											<Link href="">Maintain A Center</Link>
+											<Link href="/project">Projects</Link>
 										</li>
 										<li>
-											<Link href="">Manage A Center</Link>
+											<Link href="/career">Careers</Link>
 										</li>
 										<li>
-											<Link href="">Upgrade A Center</Link>
+											<Link href="/contact">Contact Us</Link>
 										</li>
 										<li>
-											<Link href="">New Releases</Link>
-										</li>
-										<li>
-											<Link href="">Must Have</Link>
-										</li>
-										<li>
-											<Link href="">Projects</Link>
-										</li>
-										<li>
-											<Link href="">Contact Us</Link>
+											<Link href="/blogs">Blog</Link>
 										</li>
 									</ul>
 									
 								</div>
 							</div>
 							<div className={`${styles.footerMenuItem_right}`}>
-								<p className="text_xs color_white pb_20">Lorem Ipsum is simply dummy text of the printing</p>
+								<p className="text_xs color_white pb_20 l_h_6">Subscribe now to stay updated on industry trends and insights for your FEC's success.</p>
 								<form>
 									<div className={`${styles.input_group}`}>
 										<input className={`${styles.input_field}`} type="email" name="email" id="email" placeholder="Your-email@example.com"></input>
@@ -96,7 +161,7 @@ const Footer = () => {
 										</button>
 									</div>
 								</form>
-								<div className={`${styles.social_media} pt_60`}>
+								<div className={`${styles.social_media} pt_30`}>
 									<h5 className="text_xs text_400 color_white pb_20 opacity_two">Follow Us on</h5>
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
 										<li>
