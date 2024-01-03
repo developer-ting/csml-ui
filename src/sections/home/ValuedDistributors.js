@@ -23,13 +23,14 @@ import funshare from "../../../public/img/home/funshare.png";
 import cheer from "../../../public/img/home/cheer.png";
 
 /** Home Hero Section */
-export default function ValuedDistributors() {
+export default function ValuedDistributors({ valuedData }) {
+	console.log(valuedData);
 	var settings = {
 		dots: true,
 		arrows: false,
 		infinite: true,
 		slidesToShow: 4,
-		slidesToScroll: 3,
+		slidesToScroll: 1,
 		autoplay: true,
 		pauseOnHover: false,
 		speed: 1000,
@@ -38,7 +39,7 @@ export default function ValuedDistributors() {
 				breakpoint: 1199,
 				settings: {
 					slidesToShow: 3,
-					slidesToScroll: 3,
+					slidesToScroll: 1,
 				},
 			},
 			{
@@ -69,36 +70,23 @@ export default function ValuedDistributors() {
 				</div>
 				<div
 					className={`${styles.valued_distributors_border} border_animation white_border_animation toTop`}
-					data-scroll>
+					data-scroll
+				>
 					<div className="dot_one dots_p"></div>
 					<div className="dot_two dots_p"></div>
 					<div className="dot_three dots_p"></div>
 					<div className={`${styles.valued_logo}`}>
 						<Slider {...settings}>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={sodikart.src} alt="logo" />
-							</div>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={sega_logo.src} alt="logo" />
-							</div>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={brunswick.src} alt="logo" />
-							</div>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={tm_logo.src} alt="logo" />
-							</div>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={raw_logo.src} alt="logo" />
-							</div>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={lai_logo.src} alt="logo" />
-							</div>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={funshare.src} alt="logo" />
-							</div>
-							<div className={`${styles.valued_item}`}>
-								<img className="" src={cheer.src} alt="logo" />
-							</div>
+							{valuedData.map((item) => {
+								return (
+									<div className={`${styles.valued_item}`}>
+										<img
+											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ValuedLogos.data.attributes.url}`}
+											alt="logo"
+										/>
+									</div>
+								);
+							})}
 						</Slider>
 					</div>
 				</div>
