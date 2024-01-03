@@ -22,11 +22,20 @@
         .for_item{
             max-width: 760px;
             margin: auto;
+            @media (max-width: 767px) {
+                padding-bottom: 0;
+            }
         }
         .for_item_full{
             max-width: 100%;
+            @media (max-width: 767px) {
+                padding-bottom: 0;
+            }
         }
         .nav_item{
+            @media (max-width: 767px) {
+                margin-top: -20px;
+            }
             :global(.border_animation){
              
              @media (max-width: 767px) {

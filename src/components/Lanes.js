@@ -47,8 +47,8 @@ const Lanes = (data) => {
 			{
 				breakpoint: 767,
 				settings: {
-					autoplay: true,
-					slidesToShow: 1,
+					// autoplay: true,
+					slidesToShow: 2,
 					// slidesToScroll: 1,
 					variableWidth: true,
 				},

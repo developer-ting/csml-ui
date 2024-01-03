@@ -5,10 +5,16 @@
     .Lane_accessories{
         .slider_section{
             .slid_item{
-                width: 65vw !important;
-								@media (max-width: 1199px) {
-									width: 83vw !important;
-								}
+                width: 48vw !important;
+				@media (min-width: 1200px) and (max-width: 1680px) {
+					width: 65vw !important;
+					}
+					@media only screen and (max-width: 767px) {
+					width: 85vw !important;
+				}
+				@media (min-width: 768px) and (max-width: 1200px) {
+					width: 90vw !important;
+				  }
             }
         }
         
