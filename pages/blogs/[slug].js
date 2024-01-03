@@ -18,6 +18,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import parse from "html-react-parser";
+import { FacebookShareButton, TwitterShareButton } from "react-share";
 
 // STYLES //
 import styles from "../../src/styles/pages/Blogs.module.scss";
@@ -32,6 +33,13 @@ import instagram from "../../public/img/instagram.svg";
 
 /** Blog Page */
 export default function BlogInside({ BlogData, RelatedBlogData }) {
+	const [blogURL, setBlogURL] = useState("");
+
+	useEffect(() => {
+		const url = window.location.href;
+		setBlogURL(url);
+	}, []);
+
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -49,149 +57,6 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 			<Loader />
 			<main className={`${styles.BlogInsideSection}`}>
 				<section className="coming_from_cms dot_animation_box page_space">
-					{/* <div className="container">
-						<h1>
-							Striking Gold: A Comprehensive Guide to Elevating Your Bowling Center
-							with Brunswick Bowling Equipment
-						</h1>
-						<br />
-						<div className="blog_info">
-							<h6>27 Nov, 2023</h6>
-							<h6>5 Min Read</h6>
-							<div className="share_sec">
-								<h6>Share</h6>
-								<div className="share_icon">
-									<a href="">
-										<img src={twitter.src} alt="" />
-									</a>
-									<a href="">
-										<img src={facebook.src} alt="" />
-									</a>
-									<a href="">
-										<img src={instagram.src} alt="" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<br />
-						<img src={BlogBanner.src} alt="Blog Inside Img" />
-						<br />
-						<p>
-							In the vibrant world of leisure and entertainment, few activities
-							encapsulate the timeless charm and camaraderie that bowling brings to
-							enthusiasts. Bowling transcends generational boundaries, acting as a
-							conduit that unites people for moments of joy, laughter, and friendly
-							competition. For Bowling Center Owners, recognizing the profound impact
-							of curating an environment that ensures patron safety while enhancing
-							their overall experience is paramount. This recognition transforms the
-							selection of bowling equipment from a mere choice into a pivotal
-							decision. In the realms of reliability, innovation, and quality, one name
-							consistently rises above the rest—Brunswick Bowling.
-						</p>
-						<br />
-						<br />
-						<h3>A Legacy of Innovation</h3>
-						<br />
-						<p>
-							The interwoven destinies of Brunswick and Bowling find a parallel in the
-							association of CSML with Brunswick Bowling in India & SAARC Region. The
-							ascent of Bowling is intricately linked to the ascendancy of Brunswick.
-							Since its inception, Brunswick and Bowling have shared a common vision.
-							Brunswick has been a trailblazer, introducing game-changing innovations,
-							and this legacy manifests in the excellence of its bowling equipment.
-						</p>
-						<br />
-						<p>
-							The relentless pursuit of perfection in equipment design has endowed
-							Brunswick with ingenuity unparalleled by any other manufacturer.
-							Intelligence, functionality, and overall value are the pillars of
-							Brunswick's pride, evident in every piece of Bowling Equipment they
-							produce.
-						</p>
-						<br />
-						<br />
-
-						<h3>Global Reach, Local Expertise</h3>
-						<br />
-						<p>
-							Brunswick's commitment to global excellence is highlighted by its
-							extensive influence. This commitment ensures that the equipment reaching
-							your Bowling Center is backed by a legacy of craftsmanship and
-							technological prowess.
-						</p>
-						<br />
-						<p>
-							CSML's journey with Brunswick Bowling Products USA has evolved
-							significantly, culminating in their role as Exclusive Distributors for
-							India & SAARC Region. CSML, in collaboration with Brunswick Bowling, has
-							been at the forefront of shaping and promoting the Bowling Industry,
-							Centers & Alleys in India & SAARC Region.
-						</p>
-						<br />
-						<br />
-
-						<h3>The CSML Advantage</h3>
-						<br />
-						<p>
-							As a Bowling Center Owner, your investment extends beyond the acquisition
-							of equipment; it encapsulates an entire experience. CSML, in synergy with
-							Brunswick Bowling, offers more than just state-of-the-art bowling
-							equipment. It represents an investment in safety, entertainment, and the
-							seamless operation that distinguishes your Bowling Center from others.
-						</p>
-						<br />
-						<p>
-							Safety takes precedence in any leisure facility, and with Brunswick
-							Bowling equipment, you guarantee a secure and enjoyable experience for
-							your patrons. From high-quality bowling balls to cutting-edge pinsetters,
-							each piece of equipment is meticulously designed for precision and
-							durability, adhering to the highest safety standards in the industry.
-						</p>
-						<br />
-						<p>
-							Entertainment forms the nucleus of every successful Bowling Center, and
-							Brunswick's commitment to innovation ensures an immersive experience for
-							your patrons. Whether through the sleek design of the lanes, interactive
-							scoring systems, or dynamic lighting options, each element is crafted to
-							elevate the entertainment quotient of your center.
-						</p>
-						<br />
-						<br />
-
-						<h3>Invest Wisely, Reap Rewards</h3>
-						<br />
-						<p>
-							Acknowledging the financial considerations as a Bowling Center Owner,
-							CSML, in collaboration with Brunswick Bowling, presents not merely
-							equipment but a comprehensive solution tailored to your needs. The
-							Brunswick Bowling set up cost is an investment in the success and
-							longevity of your center.
-						</p>
-						<br />
-						<p>
-							Choosing Brunswick Bowling equipment is an investment in the reputation
-							of your Bowling Center. It signifies your commitment to providing a
-							top-notch bowling experience that entices patrons to return for more.
-							When you opt for Brunswick, you're not just acquiring equipment; you're
-							investing in the triumph of your business.
-						</p>
-						<br />
-						<br />
-
-						<h3>In Conclusion</h3>
-						<br />
-						<p>
-							The meticulous selection of bowling equipment marks a transformative
-							decision for your Bowling Center. Through CSML, exclusive partnership
-							with Brunswick Bowling, you're not merely striking gold; you're ensuring
-							a golden experience for your patrons. Safety, entertainment, and a
-							prudent investment—choose Brunswick Bowling equipment for a winning
-							combination that propels your Bowling Center into a league of its own.
-							This comprehensive guide empowers Bowling Center Owners with the insights
-							needed to make informed decisions, ensuring a legacy of excellence in the
-							realm of bowling entertainment.
-						</p>
-					</div> */}
 					<div className="container">
 						<h1>{BlogData?.BlogHeading}</h1>
 						<br />
@@ -201,15 +66,19 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 							<div className="share_sec">
 								<h6>Share</h6>
 								<div className="share_icon">
-									<a href="">
-										<img src={twitter.src} alt="" />
-									</a>
-									<a href="">
-										<img src={facebook.src} alt="" />
-									</a>
-									<a href="">
+									<TwitterShareButton url={blogURL}>
+										<a>
+											<img src={twitter.src} alt="" />
+										</a>
+									</TwitterShareButton>
+									<FacebookShareButton url={blogURL}>
+										<a>
+											<img src={facebook.src} alt="" />
+										</a>
+									</FacebookShareButton>
+									{/* <a href="">
 										<img src={instagram.src} alt="" />
-									</a>
+									</a> */}
 								</div>
 							</div>
 						</div>
