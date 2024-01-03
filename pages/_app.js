@@ -22,13 +22,13 @@ function MyApp({ Component, pageProps }) {
 				<meta name="og:description" content="CSML" />
 				<meta
 					property="og:image"
-					content="https://csml-frontend.netlify.app/og-image.jpg"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
 				/>
 				<meta
 					property="og:image:secure_url"
-					content="https://csml-frontend.netlify.app/og-image.jpg"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
 				/>
-				<link rel="icon" href="/favicon.png" />
+				<link rel="icon" href="/img/favicon.png" />
 			</Head>
 			<Component {...pageProps} />
 		</>
