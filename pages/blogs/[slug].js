@@ -165,7 +165,5 @@ export async function getStaticProps({ params }) {
 			RelatedBlogData: RelatedBlogData.data,
 		},
 		revalidate: 10,
-		paths,
-		fallback: "blocking",
 	};
 }
