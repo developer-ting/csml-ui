@@ -164,5 +164,6 @@ export async function getStaticProps({ params }) {
 			BlogData: BlogData.data[0].attributes,
 			RelatedBlogData: RelatedBlogData.data,
 		},
+		revalidate: 10,
 	};
 }

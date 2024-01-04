@@ -13,11 +13,11 @@ import styles from "../styles/components/Footer.module.scss";
 // IMAGES //
 import csml_logo from "../../public/img/csml_logo.svg";
 import ting_logo from "../../public/img/ting_logo.svg";
-import arrow from "../../public/img/arrow.svg"
-import facebook from "../../public/img/facebook.svg"
-import twitter from "../../public/img/twitter.svg"
-import instagram from "../../public/img/instagram.svg"
-import youtube from "../../public/img/youtube.svg"
+import arrow from "../../public/img/arrow.svg";
+import facebook from "../../public/img/facebook.svg";
+import twitter from "../../public/img/twitter.svg";
+import instagram from "../../public/img/instagram.svg";
+import youtube from "../../public/img/youtube.svg";
 import white_down_arrow from "../../public/img/white_down_arrow.svg";
 
 /** Footer Component */
@@ -39,7 +39,9 @@ const Footer = () => {
 							<div className={`${styles.footerMenuItem_left}`}>
 								<div className={`${styles.footerLogo}`}>
 									<Link href="/">
-										<a><img src={csml_logo.src} alt="logo" /></a>
+										<a>
+											<img src={csml_logo.src} alt="logo" />
+										</a>
 									</Link>
 								</div>
 							</div>
@@ -147,41 +149,63 @@ const Footer = () => {
 											<Link href="/blogs">Blog</Link>
 										</li>
 									</ul>
-									
 								</div>
 							</div>
 							<div className={`${styles.footerMenuItem_right}`}>
-								<p className="text_xs color_white pb_20 l_h_6">Subscribe now to stay updated on industry trends and insights for your FEC's success.</p>
+								<p className="text_xs color_white pb_20 l_h_6">
+									Subscribe now to stay updated on industry trends and insights for your
+									FEC's success.
+								</p>
 								<form>
 									<div className={`${styles.input_group}`}>
-										<input className={`${styles.input_field}`} type="email" name="email" id="email" placeholder="Your-email@example.com"></input>
+										<input
+											className={`${styles.input_field}`}
+											type="email"
+											name="email"
+											id="email"
+											placeholder="Your-email@example.com"
+										></input>
 										<button className={`${styles.btn_arrow} btn_arrow`}>
-											<span className={`${styles.arrow_one} arrow_one`}><img src={arrow.src} /></span>
-											<span className={`${styles.arrow_two} arrow_two`}><img src={arrow.src} /></span>
+											<span className={`${styles.arrow_one} arrow_one`}>
+												<img src={arrow.src} />
+											</span>
+											<span className={`${styles.arrow_two} arrow_two`}>
+												<img src={arrow.src} />
+											</span>
 										</button>
 									</div>
 								</form>
 								<div className={`${styles.social_media} pt_30`}>
-									<h5 className="text_xs text_400 color_white pb_20 opacity_two">Follow Us on</h5>
+									<h5 className="text_xs text_400 color_white pb_20 opacity_two">
+										Follow Us on
+									</h5>
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
 										<li>
-											<Link href="https://www.facebook.com/CompleteSportsAndManagement/" >
-												<a target="_blank"><img src={facebook.src} alt="" /></a>
+											<Link href="https://www.facebook.com/CompleteSportsAndManagement/">
+												<a target="_blank">
+													<img src={facebook.src} alt="" />
+												</a>
 											</Link>
 										</li>
 										<li>
 											<Link href="https://twitter.com/CSMLIndia">
-												<a target="_blank"><img src={twitter.src} alt="" /></a>
+												<a target="_blank">
+													<img src={twitter.src} alt="" />
+												</a>
 											</Link>
 										</li>
 										<li>
 											<Link href="https://www.instagram.com/csmlindia/">
-												<a target="_blank"><img src={instagram.src} alt="" /></a>
+												<a target="_blank">
+													<img src={instagram.src} alt="" />
+												</a>
 											</Link>
 										</li>
 										<li>
 											<Link href="https://www.linkedin.com/company/csmlindia/">
-												<a target="_blank"><img src={youtube.src} alt="" /></a>
+												<a target="_blank">
+													<img src={youtube.src} alt="" />
+												</a>
 											</Link>
 										</li>
 									</ul>
@@ -198,7 +222,9 @@ const Footer = () => {
 							</div>
 							<div className={`${styles.footerBtmItem}`}>
 								<Link href="https://www.ting.in/">
-									<a className="text_reg text_500" target="_blank" rel="noreferrer"><img src={ting_logo.src} alt="" /></a>
+									<a className="text_reg text_500" target="_blank" rel="noreferrer">
+										<img src={ting_logo.src} alt="" />
+									</a>
 								</Link>
 							</div>
 						</div>
