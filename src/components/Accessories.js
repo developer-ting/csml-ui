@@ -21,7 +21,6 @@ import Accessories_img from "../../public/img/brunswick-bowling/accessories.jpg"
 
 /** Home Hero Section */
 const Accessories = ({ data }) => {
-	console.log(data.data);
 	const sliderRef = useRef();
 	const [count, setCount] = useState(1);
 
@@ -36,6 +35,17 @@ const Accessories = ({ data }) => {
 		pauseOnHover: false,
 		speed: 1000,
 		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					// variableWidth: false,
+					autoplay: true,
+				},
+			},
+		],
 		afterChange: (i) => {
 			setCount(i + 1);
 			fillProgress(i + 1);
@@ -82,7 +92,6 @@ const Accessories = ({ data }) => {
 							{data.data[0].attributes.LaneAccessorie.map((item, ind) => {
 								return (
 									<div className={`${styles.slid_item} color_white`}>
-										{console.log(item.title)}
 										<AccessoriesCard
 											title={item.title}
 											boxImg={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.ImageUrl.data.attributes.url}`}
@@ -107,7 +116,6 @@ const Accessories = ({ data }) => {
 							{data.data[0].attributes.MaskingUnits.map((item, ind) => {
 								return (
 									<div className={`${styles.slid_item} color_white`}>
-										{console.log(item.title)}
 										<AccessoriesCard
 											title={item.title}
 											boxImg={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.ImageUrl.data.attributes.url}`}

@@ -22,7 +22,6 @@ import services_banner from "../../public/img/project/banner.jpg";
 
 /** tab button*/
 const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
-	console.log(imgData.data.data);
 	const sliderRef = useRef();
 	const [showPopup, setShowPopup] = useState(false);
 
@@ -62,6 +61,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 		// ),
 	};
 
+	// console.log(imgData);
 	return (
 		<>
 			<div className="commonBorderAnimation">
@@ -70,7 +70,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 				</div>
 				<div className={`${styles.product_bottom_box} text_btn_sec f_r_aj_between`}>
 					<h5 className="text_md text_500 color_white">{title}</h5>
-					<a href="#" rel="noreferrer">
+					<div rel="noreferrer">
 						<button className="btn_arrow" onClick={() => openPopup(index)}>
 							<span className={`${styles.arrow_one} arrow_one`}>
 								<img src={arrow.src} />
@@ -79,7 +79,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 								<img src={arrow.src} />
 							</span>
 						</button>
-					</a>
+					</div>
 					<div className={`${red && styles.color_red} dot_two dots_p`}></div>
 					<div className={`${red && styles.color_red} dot_three dots_p`}></div>
 				</div>
@@ -95,10 +95,12 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 								</button>
 							</div>
 							<div className={styles.popup_body}>
-								<h4 className="heading_text_55 pb_20">TORQ 03</h4>
+								<h4 className="heading_text_55 pb_20">
+									{imgData.attributes.productTitle}
+								</h4>
 								<div className={`${styles.popup_flx}`}>
 									<Slider {...settings} ref={sliderRef}>
-										{imgData.data.data[0].attributes.ImagePopUrl.data.map((item, ind) => {
+										{imgData.attributes.ImagePopUrl.data.map((item, ind) => {
 											return (
 												<div className={`${styles.slid_item} color_white`}>
 													<img
@@ -111,7 +113,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 								</div>
 								<div className={`${styles.li_text} ptb_30`}>
 									<h4 className="text_md text_500 pb_20">Project Highlights</h4>
-									{parse(imgData.data.data[0].attributes.popDesc)}
+									{parse(imgData.attributes.popDesc)}
 								</div>
 							</div>
 						</div>

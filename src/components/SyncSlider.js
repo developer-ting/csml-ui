@@ -37,8 +37,8 @@ const SyncSlider = (data) => {
 			{
 				breakpoint: 767,
 				settings: {
-					autoplay: true,
-					slidesToShow: 1,
+					autoplay: false,
+					slidesToShow: 2,
 					// slidesToScroll: 1,
 					variableWidth: true,
 				},
@@ -53,10 +53,19 @@ const SyncSlider = (data) => {
 			{
 				breakpoint: 767,
 				settings: {
-					autoplay: true,
+					// autoplay: true,
 					slidesToShow: 1,
 					// slidesToScroll: 1,
 					variableWidth: true,
+				},
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					autoplay: true,
+					slidesToShow: 2,
+					// slidesToScroll: 1,
+					// variableWidth: true,
 				},
 			},
 		],

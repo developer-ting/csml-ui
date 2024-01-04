@@ -10,11 +10,7 @@ import Header from "../../src/components/Header";
 import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
-import {
-	laneOilingMachine,
-	centerStageFurniture,
-	pinsetters,
-} from "@/data/data-file-1";
+import { centerStageFurniture } from "@/data/data-file-1";
 
 import Lanes from "@/components/Lanes";
 import SyncSlider from "@/components/SyncSlider";
@@ -43,8 +39,13 @@ export default function BrunswickBowling({
 	laneSliderData,
 	sparesSliderData,
 	accessoriesSliderData,
+	diverseData,
+	syncscoringsData,
+	sparkimmersivesData,
+	oilingmachinesData,
+	lanemaintenancesData,
+	pinsettersData,
 }) {
-	// console.log(laneSliderData, "asd");
 	return (
 		<div>
 			<Header />
@@ -63,9 +64,9 @@ export default function BrunswickBowling({
 							setup with customizable bowling alleys."
 				/>
 
-				<DiverseBowling />
-				<Sync />
-				<SparkImmersive />
+				<DiverseBowling data={diverseData} />
+				<Sync data={syncscoringsData} youTube={sparkimmersivesData} />
+				<SparkImmersive data={sparkimmersivesData} />
 				<Lanes data={laneSliderData} />
 				<section className="pt_60 pb_100">
 					<div className="container">
@@ -73,13 +74,13 @@ export default function BrunswickBowling({
 							Pinsetters
 						</h2>
 						<div className={`${styles.pinsetters}`}>
-							{pinsetters.map((item, index) => (
+							{pinsettersData.data.map((item, index) => (
 								<CardHoverYellow
 									full
 									key={index}
-									title={item.title}
-									desc={item.desc}
-									boxImg={item.image.src}
+									title={item.attributes.title}
+									desc={item.attributes.desc}
+									boxImg={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.Image.data.attributes.url}`}
 								/>
 							))}
 						</div>
@@ -100,19 +101,19 @@ export default function BrunswickBowling({
 				</section>
 
 				<SyncSlider data={sparesSliderData} />
-				<LaneMaintenance />
+				<LaneMaintenance laneData={lanemaintenancesData} />
 
 				<section className="pt_100 pb_60">
 					<div className="container">
 						<h2 className="heading_text_55 pb_50 toTop" data-scroll>
 							Lane Oiling Machine
 						</h2>
-						{laneOilingMachine.map((item, index) => (
+						{oilingmachinesData.data.map((item, index) => (
 							<ImagePara
 								key={index}
-								title={item.title}
-								desc={item.desc}
-								boxImg={item.image.src}
+								title={item.attributes.title}
+								desc={item.attributes.desc}
+								boxImg={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.Image.data.attributes.url}`}
 							/>
 						))}
 					</div>
@@ -139,15 +140,51 @@ export async function getStaticProps() {
 		`${process.env.STRAPI_DO_BASE_URL}/api/accessories?populate[0]=LaneAccessorie.ImageUrl&populate[1]=MaskingUnits.ImageUrl`,
 		ServerHeaders
 	);
+	const diverse = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/diverse-bowlings?populate=*`,
+		ServerHeaders
+	);
+	const syncscorings = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/sync-scorings?populate=*`,
+		ServerHeaders
+	);
+	const sparkimmersives = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/spark-immersives?populate=*`,
+		ServerHeaders
+	);
+	const oilingmachines = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/oiling-machines?populate=*`,
+		ServerHeaders
+	);
+	const lanemaintenances = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/lane-maintenances?populate=*`,
+		ServerHeaders
+	);
+	const pinsetters = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/pinsetters?populate=*`,
+		ServerHeaders
+	);
 	const laneSliderData = await lanes.json();
 	const sparesSliderData = await sparesConsummables.json();
 	const accessoriesSliderData = await accessories.json();
+	const diverseData = await diverse.json();
+	const syncscoringsData = await syncscorings.json();
+	const sparkimmersivesData = await sparkimmersives.json();
+	const oilingmachinesData = await oilingmachines.json();
+	const lanemaintenancesData = await lanemaintenances.json();
+	const pinsettersData = await pinsetters.json();
 
 	return {
 		props: {
 			laneSliderData,
 			sparesSliderData,
 			accessoriesSliderData,
+			diverseData,
+			syncscoringsData,
+			sparkimmersivesData,
+			oilingmachinesData,
+			lanemaintenancesData,
+			pinsettersData,
 		},
 		revalidate: 10,
 	};
