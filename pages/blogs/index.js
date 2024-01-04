@@ -28,6 +28,7 @@ import arrow from "../../public/img/arrow.svg";
 /** Blog Page */
 export default function Blog({ BlogData }) {
 	// console.log(BlogData);
+
 	useEffect(() => {
 		ScrollOut({
 			once: true,
