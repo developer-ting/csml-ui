@@ -995,6 +995,14 @@ picture {
 			}
 			img {
 				max-width: unset;
+				object-fit: cover;
+				object-position: center;
+				height: 100vh;
+			}
+			.btn_arrow{
+				img{
+					height: auto;
+				}
 			}
 		}
 	}
