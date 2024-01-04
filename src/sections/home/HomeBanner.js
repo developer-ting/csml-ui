@@ -29,7 +29,7 @@ import cricle_arrow from "../../../public/img/cricle_arrow.svg";
 
 /** Home Hero Section */
 export default function HomeBanner({ data }) {
-	const [useSlider, setUseSlider] = useState(true);
+	const [useSlider, setUseSlider] = useState(data.attributes.isSlider);
 	useEffect(() => {
 		let anim = document.querySelector(".home_banner_animation");
 		anim.classList.add("home_banner_scroll");
@@ -49,6 +49,7 @@ export default function HomeBanner({ data }) {
 		speed: 2000,
 		autoplaySpeed: 7000,
 	};
+	const bannerSlider = data.attributes.homeBannerSlider;
 	return (
 		<section className={`${styles.home_banner_wrap}`}>
 			<div
@@ -56,15 +57,9 @@ export default function HomeBanner({ data }) {
 			>
 				{useSlider ? (
 					<Slider {...settings}>
-						{data.map((item) => {
-							{
-								console.log(item.attributes.BannerTitle);
-							}
+						{bannerSlider.map((item) => {
 							return (
-								<div
-									className={`${styles.home_banner_item}`}
-									key={item.attributes.BannerPara}
-								>
+								<div className={`${styles.home_banner_item}`} key={item.BannerPara}>
 									<div className={`${styles.banner_img}`}>
 										<picture>
 											<source media="(max-width:465px)" srcSet={home_banner.src} />
@@ -73,9 +68,9 @@ export default function HomeBanner({ data }) {
 									</div>
 									<div className={`${styles.banner_content}`}>
 										<h1 className="heading_text_70 color_white pb_40">
-											{item.attributes.BannerTitle}
+											{item.BannerTitle}
 										</h1>
-										<p className="paraTxt color_white">{item.attributes.BannerPara}</p>
+										<p className="paraTxt color_white">{item.BannerPara}</p>
 									</div>
 								</div>
 							);
