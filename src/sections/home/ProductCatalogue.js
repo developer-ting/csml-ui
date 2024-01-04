@@ -208,10 +208,10 @@ export default function ProductCatalogue() {
 		// Event listeners
 		window.addEventListener("resize", handleResize);
 
-		return () => {
-			// Clean up event listeners on unmount
-			window.removeEventListener("resize", handleResize);
-		};
+		// return () => {
+		// 	// Clean up event listeners on unmount
+		// 	window.removeEventListener("resize", handleResize);
+		// };
 	}, []);
 	return (
 		<section
