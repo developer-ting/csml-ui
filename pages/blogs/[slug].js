@@ -19,6 +19,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import parse from "html-react-parser";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
+import { format } from "date-fns";
 
 // STYLES //
 import styles from "../../src/styles/pages/Blogs.module.scss";
@@ -45,6 +46,7 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 			once: true,
 		});
 	}, []);
+	const mainDate = BlogData?.BlogDate;
 	return (
 		<div>
 			<Header />
@@ -54,8 +56,9 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 					<div className="container">
 						<h1>{BlogData?.BlogHeading}</h1>
 						<br />
+
 						<div className="blog_info">
-							<h6>{BlogData?.BlogDate}</h6>
+							<h6>{format(new Date(mainDate), "dd MMMM yyyy")}</h6>
 							<h6>5 Min Read</h6>
 							<div className="share_sec">
 								<h6>Share</h6>
@@ -91,6 +94,8 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 						<h2 className="heading_text_55 text_center">Others Blog & Articles</h2>
 						<div className={`${styles.blog_info_sec} f_w_j pt_50`}>
 							{RelatedBlogData?.map((item) => {
+								const dateString = item.attributes.BlogDate;
+								const formattedDate = format(new Date(dateString), "dd MMMM yyyy");
 								return (
 									<div
 										className={`${styles.blog_info} commonBorderAnimation whiteCommonBorderAnimation mb_80`}
@@ -104,7 +109,8 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 										</div>
 										<div className={`${styles.blog_info_style}`}>
 											<h6 className="paraTxt_16 color_black_opacity pt_20 text_500">
-												{item.attributes.BlogDate}
+												{/* {item.attributes.BlogDate} */}
+												{formattedDate}
 											</h6>
 											<h4 className="text_24 text_500 pt_10 pb_30">
 												{item.attributes.BlogHeading}
