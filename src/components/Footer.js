@@ -152,7 +152,7 @@ const Footer = () => {
 								</div>
 							</div>
 							<div className={`${styles.footerMenuItem_right}`}>
-								<p className="text_xs color_white pb_20 l_h_6">
+								<p className="text_xs color_white opacity_one pb_20 l_h_6">
 									Subscribe now to stay updated on industry trends and insights for your
 									FEC's success.
 								</p>
