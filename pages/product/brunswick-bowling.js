@@ -21,6 +21,7 @@ import Sync from "@/components/Sync";
 import DiverseBowling from "@/components/DiverseBowling";
 import SparkImmersive from "@/components/SparkImmersive";
 import LaneMaintenance from "@/components/LaneMaintenance";
+import SyncVideo from "@/components/SyncVideo";
 // SECTIONS //
 
 // PLUGINS //
@@ -65,7 +66,8 @@ export default function BrunswickBowling({
 				/>
 
 				<DiverseBowling data={diverseData} />
-				<Sync data={syncscoringsData} youTube={sparkimmersivesData} />
+				<Sync data={syncscoringsData} />
+				<SyncVideo youTube={sparkimmersivesData} />
 				<SparkImmersive data={sparkimmersivesData} />
 				<Lanes data={laneSliderData} />
 				<section className="pt_60 pb_100">

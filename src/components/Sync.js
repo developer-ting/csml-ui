@@ -30,7 +30,7 @@ import video_img from "../../public/img/brunswick-bowling/video_img.jpg";
 import play from "../../public/img/brunswick-bowling/play.svg";
 
 /** Home Hero Section */
-const Sync = ({ data, youTube }) => {
+const Sync = ({ data }) => {
 	var settings = {
 		dots: false,
 		arrows: false,
@@ -189,21 +189,6 @@ const Sync = ({ data, youTube }) => {
 						></div>
 					</div>
 				</div>
-			</div>
-			<div className={`${styles.intertainment_right} toTop`} data-scroll>
-				<LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgVideo]}>
-					<a href={youTube.data[0].attributes.youTubeLink}>
-						<div className={`${styles.video_box}`}>
-							<img
-								className={`${styles.video_img} img width_100`}
-								src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${youTube.data[0].attributes.Image.data.attributes.url}`}
-							/>
-							<div className={`${styles.video_play}`}>
-								<img src={play.src} className={`${styles.gallery_plus}`} alt="play" />
-							</div>
-						</div>
-					</a>
-				</LightGallery>
 			</div>
 		</section>
 	);
