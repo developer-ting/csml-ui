@@ -10,11 +10,17 @@
   overflow: hidden;
   
   @media only screen and (max-width: 767px) {
-    
+    margin-left: calc(var(--container_left_space) + 0px);
   }
 
   .showcase_box {
     .showcase_content {
+      @media only screen and (max-width: 1199px) {
+        width: 320px !important;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 100% !important;
+      }
       .img_box {
         // border: 1px solid #777777;
         // border-radius: 12px;

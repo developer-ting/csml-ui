@@ -100,23 +100,23 @@ const Footer = () => {
 									<h5 className="text_xs text_400 color_white pb_20 opacity_two">Follow Us on</h5>
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
 										<li>
-											<Link href="">
-												<img src={facebook.src} alt="" />
+											<Link href="https://www.facebook.com/CompleteSportsAndManagement/" >
+												<a target="_blank"><img src={facebook.src} alt="" /></a>
 											</Link>
 										</li>
 										<li>
-											<Link href="">
-												<img src={twitter.src} alt="" />
+											<Link href="https://twitter.com/CSMLIndia">
+												<a target="_blank"><img src={twitter.src} alt="" /></a>
 											</Link>
 										</li>
 										<li>
-											<Link href="">
-												<img src={instagram.src} alt="" />
+											<Link href="https://www.instagram.com/csmlindia/">
+												<a target="_blank"><img src={instagram.src} alt="" /></a>
 											</Link>
 										</li>
 										<li>
-											<Link href="">
-												<img src={youtube.src} alt="" />
+											<Link href="https://www.linkedin.com/company/csmlindia/">
+												<a target="_blank"><img src={youtube.src} alt="" /></a>
 											</Link>
 										</li>
 									</ul>
@@ -129,7 +129,7 @@ const Footer = () => {
 					<div className="container">
 						<div className={`${styles.footerBtmFlex} f_w_j a_center`}>
 							<div className={`${styles.footerBtmItem}`}>
-								<p className="text_xs">Copyright © 2023 CSML. All Rights Reserved</p>
+								<p className="text_xs">Copyright © 2024 CSML. All Rights Reserved</p>
 							</div>
 							<div className={`${styles.footerBtmItem}`}>
 								<Link href="https://www.ting.in/">

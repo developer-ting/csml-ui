@@ -58,7 +58,7 @@ export default function PartnerSuperior({ data }) {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 color_white text_500 ">Consultancy Services</h3>
-									<a href="#" rel="noreferrer">
+									<a href="/services/service-consultancy" rel="noreferrer">
 										<button className="btn_arrow">
 											<span className={`${styles.arrow_one} arrow_one`}>
 												<img src={arrow.src} />
@@ -88,7 +88,7 @@ export default function PartnerSuperior({ data }) {
 									<h3 className="text_24 color_white text_500">
 										Management Contract - Operational Excellence
 									</h3>
-									<a href="#" rel="noreferrer">
+									<a href="/services/service-management" rel="noreferrer">
 										<button className="btn_arrow">
 											<span className={`${styles.arrow_one} arrow_one`}>
 												<img src={arrow.src} />
