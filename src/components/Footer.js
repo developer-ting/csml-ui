@@ -58,7 +58,7 @@ const Footer = () => {
 											onClick={() => toggleTab(1)}
 										>
 											<div className={`${styles.sub_menu_flex} d_f`}>
-												<a className="">Product portfolio</a>
+												<a className="">Product Portfolio</a>
 												<img
 													src={white_down_arrow.src}
 													className={`${styles.white_down_arrow}`}
