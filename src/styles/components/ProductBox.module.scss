@@ -85,7 +85,10 @@
 		}
 		.popup_body {
 			.popup_flx {
+				margin: 0px -5px;
+				
 				.slid_item{
+					padding: 0px 5px;
 					height: 360px;
 					@media (max-width: 767px) {
 						height: 200px;
