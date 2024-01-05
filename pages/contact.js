@@ -34,7 +34,7 @@ export default function Contact() {
 		formState: { errors },
 	} = useForm();
 
-	const onSubmit = (data) => {
+	const onSubmit = async (data) => {
 		const Headers = {
 			method: "POST",
 			headers: {
@@ -59,6 +59,32 @@ export default function Contact() {
 		}
 
 		sendData();
+
+		const { Name, Email, CompanyName, PhoneNumber, Inquiry, Comments } = data;
+
+		await fetch("/api/sendEmail", {
+			method: "POST",
+			body: JSON.stringify({
+				Name,
+				Email,
+				CompanyName,
+				PhoneNumber,
+				Inquiry,
+				Comments,
+			}),
+		})
+			.then((res) => res.json())
+			.then((data) => {
+				console.log(data);
+				if (data && data.id) {
+					alert(
+						`Thank you for your interest ${Name}! We will get back to you soon!`
+					);
+				}
+			})
+			.catch((err) => {
+				alert("Ooops! unfortunately some error has occurred.");
+			});
 	};
 	useEffect(() => {
 		ScrollOut({

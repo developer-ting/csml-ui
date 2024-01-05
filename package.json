@@ -23,6 +23,7 @@
 		"react-share": "^5.0.3",
 		"react-slick": "^0.29.0",
 		"react-tabs": "^6.0.2",
+		"resend": "^2.1.0",
 		"sass": "^1.54.9",
 		"scroll-out": "^2.2.12",
 		"slick-carousel": "^1.8.1"
