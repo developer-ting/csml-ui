@@ -1,4 +1,5 @@
 // MODULES //
+import { useForm } from "react-hook-form";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 // COMPONENTS //
@@ -30,6 +31,43 @@ const Footer = () => {
 		}
 		settoggleState(index);
 	};
+
+	const [isSubmited, setIsSubmited] = useState(false);
+
+	const {
+		register,
+		handleSubmit,
+		reset,
+		formState: { errors },
+	} = useForm();
+
+	const onSubmit = async (data) => {
+		const Headers = {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				Authorization: `Bearer ${process.env.NEXT_PUBLIC_AUTH_TOKEN}`,
+			},
+			body: JSON.stringify({
+				data: data,
+			}),
+		};
+
+		async function sendData() {
+			await fetch(
+				`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/footer-newsletter-forms`,
+				Headers
+			)
+				.then((data) => data.json())
+				.then((data) => {
+					reset(), setIsSubmited(true);
+				})
+				.catch((err) => console.log(err));
+		}
+
+		sendData();
+	};
+
 	return (
 		<footer className={`${styles.main_footer}`}>
 			<div className={`${styles.bg_footer}`}>
@@ -156,7 +194,7 @@ const Footer = () => {
 									Subscribe now to stay updated on industry trends and insights for your
 									FEC's success.
 								</p>
-								<form>
+								<form onSubmit={handleSubmit(onSubmit)}>
 									<div className={`${styles.input_group}`}>
 										<input
 											className={`${styles.input_field}`}
@@ -164,7 +202,14 @@ const Footer = () => {
 											name="email"
 											id="email"
 											placeholder="Your-email@example.com"
+											{...register("Email", {
+												required: true,
+												pattern: /^\S+@\S+$/i,
+											})}
 										></input>
+										{errors.Email && (
+											<p className={`${styles.errors_msg}`}>This field is required</p>
+										)}
 										<button className={`${styles.btn_arrow} btn_arrow`}>
 											<span className={`${styles.arrow_one} arrow_one`}>
 												<img src={arrow.src} />
@@ -173,6 +218,12 @@ const Footer = () => {
 												<img src={arrow.src} />
 											</span>
 										</button>
+										{isSubmited && (
+											<p className={`${styles.thank_you} para_sm mt_20`}>
+												Thank you for your subscription. Stay tuned for valuable industry
+												insights and updates.
+											</p>
+										)}
 									</div>
 								</form>
 								<div className={`${styles.social_media} pt_30`}>
