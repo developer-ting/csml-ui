@@ -10,6 +10,7 @@ import InsideBanner from "@/components/InsideBanner";
 import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
 import BlackStripOverview from "@/components/BlackStripOverview";
+import { ServerHeaders } from "@/utils/RequestHeaders";
 import {
 	shindiggerPlanSmarter,
 	shindiggerCraftSteps,
@@ -29,7 +30,8 @@ import styles from "../../../src/styles/pages/product/intercard/Shindigger.modul
 //	IMAGES	//
 import shindigger_banner from "../../../public/img/product/intercard/shindigger/shindigger_banner.jpg";
 
-export default function Shindigger() {
+export default function Shindigger({ BrochureData }) {
+	// console.log(BrochureData);
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -71,9 +73,13 @@ export default function Shindigger() {
 										Click on Brochure button to know more about Shindigger
 									</div>
 									<div className={`${styles.btn_bx}`}>
-										<a href="#" rel="noreferrer">
+										<a
+											href={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${BrochureData.data.attributes.PDF.data.attributes.url}`}
+											rel="noreferrer"
+											target="_blank"
+										>
 											<span className="span_btn yellow_btn">
-												<button className="btn_project_default ">Download Brochure</button>
+												<button className="btn_project_default">Download Brochure</button>
 											</span>
 										</a>
 									</div>
@@ -130,4 +136,20 @@ export default function Shindigger() {
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	// Download Brochure
+	const BrochureRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/intercard-shindigger-brochure?populate=*`,
+		ServerHeaders
+	);
+	const BrochureData = await BrochureRes.json();
+
+	return {
+		props: {
+			BrochureData,
+		},
+		revalidate: 10,
+	};
 }
