@@ -30,6 +30,7 @@ import cricle_arrow from "../../../public/img/cricle_arrow.svg";
 /** Home Hero Section */
 export default function HomeBanner({ data }) {
 	const [useSlider, setUseSlider] = useState(data.attributes.isSlider);
+
 	useEffect(() => {
 		let anim = document.querySelector(".home_banner_animation");
 		anim.classList.add("home_banner_scroll");
@@ -50,6 +51,7 @@ export default function HomeBanner({ data }) {
 		autoplaySpeed: 7000,
 	};
 	const bannerSlider = data.attributes.homeBannerSlider;
+	console.log(data.attributes.isSlider);
 	return (
 		<section className={`${styles.home_banner_wrap}`}>
 			<div
@@ -62,8 +64,11 @@ export default function HomeBanner({ data }) {
 								<div className={`${styles.home_banner_item}`} key={item.BannerPara}>
 									<div className={`${styles.banner_img}`}>
 										<picture>
-											<source media="(max-width:465px)" srcSet={home_banner.src} />
-											<img className="width_100" src={home_banner.src} />
+											<source media="(max-width:767px)" srcSet={home_banner.src} />
+											<img
+												className="width_100"
+												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.bannerImage.data.attributes.url}`}
+											/>
 										</picture>
 									</div>
 									<div className={`${styles.banner_content}`}>
@@ -78,7 +83,10 @@ export default function HomeBanner({ data }) {
 					</Slider>
 				) : (
 					<video autoPlay muted loop className={styles.video_box}>
-						<source src="./img/home/movie.mp4" type="video/mp4" />
+						<source
+							src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`}
+							type="video/mp4"
+						/>
 					</video>
 				)}
 
