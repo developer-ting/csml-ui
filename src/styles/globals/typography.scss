@@ -12,7 +12,7 @@
   font-size: 20px;
 }
 .text_md {
-  font-size: 24px;
+  font-size: 20px;
 }
 .text_l {
   font-size: 35px;
@@ -83,10 +83,10 @@
 }
 
 .paraTxt {
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--color_black);
 	font-weight: 400;
-	line-height: calc(34 / 20);
+	line-height: calc(34 / 18);
 	font-family: var(--font_primary);
 	@media only screen and (max-width: 991px) {
 		font-size: 18px;
@@ -203,11 +203,11 @@
 	color: #0e0e0e !important;
 }
 .color_white_opacity {
-	color: #fff;
+	color: #ffffffbd;
 	opacity: 0.8;
 }
 .color_black_opacity {
-	color: #000;
+	color: #000000cc;
 	opacity: 0.8;
 }
 // color end

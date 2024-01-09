@@ -998,6 +998,9 @@ picture {
 				object-fit: cover;
 				object-position: center;
 				height: 100vh;
+				@media screen and (max-height: 680px) {
+					height: 115vh;
+				}
 			}
 			.btn_arrow{
 				img{
@@ -1136,6 +1139,7 @@ picture {
 
 .opacity_one {
 	opacity: 0.8;
+	// color: #ffffffbd;
 }
 .opacity_two {
 	opacity: 0.7;

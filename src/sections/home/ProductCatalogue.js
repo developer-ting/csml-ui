@@ -37,7 +37,7 @@ export default function ProductCatalogue() {
 			link: "/product/brunswick-bowling",
 		},
 		{
-			title: "Arcade Games",
+			title: "Amusement Games",
 			imgUrl: arcade_games.src,
 			link: "/product/amusement-games",
 		},
@@ -62,15 +62,15 @@ export default function ProductCatalogue() {
 			link: "/product/go-karting",
 		},
 		{
-			title: "Debit Card System",
+			title: "Intercard",
 			imgUrl: debit_card_system_intercard.src,
 			link: "/product/intercard/debit-card-system",
 		},
-		{
-			title: "Spare Consumables",
-			imgUrl: spare_consumables.src,
-			link: "#",
-		},
+		// {
+		// 	title: "Spare Consumables",
+		// 	imgUrl: spare_consumables.src,
+		// 	link: "#",
+		// },
 	];
 	const n = dragSliderInfo.length;
 	let parallax = [];
