@@ -147,7 +147,7 @@ export default function Contact() {
 												className=""
 												type="text"
 												name="Name"
-												placeholder="Name"
+												placeholder="Name *"
 												{...register("Name", {
 													required: true,
 													maxLength: 79,
@@ -162,7 +162,7 @@ export default function Contact() {
 												className=""
 												type="text"
 												name="Cname"
-												placeholder="Company Name"
+												placeholder="Company Name *"
 												{...register("CompanyName", {
 													required: true,
 													maxLength: 79,
@@ -177,7 +177,7 @@ export default function Contact() {
 												className=""
 												type="email"
 												name="Email"
-												placeholder="Email"
+												placeholder="Email *"
 												{...register("Email", {
 													required: true,
 													pattern: /^\S+@\S+$/i,
@@ -192,7 +192,7 @@ export default function Contact() {
 												className=""
 												type="tel"
 												name="phoneNumber"
-												placeholder="Phone Number"
+												placeholder="Phone Number *"
 												{...register("PhoneNumber", {
 													required: true,
 													pattern: /^[0-9]{10}$/i,
@@ -204,7 +204,7 @@ export default function Contact() {
 										</div>
 										<div className={`${styles.form_field}`}>
 											<select {...register("Inquiry", { required: true })}>
-												<option value="">Select Inquiry Type</option>
+												<option value="">Select Inquiry Type *</option>
 												<option value="Customer Care">Customer Care</option>
 												<option value="Domestic Market Inquiry">
 													Domestic Market Inquiry
@@ -221,7 +221,7 @@ export default function Contact() {
 												className=""
 												type="text"
 												name="Help"
-												placeholder="Additional Comments"
+												placeholder="Additional Comments *"
 												{...register("Comments", {
 													required: true,
 													maxLength: 79,

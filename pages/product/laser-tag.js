@@ -27,6 +27,7 @@ import styles from "../../src/styles/pages/product/LaserTag.module.scss";
 import laser_tag_banner from "../../public/img/product/laser-tag/laser_tag_banner.jpg";
 import leftBoxImg from "../../public/img/product/laser-tag/leftBoxImg.jpg";
 import rightBoxImg from "../../public/img/product/laser-tag/rightBoxImg.jpg";
+import premium_quality_systems_1 from "../../public/img/product/laser-tag/premium_quality_systems_1.jpg";
 import futuristic_img from "../../public/img/product/laser-tag/futuristic_img.jpg";
 import premium_phaser from "../../public/img/product/laser-tag/premium_phaser.jpg";
 import system from "../../public/img/product/laser-tag/system.jpg";
@@ -122,7 +123,7 @@ export default function LaserTag({ LaserTagData }) {
 				<TextImgBox
 					sectionHeading="Premium Quality Laser Tag Systems"
 					sectionDesc="Cyberblast Pro from Laserblast, is the most powerful laser tag system you will ever find in the market. It is also the most sophisticated high-quality laser tag with over 30 game formats and free access to new formats."
-					leftBoxImg={rightBoxImg.src}
+					leftBoxImg={premium_quality_systems_1.src}
 					rightBoxImg={rightBoxImg.src}
 				/>
 
@@ -304,7 +305,7 @@ export default function LaserTag({ LaserTagData }) {
 							<div className={`${styles.info_bx} toTop`} data-scroll>
 								<h2 className={`${styles.info_head} heading_text_55 pb_30`}>Design</h2>
 								<p
-									className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`}
+									className={`${styles.info_para} paraTxt_18 color_black_opacity text_400 pb_10 toTop`}
 									data-scroll
 								>
 									Building an exciting arena with eye-catching designs is among the most
@@ -312,7 +313,7 @@ export default function LaserTag({ LaserTagData }) {
 									itself must be a memorable experience for your guests.
 								</p>
 								<p
-									className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`}
+									className={`${styles.info_para} paraTxt_18 color_black_opacity text_400 pb_10 toTop`}
 									data-scroll
 								>
 									We provide a fun, functional and competitive layout tailored to your

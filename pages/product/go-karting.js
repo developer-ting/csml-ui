@@ -84,7 +84,7 @@ export default function GoKarting() {
 				/>
 
 				<section
-					className={`${styles.banner_bottom_text_sec} dot_animation_box ptb_100`}
+					className={`${styles.banner_bottom_text_sec} dot_animation_box ptb_60`}
 				>
 					<div className="container">
 						<p className="text_24 color_white_opacity l_h_6 toTop" data-scroll>

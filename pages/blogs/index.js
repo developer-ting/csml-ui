@@ -44,7 +44,7 @@ export default function Blog({ BlogData }) {
 					mobileImg={MobileBanner.src}
 				/>
 
-				<section className="dot_animation_box text_center ptb_100">
+				<section className="dot_animation_box text_center ptb_60">
 					<div className="container">
 						<div className="width80">
 							<p className="text_24 color_white_opacity l_h_6 toTop" data-scroll>

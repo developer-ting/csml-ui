@@ -61,6 +61,9 @@
 		padding: 35px 15px 0px 0px;
 		width: 100%;
 		//width: calc(100% - 215px);
+		@media (min-width: 991px) {
+			display: none;
+		}
 		@media (max-width: 767px) {
 			padding: 30px 15px 0px 0px;
 			//width: calc(100% - 65px);
