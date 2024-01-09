@@ -21,6 +21,7 @@ import styles from "../../../src/styles/pages/product/intercard/Icashier.module.
 
 //	IMAGES	//
 import icashier_banner from "../../../public/img/product/intercard/icashier/icashier_banner.jpg";
+import icashier_banner_mobile from "../../../public/img/product/intercard/icashier/icashier_banner_mobile.jpg";
 
 /** Icashier Page */
 export default function Icashier() {
@@ -37,7 +38,7 @@ export default function Icashier() {
 				<InsideBanner
 					bannerTitle="Mobility Meets Efficiency"
 					bannerImg={icashier_banner.src}
-					mobileImg={icashier_banner.src}
+					mobileImg={icashier_banner_mobile.src}
 				/>
 				<BlackStripOverview desc="iCASHIER offers a comprehensive suite of solutions designed to streamline and enhance various aspects of business operations." />
 				<section className={`${styles.intercard} ptb_100`}>

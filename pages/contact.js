@@ -20,6 +20,7 @@ import styles from "../src/styles/pages/Contact.module.scss";
 
 //	IMAGES	//
 import contact_banner from "../public/img/contact/contact_banner.jpg";
+import contact_banner_mobile from "../public/img/contact/contact_banner_mobile.jpg";
 import Mail from "../public/img/contact/mail_icon.svg";
 import Phone from "../public/img/contact/phone_icon.svg";
 
@@ -100,7 +101,7 @@ export default function Contact() {
 					bannerTitle="Experience Unforgettable <br className='hidden-xs'>
 				Adventures with Us"
 					bannerImg={contact_banner.src}
-					mobileImg={contact_banner.src}
+					mobileImg={contact_banner_mobile.src}
 				/>
 				<section className={`${styles.contact_sec} dot_animation_box`}>
 					<div className="container">

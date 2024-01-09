@@ -29,6 +29,7 @@ import styles from "../../../src/styles/pages/product/intercard/Shindigger.modul
 
 //	IMAGES	//
 import shindigger_banner from "../../../public/img/product/intercard/shindigger/shindigger_banner.jpg";
+import shindigger_banner_mobile from "../../../public/img/product/intercard/shindigger/shindigger_banner_mobile.jpg";
 
 export default function Shindigger({ BrochureData }) {
 	// console.log(BrochureData);
@@ -45,7 +46,7 @@ export default function Shindigger({ BrochureData }) {
 				<InsideBanner
 					bannerTitle="Effortless Party Planning with <br>Shindigger party booking software"
 					bannerImg={shindigger_banner.src}
-					mobileImg={shindigger_banner.src}
+					mobileImg={shindigger_banner_mobile.src}
 				/>
 				<BlackStripOverview desc="Our intuitive platform ensures a seamless experience for both hosts and guests, revolutionizing the way you celebrate. Shindigger is more than just a reservation system; it's your ticket to hassle-free party planning." />
 

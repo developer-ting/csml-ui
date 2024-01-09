@@ -18,6 +18,7 @@ import styles from "../../src/styles/pages/services/ServiceManagement.module.scs
 
 //	IMAGES	//
 import management_banner from "../../public/img/services_management/management_banner.jpg";
+import management_banner_mobile from "../../public/img/services_management/management_banner_mobile.jpg";
 import Sec1_img from "../../public/img/services_management/mangement_img.jpg";
 
 /** Services Page */
@@ -36,7 +37,7 @@ export default function ServiceManagement() {
 					bannerTitle="CSML’s Commitment to Efficiency, <br/>
                     Expertise, Excellence"
 					bannerImg={management_banner.src}
-					mobileImg={management_banner.src}
+					mobileImg={management_banner_mobile.src}
 				/>
 				<section className={`${styles.service_sec1} dot_animation_box`}>
 					<div className="container">

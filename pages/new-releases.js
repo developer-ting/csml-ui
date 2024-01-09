@@ -17,7 +17,8 @@ import parse from "html-react-parser";
 import styles from "../src/styles/pages/NewReleases.module.scss";
 
 //	IMAGES	//
-import banner from "../public/img/new-releases/banner.jpg";
+import new_releases_banner from "../public/img/new-releases/new_releases_banner.jpg";
+import new_releases_banner_mobile from "../public/img/new-releases/new_releases_banner_mobile.jpg";
 import productImg from "../public/img/new-releases/product-img.png";
 import arrow from "../public/img/arrow.svg";
 import closeIcn from "../public/img/close.svg";
@@ -61,8 +62,8 @@ export default function NewReleases({ GamesData }) {
 			<main className={`${styles.NewReleasesPage}`}>
 				<InsideBanner
 					bannerTitle="Discover fresh adventures with <br/> our new releases"
-					bannerImg={banner.src}
-					mobileImg={banner.src}
+					bannerImg={new_releases_banner.src}
+					mobileImg={new_releases_banner_mobile.src}
 				/>
 
 				<section

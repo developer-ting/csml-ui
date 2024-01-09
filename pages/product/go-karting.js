@@ -23,6 +23,7 @@ import styles from "../../src/styles/pages/product/GoKarting.module.scss";
 
 //	IMAGES	//
 import banner from "../../public/img/product/go-karting/go-karting-banner.jpg";
+import go_karting_banner_mobile from "../../public/img/product/go-karting/go-karting-banner_mobile.jpg";
 import entertainmentCenterImg1 from "../../public/img/product/go-karting/entertainment-center-img1.jpg";
 import entertainmentCenterImg2 from "../../public/img/product/go-karting/entertainment-center-img2.jpg";
 import entertainmentCenterImg3 from "../../public/img/product/go-karting/entertainment-center-img3.jpg";
@@ -80,7 +81,7 @@ export default function GoKarting() {
 				<InsideBanner
 					bannerTitle="Get Racing with Go-Karting"
 					bannerImg={banner.src}
-					mobileImg={banner.src}
+					mobileImg={go_karting_banner_mobile.src}
 				/>
 
 				<section

@@ -149,10 +149,10 @@
     .service_flex{
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      @media (max-width: 1199px) {
-        align-items: flex-start;
-      }
+      align-items: flex-start;
+      // @media (max-width: 1199px) {
+      //   align-items: flex-start;
+      // }
       @media (max-width: 767px) {
         flex-wrap: wrap;
         flex-direction: column-reverse;

@@ -21,7 +21,8 @@ import TextImgBox from "@/components/TextImgBox";
 import styles from "../../src/styles/pages/product/Trampoline.module.scss";
 
 //	IMAGES	//
-import banner from "../../public/img/product/softplay/softplay-banner.jpg";
+import softplay_banner from "../../public/img/product/softplay/softplay_banner.jpg";
+import softplay_banner_mobile from "../../public/img/product/softplay/softplay_banner_mobile.jpg";
 import leftBoxImg from "../../public/img/product/trampoline/leftBoxImg.jpg";
 import rightBoxImg from "../../public/img/product/trampoline/rightBoxImg.jpg";
 
@@ -34,8 +35,8 @@ export default function Softplay() {
 			<main className={`${styles.SoftplayMain}`}>
 				<InsideBanner
 					bannerTitle="Softplay fun for you little ones"
-					bannerImg={banner.src}
-					mobileImg={banner.src}
+					bannerImg={softplay_banner.src}
+					mobileImg={softplay_banner_mobile.src}
 				/>
 				<BlackStripOverview desc="While creating Softplay arenas, our commitment lies in creating magical spaces where children can explore, play, and have fun, with the guarantee that every aspect of the play area is designed with safety as the top priority." />
 

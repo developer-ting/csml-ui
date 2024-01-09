@@ -38,6 +38,7 @@ import styles from "../../../src/styles/pages/product/intercard/DebitCardSystem.
 
 //	IMAGES	//
 import debit_banner from "../../../public/img/product/intercard/debit-card-system/debit_banner.jpg";
+import debit_banner_mobile from "../../../public/img/product/intercard/debit-card-system/debit_banner_mobile.jpg";
 import live_customer from "../../../public/img/product/intercard/debit-card-system/live_customer.svg";
 import cost_effective from "../../../public/img/product/intercard/debit-card-system/cost_effective.svg";
 import state_security from "../../../public/img/product/intercard/debit-card-system/state_security.svg";
@@ -144,7 +145,7 @@ export default function DebitCardSystem({
 				<InsideBanner
 					bannerTitle="Intercard x CSML <br /> Partner With The Experts"
 					bannerImg={debit_banner.src}
-					mobileImg={debit_banner.src}
+					mobileImg={debit_banner_mobile.src}
 				/>
 				<BlackStripOverview desc="Intercard and CSML collaborate to enhance amusement center efficiency with a robust cashless system, ensuring seamless operation, data security and personalized solutions supported by local experts." />
 
@@ -336,7 +337,7 @@ export default function DebitCardSystem({
 							<h2 className="heading_text_45 color_white pb_20 text_700">
 								Request Your Intercard Quote
 							</h2>
-							<p className="paraTxt_18 pb_20 color_white toTop" data-scroll>
+							<p className="paraTxt_18 pb_20 color_white_opacity toTop" data-scroll>
 								Experience the future of secure and efficient transactions with
 								Intercard, <br class="hidden-xs"></br>your trusted partner in payment
 								solutions.

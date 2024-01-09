@@ -19,7 +19,8 @@ import "react-tabs/style/react-tabs.css";
 import styles from "../../src/styles/pages/services/ServiceConsultancy.module.scss";
 
 //	IMAGES	//
-import services_banner from "../../public/img/services_consultancy/services_banner.jpg";
+import consultancy_banner from "../../public/img/services_consultancy/consultancy_banner.jpg";
+import consultancy_banner_mobile from "../../public/img/services_consultancy/consultancy_banner_mobile.jpg";
 import Sec1_img from "../../public/img/services_consultancy/consultancy_img.jpg";
 import Tabs_img1 from "../../public/img/services_consultancy/tab_img1.jpg";
 import Tabs_img2 from "../../public/img/services_consultancy/tab_img2.jpg";
@@ -39,8 +40,8 @@ export default function ServiceConsultancy() {
 			<main className={`${styles.ServicesConsultancyPage}`}>
 				<InsideBanner
 					bannerTitle="Services Aligned with your FEC Success"
-					bannerImg={services_banner.src}
-					mobileImg={services_banner.src}
+					bannerImg={consultancy_banner.src}
+					mobileImg={consultancy_banner_mobile.src}
 				/>
 				<section className={`${styles.service_sec1} dot_animation_box`}>
 					<div className="container">

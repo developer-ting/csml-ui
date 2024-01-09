@@ -21,6 +21,7 @@ import styles from "../../../src/styles/pages/product/intercard/Iedge.module.scs
 
 //	IMAGES	//
 import iedge_banner from "../../../public/img/product/intercard/iedge/iedge_banner.jpg";
+import iedge_banner_mobile from "../../../public/img/product/intercard/iedge/iedge_banner_mobile.jpg";
 
 /** Iedge Page */
 export default function Iedge() {
@@ -38,7 +39,7 @@ export default function Iedge() {
 					bannerTitle="The Future at Your Edge with Intercard <br /> 
           Mobile App Collection"
 					bannerImg={iedge_banner.src}
-					mobileImg={iedge_banner.src}
+					mobileImg={iedge_banner_mobile.src}
 				/>
 				<BlackStripOverview desc="Welcome to The Edge, where innovation converges with entertainment. Elevate your arcade or gaming center with Intercard's state-of-the-art Mobile App Collection designed to transform your operations." />
 

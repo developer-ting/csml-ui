@@ -21,7 +21,8 @@ import TextImgBox from "@/components/TextImgBox";
 import styles from "../../src/styles/pages/product/Trampoline.module.scss";
 
 //	IMAGES	//
-import banner from "../../public/img/product/trampoline/trampoline-banner.jpg";
+import trampoline_banner from "../../public/img/product/trampoline/trampoline_banner.jpg";
+import trampoline_banner_mobile from "../../public/img/product/trampoline/trampoline_banner_mobile.jpg";
 import leftBoxImg from "../../public/img/product/trampoline/leftBoxImg.jpg";
 import rightBoxImg from "../../public/img/product/trampoline/rightBoxImg.jpg";
 
@@ -34,8 +35,8 @@ export default function Trampoline() {
 			<main className={`${styles.TrampolineMain}`}>
 				<InsideBanner
 					bannerTitle="Creating Adventure for all ages with CSML"
-					bannerImg={banner.src}
-					mobileImg={banner.src}
+					bannerImg={trampoline_banner.src}
+					mobileImg={trampoline_banner_mobile.src}
 				/>
 				<BlackStripOverview desc="CSML crafts innovative, safe-themed fun parks, offering children the perfect environment for thrilling adventures. Designed and installed with strict adherence to the latest safety standards, our globally sourced attractions ensure a delightful and memorable experience for children and their friends." />
 

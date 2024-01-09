@@ -33,7 +33,8 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "../../src/styles/pages/brunswick-bowling.module.scss";
 
 //	IMAGES	//
-import banner from "../../public/img/brunswick-bowling/banner.jpg";
+import brunswick_banner from "../../public/img/brunswick-bowling/brunswick_banner.jpg";
+import brunswick_banner_mobile from "../../public/img/brunswick-bowling/brunswick_banner_mobile.jpg";
 
 /** Go Karting Page */
 export default function BrunswickBowling({
@@ -55,8 +56,8 @@ export default function BrunswickBowling({
 				<InsideBanner
 					bannerTitle="Redefining Amusement with <br/>
                     Bowling Brilliance"
-					bannerImg={banner.src}
-					mobileImg={banner.src}
+					bannerImg={brunswick_banner.src}
+					mobileImg={brunswick_banner_mobile.src}
 				/>
 				<BlackStripOverview
 					desc="CSML is the exclusive distributor of Brunswick Bowling in India and the

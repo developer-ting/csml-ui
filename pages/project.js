@@ -16,7 +16,8 @@ import { ServerHeaders } from "@/utils/RequestHeaders";
 import styles from "../src/styles/pages/project.module.scss";
 
 //	IMAGES	//
-import services_banner from "../public/img/project/banner.jpg";
+import project_banner from "../public/img/project/project_banner.jpg";
+import project_banner_mobile from "../public/img/project/project_banner_mobile.jpg"; 
 
 /** Services Page */
 export default function Project({ projectsData }) {
@@ -27,8 +28,8 @@ export default function Project({ projectsData }) {
 			<main className={`${styles.ServicesConsultancyPage}`}>
 				<InsideBanner
 					bannerTitle="Journey through Our Diverse Projects"
-					bannerImg={services_banner.src}
-					mobileImg={services_banner.src}
+					bannerImg={project_banner.src}
+					mobileImg={project_banner_mobile.src}
 				/>
 				<ProjectCard data={projectsData} />
 			</main>

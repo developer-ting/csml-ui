@@ -29,6 +29,7 @@ import styles from "../../../src/styles/pages/product/intercard/Ecommerce.module
 
 //	IMAGES	//
 import ecommerce_banner from "../../../public/img/product/intercard/ecommerce/ecommerce_banner.jpg";
+import ecommerce_banner_mobile from "../../../public/img/product/intercard/ecommerce/ecommerce_banner_mobile.jpg";
 
 export default function Ecommerce() {
 	var settings = {
@@ -88,7 +89,7 @@ export default function Ecommerce() {
 				<InsideBanner
 					bannerTitle="Effortless, Contactless, Flawless"
 					bannerImg={ecommerce_banner.src}
-					mobileImg={ecommerce_banner.src}
+					mobileImg={ecommerce_banner_mobile.src}
 				/>
 				<BlackStripOverview
 					desc="Intercard E-Commerce Hand: Simplifying Contactless Transactions

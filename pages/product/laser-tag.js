@@ -25,6 +25,7 @@ import styles from "../../src/styles/pages/product/LaserTag.module.scss";
 
 //	IMAGES	//
 import laser_tag_banner from "../../public/img/product/laser-tag/laser_tag_banner.jpg";
+import laser_tag_banner_mobile from "../../public/img/product/laser-tag/laser_tag_banner_mobile.jpg";
 import leftBoxImg from "../../public/img/product/laser-tag/leftBoxImg.jpg";
 import rightBoxImg from "../../public/img/product/laser-tag/rightBoxImg.jpg";
 import premium_quality_systems_1 from "../../public/img/product/laser-tag/premium_quality_systems_1.jpg";
@@ -116,7 +117,7 @@ export default function LaserTag({ LaserTagData }) {
 				<InsideBanner
 					bannerTitle="Delivering The Ultimate <br>Laser Tag Experience"
 					bannerImg={laser_tag_banner.src}
-					mobileImg={laser_tag_banner.src}
+					mobileImg={laser_tag_banner_mobile.src}
 				/>
 				<BlackStripOverview desc="Laserblast, in an exclusive partnership with CSML, distributes its cutting-edge Laser Tag equipment in India. With decades of engineering excellence, Laserblast ensures robust, reliable, and resilient products. <br> As a dynamic industry leader for over 22 years, Laserblast, now distributed by CSML in India, brings the most reliable and advanced Laser Tag equipment, offering a fast ROI attraction to boost profits at FECs." />
 
@@ -301,9 +302,10 @@ export default function LaserTag({ LaserTagData }) {
 				</section>
 				<section className={`${styles.how_apply_wrap} ptb_100`}>
 					<div className="container">
+					<h2 className={`${styles.info_head} heading_text_55 pb_30 hidden-xs`}>Design</h2>
 						<div className={`${styles.service_flex}`}>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h2 className={`${styles.info_head} heading_text_55 pb_30`}>Design</h2>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 visible-xs`}>Design</h2>
 								<p
 									className={`${styles.info_para} paraTxt_18 color_black_opacity text_400 pb_10 toTop`}
 									data-scroll

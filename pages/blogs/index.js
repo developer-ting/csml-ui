@@ -21,8 +21,8 @@ import { format } from "date-fns";
 import styles from "../../src/styles/pages/Blogs.module.scss";
 
 //	IMAGES	//
-import DesktopBanner from "../../public/img/blog/blog-banner.jpg";
-import MobileBanner from "../../public/img/blog/blog-banner.jpg";
+import blog_banner from "../../public/img/blog/blog_banner.jpg";
+import blog_banner_mobile from "../../public/img/blog/blog_banner_mobile.jpg";
 import BlogImg from "../../public/img/blog/blog-img.jpg";
 import arrow from "../../public/img/arrow.svg";
 
@@ -40,8 +40,8 @@ export default function Blog({ BlogData }) {
 			<main className={`${styles.BlogPage}`}>
 				<InsideBanner
 					bannerTitle="Stay Plugged In with the Industry Trends"
-					bannerImg={DesktopBanner.src}
-					mobileImg={MobileBanner.src}
+					bannerImg={blog_banner.src}
+					mobileImg={blog_banner_mobile.src}
 				/>
 
 				<section className="dot_animation_box text_center ptb_60">

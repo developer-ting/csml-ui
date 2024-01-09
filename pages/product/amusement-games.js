@@ -18,7 +18,8 @@ import parse from "html-react-parser";
 import styles from "../../src/styles/pages/product/AmusementGames.module.scss";
 
 //	IMAGES	//
-import banner from "../../public/img/product/amusement-games/banner.jpg";
+import amusement_gamebanner from "../../public/img/product/amusement-games/amusement_gamebanner.jpg";
+import amusement_gamebanner_mobile from "../../public/img/product/amusement-games/amusement_gamebanner_mobile.jpg";
 import productImg from "../../public/img/product/amusement-games/product-img.png";
 import arrow from "../../public/img/arrow.svg";
 import closeIcn from "../../public/img/close.svg";
@@ -76,8 +77,8 @@ export default function AmusementGames({ GamesCategoriesData }) {
 			<main className={`${styles.AmusementGamesPage}`}>
 				<InsideBanner
 					bannerTitle="Crafting Timeless Joy from <br/> Retro Gems to Futuristic Thrills"
-					bannerImg={banner.src}
-					mobileImg={banner.src}
+					bannerImg={amusement_gamebanner.src}
+					mobileImg={amusement_gamebanner_mobile.src}
 				/>
 
 				<section className={`${styles.GamesSection} dot_animation_box ptb_100`}>
