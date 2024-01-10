@@ -24,7 +24,6 @@ import cheer from "../../../public/img/home/cheer.png";
 
 /** Home Hero Section */
 export default function ValuedDistributors({ valuedData }) {
-	console.log(valuedData);
 	var settings = {
 		dots: true,
 		arrows: false,
@@ -79,7 +78,7 @@ export default function ValuedDistributors({ valuedData }) {
 						<Slider {...settings}>
 							{valuedData.map((item) => {
 								return (
-									<div className={`${styles.valued_item}`}>
+									<div className={`${styles.valued_item}`} key={item.id}>
 										<img
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ValuedLogos.data.attributes.url}`}
 											alt="logo"
