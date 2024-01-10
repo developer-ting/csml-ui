@@ -207,18 +207,33 @@ export default function AmusementGames({ GamesCategoriesData }) {
 												)}
 											</div>
 											<p className={`${styles.paraTxt} paraTxt_16`}>
-												<strong>Dimensions</strong>:{" "}
-												{
+												{/* <strong>Dimensions</strong>:{" "} */}
+												{/* {
 													activeGameCategories.games.data[gameIndex].attributes
 														.GameDimensions
-												}
+												} */}
+												{parse(
+													activeGameCategories.games.data[gameIndex].attributes
+														.GameDimensions
+												)}
 											</p>
-											<div className={styles.btn_sec}>
+											<div className={`${styles.btn_sec} games_popup_youtube_link`}>
 												<a
 													className={`${styles.watch_btn}`}
 													href={
 														activeGameCategories.games.data[gameIndex].attributes
 															.GameYoutubeURL
+													}
+													rel="noreferrer"
+													target="_blank"
+												>
+													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="" />
+												</a>
+												<a
+													className={`${styles.watch_btn}`}
+													href={
+														activeGameCategories.games.data[gameIndex].attributes
+															.GameYoutubeURLOption2
 													}
 													rel="noreferrer"
 													target="_blank"

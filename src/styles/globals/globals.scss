@@ -63,6 +63,16 @@ picture {
 	text-transform: uppercase;
 }
 
+.games_popup_youtube_link{
+	a{
+		display: none;
+	}
+
+	a[href]{
+		display: inline-block;
+	}
+}
+
 .dot_animation_box {
 	position: relative;
 	height: 100%;
