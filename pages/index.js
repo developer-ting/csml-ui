@@ -114,7 +114,7 @@ export async function getStaticProps() {
 
 	// home banner  data
 	const BannerRes = await fetch(
-		`${process.env.STRAPI_DO_BASE_URL}/api/home-bannerv2?populate[0]=homeBannerSlider.bannerImage&populate[1]=homeBannerVideo.bannerVideo`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-bannerv2?populate[0]=homeBannerSlider.bannerImage&populate[1]=homeBannerVideo.bannerVideo&populate[2]=homeBannerSlider.bannerMobile&populate[3]=homeBannerVideo.bannerMobileVideo`,
 		ServerHeaders
 	);
 	const BannerData = await BannerRes.json();

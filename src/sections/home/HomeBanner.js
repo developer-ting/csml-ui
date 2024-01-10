@@ -52,6 +52,7 @@ export default function HomeBanner({ data }) {
 	};
 	const bannerSlider = data.attributes.homeBannerSlider;
 	console.log(data.attributes.isSlider);
+	console.log(data);
 	return (
 		<section className={`${styles.home_banner_wrap}`}>
 			<div
@@ -64,7 +65,10 @@ export default function HomeBanner({ data }) {
 								<div className={`${styles.home_banner_item}`} key={item.BannerPara}>
 									<div className={`${styles.banner_img}`}>
 										<picture>
-											<source media="(max-width:767px)" srcSet={home_banner.src} />
+											<source
+												media="(max-width:767px)"
+												srcSet={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.bannerMobile.data.attributes.url}`}
+											/>
 											<img
 												className="width_100"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.bannerImage.data.attributes.url}`}
@@ -82,12 +86,25 @@ export default function HomeBanner({ data }) {
 						})}
 					</Slider>
 				) : (
-					<video autoPlay muted loop className={styles.video_box}>
-						<source
-							src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`}
-							type="video/mp4"
-						/>
-					</video>
+					<>
+						<video autoPlay muted loop className={`${styles.video_box} hidden-xs`}>
+							<source
+								src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`}
+								type="video/mp4"
+							/>
+						</video>
+						<video autoPlay muted loop className={`${styles.video_box} visible-xs`}>
+							<source
+								src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerMobileVideo.data.attributes.url}`}
+								type="video/mp4"
+							/>
+						</video>
+						{/* <div className={`${styles.banner_content}`}>
+							<h1 className="heading_text_70 color_white pb_40">
+								{data.attributes.homeBannerVideo.videoTitle}
+							</h1>
+						</div> */}
+					</>
 				)}
 
 				<div className={`${styles.circle_right}`}>
