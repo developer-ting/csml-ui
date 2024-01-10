@@ -129,12 +129,24 @@
   .arrow_one{
     transform: translateX(0px);
     transition: ease-out 0.3s;
+    width: 13px;
+    height: 13px;
+    img{
+      width: 13px;
+      height: 13px;
+    }
   }
   .arrow_two{
     position: absolute;
     transform: translateX(-30px);
     transition: ease-out 0.3s;
     bottom: 0;
+    width: 13px;
+    height: 13px;
+    img{
+      width: 13px;
+      height: 13px;
+    }
   }
   &:hover{
     .arrow_one{
