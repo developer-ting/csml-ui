@@ -23,7 +23,8 @@ import styles from "../../src/styles/pages/product/Trampoline.module.scss";
 //	IMAGES	//
 import softplay_banner from "../../public/img/product/softplay/softplay_banner.jpg";
 import softplay_banner_mobile from "../../public/img/product/softplay/softplay_banner_mobile.jpg";
-import leftBoxImg from "../../public/img/product/trampoline/leftBoxImg.jpg";
+import leftBoxImg from "../../public/img/product/softplay/leftBoxImg.jpg";
+import right_box_img from "../../public/img/product/softplay/right_box_img.jpg";
 import rightBoxImg from "../../public/img/product/trampoline/rightBoxImg.jpg";
 
 /** Softplay Page */
@@ -45,7 +46,7 @@ export default function Softplay() {
 					Where Safety Meets Adventure"
 					sectionDesc="At CSML, we take pride in our commitment to crafting innovative and safe-themed fun parks, providing children with the perfect environment to embark on thrilling adventures. Our parks are meticulously built and installed, adhering strictly to the latest safety standards and collaborating with leading manufacturers and brands globally."
 					leftBoxImg={leftBoxImg.src}
-					rightBoxImg={leftBoxImg.src}
+					rightBoxImg={right_box_img.src}
 				/>
 
 				<section className="dot_animation_box pt_100 pb_40">

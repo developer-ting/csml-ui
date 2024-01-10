@@ -19,6 +19,7 @@ import facebook from "../../public/img/facebook.svg";
 import twitter from "../../public/img/twitter.svg";
 import instagram from "../../public/img/instagram.svg";
 import youtube from "../../public/img/youtube.svg";
+import linkedin from "../../public/img/linkedin.svg";
 import white_down_arrow from "../../public/img/white_down_arrow.svg";
 
 /** Footer Component */
@@ -257,6 +258,13 @@ const Footer = () => {
 											<Link href="https://www.youtube.com/@csmlindia8994">
 												<a target="_blank">
 													<img src={youtube.src} alt="" />
+												</a>
+											</Link>
+										</li>
+										<li>
+											<Link href="https://www.linkedin.com/company/csmlindia/">
+												<a target="_blank">
+													<img src={linkedin.src} alt="" />
 												</a>
 											</Link>
 										</li>

@@ -39,11 +39,11 @@ import styles from "../../../src/styles/pages/product/intercard/DebitCardSystem.
 //	IMAGES	//
 import debit_banner from "../../../public/img/product/intercard/debit-card-system/debit_banner.jpg";
 import debit_banner_mobile from "../../../public/img/product/intercard/debit-card-system/debit_banner_mobile.jpg";
-import live_customer from "../../../public/img/product/intercard/debit-card-system/live_customer.svg";
-import cost_effective from "../../../public/img/product/intercard/debit-card-system/cost_effective.svg";
-import state_security from "../../../public/img/product/intercard/debit-card-system/state_security.svg";
-import durability from "../../../public/img/product/intercard/debit-card-system/durability.svg";
-import reliability from "../../../public/img/product/intercard/debit-card-system/reliability.svg";
+import live_customer from "../../../public/img/product/intercard/debit-card-system/live_customer.gif";
+import cost_effective from "../../../public/img/product/intercard/debit-card-system/cost_effective.gif";
+import state_security from "../../../public/img/product/intercard/debit-card-system/state_security.gif";
+import durability from "../../../public/img/product/intercard/debit-card-system/durability.gif";
+import reliability from "../../../public/img/product/intercard/debit-card-system/reliability.gif";
 import iWave from "../../../public/img/product/intercard/debit-card-system/iWave.jpg";
 import video_img from "../../../public/img/product/intercard/debit-card-system/video_img.jpg";
 import play from "../../../public/img/product/intercard/debit-card-system/play.svg";
@@ -168,7 +168,7 @@ export default function DebitCardSystem({
 						<div className={`${styles.debit_icon_flex} toTop`} data-scroll>
 							<div className={`${styles.debit_icon_item}`}>
 								<img
-									className={`${styles.debit_icon} pb_30`}
+									className={`${styles.debit_icon} pb_20`}
 									src={live_customer.src}
 									alt="img"
 								/>
@@ -177,7 +177,7 @@ export default function DebitCardSystem({
 							</div>
 							<div className={`${styles.debit_icon_item}`}>
 								<img
-									className={`${styles.debit_icon} pb_30`}
+									className={`${styles.debit_icon} pb_20`}
 									src={cost_effective.src}
 									alt="img"
 								/>
@@ -188,7 +188,7 @@ export default function DebitCardSystem({
 							</div>
 							<div className={`${styles.debit_icon_item}`}>
 								<img
-									className={`${styles.debit_icon} pb_30`}
+									className={`${styles.debit_icon} pb_20`}
 									src={state_security.src}
 									alt="img"
 								/>
@@ -199,7 +199,7 @@ export default function DebitCardSystem({
 							</div>
 							<div className={`${styles.debit_icon_item}`}>
 								<img
-									className={`${styles.debit_icon} pb_30`}
+									className={`${styles.debit_icon} pb_20`}
 									src={durability.src}
 									alt="img"
 								/>
@@ -208,7 +208,7 @@ export default function DebitCardSystem({
 							</div>
 							<div className={`${styles.debit_icon_item}`}>
 								<img
-									className={`${styles.debit_icon} pb_30`}
+									className={`${styles.debit_icon} pb_20`}
 									src={reliability.src}
 									alt="img"
 								/>

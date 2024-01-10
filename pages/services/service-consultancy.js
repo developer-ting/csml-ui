@@ -228,7 +228,7 @@ export default function ServiceConsultancy() {
 							</TabPanel>
 						</div>
 					</Tabs>
-					<ContactTab TabTitle="Partner with us for a successful journey in the world of<br/> entertainment centers. Your success is our unwavering<br/> commitment." />
+					<ContactTab TabTitle="Partner with us for a successful journey in the world of entertainment centers. Your success is our unwavering commitment." />
 				</section>
 			</main>
 			<Footer />
