@@ -3,6 +3,11 @@
 .project_section{
     .tab_section{
         display: flex;
+        @media (max-width: 767px) {
+            overflow-y: auto;
+            margin-right: -15px;
+            white-space: nowrap;
+        }
     }
 
     .tab_info{
