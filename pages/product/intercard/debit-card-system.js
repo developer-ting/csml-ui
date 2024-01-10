@@ -46,6 +46,7 @@ import durability from "../../../public/img/product/intercard/debit-card-system/
 import reliability from "../../../public/img/product/intercard/debit-card-system/reliability.gif";
 import iWave from "../../../public/img/product/intercard/debit-card-system/iWave.jpg";
 import video_img from "../../../public/img/product/intercard/debit-card-system/video_img.jpg";
+import video_img_mobile from "../../../public/img/product/intercard/debit-card-system/video_img_mobile.jpg";
 import play from "../../../public/img/product/intercard/debit-card-system/play.svg";
 
 export default function DebitCardSystem({
@@ -290,8 +291,12 @@ export default function DebitCardSystem({
 									<a href={FutureData.data.attributes.FutureVideoURL}>
 										<div className={`${styles.video_box}`}>
 											<img
-												className={`${styles.video_img} border_20 img`}
+												className={`${styles.video_img} border_20 img hidden-xs`}
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${FutureData.data.attributes.FutureThumbnail.data.attributes.url}`}
+											/>
+											<img
+												className={`${styles.video_img_mobile} border_20 img visible-xs`}
+												src={video_img_mobile.src}
 											/>
 											<div className={`${styles.video_play}`}>
 												<img

@@ -38,11 +38,11 @@ import staff_free from "../../public/img/product/intercard/ecommerce/staff_free.
 import maximize_float from "../../public/img/product/intercard/ecommerce/maximize_float.jpg";
 
 //Ecommerce page how it works section images import
-import register from "../../public/img/product/intercard/ecommerce/register.svg";
-import shop from "../../public/img/product/intercard/ecommerce/shop.svg";
-import discounts from "../../public/img/product/intercard/ecommerce/discounts.svg";
-import check_out_pay from "../../public/img/product/intercard/ecommerce/check_out_pay.svg";
-import redeem_play from "../../public/img/product/intercard/ecommerce/redeem_play.svg";
+import register from "../../public/img/product/intercard/ecommerce/register.gif";
+import shop from "../../public/img/product/intercard/ecommerce/shop.gif";
+import discounts from "../../public/img/product/intercard/ecommerce/discounts.gif";
+import check_out_pay from "../../public/img/product/intercard/ecommerce/check_out_pay.gif";
+import redeem_play from "../../public/img/product/intercard/ecommerce/redeem_play.gif";
 
 //Ecommerce page Bonus feature section images import
 import bonus_feature from "../../public/img/product/intercard/ecommerce/bonus_feature.jpg";
@@ -52,11 +52,11 @@ import revolutionize from "../../public/img/product/intercard/shindigger/revolut
 import unveil from "../../public/img/product/intercard/shindigger/unveil.jpg";
 
 //Shindigger page Craft Your Shindig in 5 Simple Steps section images import
-import choose_a_location from "../../public/img/product/intercard/shindigger/choose_a_location.svg";
-import choose_a_day from "../../public/img/product/intercard/shindigger/choose_a_day.svg";
-import guest_count from "../../public/img/product/intercard/shindigger/guest_count.svg";
-import pick_party from "../../public/img/product/intercard/shindigger/pick_party.svg";
-import select_a_time from "../../public/img/product/intercard/shindigger/select_a_time.svg";
+import choose_a_location from "../../public/img/product/intercard/shindigger/choose_a_location.gif";
+import choose_a_day from "../../public/img/product/intercard/shindigger/choose_a_day.gif";
+import guest_count from "../../public/img/product/intercard/shindigger/guest_count.gif";
+import pick_party from "../../public/img/product/intercard/shindigger/pick_party.gif";
+import select_a_time from "../../public/img/product/intercard/shindigger/select_a_time.gif";
 
 //brunswick-bowling page Center Stage Furniture Images Import
 import centerImg from "../../public/img/brunswick-bowling/center.jpg";
