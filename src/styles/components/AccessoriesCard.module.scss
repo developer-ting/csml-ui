@@ -2,22 +2,26 @@
 
 .accessories_card{
     padding: 30px;
+    height: 100%;
     border-radius: 8px;
     margin-right: 20px;
     background-color: #1E1E1E;
     @media (max-width: 767px) {
         padding: 15px;
         margin-right: 15px;
+        display: inherit;
     }
     .img{
         width: 22%;
         @media (max-width: 767px) {
             width: 100%;
+            height: 250px;
+            object-fit: cover;
 		}
         .accessories_card_img{
             border-radius: 7px;
             @media (max-width: 767px) {
-               height: 30vh;
+               height: 100%;
                width: 100%;
                object-fit: cover;
                object-position: center;
