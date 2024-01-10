@@ -24,6 +24,7 @@ import styles from "../../src/styles/pages/product/Trampoline.module.scss";
 import trampoline_banner from "../../public/img/product/trampoline/trampoline_banner.jpg";
 import trampoline_banner_mobile from "../../public/img/product/trampoline/trampoline_banner_mobile.jpg";
 import leftBoxImg from "../../public/img/product/trampoline/leftBoxImg.jpg";
+import right_box_img from "../../public/img/product/trampoline/right_box_img.jpg";
 import rightBoxImg from "../../public/img/product/trampoline/rightBoxImg.jpg";
 
 /** Trampoline Page */
@@ -45,7 +46,7 @@ export default function Trampoline() {
 					Globally-Designed Adventure Zones"
 					sectionDesc="Positioned as a pioneer in trampoline park design and installation, CSML collaborates with premier global manufacturers for unparalleled expertise and innovation. Our commitment lies in delivering high-quality, safe, and exhilarating experiences, establishing us as a preferred supplier for a diverse range of indoor play spaces."
 					leftBoxImg={leftBoxImg.src}
-					rightBoxImg={leftBoxImg.src}
+					rightBoxImg={right_box_img.src}
 				/>
 
 				<section className="dot_animation_box pt_100 pb_40">

@@ -43,6 +43,9 @@
         }
         .btn_flex{
           margin-top: 10px;
+          @media only screen and (max-width: 767px) {
+            flex-wrap: wrap;
+          }
           .btn_one{
             margin-right: 20px;
             a{
@@ -52,7 +55,9 @@
             }
           }
           .btn_two{
-            
+            @media only screen and (max-width: 767px) {
+              margin-top: 10px;
+            }
             a{
              opacity: 0.8;
              border-bottom: 1px solid #E31D25;

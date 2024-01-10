@@ -69,8 +69,12 @@ export default function Crafting({ craftingData }) {
 				<div className="container box_left_space">
 					<div className={`${styles.crafting_flex} d_f`}>
 						<div className={`${styles.left_content} toLeft`} data-scroll>
-							<h2 className="text_xxxxxI color_white pb_40 crafting_heading">
+							<h2 className="text_xxxxxI color_white pb_30 crafting_heading">
 								Crafting
+							</h2>
+							<h2 className="heading_text_45 color_white pb_20 visible-xs">
+								world-class entertainment <br />
+								hubs for over 50 years
 							</h2>
 							<p className="paraTxt color_white opacity_one">
 								Since our establishment in 2002, we have cultivated an extensive
@@ -80,7 +84,7 @@ export default function Crafting({ craftingData }) {
 							</p>
 						</div>
 						<div className={`${styles.right_content} toRight`} data-scroll>
-							<h2 className="heading_text_45 color_white pb_60">
+							<h2 className="heading_text_45 color_white pb_60 hidden-xs">
 								world-class entertainment <br />
 								hubs for over 50 years
 							</h2>

@@ -1012,6 +1012,9 @@ picture {
 				@media screen and (max-height: 720px) {
 					height: 125vh;
 				}
+				@media screen and (max-width: 767px) {
+					height: 100vh;
+				}
 			}
 			.btn_arrow {
 				img {
