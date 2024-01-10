@@ -111,7 +111,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 										})}
 									</Slider>
 								</div>
-								<div className={`${styles.li_text} ptb_30`}>
+								<div className={`${styles.li_text} pt_30`}>
 									<h4 className="text_md text_500 pb_20">Project Highlights</h4>
 									{parse(imgData.attributes.popDesc)}
 								</div>
