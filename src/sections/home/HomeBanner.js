@@ -87,23 +87,37 @@ export default function HomeBanner({ data }) {
 					</Slider>
 				) : (
 					<>
-						<video webkit-playsinline="" playsinline="" autoPlay muted loop className={`${styles.video_box} hidden-xs`}>
+						<video
+							webkit-playsinline=""
+							playsinline=""
+							autoPlay
+							muted
+							loop
+							className={`${styles.video_box} hidden-xs`}
+						>
 							<source
 								src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`}
 								type="video/mp4"
 							/>
 						</video>
-						<video webkit-playsinline="" playsinline="" autoPlay muted loop className={`${styles.video_box} visible-xs`}>
+						<video
+							webkit-playsinline=""
+							playsinline=""
+							autoPlay
+							muted
+							loop
+							className={`${styles.video_box} visible-xs`}
+						>
 							<source
 								src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerMobileVideo.data.attributes.url}`}
 								type="video/mp4"
 							/>
 						</video>
-						{/* <div className={`${styles.banner_content}`}>
+						<div className={`${styles.banner_content}`}>
 							<h1 className="heading_text_70 color_white pb_40">
 								{data.attributes.homeBannerVideo.videoTitle}
 							</h1>
-						</div> */}
+						</div>
 					</>
 				)}
 
