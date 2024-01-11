@@ -47,12 +47,14 @@
 		padding-left: var(--container_left_space);
 		position: absolute;
 		left: 0px;
-		top: 50%;
-		transform: translateY(-50%);
+		bottom: 50px;
+		// top: 50%;
+		// transform: translateY(-50%);
 		width: 48%;
 		@media only screen and (max-width: 767px) {
 			width: 100%;
 			padding: 0px 15px;
+			bottom: 50px;
 		}
 		h1 {
 			@media only screen and (max-width: 767px) {
