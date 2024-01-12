@@ -29,6 +29,15 @@ import Tabs_img1 from "../../public/img/services_consultancy/tab_img1.jpg";
 import Tabs_img2 from "../../public/img/services_consultancy/tab_img2.jpg";
 import Tabs_img3 from "../../public/img/services_consultancy/tab_img3.jpg";
 
+import turning_vision_into_reality from "../../public/img/services_consultancy/turning_vision_into_reality.jpg";
+import planning_and_layout_design from "../../public/img/services_consultancy/planning_and_layout_design.jpg";
+import suggestive_game from "../../public/img/services_consultancy/suggestive_game.jpg";
+import exclusive_istribution from "../../public/img/services_consultancy/exclusive_istribution.jpg";
+import tailored_amusement_equipment_selection from "../../public/img/services_consultancy/tailored_amusement_equipment_selection.jpg";
+import logistics_mport from "../../public/img/services_consultancy/logistics_mport.jpg";
+import installation_training from "../../public/img/services_consultancy/installation_training.jpg";
+import pre_post_operation_support_services from "../../public/img/services_consultancy/pre_post_operation_support_services.jpg";
+
 /** Services Page */
 export default function ServiceConsultancy() {
   const [isShowMore, setIsShowMore] = useState(false);
@@ -163,7 +172,7 @@ export default function ServiceConsultancy() {
 									<div
 										className={`${styles.tabs_img}  border_animation white_border_animation`}
 									>
-										<img className="img border_8" src={Tabs_img1.src} />
+										<img className="img border_8" src={turning_vision_into_reality.src} />
 									</div>
 									<div className={`${styles.tabs_info}`}>
 										<p className={`${styles.info_title} font_secondary`}>
@@ -186,7 +195,7 @@ export default function ServiceConsultancy() {
 									<div
 										className={`${styles.tabs_img}  border_animation white_border_animation`}
 									>
-										<img className="img border_8" src={Tabs_img1.src} />
+										<img className="img border_8" src={planning_and_layout_design.src} />
 									</div>
 									<div className={`${styles.tabs_info}`}>
 										<p className={`${styles.info_title} font_secondary`}>
@@ -206,7 +215,7 @@ export default function ServiceConsultancy() {
 									<div
 										className={`${styles.tabs_img}  border_animation white_border_animation`}
 									>
-										<img className="img border_8" src={Tabs_img2.src} />
+										<img className="img border_8" src={suggestive_game.src} />
 									</div>
 									<div className={`${styles.tabs_info}`}>
 										<p className={`${styles.info_title} font_secondary`}>
@@ -226,7 +235,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={Tabs_img2.src} />
+											<img className="img border_8" src={exclusive_istribution.src} />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -246,7 +255,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={Tabs_img3.src} />
+											<img className="img border_8" src={tailored_amusement_equipment_selection.src} />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -265,7 +274,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={Tabs_img1.src} />
+											<img className="img border_8" src={logistics_mport.src} />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -284,7 +293,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={Tabs_img2.src} />
+											<img className="img border_8" src={installation_training.src} />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -303,7 +312,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={Tabs_img3.src} />
+											<img className="img border_8" src={pre_post_operation_support_services.src} />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
