@@ -137,7 +137,7 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 					</div>
 				</section>
 
-				<section className={`${styles.blog_main_section} pt_80 pb_40`}>
+				<section className={`${styles.blog_main_section} ptb_80`}>
 					<div className="container">
 						<h2 className="heading_text_55 text_center">Others Blog & Articles</h2>
 						<div className={`${styles.blog_info_sec} pt_50`}>
