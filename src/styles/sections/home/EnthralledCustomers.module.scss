@@ -12,6 +12,7 @@
   }
   .enthralled_main{
     margin: 0px -10px;
+    
     :global(.slick-slide){
       padding: 50px 10px;
     }
@@ -21,13 +22,18 @@
       border-radius: 30px;
       align-items: center;
       position: relative;
+      
+      @media only screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+      }
       @media only screen and (max-width: 1199px) {
         align-items: flex-start;
       }
       @media only screen and (max-width: 767px) {
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        // flex-direction: column-reverse;
         padding: 30px 15px;
+        display: block;
       }
       .enthralled_quate_top{
         position: absolute;
@@ -63,9 +69,11 @@
         }
         @media only screen and (max-width: 767px) {
           width: 100%;
+          padding-top: 20px;
         }
         p{
           font-size: 18px;
+          line-height: 28px;
         }
         .profile_flex{
           align-items: center;

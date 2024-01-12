@@ -1,6 +1,7 @@
 // MODULES //
 import { useEffect, useRef, useState } from "react";
 import ScrollOut from "scroll-out";
+import Link from "next/link";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -119,14 +120,17 @@ export default function Shindigger({ BrochureData }) {
 									<div className="dot_two dots_p"></div>
 									<div className="dot_three dots_p"></div>
 									<div className={`${styles.inside_flex}`}>
-										<div className={`${styles.text_bx} text_24 opacity_one text_500`}>
+										<p className={`${styles.text_bx} text_24 opacity_one text_500`}>
 											With Shindigger, your upcoming celebration is just a few clicks away.{" "}
 											<br className={`${styles.hidden_991}`} />{" "}
-											<a className="" href="">
+											
+											<Link href="/contact">
+												<a href="/contact">
 												Join us
-											</a>{" "}
+												</a>
+											</Link>
 											in making party planning as enjoyable as the celebrations themselves!
-										</div>
+										</p>
 									</div>
 								</div>
 							</div>

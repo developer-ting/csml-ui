@@ -1,7 +1,8 @@
 // MODULES //
+import { useEffect, useState, useRef } from "react";
 
 // COMPONENTS //
-
+import EqualHeight from "@/utils/EqualHeight";
 // SECTIONS //
 
 // PLUGINS //
@@ -32,6 +33,25 @@ export default function EnthralledCustomers({ enthralledData }) {
 		autoplaySpeed: 5000,
 	};
 
+	useEffect(() => {
+		//EqualHeight("enthralled_box" + 100)
+		// Get all elements with the class name 'equal-height'
+		const elements = document.querySelectorAll(`.enthralled_box`);
+
+		// Calculate the maximum height among all elements
+		let maxHeight = 0;
+		elements.forEach((element) => {
+			maxHeight = Math.max(maxHeight, element.offsetHeight);
+		});
+
+		// Set the same height for all elements
+		elements.forEach((element) => {
+			element.style.height = `${maxHeight + 30}px`;
+		});
+
+	}, []);
+	
+
 	return (
 		<section
 			className={`${styles.enthralled_customers_wrap} dot_animation_box pb_100`}
@@ -48,12 +68,19 @@ export default function EnthralledCustomers({ enthralledData }) {
 									className={`${styles.enthralled_item}`}
 									key={item.attributes.EnthralledDescription}
 								>
-									<div className={`${styles.enthralled_box} f_j`}>
+									<div className={`${styles.enthralled_box} enthralled_box f_j`}>
 										<div className={`${styles.enthralled_quate_top}`}>
 											<img className="" src={quate.src} alt="img" />
 										</div>
 										<div className={`${styles.enthralled_quate_bottom}`}>
 											<img className="border_20" src={quate.src} alt="img" />
+										</div>
+										<div className={`${styles.enthralled_img}`}>
+											<img
+												className=""
+												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.EnthralledImg.data.attributes.url}`}
+												alt="img"
+											/>
 										</div>
 										<div className={`${styles.enthralled_content}`}>
 											<p className="paraTxt">{item.attributes.EnthralledDescription}</p>
@@ -73,13 +100,7 @@ export default function EnthralledCustomers({ enthralledData }) {
 												</div>
 											</div>
 										</div>
-										<div className={`${styles.enthralled_img}`}>
-											<img
-												className=""
-												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.EnthralledImg.data.attributes.url}`}
-												alt="img"
-											/>
-										</div>
+										
 									</div>
 								</div>
 							);
