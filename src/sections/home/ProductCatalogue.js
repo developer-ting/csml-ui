@@ -148,12 +148,12 @@ export default function ProductCatalogue() {
 
 				gsap.set(img, {
 					position: "absolute",
-					left: -300,
+					left: 0,
 					// attr: { src: "https://picsum.photos/id/" + (i + 10) + "/700/600/" },
 					attr: { src: `${dragSliderInfo[i].imgUrl}` },
 					// attr: { src: `${imageUrls[i]}` },
 				});
-				parallax[i] = gsap.to(img, { x: 300, ease: "none", paused: true });
+				parallax[i] = gsap.to(img, { x: -300, ease: "none", paused: true });
 
 				box.appendChild(img);
 				box.appendChild(link);
