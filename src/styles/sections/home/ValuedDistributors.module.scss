@@ -11,6 +11,13 @@
 		border-radius: 12px;
 		position: relative;
 		.valued_logo {
+			:global(.slick-slide) {
+				height: inherit !important;
+			}
+			:global(.slick-track) {
+				display: flex !important;
+				align-items: center;
+			}
 			.valued_item {
 				display: flex;
 				align-items: center;
