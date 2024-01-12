@@ -21,7 +21,7 @@ const AccessoriesCard = ({ boxImg, title, desc }) => {
 			</div>
 			<div className={`${styles.info}`}>
 				<p className="text_md color_white text_500 pb_10">{title}</p>
-				<p className="paraTxt_18 color_white l_h_6 text_100">{desc}</p>
+				<p className="paraTxt_18 color_white_opacity l_h_6 text_100">{desc}</p>
 			</div>
 		</div>
 	);
