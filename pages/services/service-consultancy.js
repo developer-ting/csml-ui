@@ -13,6 +13,9 @@ import Loader from "@/components/Loader";
 
 // PLUGINS //
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // STYLES //
 import "react-tabs/style/react-tabs.css";
@@ -28,11 +31,36 @@ import Tabs_img3 from "../../public/img/services_consultancy/tab_img3.jpg";
 
 /** Services Page */
 export default function ServiceConsultancy() {
+	const [nav1, setNav1] = useState();
+	const [nav2, setNav2] = useState();
 	useEffect(() => {
 		ScrollOut({
 			once: true,
 		});
 	}, []);
+
+	var settings = {
+		pauseOnHover: false,
+		arrows: false,
+		centerMode: true,
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					variableWidth: true,
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					// // autoplay: true,
+					// slidesToShow: 1,
+					// // slidesToScroll: 1,
+					variableWidth: true,
+				},
+			},
+		],
+	};
 	return (
 		<div>
 			<Header />
@@ -77,7 +105,173 @@ export default function ServiceConsultancy() {
 							<br /> Your Center Success
 						</h2>
 					</div>
-					<Tabs>
+
+					<div className={`${styles.for_item} ${styles.for_item_full} pb_60`}>
+							<Slider
+								{...settings}
+								asNavFor={nav1}
+								ref={(slider2) => setNav2(slider2)}
+								swipeToSlide={true}
+								focusOnSelect={true}
+								variableWidth={true}
+							>
+								<div className={`${styles.slide_item}`}>
+									<p>Planning and Layout Design</p>
+								</div>
+								<div className={`${styles.slide_item}`}>
+									<p>Exclusive Distribution</p>
+								</div>
+								<div className={`${styles.slide_item}`}>
+									<p>Tailored Amusement Equipment Selection</p>
+								</div>
+								<div className={`${styles.slide_item}`}>
+									<p>Logistics & Import</p>
+								</div>
+								<div className={`${styles.slide_item}`}>
+									<p>Installation & Training</p>
+								</div>
+								<div className={`${styles.slide_item}`}>
+									<p>Pre & Post Operation Support Services</p>
+								</div>
+							</Slider>
+						</div>
+
+					<div className="container">
+						<Slider
+							className={`${styles.nav_item} toTop`}
+							asNavFor={nav2}
+							arrows={false}
+							fade={true}
+							// speed={1200}
+							slidesToShow={1}
+							ref={(slider1) => setNav1(slider1)}
+						>
+							<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
+										>
+											<img className="img border_8" src={Tabs_img1.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+												Planning and Layout Design
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												Our expertise in optimizing available space transforms it into a
+												bespoke arcade amusement hub. We provide specialized layout plans
+												designed to suit your location, complete with electrical layout
+												plans, operating manuals, and ongoing support.
+											</p>
+										</div>
+									</div>
+							</div>
+							<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`} >
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
+										>
+											<img className="img border_8" src={Tabs_img2.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+											Exclusive Distribution
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												What sets us apart is our exclusive distribution of industry-leading brands. Our substantial buying power and involvement in multiple projects enable us to offer competitive prices without compromising on quality. This ensures that you receive top-notch amusement equipment that aligns with your budgetary requirements.
+											</p>
+										</div>
+									</div>
+							</div>
+							<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
+										>
+											<img className="img border_8" src={Tabs_img3.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+												Tailored Amusement Equipment Selection
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												At CSML, we specialize in curating a diverse mix of entertainment equipment tailored to high-thrill and family-friendly experiences. We prioritize creating unforgettable experiences by analyzing your audience's demographics, age groups, and budget considerations. Our goal is to maximize revenue while appealing to your guests' specific interests.
+											</p>
+										</div>
+									</div>
+							</div>
+							<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
+										>
+											<img className="img border_8" src={Tabs_img1.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+												Logistics & Import
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												Our expertise in optimizing available space transforms it into a
+												bespoke arcade amusement hub. We provide specialized layout plans
+												designed to suit your location, complete with electrical layout
+												plans, operating manuals, and ongoing support.
+											</p>
+										</div>
+									</div>
+							</div>
+							<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`} >
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
+										>
+											<img className="img border_8" src={Tabs_img2.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+											Installation & Training
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												What sets us apart is our exclusive distribution of industry-leading brands. Our substantial buying power and involvement in multiple projects enable us to offer competitive prices without compromising on quality. This ensures that you receive top-notch amusement equipment that aligns with your budgetary requirements.
+											</p>
+										</div>
+									</div>
+							</div>
+							<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
+										>
+											<img className="img border_8" src={Tabs_img3.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+											Pre & Post Operation Support Services
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												At CSML, we specialize in curating a diverse mix of entertainment equipment tailored to high-thrill and family-friendly experiences. We prioritize creating unforgettable experiences by analyzing your audience's demographics, age groups, and budget considerations. Our goal is to maximize revenue while appealing to your guests' specific interests.
+											</p>
+										</div>
+									</div>
+							</div>
+							
+
+						</Slider>
+					</div>
+
+					{/* <Tabs>
 						<TabList>
 							<Tab>Planning and Layout Design</Tab>
 							<Tab>Exclusive Distribution</Tab>
@@ -156,7 +350,6 @@ export default function ServiceConsultancy() {
 									</div>
 								</div>
 							</TabPanel>
-							{/* ________repaet tabpanel_________ */}
 							<TabPanel>
 								<div className={`${styles.tabs_bx} toTop`} data-scroll>
 									<div
@@ -227,7 +420,7 @@ export default function ServiceConsultancy() {
 								</div>
 							</TabPanel>
 						</div>
-					</Tabs>
+					</Tabs> */}
 					<ContactTab TabTitle="Partner with us for a successful journey in the world of entertainment centers. Your success is our unwavering commitment." />
 				</section>
 			</main>
