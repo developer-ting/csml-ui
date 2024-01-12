@@ -90,6 +90,7 @@
 				}
 				.popup_img_item {
 					width: 48%;
+					position: relative;
 					@media (max-width: 767px) {
 						width: 100%;
 						margin-bottom: 10px;
@@ -97,6 +98,17 @@
 					img {
 						border-radius: 12px;
 						width: 100%;
+					}
+					.NewRelease {
+						position: absolute;
+						left: 5px;
+						top: 8px;
+						font-size: 10px;
+						color: #fff;
+						font-family: var(--font_primary);
+						padding: 4px 9px;
+						border-radius: 50px;
+						background-color: #ff0001;
 					}
 				}
 				.popup_content_item {

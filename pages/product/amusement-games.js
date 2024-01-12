@@ -195,6 +195,9 @@ export default function AmusementGames({ GamesCategoriesData }) {
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${activeGameCategories.games.data[gameIndex].attributes.GameImg.data.attributes.url}`}
 												alt=""
 											/>
+											{activeGameCategories.games.data[gameIndex].attributes.IsNew && (
+												<h6 className={styles.NewRelease}>New Releases</h6>
+											)}
 										</div>
 										<div className={styles.popup_content_item}>
 											<h3 className={`${styles.popHead} text_24`}>

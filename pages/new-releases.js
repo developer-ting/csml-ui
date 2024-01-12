@@ -125,6 +125,9 @@ export default function NewReleases({ GamesData }) {
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${popUpGame.GameImg.data.attributes.url}`}
 												alt=""
 											/>
+											{popUpGame.IsNew && (
+												<h6 className={styles.NewRelease}>New Releases</h6>
+											)}
 										</div>
 										<div className={styles.popup_content_item}>
 											<h3 className={`${styles.popHead} text_24`}>{popUpGame.GameName}</h3>
