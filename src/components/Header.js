@@ -40,6 +40,9 @@ const Header = () => {
 		});
 
 		let calHeight = document.querySelector("header");
+		setTimeout(function () {
+			calHeight.classList.add(`${styles.zIndex}`);
+		}, 2400);
 		let height = calHeight.offsetHeight + "px";
 		// console.log(height);
 

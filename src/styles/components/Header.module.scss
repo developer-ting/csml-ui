@@ -13,8 +13,12 @@
 	@extend %f_r_aj_center;
 	height: 80px;
 	position: fixed;
+	// z-index: 1001;
 	z-index: 20;
 	transition: linear 0.2s;
+	&.zIndex {
+		z-index: 1001;
+	}
 
 	&.scrolled_bg {
 		background-color: #fff;
@@ -36,7 +40,7 @@
 					.title {
 						a {
 							color: var(--color_black) !important;
-							&:hover{
+							&:hover {
 								color: var(--color_white) !important;
 							}
 						}
@@ -134,7 +138,7 @@
 		@media only screen and (max-width: 1199px) {
 			padding: 60px 60px 40px 60px;
 		}
-		
+
 		@media screen and (max-width: 767px) {
 			top: 0;
 			width: 100%;
@@ -261,14 +265,14 @@
 			transform: translateX(0) !important;
 		}
 	}
-	
-	@media only screen and (max-height: 720px) and (min-width: 768px){
-		.menu_right_open{
+
+	@media only screen and (max-height: 720px) and (min-width: 768px) {
+		.menu_right_open {
 			padding: 60px 60px 40px 60px;
 			height: 470px;
 			overflow-y: scroll;
 		}
-		.bottom_list{
+		.bottom_list {
 			margin-top: 20px !important;
 		}
 	}

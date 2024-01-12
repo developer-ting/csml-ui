@@ -63,12 +63,12 @@ picture {
 	text-transform: uppercase;
 }
 
-.games_popup_youtube_link{
-	a{
+.games_popup_youtube_link {
+	a {
 		display: none;
 	}
 
-	a[href]{
+	a[href] {
 		display: inline-block;
 	}
 }
@@ -939,7 +939,7 @@ picture {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 1000;
+	z-index: 20;
 	padding: 5px 15px;
 	transition: 2.8s ease;
 	background-color: var(--color_black);
@@ -1008,13 +1008,16 @@ picture {
 				max-width: unset;
 				object-fit: cover;
 				object-position: center;
-				height: 100vh;
-				@media screen and (max-height: 720px) {
-					height: 125vh;
+				height: 85vh;
+				// @media screen and (max-height: 720px) {
+				// 	height: 125vh;
+				// }
+				@media screen and (max-height: 600px) {
+					height: 95vh;
 				}
-				@media screen and (max-width: 767px) {
-					height: 100vh;
-				}
+				// @media screen and (max-width: 767px) {
+				// 	height: 100vh;
+				// }
 			}
 			.btn_arrow {
 				img {
