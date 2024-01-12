@@ -35,9 +35,9 @@ const ContactTab = ({ TabTitle }) => {
 						<div className={`${styles.inside_flex}`}>
 							<div className={`${styles.text_bx} text_24 opacity_one`}>{parse(TabTitle)}</div>
 							<div className={`${styles.btn_bx}`}>
-								<a href="#" rel="noreferrer">
+								<a href="/contact" rel="noreferrer">
 								<span className="span_btn yellow_btn">
-								<button className="btn_project_default ">Contact Us</button>
+									<button className="btn_project_default ">Contact Us</button>
 								</span>
 									
 								</a>
