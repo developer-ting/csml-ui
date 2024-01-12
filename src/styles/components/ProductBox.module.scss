@@ -1,10 +1,10 @@
 @import "../helpers/helpers.scss";
 
-.product_bottom_box{
-    padding: 20px;
-    .color_red{
-        background-color: var(--color_primary);
-    }
+.product_bottom_box {
+	padding: 20px;
+	.color_red {
+		background-color: var(--color_primary);
+	}
 }
 .popup_overlay {
 	position: fixed;
@@ -30,11 +30,17 @@
 		border-radius: 20px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		overflow-x: hidden;
-		width: 65%;
-		
+		width: 1000px;
+		@media only screen and (max-width: 1200px) {
+			width: 90%;
+		}
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+		}
+
 		@media only screen and (max-height: 650px) {
 			height: 550px;
-    	overflow-y: scroll;
+			overflow-y: scroll;
 		}
 		@media only screen and (max-width: 992px) {
 			width: 90%;
@@ -86,26 +92,27 @@
 		.popup_body {
 			.popup_flx {
 				margin: 0px -5px;
-				
-				.slid_item{
+
+				.slid_item {
 					padding: 0px 5px;
-					height: 360px;
-					@media (max-width: 767px) {
-						height: 200px;
-					}
-					img{
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
+
+					// height: 360px;
+					// @media (max-width: 767px) {
+					// 	height: 200px;
+					// }
+					// img{
+					// 	width: 100%;
+					// 	height: 100%;
+					// 	object-fit: cover;
+					// }
 				}
 			}
-			.li_text{
-				ul{
+			.li_text {
+				ul {
 					display: flex;
 					flex-wrap: wrap;
-    			padding-left: 20px;
-					li{
+					padding-left: 20px;
+					li {
 						font-size: 16px;
 						margin-bottom: 10px;
 						padding-right: 40px;
