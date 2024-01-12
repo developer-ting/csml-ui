@@ -10,6 +10,7 @@ const Loader = () => {
 		setTimeout(function () {
 			// anim.style.display = "none";
 			anim.style.opacity = "0";
+			anim.style.zIndex = "unset";
 		}, 2500);
 	}, []);
 	return (
