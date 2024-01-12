@@ -137,7 +137,7 @@ export default function NewReleases({ GamesData }) {
 											<p className={`${styles.paraTxt} paraTxt_16`}>
 												{parse(popUpGame.GameDimensions)}
 											</p>
-											<div className={`${styles.btn_sec} games_popup_youtube_link`}>
+											<div className={`${styles.btn_sec} games_popup_youtube_link pb_20`}>
 												<a
 													className={`${styles.watch_btn}`}
 													href={popUpGame.GameYoutubeURL}

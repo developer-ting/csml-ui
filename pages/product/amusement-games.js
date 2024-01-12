@@ -217,7 +217,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 														.GameDimensions
 												)}
 											</p>
-											<div className={`${styles.btn_sec} games_popup_youtube_link`}>
+											<div className={`${styles.btn_sec} games_popup_youtube_link pb_20`}>
 												<a
 													className={`${styles.watch_btn}`}
 													href={
