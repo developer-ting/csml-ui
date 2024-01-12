@@ -87,7 +87,7 @@
     .tabs_bx{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         @media (max-width: 767px) {
           flex-direction: column;
           gap: 30px;
@@ -114,6 +114,12 @@
             }
             .info_desc{
               line-height: 24px;
+            }
+            a{
+              display: inline-block;
+              border-bottom: 2px solid var(--color_primary);
+              cursor: pointer;
+              line-height: normal;
             }
         }
     }
@@ -158,6 +164,8 @@
           font-size: 14px;
         }
     }
+    
+    
     }
   }
   :global(.slick-current){
