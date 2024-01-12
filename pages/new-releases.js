@@ -131,8 +131,11 @@ export default function NewReleases({ GamesData }) {
 											<div className={`${styles.paraTxt} paraTxt_16`}>
 												{parse(popUpGame.GamePopUpDescription)}
 											</div>
-											<p className={`${styles.paraTxt} paraTxt_16`}>
+											{/* <p className={`${styles.paraTxt} paraTxt_16`}>
 												<strong>Dimensions</strong>: {popUpGame.GameDimensions}
+											</p>  */}
+											<p className={`${styles.paraTxt} paraTxt_16`}>
+												{parse(popUpGame.GameDimensions)}
 											</p>
 											<div className={styles.btn_sec}>
 												<a
