@@ -26,6 +26,9 @@
 				img {
 					margin: 0 auto;
 					filter: grayscale(1);
+					@media (max-width: 767px) {
+						filter: grayscale(0);
+					}
 				}
 				&:hover {
 					img {
