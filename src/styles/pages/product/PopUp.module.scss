@@ -28,10 +28,10 @@
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		overflow-x: hidden;
 		width: 1000px;
-		@media only screen and (max-height: 800px) {
-			height: 550px;
-			overflow-y: scroll;
-		}
+		// @media only screen and (max-height: 800px) {
+		// 	height: 550px;
+		// 	overflow-y: scroll;
+		// }
 		@media only screen and (max-width: 1200px) {
 			width: 90%;
 		}
@@ -43,7 +43,7 @@
 			position: relative;
 			@media only screen and (max-width: 767px) {
 				padding: 50px 20px;
-				height: 90vh;
+				// height: 90vh;
 			}
 			&::-webkit-scrollbar-thumb {
 				background: var(--color_secondary);

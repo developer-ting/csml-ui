@@ -109,7 +109,7 @@ export default function Showcase({ showcaseData }) {
 												<h3 className="text_24 color_white text_400 pb_20">
 													{item.attributes.ShowcaseHeading}
 												</h3>
-												<a href={item.attributes.ShowcaseURL} rel="noreferrer">
+												{/* <a href={item.attributes.ShowcaseURL} rel="noreferrer">
 													<button className="btn_arrow">
 														<span className={`${styles.arrow_one} arrow_one`}>
 															<img src={arrow.src} />
@@ -118,7 +118,7 @@ export default function Showcase({ showcaseData }) {
 															<img src={arrow.src} />
 														</span>
 													</button>
-												</a>
+												</a> */}
 											</div>
 										</div>
 									</div>
