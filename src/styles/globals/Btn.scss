@@ -171,15 +171,25 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  img {
-    transition: ease-out 0.3s;
+  .arrow_one{
+    position: relative;
+    img {
+      position: relative;
+      transition: ease-out 0.3s;
+    }
   }
+  
   &:hover{
     background-color: var(--color_secondary);
     transition: ease-out 0.3s;
-    img {
-      filter: invert(1);
-      transition: ease-out 0.3s;
+    
+    .arrow_one{
+      position: relative;
+      img {
+        position: relative;
+        transition: ease-out 0.3s;
+        filter: invert(1);
+      }
     }
   }
 }
