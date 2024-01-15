@@ -80,10 +80,20 @@
                   p{
                     opacity: 0.8;
                     font-size: 18px;
-                    display: -webkit-box;   
-                    -webkit-line-clamp: 3;   
-                    -webkit-box-orient: vertical;       
-                    overflow: hidden; 
+                    min-height: 136px;
+                    // display: -webkit-box;   
+                    // -webkit-line-clamp: 3;   
+                    // -webkit-box-orient: vertical;       
+                    // overflow: hidden;
+                    @media only screen and (max-width: 1199px) {
+                      min-height: 170px;
+                    } 
+                    @media only screen and (max-width: 991px) {
+                      min-height: 204px;
+                    } 
+                    @media only screen and (max-width: 767px) {
+                      min-height: auto;
+                    } 
                   }
                 }
               }
