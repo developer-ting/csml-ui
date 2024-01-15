@@ -172,7 +172,7 @@
   position: relative;
   overflow: hidden;
   .arrow_one{
-    position: relative;
+    position: absolute;
     img {
       position: relative;
       transition: ease-out 0.3s;
@@ -184,9 +184,7 @@
     transition: ease-out 0.3s;
     
     .arrow_one{
-      position: relative;
       img {
-        position: relative;
         transition: ease-out 0.3s;
         filter: invert(1);
       }
