@@ -40,6 +40,7 @@ import pre_post_operation_support_services from "../../public/img/services_consu
 
 /** Services Page */
 export default function ServiceConsultancy() {
+	const [isSticky, setSticky] = useState(false);
   const [isShowMore, setIsShowMore] = useState(false);
 	/** toggleReadMoreLess function */
 	const toggleReadMoreLess = () => {
@@ -52,6 +53,26 @@ export default function ServiceConsultancy() {
 		ScrollOut({
 			once: true,
 		});
+	}, []);
+	useEffect(() => {
+		const oTop = document.querySelector(".tabs_bx_main");
+		const slickList = document.querySelector(".tabs_bx_main .slick-list");
+		const sticky_part = document.querySelector(".sticky");
+		const handleScroll = () => {
+			setSticky(window.scrollY > oTop.offsetTop); // Adjust the threshold as needed
+			if (window.scrollY > oTop.offsetTop) {
+				slickList.style.overflow = "unset";
+			} else {
+				slickList.style.overflow = "hidden";
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		// Cleanup the event listener on component unmount
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
 
 	var settings = {
@@ -157,7 +178,7 @@ export default function ServiceConsultancy() {
 							</Slider>
 						</div>
 
-					<div className="container">
+					<div className="container tabs_bx_main">
 						<Slider
 							className={`${styles.nav_item} toTop`}
 							asNavFor={nav2}
@@ -308,12 +329,16 @@ export default function ServiceConsultancy() {
 									</div>
 							</div>
 							<div className={`${styles.slide_item_two}`}>
-									<div className={`${styles.tabs_bx} ${styles.tabs_bx_new}`}>
-										<div
-											className={`${styles.tabs_img}  border_animation white_border_animation`}
-										>
-											<img className="img border_8" src={pre_post_operation_support_services.src} />
+								<div className={`${styles.tabs_bx} ${styles.tabs_bx_new} tabs_bx`}>
+									<div
+										className={`${styles.tabs_img} ${styles.stickyElement} ${
+											isSticky ? styles.sticky : ""
+										}  border_animation white_border_animation sticky`}
+									>
+										<div className={` `}>
+											<img className="img border_8" src={Tabs_img3.src} />
 										</div>
+									</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
 											Pre & Post Operation Support Services

@@ -92,6 +92,14 @@
           flex-direction: column;
           gap: 30px;
         }
+        .stickyElement {
+          transition: 0.3s ease-in-out;
+        }
+  
+        .sticky {
+          position: sticky;
+          top: 100px;
+        }
         .tabs_img{
             width: 50%;
             padding: 10px;
