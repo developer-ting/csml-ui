@@ -34,6 +34,7 @@ import timingSoftwareImg2 from "../../public/img/product/go-karting/timing-softw
 import safetyBarriersImg1 from "../../public/img/product/go-karting/safety-barriers-img1.jpg";
 import safetyBarriersImg2 from "../../public/img/product/go-karting/safety-barriers-img2.jpg";
 import safetyBarriersImg3 from "../../public/img/product/go-karting/safety-barriers-img3.jpg";
+import plus_icon from "../../public/img/up_icon.svg";
 
 /** Go Karting Page */
 export default function GoKarting() {
@@ -205,6 +206,7 @@ export default function GoKarting() {
 									<div className={`${styles.desc_box}`}>
 										<div className={`${styles.desc_title}`}>
 											<h3 className="text_24 text_600">Innovative Environment</h3>
+											<img className="img" src={plus_icon.src} />
 										</div>
 										<p className="paraTxt_18 l_h_4 pt_20">
 											Elevate go-karting with advanced timing software, offering precise
@@ -226,6 +228,7 @@ export default function GoKarting() {
 									<div className={`${styles.desc_box}`}>
 										<div className={`${styles.desc_title}`}>
 											<h3 className="text_24 text_600">Continuous Growth</h3>
+											<img className="img" src={plus_icon.src} />
 										</div>
 										<p className="paraTxt_18 l_h_4 pt_20">
 											Seamlessly integrates with various timing hardware systems,

@@ -128,6 +128,22 @@
                   @media only screen and (max-width: 991px) {
                     height: 78px;
                   }
+                  .desc_title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    img{
+                      position: relative;
+                      width: auto;
+                      filter: invert(1);
+                      padding-top: 0px;
+                      margin: 0;
+                      @media only screen and (max-width: 767px) {
+                        margin-top: 2px;
+                      }
+                    }
+                  }
                 }
               }
               &:hover{
@@ -135,6 +151,12 @@
                 .desc_box{
                   height: 52%;
                   transition: 0.3s all;
+                }
+                .desc_title{
+      
+                  img{
+                    transform: rotate(180deg);
+                  }
                 }
               }
               :global(.dots_p){

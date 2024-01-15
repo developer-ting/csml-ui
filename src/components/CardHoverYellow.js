@@ -11,6 +11,7 @@ import parse from "html-react-parser";
 import styles from "../styles/components/CardHoverYellow.module.scss";
 
 // IMAGES //
+import plus_icon from "../../public/img/up_icon.svg";
 
 /** Home Hero Section */
 const CardHoverYellow = ({ boxImg, title, desc, full, new_style }) => {
@@ -28,6 +29,7 @@ const CardHoverYellow = ({ boxImg, title, desc, full, new_style }) => {
 				<div className={`${styles.desc_box} ${full && styles.full_height}`}>
 					<div className={`${styles.desc_title}`}>
 						<h3 className="text_24 text_700">{title}</h3>
+						<img className="img" src={plus_icon.src} />
 					</div>
 					<p className="paraTxt">{desc}</p>
 				</div>

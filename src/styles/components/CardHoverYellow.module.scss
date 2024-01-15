@@ -58,9 +58,22 @@
         padding: 30px 15px;
       }
       .desc_title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         h3{
         padding-right: 10px;
         font-size: 21px;
+        }
+        img{
+          position: relative;
+          width: auto;
+          filter: invert(1);
+          padding-top: 0px;
+          margin: 0;
+          @media only screen and (max-width: 767px) {
+            margin-top: 2px;
+          }
         }
       }
       p{
@@ -77,6 +90,12 @@
       transition: 0.3s all;
       @media only screen and (max-width: 767px) {
         overflow-y: scroll;
+      }
+    }
+    .desc_title{
+      
+      img{
+        transform: rotate(180deg);
       }
     }
     .full_height{
