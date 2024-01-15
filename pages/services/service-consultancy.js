@@ -336,7 +336,7 @@ export default function ServiceConsultancy() {
 										}  border_animation white_border_animation sticky`}
 									>
 										<div className={` `}>
-											<img className="img border_8" src={Tabs_img3.src} />
+											<img className="img border_8" src={pre_post_operation_support_services.src} />
 										</div>
 									</div>
 										<div className={`${styles.tabs_info}`}>
