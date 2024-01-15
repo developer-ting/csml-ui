@@ -40,7 +40,7 @@ import pre_post_operation_support_services from "../../public/img/services_consu
 
 /** Services Page */
 export default function ServiceConsultancy() {
-	const [isSticky, setSticky] = useState(false);
+	// const [isSticky, setSticky] = useState(false);
   const [isShowMore, setIsShowMore] = useState(false);
 	/** toggleReadMoreLess function */
 	const toggleReadMoreLess = () => {
@@ -54,26 +54,26 @@ export default function ServiceConsultancy() {
 			once: true,
 		});
 	}, []);
-	useEffect(() => {
-		const oTop = document.querySelector(".tabs_bx_main");
-		const slickList = document.querySelector(".tabs_bx_main .slick-list");
-		const sticky_part = document.querySelector(".sticky");
-		const handleScroll = () => {
-			setSticky(window.scrollY > oTop.offsetTop); // Adjust the threshold as needed
-			if (window.scrollY > oTop.offsetTop) {
-				slickList.style.overflow = "unset";
-			} else {
-				slickList.style.overflow = "hidden";
-			}
-		};
+	// useEffect(() => {
+	// 	const oTop = document.querySelector(".tabs_bx_main");
+	// 	const slickList = document.querySelector(".tabs_bx_main .slick-list");
+	// 	const sticky_part = document.querySelector(".sticky");
+	// 	const handleScroll = () => {
+	// 		setSticky(window.scrollY > oTop.offsetTop); // Adjust the threshold as needed
+	// 		if (window.scrollY > oTop.offsetTop) {
+	// 			slickList.style.overflow = "unset";
+	// 		} else {
+	// 			slickList.style.overflow = "hidden";
+	// 		}
+	// 	};
 
-		window.addEventListener("scroll", handleScroll);
+	// 	window.addEventListener("scroll", handleScroll);
 
-		// Cleanup the event listener on component unmount
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
+	// 	// Cleanup the event listener on component unmount
+	// 	return () => {
+	// 		window.removeEventListener("scroll", handleScroll);
+	// 	};
+	// }, []);
 
 	var settings = {
 		pauseOnHover: false,
@@ -331,9 +331,7 @@ export default function ServiceConsultancy() {
 							<div className={`${styles.slide_item_two}`}>
 								<div className={`${styles.tabs_bx} ${styles.tabs_bx_new} tabs_bx`}>
 									<div
-										className={`${styles.tabs_img} ${styles.stickyElement} ${
-											isSticky ? styles.sticky : ""
-										}  border_animation white_border_animation sticky`}
+										className={`${styles.tabs_img} border_animation white_border_animation`}
 									>
 										<div className={` `}>
 											<img className="img border_8" src={pre_post_operation_support_services.src} />
