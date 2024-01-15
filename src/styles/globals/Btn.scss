@@ -152,3 +152,34 @@
     }
   }
 }
+
+.btn_plus{
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 11px;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  background-color: var(--color_primary);
+  text-decoration: none;
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  width: 36px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  img {
+    transition: ease-out 0.3s;
+  }
+  &:hover{
+    background-color: var(--color_secondary);
+    transition: ease-out 0.3s;
+    img {
+      filter: invert(1);
+      transition: ease-out 0.3s;
+    }
+  }
+}

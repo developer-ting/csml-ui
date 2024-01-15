@@ -82,7 +82,7 @@ export default function ServiceConsultancy() {
 			<Loader />
 			<main className={`${styles.ServicesConsultancyPage}`}>
 				<InsideBanner
-					bannerTitle="Services Aligned with your FEC Success"
+					bannerTitle="Services Aligned with your <br className='hidden-xs'>FEC Success"
 					bannerImg={consultancy_banner.src}
 					mobileImg={consultancy_banner_mobile.src}
 				/>
@@ -308,7 +308,7 @@ export default function ServiceConsultancy() {
 									</div>
 							</div>
 							<div className={`${styles.slide_item_two}`}>
-									<div className={`${styles.tabs_bx}`}>
+									<div className={`${styles.tabs_bx} ${styles.tabs_bx_new}`}>
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>

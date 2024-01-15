@@ -39,7 +39,7 @@ export default function Blog({ BlogData }) {
 			<Loader />
 			<main className={`${styles.BlogPage}`}>
 				<InsideBanner
-					bannerTitle="Stay Plugged In with the Industry Trends"
+					bannerTitle="Stay Plugged In with the <br className='hidden-xs'>Industry Trends"
 					bannerImg={blog_banner.src}
 					mobileImg={blog_banner_mobile.src}
 				/>

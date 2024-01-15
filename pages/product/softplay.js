@@ -35,7 +35,7 @@ export default function Softplay() {
 			<Loader />
 			<main className={`${styles.SoftplayMain}`}>
 				<InsideBanner
-					bannerTitle="Softplay fun for you little ones"
+					bannerTitle="Softplay fun for you <br className='hidden-xs'>little ones"
 					bannerImg={softplay_banner.src}
 					mobileImg={softplay_banner_mobile.src}
 				/>

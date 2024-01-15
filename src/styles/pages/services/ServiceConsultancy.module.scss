@@ -87,7 +87,7 @@
     .tabs_bx{
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         @media (max-width: 767px) {
           flex-direction: column;
           gap: 30px;
@@ -122,6 +122,9 @@
               line-height: normal;
             }
         }
+    }
+    .tabs_bx_new{
+      align-items: flex-start;
     }
   }
   :global(.border_animation::after){

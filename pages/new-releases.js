@@ -20,7 +20,7 @@ import styles from "../src/styles/pages/NewReleases.module.scss";
 import new_releases_banner from "../public/img/new-releases/new_releases_banner.jpg";
 import new_releases_banner_mobile from "../public/img/new-releases/new_releases_banner_mobile.jpg";
 import productImg from "../public/img/new-releases/product-img.png";
-import arrow from "../public/img/arrow.svg";
+import plus_icon from "../public/img/plus_icon.svg";
 import closeIcn from "../public/img/close.svg";
 import popIMg from "../public/img/product/amusement-games/pop_img.jpg";
 import ytImg from "../public/img/product/amusement-games/youtubeIcn.svg";
@@ -90,14 +90,11 @@ export default function NewReleases({ GamesData }) {
 											</h5>
 											<a>
 												<button
-													className="btn_arrow"
+													className="btn_plus"
 													onClick={() => openPopup(productItemIndex)}
 												>
 													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={arrow.src} />
-													</span>
-													<span className={`${styles.arrow_two} arrow_two`}>
-														<img src={arrow.src} />
+														<img src={plus_icon.src} />
 													</span>
 												</button>
 											</a>

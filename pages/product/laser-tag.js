@@ -35,7 +35,7 @@ import system from "../../public/img/product/laser-tag/system.jpg";
 import elements from "../../public/img/product/laser-tag/elements.jpg";
 import optimizing_img from "../../public/img/product/laser-tag/optimizing_img.jpg";
 import design from "../../public/img/product/laser-tag/design.jpg";
-import arrow from "../../public/img/arrow.svg";
+import plus_icon from "../../public/img/plus_icon.svg";
 import closeIcn from "../../public/img/close.svg";
 
 /** Softplay Page */
@@ -162,14 +162,11 @@ export default function LaserTag({ LaserTagData }) {
 													</h3>
 													<a>
 														<button
-															className="btn_arrow"
+															className="btn_plus"
 															onClick={() => openPopup(productItemIndex)}
 														>
 															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={arrow.src} />
-															</span>
-															<span className={`${styles.arrow_two} arrow_two`}>
-																<img src={arrow.src} />
+																<img src={plus_icon.src} />
 															</span>
 														</button>
 													</a>

@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import parse from "html-react-parser";
 
 // STYLES //
-import arrow from "../../public/img/arrow.svg";
+import plus_icon from "../../public/img/plus_icon.svg";
 import closeIcn from "../../public/img/close.svg";
 import styles from "../../src/styles/components/ProductBox.module.scss";
 
@@ -71,12 +71,9 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 				<div className={`${styles.product_bottom_box} text_btn_sec f_r_aj_between`}>
 					<h5 className="text_md text_500 color_white">{title}</h5>
 					<div rel="noreferrer">
-						<button className="btn_arrow" onClick={() => openPopup(index)}>
+						<button className="btn_plus" onClick={() => openPopup(index)}>
 							<span className={`${styles.arrow_one} arrow_one`}>
-								<img src={arrow.src} />
-							</span>
-							<span className={`${styles.arrow_two} arrow_two`}>
-								<img src={arrow.src} />
+								<img src={plus_icon.src} />
 							</span>
 						</button>
 					</div>

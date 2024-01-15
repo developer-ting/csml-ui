@@ -21,7 +21,7 @@ import styles from "../../src/styles/pages/product/AmusementGames.module.scss";
 import amusement_gamebanner from "../../public/img/product/amusement-games/amusement_gamebanner.jpg";
 import amusement_gamebanner_mobile from "../../public/img/product/amusement-games/amusement_gamebanner_mobile.jpg";
 import productImg from "../../public/img/product/amusement-games/product-img.png";
-import arrow from "../../public/img/arrow.svg";
+import plus_icon from "../../public/img/plus_icon.svg";
 import closeIcn from "../../public/img/close.svg";
 import popIMg from "../../public/img/product/amusement-games/pop_img.jpg";
 import ytImg from "../../public/img/product/amusement-games/youtubeIcn.svg";
@@ -156,14 +156,11 @@ export default function AmusementGames({ GamesCategoriesData }) {
 																</h5>
 																<a>
 																	<button
-																		className="btn_arrow"
+																		className="btn_plus"
 																		onClick={() => openPopup(productItemIndex)}
 																	>
 																		<span className={`${styles.arrow_one} arrow_one`}>
-																			<img src={arrow.src} />
-																		</span>
-																		<span className={`${styles.arrow_two} arrow_two`}>
-																			<img src={arrow.src} />
+																			<img src={plus_icon.src} />
 																		</span>
 																	</button>
 																</a>

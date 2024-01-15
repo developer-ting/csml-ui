@@ -35,7 +35,7 @@ export default function Trampoline() {
 			<Loader />
 			<main className={`${styles.TrampolineMain}`}>
 				<InsideBanner
-					bannerTitle="Creating Adventure for all ages with CSML"
+					bannerTitle="Creating Adventure for all <br className='hidden-xs'>ages with CSML"
 					bannerImg={trampoline_banner.src}
 					mobileImg={trampoline_banner_mobile.src}
 				/>
