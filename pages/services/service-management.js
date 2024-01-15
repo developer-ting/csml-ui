@@ -51,16 +51,10 @@ export default function ServiceManagement() {
 								</h2>
 								<div className={`${styles.info_para} toTop`} data-scroll>
 									<p className="paraTxt_18 text_400 opacity_one">
-										Experience operational excellence with our tailored Management
-										Contract for Family Entertainment Centers (FECs. Our expert team
-										handles day-to-day operations, from technical management to enhancing
-										customer experiences, ensuring a thriving center.
+										Experience operational excellence with our tailored Management Contract for Family Entertainment Centers (FECs. Our expert team handles day-to-day operations, from technical management to enhancing customer experiences, ensuring a thriving center.
 									</p>
 									<p className="paraTxt_18 text_400 opacity_one	">
-										Focus on your strategic objectives while we manage operational
-										intricacies. Our team embodies expertise, efficiency, and unwavering
-										customer-centricity to boost profitability and uphold your FEC's
-										reputation.
+										Focus on your strategic objectives while we manage operational intricacies. Our team embodies expertise, efficiency, and unwavering customer-centricity to boost profitability and uphold your FEC's reputation.
 									</p>
 								</div>
 							</div>

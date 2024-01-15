@@ -115,13 +115,7 @@ export default function ServiceConsultancy() {
 									Turnkey Consultancy Solution for Entertainment Center Success
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
-									CSML is the pioneering force behind exceptional Indoor Amusement
-									Centers (IAC). We specialize in turning ordinary spaces into
-									extraordinary amusement centers. Our consultancy services are designed
-									to guide you through every step of the process, from conceptualization
-									to execution.As industry pioneers in Indoor Amusement Centers (IAC), we
-									offer meticulously tailored end-to-end solutions to streamline the
-									complexities of managing multiple providers.
+									CSML is the pioneering force behind exceptional Indoor Amusement Centers (IAC). We specialize in offering comprehensive Consultancy & Operational Management services, simplifying the intricate management of multiple providers. Our expertise encompasses initial concept, layout planning, equipment sourcing and installation, logistics management, staff training, and steadfast post-launch support. Our unwavering dedication is to harmonize every aspect, allowing you to focus on what truly matters.
 								</p>
 							</div>
 							<div className={`${styles.img_bx} toTop`} data-scroll>
@@ -202,10 +196,7 @@ export default function ServiceConsultancy() {
 										<p
 											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
 										>
-											Our expertise in optimizing available space transforms it into a
-											bespoke arcade amusement hub. We provide specialized layout plans
-											designed to suit your location, complete with electrical layout
-											plans, operating manuals, and ongoing support.
+											At CSML, we are dedicated to delivering top-notch Consultancy & Operation Management services. As industry pioneers in Indoor Amusement Centers (IAC), we offer meticulously tailored end-to-end solutions to streamline the complexities of managing multiple providers.
 											
 										</p>
 									</div>
