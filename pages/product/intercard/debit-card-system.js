@@ -144,7 +144,7 @@ export default function DebitCardSystem({
 			<Loader />
 			<main className={`${styles.debit_card_main}`}>
 				<InsideBanner
-					bannerTitle="Intercard x CSML <br /> Partner With The Experts"
+					bannerTitle="Intercard x CSML <br className='hidden-xs'> Partner With The Experts"
 					bannerImg={debit_banner.src}
 					mobileImg={debit_banner_mobile.src}
 				/>

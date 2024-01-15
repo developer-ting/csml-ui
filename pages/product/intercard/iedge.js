@@ -36,7 +36,7 @@ export default function Iedge() {
 			<Loader />
 			<main className={`${styles.iedge_main}`}>
 				<InsideBanner
-					bannerTitle="The Future at Your Edge with Intercard <br /> 
+					bannerTitle="The Future at Your Edge with Intercard <br className='hidden-xs'> 
           Mobile App Collection"
 					bannerImg={iedge_banner.src}
 					mobileImg={iedge_banner_mobile.src}

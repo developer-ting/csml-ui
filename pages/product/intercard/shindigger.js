@@ -45,7 +45,7 @@ export default function Shindigger({ BrochureData }) {
 			<Loader />
 			<main className={`${styles.shindigger_main}`}>
 				<InsideBanner
-					bannerTitle="Effortless Party Planning with <br>Shindigger party booking software"
+					bannerTitle="Effortless Party Planning with <br className='hidden-xs'>Shindigger party booking software"
 					bannerImg={shindigger_banner.src}
 					mobileImg={shindigger_banner_mobile.src}
 				/>

@@ -76,7 +76,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 			<Loader />
 			<main className={`${styles.AmusementGamesPage}`}>
 				<InsideBanner
-					bannerTitle="Crafting Timeless Joy from <br/> Retro Gems to Futuristic Thrills"
+					bannerTitle="Crafting Timeless Joy from <br className='hidden-xs'> Retro Gems to Futuristic Thrills"
 					bannerImg={amusement_gamebanner.src}
 					mobileImg={amusement_gamebanner_mobile.src}
 				/>
