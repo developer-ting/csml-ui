@@ -184,9 +184,10 @@ const Header = () => {
 									</div>
 									<div className={`${styles.sub_menu_list}`}>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="/services/service-consultancy">
-												<a className="text_sm text_500">Consultancy Services</a>
-											</Link>
+											{/* <Link href="/services/service-consultancy">
+												
+											</Link> */}
+											<a href="/services/service-consultancy" className="text_sm text_500">Consultancy Services</a>
 										</p>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
 											<Link href="/services/service-management">

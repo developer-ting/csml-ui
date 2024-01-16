@@ -94,10 +94,10 @@ export default function ServiceConsultancy() {
 
 
 	// 	// Cleanup the event listener on component unmount
-		return () => {
-			root.style.setProperty("--img-height", `${imgHeight}px`);
-		root.style.setProperty("--img-width", `${imgwidth}px`);
-		};
+		// return () => {
+		// 	root.style.setProperty("--img-height", `${imgHeight}px`);
+		// root.style.setProperty("--img-width", `${imgwidth}px`);
+		// };
 	 }, []);
 
 	var settings = {
