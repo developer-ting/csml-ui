@@ -73,7 +73,19 @@
         position: relative;
         padding: 60px 30px;
         h3{
-          text-align: center;
+          text-align: left;
+        }
+        .head_title{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          img{
+            position: relative;
+            filter: invert(1);
+            @media only screen and (max-width: 767px) {
+              margin-top: 2px;
+            }
+          }
         }
         .desc_box{
           position: absolute;
@@ -91,9 +103,20 @@
             padding: 30px 15px;
           }
           .desc_title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             h3{
             padding-right: 10px;
             font-size: 21px;
+            }
+            img{
+              position: relative;
+              filter: invert(1);
+              transform: rotate(180deg);
+              @media only screen and (max-width: 767px) {
+                margin-top: 2px;
+              }
             }
           }
           p{

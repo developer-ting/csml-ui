@@ -48,6 +48,7 @@ import iWave from "../../../public/img/product/intercard/debit-card-system/iWave
 import video_img from "../../../public/img/product/intercard/debit-card-system/video_img.jpg";
 import video_img_mobile from "../../../public/img/product/intercard/debit-card-system/video_img_mobile.jpg";
 import play from "../../../public/img/product/intercard/debit-card-system/play.svg";
+import plus_icon from "../../../public/img/up_icon.svg";
 
 export default function DebitCardSystem({
 	ReadersData,
@@ -247,14 +248,18 @@ export default function DebitCardSystem({
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ReaderThumbnail.data.attributes.url}`}
 												alt="img"
 											/>
-											<h3 className="text_24 text_700 pt_30">
-												{item.attributes.ReaderHeadline}
-											</h3>
+											<div className={`${styles.head_title} pt_30`}>
+												<h3 className="text_24 text_700">
+													{item.attributes.ReaderHeadline}
+												</h3>
+												<img className="img" src={plus_icon.src} />
+											</div>
 											<div className={`${styles.desc_box}`}>
 												<div className={`${styles.desc_title}`}>
 													<h3 className="text_24 text_700">
 														{item.attributes.ReaderHeadline}
 													</h3>
+													<img className="img" src={plus_icon.src} />
 												</div>
 												<p className="paraTxt">{item.attributes.ReaderDescription}</p>
 											</div>
