@@ -34,7 +34,7 @@ export default function ServiceManagement() {
 			<Loader />
 			<main className={`${styles.ServicesManagementPage}`}>
 				<InsideBanner
-					bannerTitle="CSML’s Commitment to Efficiency, <br/>
+					bannerTitle="CSML’s Commitment To Efficiency, <br/>
                     Expertise, Excellence"
 					bannerImg={management_banner.src}
 					mobileImg={management_banner_mobile.src}

@@ -38,8 +38,8 @@ export default function About() {
 			<Loader />
 			<main className={`${styles.about_page}`}>
 				<InsideBanner
-					bannerTitle="Over 2 decades of unlocking
-        <br className='hidden-xs'> entertainment in every space"
+					bannerTitle="Over 2 Decades Of Unlocking
+        <br className='hidden-xs'> Entertainment In Every Space"
 					bannerImg={about_banner.src}
 					mobileImg={about_banner_mobile.src}
 				/>

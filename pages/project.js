@@ -27,7 +27,7 @@ export default function Project({ projectsData }) {
 			<Loader />
 			<main className={`${styles.ServicesConsultancyPage}`}>
 				<InsideBanner
-					bannerTitle="Journey through Our <br className='hidden-xs'>Diverse Projects"
+					bannerTitle="Journey Through Our <br className='hidden-xs'>Diverse Projects"
 					bannerImg={project_banner.src}
 					mobileImg={project_banner_mobile.src}
 				/>

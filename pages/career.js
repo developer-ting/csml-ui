@@ -39,7 +39,7 @@ export default function Career() {
 			<Loader />
 			<main className={`${styles.career_page}`}>
 				<InsideBanner
-					bannerTitle="Start Your Adventure <br className='hidden-xs'>with CSML"
+					bannerTitle="Start Your Adventure <br className='hidden-xs'>With CSML"
 					bannerImg={career_banner.src}
 					mobileImg={career_banner_mobile.src}
 				/>

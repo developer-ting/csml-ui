@@ -82,14 +82,14 @@ const Sync = ({ data }) => {
 						className="heading_text_55 color_white pb_30 text_center toTop"
 						data-scroll
 					>
-						SYNC Scoring System – The world’s <br />
+						SYNC® Scoring System – The world’s <br />
 						fastest-selling bowling scoring system
 					</h2>
 					<h4 className="text_24 text_600 color_white pb_20 text_center">
-						It’s all in Sync®
+						It’s all in SYNC®
 					</h4>
 					<p className="paraTxt_18 color_white_opacity l_h_6 text_center">
-						Brunswick's Sync® Center Operations is the industry's top-scoring and
+						Brunswick's SYNC® Center Operations is the industry's top-scoring and
 						management system. This cloud-based technology automates marketing, offers
 						powerful management tools and enhances the guest experience. Since its
 						2015 release, Brunswick has remained committed to improving operations and

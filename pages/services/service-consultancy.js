@@ -117,7 +117,7 @@ export default function ServiceConsultancy() {
 			<Loader />
 			<main className={`${styles.ServicesConsultancyPage}`}>
 				<InsideBanner
-					bannerTitle="Services Aligned with your <br className='hidden-xs'>FEC Success"
+					bannerTitle="Services Aligned With Your <br className='hidden-xs'>FEC Success"
 					bannerImg={consultancy_banner.src}
 					mobileImg={consultancy_banner_mobile.src}
 				/>

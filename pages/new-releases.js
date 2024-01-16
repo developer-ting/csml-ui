@@ -61,7 +61,7 @@ export default function NewReleases({ GamesData }) {
 			<Loader />
 			<main className={`${styles.NewReleasesPage}`}>
 				<InsideBanner
-					bannerTitle="Discover fresh adventures with <br/> our new releases"
+					bannerTitle="Discover Fresh Adventures With <br/> Our New Releases"
 					bannerImg={new_releases_banner.src}
 					mobileImg={new_releases_banner_mobile.src}
 				/>

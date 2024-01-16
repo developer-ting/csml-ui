@@ -76,7 +76,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 			<Loader />
 			<main className={`${styles.AmusementGamesPage}`}>
 				<InsideBanner
-					bannerTitle="Crafting Timeless Joy from <br className='hidden-xs'> Retro Gems to Futuristic Thrills"
+					bannerTitle="Crafting Timeless Joy From <br className='hidden-xs'> Retro Gems To Futuristic Thrills"
 					bannerImg={amusement_gamebanner.src}
 					mobileImg={amusement_gamebanner_mobile.src}
 				/>
@@ -111,9 +111,9 @@ export default function AmusementGames({ GamesCategoriesData }) {
 																key={subCategoriesItem.attributes.games.data.length}
 															>
 																{subCategoriesItem.attributes.SubCategoriesName}{" "}
-																<span className="product_count">
+																{/* <span className="product_count">
 																	({subCategoriesItem.attributes.games.data.length})
-																</span>
+																</span> */}
 															</h6>
 														);
 													}

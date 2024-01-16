@@ -54,7 +54,7 @@ export default function BrunswickBowling({
 			<Loader />
 			<main className={`${styles.GoKartingPage}`}>
 				<InsideBanner
-					bannerTitle="Redefining Amusement with <br/>
+					bannerTitle="Redefining Amusement With <br/>
                     Bowling Brilliance"
 					bannerImg={brunswick_banner.src}
 					mobileImg={brunswick_banner_mobile.src}

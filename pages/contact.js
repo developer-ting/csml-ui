@@ -73,7 +73,7 @@ export default function Contact() {
 			<main className={`${styles.ContactPage}`}>
 				<InsideBanner
 					bannerTitle="Experience Unforgettable <br className='hidden-xs'>
-				Adventures with Us"
+				Adventures With Us"
 					bannerImg={contact_banner.src}
 					mobileImg={contact_banner_mobile.src}
 				/>
