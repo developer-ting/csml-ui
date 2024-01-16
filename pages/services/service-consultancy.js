@@ -81,7 +81,20 @@ export default function ServiceConsultancy() {
 				opac.style.opacity = "1";
 			}
 		};
+		const cmnBtn = document.querySelectorAll(".cmnBtn");
+		const sticky_main = document.querySelector(".sticky_main");
+		function removeCls() {
+		console.log("remove");
+		sticky_main.classList.remove(`${styles.sticky_main_height}`);
+		setIsShowMore(false);
+		}
+		
+		cmnBtn.forEach(btn => {
+			btn.addEventListener("click", removeCls)
+			
+		})
 		window.addEventListener("scroll", handleScroll);
+
 
 	// 	// Cleanup the event listener on component unmount
 	// 	return () => {
@@ -159,25 +172,25 @@ export default function ServiceConsultancy() {
 							focusOnSelect={true}
 							variableWidth={true}
 						>
-							<div className={`${styles.slide_item}`}>
+							<div className={`${styles.slide_item} cmnBtn`}>
 								<p>Turning Vision into Reality</p>
 							</div>
-							<div className={`${styles.slide_item}`}>
+							<div className={`${styles.slide_item} cmnBtn`}>
 								<p>Planning and Layout Design</p>
 							</div>
-							<div className={`${styles.slide_item}`}>
+							<div className={`${styles.slide_item} cmnBtn`}>
 								<p>Suggestive Game Mix</p>
 							</div>
-							<div className={`${styles.slide_item}`}>
+							<div className={`${styles.slide_item} cmnBtn`}>
 								<p>Exclusive Distribution</p>
 							</div>
-							<div className={`${styles.slide_item}`}>
+							<div className={`${styles.slide_item} cmnBtn`}>
 								<p>Tailored Amusement Equipment Selection</p>
 							</div>
-							<div className={`${styles.slide_item}`}>
+							<div className={`${styles.slide_item} cmnBtn`}>
 								<p>Logistics & Import</p>
 							</div>
-							<div className={`${styles.slide_item}`}>
+							<div className={`${styles.slide_item} cmnBtn`}>
 								<p>Installation & Training</p>
 							</div>
 							<div className={`${styles.slide_item}`} onClick={handleClick}>
@@ -347,7 +360,7 @@ export default function ServiceConsultancy() {
 								<div className={`${styles.slide_item_two}`}>
 									<div className={`${styles.tabs_bx} ${styles.tabs_bx_new} tabs_bx`}>
 										<div
-											className={`${styles.tabs_img} border_animation white_border_animation opac`}
+											className={`${styles.tabs_img} ${styles.opac1} border_animation white_border_animation opac`}
 										>
 											<div className={` `}>
 												<img className="img border_8" src={pre_post_operation_support_services.src} />
