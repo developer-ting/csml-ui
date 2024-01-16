@@ -138,7 +138,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 													return (
 														<div
 															className="BlockInsideInfo"
-															key={gamesProductItem.attributes.GameName}
+															key={gamesProductItem.attributes.GameName + Math.random()}
 														>
 															<div className="ProductImg">
 																<img
