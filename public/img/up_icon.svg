@@ -1,6 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-  <g id="Up_icon" data-name="Up icon" transform="translate(-455 -10844)">
-    <rect id="Rectangle_3595" data-name="Rectangle 3595" width="15" height="15" transform="translate(455 10844)" fill="none"/>
-    <path id="arrow-small-down" d="M14.661,11.612l-2.756,2.756V6H10.232v8.368L7.476,11.612,6.293,12.8l3.592,3.592a1.674,1.674,0,0,0,2.366,0L15.844,12.8Z" transform="translate(473.845 10862.878) rotate(180)" fill="#fff"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="17.977" height="17.977" viewBox="0 0 17.977 17.977">
+  <path id="Path_19" data-name="Path 19" d="M8924.9,1736.77h-2.276v-7.321l-8.735,9.073-1.678-1.751,8.689-8.691h-6.736v-2.291H8924.9Z" transform="translate(-7522.201 5090.541) rotate(-45)"/>
 </svg>
