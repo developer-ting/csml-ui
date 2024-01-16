@@ -34,12 +34,12 @@
         }
         .nav_item{
             @media (max-width: 767px) {
-                margin-top: -20px;
+                margin-top: 0px;
             }
             :global(.border_animation){
              
              @media (max-width: 767px) {
-                width: 46vh;
+                width: 85vw;
             } 
             }
             :global(.slick-slide){

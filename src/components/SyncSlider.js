@@ -51,21 +51,21 @@ const SyncSlider = (data) => {
 		slidesToShow: 3,
 		responsive: [
 			{
-				breakpoint: 767,
-				settings: {
-					// autoplay: true,
-					slidesToShow: 1,
-					// slidesToScroll: 1,
-					variableWidth: true,
-				},
-			},
-			{
 				breakpoint: 991,
 				settings: {
 					autoplay: true,
 					slidesToShow: 2,
 					// slidesToScroll: 1,
 					// variableWidth: true,
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					// autoplay: true,
+					slidesToShow: 1,
+					// slidesToScroll: 1,
+					variableWidth: true,
 				},
 			},
 		],
