@@ -40,12 +40,14 @@ import pre_post_operation_support_services from "../../public/img/services_consu
 
 /** Services Page */
 export default function ServiceConsultancy() {
-	// const [isSticky, setSticky] = useState(false);
-  const [isShowMore, setIsShowMore] = useState(false);
+	const imgHW = useRef();
+	const [isSticky, setSticky] = useState(false);
+	const [isShowMore, setIsShowMore] = useState(false);
+	const [isClicked, setIsClicked] = useState(false);
 	/** toggleReadMoreLess function */
 	const toggleReadMoreLess = () => {
-    setIsShowMore(!isShowMore);
-  };
+		setIsShowMore(!isShowMore);
+	};
 
 	const [nav1, setNav1] = useState();
 	const [nav2, setNav2] = useState();
@@ -54,26 +56,38 @@ export default function ServiceConsultancy() {
 			once: true,
 		});
 	}, []);
-	// useEffect(() => {
-	// 	const oTop = document.querySelector(".tabs_bx_main");
-	// 	const slickList = document.querySelector(".tabs_bx_main .slick-list");
-	// 	const sticky_part = document.querySelector(".sticky");
-	// 	const handleScroll = () => {
-	// 		setSticky(window.scrollY > oTop.offsetTop); // Adjust the threshold as needed
-	// 		if (window.scrollY > oTop.offsetTop) {
-	// 			slickList.style.overflow = "unset";
-	// 		} else {
-	// 			slickList.style.overflow = "hidden";
-	// 		}
-	// 	};
-
-	// 	window.addEventListener("scroll", handleScroll);
+	const handleClick = () => {
+		setIsClicked(true);
+	};
+	useEffect(() => {
+		if (imgHW.current) {
+			const imgHeight = imgHW.current.offsetHeight;
+			const imgwidth = imgHW.current.offsetWidth;
+			const root = document.documentElement;
+			root.style.setProperty("--img-height", `${imgHeight}px`);
+			root.style.setProperty("--img-width", `${imgwidth}px`);
+			console.log(root);
+		}
+		const oTop = document.querySelector(".tabs_bx_main");
+		const slickList = document.querySelector(".sticky_main");
+		const opac = document.querySelector(".opac");
+		const handleScroll = () => {
+			setSticky(window.scrollY > oTop.offsetTop); // Adjust the threshold as needed
+			if (window.scrollY > oTop.offsetTop) {
+				slickList.classList.add(`${styles.sticky_main_visible}`);
+				opac.style.opacity = "0";
+			} else {
+				slickList.classList.remove(`${styles.sticky_main_visible}`);
+				opac.style.opacity = "1";
+			}
+		};
+		window.addEventListener("scroll", handleScroll);
 
 	// 	// Cleanup the event listener on component unmount
 	// 	return () => {
 	// 		window.removeEventListener("scroll", handleScroll);
 	// 	};
-	// }, []);
+	 }, []);
 
 	var settings = {
 		pauseOnHover: false,
@@ -115,7 +129,7 @@ export default function ServiceConsultancy() {
 									Turnkey Consultancy Solution for Entertainment Center Success
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
-									CSML is the pioneering force behind exceptional Indoor Amusement Centers (IAC). We specialize in offering comprehensive Consultancy & Operational Management services, simplifying the intricate management of multiple providers. Our expertise encompasses initial concept, layout planning, equipment sourcing and installation, logistics management, staff training, and steadfast post-launch support. Our unwavering dedication is to harmonize every aspect, allowing you to focus on what truly matters.
+								CSML is the pioneering force behind exceptional Indoor Amusement Centers (IAC). We specialize in offering comprehensive Consultancy & Operational Management services, simplifying the intricate management of multiple providers. Our expertise encompasses initial concept, layout planning, equipment sourcing and installation, logistics management, staff training, and steadfast post-launch support. Our unwavering dedication is to harmonize every aspect, allowing you to focus on what truly matters.
 								</p>
 							</div>
 							<div className={`${styles.img_bx} toTop`} data-scroll>
@@ -137,113 +151,121 @@ export default function ServiceConsultancy() {
 					</div>
 
 					<div className={`${styles.for_item} ${styles.for_item_full} pb_60`}>
-							<Slider
-								{...settings}
-								asNavFor={nav1}
-								ref={(slider2) => setNav2(slider2)}
-								swipeToSlide={true}
-								focusOnSelect={true}
-								variableWidth={true}
-							>
-								<div className={`${styles.slide_item}`}>
-									<p>Turning Vision into Reality</p>
-								</div>
-								<div className={`${styles.slide_item}`}>
-									<p>Planning and Layout Design</p>
-								</div>
-								<div className={`${styles.slide_item}`}>
-									<p>Suggestive Game Mix</p>
-								</div>
-								<div className={`${styles.slide_item}`}>
-									<p>Exclusive Distribution</p>
-								</div>
-								<div className={`${styles.slide_item}`}>
-									<p>Tailored Amusement Equipment Selection</p>
-								</div>
-								<div className={`${styles.slide_item}`}>
-									<p>Logistics & Import</p>
-								</div>
-								<div className={`${styles.slide_item}`}>
-									<p>Installation & Training</p>
-								</div>
-								<div className={`${styles.slide_item}`}>
-									<p>Pre & Post Operation Support Services</p>
-								</div>
-							</Slider>
-						</div>
+						<Slider
+							{...settings}
+							asNavFor={nav1}
+							ref={(slider2) => setNav2(slider2)}
+							swipeToSlide={true}
+							focusOnSelect={true}
+							variableWidth={true}
+						>
+							<div className={`${styles.slide_item}`}>
+								<p>Turning Vision into Reality</p>
+							</div>
+							<div className={`${styles.slide_item}`}>
+								<p>Planning and Layout Design</p>
+							</div>
+							<div className={`${styles.slide_item}`}>
+								<p>Suggestive Game Mix</p>
+							</div>
+							<div className={`${styles.slide_item}`}>
+								<p>Exclusive Distribution</p>
+							</div>
+							<div className={`${styles.slide_item}`}>
+								<p>Tailored Amusement Equipment Selection</p>
+							</div>
+							<div className={`${styles.slide_item}`}>
+								<p>Logistics & Import</p>
+							</div>
+							<div className={`${styles.slide_item}`}>
+								<p>Installation & Training</p>
+							</div>
+							<div className={`${styles.slide_item}`} onClick={handleClick}>
+								<p>Pre & Post Operation Support Services</p>
+							</div>
+						</Slider>
+					</div>
 
 					<div className="container tabs_bx_main">
-						<Slider
-							className={`${styles.nav_item} toTop`}
-							asNavFor={nav2}
-							arrows={false}
-							fade={true}
-							// speed={1200}
-							slidesToShow={1}
-							ref={(slider1) => setNav1(slider1)}
+						<div
+							className={`${styles.slider_parent} ${
+								isClicked ? styles.slider_parent_xIndex : ""
+							}`}
 						>
-							<div className={`${styles.slide_item_two}`}>
-								<div className={`${styles.tabs_bx}`}>
-									<div
-										className={`${styles.tabs_img}  border_animation white_border_animation`}
-									>
-										<img className="img border_8" src={turning_vision_into_reality.src} />
-									</div>
-									<div className={`${styles.tabs_info}`}>
-										<p className={`${styles.info_title} font_secondary`}>
-										 Turning Vision into Reality
-										</p>
-										<p
-											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+							<Slider
+								className={`${styles.nav_item} toTop`}
+								asNavFor={nav2}
+								arrows={false}
+								fade={true}
+								// speed={1200}
+								slidesToShow={1}
+								ref={(slider1) => setNav1(slider1)}
+							>
+								<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											At CSML, we are dedicated to delivering top-notch Consultancy & Operation Management services. As industry pioneers in Indoor Amusement Centers (IAC), we offer meticulously tailored end-to-end solutions to streamline the complexities of managing multiple providers.
-											
-										</p>
+											<img
+												ref={imgHW}
+												className="img border_8"
+												src={turning_vision_into_reality.src}
+											/>
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+												Turning Vision into Reality
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												At CSML, we are dedicated to delivering top-notch Consultancy & Operation Management services. As industry pioneers in Indoor Amusement Centers (IAC), we offer meticulously tailored end-to-end solutions to streamline the complexities of managing multiple providers.
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div className={`${styles.slide_item_two}`}>
-								<div className={`${styles.tabs_bx}`}>
-									<div
-										className={`${styles.tabs_img}  border_animation white_border_animation`}
-									>
-										<img className="img border_8" src={planning_and_layout_design.src} />
-									</div>
-									<div className={`${styles.tabs_info}`}>
-										<p className={`${styles.info_title} font_secondary`}>
-											Planning and Layout Design
-										</p>
-										<p
-											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+								<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											Our expertise in optimizing available space transforms it into a bespoke arcade amusement hub. We provide specialized layout plans designed to suit your location, complete with electrical layout plans, operating manuals, and ongoing support.
-										</p>
+											<img className="img border_8" src={planning_and_layout_design.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+												Planning and Layout Design
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												Our expertise in optimizing available space transforms it into a bespoke arcade amusement hub. We provide specialized layout plans designed to suit your location, complete with electrical layout plans, operating manuals, and ongoing support.
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div className={`${styles.slide_item_two}`}>
-								<div className={`${styles.tabs_bx}`} >
-									<div
-										className={`${styles.tabs_img}  border_animation white_border_animation`}
-									>
-										<img className="img border_8" src={suggestive_game.src} />
-									</div>
-									<div className={`${styles.tabs_info}`}>
-										<p className={`${styles.info_title} font_secondary`}>
-											Suggestive Game Mix
-										</p>
-										<p
-											className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+								<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
+										<div
+											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											At CSML, we go beyond providing amusement equipment; we craft unforgettable experiences. Our approach is rooted in the thorough consideration of your target audience's demographics, age groups, spending capacity, and budget range. We take pride in offering a selection of amusement equipment that not only drives high revenue but also resonates with the interests of your guests.
-										</p>
+											<img className="img border_8" src={suggestive_game.src} />
+										</div>
+										<div className={`${styles.tabs_info}`}>
+											<p className={`${styles.info_title} font_secondary`}>
+												Suggestive Game Mix
+											</p>
+											<p
+												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
+											>
+												At CSML, we go beyond providing amusement equipment; we craft unforgettable experiences. Our approach is rooted in the thorough consideration of your target audience's demographics, age groups, spending capacity, and budget range. We take pride in offering a selection of amusement equipment that not only drives high revenue but also resonates with the interests of your guests.
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div className={`${styles.slide_item_two}`}>
-									<div className={`${styles.tabs_bx}`} >
+								<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
@@ -251,7 +273,7 @@ export default function ServiceConsultancy() {
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
-											Exclusive Distribution
+												Exclusive Distribution
 											</p>
 											<p
 												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
@@ -260,14 +282,17 @@ export default function ServiceConsultancy() {
 											</p>
 										</div>
 									</div>
-							</div>
+								</div>
 
-							<div className={`${styles.slide_item_two}`}>
+								<div className={`${styles.slide_item_two}`}>
 									<div className={`${styles.tabs_bx}`}>
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={tailored_amusement_equipment_selection.src} />
+											<img
+												className="img border_8"
+												src={tailored_amusement_equipment_selection.src}
+											/>
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -280,8 +305,8 @@ export default function ServiceConsultancy() {
 											</p>
 										</div>
 									</div>
-							</div>
-							<div className={`${styles.slide_item_two}`}>
+								</div>
+								<div className={`${styles.slide_item_two}`}>
 									<div className={`${styles.tabs_bx}`}>
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
@@ -299,9 +324,9 @@ export default function ServiceConsultancy() {
 											</p>
 										</div>
 									</div>
-							</div>
-							<div className={`${styles.slide_item_two}`}>
-									<div className={`${styles.tabs_bx}`} >
+								</div>
+								<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx}`}>
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
@@ -318,19 +343,19 @@ export default function ServiceConsultancy() {
 											</p>
 										</div>
 									</div>
-							</div>
-							<div className={`${styles.slide_item_two}`}>
-								<div className={`${styles.tabs_bx} ${styles.tabs_bx_new} tabs_bx`}>
-									<div
-										className={`${styles.tabs_img} border_animation white_border_animation`}
-									>
-										<div className={` `}>
-											<img className="img border_8" src={pre_post_operation_support_services.src} />
+								</div>
+								<div className={`${styles.slide_item_two}`}>
+									<div className={`${styles.tabs_bx} ${styles.tabs_bx_new} tabs_bx`}>
+										<div
+											className={`${styles.tabs_img} border_animation white_border_animation opac`}
+										>
+											<div className={` `}>
+												<img className="img border_8" src={pre_post_operation_support_services.src} />
+											</div>
 										</div>
-									</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
-											Pre & Post Operation Support Services
+												Pre & Post Operation Support Services
 											</p>
 											<p
 												className={`${styles.info_desc} paraTxt_18 font_secondary opacity_one`}
@@ -338,112 +363,141 @@ export default function ServiceConsultancy() {
 												At CSML, our dedication to your success extends beyond just consultancy and equipment. With our Pre & Post Operation Support services, we ensure that your operations run seamlessly by providing the essential resources and guidance you need.
 											</p>
 											{isShowMore && (
-													<div className="pt_20">
-														<h4 className="paraTxt_18 font_secondary text_500">
-															Recruitment Checklist
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Our detailed staffing guide helps you assemble the right team, ensuring efficiency and excellence in your operations.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-														 Pricing Structure
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Optimize your revenue with our expert suggestions for pricing games, activities, and party packages.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-														 Operational Supplies
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Stay stocked and prepared with our comprehensive list of redemption tickets, gifts, and spares.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-														 Gift Categories
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Enhance the customer experience with our curated gift category recommendations, adding that extra touch to your center.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-														 Pay-out Settings
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Fine-tune prize/ticket game payout settings with expert guidance to ensure optimal player engagement and operational efficiency.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+												<div className="pt_20">
+													<h4 className="paraTxt_18 font_secondary text_500">
+														Recruitment Checklist
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Our detailed staffing guide helps you assemble the right team,
+														ensuring efficiency and excellence in your operations.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														Pricing Structure
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Optimize your revenue with our expert suggestions for pricing
+														games, activities, and party packages.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														Operational Supplies
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Stay stocked and prepared with our comprehensive list of
+														redemption tickets, gifts, and spares.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														Gift Categories
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Enhance the customer experience with our curated gift category
+														recommendations, adding that extra touch to your center.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														Pay-out Settings
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Fine-tune prize/ticket game payout settings with expert guidance
+														to ensure optimal player engagement and operational efficiency.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
 														Checklist Creation
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Efficiently manage your operations with our comprehensive checklists, covering everything from daily operations to asset management, maintenance, housekeeping, and more.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-															Debit Card System
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Equip your team for success with thorough Debit Card system training, catering to back-office owners, managers, cashiers, and redemption staff.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-														  Redemption Counter
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Enhance customer satisfaction by setting up an efficient redemption counter with our assistance.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-															On-Job Training
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															We provide a 7-day training program to assist your team in achieving smooth operations and equipment maintenance.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-															SOPs (Standard Operating Procedures)
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															We offer a comprehensive set of Standard Operating Procedures to streamline your operations further.
-														</p>
-														<h4 className="paraTxt_18 font_secondary text_500 pt_10">
-															Post-Opening Support
-														</h4>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															For two months following your center's grand opening, we offer expert guidance and support to ensure your success.
-														</p>
-														<p
-															className={`${styles.info_desc} text_xs font_secondary opacity_one`}
-														>
-															Partner with us for a successful journey in the world of entertainment centers. Your success is our unwavering commitment.
-														</p>
-													</div>
-												)}
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Efficiently manage your operations with our comprehensive
+														checklists, covering everything from daily operations to asset
+														management, maintenance, housekeeping, and more.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														Debit Card System
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Equip your team for success with thorough Debit Card system
+														training, catering to back-office owners, managers, cashiers, and
+														redemption staff.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														Redemption Counter
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Enhance customer satisfaction by setting up an efficient
+														redemption counter with our assistance.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														On-Job Training
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														We provide a 7-day training program to assist your team in
+														achieving smooth operations and equipment maintenance.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														SOPs (Standard Operating Procedures)
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														We offer a comprehensive set of Standard Operating Procedures to
+														streamline your operations further.
+													</p>
+													<h4 className="paraTxt_18 font_secondary text_500 pt_10">
+														Post-Opening Support
+													</h4>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														For two months following your center's grand opening, we offer
+														expert guidance and support to ensure your success.
+													</p>
+													<p
+														className={`${styles.info_desc} text_xs font_secondary opacity_one`}
+													>
+														Partner with us for a successful journey in the world of
+														entertainment centers. Your success is our unwavering commitment.
+													</p>
+												</div>
+											)}
 
-												<a className="pt_20 paraTxt_18 font_secondary opacity_one" onClick={toggleReadMoreLess}>
-													{isShowMore ? "Read Less" : "Read More"}
-												</a>
+											<a
+												className="pt_20 paraTxt_18 font_secondary opacity_one"
+												onClick={toggleReadMoreLess}
+											>
+												{isShowMore ? "Read Less" : "Read More"}
+											</a>
 										</div>
 									</div>
+								</div>
+							</Slider>
+						</div>
+						<div
+							className={`${styles.sticky_main} ${
+								isShowMore ? styles.sticky_main_height : ""
+							} sticky_main`}
+						>
+							<div className={`${styles.tabs_bx_inn}`}>
+								<div
+									className={`${styles.tabs_img}  border_animation white_border_animation`}
+								>
+									<img className="img border_8" src={pre_post_operation_support_services.src} />
+								</div>
 							</div>
-							
-
-						</Slider>
+						</div>
 					</div>
 
 					{/* <Tabs>
