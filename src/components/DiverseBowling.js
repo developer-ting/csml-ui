@@ -190,7 +190,7 @@ const DiverseBowling = ({ data }) => {
 															href={data.data[1].attributes.link}
 															target="_blanks"
 														>
-															Visit Brunswick Bowling
+															Visit Duckpin Social
 														</a>
 														{/* </Link> */}
 													</div>
