@@ -60,14 +60,11 @@ export default function ServiceConsultancy() {
 		setIsClicked(true);
 	};
 	useEffect(() => {
-		if (imgHW.current) {
-			const imgHeight = imgHW.current.offsetHeight;
-			const imgwidth = imgHW.current.offsetWidth;
-			const root = document.documentElement;
-			root.style.setProperty("--img-height", `${imgHeight}px`);
-			root.style.setProperty("--img-width", `${imgwidth}px`);
-			console.log(root);
-		}
+		const imgHeight = imgHW.current.offsetHeight;
+		const imgwidth = imgHW.current.offsetWidth;
+		const root = document.documentElement;
+		root.style.setProperty("--img-height", `${imgHeight}px`);
+		root.style.setProperty("--img-width", `${imgwidth}px`);
 		const oTop = document.querySelector(".tabs_bx_main");
 		const slickList = document.querySelector(".sticky_main");
 		const opac = document.querySelector(".opac");
@@ -97,9 +94,10 @@ export default function ServiceConsultancy() {
 
 
 	// 	// Cleanup the event listener on component unmount
-	// 	return () => {
-	// 		window.removeEventListener("scroll", handleScroll);
-	// 	};
+		return () => {
+			root.style.setProperty("--img-height", `${imgHeight}px`);
+		root.style.setProperty("--img-width", `${imgwidth}px`);
+		};
 	 }, []);
 
 	var settings = {
