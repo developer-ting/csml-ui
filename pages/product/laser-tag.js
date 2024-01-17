@@ -123,7 +123,7 @@ export default function LaserTag({ LaserTagData }) {
 
 				<TextImgBox
 					sectionHeading="Premium Quality Laser Tag Systems"
-					sectionDesc="<span className='text_600'>Cyberblast</span> Pro from Laserblast, is the most powerful laser tag system you will ever find in the market. It is also the most sophisticated high-quality laser tag with over 30 game formats and free access to new formats."
+					sectionDesc="<span className='text_700'>Cyberblast Pro</span> from Laserblast, is the most powerful laser tag system you will ever find in the market. It is also the most sophisticated high-quality laser tag with over 30 game formats and free access to new formats."
 					leftBoxImg={premium_quality_systems_1.src}
 					rightBoxImg={rightBoxImg.src}
 				/>
