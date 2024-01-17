@@ -10,6 +10,9 @@
 		padding: 45px 20px;
 		border-radius: 12px;
 		position: relative;
+		@media (max-width: 767px) {
+			padding: 35px 10px;
+		}
 		.valued_logo {
 			:global(.slick-slide) {
 				height: inherit !important;
@@ -23,6 +26,9 @@
 				align-items: center;
 				justify-content: center;
 				transition: all 0.5s;
+				@media (max-width: 767px) {
+					padding: 0px 10px;
+				}
 				img {
 					margin: 0 auto;
 					filter: grayscale(1);

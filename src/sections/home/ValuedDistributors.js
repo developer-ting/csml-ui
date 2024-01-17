@@ -44,8 +44,8 @@ export default function ValuedDistributors({ valuedData }) {
 			{
 				breakpoint: 767,
 				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
+					slidesToShow: 2,
+					slidesToScroll: 2,
 				},
 			},
 		],
