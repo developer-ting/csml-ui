@@ -55,8 +55,7 @@ export default function Shindigger({ BrochureData }) {
 					<div className="container">
 						<div className={`${styles.title_txt} `}>
 							<h2 className="heading_text_55 pb_40 toTop" data-scroll>
-								Plan Smarter, Party Harder <br className="hidden-xs" />
-								with Shindigger
+								Making Your Party Planning <br className="hidden-xs" />Unforgettable with Shindigger 
 							</h2>
 						</div>
 						{shindiggerPlanSmarter.map((item, index) => (
@@ -95,7 +94,7 @@ export default function Shindigger({ BrochureData }) {
 					<div className="container">
 						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 							<h2 className="heading_text_55 color_white ">
-								Craft Your Shindig in 5 Simple Steps
+								Shindigger Simplifies Your Party Booking Journey
 							</h2>
 						</div>
 						<div className={`${styles.how_it_works_flex} toTop`} data-scroll>

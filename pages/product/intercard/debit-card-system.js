@@ -286,8 +286,7 @@ export default function DebitCardSystem({
 					<div className="container">
 						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 							<h2 className="heading_text_45 color_white text_700">
-								Future-Proof Your Arcade Fun <br className="hidden-xs" />
-								With CSML and Intercard
+							CSML and Intercard Bringing the Triple Crown<br className="hidden-xs" /> in Arcade Excellence 
 							</h2>
 						</div>
 						<div className={`${styles.intertainment_border} commonBorderAnimation`}>
@@ -345,7 +344,7 @@ export default function DebitCardSystem({
 					<div className="container">
 						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 							<h2 className="heading_text_45 color_white pb_20 text_700">
-								Request Your Intercard Quote
+								Make Payments, Simply - Request Your Intercard Quote
 							</h2>
 							<p className="paraTxt_18 pb_20 color_white_opacity toTop" data-scroll>
 								Experience the future of secure and efficient transactions with

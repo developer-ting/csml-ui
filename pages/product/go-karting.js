@@ -90,8 +90,7 @@ export default function GoKarting() {
 				>
 					<div className="container">
 						<p className="text_24 color_white_opacity l_h_6 toTop" data-scroll>
-							Revitalize your entertainment center with versatile go-karting experience
-							suitable for pure enjoyment at its finest.
+							Infuse a burst of excitement into your center with the thrilling world of Go Karting with CSML and Sodikart! A source of joy for all age groups, enhance your facility's charm with high-quality rental karts and advanced software and hardware. This winning combination ensures a perfect balance of safety and entertainment, elevating the overall experience for your visitors.
 						</p>
 					</div>
 				</section>

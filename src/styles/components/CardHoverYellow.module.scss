@@ -19,7 +19,9 @@
     // display: flex;
     .luminaries_content{
       min-height: 410px;
-      
+      @media only screen and (max-width: 767px) {
+        min-height: 350px;
+      }
       img{
         width: auto;
         margin: auto;
@@ -99,6 +101,7 @@
     }
     .full_height{
       height: 80%;
+      overflow-y: scroll;
       @media only screen and (max-width: 767px) {
         overflow-y: scroll;
       }

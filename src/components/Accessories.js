@@ -32,7 +32,7 @@ const Accessories = ({ data }) => {
 		autoplay: true,
 		// fade: true,
 		autoplaySpeed: 5000,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		speed: 1000,
 		variableWidth: true,
 		responsive: [
@@ -60,7 +60,7 @@ const Accessories = ({ data }) => {
 		autoplay: true,
 		// fade: true,
 		autoplaySpeed: 5000,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		speed: 1000,
 		variableWidth: true,
 		afterChange: (i) => {
@@ -76,7 +76,7 @@ const Accessories = ({ data }) => {
 	}, []);
 
 	const fillProgress = (currInd) => {
-		setProgressWidth((currInd / 3) * 100);
+		setProgressWidth((currInd / 4) * 100);
 	};
 	return (
 		<div className={`${styles.accessories} ptb_100`}>

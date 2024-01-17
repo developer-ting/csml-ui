@@ -129,7 +129,7 @@ const trampolineData = [
 		image: safeFun,
 		title: "Safe and Fun for All Ages",
 		desc:
-			"Safety is paramount at CSML, and we emphasize it without compromising on fun. Whether it's the Dodgeball Trampoline Park, Basketball Trampoline Park, or the Foam Pit/Pillow Pit Trampoline Park, each space is meticulously designed for maximum enjoyment while strictly adhering to safety standards. <br> Our trampoline parks are more than just places to jump and play; they're dynamic, safe, and customized environments catering to diverse tastes, solidifying our position as a standout choice in the industry",
+			"Safety is paramount at CSML, and we emphasize it without compromising on fun. Whether it's the Dodgeball Trampoline Park, Basketball Trampoline Park, or the Foam Pit/Pillow Pit Trampoline Park, each space is meticulously designed for maximum enjoyment while strictly adhering to safety standards. <br> Our trampoline parks are more than just places to jump and play; they're dynamic, safe, and customized environments catering to diverse tastes, solidifying our position as a standout choice in the industry.",
 	},
 ];
 
@@ -223,31 +223,31 @@ const ecommerceYellowCardData = [
 		image: customized_brand,
 		title: "Customized Brand Integration",
 		desc:
-			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+			"Seamlessly integrate E-Commerce into your website, ensuring a personalized touch that aligns perfectly with your brand identity.",
 	},
 	{
 		image: staff_free,
 		title: "Staff-Free Purchases",
 		desc:
-			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+			"Streamline the purchase process by eliminating the need for staff involvement. Guests can purchase and print QR codes at home, later scanning at the center to receive their game cards.",
 	},
 	{
 		image: maximize_float,
 		title: "Maximize 'Float'",
 		desc:
-			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+			"Boost your revenue potential by encouraging customers to purchase now for redemption later. Up to 19% of gift card balances go unused, providing a valuable revenue boost.",
 	},
 	{
 		image: maximize_float,
 		title: "Revenue Growth",
 		desc:
-			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+			"Explore new revenue streams by offering enticing packages and memberships through our E-Commerce platform.",
 	},
 	{
 		image: maximize_float,
 		title: "Capture Customer Data",
 		desc:
-			"Empower your customers to effortlessly buy game cards, packages, or gift cards using their mobile devices, whether they're on the go or enjoying the comfort of their homes.",
+			"Establish a database for future promotions by capturing customer contact info.",
 	},
 ];
 

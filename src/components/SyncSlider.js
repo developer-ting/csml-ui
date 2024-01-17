@@ -49,6 +49,7 @@ const SyncSlider = (data) => {
 		pauseOnHover: false,
 		arrows: false,
 		slidesToShow: 3,
+		dots: true,
 		responsive: [
 			{
 				breakpoint: 991,

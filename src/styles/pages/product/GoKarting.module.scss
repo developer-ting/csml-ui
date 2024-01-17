@@ -160,6 +160,9 @@
                 .desc_box{
                   height: 52%;
                   transition: 0.3s all;
+                  @media only screen and (max-width: 767px) {
+                    overflow-y: scroll;
+                  }
                 }
                 .desc_title{
       

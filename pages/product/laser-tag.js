@@ -123,7 +123,7 @@ export default function LaserTag({ LaserTagData }) {
 
 				<TextImgBox
 					sectionHeading="Premium Quality Laser Tag Systems"
-					sectionDesc="Cyberblast Pro from Laserblast, is the most powerful laser tag system you will ever find in the market. It is also the most sophisticated high-quality laser tag with over 30 game formats and free access to new formats."
+					sectionDesc="<span className='text_600'>Cyberblast</span> Pro from Laserblast, is the most powerful laser tag system you will ever find in the market. It is also the most sophisticated high-quality laser tag with over 30 game formats and free access to new formats."
 					leftBoxImg={premium_quality_systems_1.src}
 					rightBoxImg={rightBoxImg.src}
 				/>
@@ -247,7 +247,7 @@ export default function LaserTag({ LaserTagData }) {
 											<td>20</td>
 										</tr>
 										<tr>
-											<td>Players</td>
+											<td>Total</td>
 											<td>3000 SF</td>
 										</tr>
 									</tbody>
@@ -308,7 +308,7 @@ export default function LaserTag({ LaserTagData }) {
 									data-scroll
 								>
 									Building an exciting arena with eye-catching designs is among the most
-									important factors in the success of any laser tag centre. The arena by
+									important factors in the success of any Laser Tag centre. The arena by
 									itself must be a memorable experience for your guests.
 								</p>
 								<p

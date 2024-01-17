@@ -48,6 +48,12 @@
                     padding: 0px 5px;
                 }
             }
+            :global(.slick-dots){
+                bottom: -50px !important;
+                @media (max-width: 767px) {
+                    bottom: -30px !important;
+                }
+            }
         }
     }
 }
