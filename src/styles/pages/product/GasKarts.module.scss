@@ -1,0 +1,56 @@
+.ecommerce_slider_main{
+  
+}
+
+.partner_superior_flex{
+  margin-left: calc(var(--container_left_space) + 0px);
+  overflow: hidden;
+  
+  @media only screen and (max-width: 767px) {
+    margin-left: calc(var(--container_left_space) + 5px);
+  }
+
+  .showcase_box {
+    .showcase_content {
+      @media only screen and (max-width: 1199px) {
+        width: 400px !important;
+      }
+      @media only screen and (max-width: 991px) {
+        width: 320px !important;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 300px !important;
+      }
+      .img_box {
+        // border: 1px solid #777777;
+        // border-radius: 12px;
+        // padding: 5px 5px;
+        position: relative;
+        transition: all .3s;
+        :global(.dots_p) {
+          background-color: var(--color_primary);
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .desc_box {
+        padding: 20px 20px 0px;
+        @media only screen and (max-width: 767px) {
+          padding: 20px 10px 0px;
+        }
+        .desc_title {
+          h3 {
+            @media only screen and (min-width: 1024px) {
+              padding-right: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  :global(.slick-slide){
+    padding: 0px 10px;
+  }
+}

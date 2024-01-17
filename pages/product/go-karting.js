@@ -11,6 +11,8 @@ import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
 // import data from "../../pages/data-file-1";
 import Data from "@/data/data-file-1";
+import GasKarts from "@/sections/product/GasKarts";
+import ElectricKarts from "@/sections/product/ElectricKarts";
 // SECTIONS //
 
 // PLUGINS //
@@ -34,6 +36,7 @@ import timingSoftwareImg2 from "../../public/img/product/go-karting/timing-softw
 import safetyBarriersImg1 from "../../public/img/product/go-karting/safety-barriers-img1.jpg";
 import safetyBarriersImg2 from "../../public/img/product/go-karting/safety-barriers-img2.jpg";
 import safetyBarriersImg3 from "../../public/img/product/go-karting/safety-barriers-img3.jpg";
+import sodikart from "../../public/img/product/go-karting/sodikart.jpg";
 import plus_icon from "../../public/img/up_icon.svg";
 
 /** Go Karting Page */
@@ -99,15 +102,10 @@ export default function GoKarting() {
 					<div className="container">
 						<div className={`${styles.entertainmentCenterContent} pb_40 `}>
 							<h2 className="heading_text_55 pb_20 toTop" data-scroll>
-								Rev Up Your Entertainment Center with Go-Karting
+								Speed into Excitement with Go Karting
 							</h2>
 							<p className="paraTxt_18 color_black_opacity l_h_6 toTop" data-scroll>
-								Rev up your excitement with go-karting—an exhilarating, all-encompassing
-								experience that captivates enthusiasts of every age and skill level!
-								Strategic investments in meticulously designed tracks, high-quality
-								karts and stringent safety measures ensure an unmatched adventure for
-								patrons. Go-karting transcends conventional entertainment norms,
-								providing a unique blend of adrenaline, competition and pure enjoyment.
+							Prepare for the exhilaration of go-karting—an adventure tailored for enthusiasts of all ages and skill levels! Thoughtful investments in precision-designed tracks, high-quality karts, and rigorous safety measures guarantee an unmatched experience for customers. In an exclusive partnership with CSML, SODIKART, a global leader in karting, has firmly established its presence in India, securing a significant role in the entertainment scene. Go-karting delivers a thrilling experience that harmonizes excitement, competition, and sheer enjoyment. Perfect for corporate events and parties, it seamlessly blends fun with friendly competition, offering an unforgettable experience for all participants.
 							</p>
 						</div>
 
@@ -134,6 +132,43 @@ export default function GoKarting() {
 							</div>
 						</div>
 					</div>
+				</section>
+
+				<section className={`${styles.service_sec1} dot_animation_box`}>
+					<div className="container">
+						<div className={`${styles.service_flex} ptb_80`}>
+							<div className={`${styles.info_bx} toTop`} data-scroll>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 `}>
+									SODIKART
+								</h2>
+								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
+									SODIKART, a global karting powerhouse, has firmly established its dominance in India through an exclusive partnership with CSML. As the key player in every facet of the karting experience, SODIKART stands out nationally. Renowned for innovative leadership marked by daring strategies and patented innovations, the brand not only thrives globally but also holds a strong financial position in the karting market across five continents.
+								</p>
+								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
+									CSML plays a pivotal role in ensuring the seamless distribution of SODIKART, ushering in a new era of karting excellence in India.
+								</p>
+							</div>
+							<div className={`${styles.img_bx} commonBorderAnimation toTop`} data-scroll>
+								<img className="img border_8" src={sodikart.src} />
+							</div>
+						</div>
+					</div>
+					{/* <ContactForm /> */}
+				</section>
+
+				<section className={`${styles.karts_main} pt_100`}>
+					<div className="container">
+						<div className={`${styles.karts_title} pb_40 `}>
+							<h2 className="heading_text_55 pb_10 toTop" data-scroll>
+								KARTS
+							</h2>
+							<p className="paraTxt_18 text_600 toTop" data-scroll>
+								Professional grade Rental Karts for Unmatched Performance
+							</p>
+						</div>
+					</div>
+					<GasKarts />
+					<ElectricKarts />
 				</section>
 
 				<section
