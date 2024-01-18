@@ -7,8 +7,8 @@
     
     .pioneering_content{
       width: 70%;
-      margin: 0 auto;
-      text-align: center;
+      //margin: 0 auto;
+      text-align: left;
       @media only screen and (max-width: 1380px) {
         width: 76%;
       }
@@ -16,7 +16,7 @@
         width: 100%;
       }
       h2{
-        text-align: center;
+        text-align: left;
       }
       p{
         opacity: 0.8;

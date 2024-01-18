@@ -173,13 +173,13 @@ const careeerYellowCardData = [
 		image: imfactful_img,
 		title: "Impactful Work",
 		desc:
-			"CSML is a playground for creativity. We encourage out-of-the-box thinking and provide a platform for your ideas to come to life.",
+			"Every project we undertake has a direct impact on the experiences of our clients and their guests. Your contributions matter.",
 	},
 	{
 		image: growth,
 		title: "Continuous Growth",
 		desc:
-			"CSML is a playground for creativity. We encourage out-of-the-box thinking and provide a platform for your ideas to come to life.",
+			"We invest in our team's growth and development, offering opportunities for learning, skill-building, and career advancement.",
 	},
 ];
 
