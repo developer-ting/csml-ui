@@ -166,12 +166,13 @@ const GasKarts = ({ data }) => {
 										<div className={`${styles.paraTxt} paraTxt_16`}>
 											{parse(data.data[0].attributes.gaskarts[gameIndex].desc)}
 										</div>
-										<div className={`${styles.li_text} pt_30`}>
-											<h4 className="text_md text_500 pb_20">Dimensions</h4>
-											{parse(data.data[0].attributes.gaskarts[gameIndex].ulList)}
-										</div>
+										
 									</div>
 								</div>
+                <div className={`${styles.li_text} pt_10`}>
+                  <h4 className="text_xs text_600 pb_20">Dimensions:</h4>
+                  {parse(data.data[0].attributes.gaskarts[gameIndex].ulList)}
+                </div>
 							</div>
 						</div>
 					</div>
