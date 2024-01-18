@@ -141,7 +141,8 @@ export default function GoKarting({ kartsTagData }) {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		pauseOnHover: false,
+		autoplaySpeed: 5000,
+		pauseOnHover: true,
 		speed: 1000,
 		variableWidth: true,
 		responsive: [
@@ -350,6 +351,16 @@ export default function GoKarting({ kartsTagData }) {
 								})}
 							</Slider>
 						</div>
+						<div className="container">
+							<div className={`${styles.progress_div} pb_100`}>
+								<div className={`${styles.progress_bar}`}>
+									<div
+										style={{ width: `${progressWidth}%` }}
+										className={`${styles.color_div}`}
+									></div>
+								</div>
+							</div>
+						</div>
 					</div>
 					{/* <GasKarts data={kartsTagData} /> */}
 					{/* <ElectricKarts data={kartsTagData} /> */}
@@ -402,6 +413,16 @@ export default function GoKarting({ kartsTagData }) {
 									);
 								})}
 							</Slider>
+						</div>
+						<div className="container">
+							<div className={`${styles.progress_div} pb_100`}>
+								<div className={`${styles.progress_bar}`}>
+									<div
+										style={{ width: `${progressWidth}%` }}
+										className={`${styles.color_div}`}
+									></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -472,7 +493,7 @@ export default function GoKarting({ kartsTagData }) {
 											</h3>
 										</div>
 										<p className="paraTxt color_white">
-											llows exciting challenges like fastest lap times, time trials, or
+											Allows exciting challenges like fastest lap times, time trials, or
 											endurance races.
 										</p>
 									</div>

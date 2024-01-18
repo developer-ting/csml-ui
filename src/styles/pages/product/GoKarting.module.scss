@@ -6,10 +6,10 @@
     .banner_bottom_text_sec {
     
         p {
-            @media (min-width: 991px) {
-                width: 80%;
-                margin: 0 auto;
-            }
+            // @media (min-width: 991px) {
+            //     width: 80%;
+            //     margin: 0 auto;
+            // }
         }
     }
     
@@ -57,6 +57,7 @@
           .info_para {
             color: var(--color_white);
             line-height: 1.8;
+            font-size: 16px;
           }
         }
         .img_bx {
@@ -74,7 +75,31 @@
     }
 
     .karts_main{
-
+      .progress_div {
+        width: var(--container_width);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0px 0px 0px;
+        width: 100%;
+        //width: calc(100% - 215px);
+        @media (max-width: 767px) {
+          padding: 30px 0px 0px 0px;
+          //width: calc(100% - 65px);
+        }
+        .progress_bar {
+          width: 100%;
+          height: 2px;
+          background-color: rgba(51, 51, 51, 0.25);
+          overflow: hidden;
+      
+          .color_div {
+            height: 100%;
+            background-color: var(--color_black);
+            transition: all 0.3s linear;
+          }
+        }
+      }
     }
 
     .sadikartTimingSoftware{

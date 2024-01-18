@@ -117,7 +117,7 @@ const Header = () => {
 									onClick={() => toggleTab(1)}
 								>
 									<div className={`${styles.sub_menu_flex} d_f`}>
-										<a className="text_35 m_r">Product portfolio</a>
+										<a className="text_35 m_r">Product Portfolio</a>
 										<img
 											src={menu_down_aarow.src}
 											className={`${styles.menu_down_aarow}`}
