@@ -27,7 +27,7 @@ export default function HowToApply() {
         <div className={`${styles.service_flex}`}>
           <div className={`${styles.info_bx} toTop`} data-scroll>
             <h2 className={`${styles.info_head} heading_text_55 pb_30`}>
-              How to apply
+              Belong to CSML
             </h2>
             <p className={`${styles.info_para} paraTxt_18 text_400 pb_10 toTop`} data-scroll>
               We are constantly on the lookout for passionate, driven, and talented individuals who share our vision and want to be part of our journey.
