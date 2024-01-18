@@ -93,6 +93,32 @@ export default function GoKarting({ kartsTagData }) {
 		},
 	};
 
+	var settingsGas = {
+		dots: false,
+		arrows: false,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+		pauseOnHover: true,
+		speed: 1000,
+		autoplaySpeed: 5000,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+				},
+			},
+		],
+		afterChange: (i) => {
+			fillProgress(i + 1);
+		},
+	};
+
 	var settings = {
 		dots: false,
 		arrows: false,
@@ -274,7 +300,7 @@ export default function GoKarting({ kartsTagData }) {
 						</div>
 
 						<div className={`${styles.partner_superior_flex_new} toTop`} data-scroll>
-							<Slider {...settings}>
+							<Slider {...settingsGas}>
 								{gasData.map((item, productItemIndex) => {
 									return (
 										<div className={`${styles.showcase_box}`}>
