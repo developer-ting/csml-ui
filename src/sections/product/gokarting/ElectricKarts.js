@@ -69,16 +69,6 @@ const ElectricKarts = ({ data }) => {
 		afterChange: (i) => {
 			fillProgress(i + 1);
 		},
-		// prevArrow: (
-		// 	<button className={`${styles.prevarrow} about_prevarrow`}>
-		// 		<Image src={arrow_slider.src} alt="arrow" width={40} height={40} />
-		// 	</button>
-		// ),
-		// nextArrow: (
-		// 	<button className={`${styles.nextarrow} about_nextarrow`}>
-		// 		<Image src={arrow_slider.src} alt="arrow" width={40} height={40} />
-		// 	</button>
-		// ),
 	};
 
 	const [progressWidth, setProgressWidth] = useState(0);
