@@ -48,18 +48,33 @@ import plus_icon1 from "../../public/img/plus_icon.svg";
 export default function GoKarting({ kartsTagData }) {
 	const electricData = kartsTagData.data[0].attributes.electrickarts;
 	const gasData = kartsTagData.data[0].attributes.gaskarts;
-	const [showPopup, setShowPopup] = useState(false);
+	// const [showPopup, setShowPopup] = useState(false);
+	const [showPopupGas, setShowPopupGas] = useState(false);
+	const [showPopupElectric, setShowPopupElectric] = useState(false);
 	const [gameIndex, setGameIndex] = useState(0);
 	/** openPopup function */
-	const openPopup = (id) => {
-		setShowPopup(true);
+	const openPopupGas = (id) => {
+		setShowPopupGas(true);
 		handleGameIndex(id);
 		const bodyTg = document.querySelector("body");
 		bodyTg.style.overflow = "hidden";
 	};
 	/** closePopup function */
-	const closePopup = () => {
-		setShowPopup(false);
+	const closePopupGas = () => {
+		setShowPopupGas(false);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "unset";
+	};
+	/** openPopup function */
+	const openPopupElectric = (id) => {
+		setShowPopupElectric(true);
+		handleGameIndex(id);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "hidden";
+	};
+	/** closePopup function */
+	const closePopupElectric = () => {
+		setShowPopupElectric(false);
 		const bodyTg = document.querySelector("body");
 		bodyTg.style.overflow = "unset";
 	};
@@ -304,10 +319,10 @@ export default function GoKarting({ kartsTagData }) {
 								{gasData.map((item, productItemIndex) => {
 									return (
 										<div className={`${styles.showcase_box}`}>
-											<div className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}>
-												<div
-													className={`${styles.img_box}`}
-												>
+											<div
+												className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
+											>
+												<div className={`${styles.img_box}`}>
 													<img
 														className="border_8"
 														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
@@ -320,7 +335,7 @@ export default function GoKarting({ kartsTagData }) {
 														<a>
 															<button
 																className="btn_plus"
-																onClick={() => openPopup(productItemIndex)}
+																onClick={() => openPopupGas(productItemIndex)}
 															>
 																<span className={`${styles.arrow_one} arrow_one`}>
 																	<img src={plus_icon1.src} />
@@ -356,12 +371,11 @@ export default function GoKarting({ kartsTagData }) {
 								{electricData.map((item, productItemIndex) => {
 									return (
 										<div className={`${styles.showcase_box}`}>
-											<div className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}>
+											<div
+												className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
+											>
 												{/* {console.log(item)} */}
-												<div
-													className={`${styles.img_box}`}
-												>
-													
+												<div className={`${styles.img_box}`}>
 													<img
 														className="border_8"
 														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
@@ -374,7 +388,7 @@ export default function GoKarting({ kartsTagData }) {
 														<a>
 															<button
 																className="btn_plus"
-																onClick={() => openPopup(productItemIndex)}
+																onClick={() => openPopupElectric(productItemIndex)}
 															>
 																<span className={`${styles.arrow_one} arrow_one`}>
 																	<img src={plus_icon1.src} />
@@ -670,48 +684,12 @@ export default function GoKarting({ kartsTagData }) {
 					</div>
 				</section>
 
-				{showPopup && (
+				{showPopupGas && (
 					<div className={styles.popup_overlay}>
 						<div className={styles.popup_content}>
 							<div className={styles.popup_content_inner}>
 								<div className={styles.popup_header}>
-									<button onClick={closePopup}>
-										<img src={closeIcn.src} alt="" />
-									</button>
-								</div>
-								<div className={styles.popup_body}>
-									<div className={`${styles.popup_flx} row`}>
-										<div className={styles.popup_img_item}>
-											<img
-												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${electricData[gameIndex].Image.data.attributes.url}`}
-												alt=""
-											/>
-										</div>
-										<div className={styles.popup_content_item}>
-											<h3 className={`${styles.popHead} text_24`}>
-												{electricData[gameIndex].title}
-											</h3>
-											<div className={`${styles.paraTxt} paraTxt_16`}>
-												{parse(electricData[gameIndex].desc)}
-											</div>
-											<div className={`${styles.li_text} pt_10`}>
-												<h4 className="text_md text_500 pb_20">Dimensions:</h4>
-												{parse(electricData[gameIndex].ulList)}
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				)}
-
-				{showPopup && (
-					<div className={styles.popup_overlay}>
-						<div className={styles.popup_content}>
-							<div className={styles.popup_content_inner}>
-								<div className={styles.popup_header}>
-									<button onClick={closePopup}>
+									<button onClick={closePopupGas}>
 										<img src={closeIcn.src} alt="" />
 									</button>
 								</div>
@@ -735,6 +713,42 @@ export default function GoKarting({ kartsTagData }) {
 									<div className={`${styles.li_text} pt_10`}>
 										<h4 className="text_md text_500 pb_20">Dimensions:</h4>
 										{parse(gasData[gameIndex].ulList)}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				)}
+
+				{showPopupElectric && (
+					<div className={styles.popup_overlay}>
+						<div className={styles.popup_content}>
+							<div className={styles.popup_content_inner}>
+								<div className={styles.popup_header}>
+									<button onClick={closePopupElectric}>
+										<img src={closeIcn.src} alt="" />
+									</button>
+								</div>
+								<div className={styles.popup_body}>
+									<div className={`${styles.popup_flx} row`}>
+										<div className={styles.popup_img_item}>
+											<img
+												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${electricData[gameIndex].Image.data.attributes.url}`}
+												alt=""
+											/>
+										</div>
+										<div className={styles.popup_content_item}>
+											<h3 className={`${styles.popHead} text_24`}>
+												{electricData[gameIndex].title}
+											</h3>
+											<div className={`${styles.paraTxt} paraTxt_16`}>
+												{parse(electricData[gameIndex].desc)}
+											</div>
+										</div>
+									</div>
+									<div className={`${styles.li_text} pt_10`}>
+										<h4 className="text_md text_500 pb_20">Dimensions:</h4>
+										{parse(electricData[gameIndex].ulList)}
 									</div>
 								</div>
 							</div>
