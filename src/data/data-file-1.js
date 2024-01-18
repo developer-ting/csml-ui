@@ -65,15 +65,21 @@ import centerImg from "../../public/img/brunswick-bowling/center.jpg";
 const Data = [
 	{
 		image: essentialComponents,
-		title: "Essential Components",
+		title: "Invest in Quality Hardware:",
 		desc:
-			"Timing hardware includes transponders, safety lights and loops, seamlessly integrating with lap timing systems for precise individual and group performance evaluations.",
+			"Choose reputable providers like RaceFacer, MYLAPS, CHRONOLABS, and RACE RESULTS",
 	},
 	{
 		image: userFriendly,
-		title: "User-Friendly",
+		title: "Enhanced Protection and Safety Measures:",
 		desc:
-			"Facilitates convenient printing of lap timing and scoring data, ensuring accuracy and efficiency in recording and analyzing race performance.",
+			"Installing cutting-edge kart control devices, Kart safety systems for efficient race management, track safety signal lights for clear communication, and durable barriers for added protection.",
+	},
+	{
+		image: essentialComponents,
+		title: "Promote a Secure Environment:",
+		desc:
+			"By prioritizing top-notch hardware, karting tracks establish a secure and enjoyable racing atmosphere, ensuring a positive experience for everyone involved.",
 	},
 ];
 
