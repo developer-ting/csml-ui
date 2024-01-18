@@ -273,18 +273,15 @@ export default function GoKarting({ kartsTagData }) {
 							</div>
 						</div>
 
-						<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
+						<div className={`${styles.partner_superior_flex_new} toTop`} data-scroll>
 							<Slider {...settings}>
 								{gasData.map((item, productItemIndex) => {
 									return (
 										<div className={`${styles.showcase_box}`}>
-											<div className={`${styles.showcase_content}`}>
+											<div className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}>
 												<div
-													className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}
+													className={`${styles.img_box}`}
 												>
-													<div className="dot_one dots_p"></div>
-													<div className="dot_two dots_p"></div>
-													<div className="dot_three dots_p"></div>
 													<img
 														className="border_8"
 														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
@@ -328,19 +325,17 @@ export default function GoKarting({ kartsTagData }) {
 							</div>
 						</div>
 
-						<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
+						<div className={`${styles.partner_superior_flex_new} toTop`} data-scroll>
 							<Slider {...settingsElectric}>
 								{electricData.map((item, productItemIndex) => {
 									return (
 										<div className={`${styles.showcase_box}`}>
-											<div className={`${styles.showcase_content}`}>
+											<div className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}>
 												{/* {console.log(item)} */}
 												<div
-													className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}
+													className={`${styles.img_box}`}
 												>
-													<div className="dot_one dots_p"></div>
-													<div className="dot_two dots_p"></div>
-													<div className="dot_three dots_p"></div>
+													
 													<img
 														className="border_8"
 														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
