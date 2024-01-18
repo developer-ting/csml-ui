@@ -215,7 +215,7 @@ export default function GoKarting({ kartsTagData }) {
 						</div>
 					</div>
 					<GasKarts data={kartsTagData} />
-					{/* <ElectricKarts data={kartsTagData} /> */}
+					<ElectricKarts data={kartsTagData} />
 				</section>
 
 				<section
@@ -504,7 +504,7 @@ export default function GoKarting({ kartsTagData }) {
 export async function getStaticProps() {
 	//Features that tag it superior
 	const kartsTagRes = await fetch(
-		`${process.env.STRAPI_DO_BASE_URL}/api/karts-gas-electrics?populate[gaskarts][populate]=Image`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/karts-gas-electrics?populate[gaskarts][populate]=Image&populate[electrickarts][populate]=Image`,
 		ServerHeaders
 	);
 	const kartsTagData = await kartsTagRes.json();

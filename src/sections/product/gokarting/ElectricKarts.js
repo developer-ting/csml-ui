@@ -24,11 +24,10 @@ import sodi_x2drive from "../../../../public/img/product/go-karting/sodi_x2drive
 
 /** Home Hero Section */
 const ElectricKarts = ({ data }) => {
-	// console.log(cuttingEdgeData);
+	console.log(data.data);
 
 	const [showPopup, setShowPopup] = useState(false);
 	const [gameIndex, setGameIndex] = useState(0);
-	const popUpData = data.data[gameIndex].attributes;
 	/** openPopup function */
 	const openPopup = (id) => {
 		setShowPopup(true);
@@ -110,10 +109,11 @@ const ElectricKarts = ({ data }) => {
 
 			<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
 				<Slider {...settings}>
-					{data.data.map((item, productItemIndex) => {
+					{data.data[0].attributes.electrickarts.map((item, productItemIndex) => {
 						return (
 							<div className={`${styles.showcase_box}`}>
 								<div className={`${styles.showcase_content}`}>
+									{/* {console.log(item)} */}
 									<div
 										className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}
 									>
@@ -122,13 +122,13 @@ const ElectricKarts = ({ data }) => {
 										<div className="dot_three dots_p"></div>
 										<img
 											className="border_8"
-											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.Image.data.attributes.url}`}
+											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
 											alt="img"
 										/>
 									</div>
 									<div className={`${styles.desc_box}`}>
 										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 text_700 pb_20">{item.attributes.Heading}</h3>
+											<h3 className="text_24 text_700 pb_20">{item.title}</h3>
 											<a>
 												<button
 													className="btn_plus"
@@ -145,69 +145,6 @@ const ElectricKarts = ({ data }) => {
 							</div>
 						);
 					})}
-					{/* <div className={`${styles.showcase_box}`}>
-						<div
-							className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
-						>
-							<div className={`${styles.img_box}`}>
-								<img className="border_8" src={sodi_rxs_2.src} alt="img" />
-							</div>
-							<div className={`${styles.desc_box}`}>
-								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 pb_20">SODI RXS/2</h3>
-									<a>
-										<button className="btn_plus">
-											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={plus_icon.src} />
-											</span>
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className={`${styles.showcase_box}`}>
-						<div
-							className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
-						>
-							<div className={`${styles.img_box}`}>
-								<img className="border_8" src={sodi_lrx_kids.src} alt="img" />
-							</div>
-							<div className={`${styles.desc_box}`}>
-								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 pb_20">SODI LRX (KIDS)</h3>
-									<a>
-										<button className="btn_plus">
-											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={plus_icon.src} />
-											</span>
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className={`${styles.showcase_box}`}>
-						<div
-							className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
-						>
-							<div className={`${styles.img_box}`}>
-								<img className="border_8" src={sodi_x2drive.src} alt="img" />
-							</div>
-							<div className={`${styles.desc_box}`}>
-								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 pb_20">SODI X2DRIVE</h3>
-									<a>
-										<button className="btn_plus">
-											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={plus_icon.src} />
-											</span>
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div> */}
 				</Slider>
 			</div>
 
@@ -224,14 +161,20 @@ const ElectricKarts = ({ data }) => {
 								<div className={`${styles.popup_flx} row`}>
 									<div className={styles.popup_img_item}>
 										<img
-											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${popUpData.PopUpImage.data.attributes.url}`}
+											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.data[0].attributes.electrickarts[gameIndex].Image.data.attributes.url}`}
 											alt=""
 										/>
 									</div>
 									<div className={styles.popup_content_item}>
-										<h3 className={`${styles.popHead} text_24`}>{popUpData.Heading}</h3>
+										<h3 className={`${styles.popHead} text_24`}>
+											{data.data[0].attributes.electrickarts[gameIndex].title}
+										</h3>
 										<div className={`${styles.paraTxt} paraTxt_16`}>
-											{parse(popUpData.Description)}
+											{parse(data.data[0].attributes.electrickarts[gameIndex].desc)}
+										</div>
+										<div className={`${styles.li_text} pt_30`}>
+											<h4 className="text_md text_500 pb_20">Dimensions</h4>
+											{/* {parse(data.data[0].attributes.electrickarts[gameIndex].ulList)} */}
 										</div>
 									</div>
 								</div>
