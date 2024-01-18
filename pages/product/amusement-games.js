@@ -28,6 +28,7 @@ import ytImg from "../../public/img/product/amusement-games/youtubeIcn.svg";
 
 /** Amusement Games Page */
 export default function AmusementGames({ GamesCategoriesData }) {
+	console.log(GamesCategoriesData);
 	const [showPopup, setShowPopup] = useState(false);
 	const [mainCategoriesIndex, setMainCategoriesIndex] = useState(0);
 	const [subCategoriesIndex, setSubCategoriesIndex] = useState(0);

@@ -1,6 +1,7 @@
 // MODULES //
 import { useEffect, useRef, useState } from "react";
 import ScrollOut from "scroll-out";
+import { ServerHeaders } from "@/utils/RequestHeaders";
 
 // COMPONENTS //
 import Head from "next/head";
@@ -41,7 +42,7 @@ import timing_sof1 from "../../public/img/product/go-karting/timing_sof1.jpg";
 import plus_icon from "../../public/img/up_icon.svg";
 
 /** Go Karting Page */
-export default function GoKarting() {
+export default function GoKarting({ kartsTagData }) {
 	var settings = {
 		dots: false,
 		arrows: false,
@@ -93,7 +94,6 @@ export default function GoKarting() {
 		elements.forEach((element) => {
 			element.style.height = `${maxHeight}px`;
 		});
-
 	}, []);
 
 	return (
@@ -112,19 +112,37 @@ export default function GoKarting() {
 				>
 					<div className="container">
 						<p className="text_24 color_white_opacity l_h_6 toTop" data-scroll>
-							Infuse a burst of excitement into your center with the thrilling world of Go Karting with CSML and Sodikart! A source of joy for all age groups, enhance your facility's charm with high-quality rental karts and advanced software and hardware. This winning combination ensures a perfect balance of safety and entertainment, elevating the overall experience for your visitors.
+							Infuse a burst of excitement into your center with the thrilling world of
+							Go Karting with CSML and Sodikart! A source of joy for all age groups,
+							enhance your facility's charm with high-quality rental karts and advanced
+							software and hardware. This winning combination ensures a perfect balance
+							of safety and entertainment, elevating the overall experience for your
+							visitors.
 						</p>
 					</div>
 				</section>
 
 				<section className={`${styles.entertainmentCenter} ptb_100`}>
 					<div className="container">
-						<div className={`${styles.entertainmentCenterContent} pb_40 toTop`} data-scroll>
+						<div
+							className={`${styles.entertainmentCenterContent} pb_40 toTop`}
+							data-scroll
+						>
 							<h2 className="heading_text_55 pb_20">
 								Speed into Excitement with Go Karting
 							</h2>
 							<p className="paraTxt_18 color_black_opacity l_h_6">
-							Prepare for the exhilaration of go-karting—an adventure tailored for enthusiasts of all ages and skill levels! Thoughtful investments in precision-designed tracks, high-quality karts, and rigorous safety measures guarantee an unmatched experience for customers. In an exclusive partnership with CSML, SODIKART, a global leader in karting, has firmly established its presence in India, securing a significant role in the entertainment scene. Go-karting delivers a thrilling experience that harmonizes excitement, competition, and sheer enjoyment. Perfect for corporate events and parties, it seamlessly blends fun with friendly competition, offering an unforgettable experience for all participants.
+								Prepare for the exhilaration of go-karting—an adventure tailored for
+								enthusiasts of all ages and skill levels! Thoughtful investments in
+								precision-designed tracks, high-quality karts, and rigorous safety
+								measures guarantee an unmatched experience for customers. In an
+								exclusive partnership with CSML, SODIKART, a global leader in karting,
+								has firmly established its presence in India, securing a significant
+								role in the entertainment scene. Go-karting delivers a thrilling
+								experience that harmonizes excitement, competition, and sheer enjoyment.
+								Perfect for corporate events and parties, it seamlessly blends fun with
+								friendly competition, offering an unforgettable experience for all
+								participants.
 							</p>
 						</div>
 
@@ -161,13 +179,23 @@ export default function GoKarting() {
 									SODIKART
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
-									SODIKART, a global karting powerhouse, has firmly established its dominance in India through an exclusive partnership with CSML. As the key player in every facet of the karting experience, SODIKART stands out nationally. Renowned for innovative leadership marked by daring strategies and patented innovations, the brand not only thrives globally but also holds a strong financial position in the karting market across five continents.
+									SODIKART, a global karting powerhouse, has firmly established its
+									dominance in India through an exclusive partnership with CSML. As the
+									key player in every facet of the karting experience, SODIKART stands
+									out nationally. Renowned for innovative leadership marked by daring
+									strategies and patented innovations, the brand not only thrives
+									globally but also holds a strong financial position in the karting
+									market across five continents.
 								</p>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
-									CSML plays a pivotal role in ensuring the seamless distribution of SODIKART, ushering in a new era of karting excellence in India.
+									CSML plays a pivotal role in ensuring the seamless distribution of
+									SODIKART, ushering in a new era of karting excellence in India.
 								</p>
 							</div>
-							<div className={`${styles.img_bx} commonBorderAnimation toTop`} data-scroll>
+							<div
+								className={`${styles.img_bx} commonBorderAnimation toTop`}
+								data-scroll
+							>
 								<img className="img border_8" src={sodikart.src} />
 							</div>
 						</div>
@@ -186,8 +214,8 @@ export default function GoKarting() {
 							</p>
 						</div>
 					</div>
-					<GasKarts />
-					<ElectricKarts />
+					<GasKarts data={kartsTagData} />
+					{/* <ElectricKarts data={kartsTagData} /> */}
 				</section>
 
 				<section
@@ -198,10 +226,15 @@ export default function GoKarting() {
 							<h2 className="heading_text_55 color_white pb_30 text_center">
 								Timing Software
 							</h2>
-							<p className="paraTxt_18 color_white pb_20 opacity_one">RaceFacer, distributed by CSML, serves as crucial go-kart timing software and a social network for karting, enhancing the overall experience at leisure go-karting tracks. Its importance stems from several reasons, making it an essential component for enthusiasts and track operators alike.</p>
+							<p className="paraTxt_18 color_white pb_20 opacity_one">
+								RaceFacer, distributed by CSML, serves as crucial go-kart timing
+								software and a social network for karting, enhancing the overall
+								experience at leisure go-karting tracks. Its importance stems from
+								several reasons, making it an essential component for enthusiasts and
+								track operators alike.
+							</p>
 						</div>
 						<div className={`${styles.partner_superior_flex} d_f`}>
-
 							<div
 								className={`${styles.partner_superior_box} commonBorderAnimation toTop`}
 								data-scroll
@@ -213,7 +246,8 @@ export default function GoKarting() {
 											<h3 className="text_24 color_white text_500 ">Safety</h3>
 										</div>
 										<p className="paraTxt color_white">
-											Ensures races are safe for both experienced and inexperienced drivers.
+											Ensures races are safe for both experienced and inexperienced
+											drivers.
 										</p>
 									</div>
 								</div>
@@ -231,7 +265,8 @@ export default function GoKarting() {
 											</h3>
 										</div>
 										<p className="paraTxt color_white">
-										Helps drivers track and improve lap times for self-improvement and friendly competition.
+											Helps drivers track and improve lap times for self-improvement and
+											friendly competition.
 										</p>
 									</div>
 								</div>
@@ -244,28 +279,13 @@ export default function GoKarting() {
 									<img className="border_8" src={timing_sof1.src} alt="img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 color_white text_500 ">Challenges & Competitions</h3>
-										</div>
-										<p className="paraTxt color_white">
-										llows exciting challenges like fastest lap times, time trials, or endurance races.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div
-								className={`${styles.partner_superior_box} commonBorderAnimation toTop`}
-								data-scroll
-							>
-								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={timing_sof1.src} alt="img" />
-									<div className={`${styles.desc_box} desc_box_he`}>
-										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 color_white text_500">
-												Feedback
+											<h3 className="text_24 color_white text_500 ">
+												Challenges & Competitions
 											</h3>
 										</div>
 										<p className="paraTxt color_white">
-											Provides valuable insights on driving skills, aiding skill enhancement and confidence building.
+											llows exciting challenges like fastest lap times, time trials, or
+											endurance races.
 										</p>
 									</div>
 								</div>
@@ -278,15 +298,34 @@ export default function GoKarting() {
 									<img className="border_8" src={timing_sof1.src} alt="img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
-											<h3 className="text_24 color_white text_500 ">Spectator Engagement</h3>
+											<h3 className="text_24 color_white text_500">Feedback</h3>
 										</div>
 										<p className="paraTxt color_white">
-											Displays real-time race results, creating an engaging experience for spectators.
+											Provides valuable insights on driving skills, aiding skill
+											enhancement and confidence building.
 										</p>
 									</div>
 								</div>
 							</div>
-
+							<div
+								className={`${styles.partner_superior_box} commonBorderAnimation toTop`}
+								data-scroll
+							>
+								<div className={`${styles.partner_superior_content}`}>
+									<img className="border_8" src={timing_sof1.src} alt="img" />
+									<div className={`${styles.desc_box} desc_box_he`}>
+										<div className={`${styles.desc_title} f_j`}>
+											<h3 className="text_24 color_white text_500 ">
+												Spectator Engagement
+											</h3>
+										</div>
+										<p className="paraTxt color_white">
+											Displays real-time race results, creating an engaging experience for
+											spectators.
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						{/* <h2
@@ -350,8 +389,14 @@ export default function GoKarting() {
 							<h2 className="heading_text_55 pb_20 toTop" data-scroll>
 								Timing Hardware
 							</h2>
-							<p className="paraTxt_18 color_black_opacity l_h_6 pb_40 toTop" data-scroll>
-							Creating a safe and thrilling go-karting experience relies on strategic investments in high-quality hardware, <br className='hidden-xs' />establishing an environment that prioritizes safety and enhances enjoyment:
+							<p
+								className="paraTxt_18 color_black_opacity l_h_6 pb_40 toTop"
+								data-scroll
+							>
+								Creating a safe and thrilling go-karting experience relies on strategic
+								investments in high-quality hardware, <br className="hidden-xs" />
+								establishing an environment that prioritizes safety and enhances
+								enjoyment:
 							</p>
 						</div>
 						{Data.map((item, index) => (
@@ -388,7 +433,8 @@ export default function GoKarting() {
 												</h3>
 											</div>
 											<p className="paraTxt_18 color_white_opacity">
-												CSML introduces FIA approved Go Kart Safety Barriers, crafted with precision to redefine safety standards in go-karting.
+												CSML introduces FIA approved Go Kart Safety Barriers, crafted with
+												precision to redefine safety standards in go-karting.
 											</p>
 										</div>
 									</div>
@@ -407,7 +453,9 @@ export default function GoKarting() {
 												</h3>
 											</div>
 											<p className="paraTxt_18 color_white_opacity">
-											These barriers absorb impact forces, offer adaptable configurations, enhance visibility, ensure quick installation and redefine durability with robust materials.
+												These barriers absorb impact forces, offer adaptable configurations,
+												enhance visibility, ensure quick installation and redefine
+												durability with robust materials.
 											</p>
 										</div>
 									</div>
@@ -426,7 +474,9 @@ export default function GoKarting() {
 												</h3>
 											</div>
 											<p className="paraTxt_18 color_white_opacity">
-												Blend aesthetics and safety with customizable options, providing a safer and more enjoyable go-karting experience where every twist and turn is backed by security.
+												Blend aesthetics and safety with customizable options, providing a
+												safer and more enjoyable go-karting experience where every twist and
+												turn is backed by security.
 											</p>
 										</div>
 									</div>
@@ -449,4 +499,20 @@ export default function GoKarting() {
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	//Features that tag it superior
+	const kartsTagRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/karts-gas-electrics?populate[gaskarts][populate]=Image`,
+		ServerHeaders
+	);
+	const kartsTagData = await kartsTagRes.json();
+
+	return {
+		props: {
+			kartsTagData,
+		},
+		revalidate: 10,
+	};
 }

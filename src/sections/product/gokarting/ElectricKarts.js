@@ -16,14 +16,36 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "../../../styles/sections/product/gokarting/ElectricKarts.module.scss";
 
 // IMAGES //
+import closeIcn from "../../../../public/img/close.svg";
 import plus_icon from "../../../../public/img/plus_icon.svg";
 import sodi_rxs_2 from "../../../../public/img/product/go-karting/sodi_rxs_2.jpg";
 import sodi_lrx_kids from "../../../../public/img/product/go-karting/sodi_lrx_kids.jpg";
 import sodi_x2drive from "../../../../public/img/product/go-karting/sodi_x2drive.jpg";
 
 /** Home Hero Section */
-const ElectricKarts = () => {
+const ElectricKarts = ({ data }) => {
 	// console.log(cuttingEdgeData);
+
+	const [showPopup, setShowPopup] = useState(false);
+	const [gameIndex, setGameIndex] = useState(0);
+	const popUpData = data.data[gameIndex].attributes;
+	/** openPopup function */
+	const openPopup = (id) => {
+		setShowPopup(true);
+		handleGameIndex(id);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "hidden";
+	};
+	/** closePopup function */
+	const closePopup = () => {
+		setShowPopup(false);
+		const bodyTg = document.querySelector("body");
+		bodyTg.style.overflow = "unset";
+	};
+	const handleGameIndex = (id) => {
+		setGameIndex(id);
+	};
+
 	var settings = {
 		dots: false,
 		arrows: false,
@@ -33,7 +55,7 @@ const ElectricKarts = () => {
 		autoplay: true,
 		pauseOnHover: true,
 		speed: 1000,
-    autoplaySpeed: 5000,
+		autoplaySpeed: 5000,
 		variableWidth: true,
 		responsive: [
 			{
@@ -74,100 +96,150 @@ const ElectricKarts = () => {
 	}, []);
 	// const parse = require("html-react-parser");
 	return (
-		<div className={`${styles.ecommerce_slider_main} pt_60 pb_100 toTop`} data-scroll>
+		<div
+			className={`${styles.ecommerce_slider_main} pt_60 pb_100 toTop`}
+			data-scroll
+		>
 			<div className="container">
 				<div className={`${styles.title_txt} pb_30`}>
 					<h2 className="heading_text_40 text_700 toTop" data-scroll>
-            Electric Karts
+						Electric Karts
 					</h2>
 				</div>
 			</div>
 
 			<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
 				<Slider {...settings}>
-          <div className={`${styles.showcase_box}`}>
-            <div className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}>
-              <div
-                className={`${styles.img_box}`}
-              >
-                <img
-                  className="border_8"
-                  src={sodi_rxs_2.src}
-                  alt="img"
-                />
-              </div>
-              <div className={`${styles.desc_box}`}>
-                <div className={`${styles.desc_title} f_j`}>
-                  <h3 className="text_24 text_700 pb_20">
-                    SODI RXS/2
-                  </h3>
-                  <a>
-                    <button className="btn_plus">
-                      <span className={`${styles.arrow_one} arrow_one`}>
-                        <img src={plus_icon.src} />
-                      </span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={`${styles.showcase_box}`}>
-            <div className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}>
-              <div
-                className={`${styles.img_box}`}
-              >
-                <img
-                  className="border_8"
-                  src={sodi_lrx_kids.src}
-                  alt="img"
-                />
-              </div>
-              <div className={`${styles.desc_box}`}>
-                <div className={`${styles.desc_title} f_j`}>
-                  <h3 className="text_24 text_700 pb_20">
-                    SODI LRX (KIDS)
-                  </h3>
-                  <a>
-                    <button className="btn_plus">
-                      <span className={`${styles.arrow_one} arrow_one`}>
-                        <img src={plus_icon.src} />
-                      </span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={`${styles.showcase_box}`}>
-            <div className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}>
-              <div
-                className={`${styles.img_box}`}
-              >
-                <img
-                  className="border_8"
-                  src={sodi_x2drive.src}
-                  alt="img"
-                />
-              </div>
-              <div className={`${styles.desc_box}`}>
-                <div className={`${styles.desc_title} f_j`}>
-                  <h3 className="text_24 text_700 pb_20">
-                  SODI X2DRIVE
-                  </h3>
-                  <a>
-                    <button className="btn_plus">
-                      <span className={`${styles.arrow_one} arrow_one`}>
-                        <img src={plus_icon.src} />
-                      </span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+					{data.data.map((item, productItemIndex) => {
+						return (
+							<div className={`${styles.showcase_box}`}>
+								<div className={`${styles.showcase_content}`}>
+									<div
+										className={`${styles.img_box} commonBorderAnimation whiteCommonBorderAnimation`}
+									>
+										<div className="dot_one dots_p"></div>
+										<div className="dot_two dots_p"></div>
+										<div className="dot_three dots_p"></div>
+										<img
+											className="border_8"
+											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.Image.data.attributes.url}`}
+											alt="img"
+										/>
+									</div>
+									<div className={`${styles.desc_box}`}>
+										<div className={`${styles.desc_title} f_j`}>
+											<h3 className="text_24 text_700 pb_20">{item.attributes.Heading}</h3>
+											<a>
+												<button
+													className="btn_plus"
+													onClick={() => openPopup(productItemIndex)}
+												>
+													<span className={`${styles.arrow_one} arrow_one`}>
+														<img src={plus_icon.src} />
+													</span>
+												</button>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						);
+					})}
+					{/* <div className={`${styles.showcase_box}`}>
+						<div
+							className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
+						>
+							<div className={`${styles.img_box}`}>
+								<img className="border_8" src={sodi_rxs_2.src} alt="img" />
+							</div>
+							<div className={`${styles.desc_box}`}>
+								<div className={`${styles.desc_title} f_j`}>
+									<h3 className="text_24 text_700 pb_20">SODI RXS/2</h3>
+									<a>
+										<button className="btn_plus">
+											<span className={`${styles.arrow_one} arrow_one`}>
+												<img src={plus_icon.src} />
+											</span>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className={`${styles.showcase_box}`}>
+						<div
+							className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
+						>
+							<div className={`${styles.img_box}`}>
+								<img className="border_8" src={sodi_lrx_kids.src} alt="img" />
+							</div>
+							<div className={`${styles.desc_box}`}>
+								<div className={`${styles.desc_title} f_j`}>
+									<h3 className="text_24 text_700 pb_20">SODI LRX (KIDS)</h3>
+									<a>
+										<button className="btn_plus">
+											<span className={`${styles.arrow_one} arrow_one`}>
+												<img src={plus_icon.src} />
+											</span>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className={`${styles.showcase_box}`}>
+						<div
+							className={`${styles.showcase_content} commonBorderAnimation whiteCommonBorderAnimation`}
+						>
+							<div className={`${styles.img_box}`}>
+								<img className="border_8" src={sodi_x2drive.src} alt="img" />
+							</div>
+							<div className={`${styles.desc_box}`}>
+								<div className={`${styles.desc_title} f_j`}>
+									<h3 className="text_24 text_700 pb_20">SODI X2DRIVE</h3>
+									<a>
+										<button className="btn_plus">
+											<span className={`${styles.arrow_one} arrow_one`}>
+												<img src={plus_icon.src} />
+											</span>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div> */}
 				</Slider>
 			</div>
+
+			{showPopup && (
+				<div className={styles.popup_overlay}>
+					<div className={styles.popup_content}>
+						<div className={styles.popup_content_inner}>
+							<div className={styles.popup_header}>
+								<button onClick={closePopup}>
+									<img src={closeIcn.src} alt="" />
+								</button>
+							</div>
+							<div className={styles.popup_body}>
+								<div className={`${styles.popup_flx} row`}>
+									<div className={styles.popup_img_item}>
+										<img
+											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${popUpData.PopUpImage.data.attributes.url}`}
+											alt=""
+										/>
+									</div>
+									<div className={styles.popup_content_item}>
+										<h3 className={`${styles.popHead} text_24`}>{popUpData.Heading}</h3>
+										<div className={`${styles.paraTxt} paraTxt_16`}>
+											{parse(popUpData.Description)}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };
