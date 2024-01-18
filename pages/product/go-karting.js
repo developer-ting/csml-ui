@@ -695,7 +695,7 @@ export default function GoKarting({ kartsTagData }) {
 												{parse(electricData[gameIndex].desc)}
 											</div>
 											<div className={`${styles.li_text} pt_10`}>
-												<h4 className="text_md text_500 pb_20">Dimensions</h4>
+												<h4 className="text_md text_500 pb_20">Dimensions:</h4>
 												{parse(electricData[gameIndex].ulList)}
 											</div>
 										</div>
@@ -733,7 +733,7 @@ export default function GoKarting({ kartsTagData }) {
 										</div>
 									</div>
 									<div className={`${styles.li_text} pt_10`}>
-										<h4 className="text_md text_500 pb_20">Dimensions</h4>
+										<h4 className="text_md text_500 pb_20">Dimensions:</h4>
 										{parse(gasData[gameIndex].ulList)}
 									</div>
 								</div>
