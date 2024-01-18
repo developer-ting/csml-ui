@@ -6,15 +6,15 @@
     position: relative;
     
     .pioneering_content{
-      width: 70%;
+      width: 100%;
       //margin: 0 auto;
       text-align: left;
-      @media only screen and (max-width: 1380px) {
-        width: 76%;
-      }
-      @media only screen and (max-width: 991px) {
-        width: 100%;
-      }
+      // @media only screen and (max-width: 1380px) {
+      //   width: 76%;
+      // }
+      // @media only screen and (max-width: 991px) {
+      //   width: 100%;
+      // }
       h2{
         text-align: left;
       }
