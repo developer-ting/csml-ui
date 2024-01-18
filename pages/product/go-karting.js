@@ -11,8 +11,8 @@ import Loader from "@/components/Loader";
 import ImagePara from "@/components/ImagePara";
 // import data from "../../pages/data-file-1";
 import Data from "@/data/data-file-1";
-import GasKarts from "@/sections/product/GasKarts";
-import ElectricKarts from "@/sections/product/ElectricKarts";
+import GasKarts from "@/sections/product/gokarting/GasKarts";
+import ElectricKarts from "@/sections/product/gokarting/ElectricKarts";
 // SECTIONS //
 
 // PLUGINS //

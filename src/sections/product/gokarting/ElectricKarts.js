@@ -13,13 +13,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // STYLES //
-import styles from "../../../src/styles/pages/product/ElectricKarts.module.scss";
+import styles from "../../../styles/sections/product/gokarting/ElectricKarts.module.scss";
 
 // IMAGES //
-import plus_icon from "../../../public/img/plus_icon.svg";
-import sodi_rxs_2 from "../../../public/img/product/go-karting/sodi_rxs_2.jpg";
-import sodi_lrx_kids from "../../../public/img/product/go-karting/sodi_lrx_kids.jpg";
-import sodi_x2drive from "../../../public/img/product/go-karting/sodi_x2drive.jpg";
+import plus_icon from "../../../../public/img/plus_icon.svg";
+import sodi_rxs_2 from "../../../../public/img/product/go-karting/sodi_rxs_2.jpg";
+import sodi_lrx_kids from "../../../../public/img/product/go-karting/sodi_lrx_kids.jpg";
+import sodi_x2drive from "../../../../public/img/product/go-karting/sodi_x2drive.jpg";
 
 /** Home Hero Section */
 const ElectricKarts = () => {

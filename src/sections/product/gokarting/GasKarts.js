@@ -13,13 +13,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // STYLES //
-import styles from "../../../src/styles/pages/product/GasKarts.module.scss";
+import styles from "../../../styles/sections/product/gokarting/GasKarts.module.scss";
 
 // IMAGES //
-import plus_icon from "../../../public/img/plus_icon.svg";
-import sodi_rt10 from "../../../public/img/product/go-karting/sodi_rt10.jpg";
-import sodi_lr5_kids from "../../../public/img/product/go-karting/sodi_lr5_kids.jpg";
-import sodi_2drive from "../../../public/img/product/go-karting/sodi_2drive.jpg";
+import plus_icon from "../../../../public/img/plus_icon.svg";
+import sodi_rt10 from "../../../../public/img/product/go-karting/sodi_rt10.jpg";
+import sodi_lr5_kids from "../../../../public/img/product/go-karting/sodi_lr5_kids.jpg";
+import sodi_2drive from "../../../../public/img/product/go-karting/sodi_2drive.jpg";
 
 /** Home Hero Section */
 const GasKarts = () => {
