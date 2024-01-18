@@ -223,10 +223,10 @@ const GasKarts = ({ data }) => {
 								<div className={styles.popup_body}>
 									<div className={`${styles.popup_flx} row`}>
 										<div className={styles.popup_img_item}>
-											{/* <img
-											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${popUpData.PopUpImage.data.attributes.url}`}
-											alt=""
-										/> */}
+											<img
+												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.data[0].attributes.gaskarts[gameIndex].Image.data.attributes.url}`}
+												alt=""
+											/>
 										</div>
 										<div className={styles.popup_content_item}>
 											<h3 className={`${styles.popHead} text_24`}>
@@ -237,7 +237,7 @@ const GasKarts = ({ data }) => {
 											</div>
 											<div className={`${styles.li_text} pt_30`}>
 												<h4 className="text_md text_500 pb_20">Project Highlights</h4>
-												{/* {parse(imgData.attributes.popDesc)} */}gui
+												{parse(data.data[0].attributes.gaskarts[gameIndex].ulList)}
 											</div>
 										</div>
 									</div>
