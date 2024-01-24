@@ -65,7 +65,7 @@ export default function ValuedDistributors({ valuedData }) {
 		<section className={`${styles.valued_distributors_wrap} pb_100`}>
 			<div className="container">
 				<div className={`${styles.section_title} toTop`} data-scroll>
-					<h2 className="heading_text_40 pb_20">our manufacturing partners </h2>
+					<h2 className="heading_text_40 pb_20">Our manufacturing partners </h2>
 				</div>
 				<div
 					className={`${styles.valued_distributors_border} border_animation white_border_animation toTop`}
