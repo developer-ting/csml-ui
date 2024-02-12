@@ -36,13 +36,13 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										Rohit Mathur
+										MR. Rohit Mathur 
 									</h3>
-									<span href="#" rel="noreferrer">
+									{/* <span href="#" rel="noreferrer">
 										<Link href="">
 											<img src={linkdin.src} alt="" />
 										</Link>
-									</span>
+									</span> */}
 								</div>
 								<p className="paraTxt font_secondary opacity_two">
 									CEO
@@ -59,13 +59,13 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										Tyna D’Cruz
+									 MS. Tyna D’Cruz
 									</h3>
-									<span href="#" rel="noreferrer">
+									{/* <span href="#" rel="noreferrer">
 										<Link href="">
 											<img src={linkdin.src} alt="" />
 										</Link>
-									</span>
+									</span> */}
 								</div>
 								<p className="paraTxt font_secondary opacity_two">
 									Chief Business Development Officer
@@ -82,13 +82,13 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										Sanjeev Sinha
+									 MR. Sanjeev Sinha
 									</h3>
-									<span href="#" rel="noreferrer">
+									{/* <span href="#" rel="noreferrer">
 										<Link href="">
 											<img src={linkdin.src} alt="" />
 										</Link>
-									</span>
+									</span> */}
 								</div>
 								<p className="paraTxt font_secondary opacity_two">
 									Chief Technology Officer
@@ -105,16 +105,16 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										Rohit Mathur
+									  MR. Amit Thapar
 									</h3>
-									<span href="#" rel="noreferrer">
+									{/* <span href="#" rel="noreferrer">
 										<Link href="">
 											<img src={linkdin.src} alt="" />
 										</Link>
-									</span>
+									</span> */}
 								</div>
 								<p className="paraTxt font_secondary opacity_two">
-									CEO
+									Chief Commercial Officer
 								</p>
 							</div>
 						</div>
@@ -128,16 +128,16 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										Tyna D’Cruz
+										MR. Amol Shelke 
 									</h3>
-									<span href="#" rel="noreferrer">
+									{/* <span href="#" rel="noreferrer">
 										<Link href="">
 											<img src={linkdin.src} alt="" />
 										</Link>
-									</span>
+									</span> */}
 								</div>
 								<p className="paraTxt font_secondary opacity_two">
-									Chief Business Development Officer
+									Senior Account Manager
 								</p>
 							</div>
 						</div>
@@ -151,16 +151,16 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										Sanjeev Sinha
+									 MR. Deepak Jha
 									</h3>
-									<span href="#" rel="noreferrer">
+									{/* <span href="#" rel="noreferrer">
 										<Link href="">
 											<img src={linkdin.src} alt="" />
 										</Link>
-									</span>
+									</span> */}
 								</div>
 								<p className="paraTxt font_secondary opacity_two">
-									Chief Technology Officer
+									Manager Bowling Service & IT
 								</p>
 							</div>
 						</div>

@@ -43,7 +43,7 @@ export default function Home({
 			once: true,
 		});
 	}, []);
-	// console.log(PartenrsSliderData);
+	 console.log(ClientLogosData, "pramod");
 	return (
 		<div>
 			<Header />
@@ -87,7 +87,7 @@ export async function getStaticProps() {
 
 	// home client logos
 	const ClientLogosRes = await fetch(
-		`${process.env.STRAPI_DO_BASE_URL}/api/home-client-logos?populate=*`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-client-logos?sort=order:desc&populate=*`,
 		ServerHeaders
 	);
 	const ClientLogosData = await ClientLogosRes.json();
