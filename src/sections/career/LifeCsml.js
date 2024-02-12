@@ -69,7 +69,7 @@ export default function LifeCsml() {
 		setProgressWidth((currInd / 6) * 100);
 	};
 	return (
-		<section className={`${styles.life_csml_wrap} pb_100`}>
+		<section className={`${styles.life_csml_wrap} pb_80`}>
 			
       <div className={`${styles.life_csml_main}`}>
         
@@ -79,7 +79,7 @@ export default function LifeCsml() {
             <p className="paraTxt_18 pb_10 toTop" data-scroll>Discover what it's like to be a part of the CSML team. From team-building activities to celebrating milestones, we believe in creating a positive and engaging work environment. </p>
             <p className="paraTxt_18 pb_10 toTop" data-scroll>As leaders in the amusement industry, we are committed to transforming spaces into unforgettable experiences. We are constantly on the lookout for passionate, driven, and talented individuals who share our vision and want to be part of our journey. </p>
           </div>
-          <div className={`${styles.showcase_main} pt_40 toTop`} data-scroll>
+          {/* <div className={`${styles.showcase_main} pt_40 toTop`} data-scroll>
             <Slider {...settings}>
               <div className={`${styles.showcase_box}`}>
                 <div className={`${styles.showcase_content}`}>
@@ -124,15 +124,15 @@ export default function LifeCsml() {
                 </div>
               </div>
             </Slider>
-          </div>
-          <div className={`${styles.progress_div} pb_100`}>
+          </div> */}
+          {/* <div className={`${styles.progress_div} pb_100`}>
             <div className={`${styles.progress_bar}`}>
               <div
                 style={{ width: `${progressWidth}%` }}
                 className={`${styles.color_div}`}
               ></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 		</section>
