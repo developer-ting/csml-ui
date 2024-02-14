@@ -1005,13 +1005,13 @@ picture {
 				transform: perspective(60em) rotateY(15deg);
 			}
 			img {
-				max-width: unset;
+				max-width: 100%;
 				object-fit: cover;
 				object-position: center;
-				height: 85vh;
-				// @media screen and (max-height: 720px) {
-				// 	height: 125vh;
-				// }
+				height: 66vh;
+				@media screen and (max-height: 680px) {
+					height: 75vh;
+				}
 				@media screen and (max-height: 600px) {
 					height: 95vh;
 				}

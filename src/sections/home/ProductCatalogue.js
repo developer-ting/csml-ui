@@ -153,7 +153,7 @@ export default function ProductCatalogue() {
 					attr: { src: `${dragSliderInfo[i].imgUrl}` },
 					// attr: { src: `${imageUrls[i]}` },
 				});
-				parallax[i] = gsap.to(img, { x: -300, ease: "none", paused: true });
+				parallax[i] = gsap.to(img, { x: 0, ease: "none", paused: true });
 
 				box.appendChild(img);
 				box.appendChild(link);
