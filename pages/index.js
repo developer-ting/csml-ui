@@ -43,7 +43,7 @@ export default function Home({
 			once: true,
 		});
 	}, []);
-	 console.log(ClientLogosData, "pramod");
+	 //console.log(ClientLogosData, "pramod");
 	return (
 		<div>
 			<Header />
