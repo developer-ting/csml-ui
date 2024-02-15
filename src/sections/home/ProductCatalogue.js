@@ -37,9 +37,9 @@ export default function ProductCatalogue() {
 			link: "/product/brunswick-bowling",
 		},
 		{
-			title: "Amusement Games",
+			title: "Arcade Games",
 			imgUrl: arcade_games.src,
-			link: "/product/amusement-games",
+			link: "/product/arcade-games",
 		},
 		{
 			title: "Trampoline",

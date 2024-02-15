@@ -131,8 +131,8 @@ const Header = () => {
 											</Link>
 										</p>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>
-											<Link href="/product/amusement-games">
-												<a className="text_sm text_500">Amusement Games</a>
+											<Link href="/product/arcade-games">
+												<a className="text_sm text_500">Arcade Games</a>
 											</Link>
 										</p>
 										<p onClick={() => setSidebarActive(!sidebarActive)}>

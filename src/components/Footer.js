@@ -112,8 +112,8 @@ const Footer = () => {
 													</Link>
 												</p>
 												<p>
-													<Link href="/product/amusement-games">
-														<a className="">Amusement Games</a>
+													<Link href="/product/arcade-games">
+														<a className="">Arcade Games</a>
 													</Link>
 												</p>
 												<p>
