@@ -4,6 +4,9 @@
 	background-color: var(--color_white);
 	overflow: hidden;
 	position: relative;
+	@media only screen and (max-width: 767px) {
+		padding-bottom: 20px;
+	}
 	.section_title {
 		text-align: center;
 	}

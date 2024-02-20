@@ -40,7 +40,18 @@
       @media only screen and (max-width: 767px) {
         width: 100%;
       }
-      
+      h2{
+        @media only screen and (max-width: 767px) {
+          padding-bottom: 15px;
+          font-size: 40px;
+          font-weight: 700;
+        }
+      }
+      h3{
+        @media only screen and (max-width: 767px) {
+          font-size: 26px;
+        }
+      }
     }
 
     .right_content {

@@ -28,12 +28,18 @@
       }
       @media only screen and (max-width: 1199px) {
         align-items: flex-start;
+        min-height: 500px;
+      }
+      @media only screen and (max-width: 991px) {
+        align-items: flex-start;
+        min-height: 620px;
       }
       @media only screen and (max-width: 767px) {
         flex-wrap: wrap;
         // flex-direction: column-reverse;
         padding: 30px 15px;
         display: block;
+        min-height: 870px;
       }
       .enthralled_quate_top{
         position: absolute;

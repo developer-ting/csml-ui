@@ -33,23 +33,19 @@ export default function EnthralledCustomers({ enthralledData }) {
 		autoplaySpeed: 5000,
 	};
 
-	useEffect(() => {
-		//EqualHeight("enthralled_box" + 100)
-		// Get all elements with the class name 'equal-height'
-		const elements = document.querySelectorAll(`.enthralled_box`);
+	// useEffect(() => {
+	// 	const elements = document.querySelectorAll(`.enthralled_box`);
 
-		// Calculate the maximum height among all elements
-		let maxHeight = 0;
-		elements.forEach((element) => {
-			maxHeight = Math.max(maxHeight, element.offsetHeight);
-		});
+	// 	let maxHeight = 0;
+	// 	elements.forEach((element) => {
+	// 		maxHeight = Math.max(maxHeight, element.offsetHeight);
+	// 	});
 
-		// Set the same height for all elements
-		elements.forEach((element) => {
-			element.style.height = `${maxHeight + 30}px`;
-		});
+	// 	elements.forEach((element) => {
+	// 		element.style.height = `${maxHeight + 30}px`;
+	// 	});
 
-	}, []);
+	// }, []);
 	
 
 	return (

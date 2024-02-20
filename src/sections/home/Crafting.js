@@ -72,10 +72,10 @@ export default function Crafting({ craftingData }) {
 							<h2 className="text_xxxxxI color_white pb_30 crafting_heading">
 								Crafting
 							</h2>
-							<h2 className="heading_text_45 color_white pb_20 visible-xs">
+							<h3 className="heading_text_45 color_white pb_20 visible-xs">
 								world-class entertainment <br />
 								hubs for over 50 years
-							</h2>
+							</h3>
 							<p className="paraTxt color_white opacity_one">
 								Since our establishment in 2002, we have cultivated an extensive
 								portfolio of entertainment solutions. Additionally, we've been the
