@@ -97,11 +97,16 @@
       position: relative;
       @media only screen and (max-width: 1199px) {
         align-items: flex-start;
+        min-height: 370px;
+      }
+      @media only screen and (max-width: 991px) {
+        min-height: 440px;
       }
       @media only screen and (max-width: 767px) {
         flex-wrap: wrap;
         padding: 30px 30px;
         padding: 20px 15px;
+        min-height: 580px;
       }
       .yellow_content{
         width: 45%;

@@ -123,13 +123,13 @@ export default function PartnerSuperior({ data }) {
 										<div className={`${styles.yellow_content}`}>
 											<h3 className="text_35 pb_20">{item.attributes.PartnersHeading}</h3>
 											<p className="paraTxt opacity_one">{item.attributes.PartnersPara}</p>
-											<div className={`${styles.yellow_btn} pt_30`}>
+											{/* <div className={`${styles.yellow_btn} pt_30`}>
 												<a href={item.attributes.PartnersURL} rel="noreferrer">
 													<span className="span_btn yellow_btn">
 														<button className="btn_project_default">Learn More</button>
 													</span>
 												</a>
-											</div>
+											</div> */}
 										</div>
 										<div className={`${styles.yellow_img}`}>
 											<img

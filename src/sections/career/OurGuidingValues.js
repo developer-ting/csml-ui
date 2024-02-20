@@ -80,7 +80,7 @@ export default function OurGuidingValues() {
           <Slider {...settings}>
             <div className={`${styles.partner_superior_box} border_animation`}>
               <div className={`${styles.partner_superior_content}`}>
-                <img className="border_8 width_100" src={dream_big.src} alt="img" />
+                {/* <img className="border_8 width_100" src={dream_big.src} alt="img" /> */}
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_500 ">
@@ -96,7 +96,7 @@ export default function OurGuidingValues() {
             </div>
             <div className={`${styles.partner_superior_box} border_animation`}>
               <div className={`${styles.partner_superior_content}`}>
-                <img className="border_8 width_100" src={complete_win.src} alt="img" />
+                {/* <img className="border_8 width_100" src={complete_win.src} alt="img" /> */}
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_500">
@@ -112,7 +112,7 @@ export default function OurGuidingValues() {
 
             <div className={`${styles.partner_superior_box} border_animation`}>
               <div className={`${styles.partner_superior_content}`}>
-                <img className="border_8 width_100" src={make_fun.src} alt="img" />
+                {/* <img className="border_8 width_100" src={make_fun.src} alt="img" /> */}
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_500">
@@ -128,7 +128,7 @@ export default function OurGuidingValues() {
 
             <div className={`${styles.partner_superior_box} border_animation`}>
               <div className={`${styles.partner_superior_content}`}>
-                <img className="border_8 width_100" src={make_difference_every_day.src} alt="img" />
+                {/* <img className="border_8 width_100" src={make_difference_every_day.src} alt="img" /> */}
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_500">
@@ -144,7 +144,7 @@ export default function OurGuidingValues() {
 
             <div className={`${styles.partner_superior_box} border_animation`}>
               <div className={`${styles.partner_superior_content}`}>
-                <img className="border_8 width_100" src={creativity_innovation.src} alt="img" />
+                {/* <img className="border_8 width_100" src={creativity_innovation.src} alt="img" /> */}
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_500">
@@ -160,7 +160,7 @@ export default function OurGuidingValues() {
 
             <div className={`${styles.partner_superior_box} border_animation`}>
               <div className={`${styles.partner_superior_content}`}>
-                <img className="border_8 width_100" src={relationship_matter.src} alt="img" />
+                {/* <img className="border_8 width_100" src={relationship_matter.src} alt="img" /> */}
                 <div className={`${styles.desc_box}`}>
                   <div className={`${styles.desc_title} f_j`}>
                     <h3 className="text_24 color_white text_500">
