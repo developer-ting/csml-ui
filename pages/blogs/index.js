@@ -118,7 +118,7 @@ export default function Blog({ BlogData }) {
 export async function getStaticProps() {
 	// Blog
 	const BlogRes = await fetch(
-		`${process.env.STRAPI_DO_BASE_URL}/api/Blogs?populate=*`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/Blogs?sort=BlogDate:desc&populate=*`,
 		ServerHeaders
 	);
 	const BlogData = await BlogRes.json();
