@@ -13,6 +13,9 @@ import styles from "../../styles/sections/about/Luminaries.module.scss";
   import rohit_mathur from "../../../public/img/about/rohit_mathur.jpg";
   import tyna from "../../../public/img/about/tyna.jpg";
   import sanjeev from "../../../public/img/about/sanjeev.jpg";
+  import amit_thapar from "../../../public/img/about/amit_thapar.jpg";
+  import amol_shelke from "../../../public/img/about/amol_shelke.jpg";
+  import deepak_jha from "../../../public/img/about/deepak_jha.jpg";
   import linkdin from "../../../public/img/linkdin.svg";
 
 /** Home Hero Section */
@@ -101,7 +104,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={rohit_mathur.src} alt="img" />
+							<img className="border_8" src={amit_thapar.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
@@ -124,7 +127,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={tyna.src} alt="img" />
+							<img className="border_8" src={amol_shelke.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
@@ -147,7 +150,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={sanjeev.src} alt="img" />
+							<img className="border_8" src={deepak_jha.src} alt="img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
