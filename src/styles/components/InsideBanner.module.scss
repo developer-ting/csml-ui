@@ -2,16 +2,16 @@
 .home_banner_wrap{
   position: relative;
   height: 100vh;
-  // &::after {
-	// 	content: " ";
-	// 	left: 0px;
-	// 	top: 0px;
-	// 	position: absolute;
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	// background: rgba(0, 0, 0, 0.30); 
-  //   background: rgba(0, 0, 0, 0.1); 
-	// }
+  &::after {
+		content: " ";
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		// background: rgba(0, 0, 0, 0.30); 
+    background: rgba(0, 0, 0, 0.3); 
+	}
   .banner_img{
     img{
       height: 100vh; 

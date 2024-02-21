@@ -1,5 +1,7 @@
 // goKarting page images import
 import essentialComponents from "../../public/img/product/go-karting/essential-components.jpg";
+import invest_in_quality_hardware from "../../public/img/product/go-karting/invest_in_quality_hardware.jpg";
+import promote_environment from "../../public/img/product/go-karting/promote_environment.jpg";
 import userFriendly from "../../public/img/product/go-karting/user-friendly.jpg";
 
 //intercard iedge page images import
@@ -64,7 +66,7 @@ import centerImg from "../../public/img/brunswick-bowling/center.jpg";
 // goKarting page data
 const Data = [
 	{
-		image: essentialComponents,
+		image: invest_in_quality_hardware,
 		title: "Invest in Quality Hardware:",
 		desc:
 			"Choose reputable providers like RaceFacer, MYLAPS, CHRONOLABS, and RACE RESULTS",
@@ -76,7 +78,7 @@ const Data = [
 			"Installing cutting-edge kart control devices, Kart safety systems for efficient race management, track safety signal lights for clear communication, and durable barriers for added protection.",
 	},
 	{
-		image: essentialComponents,
+		image: promote_environment,
 		title: "Promote a Secure Environment:",
 		desc:
 			"By prioritizing top-notch hardware, karting tracks establish a secure and enjoyable racing atmosphere, ensuring a positive experience for everyone involved.",
