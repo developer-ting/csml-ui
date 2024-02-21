@@ -40,7 +40,11 @@ import safetyBarriersImg1 from "../../public/img/product/go-karting/safety-barri
 import safetyBarriersImg2 from "../../public/img/product/go-karting/safety-barriers-img2.jpg";
 import safetyBarriersImg3 from "../../public/img/product/go-karting/safety-barriers-img3.jpg";
 import sodikart from "../../public/img/product/go-karting/sodikart.jpg";
-import timing_sof1 from "../../public/img/product/go-karting/timing_sof1.jpg";
+import safety from "../../public/img/product/go-karting/safety.jpg";
+import performance_monitoring from "../../public/img/product/go-karting/performance_monitoring.jpg";
+import challenges_competitions from "../../public/img/product/go-karting/challenges_competitions.jpg";
+import feedback from "../../public/img/product/go-karting/feedback.jpg";
+import spectator_engagement from "../../public/img/product/go-karting/spectator_engagement.jpg";
 import plus_icon from "../../public/img/up_icon.svg";
 import plus_icon1 from "../../public/img/plus_icon.svg";
 
@@ -243,17 +247,17 @@ export default function GoKarting({ kartsTagData }) {
 							data-scroll
 						>
 							<div className={`${styles.entertainmentCenterImgBoxStyle}`}>
-								<img src={entertainmentCenterImg1.src} alt="Entertainment Center Img" />
+								<img src={entertainmentCenterImg1.src} className="border_8" alt="Entertainment Center Img" />
 							</div>
 							<div className={`${styles.entertainmentCenterImgBoxStyle}`}>
 								<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>
-									<img
+									<img className="border_8"
 										src={entertainmentCenterImg3.src}
 										alt="Entertainment Center Img"
 									/>
 								</div>
 								<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>
-									<img
+									<img className="border_8"
 										src={entertainmentCenterImg2.src}
 										alt="Entertainment Center Img"
 									/>
@@ -449,7 +453,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={timing_sof1.src} alt="img" />
+									<img className="border_8" src={safety.src} alt="img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500 ">Safety</h3>
@@ -466,7 +470,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={timing_sof1.src} alt="img" />
+									<img className="border_8" src={performance_monitoring.src} alt="img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500">
@@ -485,7 +489,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={timing_sof1.src} alt="img" />
+									<img className="border_8" src={challenges_competitions.src} alt="img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500 ">
@@ -504,7 +508,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={timing_sof1.src} alt="img" />
+									<img className="border_8" src={feedback.src} alt="img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500">Feedback</h3>
@@ -521,7 +525,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={timing_sof1.src} alt="img" />
+									<img className="border_8" src={spectator_engagement.src} alt="img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500 ">
