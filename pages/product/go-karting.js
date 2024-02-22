@@ -247,17 +247,23 @@ export default function GoKarting({ kartsTagData }) {
 							data-scroll
 						>
 							<div className={`${styles.entertainmentCenterImgBoxStyle}`}>
-								<img src={entertainmentCenterImg1.src} className="border_8" alt="Entertainment Center Img" />
+								<img
+									src={entertainmentCenterImg1.src}
+									className="border_8"
+									alt="Entertainment Center Img"
+								/>
 							</div>
 							<div className={`${styles.entertainmentCenterImgBoxStyle}`}>
 								<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>
-									<img className="border_8"
+									<img
+										className="border_8"
 										src={entertainmentCenterImg3.src}
 										alt="Entertainment Center Img"
 									/>
 								</div>
 								<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>
-									<img className="border_8"
+									<img
+										className="border_8"
 										src={entertainmentCenterImg2.src}
 										alt="Entertainment Center Img"
 									/>
@@ -489,7 +495,11 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={challenges_competitions.src} alt="img" />
+									<img
+										className="border_8"
+										src={challenges_competitions.src}
+										alt="img"
+									/>
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500 ">
@@ -634,11 +644,11 @@ export default function GoKarting({ kartsTagData }) {
 							<Slider {...settings}>
 								<div className={`${styles.partner_superior_box} commonBorderAnimation`}>
 									<div className={`${styles.partner_superior_content}`}>
-										<img
+										{/* <img
 											className="border_8 width_100"
 											src={safetyBarriersImg1.src}
 											alt="img"
-										/>
+										/> */}
 										<div className={`${styles.desc_box}`}>
 											<div className={`${styles.desc_title} pb_20 f_j`}>
 												<h3 className="text_24 color_white text_500 ">
@@ -654,11 +664,11 @@ export default function GoKarting({ kartsTagData }) {
 								</div>
 								<div className={`${styles.partner_superior_box} commonBorderAnimation`}>
 									<div className={`${styles.partner_superior_content}`}>
-										<img
+										{/* <img
 											className="border_8 width_100"
 											src={safetyBarriersImg2.src}
 											alt="img"
-										/>
+										/> */}
 										<div className={`${styles.desc_box}`}>
 											<div className={`${styles.desc_title} pb_20 f_j`}>
 												<h3 className="text_24 color_white text_500">
@@ -675,11 +685,11 @@ export default function GoKarting({ kartsTagData }) {
 								</div>
 								<div className={`${styles.partner_superior_box} commonBorderAnimation`}>
 									<div className={`${styles.partner_superior_content}`}>
-										<img
+										{/* <img
 											className="border_8 width_100"
 											src={safetyBarriersImg3.src}
 											alt="img"
-										/>
+										/> */}
 										<div className={`${styles.desc_box}`}>
 											<div className={`${styles.desc_title} pb_20 f_j`}>
 												<h3 className="text_24 color_white text_500">
