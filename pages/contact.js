@@ -180,17 +180,17 @@ export default function Contact() {
 										<div className={`${styles.form_field}`}>
 											<select {...register("Inquiry", { required: true })}>
 												<option value="">Select Inquiry Type *</option>
-												<option value="Brunswick bowling">Brunswick bowling </option>
-												<option value="Amusement Games">
-												 Amusement Games 
-												</option>
+												<option value="Brunswick bowling">Brunswick Bowling </option>
+												<option value="Amusement Games">Arcade Games</option>
 												<option value="Go Karting">Go Karting </option>
 												<option value="Sodikarts">Sodikarts </option>
 												<option value="Trampoline">Trampoline </option>
 												<option value="Softplay">Softplay </option>
 												<option value="Complete FEC Set Up">Complete FEC Set Up </option>
 												<option value="Lazer Tag">Lazer Tag</option>
-												<option value="Others If Any pls specify">Others If Any pls specify</option>
+												<option value="Others If Any pls specify">
+													Others If Any pls specify
+												</option>
 											</select>
 											{errors.Inquiry && (
 												<p className={`${styles.errors_msg}`}>This field is required</p>
