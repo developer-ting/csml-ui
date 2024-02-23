@@ -45,6 +45,7 @@ const SyncVideo = ({ youTube }) => {
 							/>
 							<div className={`${styles.video_play}`}>
 								<img src={play.src} className={`${styles.gallery_plus}`} alt="play" />
+								{/* <span>Experience Spark</span> */}
 							</div>
 						</div>
 					</a>

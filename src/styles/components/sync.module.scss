@@ -146,9 +146,24 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      // transform: translateY(-50%);
+      // display: flex;
+      // margin-left: calc(var(--container_left_space) + 15px);
+      // width: 100%;
       .gallery_plus{
+        // margin-right: 10px;
         @media only screen and (max-width: 767px) {
           width: 50px;
+        }
+      }
+      span{
+        display: block;
+        font-size: 64px;
+        color: #fff;
+        font-family: var(--font_primary);
+        font-weight: 700;
+        @media only screen and (max-width: 767px) {
+          width: 30px;
         }
       }
     }

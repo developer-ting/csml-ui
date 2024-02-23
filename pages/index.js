@@ -101,7 +101,7 @@ export async function getStaticProps() {
 
 	// home enthralled sliders
 	const EnthralledSliderRes = await fetch(
-		`${process.env.STRAPI_DO_BASE_URL}/api/home-enthralled-sliders?populate=*`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-enthralled-sliders?sort=order:desc&populate=*`,
 		ServerHeaders
 	);
 	const EnthralledSliderData = await EnthralledSliderRes.json();
