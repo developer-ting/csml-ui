@@ -69,7 +69,7 @@ export default function EnthralledCustomers({ enthralledData }) {
 											<img className="" src={quate.src} alt="img" />
 										</div>
 										<div className={`${styles.enthralled_quate_bottom}`}>
-											<img className="border_20" src={quate.src} alt="img" />
+											<img className="" src={quate.src} alt="img" />
 										</div>
 										<div className={`${styles.enthralled_img}`}>
 											<img
