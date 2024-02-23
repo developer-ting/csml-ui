@@ -73,7 +73,7 @@ export default function EnthralledCustomers({ enthralledData }) {
 										</div>
 										<div className={`${styles.enthralled_img}`}>
 											<img
-												className=""
+												className="border_20"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.EnthralledImg.data.attributes.url}`}
 												alt="img"
 											/>
