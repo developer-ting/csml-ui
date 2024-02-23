@@ -8,19 +8,22 @@
   .service_flex{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     @media (max-width: 1199px) {
       align-items: flex-start;
     }
     @media (max-width: 767px) {
       flex-wrap: wrap;
-      flex-direction: column-reverse;
+      // flex-direction: column-reverse;
       gap: 30px;
     }
     .info_bx{
       width: 50%;
       @media (max-width: 1199px) {
-        width: 55%;
+        width: 50%;
+      }
+      @media (max-width: 991px) {
+        width: 48%;
       }
       @media (max-width: 767px) {
         width: 100%;
@@ -36,18 +39,93 @@
       }
     }
     .img_bx{
-      width: 39%;
+      width: 45%;
       border: 1px solid #777777;
       border-radius: 12px;
       padding: 5px 5px;
       position: relative;
       transition: all .3s;
+      @media (max-width: 991px) {
+        width: 48%;
+      }
       @media (max-width: 767px) {
         width: 100%;
       }
-      img{
-        @media (max-width: 991px) {
-          width: 100%;
+      // img{
+      //   @media (max-width: 991px) {
+      //     width: 100%;
+      //   }
+      // }
+      .contact_form{
+        background-color: #fff;
+        padding: 30px 15px 20px;
+        position: relative;
+        
+        .form_main{
+          .form_field{
+            margin-bottom: 30px;
+            input, select, textarea{
+              font-family: 'Plus Jakarta Sans';
+              font-size: 16px;
+              width: 100%;
+              border: 0;
+              padding-bottom: 8px;
+              border-bottom: 1px solid rgba($color: #707070, $alpha: 0.8);
+              &:focus-visible{
+                outline: 0;
+              }
+              &::placeholder{
+                color: #000;
+              }
+            }
+            textarea{
+              
+              resize: none;
+            }
+            p{
+              font-size: 14px;
+              color: var(--color_primary);
+            }
+          }
+          // .fileBorder{
+          //   border-bottom: 1px solid rgba($color: #707070, $alpha: 0.8);
+          // }
+          // .fileInput {
+          //   width: 0.1px;
+          //   height: 0.1px;
+          //   opacity: 0;
+          //   overflow: hidden;
+          //   position: absolute;
+          //   z-index: -1;
+          // }
+          
+          .file_input__label {
+            cursor: pointer;
+            // display: block;
+            align-items: center;
+            font-family: "Plus Jakarta Sans";
+            font-size: 16px;
+            color: var(--color_black);
+            span{
+              display: inline-block;
+              padding-bottom: 5px;
+            }
+          }
+          .btn_box{
+            height: 66px;
+          }
+          // :global(.btn_project_default){
+          //   &:hover {
+          //     &::before{
+          //       background-color: var(--color_white);
+                
+          //     }
+          //     &::after{
+          //       background-color: var(--color_white);
+                
+          //     }
+          //   }
+          // }
         }
       }
     }
