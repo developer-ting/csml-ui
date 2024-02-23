@@ -1,18 +1,21 @@
 @import "../../helpers/helpers.scss";
 
 .about_feedback_wrap {
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
   .feedback_img{
     position: absolute;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
   }
   .section_title{
     position: relative;
-    padding: 100px 40px 0px;
+    padding: 100px 40px 150px;
     @media only screen and (max-width: 991px) {
       padding: 60px 40px 0px;
       @media only screen and (max-width: 767px) {
-        padding: 100px 0px 0px;
+        padding: 120px 0px 0px;
       }
     }
     h2{
@@ -22,12 +25,14 @@
     p{
       width: 44%;
       margin-left: auto;
+      padding-top: 70px;
       @media only screen and (max-width: 991px) {
         width: 60%;
       }
       @media only screen and (max-width: 767px) {
         width: 100%;
         margin-left: 0;
+        padding-top: 0px;
       }
     }
   }

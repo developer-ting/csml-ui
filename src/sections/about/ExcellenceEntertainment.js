@@ -22,7 +22,7 @@ import arrow from "../../../public/img/arrow.svg";
 export default function ExcellenceEntertainment() {
 	return (
 		<section
-			className={`${styles.excellence_entertainment_wrap} dot_animation_box ptb_100`}
+			className={`${styles.excellence_entertainment_wrap} dot_animation_box pb_100`}
 		>
 			<div className="container">
 				<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
@@ -121,7 +121,7 @@ export default function ExcellenceEntertainment() {
 							</div>
 							<p className="paraTxt color_white">
 								Providing residents with in-house entertainment options like bowling,
-								arcade games, and simulators, adding value to your property.
+								arcade games, adding value to your property.
 							</p>
 						</div>
 					</div>
@@ -142,7 +142,7 @@ export default function ExcellenceEntertainment() {
 								</span> */}
 							</div>
 							<p className="paraTxt color_white">
-								Offering activity options such as bowling, simulators and retro games
+								Offering activity options such as bowling, arcade and retro games
 								within your corporate premise to refresh and recharge your workforce.
 							</p>
 						</div>

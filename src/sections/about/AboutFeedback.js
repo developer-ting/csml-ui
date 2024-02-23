@@ -27,7 +27,7 @@ export default function AboutFeedback() {
 				<div className={`${styles.section_title} pb_40`}>
 					<img src={quate.src} alt="img" />
 					<h2 className="heading_text_55 pb_20 pt_10 toTop" data-scroll>
-						Mr. Rohhit
+						Mr. Rohit
 						<br className="hidden-xs" />
 						Mathur
 					</h2>
