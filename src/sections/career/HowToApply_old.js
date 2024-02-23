@@ -27,45 +27,7 @@ export default function HowToApply() {
 		formState: { errors },
 	} = useForm();
 
-	const onSubmit = async (data) => {
-    console.log(data);
-    // const file = data.uploadResume;
-		async function sendMedia() {
-			const file = data.UploadResume[0];
-
-			const formData = new FormData();
-			formData.append("files", file, `${file.name}`);
-
-			const requestOptions = {
-				method: "POST",
-				headers: {
-					Authorization: `Bearer ${process.env.NEXT_PUBLIC_AUTH_TOKEN}`,
-				},
-				body: formData,
-				redirect: "follow",
-			};
-
-			const res = await fetch(
-				`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/api/upload`,
-				requestOptions
-			);
-
-			if (!res.ok) {
-				throw Error("Something went wrong!");
-			}
-
-			const result = await res.json();
-
-			console.log(result[0].id);
-
-			return result[0].id;
-
-			console.log(file);
-		}
-
-		const fileId = await sendMedia();
-    console.log(fileId);
-
+  const onSubmit = async (data) => {
 		const Headers = {
 			method: "POST",
 			headers: {
@@ -73,7 +35,7 @@ export default function HowToApply() {
 				Authorization: `Bearer ${process.env.NEXT_PUBLIC_AUTH_TOKEN}`,
 			},
 			body: JSON.stringify({
-				data: { ...data, UploadResume: fileId },
+				data: data,
 			}),
 		};
 
@@ -84,13 +46,12 @@ export default function HowToApply() {
 			)
 				.then((data) => data.json())
 				.then((data) => {
-					console.log("success"), reset(), setIsSubmited(true);
+					reset(), setIsSubmited(true);
 				})
 				.catch((err) => console.log(err));
 		}
 
 		sendData();
-		
 	};
   
 	return (
@@ -172,7 +133,7 @@ export default function HowToApply() {
                 </div>
                 <div className={`${styles.form_field}`}>
                   <select {...register("Position", { required: true })}>
-                    <option value="">Choose position *</option>
+                    <option value="">Choose position  *</option>
                     <option value="Accounts">Accounts</option>
                     <option value="Sales">Sales</option>
                     <option value="Marketing">Marketing </option>
@@ -208,17 +169,17 @@ export default function HowToApply() {
                   <input
                     className={`${styles.fileInput}`}
                     type="file"
-                    name="UploadResume"
+                    name="Resume"
                     id="fileResume"
                     placeholder="Upload resume *"
                     accept=".pdf,.doc,.docx"
-                    {...register("UploadResume", {
+                    {...register("Resume", {
                       required: true,
                       maxLength: 79,
                     })}
                   />
                   
-                  {errors.UploadResume && (
+                  {errors.Resume && (
                     <p className={`${styles.errors_msg}`}>This field is required</p>
                   )}
                 </div>
