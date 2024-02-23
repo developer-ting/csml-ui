@@ -192,14 +192,14 @@ export default function HowToApply() {
                   <input
                     className=""
                     type="text"
-                    name="Estatus"
+                    name="EmploymentStatus"
                     placeholder="Specify employment Status"
-                    {...register("Status", {
+                    {...register("EmploymentStatus", {
                       required: true,
                       maxLength: 79,
                     })}
                   />
-                  {/* {errors.Status && (
+                  {/* {errors.EmploymentStatus && (
                     <p className={`${styles.errors_msg}`}>This field is required</p>
                   )} */}
                 </div>
