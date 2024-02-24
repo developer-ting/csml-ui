@@ -31,10 +31,8 @@ import play from "../../public/img/brunswick-bowling/play.svg";
 
 /** Home Hero Section */
 const SyncVideo = ({ youTube }) => {
-
 	return (
 		<section className={`${styles.sync}`}>
-			
 			<div className={`${styles.intertainment_right} toTop`} data-scroll>
 				<LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgVideo]}>
 					<a href={youTube.data[0].attributes.youTubeLink}>
@@ -43,9 +41,11 @@ const SyncVideo = ({ youTube }) => {
 								className={`${styles.video_img} img width_100`}
 								src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${youTube.data[0].attributes.Image.data.attributes.url}`}
 							/>
-							<div className={`${styles.video_play}`}>
+							<div className={`${styles.video_play} d_f`}>
 								<img src={play.src} className={`${styles.gallery_plus}`} alt="play" />
-								{/* <span>Experience Spark</span> */}
+								<span className="heading_text_70 text_upper color_white">
+									Experience Spark
+								</span>
 							</div>
 						</div>
 					</a>

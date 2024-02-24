@@ -15,7 +15,7 @@
     @media only screen and (max-width: 767px) {
       margin-left: calc(var(--container_left_space) + 0px);
     }
-  }
+  } 
 
   .partner_superior_flex{
     margin: 0px -10px;
@@ -150,6 +150,13 @@
       // display: flex;
       // margin-left: calc(var(--container_left_space) + 15px);
       // width: 100%;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+        padding: 0 15px;
+      }
+      img{
+        margin: 0 auto;
+      }
       .gallery_plus{
         // margin-right: 10px;
         @media only screen and (max-width: 767px) {
@@ -157,13 +164,14 @@
         }
       }
       span{
-        display: block;
-        font-size: 64px;
-        color: #fff;
-        font-family: var(--font_primary);
-        font-weight: 700;
+        // display: block;
+        // font-size: 64px;
+        // color: #fff;
+        // font-family: var(--font_primary);
+        // font-weight: 700;
+        padding-left: 15px;
         @media only screen and (max-width: 767px) {
-          width: 30px;
+          // width: 30px;
         }
       }
     }
