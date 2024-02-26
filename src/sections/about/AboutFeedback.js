@@ -27,9 +27,7 @@ export default function AboutFeedback() {
 				<div className={`${styles.section_title} pb_40`}>
 					<img src={quate.src} alt="img" />
 					<h2 className="heading_text_55 pb_20 pt_10 toTop" data-scroll>
-						Mr. Rohit
-						<br className="hidden-xs" />
-						Mathur
+						Mr. Rohit <br className="hidden-xs" />Mathur
 					</h2>
 					<p className="paraTxt_18 color_white toTop" data-scroll>
 						With a single-minded focus, I began my journey with a mission to transform
