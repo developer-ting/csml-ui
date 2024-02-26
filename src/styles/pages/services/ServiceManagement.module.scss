@@ -16,6 +16,9 @@
         @media (max-width: 991px) {
           width: 100%;
         }
+        @media only screen and (max-width: 767px) {
+					text-align: center; 
+				}
         :global(.heading_text_55){
             color: var(--color_white);
         }

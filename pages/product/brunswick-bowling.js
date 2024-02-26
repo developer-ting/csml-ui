@@ -106,7 +106,7 @@ export default function BrunswickBowling({
 				<SyncSlider data={sparesSliderData} />
 				<LaneMaintenance laneData={lanemaintenancesData} />
 
-				<section className="pt_100 pb_60">
+				<section className={`${styles.lane_oil} pt_100 pb_60`}>
 					<div className="container">
 						<h2 className="heading_text_55 pb_50 toTop" data-scroll>
 							Lane Oiling Machine

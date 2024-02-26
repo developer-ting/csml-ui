@@ -2,6 +2,11 @@
 
 .accessories{
     background-color: var(--color_black);
+		h2{
+			@media only screen and (max-width: 767px) {
+				text-align: center;
+			}
+		}
     .Lane_accessories{
         .slider_section{
             .slid_item{

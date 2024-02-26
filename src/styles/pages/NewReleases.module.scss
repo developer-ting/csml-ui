@@ -3,6 +3,11 @@
 
 .NewReleasesPage {
     .NewReleasesSection {
+        h2{
+            @media only screen and (max-width: 767px) {
+                text-align: center; 
+            }
+        }
         .NewReleasesGrid {
             // display: grid;
             // grid-template-columns: repeat(3, 1fr);

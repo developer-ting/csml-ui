@@ -15,6 +15,9 @@
 				@media (max-width: 991px) {
 					width: 100%;
 				}
+				@media only screen and (max-width: 767px) {
+					text-align: center; 
+				}
 				:global(.heading_text_55) {
 					color: var(--color_white);
 				}
@@ -38,6 +41,11 @@
 	}
 	.service_tabsec {
 		background-color: var(--color_white);
+		h2{
+			@media only screen and (max-width: 767px) {
+				text-align: center; 
+			}
+		}
 		:global(.react-tabs__tab-list) {
 			font-family: var(--font_secondary);
 			border-bottom: none;

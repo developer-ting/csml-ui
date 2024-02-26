@@ -201,7 +201,7 @@ export default function LaserTag({ LaserTagData }) {
 						<div className={`${styles.optimizing_flex} ptb_40 d_f`}>
 							<div className={`${styles.optimizing_title}`}>
 								<h2
-									className="heading_text_55 color_white text_700 pb_20 toTop"
+									className="heading_text_55 color_white text_700 pb_20 toTop mobile_center"
 									data-scroll
 								>
 									Optimizing Every Space For The Best Experience
@@ -302,7 +302,7 @@ export default function LaserTag({ LaserTagData }) {
 					<h2 className={`${styles.info_head} heading_text_55 pb_30 hidden-xs`}>Design</h2>
 						<div className={`${styles.service_flex}`}>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h2 className={`${styles.info_head} heading_text_55 pb_30 visible-xs`}>Design</h2>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 mobile_center visible-xs`}>Design</h2>
 								<p
 									className={`${styles.info_para} paraTxt_18 color_black_opacity text_400 pb_10 toTop`}
 									data-scroll

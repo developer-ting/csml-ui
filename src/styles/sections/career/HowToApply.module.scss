@@ -27,11 +27,13 @@
       }
       @media (max-width: 767px) {
         width: 100%;
+        text-align: center;
       }
       h2{
         opacity: 0.8;
         @media (max-width: 767px) {
           padding-bottom: 15px;
+          text-align: center;
         }
       }
       .btn_box{

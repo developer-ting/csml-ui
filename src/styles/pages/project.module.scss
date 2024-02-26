@@ -9,7 +9,11 @@
             white-space: nowrap;
         }
     }
-
+    h2{
+        @media only screen and (max-width: 767px) {
+            text-align: center; 
+        }
+    }
     .tab_info{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

@@ -8,6 +8,11 @@
       margin: 0px;
       padding: 0px 15px;
     }
+    .life_csml_content{
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
     .partner_superior_flex{
       // padding: 0px 40px;
       

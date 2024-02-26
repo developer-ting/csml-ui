@@ -224,7 +224,7 @@ export default function GoKarting({ kartsTagData }) {
 							className={`${styles.entertainmentCenterContent} pb_40 toTop`}
 							data-scroll
 						>
-							<h2 className="heading_text_55 pb_20">
+							<h2 className="heading_text_55 mobile_center pb_20">
 								Speed into Excitement with Go Karting
 							</h2>
 							<p className="paraTxt_18 color_black_opacity l_h_6">
@@ -277,7 +277,7 @@ export default function GoKarting({ kartsTagData }) {
 					<div className="container">
 						<div className={`${styles.service_flex} ptb_80`}>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h2 className={`${styles.info_head} heading_text_55 pb_30 `}>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 mobile_center`}>
 									SODIKART
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
@@ -308,10 +308,10 @@ export default function GoKarting({ kartsTagData }) {
 				<section className={`${styles.karts_main} pt_100`}>
 					<div className="container">
 						<div className={`${styles.karts_title} pb_40 `}>
-							<h2 className="heading_text_55 pb_10 toTop" data-scroll>
+							<h2 className="heading_text_55 pb_10 mobile_center toTop" data-scroll>
 								KARTS
 							</h2>
-							<p className="paraTxt_18 text_600 toTop" data-scroll>
+							<p className="paraTxt_18 text_600 mobile_center toTop" data-scroll>
 								Professional grade Rental Karts for Unmatched Performance
 							</p>
 						</div>
@@ -319,7 +319,7 @@ export default function GoKarting({ kartsTagData }) {
 					<div className={`${styles.ecommerce_slider_main} toTop`} data-scroll>
 						<div className="container">
 							<div className={`${styles.title_txt} pb_30`}>
-								<h2 className="heading_text_40 text_700 toTop" data-scroll>
+								<h2 className="heading_text_40 text_700 mobile_center toTop" data-scroll>
 									Gas Karts
 								</h2>
 							</div>
@@ -381,7 +381,7 @@ export default function GoKarting({ kartsTagData }) {
 					>
 						<div className="container">
 							<div className={`${styles.title_txt} pb_30`}>
-								<h2 className="heading_text_40 text_700 toTop" data-scroll>
+								<h2 className="heading_text_40 text_700 mobile_center toTop" data-scroll>
 									Electric Karts
 								</h2>
 							</div>
@@ -609,7 +609,7 @@ export default function GoKarting({ kartsTagData }) {
 				<section className={`${styles.hardwareSection} pt_100 pb_60`}>
 					<div className="container">
 						<div>
-							<h2 className="heading_text_55 pb_20 toTop" data-scroll>
+							<h2 className="heading_text_55 pb_20 mobile_center toTop" data-scroll>
 								Timing Hardware
 							</h2>
 							<p
@@ -638,7 +638,7 @@ export default function GoKarting({ kartsTagData }) {
 				>
 					<div className={`${styles.our_guiding_values_main}`}>
 						<div className={`${styles.life_csml_content} toTop`} data-scroll>
-							<h2 className="heading_text_55 color_white pb_40">Safety Barriers</h2>
+							<h2 className="heading_text_55 color_white mobile_center pb_40">Safety Barriers</h2>
 						</div>
 						<div className={`${styles.partner_superior_flex} toTop`} data-scroll>
 							<Slider {...settings}>

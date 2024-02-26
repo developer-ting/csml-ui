@@ -8,6 +8,11 @@
     position: absolute;
     left: 45%;
     transform: translateX(-50%);
+    @media only screen and (max-width: 767px) {
+      position: relative;
+      left: 0;
+      transform: none;
+    }
   }
   .section_title{
     position: relative;
@@ -15,7 +20,7 @@
     @media only screen and (max-width: 991px) {
       padding: 60px 40px 0px;
       @media only screen and (max-width: 767px) {
-        padding: 120px 0px 0px;
+        padding: 0px 0px 0px;
       }
     }
     h2{
