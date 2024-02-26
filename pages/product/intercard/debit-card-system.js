@@ -344,7 +344,7 @@ export default function DebitCardSystem({
 					<div className="container">
 						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 							<h2 className="heading_text_45 color_white pb_20 text_700">
-								Make Payments, Simply - Request Your Intercard Quote
+								Request Your Intercard Quote
 							</h2>
 							<p className="paraTxt_18 pb_20 color_white_opacity toTop" data-scroll>
 								Experience the future of secure and efficient transactions with
