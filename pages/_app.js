@@ -17,9 +17,9 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>CSML</title>
-				<meta name="description" content="CSML" />
+				<meta name="description" content="CSML is an exclusive Brunswick bowling distributor in India. We also setup arcade games machine, amusement games and adventure games across India." />
 				<meta name="og:title" content="CSML" />
-				<meta name="og:description" content="CSML" />
+				<meta name="og:description" content="CSML is an exclusive Brunswick bowling distributor in India. We also setup arcade games machine, amusement games and adventure games across India." />
 				<meta
 					property="og:image"
 					content="https://csml-frontend.netlify.app/img/og-image.jpg"
