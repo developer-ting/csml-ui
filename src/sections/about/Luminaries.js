@@ -39,7 +39,7 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										MR. Rohit Mathur 
+										MR. Rohhit Mathur 
 									</h3>
 									{/* <span href="#" rel="noreferrer">
 										<Link href="">
