@@ -18,7 +18,7 @@ const SparkImmersive = ({ data }) => {
 	return (
 		<section className={`${styles.spark_immersive_main}`}>
 			<div className="container">
-				<div className={`${styles.optimizing_flex} pt_40 d_f`}>
+				<div className={`${styles.optimizing_flex} mobile_center pt_40 d_f`}>
 					<div className={`${styles.optimizing_title}`}>
 						<h2 className="heading_text_55 text_700 pb_20 toTop" data-scroll>
 							{data.data[0].attributes.title}
