@@ -6,6 +6,89 @@
     }
   }
 
+  .width_wrap{
+    
+    @media only screen and (min-width: 1024px) {
+      width: 965px;
+      margin: 0 auto;
+    }
+  }
+
+  .partner_superior_flex_new{
+    margin-bottom: 40px;
+    @media only screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .partner_superior_box{
+      width: 46%;
+      // border: 1px solid #777777;
+      // border-radius: 12px;
+      // border-top: 1px solid #777777;
+      // border-bottom: 1px solid #777777;
+      //padding: 10px 10px;
+      // border-radius: 8px;
+      position: relative;
+      transition: all .3s;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .partner_superior_content{
+        transition: 0.3s all;
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .desc_box{
+          background-color: var(--color_secondary);
+          padding: 40px 30px;
+          border-radius: 8px;
+          backdrop-filter: blur(18px);
+          margin-top: -25px;
+          @media (max-width: 1401px) {
+            padding: 40px 25px;
+          }
+          @media only screen and (max-width: 991px) {
+            padding: 25px 15px;
+          }
+          .desc_title{
+            h3{
+              padding-bottom: 10px;
+            }
+          }
+          p{
+            line-height: 1.5;
+            min-height: 100px; 
+          }
+        }
+      }
+      :global(.dots_p){
+        background-color: var(--color_primary);
+      }
+    }
+  }
+
+  .technology_list{
+    ul{
+      padding: 20px 30px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li{
+        list-style-type: square;
+        width: 48%;
+        padding-bottom: 12px;
+        @media only screen and (max-width: 767px) {
+         width: 100%;
+        }
+        &::marker{
+          color: var(--color_primary);
+        }
+      }
+    }
+  }
+
   .ecommerce_slider_main{
     margin-left: calc(var(--container_left_space) + 15px);
     overflow: hidden;
