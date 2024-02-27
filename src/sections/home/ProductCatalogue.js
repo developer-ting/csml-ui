@@ -29,6 +29,7 @@ import arrow from "../../../public/img/arrow.svg";
 
 /** Home Hero Section */
 export default function ProductCatalogue() {
+	const [slidesToShow, setSlidesToShow] = useState(false);
 	const [showCursor, setShowCursor] = useState(false);
 	const dragSliderInfo = [
 		{
@@ -205,15 +206,46 @@ export default function ProductCatalogue() {
 			});
 			updateParallax();
 			// scrollSlider();
+			if (window.innerWidth < 767) {
+				setSlidesToShow(true);
+			} else {
+				setSlidesToShow(false);
+			}
 		};
 
 		// Event listeners
 		window.addEventListener("resize", handleResize);
 
+		handleResize(); // Initial call to set the initial state
+	
+			// window.addEventListener("resize", handleResize);
+	
+			return () => {
+				window.removeEventListener("resize", handleResize);
+			};
+
 		// return () => {
 		// 	// Clean up event listeners on unmount
 		// 	window.removeEventListener("resize", handleResize);
 		// };
+
+			/** Section */
+			// const handleResizeMobile = () => {
+			// 	if (window.innerWidth < 767) {
+			// 		setSlidesToShow(true);
+			// 	} else {
+			// 		setSlidesToShow(false);
+			// 	}
+			// };
+	
+			// handleResize(); // Initial call to set the initial state
+	
+			// // window.addEventListener("resize", handleResize);
+	
+			// return () => {
+			// 	window.removeEventListener("resize", handleResize);
+			// };
+
 	}, []);
 
 	var settings = {
@@ -238,79 +270,56 @@ export default function ProductCatalogue() {
 					<h2 className="heading_text_55 pb_40">Our product catalogue</h2>
 				</div>
 			</div>
-			<div className="slideMain" ref={sliderRef}>
+			{/* <div className="slideMain" ref={sliderRef}>
 				<div id="slides" />
 			</div>
-			<Cursor showCursor={showCursor} />
+			<Cursor showCursor={showCursor} /> */}
 
-			<div className={`${styles.product_main} visible-xs`}>
-				<Slider {...settings}>
-
-				{dragSliderInfo.map((item) => {
-						return (
-							<div className={`${styles.product_box}`} key={item.title}>
-								<div className={`${styles.img_box}`}>
-									<img
-										src={item.imgUrl}
-										className="border_20"
-										alt="logo"
-									/>
-									<div className={`${styles.desc_title}`}>
-										<span className={`${styles.text_box}`}>
-											{item.title}
-											<a href={item.link} rel="noreferrer">
-												<button className="btn_arrow">
-													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={arrow.src} />
-													</span>
-													<span className={`${styles.arrow_two} arrow_two`}>
-														<img src={arrow.src} />
-													</span>
-												</button>
-											</a>
-										</span>
+			
+			{slidesToShow ? (
+				<div className={`${styles.product_main} visible-xs`}>
+					<Slider {...settings}>
+	
+					{dragSliderInfo.map((item) => {
+							return (
+								<div className={`${styles.product_box}`} key={item.title}>
+									<div className={`${styles.img_box}`}>
+										<img
+											src={item.imgUrl}
+											className="border_20"
+											alt="logo"
+										/>
+										<div className={`${styles.desc_title}`}>
+											<span className={`${styles.text_box}`}>
+												{item.title}
+												<a href={item.link} rel="noreferrer">
+													<button className="btn_arrow">
+														<span className={`${styles.arrow_one} arrow_one`}>
+															<img src={arrow.src} />
+														</span>
+														<span className={`${styles.arrow_two} arrow_two`}>
+															<img src={arrow.src} />
+														</span>
+													</button>
+												</a>
+											</span>
+										</div>
 									</div>
 								</div>
-							</div>
-						);
-					})}
-
-					{/* <div className={`${styles.product_box}`}>
-						<div className={`${styles.img_box}`}>
-							<img
-								src={dragSliderInfo[0].imgUrl}
-								className="border_20"
-								alt="logo"
-							/>
-							<div className={`${styles.desc_title}`}>
-								<span className={`${styles.text_box}`}>
-									{dragSliderInfo[0].title}
-									<a href={dragSliderInfo[0].link} rel="noreferrer">
-										<button className="btn_arrow">
-											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={arrow.src} />
-											</span>
-											<span className={`${styles.arrow_two} arrow_two`}>
-												<img src={arrow.src} />
-											</span>
-										</button>
-									</a>
-								</span>
-							</div>
-						</div>
-					</div> */}
-
-					{/* <div className={`${styles.product_box}`}>
-						<div className={`${styles.img_box}`}>
-							<img
-								src={arcade_games.src}
-								className="border_20"
-								alt="logo"
-							/>
-							<div className={`${styles.desc_title}`}>
-								<span className={`${styles.text_box}`}>
-										klbnvkbn 
-										<a href="#" rel="noreferrer">
+							);
+						})}
+	
+						{/* <div className={`${styles.product_box}`}>
+							<div className={`${styles.img_box}`}>
+								<img
+									src={dragSliderInfo[0].imgUrl}
+									className="border_20"
+									alt="logo"
+								/>
+								<div className={`${styles.desc_title}`}>
+									<span className={`${styles.text_box}`}>
+										{dragSliderInfo[0].title}
+										<a href={dragSliderInfo[0].link} rel="noreferrer">
 											<button className="btn_arrow">
 												<span className={`${styles.arrow_one} arrow_one`}>
 													<img src={arrow.src} />
@@ -321,11 +330,46 @@ export default function ProductCatalogue() {
 											</button>
 										</a>
 									</span>
+								</div>
 							</div>
+						</div> */}
+	
+						{/* <div className={`${styles.product_box}`}>
+							<div className={`${styles.img_box}`}>
+								<img
+									src={arcade_games.src}
+									className="border_20"
+									alt="logo"
+								/>
+								<div className={`${styles.desc_title}`}>
+									<span className={`${styles.text_box}`}>
+											klbnvkbn 
+											<a href="#" rel="noreferrer">
+												<button className="btn_arrow">
+													<span className={`${styles.arrow_one} arrow_one`}>
+														<img src={arrow.src} />
+													</span>
+													<span className={`${styles.arrow_two} arrow_two`}>
+														<img src={arrow.src} />
+													</span>
+												</button>
+											</a>
+										</span>
+								</div>
+							</div>
+						</div> */}
+					</Slider>
+				</div>
+				) : (
+					<>
+						<div className="slideMain" ref={sliderRef}>
+							<div id="slides" />
 						</div>
-					</div> */}
-				</Slider>
-			</div>
+						<Cursor showCursor={showCursor} />
+					</>
+				)}
+
+
 		</section>
 	);
 }
