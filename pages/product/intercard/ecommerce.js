@@ -99,18 +99,18 @@ export default function Ecommerce() {
           Step into the era of effortless transactions with Intercard's advanced E-Commerce Technology. Enhance your customer experience by providing a user-friendly, remote platform for purchasing game cards, packages, or gift cards from the comfort of their homes or while on the move."
 				/>
 
-				<section className={`${styles.intercard} ptb_60`}>
+				<section className={`${styles.intercard} ptb_80`}>
 					<div className="container">
 						<div className={`${styles.title_txt} `}>
-							{/* <h2 className="heading_text_55 pb_40 toTop" data-scroll>
+							<h2 className="heading_text_55 pb_40 toTop" data-scroll>
 								The Benefits of Intercard's <br className="hidden-xs" />
 								E-Commerce Technology
-							</h2> */}
-							<h2 className="heading_text_55 toTop" data-scroll>
-								How It Works
 							</h2>
+							{/* <h2 className="heading_text_55 toTop" data-scroll>
+								How It Works
+							</h2> */}
 						</div>
-						{/* <div className={`${styles.width_wrap}`}>
+						<div className={`${styles.width_wrap}`}>
 							<div className={`${styles.partner_superior_flex_new} f_j`}>
 								<div
 									className={`${styles.partner_superior_box} commonBorderAnimation whiteCommonBorderAnimation toTop`}
@@ -164,7 +164,7 @@ export default function Ecommerce() {
 									<li className="paraTxt_18">Guests can use a cell phone to display QR code to scan at the iTeller to receive a game card</li>
 								</ul>
 							</div>
-						</div> */}
+						</div>
 						
 					</div>
 					{/* <div className={`${styles.ecommerce_slider_main} toTop`} data-scroll>
@@ -184,9 +184,9 @@ export default function Ecommerce() {
 				</section>
 				<section className={`${styles.how_it_works} ptb_100 dot_animation_box`}>
 					<div className="container">
-						{/* <div className={`${styles.section_title} pb_40 toTop`} data-scroll>
+						<div className={`${styles.section_title} pb_40 toTop`} data-scroll>
 							<h2 className="heading_text_55 color_white ">How It Works</h2>
-						</div> */}
+						</div>
 						<div className={`${styles.how_it_works_flex} toTop`} data-scroll>
 							{/* <CardIcon /> */}
 							{ecommerceHowItWorksData.map((item, index) => (
