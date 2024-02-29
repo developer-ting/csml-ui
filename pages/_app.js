@@ -30,6 +30,17 @@ function MyApp({ Component, pageProps }) {
 				/>
 				<link rel="icon" href="/img/favicon.png" />
 			</Head>
+			<Script
+				async
+				src="https://www.googletagmanager.com/gtag/js?id=G-6GD93ZX4D1"
+				strategy="afterInteractive"
+			></Script>
+			<Script id="google-analytics" strategy="afterInteractive">
+				{`window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-6GD93ZX4D1');`}
+			</Script>
 			<Component {...pageProps} />
 		</>
 	);
