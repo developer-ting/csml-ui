@@ -188,6 +188,12 @@ const Footer = () => {
 										<li>
 											<Link href="/blogs">Blog</Link>
 										</li>
+										<li>
+											
+											<Link href="/img/pdf/footer_brochure.pdf">
+											<a target="_blank" className="">Brochure</a>
+											</Link>
+										</li>
 									</ul>
 								</div>
 							</div>
