@@ -39,7 +39,7 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										MR. Rohhit Mathur 
+										Rohhit Mathur 
 									</h3>
 									{/* <span href="#" rel="noreferrer">
 										<Link href="">
@@ -62,7 +62,7 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-									 MS. Tyna D’Cruz
+									 Tyna D’Cruz
 									</h3>
 									{/* <span href="#" rel="noreferrer">
 										<Link href="">
@@ -85,7 +85,7 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-									 MR. Sanjeev Sinha
+									 Sanjeev Sinha
 									</h3>
 									{/* <span href="#" rel="noreferrer">
 										<Link href="">
@@ -108,7 +108,7 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-									  MR. Amit Thapar
+									  Amit Thapar
 									</h3>
 									{/* <span href="#" rel="noreferrer">
 										<Link href="">
@@ -131,7 +131,7 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-										MR. Amol Shelke 
+										Amol Shelke 
 									</h3>
 									{/* <span href="#" rel="noreferrer">
 										<Link href="">
@@ -154,7 +154,7 @@ export default function Luminaries() {
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
-									 MR. Deepak Jha
+									 Deepak Jha
 									</h3>
 									{/* <span href="#" rel="noreferrer">
 										<Link href="">
