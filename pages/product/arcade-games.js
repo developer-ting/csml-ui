@@ -28,11 +28,22 @@ import ytImg from "../../public/img/product/amusement-games/youtubeIcn.svg";
 
 /** Amusement Games Page */
 export default function AmusementGames({ GamesCategoriesData }) {
-	console.log(GamesCategoriesData);
+	console.log(GamesCategoriesData, "test");
+
+	// const sortedData =
+	// 	GamesCategoriesData?.data[0]?.attributes?.games_sub_categories?.data.sort(
+	// 		(a, b) => {
+	// 			return b.attributes.order - a.attributes.order;
+	// 		}
+	// 	);
+
+	// console.log(sortedData, "sorted");
+
 	const [showPopup, setShowPopup] = useState(false);
 	const [mainCategoriesIndex, setMainCategoriesIndex] = useState(0);
 	const [subCategoriesIndex, setSubCategoriesIndex] = useState(0);
 	const [gameIndex, setGameIndex] = useState(0);
+	const [subCategoryData, setSubCategoryData] = useState();
 	/** openPopup function */
 	const openPopup = (id) => {
 		setShowPopup(true);
@@ -101,8 +112,11 @@ export default function AmusementGames({ GamesCategoriesData }) {
 												>
 													{item.attributes.CategoryNames}
 												</h5>
-												{item.attributes.games_sub_categories.data.map(
-													(subCategoriesItem, subCatIndex) => {
+												{item.attributes.games_sub_categories.data
+													.sort((a, b) => {
+														return b.attributes.order - a.attributes.order;
+													})
+													.map((subCategoriesItem, subCatIndex) => {
 														return (
 															<h6
 																className={`paraTxt_16 color_black_opacity pb_20 ${
@@ -117,8 +131,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 																</span> */}
 															</h6>
 														);
-													}
-												)}
+													})}
 											</div>
 										);
 									})}
@@ -257,11 +270,17 @@ export default function AmusementGames({ GamesCategoriesData }) {
 
 export async function getStaticProps() {
 	//
+	// const GamesCategoriesRes = await fetch(
+	// 	`${process.env.STRAPI_DO_BASE_URL}/api/games-categories?populate[games_sub_categories][populate]=games.GameImg`,
+	// 	ServerHeaders
+	// );
 	const GamesCategoriesRes = await fetch(
 		`${process.env.STRAPI_DO_BASE_URL}/api/games-categories?populate[games_sub_categories][populate]=games.GameImg`,
 		ServerHeaders
 	);
 	const GamesCategoriesData = await GamesCategoriesRes.json();
+
+	// console.log(sortedData);
 
 	return {
 		props: {
