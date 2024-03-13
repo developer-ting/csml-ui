@@ -142,8 +142,8 @@ export default function ProductCatalogue() {
 					attr: { class: "box b" + i },
 					innerHTML: `<span class="innerbox" style="font-size:20px">${dragSliderInfo[i].title} <a class="drag_link" href="${dragSliderInfo[i].link}" rel="noreferrer">
                     <button class="btn_arrow">
-                      <span class="arrow_one"><img src="${arrow.src}"/></span>
-                      <span class="arrow_two"><img src="${arrow.src}" }/></span>
+                      <span class="arrow_one"><img src="${arrow.src}" loading="lazy"/></span>
+                      <span class="arrow_two"><img src="${arrow.src}" loading="lazy"/}/></span>
                     </button>
                   </a></span>`,
 					background: "#333",
@@ -153,7 +153,7 @@ export default function ProductCatalogue() {
 					position: "absolute",
 					left: 0,
 					// attr: { src: "https://picsum.photos/id/" + (i + 10) + "/700/600/" },
-					attr: { src: `${dragSliderInfo[i].imgUrl}` },
+					attr: { src: `${dragSliderInfo[i].imgUrl}`, loading: "lazy" },
 					// attr: { src: `${imageUrls[i]}` },
 				});
 				parallax[i] = gsap.to(img, { x: 0, ease: "none", paused: true });

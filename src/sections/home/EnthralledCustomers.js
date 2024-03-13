@@ -22,6 +22,7 @@ import quate from "../../../public/img/home/quate.svg";
 export default function EnthralledCustomers({ enthralledData }) {
 	// console.log(enthralledData);
 	var settings = {
+		lazyLoad: "ondemand",
 		dots: true,
 		arrows: false,
 		infinite: true,
