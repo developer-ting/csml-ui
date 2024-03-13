@@ -32,15 +32,28 @@ import videoDestop from "../../../public/img/home/video-Desktop.png";
 export default function HomeBanner({ data }) {
 	const [useSlider, setUseSlider] = useState(data.attributes.isSlider);
 	const [windowLoaded, setWindowLoaded] = useState(false);
+	const [isDesktop, setIsDesktop] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 
 	// Use JavaScript to check the screen width and add the appropriate video
 
 	useEffect(() => {
+		const isDesktop = window.innerWidth >= 767;
 		let anim = document.querySelector(".home_banner_animation");
 		anim.classList.add("home_banner_scroll");
 		// setTimeout(function () {
 
 		// }, 600);
+		if (isDesktop) {
+			setIsDesktop(true);
+		} else {
+			setIsDesktop(false);
+		}
+		if (!isDesktop) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+		}
 		/** handleWindowLoad function */
 		const handleWindowLoad = () => {
 			console.log("load sudya");
@@ -171,7 +184,7 @@ export default function HomeBanner({ data }) {
 								type="video/mp4"
 							/>
 						</video> */}
-						{windowLoaded && (
+						{windowLoaded && isDesktop && (
 							<video
 								playsInline
 								autoPlay
@@ -181,6 +194,20 @@ export default function HomeBanner({ data }) {
 							>
 								<source
 									src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`}
+									type="video/mp4"
+								/>
+							</video>
+						)}
+						{windowLoaded && isMobile && (
+							<video
+								playsInline
+								autoPlay
+								muted
+								loop
+								className={`${styles.video_box} visible-xs`}
+							>
+								<source
+									src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerMobileVideo.data.attributes.url}`}
 									type="video/mp4"
 								/>
 							</video>
