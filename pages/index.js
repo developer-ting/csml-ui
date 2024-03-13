@@ -49,7 +49,7 @@ export default function Home({
 			<Header />
 			<Loader />
 			<main className={`${styles.index_page}`}>
-				{/* <HomeBanner data={BannerData.data} /> */}
+				<HomeBanner data={BannerData.data} />
 				<Crafting craftingData={craftingStatsData.data} />
 				{/* <ParallaxSlider2 /> */}
 				{/* <ParallaxSlider /> */}

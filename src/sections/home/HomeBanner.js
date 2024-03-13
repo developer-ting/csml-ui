@@ -26,10 +26,12 @@ import styles from "../../styles/sections/home/HomeBanner.module.scss";
 // IMAGES //
 import home_banner from "../../../public/img/home/home_banner.jpg";
 import cricle_arrow from "../../../public/img/cricle_arrow.svg";
+import videoDestop from "../../../public/img/home/video-Desktop.png";
 
 /** Home Hero Section */
 export default function HomeBanner({ data }) {
 	const [useSlider, setUseSlider] = useState(data.attributes.isSlider);
+	const [windowLoaded, setWindowLoaded] = useState(false);
 
 	// Use JavaScript to check the screen width and add the appropriate video
 
@@ -39,45 +41,60 @@ export default function HomeBanner({ data }) {
 		// setTimeout(function () {
 
 		// }, 600);
-		/** addVideo function */
-		function addVideo(containerId, videoSrc, width, height) {
-			var container = document.getElementById(containerId);
-			var video = document.createElement("video");
-			// video.width = width;
-			// video.height = height;
-			video.loop = true;
-			video.controls = false;
-			video.autoplay = true;
-			video.playsinline = true;
-			video.muted = true;
-
-			var source = document.createElement("source");
-			source.src = videoSrc;
-			source.type = "video/mp4";
-
-			video.appendChild(source);
-			container.appendChild(video);
+		/** handleWindowLoad function */
+		const handleWindowLoad = () => {
+			console.log("load sudya");
+		};
+		/** handleWindowLoad function */
+		function handleWindowLoad1() {
+			setWindowLoaded(true);
+			console.log("load sudya");
 		}
-		window.addEventListener("resize", function () {
-			var desktopVideoContainer = document.getElementById("desktopVideoContainer");
-			var mobileVideoContainer = document.getElementById("mobileVideoContainer");
 
-			desktopVideoContainer.innerHTML = "";
-			mobileVideoContainer.innerHTML = "";
+		// Listen for the window load event
+		window.addEventListener("load", handleWindowLoad1());
 
-			if (window.innerWidth > 600) {
-				addVideo(
-					"desktopVideoContainer",
-					`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`
-				);
-			} else {
-				addVideo(
-					"mobileVideoContainer",
-					`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerMobileVideo.data.attributes.url}`
-				);
-			}
-		});
-		window.dispatchEvent(new Event("resize"));
+		// function addVideo(containerId, videoSrc, width, height) {
+		// 	var container = document.getElementById(containerId);
+		// 	var video = document.createElement("video");
+		// 	// video.width = width;
+		// 	// video.height = height;
+		// 	video.loop = true;
+		// 	video.controls = false;
+		// 	video.autoplay = true;
+		// 	video.playsinline = true;
+		// 	video.muted = true;
+
+		// 	var source = document.createElement("source");
+		// 	source.src = videoSrc;
+		// 	source.type = "video/mp4";
+
+		// 	video.appendChild(source);
+		// 	container.appendChild(video);
+		// }
+		// window.addEventListener("resize", function () {
+		// 	var desktopVideoContainer = document.getElementById("desktopVideoContainer");
+		// 	var mobileVideoContainer = document.getElementById("mobileVideoContainer");
+
+		// 	desktopVideoContainer.innerHTML = "";
+		// 	mobileVideoContainer.innerHTML = "";
+
+		// 	if (window.innerWidth > 600) {
+		// 		addVideo(
+		// 			"desktopVideoContainer",
+		// 			`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`
+		// 		);
+		// 	} else {
+		// 		addVideo(
+		// 			"mobileVideoContainer",
+		// 			`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerMobileVideo.data.attributes.url}`
+		// 		);
+		// 	}
+		// });
+		// window.dispatchEvent(new Event("resize"));
+		return () => {
+			window.removeEventListener("load", handleWindowLoad);
+		};
 	}, []);
 
 	var settings = {
@@ -154,8 +171,22 @@ export default function HomeBanner({ data }) {
 								type="video/mp4"
 							/>
 						</video> */}
-						<div id="desktopVideoContainer"></div>
-						<div id="mobileVideoContainer"></div>
+						{windowLoaded && (
+							<video
+								playsInline
+								autoPlay
+								muted
+								loop
+								className={`${styles.video_box} hidden-xs`}
+							>
+								<source
+									src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.attributes.homeBannerVideo.bannerVideo.data.attributes.url}`}
+									type="video/mp4"
+								/>
+							</video>
+						)}
+
+						{/* <div id="mobileVideoContainer"></div> */}
 						<div className={`${styles.banner_content}`}>
 							<h1 className="heading_text_70 color_white pb_40">
 								{data.attributes.homeBannerVideo.videoTitle}
