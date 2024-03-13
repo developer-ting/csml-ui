@@ -43,13 +43,13 @@ export default function Home({
 			once: true,
 		});
 	}, []);
-	 //console.log(ClientLogosData, "pramod");
+	//console.log(ClientLogosData, "pramod");
 	return (
 		<div>
 			<Header />
 			<Loader />
 			<main className={`${styles.index_page}`}>
-				<HomeBanner data={BannerData.data} />
+				{/* <HomeBanner data={BannerData.data} /> */}
 				<Crafting craftingData={craftingStatsData.data} />
 				{/* <ParallaxSlider2 /> */}
 				{/* <ParallaxSlider /> */}
