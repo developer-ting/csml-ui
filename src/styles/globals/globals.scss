@@ -1232,8 +1232,32 @@ picture {
 	font-size: 36px !important;
 }
 
-.mobile_center{
+.mobile_center {
 	@media only screen and (max-width: 767px) {
-		text-align: center; 
+		text-align: center;
+	}
+}
+
+#mobileVideo {
+	display: none;
+}
+#desktopVideo {
+	display: none;
+}
+#desktopVideoContainer,
+#mobileVideoContainer {
+	video {
+		height: 100vh;
+		object-fit: cover;
+	}
+}
+@media only screen and (max-width: 600px) {
+	/* Add your mobile-specific styles here */
+	#desktopVideo {
+		display: none;
+	}
+
+	#mobileVideo {
+		display: block;
 	}
 }
