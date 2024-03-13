@@ -102,6 +102,7 @@ export default function Showcase({ showcaseData }) {
 												className="border_8"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ShowcaseImg.data.attributes.url}`}
 												alt="img"
+												loading="lazy"
 											/>
 										</div>
 										<div className={`${styles.desc_box}`}>

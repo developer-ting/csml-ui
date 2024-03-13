@@ -46,7 +46,6 @@ export default function EnthralledCustomers({ enthralledData }) {
 	// 	});
 
 	// }, []);
-	
 
 	return (
 		<section
@@ -66,16 +65,17 @@ export default function EnthralledCustomers({ enthralledData }) {
 								>
 									<div className={`${styles.enthralled_box} enthralled_box f_j`}>
 										<div className={`${styles.enthralled_quate_top}`}>
-											<img className="" src={quate.src} alt="img" />
+											<img className="" src={quate.src} alt="img" loading="lazy" />
 										</div>
 										<div className={`${styles.enthralled_quate_bottom}`}>
-											<img className="" src={quate.src} alt="img" />
+											<img className="" src={quate.src} alt="img" loading="lazy" />
 										</div>
 										<div className={`${styles.enthralled_img}`}>
 											<img
 												className="border_20"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.EnthralledImg.data.attributes.url}`}
 												alt="img"
+												loading="lazy"
 											/>
 										</div>
 										<div className={`${styles.enthralled_content}`}>
@@ -86,6 +86,7 @@ export default function EnthralledCustomers({ enthralledData }) {
 														className=""
 														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.EnthralledThumbnail.data.attributes.url}`}
 														alt="img"
+														loading="lazy"
 													/>
 												</div>
 												<div className={`${styles.profile_content}`}>
@@ -96,7 +97,6 @@ export default function EnthralledCustomers({ enthralledData }) {
 												</div>
 											</div>
 										</div>
-										
 									</div>
 								</div>
 							);

@@ -54,7 +54,12 @@ export default function PartnerSuperior({ data }) {
 						data-scroll
 					>
 						<div className={`${styles.partner_superior_content}`}>
-							<img className="border_8" src={partner_img.src} alt="img" />
+							<img
+								className="border_8"
+								src={partner_img.src}
+								alt="img"
+								loading="lazy"
+							/>
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 color_white text_500 ">Consultancy Services</h3>
@@ -91,10 +96,10 @@ export default function PartnerSuperior({ data }) {
 									<a href="/services/service-management" rel="noreferrer">
 										<button className="btn_arrow">
 											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={arrow.src} />
+												<img src={arrow.src} loading="lazy" />
 											</span>
 											<span className={`${styles.arrow_two} arrow_two`}>
-												<img src={arrow.src} />
+												<img src={arrow.src} loading="lazy" />
 											</span>
 										</button>
 									</a>
@@ -136,6 +141,7 @@ export default function PartnerSuperior({ data }) {
 												className="border_20"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.PartnersImg.data.attributes.url}`}
 												alt="img"
+												loading="lazy"
 											/>
 										</div>
 									</div>

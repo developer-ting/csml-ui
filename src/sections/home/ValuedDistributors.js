@@ -82,6 +82,7 @@ export default function ValuedDistributors({ valuedData }) {
 										<img
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ValuedLogos.data.attributes.url}`}
 											alt="logo"
+											loading="lazy"
 										/>
 									</div>
 								);

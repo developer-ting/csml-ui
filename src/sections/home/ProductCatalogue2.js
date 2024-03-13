@@ -168,7 +168,7 @@ export default function ProductCatalogue() {
 					innerHTML: `<span class="innerbox" style="font-size:20px">${dragSliderInfo[i].title} <a class="drag_link" href="${dragSliderInfo[i].link}" rel="noreferrer">
                     <button class="btn_arrow">
                       <span class="arrow_one"><img src="${arrow.src}"/></span>
-                      <span class="arrow_two"><img src="${arrow.src}" }/></span>
+                      <span class="arrow_two"><img src="${arrow.src}"}/></span>
                     </button>
                   </a></span>`,
 					background: "#333",

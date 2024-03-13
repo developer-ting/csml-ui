@@ -64,7 +64,7 @@ export default function Crafting({ craftingData }) {
 		>
 			<section className={`${styles.crafting_section} crafting_section`}>
 				<div className={`${styles.cricle_box} cricle_box hidden-xs`}>
-					<img className="" src={cricle_img.src} />
+					<img className="" src={cricle_img.src} loading="lazy" />
 				</div>
 				<div className="container box_left_space">
 					<div className={`${styles.crafting_flex} d_f`}>
@@ -146,12 +146,14 @@ export default function Crafting({ craftingData }) {
 										<img
 											className={`${styles.video_img} border_12 img`}
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${craftingData.attributes.thumbnail.data.attributes.url}`}
+											loading="lazy"
 										/>
 										<div className={`${styles.video_play}`}>
 											<img
 												src={play_icon.src}
 												className={`${styles.gallery_plus}`}
 												alt="play"
+												loading="lazy"
 											/>
 											<div className={`${styles.video_play_txt}`}>
 												<p className="text_reg">Play Video</p>
