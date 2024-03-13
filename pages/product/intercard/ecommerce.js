@@ -102,10 +102,10 @@ export default function Ecommerce() {
 				<section className={`${styles.intercard} ptb_80`}>
 					<div className="container">
 						<div className={`${styles.title_txt} `}>
-							<h2 className="heading_text_55 pb_40 toTop" data-scroll>
+							{/* <h2 className="heading_text_55 pb_40 toTop" data-scroll>
 								The Benefits of Intercard's <br className="hidden-xs" />
 								E-Commerce Technology
-							</h2>
+							</h2> */}
 							<h2 className="heading_text_55 toTop" data-scroll>
 								How It Works
 							</h2>
