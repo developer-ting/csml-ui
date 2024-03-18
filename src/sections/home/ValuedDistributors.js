@@ -81,7 +81,7 @@ export default function ValuedDistributors({ valuedData }) {
 									<div className={`${styles.valued_item}`} key={item.id}>
 										<img
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ValuedLogos.data.attributes.url}`}
-											alt="logo"
+											alt="partners logo"
 											loading="lazy"
 										/>
 									</div>

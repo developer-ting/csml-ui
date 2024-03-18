@@ -38,7 +38,7 @@ export default function ExcellenceEntertainment() {
 						data-scroll
 					>
 						<div className={`${styles.excellence_entertainment_content} `}>
-							<img className="border_8" src={family.src} alt="img" />
+							<img className="border_8" src={family.src} alt="family img" />
 						</div>
 						<div className={`${styles.desc_box}`}>
 							<div className={`${styles.desc_title} f_j`}>
@@ -62,7 +62,7 @@ export default function ExcellenceEntertainment() {
 						data-scroll
 					>
 						<div className={`${styles.excellence_entertainment_content} `}>
-							<img className="border_8" src={hotel_img.src} alt="img" />
+							<img className="border_8" src={hotel_img.src} alt="hotel img" />
 						</div>
 						<div className={`${styles.desc_box}`}>
 							<div className={`${styles.desc_title} f_j`}>
@@ -84,7 +84,7 @@ export default function ExcellenceEntertainment() {
 						data-scroll
 					>
 						<div className={`${styles.excellence_entertainment_content} `}>
-							<img className="border_8" src={restaurants_img.src} alt="img" />
+							<img className="border_8" src={restaurants_img.src} alt="Restaurants img" />
 						</div>
 						<div className={`${styles.desc_box}`}>
 							<div className={`${styles.desc_title} f_j`}>
@@ -106,7 +106,7 @@ export default function ExcellenceEntertainment() {
 						data-scroll
 					>
 						<div className={`${styles.excellence_entertainment_content} `}>
-							<img className="border_8" src={club_houses.src} alt="img" />
+							<img className="border_8" src={club_houses.src} alt="Club Houses img" />
 						</div>
 						<div className={`${styles.desc_box}`}>
 							<div className={`${styles.desc_title} f_j`}>
@@ -130,7 +130,7 @@ export default function ExcellenceEntertainment() {
 						data-scroll
 					>
 						<div className={`${styles.excellence_entertainment_content} `}>
-							<img className="border_8" src={corporates.src} alt="img" />
+							<img className="border_8" src={corporates.src} alt="Corporates img" />
 						</div>
 						<div className={`${styles.desc_box}`}>
 							<div className={`${styles.desc_title} f_j`}>
@@ -152,7 +152,7 @@ export default function ExcellenceEntertainment() {
 						data-scroll
 					>
 						<div className={`${styles.excellence_entertainment_content} `}>
-							<img className="border_8" src={private_homes.src} alt="img" />
+							<img className="border_8" src={private_homes.src} alt="Private Homes img" />
 						</div>
 						<div className={`${styles.desc_box}`}>
 							<div className={`${styles.desc_title} f_j`}>

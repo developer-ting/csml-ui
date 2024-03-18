@@ -142,8 +142,8 @@ export default function ProductCatalogue() {
 					attr: { class: "box b" + i },
 					innerHTML: `<span class="innerbox" style="font-size:20px">${dragSliderInfo[i].title} <a class="drag_link" href="${dragSliderInfo[i].link}" rel="noreferrer">
                     <button class="btn_arrow">
-                      <span class="arrow_one"><img src="${arrow.src}" loading="lazy"/></span>
-                      <span class="arrow_two"><img src="${arrow.src}" loading="lazy"/}/></span>
+                      <span class="arrow_one"><img src="${arrow.src}" alt="product image" loading="lazy"/></span>
+                      <span class="arrow_two"><img src="${arrow.src}" alt="product image" loading="lazy"/}/></span>
                     </button>
                   </a></span>`,
 					background: "#333",
@@ -292,10 +292,10 @@ export default function ProductCatalogue() {
 												<a href={item.link} rel="noreferrer">
 													<button className="btn_arrow">
 														<span className={`${styles.arrow_one} arrow_one`}>
-															<img src={arrow.src} loading="lazy" />
+															<img src={arrow.src} alt="arrow" loading="lazy" />
 														</span>
 														<span className={`${styles.arrow_two} arrow_two`}>
-															<img src={arrow.src} loading="lazy" />
+															<img src={arrow.src} alt="arrow" loading="lazy" />
 														</span>
 													</button>
 												</a>

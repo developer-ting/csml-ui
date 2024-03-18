@@ -91,13 +91,13 @@ export default function Contact() {
 									data-scroll
 								>
 									<div className={`${styles.contact_div} pb_30`}>
-										<img className="img" src={Mail.src} />
+										<img className="img" src={Mail.src} alt="mail icon" />
 										<a href="mailto:sales@csmlindia.com" rel="noreferrer">
 											sales@csmlindia.com
 										</a>
 									</div>
 									<div className={`${styles.contact_div}`}>
-										<img className="img" src={Phone.src} />
+										<img className="img" src={Phone.src} alt="phone icon" />
 										<div className={`${styles.phone_div}`}>
 											<a href="tel:+912249739659">+91 (22) 49739659</a> /{" "}
 											<a href="tel:+912228302166">+91 (22) 28302166</a>

@@ -298,7 +298,7 @@ export default function GoKarting({ kartsTagData }) {
 								className={`${styles.img_bx} commonBorderAnimation toTop`}
 								data-scroll
 							>
-								<img className="img border_8" src={sodikart.src} />
+								<img className="img border_8" src={sodikart.src} alt="sodikart" />
 							</div>
 						</div>
 					</div>
@@ -349,7 +349,7 @@ export default function GoKarting({ kartsTagData }) {
 																onClick={() => openPopupGas(productItemIndex)}
 															>
 																<span className={`${styles.arrow_one} arrow_one`}>
-																	<img src={plus_icon1.src} />
+																	<img src={plus_icon1.src} alt="icon" />
 																</span>
 															</button>
 														</a>
@@ -412,7 +412,7 @@ export default function GoKarting({ kartsTagData }) {
 																onClick={() => openPopupElectric(productItemIndex)}
 															>
 																<span className={`${styles.arrow_one} arrow_one`}>
-																	<img src={plus_icon1.src} />
+																	<img src={plus_icon1.src} alt="icon" />
 																</span>
 															</button>
 														</a>
@@ -459,7 +459,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={safety.src} alt="img" />
+									<img className="border_8" src={safety.src} alt="safety img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500 ">Safety</h3>
@@ -476,7 +476,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={performance_monitoring.src} alt="img" />
+									<img className="border_8" src={performance_monitoring.src} alt="performance img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500">
@@ -498,7 +498,7 @@ export default function GoKarting({ kartsTagData }) {
 									<img
 										className="border_8"
 										src={challenges_competitions.src}
-										alt="img"
+										alt="challenges img"
 									/>
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
@@ -518,7 +518,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={feedback.src} alt="img" />
+									<img className="border_8" src={feedback.src} alt="feedback img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500">Feedback</h3>
@@ -535,7 +535,7 @@ export default function GoKarting({ kartsTagData }) {
 								data-scroll
 							>
 								<div className={`${styles.partner_superior_content}`}>
-									<img className="border_8" src={spectator_engagement.src} alt="img" />
+									<img className="border_8" src={spectator_engagement.src} alt="spectator img" />
 									<div className={`${styles.desc_box} desc_box_he`}>
 										<div className={`${styles.desc_title} f_j`}>
 											<h3 className="text_24 color_white text_500 ">
@@ -725,7 +725,7 @@ export default function GoKarting({ kartsTagData }) {
 							<div className={styles.popup_content_inner}>
 								<div className={styles.popup_header}>
 									<button onClick={closePopupGas}>
-										<img src={closeIcn.src} alt="" />
+										<img src={closeIcn.src} alt="icon" />
 									</button>
 								</div>
 								<div className={styles.popup_body}>
@@ -733,7 +733,7 @@ export default function GoKarting({ kartsTagData }) {
 										<div className={styles.popup_img_item}>
 											<img
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${gasData[gameIndex].Image.data.attributes.url}`}
-												alt=""
+												alt="product img"
 											/>
 										</div>
 										<div className={styles.popup_content_item}>
@@ -761,7 +761,7 @@ export default function GoKarting({ kartsTagData }) {
 							<div className={styles.popup_content_inner}>
 								<div className={styles.popup_header}>
 									<button onClick={closePopupElectric}>
-										<img src={closeIcn.src} alt="" />
+										<img src={closeIcn.src} alt="icon" />
 									</button>
 								</div>
 								<div className={styles.popup_body}>
@@ -769,7 +769,7 @@ export default function GoKarting({ kartsTagData }) {
 										<div className={styles.popup_img_item}>
 											<img
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${electricData[gameIndex].Image.data.attributes.url}`}
-												alt=""
+												alt="product img"
 											/>
 										</div>
 										<div className={styles.popup_content_item}>

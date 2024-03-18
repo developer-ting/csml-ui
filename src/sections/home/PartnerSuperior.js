@@ -57,7 +57,7 @@ export default function PartnerSuperior({ data }) {
 							<img
 								className="border_8"
 								src={partner_img.src}
-								alt="img"
+								alt="partner img"
 								loading="lazy"
 							/>
 							<div className={`${styles.desc_box}`}>
@@ -66,10 +66,10 @@ export default function PartnerSuperior({ data }) {
 									<a href="/services/service-consultancy" rel="noreferrer">
 										<button className="btn_arrow">
 											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={arrow.src} />
+												<img src={arrow.src} alt="arrow" />
 											</span>
 											<span className={`${styles.arrow_two} arrow_two`}>
-												<img src={arrow.src} />
+												<img src={arrow.src} alt="arrow" />
 											</span>
 										</button>
 									</a>
@@ -87,7 +87,7 @@ export default function PartnerSuperior({ data }) {
 						data-scroll
 					>
 						<div className={`${styles.partner_superior_content}`}>
-							<img className="border_8" src={partner_img_two.src} alt="img" />
+							<img className="border_8" src={partner_img_two.src} alt="Management img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 color_white text_500">
@@ -96,10 +96,10 @@ export default function PartnerSuperior({ data }) {
 									<a href="/services/service-management" rel="noreferrer">
 										<button className="btn_arrow">
 											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={arrow.src} loading="lazy" />
+												<img src={arrow.src} loading="lazy" alt="arrow" />
 											</span>
 											<span className={`${styles.arrow_two} arrow_two`}>
-												<img src={arrow.src} loading="lazy" />
+												<img src={arrow.src} loading="lazy" alt="arrow" />
 											</span>
 										</button>
 									</a>
@@ -140,7 +140,7 @@ export default function PartnerSuperior({ data }) {
 											<img
 												className="border_20"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.PartnersImg.data.attributes.url}`}
-												alt="img"
+												alt="yellow img"
 												loading="lazy"
 											/>
 										</div>

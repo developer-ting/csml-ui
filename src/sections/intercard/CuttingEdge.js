@@ -95,7 +95,7 @@ const CuttingEdge = ({ cuttingEdgeData }) => {
 										<img
 											className="border_8"
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.Thumbnail.data.attributes.url}`}
-											alt="img"
+											alt="cutting edge img"
 										/>
 									</div>
 									<div className={`${styles.desc_box}`}>

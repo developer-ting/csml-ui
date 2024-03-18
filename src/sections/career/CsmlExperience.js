@@ -36,7 +36,7 @@ export default function CsmlExperience() {
               <img className="" src={quate.src} alt="img" />
             </div>
             <div className={`${styles.enthralled_img}`}>
-              <img className="" src={reddy_img.src} alt="img" />
+              <img className="" src={reddy_img.src} alt="reddy img" />
             </div>
             <div className={`${styles.enthralled_content}`}>
               <p className="paraTxt">CSML Bowling installed the most amazing two-lane bowling alley at our home! They were quick, efficient and so easy to work with from the very beginning while in design to the spotless installation. The finished product has been such a fun!</p>

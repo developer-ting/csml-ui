@@ -117,7 +117,7 @@ const GasKarts = ({ data }) => {
 										<img
 											className="border_8"
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
-											alt="img"
+											alt="Gas img"
 										/>
 									</div>
 									<div className={`${styles.desc_box}`}>
@@ -129,7 +129,7 @@ const GasKarts = ({ data }) => {
 													onClick={() => openPopup(productItemIndex)}
 												>
 													<span className={`${styles.arrow_one} arrow_one`}>
-														<img src={plus_icon.src} />
+														<img src={plus_icon.src} alt="icon" />
 													</span>
 												</button>
 											</a>
@@ -148,7 +148,7 @@ const GasKarts = ({ data }) => {
 						<div className={styles.popup_content_inner}>
 							<div className={styles.popup_header}>
 								<button onClick={closePopup}>
-									<img src={closeIcn.src} alt="" />
+									<img src={closeIcn.src} alt="icon" />
 								</button>
 							</div>
 							<div className={styles.popup_body}>
@@ -156,7 +156,7 @@ const GasKarts = ({ data }) => {
 									<div className={styles.popup_img_item}>
 										<img
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.data[0].attributes.gaskarts[gameIndex].Image.data.attributes.url}`}
-											alt=""
+											alt="product popup img"
 										/>
 									</div>
 									<div className={styles.popup_content_item}>

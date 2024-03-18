@@ -101,7 +101,7 @@ export default function Showcase({ showcaseData }) {
 											<img
 												className="border_8"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ShowcaseImg.data.attributes.url}`}
-												alt="img"
+												alt="showcase img"
 												loading="lazy"
 											/>
 										</div>

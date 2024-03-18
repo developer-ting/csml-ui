@@ -91,7 +91,8 @@ const DiverseBowling = ({ data }) => {
 														<a
 															className="text_xxs d_f a_center text_400"
 															download
-															target="_blanks"
+															target="_blank"
+															rel="noreferrer"
 															href={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.data[0].attributes.brochure.data.attributes.url}`}
 														>
 															<img src={download.src} alt="download" /> Download Brochure
@@ -103,7 +104,8 @@ const DiverseBowling = ({ data }) => {
 														<a
 															className="text_xxs d_f a_center text_400"
 															href={data.data[0].attributes.link}
-															target="_blanks"
+															target="_blank"
+															rel="noreferrer"
 														>
 															Visit Brunswick Bowling
 														</a>
@@ -176,7 +178,8 @@ const DiverseBowling = ({ data }) => {
 														<a
 															className="text_xxs d_f a_center text_400"
 															download
-															target="_blanks"
+															target="_blank"
+															rel="noreferrer"
 															href={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${data.data[1].attributes.brochure.data.attributes.url}`}
 														>
 															<img src={download.src} alt="download" /> Download Brochure
@@ -188,7 +191,8 @@ const DiverseBowling = ({ data }) => {
 														<a
 															className="text_xxs d_f a_center text_400"
 															href={data.data[1].attributes.link}
-															target="_blanks"
+															target="_blank"
+															rel="noreferrer"
 														>
 															Visit Duckpin Social
 														</a>

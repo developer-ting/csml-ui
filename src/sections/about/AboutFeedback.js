@@ -21,11 +21,11 @@ export default function AboutFeedback() {
 				<img
 					className={`${styles.feedback_img} toTop`}
 					src={feedback_img.src}
-					alt="img"
+					alt="feedback img"
 					data-scroll
 				/>
 				<div className={`${styles.section_title} pb_40`}>
-					<img src={quate.src} alt="img" />
+					<img src={quate.src} alt="quate img" />
 					<h2 className="heading_text_55 pb_20 pt_10 toTop" data-scroll>
 						Mr. Rohhit <br className="hidden-xs" />Mathur
 					</h2>

@@ -29,8 +29,8 @@ const TextImgBox = ({
 				<div
 					className={`${styles.ImgBoxes} commonBorderAnimation whiteCommonBorderAnimation`}
 				>
-					<img className={`${styles.card_box_icon} border_8`} src={leftBoxImg} alt="img" />
-					<img className={`${styles.card_box_icon} border_8`} src={rightBoxImg} alt="img" />
+					<img className={`${styles.card_box_icon} border_8`} src={leftBoxImg} alt="card img" />
+					<img className={`${styles.card_box_icon} border_8`} src={rightBoxImg} alt="card img" />
 				</div>
 			</div>
 		</div>

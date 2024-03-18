@@ -113,12 +113,12 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 								<div className="share_icon">
 									<TwitterShareButton url={blogURL}>
 										<a>
-											<img src={twitter.src} alt="" />
+											<img src={twitter.src} alt="twitter" />
 										</a>
 									</TwitterShareButton>
 									<FacebookShareButton url={blogURL}>
 										<a>
-											<img src={facebook.src} alt="" />
+											<img src={facebook.src} alt="facebook" />
 										</a>
 									</FacebookShareButton>
 									{/* <a href="">
@@ -167,10 +167,10 @@ export default function BlogInside({ BlogData, RelatedBlogData }) {
 												<a href={`/blogs/${item.attributes.BlogSlug}`} rel="noreferrer">
 													<button className="btn_arrow">
 														<span className={`${styles.arrow_one} arrow_one`}>
-															<img src={arrow.src} />
+															<img src={arrow.src} alt="icon" />
 														</span>
 														<span className={`${styles.arrow_two} arrow_two`}>
-															<img src={arrow.src} />
+															<img src={arrow.src} alt="icon" />
 														</span>
 													</button>
 												</a>

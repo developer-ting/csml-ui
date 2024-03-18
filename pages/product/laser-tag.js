@@ -166,7 +166,7 @@ export default function LaserTag({ LaserTagData }) {
 															onClick={() => openPopup(productItemIndex)}
 														>
 															<span className={`${styles.arrow_one} arrow_one`}>
-																<img src={plus_icon.src} />
+																<img src={plus_icon.src} alt="icon" />
 															</span>
 														</button>
 													</a>
@@ -195,7 +195,7 @@ export default function LaserTag({ LaserTagData }) {
 					className={`${styles.optimizing_section} dot_animation_box pb_100`}
 				>
 					<div className={`${styles.full_img} toTop`} data-scroll>
-						<img className="border_8 width_100" src={optimizing_img.src} alt="img" />
+						<img className="border_8 width_100" src={optimizing_img.src} alt="optimizing img" />
 					</div>
 					<div className="container">
 						<div className={`${styles.optimizing_flex} ptb_40 d_f`}>
@@ -333,7 +333,7 @@ export default function LaserTag({ LaserTagData }) {
 								</p>
 							</div>
 							<div className={`${styles.img_bx} toTop`} data-scroll>
-								<img className="img border_8" src={design.src} />
+								<img className="img border_8" src={design.src} alt="design" />
 							</div>
 						</div>
 					</div>
@@ -345,7 +345,7 @@ export default function LaserTag({ LaserTagData }) {
 							<div className={styles.popup_content_inner}>
 								<div className={styles.popup_header}>
 									<button onClick={closePopup}>
-										<img src={closeIcn.src} alt="" />
+										<img src={closeIcn.src} alt="icon" />
 									</button>
 								</div>
 								<div className={styles.popup_body}>
@@ -353,7 +353,7 @@ export default function LaserTag({ LaserTagData }) {
 										<div className={styles.popup_img_item}>
 											<img
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${popUpData.PopUpImage.data.attributes.url}`}
-												alt=""
+												alt="product img"
 											/>
 										</div>
 										<div className={styles.popup_content_item}>

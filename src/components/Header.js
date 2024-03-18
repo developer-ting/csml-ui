@@ -60,12 +60,12 @@ const Header = () => {
 							<img
 								src={csml_logo.src}
 								className={`${styles.noscroll_logo}`}
-								alt="csml_logo"
+								alt="csml logo"
 							/>
 							<img
 								src={mobile_logo.src}
 								className={`${styles.scrolled_logo}`}
-								alt="scrolled_logo"
+								alt="csml logo"
 							/>
 						</a>
 					</div>

@@ -143,6 +143,7 @@ export default function HomeBanner({ data }) {
 											<img
 												className="width_100"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.bannerImage.data.attributes.url}`}
+												alt="home banner"
 											/>
 										</picture>
 									</div>
@@ -230,7 +231,7 @@ export default function HomeBanner({ data }) {
 						offset={-50}
 						duration={500}
 					>
-						<img className="" src={cricle_arrow.src} />
+						<img className="" src={cricle_arrow.src} alt="circle" />
 					</ScrollSection>
 				</div>
 			</div>

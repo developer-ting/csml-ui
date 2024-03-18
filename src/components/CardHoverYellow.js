@@ -25,11 +25,11 @@ const CardHoverYellow = ({ boxImg, title, desc, full, new_style }) => {
 			<div className="dot_two dots_p"></div>
 			<div className="dot_three dots_p"></div>
 			<div className={`${styles.luminaries_content}`}>
-				<img className="border_8" src={boxImg} alt="img" />
+				<img className="border_8" src={boxImg} alt="card yellow img" />
 				<div className={`${styles.desc_box} ${full && styles.full_height}`}>
 					<div className={`${styles.desc_title}`}>
 						<h3 className="text_24 text_700">{title}</h3>
-						<img className="img" src={plus_icon.src} />
+						<img className="img" src={plus_icon.src} alt="plus icon" />
 					</div>
 					<p className="paraTxt">{desc}</p>
 				</div>

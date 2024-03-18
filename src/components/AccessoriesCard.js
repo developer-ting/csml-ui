@@ -17,7 +17,7 @@ const AccessoriesCard = ({ boxImg, title, desc }) => {
 	return (
 		<div className={`${styles.accessories_card} f_w_a`}>
 			<div className={`${styles.img}`}>
-				<img className={`${styles.accessories_card_img}`} src={boxImg} alt="img" />
+				<img className={`${styles.accessories_card_img}`} src={boxImg} alt="accessories img" />
 			</div>
 			<div className={`${styles.info}`}>
 				<p className="text_md color_white text_500 pb_10">{title}</p>

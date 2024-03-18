@@ -16,7 +16,7 @@ const popUp = () => {
 					<div className="container">
 						<div className={styles.popup_header}>
 							<button onClick={onClose}>
-								<img src={closeIcn.src} alt="" />
+								<img src={closeIcn.src} alt="icon" />
 							</button>
 						</div>
 						<div className={styles.popup_body}>

@@ -228,7 +228,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 													rel="noreferrer"
 													target="_blank"
 												>
-													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="" />
+													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="youtube" />
 												</a>
 												<a
 													className={`${styles.watch_btn}`}
@@ -239,7 +239,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 													rel="noreferrer"
 													target="_blank"
 												>
-													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="" />
+													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="youtube" />
 												</a>
 											</div>
 										</div>

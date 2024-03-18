@@ -23,11 +23,11 @@ const InsideBanner = ({ bannerImg, bannerTitle, mobileImg }) => {
 				{/* <img className="width_100" src={bannerImg} /> */}
 				<img
 					src={bannerImg}
-					alt=""
+					alt="banner img"
 					className={`${styles.inside_banner_img} hidden-xs`}
 				/>
 				{mobileImg && (
-					<img src={mobileImg} alt="" className={`${styles.mobileImg} visible-xs`} />
+					<img src={mobileImg} alt="mobile banner" className={`${styles.mobileImg} visible-xs`} />
 				)}
 			</div>
 			<div className={`${styles.banner_content}`}>

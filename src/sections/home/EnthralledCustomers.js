@@ -75,7 +75,7 @@ export default function EnthralledCustomers({ enthralledData }) {
 											<img
 												className="border_20"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.EnthralledImg.data.attributes.url}`}
-												alt="img"
+												alt="enthralled img"
 												loading="lazy"
 											/>
 										</div>
@@ -86,7 +86,7 @@ export default function EnthralledCustomers({ enthralledData }) {
 													<img
 														className=""
 														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.EnthralledThumbnail.data.attributes.url}`}
-														alt="img"
+														alt="profile img"
 														loading="lazy"
 													/>
 												</div>

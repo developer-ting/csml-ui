@@ -112,7 +112,7 @@ export default function NewReleases({ GamesData }) {
 							<div className={styles.popup_content_inner}>
 								<div className={styles.popup_header}>
 									<button onClick={closePopup}>
-										<img src={closeIcn.src} alt="" />
+										<img src={closeIcn.src} alt="icon" />
 									</button>
 								</div>
 								<div className={styles.popup_body}>
@@ -120,7 +120,7 @@ export default function NewReleases({ GamesData }) {
 										<div className={styles.popup_img_item}>
 											<img
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${popUpGame.GameImg.data.attributes.url}`}
-												alt=""
+												alt="product img"
 											/>
 											{popUpGame.IsNew && (
 												<h6 className={styles.NewRelease}>New Releases</h6>
@@ -144,7 +144,7 @@ export default function NewReleases({ GamesData }) {
 													rel="noreferrer"
 													target="_blank"
 												>
-													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="" />
+													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="youtube" />
 												</a>
 												<a
 													className={`${styles.watch_btn}`}
@@ -152,7 +152,7 @@ export default function NewReleases({ GamesData }) {
 													rel="noreferrer"
 													target="_blank"
 												>
-													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="" />
+													Watch Video <img src={ytImg.src} className={styles.ytImg} alt="youtube" />
 												</a>
 											</div>
 										</div>

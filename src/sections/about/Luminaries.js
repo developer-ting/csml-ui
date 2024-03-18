@@ -35,7 +35,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={rohit_mathur.src} alt="img" />
+							<img className="border_8" src={rohit_mathur.src} alt="rohit img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
@@ -58,7 +58,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={tyna.src} alt="img" />
+							<img className="border_8" src={tyna.src} alt="tyna img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
@@ -81,7 +81,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={sanjeev.src} alt="img" />
+							<img className="border_8" src={sanjeev.src} alt="sanjeev img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
@@ -104,7 +104,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={amit_thapar.src} alt="img" />
+							<img className="border_8" src={amit_thapar.src} alt="amit img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
@@ -127,7 +127,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={amol_shelke.src} alt="img" />
+							<img className="border_8" src={amol_shelke.src} alt="amol img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">
@@ -150,7 +150,7 @@ export default function Luminaries() {
 						<div className="dot_two dots_p"></div>
 						<div className="dot_three dots_p"></div>
 						<div className={`${styles.luminaries_content}`}>
-							<img className="border_8" src={deepak_jha.src} alt="img" />
+							<img className="border_8" src={deepak_jha.src} alt="deepak img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
 									<h3 className="text_24 text_700 font_secondary">

@@ -120,7 +120,7 @@ export default function Ecommerce() {
 										<div className="dot_one dots_p"></div>
 										<div className="dot_two dots_p"></div>
 										<div className="dot_three dots_p"></div>
-										<img className="border_8" src={remote_accessibility.src} alt="img" />
+										<img className="border_8" src={remote_accessibility.src} alt="remote accessibility" />
 										<div className={`${styles.desc_box} box_same`}>
 											<div className={`${styles.desc_title} f_j`}>
 												<h3 className="text_24 text_700 ">Remote Accessibility</h3>
@@ -139,7 +139,7 @@ export default function Ecommerce() {
 										<div className="dot_one dots_p"></div>
 										<div className="dot_two dots_p"></div>
 										<div className="dot_three dots_p"></div>
-										<img className="border_8" src={customized_brand.src} alt="img" />
+										<img className="border_8" src={customized_brand.src} alt="customized img" />
 										<div className={`${styles.desc_box} box_same`}>
 											<div className={`${styles.desc_title} f_j`}>
 												<h3 className="text_24 text_700">

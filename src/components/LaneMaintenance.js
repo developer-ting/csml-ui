@@ -92,6 +92,7 @@ const LaneMaintenance = ({ laneData }) => {
 										<div className={`${styles.product_info_img}`}>
 											<img
 												className={`${styles.lane_img} img width_100`}
+												alt="product img"
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.Image.data.attributes.url}`}
 											/>
 										</div>

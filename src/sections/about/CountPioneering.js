@@ -65,10 +65,10 @@ export default function CountPioneering() {
 
       <div className={`${styles.pioneering_main}`}>
         <div className={`${styles.component_one}`}>
-          <img className="" src={component_one.src} alt="img" />
+          <img className="" src={component_one.src} alt="pioneering img" />
         </div>
         <div className={`${styles.component_two}`}>
-          <img className="" src={component_two.src} alt="img" />
+          <img className="" src={component_two.src} alt="pioneering img" />
         </div>
         <div className="container">
           <div className={`${styles.pioneering_content}`}>

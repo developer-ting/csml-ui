@@ -59,7 +59,7 @@ export default function ServiceManagement() {
 								</div>
 							</div>
 							<div className={`${styles.img_bx} toTop`} data-scroll>
-								<img className="img b_r_7" src={Sec1_img.src} />
+								<img className="img b_r_7" src={Sec1_img.src} alt="Elevate FEC" />
 							</div>
 						</div>
 					</div>

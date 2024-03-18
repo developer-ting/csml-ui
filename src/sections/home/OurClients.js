@@ -47,7 +47,7 @@ export default function OurClients({ clientsData }) {
 							>
 								<img
 									src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ClientLogos.data.attributes.url}`}
-									alt="logo"
+									alt="clients logo"
 									loading="lazy"
 								/>
 							</div>

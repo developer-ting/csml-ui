@@ -73,7 +73,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 					<div rel="noreferrer">
 						<button className="btn_plus" onClick={() => openPopup(index)}>
 							<span className={`${styles.arrow_one} arrow_one`}>
-								<img src={plus_icon.src} />
+								<img src={plus_icon.src} alt="icon" />
 							</span>
 						</button>
 					</div>
@@ -88,7 +88,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 						<div className={styles.popup_content_inner}>
 							<div className={`${styles.popup_header}`}>
 								<button onClick={closePopup}>
-									<img src={closeIcn.src} alt="" />
+									<img src={closeIcn.src} alt="icon" />
 								</button>
 							</div>
 							<div className={styles.popup_body}>
@@ -101,6 +101,7 @@ const ProductBox = ({ title, red, ProductImg, index, imgData }) => {
 											return (
 												<div className={`${styles.slid_item} color_white`}>
 													<img
+													alt="product popup"
 														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.url}`}
 													/>
 												</div>

@@ -144,7 +144,7 @@ export default function ServiceConsultancy() {
 								</p>
 							</div>
 							<div className={`${styles.img_bx} toTop`} data-scroll>
-								<img className="img b_r_7" src={Sec1_img.src} />
+								<img className="img b_r_7" src={Sec1_img.src} alt="Turnkey img" />
 							</div>
 						</div>
 					</div>
@@ -221,6 +221,7 @@ export default function ServiceConsultancy() {
 												ref={imgHW}
 												className="img border_8"
 												src={turning_vision_into_reality.src}
+												alt="img"
 											/>
 										</div>
 										<div className={`${styles.tabs_info}`}>
@@ -240,7 +241,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={planning_and_layout_design.src} />
+											<img className="img border_8" src={planning_and_layout_design.src} alt="Planning img" />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -260,7 +261,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={suggestive_game.src} />
+											<img className="img border_8" src={suggestive_game.src} alt="suggestive" />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -280,7 +281,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={exclusive_istribution.src} />
+											<img className="img border_8" src={exclusive_istribution.src} alt="exclusive" />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -303,6 +304,7 @@ export default function ServiceConsultancy() {
 											<img
 												className="img border_8"
 												src={tailored_amusement_equipment_selection.src}
+												alt="Tailored"
 											/>
 										</div>
 										<div className={`${styles.tabs_info}`}>
@@ -322,7 +324,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={logistics_mport.src} />
+											<img className="img border_8" src={logistics_mport.src} alt="logistics mport" />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -341,7 +343,7 @@ export default function ServiceConsultancy() {
 										<div
 											className={`${styles.tabs_img}  border_animation white_border_animation`}
 										>
-											<img className="img border_8" src={installation_training.src} />
+											<img className="img border_8" src={installation_training.src} alt="Installation" />
 										</div>
 										<div className={`${styles.tabs_info}`}>
 											<p className={`${styles.info_title} font_secondary`}>
@@ -361,7 +363,7 @@ export default function ServiceConsultancy() {
 											className={`${styles.tabs_img} ${styles.opac1} border_animation white_border_animation opac`}
 										>
 											<div className={` `}>
-												<img className="img border_8" src={pre_post_operation_support_services.src} />
+												<img className="img border_8" src={pre_post_operation_support_services.src} alt="Operation" />
 											</div>
 										</div>
 										<div className={`${styles.tabs_info}`}>
@@ -505,7 +507,7 @@ export default function ServiceConsultancy() {
 								<div
 									className={`${styles.tabs_img}  border_animation white_border_animation`}
 								>
-									<img className="img border_8" src={pre_post_operation_support_services.src} />
+									<img className="img border_8" src={pre_post_operation_support_services.src} alt="pre post" />
 								</div>
 							</div>
 						</div>

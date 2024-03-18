@@ -88,10 +88,10 @@ export default function Blog({ BlogData }) {
 												<a href={`/blogs/${item.attributes.BlogSlug}`} rel="noreferrer">
 													<button className="btn_arrow">
 														<span className={`${styles.arrow_one} arrow_one`}>
-															<img src={arrow.src} />
+															<img src={arrow.src} alt="icon" />
 														</span>
 														<span className={`${styles.arrow_two} arrow_two`}>
-															<img src={arrow.src} />
+															<img src={arrow.src} alt="icon" />
 														</span>
 													</button>
 												</a>

@@ -191,7 +191,7 @@ const Footer = () => {
 										<li>
 											
 											<Link href="/img/pdf/footer_brochure.pdf">
-											<a target="_blank" className="">Brochure</a>
+											<a target="_blank" rel="noreferrer" className="">Brochure</a>
 											</Link>
 										</li>
 									</ul>
@@ -220,10 +220,10 @@ const Footer = () => {
 										)}
 										<button className={`${styles.btn_arrow} btn_arrow`}>
 											<span className={`${styles.arrow_one} arrow_one`}>
-												<img src={arrow.src} />
+												<img src={arrow.src} alt="arrow" />
 											</span>
 											<span className={`${styles.arrow_two} arrow_two`}>
-												<img src={arrow.src} />
+												<img src={arrow.src} alt="arrow" />
 											</span>
 										</button>
 										{isSubmited && (
@@ -241,36 +241,36 @@ const Footer = () => {
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
 										<li>
 											<Link href="https://www.facebook.com/CompleteSportsAndManagement/">
-												<a target="_blank">
-													<img src={facebook.src} alt="" />
+												<a target="_blank" rel="noreferrer">
+													<img src={facebook.src} alt="facebook" />
 												</a>
 											</Link>
 										</li>
 										<li>
 											<Link href="https://twitter.com/CSMLIndia">
-												<a target="_blank">
-													<img src={twitter.src} alt="" />
+												<a target="_blank" rel="noreferrer">
+													<img src={twitter.src} alt="twitter" />
 												</a>
 											</Link>
 										</li>
 										<li>
 											<Link href="https://www.instagram.com/csmlindia/">
-												<a target="_blank">
-													<img src={instagram.src} alt="" />
+												<a target="_blank" rel="noreferrer">
+													<img src={instagram.src} alt="instagram" />
 												</a>
 											</Link>
 										</li>
 										<li>
 											<Link href="https://www.youtube.com/@csmlindia8994">
-												<a target="_blank">
-													<img src={youtube.src} alt="" />
+												<a target="_blank" rel="noreferrer">
+													<img src={youtube.src} alt="youtube" />
 												</a>
 											</Link>
 										</li>
 										<li>
 											<Link href="https://www.linkedin.com/company/csmlindia/">
-												<a target="_blank">
-													<img src={linkedin.src} alt="" />
+												<a target="_blank" rel="noreferrer">
+													<img src={linkedin.src} alt="linkedin" />
 												</a>
 											</Link>
 										</li>
@@ -289,7 +289,7 @@ const Footer = () => {
 							<div className={`${styles.footerBtmItem}`}>
 								<Link href="https://www.ting.in/">
 									<a className="text_reg text_500" target="_blank" rel="noreferrer">
-										<img src={ting_logo.src} alt="" />
+										<img src={ting_logo.src} alt="ting logo" />
 									</a>
 								</Link>
 							</div>

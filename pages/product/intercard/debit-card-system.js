@@ -172,7 +172,7 @@ export default function DebitCardSystem({
 								<img
 									className={`${styles.debit_icon} pb_20`}
 									src={live_customer.src}
-									alt="img"
+									alt="live customer img"
 								/>
 								<p className="paraTxt text_600 pb_20 l_h_3">Live Customer Service</p>
 								<p className="paraTxt_18 l_h_3">Always available, 24/7</p>
@@ -181,7 +181,7 @@ export default function DebitCardSystem({
 								<img
 									className={`${styles.debit_icon} pb_20`}
 									src={cost_effective.src}
-									alt="img"
+									alt="cost effective img"
 								/>
 								<p className="paraTxt text_600 pb_20 l_h_3">Cost Effective</p>
 								<p className="paraTxt_18 l_h_3">
@@ -192,7 +192,7 @@ export default function DebitCardSystem({
 								<img
 									className={`${styles.debit_icon} pb_20`}
 									src={state_security.src}
-									alt="img"
+									alt="state security img"
 								/>
 								<p className="paraTxt text_600 pb_20 l_h_3">
 									State Of The Art Security
@@ -203,7 +203,7 @@ export default function DebitCardSystem({
 								<img
 									className={`${styles.debit_icon} pb_20`}
 									src={durability.src}
-									alt="img"
+									alt="durability img"
 								/>
 								<p className="paraTxt text_600 pb_20 l_h_3">Durability</p>
 								<p className="paraTxt_18 l_h_3">Offering the longest warranty</p>
@@ -212,7 +212,7 @@ export default function DebitCardSystem({
 								<img
 									className={`${styles.debit_icon} pb_20`}
 									src={reliability.src}
-									alt="img"
+									alt="reliability img"
 								/>
 								<p className="paraTxt text_600 pb_20 l_h_3">Reliability</p>
 								<p className="paraTxt_18 l_h_3">
@@ -246,20 +246,20 @@ export default function DebitCardSystem({
 										<div className={`${styles.luminaries_content}`}>
 											<img
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.ReaderThumbnail.data.attributes.url}`}
-												alt="img"
+												alt="luminaries img"
 											/>
 											<div className={`${styles.head_title} pt_30`}>
 												<h3 className="text_24 text_700">
 													{item.attributes.ReaderHeadline}
 												</h3>
-												<img className="img" src={plus_icon.src} />
+												<img className="img" src={plus_icon.src} alt="icon" />
 											</div>
 											<div className={`${styles.desc_box}`}>
 												<div className={`${styles.desc_title}`}>
 													<h3 className="text_24 text_700">
 														{item.attributes.ReaderHeadline}
 													</h3>
-													<img className="img" src={plus_icon.src} />
+													<img className="img" src={plus_icon.src} alt="icon" />
 												</div>
 												<p className="paraTxt">{item.attributes.ReaderDescription}</p>
 											</div>
@@ -297,10 +297,12 @@ export default function DebitCardSystem({
 											<img
 												className={`${styles.video_img} border_20 img hidden-xs`}
 												src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${FutureData.data.attributes.FutureThumbnail.data.attributes.url}`}
+												alt="video img"
 											/>
 											<img
 												className={`${styles.video_img_mobile} border_20 img visible-xs`}
 												src={video_img_mobile.src}
+												alt="video img"
 											/>
 											<div className={`${styles.video_play}`}>
 												<img
