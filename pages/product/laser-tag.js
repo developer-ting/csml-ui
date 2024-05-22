@@ -11,6 +11,7 @@ import Loader from "@/components/Loader";
 import BlackStripOverview from "@/components/BlackStripOverview";
 import TextImgBox from "@/components/TextImgBox";
 import { ServerHeaders } from "@/utils/RequestHeaders";
+import LaserTagTestimonial from "@/components/LaserTagTestimonial";
 
 // SECTIONS //
 
@@ -39,7 +40,7 @@ import plus_icon from "../../public/img/plus_icon.svg";
 import closeIcn from "../../public/img/close.svg";
 
 /** Softplay Page */
-export default function LaserTag({ LaserTagData }) {
+export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 	console.log(LaserTagData);
 	var settings = {
 		dots: false,
@@ -339,6 +340,8 @@ export default function LaserTag({ LaserTagData }) {
 					</div>
 				</section>
 
+				<LaserTagTestimonial TestimonialsData={LaserTagTestimonialsData.data} />
+
 				{showPopup && (
 					<div className={styles.popup_overlay}>
 						<div className={styles.popup_content}>
@@ -382,9 +385,17 @@ export async function getStaticProps() {
 	);
 	const LaserTagData = await LaserTagRes.json();
 
+	// home enthralled sliders
+	const LaserTagTestimonials = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/laser-tag-testimonials?sort=order:desc&populate=*`,
+		ServerHeaders
+	);
+	const LaserTagTestimonialsData = await LaserTagTestimonials.json();
+
 	return {
 		props: {
 			LaserTagData,
+			LaserTagTestimonialsData,
 		},
 		revalidate: 10,
 	};
