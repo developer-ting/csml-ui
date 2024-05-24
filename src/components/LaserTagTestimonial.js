@@ -37,7 +37,7 @@ export default function LaserTagTestimonial({ TestimonialsData }) {
 			className={`${styles.enthralled_customers_wrap} dot_animation_box ptb_100`}
 		>
 			<div className="container">
-				<div className={`${styles.section_title} toTop`} data-scroll>
+				<div className={`${styles.section_title} toTop demo_txt`} data-scroll>
 					<h2 className="heading_text_55 color_white pb_20">Testimonials</h2>
 				</div>
 				<div className={`${styles.enthralled_main} toTop`} data-scroll>
