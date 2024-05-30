@@ -173,6 +173,9 @@ const Footer = () => {
 												</p>
 											</div>
 										</li>
+										<li>
+											<Link href="/privacy-policy">Privacy Policy</Link>
+										</li>
 									</ul>
 
 									<ul className={`${styles.footerMenuInnerItem} text_reg`}>
