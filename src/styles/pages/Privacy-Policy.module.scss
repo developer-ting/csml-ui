@@ -1,0 +1,15 @@
+@import "../helpers/helpers.scss";
+
+.PrivacyPolicy{
+  .privacy_policy_section{
+    .privacy_policy_content{
+      ul{
+        color: #fff;
+        li{
+          color: #fff;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
