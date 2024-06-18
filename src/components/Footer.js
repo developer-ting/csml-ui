@@ -287,7 +287,7 @@ const Footer = () => {
 					<div className="container">
 						<div className={`${styles.footerBtmFlex} f_w_j a_center`}>
 							<div className={`${styles.footerBtmItem}`}>
-								<p className="text_xs">Copyright © {currentYear} CSML. All Rights Reserved</p>
+								<p className="text_xs">Copyright © {currentYear} CSML GROUP. All Rights Reserved</p>
 							</div>
 							<div className={`${styles.footerBtmItem}`}>
 								<Link href="https://www.ting.in/">
