@@ -264,7 +264,7 @@ const Footer = () => {
 											</Link>
 										</li>
 										<li>
-											<Link href="https://www.youtube.com/@csmlindia8994">
+											<Link href="https://www.youtube.com/@csmlgroup8994">
 												<a target="_blank" rel="noreferrer">
 													<img src={youtube.src} alt="youtube" />
 												</a>
