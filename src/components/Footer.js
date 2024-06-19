@@ -250,14 +250,14 @@ const Footer = () => {
 											</Link>
 										</li>
 										<li>
-											<Link href="https://twitter.com/CSMLIndia">
+											<Link href="https://x.com/CsmlGroup">
 												<a target="_blank" rel="noreferrer">
 													<img src={twitter.src} alt="twitter" />
 												</a>
 											</Link>
 										</li>
 										<li>
-											<Link href="https://www.instagram.com/csmlindia/">
+											<Link href="https://www.instagram.com/csmlgroup/">
 												<a target="_blank" rel="noreferrer">
 													<img src={instagram.src} alt="instagram" />
 												</a>
