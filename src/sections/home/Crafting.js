@@ -74,7 +74,7 @@ export default function Crafting({ craftingData }) {
 							</h2>
 							<h3 className="heading_text_45 color_white pb_20 visible-xs">
 								world-class entertainment <br />
-								hubs for over 50 years
+								hubs for over 25 years
 							</h3>
 							<p className="paraTxt color_white opacity_one">
 								Since our establishment in 2002, we have cultivated an extensive
