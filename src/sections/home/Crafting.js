@@ -86,7 +86,7 @@ export default function Crafting({ craftingData }) {
 						<div className={`${styles.right_content} toRight`} data-scroll>
 							<h2 className="heading_text_45 color_white pb_60 hidden-xs">
 								world-class entertainment <br />
-								hubs for over 50 years
+								hubs for over 25 years
 							</h2>
 							<div className={`${styles.btn_height}`}>
 								<a href="/about" rel="noreferrer">
