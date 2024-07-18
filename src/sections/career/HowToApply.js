@@ -17,7 +17,7 @@ import styles from "../../styles/sections/career/HowToApply.module.scss";
 import how_to_apply from "../../../public/img/career/how_to_apply.jpg";
 
 /** Home Hero Section */
-export default function HowToApply() {
+export default function HowToApply({careerData}) {
   const [isSubmited, setIsSubmited] = useState(false);
 
   const {
@@ -26,6 +26,7 @@ export default function HowToApply() {
 		reset,
 		formState: { errors },
 	} = useForm();
+    const { attributes } = careerData.data;
 
 	const onSubmit = async (data) => {
     console.log(data);
@@ -171,37 +172,47 @@ export default function HowToApply() {
                   )}
                 </div>
                 <div className={`${styles.form_field}`}>
-                  <select {...register("Position", { required: true })}>
-                    <option value="">Choose position *</option>
-                    <option value="Accounts">Accounts</option>
-                    <option value="Sales">Sales</option>
-                    <option value="Marketing">Marketing </option>
-                    <option value="Technical">Technical </option>
-                    <option value="IT">IT </option>
-                    <option value="HR">HR </option>
-                    <option value="Administration">Administration </option>
-                    <option value="Others If Any pls specify">
-                      Others If Any pls specify
-                    </option>
-                  </select>
-                  {errors.Position && (
-                    <p className={`${styles.errors_msg}`}>This field is required</p>
-                  )}
+                  {/*<select {...register("Position", { required: true })}>*/}
+                  {/*  <option value="">Choose position *</option>*/}
+                  {/*  <option value="Accounts">Accounts</option>*/}
+                  {/*  <option value="Sales">Sales</option>*/}
+                  {/*  <option value="Marketing">Marketing </option>*/}
+                  {/*  <option value="Technical">Technical </option>*/}
+                  {/*  <option value="IT">IT </option>*/}
+                  {/*  <option value="HR">HR </option>*/}
+                  {/*  <option value="Administration">Administration </option>*/}
+                  {/*  <option value="Others If Any pls specify">*/}
+                  {/*    Others If Any pls specify*/}
+                  {/*  </option>*/}
+                  {/*</select>*/}
+                  {/*{errors.Position && (*/}
+                  {/*  <p className={`${styles.errors_msg}`}>This field is required</p>*/}
+                  {/*)}*/}
+					<input
+						className={styles.position}
+						type="text"
+						name="Position"
+						value={attributes.Title}
+						placeholder="Position"
+						{...register("Position", {
+							required: true
+						})}
+					/>
                 </div>
                 <div className={`${styles.form_field}`}>
                   <input
                     className=""
                     type="text"
                     name="EmploymentStatus"
-                    placeholder="Specify employment Status"
+                    placeholder="Notice Period"
                     {...register("EmploymentStatus", {
                       required: true,
                       maxLength: 79,
                     })}
                   />
-                  {/* {errors.EmploymentStatus && (
+                  {errors.EmploymentStatus && (
                     <p className={`${styles.errors_msg}`}>This field is required</p>
-                  )} */}
+                  )}
                 </div>
 
                 <div className={`${styles.form_field} ${styles.fileBorder}`}>
@@ -247,8 +258,7 @@ export default function HowToApply() {
                 </div>
                 {isSubmited && (
                   <p className={`${styles.thank_you} para_sm mt_20`}>
-                    Thank you for your message. Someone from our team will get back
-                    shortly!
+					  Thank you for your interest in CSML!&nbsp;&nbsp;Our team will get in touch with you shortly.
                   </p>
                 )}
               </form>

@@ -13,7 +13,7 @@ import LifeCsml from "@/sections/career/LifeCsml";
 import Loader from "@/components/Loader";
 
 // SECTIONS //
-
+import Link from "next/link";
 // PLUGINS //
 
 // STYLES //
@@ -25,9 +25,11 @@ import career_banner_mobile from "../public/img/career/career_banner_mobile.jpg"
 import OurGuidingValues from "@/sections/career/OurGuidingValues";
 import CsmlExperience from "@/sections/career/CsmlExperience";
 import HowToApply from "@/sections/career/HowToApply";
+import {ServerHeaders} from "@/utils/RequestHeaders";
+import {format} from "date-fns";
 
 /** Home Page */
-export default function Career() {
+export default function Career({ careerData }) {
 	useEffect(() => {
 		ScrollOut({
 			once: true,
@@ -47,10 +49,55 @@ export default function Career() {
 				<CareerSuccess />
 				<LifeCsml />
 				<OurGuidingValues />
-				{/* <CsmlExperience /> */}
-				<HowToApply />
+				<section className="container">
+					<h2 className={styles.title}>Job Openings</h2>
+				</section>
+				<section className={styles.details_section}>
+					<div className="container">
+						{	careerData.data.map((item,row)=>{
+							return (
+								<div className={styles.jobCard}>
+									<div className={styles.jobDetails}>
+										<h2 className={styles.jobTitle}>{item.attributes.Title}</h2>
+									</div>
+									<div className={styles.jobAction}>
+										<p className={styles.location}>Location</p>
+										<p className={styles.city}>{item.attributes.Location}</p>
+									</div>
+									<div className={styles.jobAction}>
+										<p className={styles.posted}>Posted</p>
+										<p className={styles.postedDate}>
+											{format(new Date(item.attributes.Date), "dd MMMM, yyyy")}
+										</p>
+									</div>
+									<div className={styles.jobActions}>
+										<Link href={`/details?id=${item.id}`}>
+											<button className={styles.applyNow}>Apply Now</button>
+										</Link>
+									</div>
+								</div>
+							);
+						})
+						}
+					</div>
+				</section>
 			</main>
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	const CareerRes = await fetch(
+		`${process.env.STRAPI_DO_BASE_URL}/api/job-lists?sort=Date:desc&populate=*`,
+		ServerHeaders
+	);
+	const careerData = await CareerRes.json();
+
+	return {
+		props: {
+			careerData,
+		},
+		revalidate: 10,
+	};
 }
