@@ -35,6 +35,7 @@ export default function Career({ careerData }) {
 			once: true,
 		});
 	}, []);
+	console.log(careerData)
 	return (
 		<div>
 			<Header />
@@ -59,6 +60,7 @@ export default function Career({ careerData }) {
 								<div className={styles.jobCard}>
 									<div className={styles.jobDetails}>
 										<h2 className={styles.jobTitle}>{item.attributes.Title}</h2>
+										<h4 className={styles.jobSubtitle}>{item.attributes.Subtitle}</h4>
 									</div>
 									<div className={styles.jobAction}>
 										<p className={styles.location}>Location</p>
