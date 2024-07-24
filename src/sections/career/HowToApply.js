@@ -204,7 +204,7 @@ export default function HowToApply({careerData}) {
                     className=""
                     type="text"
                     name="EmploymentStatus"
-                    placeholder="Notice Period"
+                    placeholder="Notice Period *"
                     {...register("EmploymentStatus", {
                       required: true,
                       maxLength: 79,
@@ -234,21 +234,20 @@ export default function HowToApply({careerData}) {
                   )}
                 </div>
                 
-                <div className={`${styles.form_field}`}>
-                  <textarea
-                    className=""
-                    type="text"
-                    name="remarks"
-                    placeholder="Remarks, If Any "
-                    {...register("Remarks", {
-                      required: true,
-                      maxLength: 79,
-                    })}
-                  />
-                  {/* {errors.Remarks && (
-                    <p className={`${styles.errors_msg}`}>This field is required</p>
-                  )} */}
-                </div>
+                {/*<div className={`${styles.form_field}`}>*/}
+                {/*  <textarea*/}
+                {/*    className=""*/}
+                {/*    type="text"*/}
+                {/*    name="remarks"*/}
+                {/*    placeholder="Remarks, If Any "*/}
+                {/*    {...register("Remarks", {*/}
+                {/*      maxLength: 79,*/}
+                {/*    })}*/}
+                {/*  />*/}
+                {/*   {errors.Remarks && (*/}
+                {/*    <p className={`${styles.errors_msg}`}>Only 80 Characters are allowed</p>*/}
+                {/*  )}*/}
+                {/*</div>*/}
                 <div className={`${styles.btn_box}`}>
                   <a href="#" rel="noreferrer">
                     <span className="span_btn white_btn">
