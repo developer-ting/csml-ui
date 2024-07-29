@@ -65,7 +65,6 @@ export default function HowToApply({careerData}) {
 		}
 
 		const fileId = await sendMedia();
-    console.log(fileId);
 
 		const Headers = {
 			method: "POST",
@@ -84,7 +83,17 @@ export default function HowToApply({careerData}) {
 				Headers
 			)
 				.then((data) => data.json())
-				.then((data) => {
+				.then(async (data) => {
+
+					// Send email
+					await fetch('/api/send-email', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json',
+						},
+						body: JSON.stringify({ formData: data,image:fileId }), // Send form data for the email
+					});
+
 					console.log("success"), reset(), setIsSubmited(true);
 				})
 				.catch((err) => console.log(err));

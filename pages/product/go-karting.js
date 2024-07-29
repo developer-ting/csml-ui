@@ -301,6 +301,26 @@ export default function GoKarting({ kartsTagData }) {
 								<img className="img border_8" src={sodikart.src} alt="sodikart" />
 							</div>
 						</div>
+						<div className={`${styles.brochure_box} pb_100 toTop`} data-scroll>
+							<div className={`${styles.contactinside}`}>
+								<div className={`${styles.inside_flex}`}>
+									<div className={`${styles.text_bx} paraTxt`}>
+										Click on Brochure button to know more.
+									</div>
+									<div className={`${styles.btn_bx}`}>
+										<a
+											href={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}/uploads/CSML_BROCHURE_SODI.pdf`}
+											target="_blank"
+											rel="noreferrer"
+										>
+											<span className="span_btn yellow_btn">
+												<button className="btn_project_default ">Download Brochure</button>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					{/* <ContactForm /> */}
 				</section>
