@@ -18,7 +18,7 @@ async function fetchFileFromStrapi(fileId) {
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { formData,fileId } = req.body;
-        const file = await fetchFileFromStrapi(1203);
+        const file = await fetchFileFromStrapi(fileId);
         console.log(file)
 
         const transporter = nodemailer.createTransport({
@@ -34,7 +34,7 @@ export default async function handler(req, res) {
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: 'surajkumar@metaagrow.com',
+            to: 'hr@csmlindia.com',
             subject: `Job Application - ${formData.data.attributes.Name} - ${formData.data.attributes.Position}`,
             html: `
             <!DOCTYPE html>
