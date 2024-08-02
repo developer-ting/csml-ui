@@ -17,15 +17,14 @@ async function fetchFileFromStrapi(fileId) {
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { formData,fileId } = req.body;
-        const file = await fetchFileFromStrapi(fileId);
+        const { formData,image } = req.body;
+        const file = await fetchFileFromStrapi(image);
         console.log(file)
 
         const transporter = nodemailer.createTransport({
-            service: 'metaagrow', // or your email service provider
-            host: 'mail.metaagrow.com',
-            port: 465, // or 465 for SSL
-            secure: true, // true for 465, false for other ports
+            host: 'smtp.gmail.com',
+            port: 587, // or 465 for SSL
+            secure: false, // true for 465, false for other ports
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS,
@@ -33,7 +32,10 @@ export default async function handler(req, res) {
         });
 
         const mailOptions = {
-            from: process.env.EMAIL_USER,
+            from: {
+                name: 'CSML Group', // The name you want to display
+                address: "alert@csmlindia.com", // The email address from environment variable
+            },
             to: 'hr@csmlindia.com',
             subject: `Job Application - ${formData.data.attributes.Name} - ${formData.data.attributes.Position}`,
             html: `
@@ -134,8 +136,8 @@ export default async function handler(req, res) {
         };
 
         try {
-            await transporter.sendMail(mailOptions);
-            res.status(200).json({ message: formData });
+            let mailData = await transporter.sendMail(mailOptions);
+            res.status(200).json({ message: mailData });
         } catch (error) {
             res.status(500).json({ error: error });
         }
