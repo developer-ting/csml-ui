@@ -61,7 +61,7 @@ import pick_party from "../../public/img/product/intercard/shindigger/pick_party
 import select_a_time from "../../public/img/product/intercard/shindigger/select_a_time.gif";
 
 //brunswick-bowling page Center Stage Furniture Images Import
-import centerImg from "../../public/img/brunswick-bowling/center.jpg";
+import centerImg from "../../public/img/brunswick-bowling/center.png";
 
 // goKarting page data
 const Data = [

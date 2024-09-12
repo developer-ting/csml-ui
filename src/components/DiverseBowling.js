@@ -21,7 +21,7 @@ import styles from "../styles/components/DiverseBowling.module.scss";
 
 // IMAGES //
 import diverse_img from "../../public/img/brunswick-bowling/diverse_img.jpg";
-import duckpin_social from "../../public/img/brunswick-bowling/duckpin_social.jpg";
+import duckpin_social from "../../public/img/brunswick-bowling/duckpin_social.png";
 import download from "../../public/img/download.svg";
 
 /** Home Hero Section */
