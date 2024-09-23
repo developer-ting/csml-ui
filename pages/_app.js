@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }) {
 					property="og:image:secure_url"
 					content="https://csml-frontend.netlify.app/img/og-image.jpg"
 				/>
+				<meta http-equiv="revisit-after" content="3 days"/>
 				<link rel="icon" href="/img/favicon.png" />
 			</Head>
 			<Script
