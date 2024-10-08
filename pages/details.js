@@ -21,6 +21,7 @@ import career_banner_mobile from "../public/img/career/career_banner_mobile.jpg"
 import {ServerHeaders} from "@/utils/RequestHeaders";
 import HowToApply from "@/sections/career/HowToApply";
 import parse from "html-react-parser";
+import Head from "next/head";
 
 
 /** Home Page */
@@ -31,6 +32,25 @@ export default function Details({ careerData }) {
     const details = careerData?.data.attributes.Description || '';
     return (
         <div>
+            <Head>
+                <title>Explore Exciting Career Opportunities with CSML Group</title>
+                <meta name="description" content="Discover how a career with CSML can shape your future. Unlock your potential and thrive in a dynamic tech environment!" />
+                <meta name="og:title" content="Explore Exciting Career Opportunities with CSML Group" />
+                <meta name="og:description" content="Discover how a career with CSML can shape your future. Unlock your potential and thrive in a dynamic tech environment!" />
+                <meta name="keywords" content="Career Opportunity, Career with CSML, Career"/>
+                <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+                <meta
+                    property="og:image"
+                    content="https://csml-frontend.netlify.app/img/og-image.jpg"
+                />
+                <meta
+                    property="og:image:secure_url"
+                    content="https://csml-frontend.netlify.app/img/og-image.jpg"
+                />
+                <meta httpEquiv="revisit-after" content="3 days"/>
+                <link rel="icon" href="/img/favicon.png" />
+                <link rel="canonical" href="https://csmlgroup.com/career"/>
+            </Head>
             <Header />
             <Loader />
             <main className={`${styles.career_page}`}>

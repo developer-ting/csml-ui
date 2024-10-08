@@ -194,6 +194,25 @@ export default function GoKarting({ kartsTagData }) {
 
 	return (
 		<div>
+			<Head>
+				<title>Premium Go-Karting (SODIKART) Distributor in India | CSML Group</title>
+				<meta name="description" content="Discover top-quality SODIKART go-karts from CSML, the leading distributor in India. Get expert advice, support, and the best models for your track!" />
+				<meta name="og:title" content="Premium Go-Karting (SODIKART) Distributor in India | CSML Group" />
+				<meta name="og:description" content="Discover top-quality SODIKART go-karts from CSML, the leading distributor in India. Get expert advice, support, and the best models for your track!" />
+				<meta name="keywords" content="Go-Karting Distributor, Go-Karting Distributor in India, SODIKART Distributor in India, SODIKART Distributor, Go-Karting (SODIKART) Distributor in India, Go-Karting (SODIKART) Distributor."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/product/go-karting"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.GoKartingPage}`}>

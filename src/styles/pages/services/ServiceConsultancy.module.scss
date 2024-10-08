@@ -39,6 +39,40 @@
 			}
 		}
 	}
+	.service_sec2 {
+		.service_flex {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@media (max-width: 991px) {
+				flex-direction: column;
+				gap: 30px;
+			}
+			.info_bx {
+				width: 50%;
+				@media (max-width: 991px) {
+					width: 100%;
+				}
+				@media only screen and (max-width: 767px) {
+					text-align: center;
+				}
+				.info_para {
+					line-height: 1.8;
+				}
+			}
+			.img_bx {
+				width: 42%;
+				@media (max-width: 991px) {
+					width: 100%;
+				}
+				img {
+					//@media (max-width: 991px) {
+						width: 100%;
+					//}
+				}
+			}
+		}
+	}
 	.service_tabsec {
 		background-color: var(--color_white);
 		h2{
@@ -151,8 +185,9 @@
 	.for_item_full {
 		margin-left: calc(var(--container_left_space) + 15px);
 		.slide_item {
-			p {
+			h3 {
 				font-size: 20px;
+				font-weight: 400;
 				line-height: 1.3;
 				color: var(--color_5);
 				background: transparent;
@@ -184,7 +219,7 @@
 	}
 	:global(.slick-current) {
 		.slide_item {
-			p {
+			h3 {
 				font-weight: 700;
 				background-color: #f8ed11;
 			}

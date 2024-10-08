@@ -46,6 +46,25 @@ export default function Home({
 	//console.log(ClientLogosData, "pramod");
 	return (
 		<div>
+			<Head>
+				<title>Exclusive Brunswick Bowling Distributor | CSML GROUP</title>
+				<meta name="description" content="Discover CSML GROUP, the exclusive distributor of Brunswick bowling products. Providing high-quality bowling equipment and solutions for your business needs." />
+				<meta name="og:title" content="Exclusive Brunswick Bowling Distributor | CSML GROUP" />
+				<meta name="og:description" content="Discover CSML GROUP, the exclusive distributor of Brunswick bowling products. Providing high-quality bowling equipment and solutions for your business needs." />
+				<meta name="keywords" content="Brunswick Bowling, Brunswick Bowling Distributor, Brunswick Bowling Distributor in India, Brunswick Distributor in India, Brunswick Bowling Distributor Company, The Architects of Amusement, Brunswick Bowling Product Provider, High- Quality Bowling Equipment Distributor in India, Brunswick Bowling Equipment Provider in India, Brunswick Bowling Equipment Distributor in India"/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.index_page}`}>

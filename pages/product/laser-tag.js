@@ -112,6 +112,25 @@ export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 	}, []);
 	return (
 		<div>
+			<Head>
+				<title>Find the Best Laser Tag Equipment Distributor in India | CSML Group</title>
+				<meta name="description" content="Looking for best laser tag equipment in India? CSML offers reliable, high-quality gear for your entertainment centers. Discover our range today!" />
+				<meta name="og:title" content="Find the Best Laser Tag Equipment Distributor in India | CSML Group" />
+				<meta name="og:description" content="Looking for best laser tag equipment in India? CSML offers reliable, high-quality gear for your entertainment centers. Discover our range today!" />
+				<meta name="keywords" content="Best Laser Tag Equipment, Best Laser Tag Equipment in India, Best Laser Tag Equipment Distributor in India, Laser Tag Equipment Distributor in India, Laser Tag Equipment, Laser Tag Equipment for Entertainment Centers"/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/product/laser-tag"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.LaserTagMain}`}>

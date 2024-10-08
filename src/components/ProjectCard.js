@@ -85,7 +85,7 @@ const ProjectCard = (data) => {
 								key={index}
 								index={index}
 								title={item.attributes.productTitle}
-								ProductImg={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.attributes.imageUrl.data.attributes.url}`}
+								ProductImg={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item?.attributes?.imageUrl?.data?.attributes?.url || ''}`}
 							/>
 						))}
 					</div>

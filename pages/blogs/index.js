@@ -35,6 +35,25 @@ export default function Blog({ BlogData }) {
 	}, []);
 	return (
 		<div>
+			<Head>
+				<title>Discover Insights and Updates on Our Blogs | CSML Group</title>
+				<meta name="description" content="Dive into our blogs for valuable insights on Family Entertainment Centers. Stay informed and inspired with the latest from CSML." />
+				<meta name="og:title" content="Discover Insights and Updates on Our Blogs | CSML Group" />
+				<meta name="og:description" content="Dive into our blogs for valuable insights on Family Entertainment Centers. Stay informed and inspired with the latest from CSML." />
+				<meta name="keywords" content="Insights & Updates on Bowling Centers, Insight & Updates on Family Entertainment Centers, Operations & Management of FEC & Bowling Arena"/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/blogs"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.BlogPage}`}>

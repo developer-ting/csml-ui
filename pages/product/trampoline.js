@@ -31,6 +31,25 @@ import rightBoxImg from "../../public/img/product/trampoline/rightBoxImg.jpg";
 export default function Trampoline() {
 	return (
 		<div>
+			<Head>
+				<title>Top Trampoline Distributor in India – CSML Group</title>
+				<meta name="description" content="CSML is a trusted trampoline distributor in India, supplying durable and high-quality trampolines for Family Entertainment Centers (FEC). Explore our wide range with nationwide delivery and excellent customer service." />
+				<meta name="og:title" content="Top Trampoline Distributor in India – CSML Group" />
+				<meta name="og:description" content="CSML is a trusted trampoline distributor in India, supplying durable and high-quality trampolines for Family Entertainment Centers (FEC). Explore our wide range with nationwide delivery and excellent customer service." />
+				<meta name="keywords" content="Trampoline, Trampoline Distributor, Trampoline Distributor in India, Trampoline for Family Entertainment Centers, Trampoline for Theme Park, Trampoline for Adventure Parks"/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/product/trampoline"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.TrampolineMain}`}>

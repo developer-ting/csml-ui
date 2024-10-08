@@ -84,6 +84,25 @@ export default function AmusementGames({ GamesCategoriesData }) {
 
 	return (
 		<div>
+			<Head>
+				<title>Arcade Games Distributor in India | CSML Group</title>
+				<meta name="description" content="Discover CSML, India's top arcade games distributor, offering a wide range of exciting and interactive arcade machines for gaming zones, malls, and entertainment centers across the country." />
+				<meta name="og:title" content="Arcade Games Distributor in India | CSML Group" />
+				<meta name="og:description" content="Discover CSML, India's top arcade games distributor, offering a wide range of exciting and interactive arcade machines for gaming zones, malls, and entertainment centers across the country." />
+				<meta name="keywords" content="Arcade Games, Arcade Games Distributor in India, Arcade Games Distributor, Arcade Games Provider in India."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/product/arcade-games"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.AmusementGamesPage}`}>

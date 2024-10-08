@@ -68,6 +68,25 @@ export default function Contact() {
 	}, []);
 	return (
 		<div>
+			<Head>
+				<title>Contact CSML: Your Trusted Bowling Equipment Distributor</title>
+				<meta name="description" content="Get in touch with CSML for top-notch FEC and bowling equipment. We're here to help you with your distribution needs and inquiries." />
+				<meta name="og:title" content="Contact CSML: Your Trusted Bowling Equipment Distributor" />
+				<meta name="og:description" content="Get in touch with CSML for top-notch FEC and bowling equipment. We're here to help you with your distribution needs and inquiries." />
+				<meta name="keywords" content="Bowling Equipment Distributor, FEC Equipment Distributor, Operations & Management of FEC & Bowling."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/contact"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.ContactPage}`}>
