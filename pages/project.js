@@ -23,6 +23,25 @@ import project_banner_mobile from "../public/img/project/project_banner_mobile.j
 export default function Project({ projectsData }) {
 	return (
 		<div>
+			<Head>
+				<title>Explore Our Diverse Projects | CSML Group</title>
+				<meta name="description" content="Discover the variety of innovative projects at CSML. From FEC to Go Karting, see how we make an impact across multiple game zones!" />
+				<meta name="og:title" content="Explore Our Diverse Projects | CSML Group" />
+				<meta name="og:description" content="Discover the variety of innovative projects at CSML. From FEC to Go Karting, see how we make an impact across multiple game zones!" />
+				<meta name="keywords" content="FEC, Family Entertainment Centers, Go Karting, Bowl & Bar, Family Entertainment Centers Projects, Go Karting Projects, Bowling Projects, Bowling & Bar Projects"/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/project"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.ServicesConsultancyPage}`}>

@@ -141,6 +141,25 @@ export default function DebitCardSystem({
 
 	return (
 		<div>
+			<Head>
+				<title>Trusted Intercard System Distributor in India | CSML Group</title>
+				<meta name="description" content="Discover the top Intercard system distributor in India. CSML offers reliable and efficient payment solutions for FEC. Contact us today!" />
+				<meta name="og:title" content="Trusted Intercard System Distributor in India | CSML Group" />
+				<meta name="og:description" content="Discover the top Intercard system distributor in India. CSML offers reliable and efficient payment solutions for FEC. Contact us today!" />
+				<meta name="keywords" content="Intercard System, Intercard System Distributor in India, Intercard Seamless Payment, Intercard Payment Solutions."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/product/intercard/debit-card-system"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.debit_card_main}`}>

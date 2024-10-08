@@ -57,6 +57,25 @@ export default function NewReleases({ GamesData }) {
 
 	return (
 		<div>
+			<Head>
+				<title>Discover Fresh Arrivals for Game Zone & Family Entertainment Centers | CSML Group</title>
+				<meta name="description" content="Explore exciting new arrivals for Game Zone and Family Entertainment Centers by CSML. Dive into the latest adventures and thrilling gaming experiences today!" />
+				<meta name="og:title" content="Discover Fresh Arrivals for Game Zone & Family Entertainment Centers | CSML Group" />
+				<meta name="og:description" content="Explore exciting new arrivals for Game Zone and Family Entertainment Centers by CSML. Dive into the latest adventures and thrilling gaming experiences today!" />
+				<meta name="keywords" content="Fresh Arrival for Game Zone, New Arrival at Game Zone, Fresh Arrival at Family Entertainment Centers, New Arrival at Family Entertainment Center, New Game Arrival."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/new-releases"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.NewReleasesPage}`}>

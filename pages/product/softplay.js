@@ -31,6 +31,25 @@ import rightBoxImg from "../../public/img/product/trampoline/rightBoxImg.jpg";
 export default function Softplay() {
 	return (
 		<div>
+			<Head>
+				<title>Creating Soft Play Arenas for Safe Family Fun | CSML Group</title>
+				<meta name="description" content="Learn how CSML creates soft play arenas that ensure a safe, fun-filled space for children to explore and play, perfect for family entertainment center & theme parks." />
+				<meta name="og:title" content="Creating Soft Play Arenas for Safe Family Fun | CSML Group" />
+				<meta name="og:description" content="Learn how CSML creates soft play arenas that ensure a safe, fun-filled space for children to explore and play, perfect for family entertainment center & theme parks." />
+				<meta name="keywords" content="Creating Soft Play Arenas, Creating Soft Play Arenas for Family Fun, Soft Play Provider in India, Soft Play Arenas for Theme Parks."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/product/softplay"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.SoftplayMain}`}>

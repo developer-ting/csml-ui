@@ -25,6 +25,7 @@ import styles from "../../src/styles/pages/services/ServiceConsultancy.module.sc
 import consultancy_banner from "../../public/img/services_consultancy/consultancy_banner.jpg";
 import consultancy_banner_mobile from "../../public/img/services_consultancy/consultancy_banner_mobile.jpg";
 import Sec1_img from "../../public/img/services_consultancy/consultancy_img.jpg";
+import Sec2_img from "../../public/img/services_consultancy/Picture1.jpg";
 import Tabs_img1 from "../../public/img/services_consultancy/tab_img1.jpg";
 import Tabs_img2 from "../../public/img/services_consultancy/tab_img2.jpg";
 import Tabs_img3 from "../../public/img/services_consultancy/tab_img3.jpg";
@@ -124,6 +125,25 @@ export default function ServiceConsultancy() {
 	};
 	return (
 		<div>
+			<Head>
+				<title>Expert Operations Management Consultant for Family Entertainment | CSML Group</title>
+				<meta name="description" content="Boost efficiency at your family entertainment center with expert operations management consultancy services by CSML. Streamline processes today!" />
+				<meta name="og:title" content="Expert Operations Management Consultant for Family Entertainment | CSML Group" />
+				<meta name="og:description" content="Boost efficiency at your family entertainment center with expert operations management consultancy services by CSML. Streamline processes today!" />
+				<meta name="keywords" content="Operations Management Consultant, Operations Management Consultancy, Logistics Management, Business Consultant for Family Entertainment Centers."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/services/service-consultancy"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.ServicesConsultancyPage}`}>
@@ -132,6 +152,25 @@ export default function ServiceConsultancy() {
 					bannerImg={consultancy_banner.src}
 					mobileImg={consultancy_banner_mobile.src}
 				/>
+				<section className={`${styles.service_sec2}`}>
+					<div className="container">
+						<div className={`${styles.service_flex} ptb_80`}>
+							<div className={`${styles.img_bx} toTop`} data-scroll>
+								<img className="img b_r_7" src={Sec2_img.src} alt="Operations Management Consultant for Family Entertainment" />
+							</div>
+							<div className={`${styles.info_bx} toTop`} data-scroll>
+								<h1 className={`${styles.info_head1} heading_text_55 pb_30 `}>
+									Operations Management Consultant for Family Entertainment
+								</h1>
+								<p className={`${styles.info_para1} paraTxt_18 text_400 opacity_one`}>
+									CSML provides expert Operations Management Consulting services tailored for the Family Entertainment Centers. As a leading Business Consultant, we specialize in optimizing operations, improving efficiency, and enhancing customer experiences. Our team excels in Logistics Management, ensuring smooth coordination of supply chains and resources. As your dedicated Operations Consultant, we streamline processes to reduce costs and increase profitability. Our comprehensive Consulting Services focus on aligning your business strategy with operational goals to drive growth and success. With CSML, you gain a partner committed to transforming your entertainment business into a well-oiled, customer-focused operation.
+								</p>
+							</div>
+						</div>
+					</div>
+					{/* <ContactForm /> */}
+				</section>
+
 				<section className={`${styles.service_sec1} dot_animation_box`}>
 					<div className="container">
 						<div className={`${styles.service_flex} ptb_80`}>
@@ -171,28 +210,28 @@ export default function ServiceConsultancy() {
 							variableWidth={true}
 						>
 							<div className={`${styles.slide_item} cmnBtn`}>
-								<p>Turning Vision into Reality</p>
+								<h3>Turning Vision into Reality</h3>
 							</div>
 							<div className={`${styles.slide_item} cmnBtn`}>
-								<p>Planning and Layout Design</p>
+								<h3>Planning and Layout Design</h3>
 							</div>
 							<div className={`${styles.slide_item} cmnBtn`}>
-								<p>Suggestive Game Mix</p>
+								<h3>Suggestive Game Mix</h3>
 							</div>
 							<div className={`${styles.slide_item} cmnBtn`}>
-								<p>Exclusive Distribution</p>
+								<h3>Exclusive Distribution</h3>
 							</div>
 							<div className={`${styles.slide_item} cmnBtn`}>
-								<p>Tailored Amusement Equipment Selection</p>
+								<h3>Tailored Amusement Equipment Selection</h3>
 							</div>
 							<div className={`${styles.slide_item} cmnBtn`}>
-								<p>Logistics & Import</p>
+								<h3>Logistics & Import</h3>
 							</div>
 							<div className={`${styles.slide_item} cmnBtn`}>
-								<p>Installation & Training</p>
+								<h3>Installation & Training</h3>
 							</div>
 							<div className={`${styles.slide_item}`} onClick={handleClick}>
-								<p>Pre & Post Operation Support Services</p>
+								<h3>Pre & Post Operation Support Services</h3>
 							</div>
 						</Slider>
 					</div>

@@ -42,4 +42,36 @@
       }
     }
   }
+  .service_sec2{
+    .service_flex{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 30px;
+      }
+      .info_bx{
+        width: 50%;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        @media only screen and (max-width: 767px) {
+					text-align: center;
+				}
+      }
+      .img_bx{
+        width: 42%;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        img{
+
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

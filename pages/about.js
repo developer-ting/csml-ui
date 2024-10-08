@@ -34,6 +34,25 @@ export default function About() {
 	}, []);
 	return (
 		<div>
+			<Head>
+				<title>Leading Brunswick Bowling Distributor & Arcade Game Provider in India | CSML Group</title>
+				<meta name="description" content="Discover CSML Group, the top distributor of Brunswick bowling equipment and a premier provider of arcade games in India. Elevate your entertainment spaces with our high-quality products and expert service." />
+				<meta name="og:title" content="Leading Brunswick Bowling Distributor & Arcade Game Provider in India | CSML Group" />
+				<meta name="og:description" content="Discover CSML Group, the top distributor of Brunswick bowling equipment and a premier provider of arcade games in India. Elevate your entertainment spaces with our high-quality products and expert service." />
+				<meta name="keywords" content="Brunswick Bowling Distributor in India, Arcade Game Provider in India, Arcade Games Machine Provider, Arcade Games Machine Provider in India, Amusement Games Provider, Adventure Games Provider, Adventure Games Provider in India."/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/about"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.about_page}`}>

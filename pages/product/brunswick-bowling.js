@@ -50,6 +50,25 @@ export default function BrunswickBowling({
 }) {
 	return (
 		<div>
+			<Head>
+				<title>Leading Distributor of Brunswick Bowling Equipment in India | CSML Group</title>
+				<meta name="description" content="Discover CSML Group, the top distributor of Brunswick Bowling equipment in India, offering a wide range of high-quality bowling products and services for alleys and recreational centers across the country." />
+				<meta name="og:title" content="Leading Distributor of Brunswick Bowling Equipment in India | CSML Group" />
+				<meta name="og:description" content="Discover CSML Group, the top distributor of Brunswick Bowling equipment in India, offering a wide range of high-quality bowling products and services for alleys and recreational centers across the country." />
+				<meta name="keywords" content="Brunswick Bowling, Brunswick Bowling Distributor in India, Brunswick Bowling Equipment. Brunswick Bowling Equipment Distributor in India, Brunswick Bowling Alley, Brunswick Bowling Equipment in India, Duckpin Bowling, Duckpin Bowling Distributor in India, Bowling Lanes, Pinsetter Equipment, Bowling Lane Accessories "/>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+				<meta
+					property="og:image"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta
+					property="og:image:secure_url"
+					content="https://csml-frontend.netlify.app/img/og-image.jpg"
+				/>
+				<meta httpEquiv="revisit-after" content="3 days"/>
+				<link rel="icon" href="/img/favicon.png" />
+				<link rel="canonical" href="https://csmlgroup.com/product/brunswick-bowling"/>
+			</Head>
 			<Header />
 			<Loader />
 			<main className={`${styles.GoKartingPage}`}>
