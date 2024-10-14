@@ -22,8 +22,8 @@ import Loader from "@/components/Loader";
 import styles from "../src/styles/pages/About.module.scss";
 
 //	IMAGES	//
-import about_banner from "../public/img/about/about_banner.jpg";
-import about_banner_mobile from "../public/img/about/about_banner_mobile.jpg";
+import about_banner from "../public/img/about/about_banner1.jpg";
+import about_banner_mobile from "../public/img/about/about_banner1.jpg";
 
 /** Home Page */
 export default function About() {
