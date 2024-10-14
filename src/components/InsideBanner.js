@@ -31,11 +31,11 @@ const InsideBanner = ({ bannerImg, bannerTitle, mobileImg }) => {
 				)}
 			</div>
 			<div className={`${styles.banner_content}`}>
-				<h2 className="text_xxl color_white">
+				<h1 className="text_xxl color_white">
 					{/* Experience Unforgettable <br />
 					Adventures with Us{" "} */}
 					{parse(bannerTitle)}
-				</h2>
+				</h1>
 			</div>
 		</section>
 	);
