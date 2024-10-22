@@ -16,8 +16,8 @@ import { ServerHeaders } from "@/utils/RequestHeaders";
 import styles from "../src/styles/pages/project.module.scss";
 
 //	IMAGES	//
-import project_banner from "../public/img/project/project_banner.jpg";
-import project_banner_mobile from "../public/img/project/project_banner_mobile.jpg"; 
+import project_banner from "../public/img/project/Picture4.jpg";
+import project_banner_mobile from "../public/img/project/Picture4.jpg";
 
 /** Services Page */
 export default function Project({ projectsData }) {
@@ -49,6 +49,8 @@ export default function Project({ projectsData }) {
 					bannerTitle="Journey Through Our <br className='hidden-xs'>Diverse Projects"
 					bannerImg={project_banner.src}
 					mobileImg={project_banner_mobile.src}
+					alt1="Projects"
+					alt2="Projects"
 				/>
 				<ProjectCard data={projectsData} />
 			</main>

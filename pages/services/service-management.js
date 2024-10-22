@@ -66,12 +66,12 @@ export default function ServiceManagement() {
 								<img className="img b_r_7" src={Sec2_img.src} alt="Management Contract for Family Entertainment Centers" />
 							</div>
 							<div className={`${styles.info_bx}`}>
-								<h1
+								<h2
 									className={`${styles.info_head} heading_text_55 pb_30 toTop`}
 									data-scroll
 								>
 									Management Contract for Family Entertainment Centers
-								</h1>
+								</h2>
 								<div className={`${styles.info_para} toTop`} data-scroll>
 									<p className="paraTxt_18 text_400 opacity_one">
 										Experience operational excellence with our tailored Management Contract for Family Entertainment Centers (FECs. Our expert team handles day-to-day operations, from technical management to enhancing customer experiences, ensuring a thriving center.

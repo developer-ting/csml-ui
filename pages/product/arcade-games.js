@@ -18,8 +18,8 @@ import parse from "html-react-parser";
 import styles from "../../src/styles/pages/product/AmusementGames.module.scss";
 
 //	IMAGES	//
-import amusement_gamebanner from "../../public/img/product/amusement-games/amusement_gamebanner.jpg";
-import amusement_gamebanner_mobile from "../../public/img/product/amusement-games/amusement_gamebanner_mobile.jpg";
+import amusement_gamebanner from "../../public/img/product/amusement-games/Picture1.jpg";
+import amusement_gamebanner_mobile from "../../public/img/product/amusement-games/Picture1.jpg";
 import productImg from "../../public/img/product/amusement-games/product-img.png";
 import plus_icon from "../../public/img/plus_icon.svg";
 import closeIcn from "../../public/img/close.svg";
