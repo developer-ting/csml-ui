@@ -159,9 +159,9 @@ export default function ServiceConsultancy() {
 								<img className="img b_r_7" src={Sec2_img.src} alt="Operations Management Consultant for Family Entertainment" />
 							</div>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h1 className={`${styles.info_head1} heading_text_55 pb_30 `}>
+								<h2 className={`${styles.info_head1} heading_text_55 pb_30 `}>
 									Operations Management Consultant for Family Entertainment
-								</h1>
+								</h2>
 								<p className={`${styles.info_para1} paraTxt_18 text_400 opacity_one`}>
 									CSML provides expert Operations Management Consulting services tailored for the Family Entertainment Centers. As a leading Business Consultant, we specialize in optimizing operations, improving efficiency, and enhancing customer experiences. Our team excels in Logistics Management, ensuring smooth coordination of supply chains and resources. As your dedicated Operations Consultant, we streamline processes to reduce costs and increase profitability. Our comprehensive Consulting Services focus on aligning your business strategy with operational goals to drive growth and success. With CSML, you gain a partner committed to transforming your entertainment business into a well-oiled, customer-focused operation.
 								</p>

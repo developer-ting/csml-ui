@@ -27,8 +27,8 @@ import styles from "../../src/styles/pages/product/GoKarting.module.scss";
 
 //	IMAGES	//
 import closeIcn from "../../public/img/close.svg";
-import banner from "../../public/img/product/go-karting/go-karting-banner.jpg";
-import go_karting_banner_mobile from "../../public/img/product/go-karting/go-karting-banner_mobile.jpg";
+import banner from "../../public/img/product/go-karting/Picture2.jpg";
+import go_karting_banner_mobile from "../../public/img/product/go-karting/Picture2.jpg";
 import entertainmentCenterImg1 from "../../public/img/product/go-karting/entertainment-center-img1.jpg";
 import entertainmentCenterImg2 from "../../public/img/product/go-karting/entertainment-center-img2.jpg";
 import entertainmentCenterImg3 from "../../public/img/product/go-karting/entertainment-center-img3.jpg";
@@ -220,6 +220,8 @@ export default function GoKarting({ kartsTagData }) {
 					bannerTitle="Get Racing With <br className='hidden-xs'>Go-Karting"
 					bannerImg={banner.src}
 					mobileImg={go_karting_banner_mobile.src}
+					alt1="Go- Karting"
+					alt2="Go- Karting"
 				/>
 
 				<section

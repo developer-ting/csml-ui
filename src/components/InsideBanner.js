@@ -15,7 +15,7 @@ import home_banner from "../../public/img/home/home_banner.jpg";
 import cricle_arrow from "../../public/img/cricle_arrow.svg";
 
 /** Home Hero Section */
-const InsideBanner = ({ bannerImg, bannerTitle, mobileImg }) => {
+const InsideBanner = ({ bannerImg, bannerTitle, mobileImg,alt1="banner img",alt2="mobile banner" }) => {
 	// const parse = require("html-react-parser");
 	return (
 		<section className={styles.home_banner_wrap}>
@@ -23,11 +23,11 @@ const InsideBanner = ({ bannerImg, bannerTitle, mobileImg }) => {
 				{/* <img className="width_100" src={bannerImg} /> */}
 				<img
 					src={bannerImg}
-					alt="banner img"
+					alt={alt1}
 					className={`${styles.inside_banner_img} hidden-xs`}
 				/>
 				{mobileImg && (
-					<img src={mobileImg} alt="mobile banner" className={`${styles.mobileImg} visible-xs`} />
+					<img src={mobileImg} alt={alt2} className={`${styles.mobileImg} visible-xs`} />
 				)}
 			</div>
 			<div className={`${styles.banner_content}`}>

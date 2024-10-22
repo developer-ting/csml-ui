@@ -17,8 +17,8 @@ import parse from "html-react-parser";
 import styles from "../src/styles/pages/NewReleases.module.scss";
 
 //	IMAGES	//
-import new_releases_banner from "../public/img/new-releases/new_releases_banner.jpg";
-import new_releases_banner_mobile from "../public/img/new-releases/new_releases_banner_mobile.jpg";
+import new_releases_banner from "../public/img/new-releases/Picture3.jpg";
+import new_releases_banner_mobile from "../public/img/new-releases/Picture3.jpg";
 import productImg from "../public/img/new-releases/product-img.png";
 import plus_icon from "../public/img/plus_icon.svg";
 import closeIcn from "../public/img/close.svg";
@@ -83,6 +83,8 @@ export default function NewReleases({ GamesData }) {
 					bannerTitle="Discover Fresh Adventures With <br/> Our New Releases"
 					bannerImg={new_releases_banner.src}
 					mobileImg={new_releases_banner_mobile.src}
+					alt1="New Release Arcade Games"
+					alt2="New Release Arcade Games"
 				/>
 
 				<section

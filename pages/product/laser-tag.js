@@ -25,8 +25,8 @@ import parse from "html-react-parser";
 import styles from "../../src/styles/pages/product/LaserTag.module.scss";
 
 //	IMAGES	//
-import laser_tag_banner from "../../public/img/product/laser-tag/laser_tag_banner.jpg";
-import laser_tag_banner_mobile from "../../public/img/product/laser-tag/laser_tag_banner_mobile.jpg";
+import laser_tag_banner from "../../public/img/product/laser-tag/Picture5.png";
+import laser_tag_banner_mobile from "../../public/img/product/laser-tag/Picture5.png";
 import leftBoxImg from "../../public/img/product/laser-tag/leftBoxImg.jpg";
 import rightBoxImg from "../../public/img/product/laser-tag/rightBoxImg.jpg";
 import premium_quality_systems_1 from "../../public/img/product/laser-tag/premium_quality_systems_1.jpg";
@@ -138,6 +138,8 @@ export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 					bannerTitle="Delivering The Ultimate <br>Laser Tag Experience"
 					bannerImg={laser_tag_banner.src}
 					mobileImg={laser_tag_banner_mobile.src}
+					alt1="Laser Tag"
+					alt2="Laser Tag"
 				/>
 				<BlackStripOverview desc="Laserblast, in an exclusive partnership with CSML, distributes its cutting-edge Laser Tag equipment in India. With decades of engineering excellence, Laserblast ensures robust, reliable, and resilient products. <br> As a dynamic industry leader for over 22 years, Laserblast, now distributed by CSML in India, brings the most reliable and advanced Laser Tag equipment, offering a fast ROI attraction to boost profits at FECs." />
 
