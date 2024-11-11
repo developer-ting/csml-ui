@@ -195,11 +195,11 @@ export default function GoKarting({ kartsTagData }) {
 	return (
 		<div>
 			<Head>
-				<title>Premium Go-Karting (SODIKART) Distributor in India | CSML Group</title>
-				<meta name="description" content="Discover top-quality SODIKART go-karts from CSML, the leading distributor in India. Get expert advice, support, and the best models for your track!" />
-				<meta name="og:title" content="Premium Go-Karting (SODIKART) Distributor in India | CSML Group" />
-				<meta name="og:description" content="Discover top-quality SODIKART go-karts from CSML, the leading distributor in India. Get expert advice, support, and the best models for your track!" />
-				<meta name="keywords" content="Go-Karting Distributor, Go-Karting Distributor in India, SODIKART Distributor in India, SODIKART Distributor, Go-Karting (SODIKART) Distributor in India, Go-Karting (SODIKART) Distributor."/>
+				<title>Experience Thrill with SODI Go Karts by CSML Group</title>
+				<meta name="description" content="Explore premium Go Karts in India with CSML Group, offering top-tier Electric Go Kart and Petrol go kart options for competitive racing and leisure at competitive prices." />
+				<meta name="og:title" content="Experience Thrill with SODI Go Karts by CSML Group" />
+				<meta name="og:description" content="Explore premium Go Karts in India with CSML Group, offering top-tier Electric Go Kart and Petrol go kart options for competitive racing and leisure at competitive prices." />
+				<meta name="keywords" content="Go Karts in India, SODI Go Karts for India, SODI Go Karts in India – Electric Go Kart & Petrol Go Kart Available, Go Karts near me,Buy Go Karts in India, SODI Go Karts for India, SODI Go Karts in India – Electric Go Kart & Petrol Go Kart Available, Go Karts near me,Go-Karting Distributor, Go-Karting Distributor in India, SODIKART Distributor in India, SODIKART Distributor, Go-Karting (SODIKART) Distributor in India, Go-Karting (SODIKART) Distributor."/>
 				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
 				<meta
 					property="og:image"
@@ -222,6 +222,7 @@ export default function GoKarting({ kartsTagData }) {
 					mobileImg={go_karting_banner_mobile.src}
 					alt1="Go- Karting"
 					alt2="Go- Karting"
+					isChange={true}
 				/>
 
 				<section
@@ -239,13 +240,78 @@ export default function GoKarting({ kartsTagData }) {
 					</div>
 				</section>
 
+				<section className={`${styles.service_sec2}`}>
+					<div className="container">
+						<div className={`${styles.service_flex} ptb_80`}>
+							<div className={`${styles.info_bx} toTop`} data-scroll>
+								<h1 className={`${styles.info_head} heading_text_55 pb_30 mobile_center`}>
+									Exploring the Thrill of Go-Karting in India
+								</h1>
+								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
+									Go-karting in India has rapidly grown into a popular recreational and competitive sport. CSML Group   , as the official distributor of SODI Go-Karts in India, plays a pivotal role in shaping the karting landscape. Known for the durability and innovative design of SODI Go-Karts, CSML provides equipment that fits perfectly within karting tracks and entertainment centers across the country. Whether you're seeking the excitement of an electric go-kart or the power of a petrol go-kart, we ensure a high standard of quality and safety in all its offerings. <br/><br/>
+									With our expertise, we continue to support smooth and efficient karting operations, delivering reliable go-karts for recreational drivers and competitive racers alike. For those looking to elevate the experience of go-karting for their facility, CSML’s extensive presence across India ensures easy access to SODI Go-Karts, offering exciting opportunities for revenue generation in a new or existing project.
+								</p>
+							</div>
+							<div
+								className={`${styles.img_bx} toTop`}
+								data-scroll
+							>
+								<img className="img border_8" src={entertainmentCenterImg1.src} alt="sodikart" />
+							</div>
+						</div>
+
+						<div className={`${styles.service_flex} ptb_80`}>
+							<div
+								className={`${styles.img_bx} toTop`}
+								data-scroll
+							>
+								<img className="img border_8" src={entertainmentCenterImg2.src} alt="sodikart" />
+							</div>
+
+							<div className={`${styles.info_bx} toTop`} data-scroll>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 mobile_center`}>
+									Experience the Future of Racing: SODI Electric and Petrol Go-Karts in India
+								</h2>
+								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
+									SODI Go-Karts, now available in India through the CSML Group, offer both electric and petrol options to suit a variety of racing and leisure needs.
+									Designed with a focus on safety and performance,
+									these high-quality go-karts are ideal for entertainment centers, racing tracks, and adventure parks.
+									Whether you're engaging in competitive racing or simply enjoying a day of fun, CSML’s premium selection of SODI Go-Karts ensures an exhilarating
+									and memorable experience for all ages.
+								</p>
+							</div>
+						</div>
+
+						<div className={`${styles.service_flex} ptb_80`}>
+							<div className={`${styles.info_bx} toTop`} data-scroll>
+								<h2 className={`${styles.info_head} heading_text_55 pb_30 mobile_center`}>
+									Maximizing Returns with Affordable and Premium Go-Kart Solutions for Racing Facilities in India
+								</h2>
+								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
+									For businesses considering go-kart investments in India, CSML Group stands as a trusted distributor, offering a wide range of electric and petrol go-karts at competitive prices. Designed for both entertainment centers and racing tracks, each model combines premium performance with long-lasting durability. As a leader in SODI go-kart distribution, CSML provides solutions that enhance your facility’s appeal and elevate the customer experience. Whether for recreational enjoyment or professional racing, partnering with CSML ensures that your business benefits from reliable, top-tier go-kart products.
+								</p>
+							</div>
+							<div
+								className={`${styles.img_bx} toTop`}
+								data-scroll
+							>
+								<img className="img border_8" src={entertainmentCenterImg3.src} alt="sodikart" />
+							</div>
+
+
+						</div>
+					</div>
+				</section>
+
+
+
 				<section className={`${styles.entertainmentCenter} ptb_100`}>
 					<div className="container">
 						<div
 							className={`${styles.entertainmentCenterContent} pb_40 toTop`}
 							data-scroll
 						>
-							<h2 className="heading_text_55 mobile_center pb_20">
+							<h2 className="heading_text_55 mobile_center pt_40 pb_20">
 								Speed into Excitement with Go Karting
 							</h2>
 							<p className="paraTxt_18 color_black_opacity l_h_6">
@@ -263,34 +329,34 @@ export default function GoKarting({ kartsTagData }) {
 							</p>
 						</div>
 
-						<div
-							className={`${styles.entertainmentCenterImgBox} commonBorderAnimation whiteCommonBorderAnimation toTop`}
-							data-scroll
-						>
-							<div className={`${styles.entertainmentCenterImgBoxStyle}`}>
-								<img
-									src={entertainmentCenterImg1.src}
-									className="border_8"
-									alt="Entertainment Center Img"
-								/>
-							</div>
-							<div className={`${styles.entertainmentCenterImgBoxStyle}`}>
-								<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>
-									<img
-										className="border_8"
-										src={entertainmentCenterImg3.src}
-										alt="Entertainment Center Img"
-									/>
-								</div>
-								<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>
-									<img
-										className="border_8"
-										src={entertainmentCenterImg2.src}
-										alt="Entertainment Center Img"
-									/>
-								</div>
-							</div>
-						</div>
+						{/*<div*/}
+						{/*	className={`${styles.entertainmentCenterImgBox} commonBorderAnimation whiteCommonBorderAnimation toTop`}*/}
+						{/*	data-scroll*/}
+						{/*>*/}
+						{/*	<div className={`${styles.entertainmentCenterImgBoxStyle}`}>*/}
+						{/*		<img*/}
+						{/*			src={entertainmentCenterImg1.src}*/}
+						{/*			className="border_8"*/}
+						{/*			alt="Entertainment Center Img"*/}
+						{/*		/>*/}
+						{/*	</div>*/}
+						{/*	<div className={`${styles.entertainmentCenterImgBoxStyle}`}>*/}
+						{/*		<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>*/}
+						{/*			<img*/}
+						{/*				className="border_8"*/}
+						{/*				src={entertainmentCenterImg3.src}*/}
+						{/*				alt="Entertainment Center Img"*/}
+						{/*			/>*/}
+						{/*		</div>*/}
+						{/*		<div className={`${styles.entertainmentCenterImgBoxStyleRight}`}>*/}
+						{/*			<img*/}
+						{/*				className="border_8"*/}
+						{/*				src={entertainmentCenterImg2.src}*/}
+						{/*				alt="Entertainment Center Img"*/}
+						{/*			/>*/}
+						{/*		</div>*/}
+						{/*	</div>*/}
+						{/*</div>*/}
 					</div>
 				</section>
 
