@@ -15,7 +15,7 @@ import home_banner from "../../public/img/home/home_banner.jpg";
 import cricle_arrow from "../../public/img/cricle_arrow.svg";
 
 /** Home Hero Section */
-const InsideBanner = ({ bannerImg, bannerTitle, mobileImg,alt1="banner img",alt2="mobile banner" }) => {
+const InsideBanner = ({ bannerImg, bannerTitle, mobileImg,alt1="banner img",alt2="mobile banner",isChange = false }) => {
 	// const parse = require("html-react-parser");
 	return (
 		<section className={styles.home_banner_wrap}>
@@ -31,11 +31,15 @@ const InsideBanner = ({ bannerImg, bannerTitle, mobileImg,alt1="banner img",alt2
 				)}
 			</div>
 			<div className={`${styles.banner_content}`}>
-				<h1 className="text_xxl color_white">
-					{/* Experience Unforgettable <br />
-					Adventures with Us{" "} */}
-					{parse(bannerTitle)}
-				</h1>
+				{isChange ? (
+					<h2 className="text_xxl color_white">
+						{parse(bannerTitle)}
+					</h2>
+				) : (
+					<h1 className="text_xxl color_white">
+						{parse(bannerTitle)}
+					</h1>
+				)}
 			</div>
 		</section>
 	);

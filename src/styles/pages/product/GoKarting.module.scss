@@ -71,6 +71,123 @@
             }
           }
         }
+
+      }
+      .brochure_box{
+        width: 85%;
+        margin: 0 auto;
+        @media (max-width: 1380px) {
+          width: 90%;
+        }
+        @media (max-width: 1199px) {
+          width: 100%;
+        }
+        .contactinside{
+          position: relative;
+          border-radius: 15px;
+          padding: 40px 80px;
+          background-color: #F8ED11;
+          @media (max-width: 1199px) {
+            padding: 40px 30px;
+          }
+          @media (max-width: 991px) {
+            padding: 30px 40px;
+          }
+          @media (max-width: 767px) {
+            padding: 30px;
+          }
+          .inside_flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width:991px) {
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 20px;
+            }
+            .btn_bx{
+              height: 35px;
+            }
+
+          }
+        }
+      }
+    }
+
+
+    .service_sec2 {
+      .service_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 767px) {
+          flex-direction: column-reverse;
+          gap: 30px;
+        }
+        .info_bx {
+          width: 50%;
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+          :global(.heading_text_55) {
+            color: var(--color_black);
+          }
+          .info_para {
+            color: var(--color_black);
+            line-height: 1.8;
+            font-size: 16px;
+          }
+        }
+        .img_bx {
+          width: 45%;
+          position: relative;
+          border: 1px solid black;
+          border-radius: 12px;
+          padding: 5px;
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -1px;
+            width: 1px;
+            height: 80%;
+            background-color: #ffffff;
+            transition: all 0.3s;
+            z-index: 1;
+          }
+
+          &::after {
+            right: -1px;
+            left: auto;
+          }
+
+          &:hover {
+            &::before,
+            &::after {
+              height: 0;
+              transition: all 0.3s;
+            }
+          }
+
+          &.whiteCommonBorderAnimation {
+            &::before,
+            &::after {
+              background-color: #fff;
+            }
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+          img {
+            width: 100%!important;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+          }
+        }
       }
       .brochure_box{
         width: 85%;
