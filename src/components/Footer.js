@@ -173,6 +173,38 @@ const Footer = () => {
 												</p>
 											</div>
 										</li>
+										<li
+											className={`${styles.sub_menu_box} ${
+												toggleState === 3 && styles.drop_down_active
+											}`}
+											onClick={() => toggleTab(3)}
+										>
+											<div className={`${styles.sub_menu_flex} d_f`}>
+												<a className="">Global Presence</a>
+												<img
+													src={white_down_arrow.src}
+													className={`${styles.white_down_arrow}`}
+													alt="down"
+												/>
+											</div>
+											<div className={`${styles.sub_menu_list}`}>
+												<p>
+													<Link href="/country/brunswick-bowling-distributor-in-singapore">
+														<a className="">Singapore</a>
+													</Link>
+												</p>
+												<p>
+													<Link href="/country/brunswick-bowling-distributor-in-Indonesia">
+														<a className="">Indonesia </a>
+													</Link>
+												</p>
+												<p>
+													<Link href="country/brunswick-bowling-distributor-in-Malaysia">
+														<a className="">Malaysia </a>
+													</Link>
+												</p>
+											</div>
+										</li>
 										<li>
 											<Link href="/privacy-policy">Privacy Policy</Link>
 										</li>
