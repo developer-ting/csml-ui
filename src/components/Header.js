@@ -196,6 +196,41 @@ const Header = () => {
 										</p>
 									</div>
 								</li>
+
+								<li
+									className={`${styles.sub_menu_box} ${
+										toggleState === 3 && styles.drop_down_active
+									}`}
+									onClick={() => toggleTab(3)}
+								>
+									<div className={`${styles.sub_menu_flex} d_f`}>
+										<a className="text_35 m_r">Global Presence</a>
+										<img
+											src={menu_down_aarow.src}
+											className={`${styles.menu_down_aarow}`}
+											alt="down"
+										/>
+									</div>
+									<div className={`${styles.sub_menu_list}`}>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											{/* <Link href="/services/service-consultancy">
+
+											</Link> */}
+											<a href="/country/brunswick-bowling-distributor-in-singapore" className="text_sm text_500">Singapore</a>
+										</p>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/country/brunswick-bowling-distributor-in-Indonesia">
+												<a className="text_sm text_500">Indonesia</a>
+											</Link>
+										</p>
+										<p onClick={() => setSidebarActive(!sidebarActive)}>
+											<Link href="/country/brunswick-bowling-distributor-in-Malaysia">
+												<a className="text_sm text_500">Malaysia</a>
+											</Link>
+										</p>
+
+									</div>
+								</li>
 							</ul>
 							<div className={`${styles.bottom_list}`}>
 								<ul>
