@@ -199,7 +199,7 @@ const Footer = () => {
 													</Link>
 												</p>
 												<p>
-													<Link href="country/brunswick-bowling-distributor-in-Malaysia">
+													<Link href="/country/brunswick-bowling-distributor-in-Malaysia">
 														<a className="">Malaysia </a>
 													</Link>
 												</p>
