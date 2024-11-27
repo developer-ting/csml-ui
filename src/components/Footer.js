@@ -303,7 +303,7 @@ const Footer = () => {
 											</Link>
 										</li>
 										<li>
-											<Link href="https://www.linkedin.com/company/csmlindia/">
+											<Link href="https://www.linkedin.com/company/csmlgroup/">
 												<a target="_blank" rel="noreferrer">
 													<img src={linkedin.src} alt="linkedin" />
 												</a>

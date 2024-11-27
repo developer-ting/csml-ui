@@ -74,28 +74,28 @@ export default function brunswickbowlingdistributorinMalaysia() {
                 />
                 <section className={`${styles.lane_oil} pt_100 pb_60`}>
                     <div className="container">
-                        <h2 className="heading_text_55 pb_50 toTop" data-scroll>
+                        <h2 className="color_black heading_text_55 pb_50 text_center toTop" data-scroll>
                             Brunswick Bowling Equipment: Innovation and Reliability
                         </h2>
-                        <p>Brunswick Bowling equipment is synonymous with quality, innovation, and durability. From high-performance bowling lanes to advanced pinsetters and modern scoring systems, Brunswick offers a complete suite of solutions designed to meet the needs of both players and operators. With Brunswick equipment, your new bowling centre will benefit from state-of-the-art technology that maximizes operational efficiency and enhances the overall bowling experience.</p>
+                        <p className="paraTxt_16 font_secondary color_black_opacity l_h_6 toTop">Brunswick Bowling equipment is synonymous with quality, innovation, and durability. From high-performance bowling lanes to advanced pinsetters and modern scoring systems, Brunswick offers a complete suite of solutions designed to meet the needs of both players and operators. With Brunswick equipment, your new bowling centre will benefit from state-of-the-art technology that maximizes operational efficiency and enhances the overall bowling experience.</p>
                     </div>
                 </section>
                 <section className="dot_animation_box pt_100 pb_60">
                     <div className="container">
-                        <h2 className="heading text_55 pb_50 toTop color_white">
+                        <h2 className="color_white heading_text_55 pb_50 text_center toTop">
                             Brunswick Bowling Equipment Cost for New Projects in Malaysia
                         </h2>
-                        <p className="color_white">
+                        <p className="paraTxt_18 color_white_opacity l_h_6 text_center">
                             For new start-up projects, CSML offers premium Brunswick Bowling Equipment in Malaysia, starting from USD30,000 per lane*. Our comprehensive solutions include high-quality bowling lanes, advanced pinsetters, modern scoring systems, and expert guidance to ensure the success of your project. From planning and design to installation and ongoing maintenance, CSML Group provides full support throughout the entire process, ensuring a seamless and hassle-free experience.
                         </p>
                     </div>
                 </section>
                 <section className={`${styles.lane_oil} pt_100 pb_60`}>
                     <div className="container">
-                        <h2 className="heading_text_55 pb_50 toTop" data-scroll>
+                        <h2 className="color_black heading_text_55 pb_50 text_center toTop" data-scroll>
                             Benefits of Adding Brunswick Bowling to Your FEC, Game Zone, or Amusement Centre
                         </h2>
-                        <p>
+                        <p className="paraTxt_16 font_secondary color_black_opacity l_h_6 toTop">
                             Choosing Brunswick Bowling equipment for your new project brings numerous benefits. Renowned for its exceptional durability and performance, Brunswick equipment ensures long-term reliability, minimizing maintenance costs and maximizing operational uptime. With over 70% of the world’s bowling centres using Brunswick products, you can be confident in the quality and performance of your investment.
                             <br/>
                             <br/>
@@ -105,14 +105,14 @@ export default function brunswickbowlingdistributorinMalaysia() {
                 </section>
                 <section className={`dot_animation_box pt_100 pb_60`}>
                     <div className="container">
-                        <h2 className="heading_text_55 pb_50 toTop color_white" data-scroll>
+                        <h2 className="color_white heading_text_55 pb_50 text_center toTop" data-scroll>
                             Why Choose CSML Group for Your New Brunswick Bowling Centre
                         </h2>
-                        <p className="color_white">
+                        <p className="paraTxt_18 color_white_opacity l_h_6 text_center">
                             As the exclusive partner for new start-up projects, CSML Group is the ideal choice for your Brunswick Bowling equipment needs in Malaysia. With years of experience in the bowling and entertainment industry, CSML’s certified team offers expert advice and guidance through every stage of your project. We provide end-to-end support, from initial planning and design to equipment installation and long-term maintenance, ensuring that your new bowling centre operates smoothly and efficiently from day one.
                             <br/>
                             <br/>
-                            103.117.180.159                   Our experienced staff is well-equipped to assist in every aspect of setting up your new centre, guiding you through each phase of development to ensure the highest level of quality and precision. With CSML’s expert assistance, launching your Brunswick Bowling centre will be a seamless and stress-free experience, allowing you to focus on creating the best entertainment experience for your customers.
+                            Our experienced staff is well-equipped to assist in every aspect of setting up your new centre, guiding you through each phase of development to ensure the highest level of quality and precision. With CSML’s expert assistance, launching your Brunswick Bowling centre will be a seamless and stress-free experience, allowing you to focus on creating the best entertainment experience for your customers.
                         </p>
                     </div>
                 </section>
