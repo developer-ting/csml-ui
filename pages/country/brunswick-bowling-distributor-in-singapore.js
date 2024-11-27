@@ -79,10 +79,10 @@ export default function brunswickbowlingdistributorinsingapore() {
                 />
                 <section className={`${styles.lane_oil} pt_100 pb_60`}>
                     <div className="container">
-                        <h2 className="heading_text_55 pb_50 toTop" data-scroll>
+                        <h2 className="color_black heading_text_55 pb_50 text_center toTop" data-scroll>
                             Brunswick Bowling Equipment Cost in Singapore
                         </h2>
-                        <p>If you’re considering setting up or upgrading a bowling centre,
+                        <p className="paraTxt_16 font_secondary color_black_opacity l_h_6 toTop">If you’re considering setting up or upgrading a bowling centre,
                             CSML offers premium Brunswick Bowling Equipment in Singapore starting at USD30,000 *onwards per lane.
                             Our comprehensive solutions include high-quality lanes, cutting-edge pinsetters,
                             and modern scoring systems designed to deliver a seamless bowling experience.
@@ -92,20 +92,20 @@ export default function brunswickbowlingdistributorinsingapore() {
                 </section>
                 <section className="dot_animation_box pt_100 pb_60">
                     <div className="container">
-                        <h2 className="heading text_55 pb_50 toTop color_white">
+                        <h2 className="color_white heading_text_55 pb_50 text_center toTop">
                             Benefits of adding Brunswick Bowling to Your FEC, Game Zone, & Amusement Centre
                         </h2>
-                        <p className="color_white">
+                        <p className="paraTxt_18 color_white_opacity l_h_6 text_center">
                             Choosing Brunswick Bowling equipment and solutions offers significant advantages for bowling centres. Renowned for their exceptional quality and durability, Brunswick products ensure long-term reliability, reducing maintenance costs and maximizing operational uptime. Over 70% of the world’s bowling centres use Brunswick products. Their cutting-edge designs and advanced technologies elevate the bowling experience, attracting a wide range of customers—from professional bowlers to casual players. This not only boosts foot traffic but also encourages longer stays, creating opportunities for additional revenue streams such as increased Food & Beverage (F&B) sales. The more time customers spend at the venue, the higher their F&B spending, leading to greater overall profitability. By fostering a fun and dynamic atmosphere with Brunswick’s state-of-the-art equipment, bowling centres can enhance customer engagement and drive long-term success.
                         </p>
                     </div>
                 </section>
                 <section className={`${styles.lane_oil} pt_100 pb_60`}>
                     <div className="container">
-                        <h2 className="heading_text_55 pb_50 toTop" data-scroll>
+                        <h2 className="color_black heading_text_55 pb_50 text_center toTop" data-scroll>
                             Why Choose CSML Group as Your Trusted Brunswick Bowling Equipment Partner?
                         </h2>
-                        <p>
+                        <p className="paraTxt_16 font_secondary color_black_opacity l_h_6 toTop">
                             When it comes to outfitting your bowling centre with the best in the business, CSML Group is your go-to partner. As the leading supplier of Brunswick Bowling equipment in Singapore, we bring years of experience, a deep understanding of the entertainment industry, and a strong commitment to quality. Our exclusive partnership with Brunswick ensures you have access to the latest, cutting-edge technology and high-performance products that elevate your bowling experience.
                             <br/>
                             <br/>
