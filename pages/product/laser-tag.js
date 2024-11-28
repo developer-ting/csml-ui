@@ -113,11 +113,11 @@ export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 	return (
 		<div>
 			<Head>
-				<title>Find the Best Laser Tag Equipment Distributor in India | CSML Group</title>
-				<meta name="description" content="Looking for best laser tag equipment in India? CSML offers reliable, high-quality gear for your entertainment centers. Discover our range today!" />
+				<title>Elevate Your Venue with Premium Laser Tag Equipment</title>
+				<meta name="description" content="Explore CSML's premium laser tag equipment perfect for every arena, game zone, and entertainment center. High quality and reliable gear for a thrilling experience." />
 				<meta name="og:title" content="Find the Best Laser Tag Equipment Distributor in India | CSML Group" />
-				<meta name="og:description" content="Looking for best laser tag equipment in India? CSML offers reliable, high-quality gear for your entertainment centers. Discover our range today!" />
-				<meta name="keywords" content="Best Laser Tag Equipment, Best Laser Tag Equipment in India, Best Laser Tag Equipment Distributor in India, Laser Tag Equipment Distributor in India, Laser Tag Equipment, Laser Tag Equipment for Entertainment Centers"/>
+				<meta name="og:description" content="Explore CSML's premium laser tag equipment perfect for every arena, game zone, and entertainment center. High quality and reliable gear for a thrilling experience." />
+				<meta name="keywords" content="Laser Tag, Laser Tag Equipment, Laser Tag Arena, Indoor Laser Tag, Laser Tag Cost,Best Laser Tag Equipment, Best Laser Tag Equipment in India, Best Laser Tag Equipment Distributor in India, Laser Tag Equipment Distributor in India, Laser Tag Equipment, Laser Tag Equipment for Entertainment Centers"/>
 				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
 				<meta
 					property="og:image"
@@ -140,8 +140,40 @@ export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 					mobileImg={laser_tag_banner_mobile.src}
 					alt1="Laser Tag"
 					alt2="Laser Tag"
+					isChange={true}
 				/>
 				<BlackStripOverview desc="Laserblast, in an exclusive partnership with CSML, distributes its cutting-edge Laser Tag equipment in India. With decades of engineering excellence, Laserblast ensures robust, reliable, and resilient products. <br> As a dynamic industry leader for over 22 years, Laserblast, now distributed by CSML in India, brings the most reliable and advanced Laser Tag equipment, offering a fast ROI attraction to boost profits at FECs." />
+
+				<section className={`${styles.how_apply_wrap} ptb_100`}>
+					<div className="container">
+						<h1 className={`heading_text_55 pb_20 toTop text_center`}>Premium Laser Tag Equipment built with Innovative Technology</h1>
+						<p className="paraTxt_18 l_h_5">
+							When it comes to premium laser tag equipment, Laserblast stands at the forefront, offering one of the most powerful and sophisticated systems available. As the exclusive distributor, CSML Group brings this cutting-edge technology to laser tag arenas, game zones, and entertainment centers, providing unparalleled performance and durability. With a diverse range of over 30 captivating game formats, Laserblast ensures an exhilarating and unique experience for every player. Regular, complimentary updates keep your arena at the forefront of innovation, introducing the latest game modes and features to maintain player engagement and encourage repeat visits
+						</p>
+					</div>
+				</section>
+
+
+				<section className={`${styles.how_apply_wrap} ptb_100`}>
+					<div className="container">
+						<h2 className={`heading_text_55 pb_20 toTop text_center`}>Affordable Laser Tag Solutions for Any Venue</h2>
+						<p className="paraTxt_18 l_h_5">
+							One of the key considerations when investing in laser tag systems is the laser tag cost. CSML Group offers excellent value, delivering advanced technology at a cost-effective price point. With options available for both new and established businesses, the laser tag equipment is an investment that pays off. Whether you're running a small indoor laser tag arena or a large-scale entertainment complex, Laserblast ensures you have the tools you need to succeed in the laser tag business. With CSML Group, you’re not just purchasing a laser tag system you’re investing in an experience that will thrill players and keep them coming back for more!
+						</p>
+					</div>
+				</section>
+
+				<section className={`${styles.how_apply_wrap} dot_animation_box ptb_100`}>
+					<div className="container">
+						<h2 className={`heading_text_55 pb_20 toTop text_center color_white`}>Unmatched Features for the Ultimate Laser Tag Experience</h2>
+						<p className="paraTxt_18 l_h_5 color_white">
+							Laserblast delivers unmatched features for the ultimate laser tag experience. With over 30 dynamic game formats, it ensures every session feels fresh and thrilling. Designed for durability and top-tier performance, it’s ideal for arenas, game zones, and entertainment centers. Free regular updates keep your system on the cutting edge with the latest game modes, ensuring players are always engaged and eager to return. Available through CSML, your official Laserblast distributor.
+						</p>
+					</div>
+				</section>
+
+
+
 
 				<TextImgBox
 					sectionHeading="Premium Quality Laser Tag Systems"

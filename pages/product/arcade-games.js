@@ -85,11 +85,11 @@ export default function AmusementGames({ GamesCategoriesData }) {
 	return (
 		<div>
 			<Head>
-				<title>Arcade Games Distributor in India | CSML Group</title>
-				<meta name="description" content="Discover CSML, India's top arcade games distributor, offering a wide range of exciting and interactive arcade machines for gaming zones, malls, and entertainment centers across the country." />
-				<meta name="og:title" content="Arcade Games Distributor in India | CSML Group" />
-				<meta name="og:description" content="Discover CSML, India's top arcade games distributor, offering a wide range of exciting and interactive arcade machines for gaming zones, malls, and entertainment centers across the country." />
-				<meta name="keywords" content="Arcade Games, Arcade Games Distributor in India, Arcade Games Distributor, Arcade Games Provider in India."/>
+				<title>CSML - Delivering Premium Arcade Games for Every Venue</title>
+				<meta name="description" content="Level up your entertainment offerings with CSML! Explore our premium arcade game range designed to boost guest engagement and drive revenue in every gaming zone." />
+				<meta name="og:title" content="CSML - Delivering Premium Arcade Games for Every Venue" />
+				<meta name="og:description" content="Level up your entertainment offerings with CSML! Explore our premium arcade game range designed to boost guest engagement and drive revenue in every gaming zone." />
+				<meta name="keywords" content="Buy Arcade Games, Arcade Games Cost, Types of Arcade Games,Arcade Games, Arcade Games Distributor in India, Arcade Games Distributor, Arcade Games Provider in India."/>
 				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
 				<meta
 					property="og:image"
