@@ -167,11 +167,15 @@ export default function AmusementGames({ GamesCategoriesData }) {
 												<h1 className="paraTxt_24 color_white pb_20">
 												{activeGameCategories.SubCategoriesDescription}
 											</h1>
-										) : (
+										) : activeGameCategories.SubCategoriesName === 'Photo Booth' ? (
 											<h4 className="text_24 text_500 color_white pb_40">
 												{activeGameCategories.SubCategoriesDescription}
 											</h4>
-										)
+										): activeGameCategories.SubCategoriesName === 'Ticket Eater' ? (
+											<h4 className="text_24 text_500 color_white pb_40">
+												{activeGameCategories.SubCategoriesDescription}
+											</h4>
+										): null
 									}
 									<div className={`${styles.product_info_style}`}>
 										{
