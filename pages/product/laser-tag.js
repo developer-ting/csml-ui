@@ -156,9 +156,13 @@ export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 
 				<section className={`${styles.how_apply_wrap} ptb_100`}>
 					<div className="container">
-						<h2 className={`heading_text_55 pb_20 toTop text_center`}>Affordable Laser Tag Solutions for Any Venue</h2>
+						<h2 className={`heading_text_55 pb_20 toTop text_center`}>Laser Tag Equipment for Every Arena – High Quality Gear at Competitive Prices!</h2>
 						<p className="paraTxt_18 l_h_5">
-							One of the key considerations when investing in laser tag systems is the laser tag cost. CSML Group offers excellent value, delivering advanced technology at a cost-effective price point. With options available for both new and established businesses, the laser tag equipment is an investment that pays off. Whether you're running a small indoor laser tag arena or a large-scale entertainment complex, Laserblast ensures you have the tools you need to succeed in the laser tag business. With CSML Group, you’re not just purchasing a laser tag system you’re investing in an experience that will thrill players and keep them coming back for more!
+							Turn your venue into an action-packed <b>laser tag arena</b> with our state-of-the-art equipment designed for endless fun that brings repeat value. Whether you're opening a new entertainment destination or upgrading your current centre we provide tailored solutions and packages to meet your needs.
+						</p>
+						<br/>
+						<p className="paraTxt_18 l_h_5">
+							To learn more about laser tag costs, contact our expert team for the perfect solution tailored for your laser tag arena.
 						</p>
 					</div>
 				</section>
