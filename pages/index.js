@@ -106,7 +106,7 @@ export async function getStaticProps() {
 
 	// home client logos
 	const ClientLogosRes = await fetch(
-		`${process.env.STRAPI_DO_BASE_URL}/api/home-client-logos?sort=order:desc&populate=*`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/home-client-logos?sort=order:asc&populate=*`,
 		ServerHeaders
 	);
 	const ClientLogosData = await ClientLogosRes.json();

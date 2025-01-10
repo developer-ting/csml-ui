@@ -147,7 +147,7 @@ export default function Crafting({ craftingData }) {
 											className={`${styles.video_img} border_12 img`}
 											src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${craftingData.attributes.thumbnail.data.attributes.url}`}
 											loading="lazy"
-											alt="video img"
+											alt=""
 										/>
 										<div className={`${styles.video_play}`}>
 											<img

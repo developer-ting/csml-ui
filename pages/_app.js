@@ -10,7 +10,6 @@ import Script from "next/script";
 
 // STYLES //
 import "../src/styles/globals/globals.scss";
-import maintainance from "@pages/maintainance";
 
 /** App Page */
 function MyApp({ Component, pageProps }) {

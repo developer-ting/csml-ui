@@ -64,7 +64,7 @@ export default function Project({ projectsData }) {
 export async function getStaticProps() {
 	//
 	const GamesCategoriesRes = await fetch(
-		`${process.env.STRAPI_DO_BASE_URL}/api/projects?sort=order:desc&populate=*`,
+		`${process.env.STRAPI_DO_BASE_URL}/api/projects?sort=id:asc&populate=*`,
 		ServerHeaders
 	);
 	const projectsData = await GamesCategoriesRes.json();

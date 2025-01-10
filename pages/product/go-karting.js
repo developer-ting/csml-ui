@@ -443,7 +443,7 @@ export default function GoKarting({ kartsTagData }) {
 												<div className={`${styles.img_box}`}>
 													<img
 														className="border_8"
-														src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
+															src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${item.Image.data.attributes.url}`}
 														alt="img"
 													/>
 												</div>

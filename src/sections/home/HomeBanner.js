@@ -30,6 +30,7 @@ import videoDestop from "../../../public/img/home/video-Desktop.png";
 
 /** Home Hero Section */
 export default function HomeBanner({ data }) {
+	console.log(data);
 	const [useSlider, setUseSlider] = useState(data.attributes.isSlider);
 	const [windowLoaded, setWindowLoaded] = useState(false);
 	const [isDesktop, setIsDesktop] = useState(false);
