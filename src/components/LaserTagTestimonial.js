@@ -64,7 +64,7 @@ export default function LaserTagTestimonial({ TestimonialsData }) {
 											/>
 										</div>
 										<div className={`${styles.enthralled_content}`}>
-											<p className="paraTxt">{item.attributes.LaserTagDescription}</p>
+											<p className="paraTxt mt_20">{item.attributes.LaserTagDescription}</p>
 											<div className={`${styles.profile_flex} d_f pt_80`}>
 												<div className={`${styles.profile_img}`}>
 													<img

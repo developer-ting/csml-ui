@@ -40,7 +40,7 @@ const SyncVideo = ({ youTube }) => {
 							<img
 								className={`${styles.video_img} img width_100`}
 								src={`${process.env.NEXT_PUBLIC_STRAPI_DO_BASE_URL}${youTube.data[0].attributes.Image.data.attributes.url}`}
-								alt="video image"
+								alt=""
 							/>
 							<div className={`${styles.video_play} d_f`}>
 								<img src={play.src} className={`${styles.gallery_plus}`} alt="play" />
