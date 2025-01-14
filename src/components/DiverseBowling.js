@@ -45,11 +45,11 @@ const DiverseBowling = ({ data }) => {
 						</div>
 					</div>
 					<div className={`${styles.hardwareSectionStyle}`}>
-						<h4 className="text_24 font_secondary text_500 pb_20 toTop" data-scroll>
+						<h4 className="text_24 text_500 pb_20 toTop" data-scroll>
 							{data.data[0].attributes.title}
 						</h4>
 						<p
-							className="paraTxt_16 font_secondary color_black_opacity l_h_6 toTop"
+							className="paraTxt_16 color_black_opacity l_h_6 toTop"
 							data-scroll
 						>
 							{data.data[0].attributes.desc}
@@ -62,7 +62,7 @@ const DiverseBowling = ({ data }) => {
 											<div className={`${styles.accordion_title_flex}`}>
 												<div className={`${styles.accordion_title_left}`}>
 													<h4
-														className={`${styles.title_txt} text_24 font_secondary text_500`}
+														className={`${styles.title_txt} text_24 text_500`}
 													>
 														Specifications
 													</h4>
@@ -132,11 +132,11 @@ const DiverseBowling = ({ data }) => {
 						</div>
 					</div>
 					<div className={`${styles.hardwareSectionStyle}`}>
-						<h4 className="text_24 font_secondary text_500 pb_20 toTop" data-scroll>
+						<h4 className="text_24 text_500 pb_20 toTop" data-scroll>
 							{data.data[1].attributes.title}
 						</h4>
 						<p
-							className="paraTxt_16 font_secondary color_black_opacity l_h_6 toTop"
+							className="paraTxt_16 color_black_opacity l_h_6 toTop"
 							data-scroll
 						>
 							{data.data[1].attributes.desc}
@@ -149,7 +149,7 @@ const DiverseBowling = ({ data }) => {
 											<div className={`${styles.accordion_title_flex}`}>
 												<div className={`${styles.accordion_title_left}`}>
 													<h4
-														className={`${styles.title_txt} text_24 font_secondary text_500`}
+														className={`${styles.title_txt} text_24 text_500`}
 													>
 														Specifications
 													</h4>

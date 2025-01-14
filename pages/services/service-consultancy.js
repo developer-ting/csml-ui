@@ -159,7 +159,7 @@ export default function ServiceConsultancy() {
 								<img className="img b_r_7" src={Sec2_img.src} alt="Operations Management Consultant for Family Entertainment" />
 							</div>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h2 className={`${styles.info_head1} heading_text_55 pb_30 `}>
+								<h2 className={`${styles.info_head1} heading_text_40 pb_30 `}>
 									Operations Management Consultant for Family Entertainment
 								</h2>
 								<p className={`${styles.info_para1} paraTxt_18 text_400 opacity_one`}>
@@ -175,7 +175,7 @@ export default function ServiceConsultancy() {
 					<div className="container">
 						<div className={`${styles.service_flex} ptb_80`}>
 							<div className={`${styles.info_bx} toTop`} data-scroll>
-								<h2 className={`${styles.info_head} heading_text_55 pb_30 `}>
+								<h2 className={`${styles.info_head} heading_text_40 color_white pb_30 `}>
 									Turnkey Consultancy Solution for Entertainment Center Success
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
@@ -192,7 +192,7 @@ export default function ServiceConsultancy() {
 				<section className={`${styles.service_tabsec} pt_80`}>
 					<div className="container">
 						<h2
-							className={`${styles.sec_title} heading_text_55 pb_50 toTop`}
+							className={`${styles.sec_title} heading_text_40 pb_50 toTop`}
 							data-scroll
 						>
 							Comprehensive Services for
@@ -264,7 +264,7 @@ export default function ServiceConsultancy() {
 											/>
 										</div>
 										<div className={`${styles.tabs_info}`}>
-											<p className={`${styles.info_title} font_secondary`}>
+											<p className={`${styles.info_title} paraTxt_18 font_secondary`}>
 												Turning Vision into Reality
 											</p>
 											<p
@@ -527,7 +527,7 @@ export default function ServiceConsultancy() {
 											)}
 
 											<a
-												className="pt_20 paraTxt_18 font_secondary opacity_one"
+												className={`${styles.info_desc} pt_20 paraTxt_18  font_secondary opacity_one`}
 												onClick={toggleReadMoreLess}
 											>
 												{isShowMore ? "Read Less" : "Read More"}

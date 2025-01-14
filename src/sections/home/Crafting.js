@@ -73,7 +73,7 @@ export default function Crafting({ craftingData }) {
 								Crafting
 							</h2>
 							<h3 className="heading_text_45 color_white pb_20 visible-xs">
-								world-class entertainment <br />
+								World-class entertainment <br />
 								hubs for over 25 years
 							</h3>
 							<p className="paraTxt color_white opacity_one">
@@ -85,7 +85,7 @@ export default function Crafting({ craftingData }) {
 						</div>
 						<div className={`${styles.right_content} toRight`} data-scroll>
 							<h2 className="heading_text_45 color_white pb_60 hidden-xs">
-								world-class entertainment <br />
+								World-class entertainment <br />
 								hubs for over 25 years
 							</h2>
 							<div className={`${styles.btn_height}`}>
