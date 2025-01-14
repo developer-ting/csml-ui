@@ -67,7 +67,7 @@ export default function ServiceManagement() {
 							</div>
 							<div className={`${styles.info_bx}`}>
 								<h2
-									className={`${styles.info_head} heading_text_55 pb_30 toTop`}
+									className={`${styles.info_head} heading_text_40 pb_30 toTop`}
 									data-scroll
 								>
 									Management Contract for Family Entertainment Centers
@@ -89,7 +89,7 @@ export default function ServiceManagement() {
 						<div className={`${styles.service_flex} pt_80`}>
 							<div className={`${styles.info_bx}`}>
 								<h2
-									className={`${styles.info_head} heading_text_55 pb_30 toTop`}
+									className={`${styles.info_head} heading_text_40 color_white pb_30 toTop`}
 									data-scroll
 								>
 									Elevate FEC Success with Our Expert Management Contract

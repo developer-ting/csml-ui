@@ -30,6 +30,7 @@ export default function Details({ careerData }) {
     }, []);
     console.log('Client-side data:', careerData);
     const details = careerData?.data.attributes.Description || '';
+    const title = careerData?.data.attributes.Title || '';
     return (
         <div>
             <Head>
@@ -61,7 +62,10 @@ export default function Details({ careerData }) {
                 />
                 <section className={styles.details_section}>
                     <div className="container">
-                        <div>
+                        <h2 className="heading_text_45 pb_20">
+                            {title}
+                        </h2>
+                        <div className={styles.global_text}>
                             {parse(details)}
                         </div>
 

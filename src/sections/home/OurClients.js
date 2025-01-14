@@ -33,7 +33,7 @@ export default function OurClients({ clientsData }) {
 		<section className={`${styles.our_clients_wrap} dot_animation_box ptb_100`}>
 			<div className="container">
 				<div className={`${styles.section_title} toTop`} data-scroll>
-					<h2 className="heading_text_40 color_white pb_30">Our Clients</h2>
+					<h2 className="heading_text_55 color_white pb_30">Our Clients</h2>
 				</div>
 				<div
 					className={`${styles.clients_logo_flex} border_animation f_j toTop`}

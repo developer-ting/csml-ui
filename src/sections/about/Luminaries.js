@@ -38,7 +38,7 @@ export default function Luminaries() {
 							<img className="border_8" src={rohit_mathur.src} alt="rohit img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 font_secondary">
+									<h3 className="text_24 text_700">
 										Rohhit Mathur 
 									</h3>
 									{/* <span href="#" rel="noreferrer">
@@ -47,7 +47,7 @@ export default function Luminaries() {
 										</Link>
 									</span> */}
 								</div>
-								<p className="paraTxt font_secondary opacity_two">
+								<p className="paraTxt opacity_two">
 									CEO
 								</p>
 							</div>
@@ -61,7 +61,7 @@ export default function Luminaries() {
 							<img className="border_8" src={tyna.src} alt="tyna img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 font_secondary">
+									<h3 className="text_24 text_700">
 									 Tyna D’Cruz
 									</h3>
 									{/* <span href="#" rel="noreferrer">
@@ -70,7 +70,7 @@ export default function Luminaries() {
 										</Link>
 									</span> */}
 								</div>
-								<p className="paraTxt font_secondary opacity_two">
+								<p className="paraTxt opacity_two">
 									Chief Business Development Officer
 								</p>
 							</div>
@@ -84,7 +84,7 @@ export default function Luminaries() {
 							<img className="border_8" src={sanjeev.src} alt="sanjeev img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 font_secondary">
+									<h3 className="text_24 text_700">
 									 Sanjeev Sinha
 									</h3>
 									{/* <span href="#" rel="noreferrer">
@@ -93,7 +93,7 @@ export default function Luminaries() {
 										</Link>
 									</span> */}
 								</div>
-								<p className="paraTxt font_secondary opacity_two">
+								<p className="paraTxt opacity_two">
 									Chief Technology Officer
 								</p>
 							</div>
@@ -107,7 +107,7 @@ export default function Luminaries() {
 							<img className="border_8" src={amit_thapar.src} alt="amit img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 font_secondary">
+									<h3 className="text_24 text_700">
 									  Amit Thapar
 									</h3>
 									{/* <span href="#" rel="noreferrer">
@@ -116,7 +116,7 @@ export default function Luminaries() {
 										</Link>
 									</span> */}
 								</div>
-								<p className="paraTxt font_secondary opacity_two">
+								<p className="paraTxt opacity_two">
 									Chief Commercial Officer
 								</p>
 							</div>
@@ -130,7 +130,7 @@ export default function Luminaries() {
 							<img className="border_8" src={amol_shelke.src} alt="amol img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 font_secondary">
+									<h3 className="text_24 text_700">
 										Amol Shelke 
 									</h3>
 									{/* <span href="#" rel="noreferrer">
@@ -139,7 +139,7 @@ export default function Luminaries() {
 										</Link>
 									</span> */}
 								</div>
-								<p className="paraTxt font_secondary opacity_two">
+								<p className="paraTxt opacity_two">
 									Senior Account Manager
 								</p>
 							</div>
@@ -153,7 +153,7 @@ export default function Luminaries() {
 							<img className="border_8" src={deepak_jha.src} alt="deepak img" />
 							<div className={`${styles.desc_box}`}>
 								<div className={`${styles.desc_title} f_j`}>
-									<h3 className="text_24 text_700 font_secondary">
+									<h3 className="text_24 text_700">
 									 Deepak Jha
 									</h3>
 									{/* <span href="#" rel="noreferrer">
@@ -162,7 +162,7 @@ export default function Luminaries() {
 										</Link>
 									</span> */}
 								</div>
-								<p className="paraTxt font_secondary opacity_two">
+								<p className="paraTxt opacity_two">
 									Manager Bowling Service & IT
 								</p>
 							</div>
