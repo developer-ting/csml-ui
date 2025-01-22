@@ -189,6 +189,11 @@ const Footer = () => {
 											</div>
 											<div className={`${styles.sub_menu_list}`}>
 												<p>
+													<Link href="/country/brunswick-bowling-distributor-in-India">
+														<a className="">India</a>
+													</Link>
+												</p>
+												<p>
 													<Link href="/country/brunswick-bowling-distributor-in-singapore">
 														<a className="">Singapore</a>
 													</Link>
