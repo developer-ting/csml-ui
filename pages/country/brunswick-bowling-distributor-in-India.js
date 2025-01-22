@@ -108,16 +108,15 @@ export default function brunswickbowlingdistributorinIndia() {
                             When it comes to outfitting your <b>bowling centre</b> with the best in the business,
                             CSML Group is your go-to partner. As the leading <b>supplier of Brunswick Bowling equipment in India</b>,
                             we bring years of experience, a deep understanding of the entertainment industry,
-                            and a strong commitment to <span className={styles.spanText}>services</span>.
+                            and a strong commitment to services.
                             <br/>
                             <br/>
                             Our exclusive partnership with Brunswick ensures you have access to the latest, cutting-edge technology and high-performance products that elevate your bowling experience.
                             <br/>
                             <br/>
                             CSML Group is more than just a supplier—we’re your full-service partner, offering expert support
-                            every step of the way. From the initial planning and design phase to seamless
-                            <span className={styles.spanText}> on-site delivery</span>,
-                            equipment installation, <span className={styles.spanText}>training</span> and ongoing maintenance, we deliver end-to-end solutions
+                            every step of the way. From the initial planning and design phase to seamless on-site delivery,
+                            equipment installation, training and ongoing maintenance, we deliver end-to-end solutions
                             that ensure your bowling centre runs smoothly and efficiently.
                             <br/>
                             <br/>
