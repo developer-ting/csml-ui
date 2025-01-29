@@ -68,7 +68,7 @@ export default function brunswickbowlingdistributorinIndia() {
                     mobileImg={brunswick_banner_mobile.src}
                 />
                 <BlackStripOverview
-                    desc="CSML Group is the leading Brunswick Bowling Distributor in India, providing top-tier bowling equipment.
+                    desc="<a className='fontunderline' href='https://csmlgroup.com'>CSML Group</a> is the leading Brunswick Bowling Distributor in India, providing top-tier bowling equipment.
                     As an exclusive supplier of Brunswick products, CSML ensures access to the latest technology,
                      from durable Brunswick Bowling Lanes to advanced Brunswick Bowling Pinsetter Technology,
                      tailored to meet your specific needs. Our commitment to quality, reliability, and customer
@@ -85,7 +85,8 @@ export default function brunswickbowlingdistributorinIndia() {
                             Our comprehensive solutions feature high-quality lanes, advanced pinsetters,
                             and modern scoring systems designed to enhance the bowling experience. With expert installation, maintenance,
                             and dedicated training, we ensure your bowling centre operates efficiently and delivers excellence.
-                            For more details on <b>Brunswick Bowling Equipment cost</b> and tailored solutions, reach out to us today!
+                            For more details on <b>Brunswick Bowling Equipment cost</b>
+                            and tailored solutions, <a className="fontunderline" href="https://csmlgroup.com/contact">reach out to us today!</a>
                         </p>
                     </div>
                 </section>
@@ -120,10 +121,13 @@ export default function brunswickbowlingdistributorinIndia() {
                             that ensure your bowling centre runs smoothly and efficiently.
                             <br/>
                             <br/>
-                            Our team of Brunswick-certified professionals is committed to precision and excellence, ensuring that every aspect of your project is executed flawlessly. Whether you’re building a new centre or upgrading existing facilities, we provide tailored guidance, ensuring your vision comes to life with exceptional results.
+                            Our team of Brunswick-certified professionals is committed to precision and excellence,
+                            ensuring that every aspect of your project is executed flawlessly.
+                            Whether you’re building a new centre or upgrading existing facilities, we provide tailored guidance,
+                             ensuring your vision comes to life with exceptional results.
                             <br/>
                             <br/>
-                            With CSML’s expertise and hands-on support, launching a Brunswick Bowling centre is a stress-free, seamless process, allowing you to focus on what matters most—providing top-tier entertainment and an unforgettable experience for your customers.
+                            With CSML’s expertise and hands-on support, launching a <a className="fontunderline" href="https://csmlgroup.com/product/brunswick-bowling">Brunswick Bowling</a> centre is a stress-free, seamless process, allowing you to focus on what matters most—providing top-tier entertainment and an unforgettable experience for your customers.
                         </p>
                     </div>
                 </section>

@@ -68,14 +68,15 @@ export default function brunswickbowlingdistributorinsingapore() {
                     mobileImg={brunswick_banner_mobile.src}
                 />
                 <BlackStripOverview
-                    desc="CSML Group is the leading Brunswick Bowling Distributor in Singapore, providing top-tier bowling equipment .
+                    desc="<a className='fontunderline' href='https://csmlgroup.com'>CSML Group</a> is the leading Brunswick Bowling Distributor in Singapore, providing top-tier bowling equipment .
                     As an exclusive supplier of Brunswick products, CSML ensures access to the latest technology,
                     from durable Brunswick Bowling Lanes to advanced Brunswick Bowling Pinsetter Technology,
                     tailored to meet your specific needs. Our commitment to quality, reliability, and customer
                     satisfaction has earned us a trusted reputation in the industry, helping you create memorable
                     experiences for your customers.
                     <br><br>
-                    Brunswick Bowling equipment stands out for its innovation and reliability. From robust lanes and efficient pinsetters to modern scoring systems, Brunswick offers comprehensive solutions that cater to both players and operators, solidifying its leadership in the bowling industry. "
+                    <a className='fontunderline' href='https://csmlgroup.com/product/brunswick-bowling'>Brunswick Bowling
+                    equipment</a> stands out for its innovation and reliability. From robust lanes and efficient pinsetters to modern scoring systems, Brunswick offers comprehensive solutions that cater to both players and operators, solidifying its leadership in the bowling industry. "
                 />
                 <section className={`${styles.lane_oil} pt_100 pb_60`}>
                     <div className="container">

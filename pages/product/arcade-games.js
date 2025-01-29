@@ -183,7 +183,7 @@ export default function AmusementGames({ GamesCategoriesData }) {
 												<div className="row">
 													<div className="col-12">
 														<p className="paraTxt_16 color_white">
-															Step into the electrifying universe of arcade games with CSML, your trusted distributor for premium gaming equipment! Our collection features everything from action-packed video games to immersive VR experiences and classic redemption games. Whether you're looking to upgrade your entertainment center or build a new one, our latest attractions are designed to captivate players of all ages. <br/><br/>
+															Step into the electrifying universe of arcade games with CSML, your trusted <a className="fontunderline" href="https://csmlgroup.com/"> distributor for premium gaming equipment! </a> Our collection features everything from action-packed video games to immersive VR experiences and classic redemption games. Whether you're looking to upgrade your entertainment center or build a new one, our latest attractions are designed to captivate players of all ages. <br/><br/>
 															With CSML's carefully curated selection of arcade games, your venue can attract more visitors, increase foot traffic, and maximize returns. Our solutions are engineered to not only engage players but also boost your bottom line by providing a high-energy experience that keeps guests coming back. Team up with CSML to transform your venue into a vibrant hub of excitement and profit. Together, we can create lasting memories and generate consistent revenue growth.
 														</p>
 													</div>

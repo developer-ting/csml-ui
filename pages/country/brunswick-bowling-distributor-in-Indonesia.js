@@ -68,9 +68,9 @@ export default function brunswickbowlingdistributorinIndonesia() {
                     mobileImg={brunswick_banner_mobile.src}
                 />
                 <BlackStripOverview
-                    desc="CSML Group is the leading Brunswick Bowling Distributor in Indonesia, providing top-tier bowling equipment. As an exclusive supplier of Brunswick products, CSML ensures access to the latest technology, from durable Brunswick Bowling Lanes to advanced Brunswick Bowling Pinsetter Technology, tailored to meet your specific needs. Our commitment to quality, reliability, and customer satisfaction has earned us a trusted reputation in the industry, helping you create memorable experiences for your customers.
+                    desc="<a className='fontunderline' href='https://csmlgroup.com'>CSML Group</a> is the leading Brunswick Bowling Distributor in Indonesia, providing top-tier bowling equipment. As an exclusive supplier of Brunswick products, CSML ensures access to the latest technology, from durable Brunswick Bowling Lanes to advanced Brunswick Bowling Pinsetter Technology, tailored to meet your specific needs. Our commitment to quality, reliability, and customer satisfaction has earned us a trusted reputation in the industry, helping you create memorable experiences for your customers.
                     <br><br>
-                    Brunswick Bowling equipment stands out for its innovation and reliability. From robust lanes and efficient pinsetters to modern scoring systems, Brunswick offers comprehensive solutions that cater to both players and operators, solidifying its leadership in the bowling industry."
+                    <a className='fontunderline' href='https://csmlgroup.com/product/brunswick-bowling'>Brunswick Bowling equipment</a> stands out for its innovation and reliability. From robust lanes and efficient pinsetters to modern scoring systems, Brunswick offers comprehensive solutions that cater to both players and operators, solidifying its leadership in the bowling industry."
                 />
                 <section className={`${styles.lane_oil} pt_100 pb_60`}>
                     <div className="container">
@@ -99,7 +99,9 @@ export default function brunswickbowlingdistributorinIndonesia() {
                             When it comes to outfitting your bowling centre with the best in the business, CSML Group is your go-to partner. As the leading supplier of Brunswick Bowling equipment in Indonesia, we bring years of experience, a deep understanding of the entertainment industry, and a strong commitment to quality. Our exclusive partnership with Brunswick ensures you have access to the latest, cutting-edge technology and high-performance products that elevate your bowling experience.
                             <br/>
                             <br/>
-                            CSML Group is more than just a supplier—we’re your full-service partner, offering expert support every step of the way. From the initial planning and design phase to seamless equipment installation and ongoing maintenance, we deliver end-to-end solutions that ensure your bowling centre runs smoothly and efficiently.
+                            CSML Group is more than just a supplier—we’re your full-service partner,
+                            offering
+                             <a className="fontunderline" href="https://csmlgroup.com/services/service-consultancy"> expert support</a> every step of the way. From the initial planning and design phase to seamless equipment installation and ongoing maintenance, we deliver end-to-end solutions that ensure your bowling centre runs smoothly and efficiently.
                             <br/>
                             <br/>
                             Our team of Brunswick-certified professionals is committed to precision and excellence, ensuring that every aspect of your project is executed flawlessly. Whether you’re building a new centre or upgrading existing facilities, we provide tailored guidance, ensuring your vision comes to life with exceptional results.

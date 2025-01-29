@@ -148,7 +148,7 @@ export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 					<div className="container">
 						<h1 className={`heading_text_55 pb_20 toTop text_center`}>Premium Laser Tag Equipment built with Innovative Technology</h1>
 						<p className="paraTxt_18 l_h_5">
-							When it comes to premium laser tag equipment, Laserblast stands at the forefront, offering one of the most powerful and sophisticated systems available. As the exclusive distributor, CSML Group brings this cutting-edge technology to laser tag arenas, game zones, and entertainment centers, providing unparalleled performance and durability. With a diverse range of over 30 captivating game formats, Laserblast ensures an exhilarating and unique experience for every player. Regular, complimentary updates keep your arena at the forefront of innovation, introducing the latest game modes and features to maintain player engagement and encourage repeat visits
+							When it comes to premium laser tag equipment, Laserblast stands at the forefront, offering one of the most powerful and sophisticated systems available. As the exclusive distributor,<a className="fontunderline" href="https://csmlgroup.com/"> CSML Group</a> brings this cutting-edge technology to laser tag arenas, game zones, and entertainment centers, providing unparalleled performance and durability. With a diverse range of over 30 captivating game formats, Laserblast ensures an exhilarating and unique experience for every player. Regular, complimentary updates keep your arena at the forefront of innovation, introducing the latest game modes and features to maintain player engagement and encourage repeat visits
 						</p>
 					</div>
 				</section>
@@ -162,7 +162,7 @@ export default function LaserTag({ LaserTagData, LaserTagTestimonialsData }) {
 						</p>
 						<br/>
 						<p className="paraTxt_18 l_h_5">
-							To learn more about laser tag costs, contact our expert team for the perfect solution tailored for your laser tag arena.
+							To learn more about laser tag costs, <a className="fontunderline" href="https://csmlgroup.com/contact"> contact our expert team</a> for the perfect solution tailored for your laser tag arena.
 						</p>
 					</div>
 				</section>
