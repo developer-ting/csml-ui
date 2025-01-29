@@ -68,7 +68,7 @@ export default function brunswickbowlingdistributorinMalaysia() {
                     mobileImg={brunswick_banner_mobile.src}
                 />
                 <BlackStripOverview
-                    desc="CSML Group is the exclusive distributor of Brunswick Bowling equipment in Malaysia for new start-up projects. We specialize in helping new ventures set up high-quality bowling centres, providing access to the latest Brunswick products tailored for your specific needs. Whether you're launching a new bowling centre, FEC (Family Entertainment Centre), or game zone, we ensure that you receive the most advanced, reliable bowling equipment backed by Brunswick’s world-renowned technology and innovation.
+                    desc="<a className='fontunderline' href='https://csmlgroup.com'>CSML Group</a> is the exclusive distributor of Brunswick Bowling equipment in Malaysia for new start-up projects. We specialize in helping new ventures set up high-quality bowling centres, providing access to the latest Brunswick products tailored for your specific needs. Whether you're launching a new bowling centre, FEC (Family Entertainment Centre), or game zone, we ensure that you receive the most advanced, reliable bowling equipment backed by Brunswick’s world-renowned technology and innovation.
                     <br><br>
                     Our commitment to quality, reliability, and customer satisfaction has established CSML as a trusted partner for bowling operators in Malaysia, enabling you to create exceptional experiences for your customers from the ground up."
                 />
@@ -77,7 +77,8 @@ export default function brunswickbowlingdistributorinMalaysia() {
                         <h2 className="color_black heading_text_40 pb_50 text_center toTop" data-scroll>
                             Brunswick Bowling Equipment: Innovation and Reliability
                         </h2>
-                        <p className="global_text paraTxt_18 color_black_opacity toTop">Brunswick Bowling equipment is synonymous with quality, innovation, and durability. From high-performance bowling lanes to advanced pinsetters and modern scoring systems, Brunswick offers a complete suite of solutions designed to meet the needs of both players and operators. With Brunswick equipment, your new bowling centre will benefit from state-of-the-art technology that maximizes operational efficiency and enhances the overall bowling experience.</p>
+                        <p className="global_text paraTxt_18 color_black_opacity toTop">
+                            <a className="fontunderline" href="https://csmlgroup.com/product/brunswick-bowling">Brunswick Bowling equipment</a> is synonymous with quality, innovation, and durability. From high-performance bowling lanes to advanced pinsetters and modern scoring systems, Brunswick offers a complete suite of solutions designed to meet the needs of both players and operators. With Brunswick equipment, your new bowling centre will benefit from state-of-the-art technology that maximizes operational efficiency and enhances the overall bowling experience.</p>
                     </div>
                 </section>
                 <section className="dot_animation_box pt_100 pb_60">
@@ -109,7 +110,11 @@ export default function brunswickbowlingdistributorinMalaysia() {
                             Why Choose CSML Group for Your New Brunswick Bowling Centre
                         </h2>
                         <p className="global_text paraTxt_18 color_white_opacity text_center">
-                            As the exclusive partner for new start-up projects, CSML Group is the ideal choice for your Brunswick Bowling equipment needs in Malaysia. With years of experience in the bowling and entertainment industry, CSML’s certified team offers expert advice and guidance through every stage of your project. We provide end-to-end support, from initial planning and design to equipment installation and long-term maintenance, ensuring that your new bowling centre operates smoothly and efficiently from day one.
+                            As the exclusive partner for new start-up projects, CSML Group is the ideal choice for your Brunswick Bowling equipment needs in Malaysia.
+                            With years of experience in the bowling and entertainment industry,
+                            CSML’s certified team offers <a className="fontunderline" href="https://csmlgroup.com/services/service-consultancy"> expert advice</a> and guidance through every stage of your project. We provide end-to-end support,
+                            from initial planning and design to equipment installation and long-term maintenance,
+                            ensuring that your new bowling centre operates smoothly and efficiently from day one.
                             <br/>
                             <br/>
                             Our experienced staff is well-equipped to assist in every aspect of setting up your new centre, guiding you through each phase of development to ensure the highest level of quality and precision. With CSML’s expert assistance, launching your Brunswick Bowling centre will be a seamless and stress-free experience, allowing you to focus on creating the best entertainment experience for your customers.

@@ -79,7 +79,7 @@ export default function BrunswickBowling({
 					mobileImg={brunswick_banner_mobile.src}
 				/>
 				<BlackStripOverview
-					desc="CSML is the exclusive distributor of Brunswick Bowling in India and the
+					desc="CSML is the exclusive distributor of  <a className='fontunderline' href='https://csmlgroup.com/country/brunswick-bowling-distributor-in-India'>Brunswick Bowling in India</a> and the
 							SAARC region. Over the last 25 years, they have jointly set industry
 							standards. Their diverse product range simplifies entertainment center
 							setup with customizable bowling alleys."

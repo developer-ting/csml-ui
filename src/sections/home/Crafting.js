@@ -79,7 +79,7 @@ export default function Crafting({ craftingData }) {
 							<p className="paraTxt color_white opacity_one">
 								Since our establishment in 2002, we have cultivated an extensive
 								portfolio of entertainment solutions. Additionally, we've been the
-								exclusive distributor for Brunswick Bowling Products USA in India &
+								<a className="fontunderline" href="https://csmlgroup.com/product/brunswick-bowling"> exclusive distributor for Brunswick Bowling</a> Products USA in India &
 								SAARC.{" "}
 							</p>
 						</div>

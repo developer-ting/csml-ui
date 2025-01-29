@@ -248,7 +248,8 @@ export default function GoKarting({ kartsTagData }) {
 									Exploring the Thrill of Go-Karting in India
 								</h1>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
-									Go-karting in India has rapidly grown into a popular recreational and competitive sport. CSML Group   , as the official distributor of SODI Go-Karts in India, plays a pivotal role in shaping the karting landscape. Known for the durability and innovative design of SODI Go-Karts, CSML provides equipment that fits perfectly within karting tracks and entertainment centers across the country. Whether you're seeking the excitement of an electric go-kart or the power of a petrol go-kart, we ensure a high standard of quality and safety in all its offerings. <br/><br/>
+									Go-karting in India has rapidly grown into a popular recreational and competitive sport.
+									<a className="fontunderline" href="https://csmlgroup.com/">CSML Group</a>, as the official distributor of SODI Go-Karts in India, plays a pivotal role in shaping the karting landscape. Known for the durability and innovative design of SODI Go-Karts, CSML provides equipment that fits perfectly within karting tracks and entertainment centers across the country. Whether you're seeking the excitement of an electric go-kart or the power of a petrol go-kart, we ensure a high standard of quality and safety in all its offerings. <br/><br/>
 									With our expertise, we continue to support smooth and efficient karting operations, delivering reliable go-karts for recreational drivers and competitive racers alike. For those looking to elevate the experience of go-karting for their facility, CSML’s extensive presence across India ensures easy access to SODI Go-Karts, offering exciting opportunities for revenue generation in a new or existing project.
 								</p>
 							</div>
@@ -288,7 +289,7 @@ export default function GoKarting({ kartsTagData }) {
 									Maximizing Returns with Affordable and Premium Go-Kart Solutions for Racing Facilities in India
 								</h2>
 								<p className={`${styles.info_para} paraTxt_18 text_400 opacity_one`}>
-									For businesses considering go-kart investments in India, CSML Group stands as a trusted distributor, offering a wide range of electric and petrol go-karts at competitive prices. Designed for both entertainment centers and racing tracks, each model combines premium performance with long-lasting durability. As a leader in SODI go-kart distribution, CSML provides solutions that enhance your facility’s appeal and elevate the customer experience. Whether for recreational enjoyment or professional racing, partnering with CSML ensures that your business benefits from reliable, top-tier go-kart products.
+									For businesses considering go-kart investments in India, CSML Group stands as a trusted distributor, offering a wide range of electric and petrol go-karts at competitive prices. Designed for both entertainment centers and racing tracks, each model combines premium performance with long-lasting durability. As a leader in SODI go-kart distribution, CSML provides solutions that enhance your facility’s appeal and elevate the customer experience. Whether for recreational enjoyment or professional racing, <a className="fontunderline" href="https://csmlgroup.com/contact">partnering with CSML</a> ensures that your business benefits from reliable, top-tier go-kart products.
 								</p>
 							</div>
 							<div
