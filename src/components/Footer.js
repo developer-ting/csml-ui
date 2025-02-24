@@ -230,7 +230,7 @@ const Footer = () => {
 										</li>
 										<li>
 											
-											<Link href="/img/pdf/CSML_2025.pdf">
+											<Link href="/img/pdf/CSML_2025-Brochure.pdf">
 											<a target="_blank" rel="noreferrer" className="">Brochure</a>
 											</Link>
 										</li>
