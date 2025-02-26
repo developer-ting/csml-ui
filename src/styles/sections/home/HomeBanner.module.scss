@@ -1,6 +1,6 @@
 @import "../../helpers/helpers.scss";
 .home_banner_wrap {
-	height: 100vh;
+	height: 80vh;
 	// transform: translateY(100vh);z
 	transition: 2s ease;
 	position: relative;
@@ -47,14 +47,14 @@
 		padding-left: var(--container_left_space);
 		position: absolute;
 		left: 0px;
-		bottom: 50px;
+		bottom: 140px;
 		// top: 50%;
 		// transform: translateY(-50%);
 		width: 48%;
 		@media only screen and (max-width: 767px) {
 			width: 100%;
 			padding: 0px 15px;
-			bottom: 50px;
+			bottom: 150px;
 		}
 		h1 {
 			@media only screen and (max-width: 767px) {
@@ -66,11 +66,11 @@
 		padding-right: var(--container_left_space);
 		position: absolute;
 		right: 0px;
-		bottom: 50px;
+		bottom: 180px;
 		cursor: pointer;
 		animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		@media only screen and (max-width: 991px) {
-			bottom: 15px;
+			bottom: 150px;
 			right: 15px;
 			width: 45px;
 		}
