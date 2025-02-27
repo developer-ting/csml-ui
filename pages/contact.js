@@ -54,9 +54,29 @@ export default function Contact() {
 			)
 				.then((data) => data.json())
 				.then((data) => {
+					sendMail();
 					reset(), setIsSubmited(true);
 				})
 				.catch((err) => console.log(err));
+		}
+
+		const Headers2 = {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({
+				data
+			}),
+		};
+		async function sendMail(){
+			await fetch(
+				`https://api.metaagrow.com/email/sendCSMLMail`,Headers2
+			)
+				.then((data))
+				.catch((err)=>{
+					console.log(err)
+				});
 		}
 
 		sendData();
